@@ -1,0 +1,11 @@
+# -*- makefile -*-
+.PHONY: default clean
+
+default:
+	cp css/*.css .
+	$(MAKE) -C src
+	cp html/*.html .
+	git add *.html
+
+clean:
+	$(MAKE) -C src clean
