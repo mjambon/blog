@@ -15,7 +15,7 @@ all:
 
 html: $(HTML)
 
-$(HTMLDIR)/%.html: %.md Makefile
+$(HTMLDIR)/%.html: %.md Makefile footer.html
 	if [ $< = "index.md" ]; then \
           footer=""; \
         else \
