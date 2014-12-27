@@ -22,7 +22,7 @@ intelligence, ...), I do not want to spend time debunking faith-driven
 science, however serious and honest it is.
 
 My personal experience as a post-doc studying the structure of
-proteins is the following: the boss had the strong impression that the
+proteins was the following: the boss had the strong impression that the
 3D structure of bacterial proteins was more compact, less irregular
 and fuzzy than their homologs found in eukaryotes. That was the
 belief. I looked at a lot of structures and couldn't see anything,
