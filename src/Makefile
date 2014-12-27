@@ -1,4 +1,5 @@
 ARTICLES = \
+  index \
   2014-12-27-faith-driven-science
 
 MD = $(addsuffix .md, $(ARTICLES))
@@ -15,7 +16,12 @@ all:
 html: $(HTML)
 
 $(HTMLDIR)/%.html: %.md Makefile
-	pandoc $< -o $@ -t html5 -s -c blog.css
+	if [ $< = "index.md" ]; then \
+          footer=""; \
+        else \
+          footer="-A footer.html"; \
+        fi; \
+        pandoc $< -o $@ -t html5 -s -c blog.css $$footer
 
 clean:
 	rm -f *~
