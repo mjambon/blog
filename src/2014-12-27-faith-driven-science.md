@@ -1,3 +1,12 @@
+Faith-driven science
+====================
+
+_This is originally a comment made on the AI Philosophy
+Facebook group, about the book
+[Evidence for Psi: Thirteen Empirical Research
+Reports](http://smile.amazon.com/dp/0786478284) edited by respected AGI
+researcher [Ben Goertzel](http://en.wikipedia.org/wiki/Ben_Goertzel)._
+
 When I commented earlier that "we are now looking for Bigfoot", I
 meant to criticize scientific research aimed at finding evidence for
 widespread beliefs. Scientific discoveries in general are

@@ -14,8 +14,8 @@ all:
 
 html: $(HTML)
 
-$(HTMLDIR)/%.html: %.md
-	pandoc $< -o $@ -t html5 -s --toc -c blog.css
+$(HTMLDIR)/%.html: %.md Makefile
+	pandoc $< -o $@ -t html5 -s -c blog.css
 
 clean:
 	rm -f *~
