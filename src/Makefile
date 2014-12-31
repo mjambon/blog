@@ -1,6 +1,7 @@
 ARTICLES = \
   index \
-  2014-12-27-faith-driven-science
+  2014-12-27-faith-driven-science \
+  2014-12-31-intelligence-precedes-machines
 
 MD = $(addsuffix .md, $(ARTICLES))
 HTMLDIR = ../html
