@@ -21,7 +21,7 @@ $(HTMLDIR)/%.html: %.md Makefile footer.html
         else \
           footer="-A footer.html"; \
         fi; \
-        pandoc $< -o $@ -t html5 -s -c blog.css $$footer
+        pandoc $< -o $@ -t html5 -s -c blog.css $$footer -H head.html
 
 clean:
 	rm -f *~
