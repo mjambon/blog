@@ -4,7 +4,7 @@ Intelligence precedes machines
 _[Artificial general
 intelligence](http://en.wikipedia.org/wiki/Artificial_general_intelligence)
 (AGI) has yet to be achieved. Can the core of an AGI
-architecture could be based on evolvable code made up of a rich set
+architecture be based on evolvable code made up of a rich set
 instructions similar to those found in programming languages, possibly
 [Push](http://faculty.hampshire.edu/lspector/push.html)?
 This would save us the task of architecting most of the AGI system
