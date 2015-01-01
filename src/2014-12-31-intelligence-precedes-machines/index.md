@@ -126,7 +126,6 @@ intelligence are a possibility. This would likely arise in non-biological
 machines sooner than in humans, due to the non-engineerability of the
 human brain.
 
-
 Glossary
 --------
 
@@ -149,3 +148,7 @@ its input.
 **program**: engineerable code.
 
 **intelligence**: ability for a system to set, maintain, and achieve goals.
+
+<img src="img/evolvable-programs.svg" alt="Venn diagram showing
+relationships between machines, code, intelligent systems, and
+evolvable programs"/>

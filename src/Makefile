@@ -3,9 +3,8 @@ ARTICLES = \
   2014-12-27-faith-driven-science \
   2014-12-31-intelligence-precedes-machines
 
-MD = $(addsuffix .md, $(ARTICLES))
 HTMLDIR = ../html
-HTML = $(addprefix $(HTMLDIR)/, $(addsuffix .html, $(ARTICLES)))
+HTML = $(addprefix $(HTMLDIR)/, $(addsuffix /index.html, $(ARTICLES)))
 
 .PHONY: default all html css clean
 default: all
@@ -16,14 +15,18 @@ all:
 
 html: $(HTML)
 
-$(HTMLDIR)/%.html: %.md Makefile footer.html
-	if [ $< = "index.md" ]; then \
+$(HTMLDIR)/%/index.html: %/index.md Makefile head.html footer.html
+	mkdir -p $(dir $@)
+	if [ -d $(dir $<)/img ]; then cp -a $(dir $<)/img $(dir $@)/; fi
+	if [ $< = "index/index.md" ]; then \
+          css="blog.css"; \
           footer=""; \
         else \
+          css="../blog.css"; \
           footer="-A footer.html"; \
         fi; \
-        pandoc $< -o $@ -t html5 -s -c blog.css $$footer -H head.html
+	pandoc $< -o $@ -t html5 -s -c $$css $$footer -H head.html
 
 clean:
-	rm -f *~
+	rm -f *~ */*~ */img/*~
 	rm -rf $(HTMLDIR)
