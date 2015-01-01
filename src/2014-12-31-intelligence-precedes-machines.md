@@ -42,9 +42,9 @@ monkey](http://en.wikipedia.org/wiki/Infinite_monkey_theorem).
 The question is not whether evolution can result in an intelligent
 system, but how fast.
 
-We need a system that can modify its presumably large code in ways
+We need a system that can modify its presumably large code base in ways
 that require a quasi-constant amount of time to develop each new feature.
-In other words, the program need to be structured such that the
+In other words, the program needs to be structured such that the
 programmer knows how to find the few parts of the program to modify
 and how to modify them so as to guarantee a constant chance of success.
 An example of goals, for a human programmer of some interactive
@@ -72,7 +72,7 @@ color of the form submission button, the programmer would need to
 answer the following questions:
 
 * What is a form submission button?
-* Where is a form in my program?
+* Where is a form created in my program?
 * Where is the variable for the submission button for that form?
 * Which piece of code initializes the button?
 * What should I do to set the color of the button?
@@ -94,9 +94,9 @@ the program are now meaningless (`x1`, `x2`, ...). Can the human engineer
 understand what the program does? How long does it take them to
 understand that `x3583` stands for the field `red`, `x780` is the function
 for creating a button, and its third argument is the constant `X4522` that
-indicates that it is form submission button. All of that without even
+indicates that it is form submission button? All of that without even
 a list of what the original English names for each identifier
-might be. Such reverse engineering can be tremendous work, and it
+might be. Such reverse engineering can require tremendous work, and it
 involves a lot more effort, time, and intelligence than reading a
 program that was not obfuscated. This is the difference between a
 program and just code. A program is code that can readily be
