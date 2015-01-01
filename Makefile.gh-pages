@@ -5,7 +5,7 @@ default:
 	cp css/*.css .
 	$(MAKE) -C src
 	cp -a html/* .
-	git add *
+	git add .
 
 clean:
 	$(MAKE) -C src clean
