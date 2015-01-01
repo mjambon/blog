@@ -19,6 +19,7 @@ img {
   }
 
   img {
+    height: auto;
     width: 100%;
   }
 }
