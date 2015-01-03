@@ -4,12 +4,13 @@ body {
 
   max-width: 65ex;
   text-align: left;
-  line-height: 1.5em;
+  line-height: 1.5;
   font-family: 'Droid Serif', serif;
 }
 
 h1, h2, h3, h4 {
   margin: 1.5em 0em 0.8em 0em;
+  line-height: 1.1;
 }
 
 img {
