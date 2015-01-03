@@ -27,10 +27,8 @@ Learn about your needs
   problem will solve itself naturally with a gentle push.
 - Money vastly contributes to freedom, but is not all. Do not be
   extreme about money in one direction or another.
-- Which of these jobs is best for you? For each job you're
-  considering, rate each of the
-  following features on a scale from 0 to 10 and add them up to obtain
-  a maximum of 30 points:
+- To get an idea of which job might be better for you, rate each job
+  for Fun, Income, and Skills to form a total of up to 30 points:
     * Fun (10 points): How enjoyable is it going to be to work like this for
       the next 10 years?
     * Income (10 points): How well does it pay?
