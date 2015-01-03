@@ -26,7 +26,7 @@ Learn about your needs
   parents. Produce the best contribution to society and the job
   problem will solve itself naturally with a gentle push.
 - Money vastly contributes to freedom, but is not all. Do not be
-  extreme about money.
+  extreme about money in one direction or another.
 - Is this job ideal for you? Rate each of the following on a scale
   from 0 to 10 and add them up:
     * Fun (10 points): how enjoyable is it going to be to work like this for
