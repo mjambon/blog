@@ -1,6 +1,7 @@
 ARTICLES = \
   2014-12-27-faith-driven-science \
-  2014-12-31-intelligence-precedes-machines
+  2014-12-31-intelligence-precedes-machines \
+  2015-01-03-universal-career-advice
 
 HTMLDIR = ../html
 HTML = \
