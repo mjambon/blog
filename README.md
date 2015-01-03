@@ -1,4 +1,4 @@
 blog
 ====
 
-Personal blog published at http://mjambon.github.io/blog/
+Personal blog published at https://mjambon.github.io/blog/

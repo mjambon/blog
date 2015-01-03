@@ -1,7 +1,7 @@
 About me
 --------
 
-<img src="http://www.gravatar.com/avatar/ca1fd636db960bba6027154d81ef106e.png"
+<img src="//www.gravatar.com/avatar/ca1fd636db960bba6027154d81ef106e.png"
      alt="The author">
 
 My name is Martin Jambon. I live with my family in the San Francisco
