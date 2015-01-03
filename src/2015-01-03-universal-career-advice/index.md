@@ -5,8 +5,8 @@ _I am now 37 years old and it's only been a few years since I feel I
 am working the way I like, with people I like, toward goals that are
 meaningful to me. I am picky and I want the best for myself.
 Without entering into the specifics of my job and
-lifestyle, here is a list of things I wish I knew back when I was
-16. I think they apply to most people._
+lifestyle, here is some advice I built for myself over the years,
+and wish I had when I was 16. I think it applies to most people._
 
 Learn about your needs
 ----------------------
@@ -39,8 +39,8 @@ Learn about your needs
 Optimize your attitude
 ----------------------
 
-- Learn how to communicate well. It matters for all jobs. It's a
-  matter of being well understood by your colleagues, partners, and
+- Learn how to communicate well. It matters for all professions. It's
+  about being well understood by your colleagues, partners, and
   customers. Keep it simple, overcommunicate rather than
   undercommunicate.
 - Be honest and direct. That will save time.
