@@ -21,6 +21,7 @@ martin@mjambon.com
 Posts
 -----
 
+* [Deep vs. fast thinking: a synchronization problem](2015-11-08-deep-vs-fast-thinking)
 * [Universal career advice](2015-01-03-universal-career-advice)
 * [Intelligence precedes machines](2014-12-31-intelligence-precedes-machines)
 * [Faith-driven science](2014-12-27-faith-driven-science)
