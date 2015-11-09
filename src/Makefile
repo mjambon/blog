@@ -2,7 +2,7 @@ ARTICLES = \
   2014-12-27-faith-driven-science \
   2014-12-31-intelligence-precedes-machines \
   2015-01-03-universal-career-advice \
-  2015-09-07-thriving-on-chaos
+  2015-11-08-deep-vs-fast-thinking
 
 HTMLDIR = ../html
 HTML = \
