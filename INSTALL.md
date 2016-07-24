@@ -38,4 +38,4 @@ Publishing on the `gh-pages` clone/branch
 3. `make`
 4. `git commit -a`
 5. `git push origin gh-pages`
-6. Review output at [http://mjambon.github.io/blog/]
+6. Review output at http://mjambon.github.io/blog/
