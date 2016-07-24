@@ -4,7 +4,7 @@ Definitions of life
 Here are 3 practical definitions of _life_, which are useful in their
 respective contexts and are also fairly independent from each other.
 
-Medical definition of life: self-sustainance
+Medical definition of life: self-sustenance
 ---
 
 A physical entity, called an _organism_, is alive as long as it is
