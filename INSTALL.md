@@ -12,6 +12,9 @@ This blog is published by GitHub, which follows these conventions:
 Initial setup
 -------------
 
+A recent-enough version of pandoc is required. Version 1.17.2 is
+suitable at the time of writing.
+
 1. `git clone git@github.com:mjambon/blog.git`
 2. `git clone -b gh-pages git@github.com:mjambon/blog.git blog.gh-pages`
 
