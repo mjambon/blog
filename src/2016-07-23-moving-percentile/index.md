@@ -119,7 +119,7 @@ The chart below shows our sample signal that was generated randomly in
 
 * phase 1 (0-999): Uniform(0,1); expected 0.9-percentile = 0.9
 * phase 2 (1000-1999): Uniform(2,4); expected 0.9-percentile = 3.8
-* phase 3 (2000-3999): Uniform(0,1); expected 0.9 percentile = 0.9
+* phase 3 (2000-2999): Uniform(0,1); expected 0.9 percentile = 0.9
 
 The output for window-based percentile estimators and for our moving
 percentile are shown here:
