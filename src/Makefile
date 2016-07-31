@@ -4,7 +4,8 @@ ARTICLES = \
   2015-01-03-universal-career-advice \
   2015-11-08-deep-vs-fast-thinking \
   2016-07-23-moving-percentile \
-  2016-07-24-definitions-of-life
+  2016-07-24-definitions-of-life \
+  2016-07-30-product-ideas
 
 HTMLDIR = ../html
 HTML = \

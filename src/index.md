@@ -21,6 +21,7 @@ martin@mjambon.com
 Posts
 -----
 
+* [Product ideas](2016-07-30-product-ideas)
 * [Windowless percentile tracking](2016-07-23-moving-percentile)
 * [Definitions of life](2016-07-24-definitions-of-life)
 * [Deep vs. fast thinking: a synchronization problem](2015-11-08-deep-vs-fast-thinking)
