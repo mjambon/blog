@@ -1,0 +1,15 @@
+#! /bin/bash
+set -e
+
+srcdir="$1"
+dstdir="$2"
+
+if [ -d "$srcdir" ]; then
+	mkdir -p "$dstdir"
+	for src in "$srcdir"/*.dot; do
+		dst="$dstdir"/$(basename "$src" .dot).svg
+		if ! test -f "$dst" || test "$src" -nt "$dst"; then
+			dotpp < "$src" | dot -Tsvg -o "$dst"
+		fi
+	done
+fi

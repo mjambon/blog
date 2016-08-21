@@ -12,6 +12,8 @@ HTML = \
   $(HTMLDIR)/index.html \
   $(addprefix $(HTMLDIR)/, $(addsuffix /index.html, $(ARTICLES)))
 
+UTILDIR = ../util
+
 .PHONY: default all html css clean
 default: all
 all:
@@ -24,11 +26,13 @@ html: $(HTML)
 $(HTMLDIR)/index.html: index.md Makefile head.html
 	pandoc $< -o $@ -t html5 -s -c blog.css -H head.html
 
-$(HTMLDIR)/%/index.html: %/index.md Makefile head.html footer.html
+$(HTMLDIR)/%/index.html: %/index.md %/dot/* %/img/* \
+                         Makefile head.html footer.html
 	mkdir -p $(dir $@)
-	if [ -d $(dir $<)/img ]; then cp -a $(dir $<)/img $(dir $@)/; fi
+	PATH=$(UTILDIR):$(PATH) render-graphs "$(dir $<)/dot" "$(dir $<)/img"
 	pandoc $< -o $@ -t html5 -s --mathjax \
     -c ../blog.css -A footer.html -H head.html
+	if [ -d $(dir $<)/img ]; then cp -a $(dir $<)/img $(dir $@)/; fi
 
 clean:
 	rm -f *~ */*~ */img/*~

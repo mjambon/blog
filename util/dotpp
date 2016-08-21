@@ -1,0 +1,16 @@
+#! /bin/bash
+
+# Preprocess a dot file to support long edges and backward edges:
+#
+# Input                         Output
+#
+# a ----------> b               a -> b
+# a ---> b ---> c               a -> b -> c
+# a ----------- b               a -- b
+# a <--- b                      b -> a
+# a <- b <- c                   UNSUPPORTED
+# "hello world" <---- " "       " " -> "hello world"
+#
+
+sed -e 's/\([<-]\)-*\([>-]\)/\1\2/g' \
+    -e 's/\([^ <-][^<-]*\)[ ]*<--*[ ]*\([^ ].*\)$/\2 -> \1/'
