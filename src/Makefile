@@ -5,35 +5,50 @@ ARTICLES = \
   2015-11-08-deep-vs-fast-thinking \
   2016-07-23-moving-percentile \
   2016-07-24-definitions-of-life \
-  2016-07-30-product-ideas
+  2016-07-30-product-ideas \
+  2016-08-20-agi-project-status-2016
 
 HTMLDIR = ../html
+
 HTML = \
   $(HTMLDIR)/index.html \
   $(addprefix $(HTMLDIR)/, $(addsuffix /index.html, $(ARTICLES)))
 
-UTILDIR = ../util
+IMG = $(wildcard */img)
+DOT = $(wildcard */dot)
 
-.PHONY: default all html css clean
+UTILDIR = ../util
+export PATH := $(UTILDIR):$(PATH)
+
+.PHONY: default all html img graphs css clean
 default: all
 all:
 	mkdir -p ../html
 	cp ../css/blog.css $(HTMLDIR)
-	$(MAKE) html
+	$(MAKE) html img graphs
 
 html: $(HTML)
+
+img:
+	for x in $(IMG); do \
+    mkdir -p $(HTMLDIR)/$$x; \
+    cp -u $$x/* $(HTMLDIR)/$$x/; \
+  done
+
+graphs:
+	for x in $(DOT); do \
+    render-graphs "$$x" "$(HTMLDIR)/$$(dirname $$x)/img"; \
+  done
 
 $(HTMLDIR)/index.html: index.md Makefile head.html
 	pandoc $< -o $@ -t html5 -s -c blog.css -H head.html
 
-$(HTMLDIR)/%/index.html: %/index.md %/dot/* %/img/* \
+$(HTMLDIR)/%/index.html: %/index.md \
                          Makefile head.html footer.html
 	mkdir -p $(dir $@)
-	PATH=$(UTILDIR):$(PATH) render-graphs "$(dir $<)/dot" "$(dir $<)/img"
 	pandoc $< -o $@ -t html5 -s --mathjax \
     -c ../blog.css -A footer.html -H head.html
-	if [ -d $(dir $<)/img ]; then cp -a $(dir $<)/img $(dir $@)/; fi
 
 clean:
-	rm -f *~ */*~ */img/*~
+	rm -f *~ */*~ */img/*~ */dot/*~
 	rm -rf $(HTMLDIR)
