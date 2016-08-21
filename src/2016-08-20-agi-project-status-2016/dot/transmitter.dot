@@ -1,0 +1,14 @@
+digraph {
+  rankdir = LR
+
+  node [ label = "", shape = "square" ]
+  input [ label = "input\nnode" ]
+
+  node [ label = "", shape = "square", orientation = "45" ]
+  state [ label = "module with\nempty state {}" ]
+
+  node [ label = "", shape = "triangle", orientation = "-90" ]
+  output [ label = "output\nnode" ]
+
+  output -> state -> input
+}

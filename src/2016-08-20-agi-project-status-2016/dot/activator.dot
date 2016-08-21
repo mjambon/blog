@@ -1,0 +1,22 @@
+digraph {
+  rankdir = LR
+
+  node [label="", shape="square"]
+  input
+
+  node [ label = "", shape = "square", orientation = "45" ]
+  state [ label = "{0, 1}" ]
+
+  node [ label = "", shape = "triangle", orientation = "-90" ]
+  output0
+  output1
+
+  subgraph {
+    rank = same; output0; output1;
+  }
+
+  output0 -> state [ label = "set 0" ]
+  output1 -> state [ label = "set 1" ]
+
+             state -> input [ label = "if 1" ]
+}
