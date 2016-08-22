@@ -1,0 +1,51 @@
+digraph {
+  rankdir = LR
+
+  node [ label = "", shape = circle, margin = 0 ]
+  node0 [ label = "dominant\nnode", style = filled, color = lightgrey ]
+
+  node [ label = "", shape = triangle,
+         orientation = -90, regular = true ]
+  action_output
+
+  subgraph cluster_activity_fb {
+    node [ label = "", shape = square ]
+    activity_fb_input
+
+    node [ label = "", shape = triangle,
+           orientation = -90, regular = true ]
+    activity_fb_output
+
+    node [ label = "", shape = square, orientation = 45 ]
+    activity_fb_state
+
+    activity_fb_output -> activity_fb_state -> activity_fb_input
+
+    label = "activity feedback"
+  }
+
+  subgraph cluster_action_fb {
+    node [ label = "", shape = square, orientation = 0 ]
+    action_fb_input
+
+    node [ label = "", shape = square, orientation = 45 ]
+    action_fb_state
+
+    action_fb_state -> action_fb_input
+
+    label = "action feedback"
+  }
+
+  node [ label = "", shape = square, orientation = 45 ]
+  action_state
+
+  node [ label = "", shape = rectangle, orientation = 0, color = white ]
+  other_effects [ label = "effects" ]
+
+  node0 -> activity_fb_output [ label = "automatic\nfeedback\naction",
+                                style = dashed ]
+
+  node0 -> action_output [ label = "learned\naction" ]
+           action_output -> action_state -> other_effects
+           action_output -> action_fb_state [ style = dashed ]
+}

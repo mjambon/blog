@@ -1,0 +1,26 @@
+digraph {
+  rankdir = LR
+
+  node [ label = "", shape = circle ]
+  node0
+
+  subgraph cluster_reminiscence {
+
+    node [ label = "", shape = triangle,
+           orientation = -90, regular = true ]
+    output
+
+    node [ label = "", shape = square, orientation = 45 ]
+    state
+
+    node [ label = "", shape = square, orientation = 0 ]
+    input
+
+    output -> state [ label = "artificial activation" ]
+              state -> input
+
+    label = "automatic reminiscence module"
+  }
+
+  node0 -> state [ label = "natural activation", style = dashed ]
+}

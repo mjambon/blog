@@ -23,3 +23,24 @@ Toggle or 2-state round robin:
 
 <img src="img/toggle.svg"
      alt="Toggle module"/>
+
+Automatic IO modules
+--------------------
+
+Automatic activity feedback and action feedback:
+
+<img src="img/activity-feedback.svg"
+     alt="Automatic activity and action feedback"/>
+
+Reminiscence:
+
+<img src="img/reminiscence.svg"
+     alt="Reminiscence"/>
+
+For each once-dominant node, a reminiscence module is created as shown
+above. Each time the node is active again (dominant or not), the input
+node is activated. That same input node can be activated via a
+dedicated output node chosen by any dominant node. As a result, the
+input node is always active one tick after the original node and can
+also be activated artificially, triggering the same effects as a
+natural activation.

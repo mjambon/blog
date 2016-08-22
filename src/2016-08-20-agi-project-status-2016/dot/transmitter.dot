@@ -7,7 +7,8 @@ digraph {
   node [ label = "", shape = "square", orientation = "45" ]
   state [ label = "module with\nempty state {}" ]
 
-  node [ label = "", shape = "triangle", orientation = "-90" ]
+  node [ label = "", shape = "triangle",
+         orientation = "-90", regular = "true" ]
   output [ label = "output\nnode" ]
 
   output -> state -> input
