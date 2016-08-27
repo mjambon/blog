@@ -1,38 +1,33 @@
-AGI project status, 2016
-========================
+% AGI project status, 2016
+% Martin Jambon
+% August 2016
 
-Sample IO modules
------------------
+<!-- toc -->
 
-A simple feedback loop, the transmitter:
+# Motivations
 
-<img src="img/transmitter.svg"
-     alt="Transmitter module"/>
+# Computational model
 
-Single-bit state:
+## Discrete time
 
-<img src="img/single-bit-state.svg"
-     alt="Single-bit state module"/>
+## One node per abstraction
 
-Activator:
+# Architecture
 
-<img src="img/activator.svg"
-     alt="Activator module"/>
+## Perception
 
-Toggle or 2-state round robin:
+## Output and reinforcement
 
-<img src="img/toggle.svg"
-     alt="Toggle module"/>
+# Sample internal IO modules
 
-Automatic IO modules
---------------------
+## Automatic IO modules
 
-Automatic activity feedback and action feedback:
+### Automatic activity feedback and action feedback
 
 <img src="img/activity-feedback.svg"
      alt="Automatic activity and action feedback"/>
 
-Reminiscence:
+### Reminiscence
 
 <img src="img/reminiscence.svg"
      alt="Reminiscence"/>
@@ -44,3 +39,33 @@ dedicated output node chosen by any dominant node. As a result, the
 input node is always active one tick after the original node and can
 also be activated artificially, triggering the same effects as a
 natural activation.
+
+## Optional IO modules
+
+### A simple feedback loop, the transmitter
+
+<img src="img/transmitter.svg"
+     alt="Transmitter module"/>
+
+### Single-bit state
+
+<img src="img/single-bit-state.svg"
+     alt="Single-bit state module"/>
+
+### Activator
+
+<img src="img/activator.svg"
+     alt="Activator module"/>
+
+### Toggle or 2-state round robin
+
+<img src="img/toggle.svg"
+     alt="Toggle module"/>
+
+# Test environments
+
+## Testing pure pattern identification: small B&W images
+
+## Testing reinforcement: reconstruct arbitrary topologies
+
+## Full test: competition for resources on a 2D grid

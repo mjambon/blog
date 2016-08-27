@@ -46,8 +46,14 @@ $(HTMLDIR)/index.html: index.md Makefile head.html
 $(HTMLDIR)/%/index.html: %/index.md \
                          Makefile head.html footer.html
 	mkdir -p $(dir $@)
-	pandoc $< -o $@ -t html5 -s --mathjax \
-    -c ../blog.css -A footer.html -H head.html
+	options=""; \
+  if grep -q '<!-- *toc *-->' $< ; then \
+    options="$$options --toc --toc-depth=5 -N"; \
+  fi; \
+  pandoc $< -o $@ \
+    -f markdown+pandoc_title_block -t html5 \
+    -s --mathjax \
+    -c ../blog.css -A footer.html -H head.html $$options
 
 clean:
 	rm -f *~ */*~ */img/*~ */dot/*~
