@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   width="1026.8354"
+   height="561.25732"
+   id="svg2">
+  <defs
+     id="defs4">
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Lstart"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         id="path3884"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Lend"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         id="path3887"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Lend-9"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         id="path3887-5"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Lend-6"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         id="path3887-3"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Lend-6-6"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         id="path3887-3-8"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-6.5,-395.45813)"
+     id="layer1">
+    <rect
+       width="68.571426"
+       height="68.571426"
+       x="69.428581"
+       y="577.21936"
+       id="rect3757"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <rect
+       width="68.571426"
+       height="68.571426"
+       x="70.000008"
+       y="737.50507"
+       id="rect3757-3"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="m 515.71429,365.52304 a 137.85715,105.71429 0 1 1 -275.71429,0 137.85715,105.71429 0 1 1 275.71429,0 z"
+       transform="translate(-27.142857,338.2677)"
+       id="path3777"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="m 515.71429,365.52304 a 137.85715,105.71429 0 1 1 -275.71429,0 137.85715,105.71429 0 1 1 275.71429,0 z"
+       transform="translate(286.71428,335.41057)"
+       id="path3777-8"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="m 825.21744,285.97333 0,-80.90055 70.06192,40.45028 z"
+       transform="translate(50.571429,373.12484)"
+       id="path3797"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="m 825.21744,285.97333 0,-80.90055 70.06192,40.45028 z"
+       transform="translate(50.32303,531.69627)"
+       id="path3797-5"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <image
+       xlink:href="data:image/png;base64,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
+cjz5+gmLX0L8WJ2YHgAAAABJRU5ErkJggg==
+"
+       x="142.28572"
+       y="546.93365"
+       width="31.428574"
+       height="308"
+       id="image3855"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu Mono;-inkscape-font-specification:Ubuntu Mono" />
+    <image
+       xlink:href="data:image/png;base64,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 cjz5+gmLX0L8WJ2YHgAAAABJRU5ErkJggg== "
+       x="-869.42871"
+       y="554.36212"
+       width="31.428574"
+       height="308"
+       transform="scale(-1,1)"
+       id="image3855-5"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu Mono;-inkscape-font-specification:Ubuntu Mono" />
+    <path
+       d="m 492.09339,703.79075 28.76375,0"
+       id="path3878"
+       style="fill:none;stroke:#000000;stroke-width:1.1585803px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)" />
+    <path
+       d="m 806.76098,708.07647 28.76375,0"
+       id="path3878-5"
+       style="fill:none;stroke:#000000;stroke-width:1.1585803px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)" />
+    <path
+       d="m 178.47527,700.93361 28.76375,0"
+       id="path3878-6"
+       style="fill:none;stroke:#000000;stroke-width:1.1585803px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)" />
+    <g
+       transform="matrix(1.0620803,0,0,1,-64.374283,0)"
+       id="g4600">
+      <path
+         d="M 950,468.3802 C 1152.4429,657.36945 655.68764,642.66591 535.71429,642.66591"
+         transform="translate(0,308.2677)"
+         id="path4390"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         d="M 123.96856,776.64786 C -78.474374,965.63711 418.28092,950.93361 538.25427,950.93361"
+         id="path4390-9"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart)" />
+    </g>
+    <text
+       x="62.505581"
+       y="538.93359"
+       id="text4604"
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"><tspan
+         x="62.505581"
+         y="538.93359"
+         id="tspan4606">External</tspan><tspan
+         x="62.505581"
+         y="563.93359"
+         id="tspan4608">inputs</tspan></text>
+    <text
+       x="64.127792"
+       y="699.505"
+       id="text4610"
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"><tspan
+         x="64.127792"
+         y="699.505"
+         id="tspan4612">Internal</tspan><tspan
+         x="64.127792"
+         y="724.505"
+         id="tspan4614">inputs</tspan></text>
+    <text
+       x="255.42856"
+       y="709.505"
+       id="text4616"
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"><tspan
+         x="255.42856"
+         y="709.505"
+         id="tspan4618">Pattern recognition</tspan></text>
+    <text
+       x="666.66571"
+       y="394.09448"
+       transform="translate(0,308.2677)"
+       id="text4620"
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"><tspan
+         x="666.66571"
+         y="394.09448"
+         id="tspan4622">Mapping from patterns</tspan><tspan
+         x="666.66571"
+         y="419.09448"
+         id="tspan4624">to actions</tspan></text>
+    <text
+       x="955.14288"
+       y="564.36218"
+       id="text4626"
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"><tspan
+         x="955.14288"
+         y="564.36218"
+         id="tspan4628">External</tspan><tspan
+         x="955.14288"
+         y="589.36218"
+         id="tspan4630">actions</tspan></text>
+    <text
+       x="961.71429"
+       y="726.64789"
+       id="text4632"
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"><tspan
+         x="961.71429"
+         y="726.64789"
+         id="tspan4634">Internal</tspan><tspan
+         x="961.71429"
+         y="751.64789"
+         id="tspan4636">actions</tspan></text>
+    <path
+       d="m 12,613.79075 c 51.428571,0 52.857143,0 52.857143,0"
+       id="path4638"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 1;stroke-dashoffset:0;marker-end:url(#Arrow1Lend-6)" />
+    <path
+       d="m 947.35048,618.34023 c 51.42858,0 52.85712,0 52.85712,0"
+       id="path4638-4"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1, 1;stroke-dashoffset:0;marker-end:url(#Arrow1Lend-6)" />
+    <text
+       x="322.57144"
+       y="509.79077"
+       id="text4852"
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"><tspan
+         x="322.57144"
+         y="509.79077"
+         id="tspan4856">1. Identify the known pattern</tspan><tspan
+         x="322.57144"
+         y="534.79077"
+         id="tspan4866">most specific</tspan><tspan
+         x="322.57144"
+         y="559.79077"
+         id="tspan4870">to the current situation.</tspan><tspan
+         x="322.57144"
+         y="584.79077"
+         id="tspan4943">Grow the pattern map.</tspan></text>
+    <text
+       x="385.5401"
+       y="423.65344"
+       id="text4852-8"
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"><tspan
+         x="385.5401"
+         y="423.65344"
+         id="tspan4941">2. Pick an action for the dominant</tspan><tspan
+         x="385.5401"
+         y="448.65344"
+         id="tspan4964">pattern from promising candidates</tspan></text>
+    <text
+       x="921.71429"
+       y="524.93359"
+       id="text4907"
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"><tspan
+         x="921.71429"
+         y="524.93359"
+         id="tspan4909">3. Perform the action.</tspan></text>
+    <text
+       x="685.42853"
+       y="429.21936"
+       id="text4911"
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"><tspan
+         x="685.42853"
+         y="429.21936"
+         id="tspan4919">4. N ticks later, adjust</tspan><tspan
+         x="685.42853"
+         y="454.21936"
+         id="tspan4925">connections between</tspan><tspan
+         x="685.42853"
+         y="479.21936"
+         id="tspan4921">pattern and candidate</tspan><tspan
+         x="685.42853"
+         y="504.21936"
+         id="tspan4927">actions based on global</tspan><tspan
+         x="685.42853"
+         y="529.21936"
+         id="tspan4929">satisfaction.</tspan><tspan
+         x="685.42853"
+         y="554.21936"
+         id="tspan4935">Adjust topology</tspan><tspan
+         x="685.42853"
+         y="579.21936"
+         id="tspan4937">of the action map.</tspan></text>
+  </g>
+</svg>

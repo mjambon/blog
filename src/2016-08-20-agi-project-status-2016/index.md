@@ -14,6 +14,11 @@
 
 # Architecture
 
+## Overview
+
+<img src="img/overview.svg"
+     alt="Overview"/>
+
 ## Perception
 
 ## Output and reinforcement
