@@ -1,0 +1,8 @@
+digraph {
+  rankdir = LR
+
+  node [ shape = "circle" ]
+
+  { A B } -> C
+  { A C } -> D
+}
