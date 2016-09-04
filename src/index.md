@@ -21,7 +21,7 @@ martin@mjambon.com
 Posts
 -----
 
-* [Discrete ideas and discrete time](2016-09-03-discrete-indicators):
+* [Discrete concepts and discrete time](2016-09-03-discrete-indicators):
   A proposed basis for the design of engineerable intelligent systems
 * [Product ideas](2016-07-30-product-ideas)
 * [Windowless percentile tracking](2016-07-23-moving-percentile)

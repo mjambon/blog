@@ -1,5 +1,5 @@
-Discrete ideas and discrete time
-================================
+Discrete concepts and discrete time
+===================================
 
 _A proposed basis for the design of engineerable intelligent systems_
 
