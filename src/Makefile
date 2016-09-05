@@ -45,16 +45,19 @@ $(HTMLDIR)/index.html: index.md Makefile head.html
 	pandoc $< -o $@ -t html5 -s -c blog.css -H head.html
 
 $(HTMLDIR)/%/index.html: %/index.md \
-                         Makefile head.html footer.html
+                         Makefile head.html before-body.html after-body.html
 	mkdir -p $(dir $@)
 	options=""; \
   if grep -q '<!-- *toc *-->' $< ; then \
     options="$$options --toc --toc-depth=5 -N"; \
   fi; \
-  pandoc $< -o $@ \
+  date=$$(echo $@ | grep -o '[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]'); \
+  pandoc $< \
     -f markdown+pandoc_title_block -t html5 \
     -s --mathjax \
-    -c ../blog.css -A footer.html -H head.html $$options
+    -c ../blog.css -B before-body.html -A after-body.html -H head.html \
+    $$options \
+  | sed -e "s/@@DATE@@/$$date/g" > $@
 
 clean:
 	rm -f *~ */*~ */img/*~ */dot/*~

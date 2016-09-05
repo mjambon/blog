@@ -7,9 +7,8 @@ About me
 My name is Martin Jambon. I live with my family in the San Francisco
 Bay Area where I enjoy computer programming and the exceptional outdoors.
 
-I am one of the people behind [Esper](http://esper.com), a hybrid
-human-software service we're developing to assist executives around
-the clock.
+I am one of the people behind [Esper](http://esper.com), time
+management startup founded in 2013.
 
 martin@mjambon.com
 &bull; [Twitter](https://twitter.com/mjambon)

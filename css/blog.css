@@ -25,6 +25,14 @@ img {
   }
 }
 
+.menu a, .menu a:active, .menu a:visited {
+  color: #a0a0a0;
+}
+
+.header {
+  text-align: right;
+}
+
 .footer {
   margin-top: 4em;
   text-align: center;
