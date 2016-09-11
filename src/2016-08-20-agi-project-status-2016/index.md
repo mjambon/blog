@@ -63,7 +63,7 @@ environment, the proportion of individuals with this version of the
 gene will increase or decrease
 within the population, generation after generation. So it is
 possible to change a random line of code in a program and run the
-whole program in many possible scenarios. However, it is only very
+whole program in many possible scenarios. However, it is not only very
 slow to introduce new features or fix problems this way, it also
 results in incomprehensible source code that forces future engineers
 to adopt the same slow trial-and-error approach.
