@@ -14,35 +14,47 @@ This is a write-up of my current thoughts, approaches, and
 designs. While we don't have a working AGI system yet, it seems like a
 good idea to share the state of my research with others.
 
+# Our definition of general intelligence
+
 From the beginning my goal has been to come up with
 software running on commodity computers that demonstrates _some
-intelligent behavior_. As far as my goals here are concerned,
-I view intelligence as a binary property of systems that process
-information. I use the following definition:
+intelligent behavior_. It's not about rivaling humans at typical human
+activities such as playing games or classifying images. It's about
+demonstrating modest but real bits of general intelligence.
 
-> A system that interacts with the world via inputs and outputs is
-  intelligent if it is capable of setting and pursuing new
-  goals in a changing environment. A goal is characterized by an
-  internal state of some part of the system that remains constant
-  while the goal is being pursued, even if the environmental
-  conditions that triggered the goal no longer exist.
+We'll define general intelligence, or intelligence for short, within
+the following informal framework:
 
-A shorter formulation of this definition of intelligence would be
-"temporary stubbornness". It is the ability of a system to enter a
-reversible state in which the output is determined
-differently than if the system were in another state,
-given the same input.
+1. Some definition of time.
+2. A world, that no information can penetrate.
+3. At a given date, the current state of the world can be computed
+   from a previous state of the world.
+4. Events, which are modifications of the state of the world occurring
+   at a given time.
+5. Some topology for the world, which allows us to associate
+   information and events with
+   locations. It defines some metric used to determine the proximity
+   of two locations.
+6. A system which is part of the world. The rest of the
+   world is called the environment.
+7. The system can acquire some information from the world via inputs.
+8. The system can modify the state of the world via outputs also known
+   as actions.
+9. An objective function that we want the system to minimize.
+10. The objective function is determined from the state of the
+   world.
+11. Values of the objective function may be fed as input to the system
+   but it is not a requirement.
+12. At any given date, some input events, some output events, and some
+    inputs of the objective function exist in proximity of each other.
+13. An observer can inspect the world and the system without
+    affecting them.
 
-Note that a goal doesn't have to be communicated by the system to the
-outside world. It is however necessary for an observer to access this
-information in order to determine whether a system is
-intelligent. This can be done by either directly inspecting
-the inside of a system while it's running and without disturbing it, or
-by only analyzing its regular output, possibly while controlling its
-input. Turing tests fall in the second category, where the system to
-evaluate is treated as a black box. While such tests are useful to
-demonstrate that a system works, they are useless to explain why a
-system doesn't work.
+Within this framework, we define general intelligence as:
+
+> A system's intelligence is measured by its ability to optimize new
+  objective functions, i.e. cope with new environments,
+  better than it used to at a younger age.
 
 # Considerations about the methodology
 
