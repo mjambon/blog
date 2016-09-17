@@ -113,6 +113,13 @@ environment. This matches the view that the human intelligence is
 determined by the brain, located in the human body which has clear
 physical boundaries.
 
+An intelligent system is fundamentally open as it exchanges
+information with its environment, by definition.
+By modifying the environment to improve its success, the system
+can become intimately dependent on it.
+Tools and cooperation are prime examples of co-evolution
+of an intelligent system and its environment.
+
 ### Tools
 
 Tools are external resources that are not typically treated as part of
@@ -121,10 +128,12 @@ environment by a system who learned to use those tools.
 
 ### Cooperation
 
-Other intelligent systems exist in the world and they benefit from
-working together. Unlike ant colonies, groups of humans are typically
-not considered as sharing a brain.
-Single humans without contacts with other humans,
+Cooperation can emerge when other intelligent systems exist in the
+world and they benefit from working together.
+Groups of humans are typically not considered as sharing a brain,
+despite living in organized societies with individuals having widely
+different roles. This is highly beneficial to the group.
+Indeed, single humans having to sruvive without contacts with other humans,
 even with some tools, tend to do much more poorly than as an organized
 group.
 
