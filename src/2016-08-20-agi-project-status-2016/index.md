@@ -106,7 +106,7 @@ I(t_0, t_1, t_2, E, S) =
    \lambda(t_1, t_2, E_1, S_1) - \lambda(t_1, t_2, E_1, S_0)
 $$
 
-## Criticism
+## Criticism of the system/environment duality
 
 Our framework is based on a separation between a system and its
 environment. This matches the view that the human intelligence is
@@ -137,12 +137,25 @@ Indeed, single humans having to sruvive without contacts with other humans,
 even with some tools, tend to do much more poorly than as an organized
 group.
 
-Those are reasons why a good, general definition of intelligence may
+### An acceptable compromise
+
+The expectation of tools and cooperation are reasons why a good,
+general definition of intelligence may
 not define a system as a clear-cut piece of the world.
 Instead, one might want to base a definition of intelligence
 on notions such as the time it takes to
 obtain information, regardless of whether this information is obtained
 by sensing, by reasoning, or by querying resources using some language.
+
+It seems that we could obtain a simpler definition of intelligence
+by eliminating the complex framework required to by the
+system/environment model, which we haven't even tried to define
+formally.
+
+Note that we may not need a formal definition of intelligence in order to
+design and implement software that achieves our goal of AGI. We'll
+stick with the system/environment model as it corresponds closely to
+how machines are defined and constructed.
 
 # Considerations about the methodology
 
