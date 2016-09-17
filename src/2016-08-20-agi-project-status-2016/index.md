@@ -22,6 +22,8 @@ intelligent behavior_. It's not about rivaling humans at typical human
 activities such as playing games or classifying images. It's about
 demonstrating modest but real bits of general intelligence.
 
+## Framework for defining and evaluating intelligence
+
 We'll define general intelligence, or intelligence for short, within
 the following informal framework:
 
@@ -31,30 +33,107 @@ the following informal framework:
    from a previous state of the world.
 4. Events, which are modifications of the state of the world occurring
    at a given time.
-5. Some topology for the world, which allows us to associate
-   information and events with
-   locations. It defines some metric used to determine the proximity
-   of two locations.
-6. A system which is part of the world. The rest of the
+5. A system which is part of the world. The rest of the
    world is called the environment.
-7. The system can acquire some information from the world via inputs.
-8. The system can modify the state of the world via outputs also known
+6. The system can acquire some information from the world via inputs.
+7. The system can modify the state of the world via outputs also known
    as actions.
-9. An objective function that we want the system to minimize.
-10. The objective function is determined from the state of the
-   world.
-11. Values of the objective function may be fed as input to the system
-   but it is not a requirement.
-12. At any given date, some input events, some output events, and some
-    inputs of the objective function exist in proximity of each other.
+8. An objective function that we want the system to minimize, i.e.
+   how well the system is doing, given as a real number ranging from 0 to 1.
+9. The objective function is determined from the state of the
+    world.
+10. Values of the objective function may be fed as input to the system
+    but it is not a requirement.
+11. Some correlation between input events and inputs of the objective
+    function. This can achieved by encoding values of the objective
+    function into some suitable input for the system.
+12. Some influence of the outputs on the inputs of the objective
+    function.
 13. An observer can inspect the world and the system without
     affecting them.
 
 Within this framework, we define general intelligence as:
 
-> A system's intelligence is measured by its ability to optimize new
-  objective functions, i.e. cope with new environments,
-  better than it used to at a younger age.
+> A system's intelligence is measured by how fast it learns to
+  optimize the objective function in an arbitrarily new environment,
+  compared to a younger version of itself.
+
+An example of an arbitrarily complex environment is a setup
+where multiple systems compete for a resource, such as food.
+Each system views the
+other systems as part of the environment. When a system's objective
+function, or health, becomes too low, it is removed from the
+environment and the healthiest of the systems is cloned.
+
+## Sample method for evaluating intelligence
+
+In our framework, the world $W$ is partitioned into a system $S$
+and an environment $E$:
+
+$$
+W = S \oplus E
+$$
+
+The state of both the system and the
+environment changes over time, but their interface remains compatible.
+This means that any state of the system can be combined with any state
+of the environment, for evaluation purposes.
+
+Let $\phi(t_0, E_0, S_0, t) \in [0,1]$ denote the application of the objective
+function $\phi$ to the initial conditions $t_0$, $E_0$, and $S_0$, and
+to the date $t$. $t_0$ is the origin of time, $E_0$ is the initial
+state of the environment $E$, and $S_0$ is the initial state of the
+system $S$.
+
+Given $t_1$ and $t_2$ future dates such that $t_0 < t_1 < t_2$, the
+performance $\lambda$ of the system from $t_1$ to $t_2$ is given by:
+
+$$
+\lambda(t_1, t_2, E_1, S_1) =
+   \int_{t_1}^{t_2} \phi(t_1, E_1, S_1, t) dt
+$$
+
+where $E_1$ is the state of the environment at $t_1$ and likewise,
+$S_1$ is the state of the system at $t_1$.
+
+The intelligence $I$ of the system $S$
+can be defined by comparing the performance
+of the naive system $S_0$ with the more experienced system $S_1$
+starting in the new environment $E_1$.
+
+$$
+I(t_0, t_1, t_2, E, S) =
+   \lambda(t_1, t_2, E_1, S_1) - \lambda(t_1, t_2, E_1, S_0)
+$$
+
+## Criticism
+
+Our framework is based on a separation between a system and its
+environment. This matches the view that the human intelligence is
+determined by the brain, located in the human body which has clear
+physical boundaries.
+
+### Tools
+
+Tools are external resources that are not typically treated as part of
+the intelligent system, but are key to a more efficient use of the
+environment by a system who learned to use those tools.
+
+### Cooperation
+
+Other intelligent systems exist in the world and they benefit from
+working together. Unlike ant colonies, groups of humans are typically
+not considered as sharing a brain.
+Single humans without contacts with other humans,
+even with some tools, tend to do much more poorly than as an organized
+group.
+
+Those are reasons why a good, general definition of intelligence may
+not define a system as a clear-cut piece of the world.
+Instead, one might want to base a definition of intelligence
+on notions such as the time it takes to
+obtain information, regardless of whether this information is obtained
+by sensing, by reasoning, or by querying resources using some language.
 
 # Considerations about the methodology
 
