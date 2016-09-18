@@ -106,6 +106,15 @@ I(t_0, t_1, t_2, E, S) =
    \lambda(t_1, t_2, E_1, S_1) - \lambda(t_1, t_2, E_1, S_0)
 $$
 
+According to this definition, a system is intelligent if from $t_0$
+to $t_1$ it learns something useful for dealing with the environment
+encountered from $t_1$ to $t_2$. A system that performs already well
+at $t_0$ but cannot learn anything new will not be considered
+intelligent even if it outperforms other systems for optimizing the
+objective function. Humans might refer to such individual as wise, but
+as far as we are concerned, it is no longer capable of general
+intelligence.
+
 ## Criticism of the system/environment duality
 
 Our framework is based on a separation between a system and its
