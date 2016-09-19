@@ -1,4 +1,4 @@
-% 2016 notes on AGI project
+% AGI research snapshot, 2016
 % Martin Jambon
 % August 2016
 
