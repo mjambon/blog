@@ -14,7 +14,7 @@ This is a write-up of my current thoughts, approaches, and
 designs. While we don't have a working AGI system yet, it seems like a
 good idea to share the state of my research with others.
 
-# Our definition of general intelligence
+# A practical definition of general intelligence
 
 From the beginning my goal has been to come up with
 software running on commodity computers that demonstrates _some
@@ -169,6 +169,67 @@ Note that we may not need a formal definition of intelligence in order to
 design and implement software that achieves our goal of AGI. We'll
 stick with the system/environment model as it corresponds closely to
 how machines are defined and constructed.
+
+# Other useful definitions of intelligence
+
+## Intuition
+
+_General intelligence is the ability to become familiar with arbitrary
+structures._
+
+This view focuses on two main notions. The first one is that knowledge
+about the world can be modeled as some sort of graph that relates
+different concepts. The second notion is that not only any kind of
+knowledge can be acquired, but also that with enough exposure to the
+relevant information, an intelligent system can become capable of quickly
+making predictions and turning them into assumptions. For example,
+when seeing four fingers from a partially hidden human hand, one assumes
+unconsciously that there is a fifth finger hidden.
+
+In contrast, statistical learning or machine learning would lack the
+mechanisms allowing it to make good predictions for arbitrary data,
+hence the more restricted definition of learning:
+
+_Learning is the ability to become familiar with some structures._
+
+Cognitive activities such as imagination, intuition, and unconscious
+bias are related and are characteristic of all systems capable of
+learning.
+Among them, systems capable of general intelligence distinguish
+themselves by the ability, given enough time, to correct or
+override unconscious bias.
+
+## Self-control
+
+_General intelligence is characterized by the ability to develop
+new behaviors and to adopt or maintain a behavior independently from the
+immediate environment._
+
+This characterization of intelligence is not a full definition, but
+more of a necessary condition of how a system should work internally
+for the system's creators to maintain a hope of achieving general
+intelligence.
+
+A related definition mentions goals rather than behaviors but we treat
+them as roughly equivalent. A behavior is a way of a
+achieving a goal. It can be seen as the activation of a subsystem and
+the maintenance of this state for as long as the system is pursuing
+the goal. By preferring the term behavior over goal, we wish to leave
+aside the questions of consciousness and free will.
+
+A simple example is the decision for an animal to climb a mountain even
+though it requires a lot of energy. A naive individual might simply
+try to avoid going up whenever possible because it consumes energy,
+which requires finding more food. A more experienced individual may
+however push itself
+to go against its original instinct to not go uphill, and this would
+require a behavior or goal that could be called
+"exploration". A long-term benefit would be to find a more prosperous
+valley on the other side of the mountain. Achieving this result
+necessitates adopting an originally unintuitive exploratory behavior.
+Once the whole mountain range has been explored, though, the system
+should switch to another behavior such as exploiting the newfound
+resources, while not spending too much effort climbing mountains.
 
 # Considerations about the methodology
 
