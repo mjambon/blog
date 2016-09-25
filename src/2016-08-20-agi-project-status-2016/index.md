@@ -329,7 +329,7 @@ may not exist.
 
 The economy rule is implemented by inactivating all previously-active
 nodes unless they are activated by other nodes, of which at least one
-of them was previously active.
+was previously active.
 
 The number $\lvert S\rvert$ of nodes needed to determine the state of
 another node is bounded. It is 1 or 2 in our current design.
