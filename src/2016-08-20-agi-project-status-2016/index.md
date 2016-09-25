@@ -272,9 +272,70 @@ manually designing components of similar structure, whenever possible.
 
 # Computational model
 
+For our system, as well as test environments, we prefer
+architectures and models that are as discrete as possible. It makes
+computation more straightforward with digital computers and it eliminates
+the need for debatable thresholds to determine the boundaries of
+various components.
+
 ## Discrete time
 
+Our system's unit of time, or tick, is defined by one computation
+cycle. The actual physical time it takes for the system to perform a
+cycle may vary. As we will eventually be concerned with interacting
+with the physical world, we design our system such that a
+computation cycle can terminate within a fixed amount of physical
+time, i.e. real-time, given realistic hardware.
+
+In particular, a computation cycle will be defined such that it is
+trivial to decompose it into simple steps that can
+be performed in parallel, assuming uniform random-access memory
+(RAM).
+Thus, accessing data from anywhere in the system has a bounded, reasonable
+cost in physical time. RAM may be an area where modern computers
+already surpass biological brains and we will take advantage of it
+since our goal is not to simulate such brain.
+
 ## One node per abstraction
+
+Our system is made up of nodes of a small, fixed number of types. Nodes are
+connected together in certain ways to form a graph that allows
+information to propagate.
+
+A strong design principle that we follow is that once created and
+connected, the function of a node can be retraced by inspecting the
+structure of the graph.
+
+As a consequence, we design our system such that information
+propagates as an all-or-nothing signal along the edges of the graph.
+At a given time, a node is either active or inactive, never in an
+intermediate state. This is a fundamental difference with artificial neural
+networks (ANN).
+
+A possible benefit from propagating only binary
+information is that large inactive parts of the system can remain at
+rest, i.e. propagate only zeros, without requiring any
+computation. Only active nodes are involved in computing information to
+propagate as ones. This is what can call the economy rule.
+
+**Economy rule**: Given the subset $S$ of nodes stricly needed to determine
+whether some node $v$ should be active or inactive at the next cycle,
+all the nodes in $S$ being inactive implies that $v$ will be
+inactive.
+
+Sticking to the economy rule disallows gates that produce ones from
+only zeros, i.e. unary _not_ or _neither-of_ activation rules
+may not exist.
+
+The economy rule is implemented by inactivating all previously-active
+nodes unless they are activated by other nodes, of which at least one
+of them was previously active.
+
+The number $\lvert S\rvert$ of nodes needed to determine the state of
+another node is bounded. It is 1 or 2 in our current design.
+Therefore the cost of computing the next state of the nodes of the
+system is $O(\lvert A\rvert)$ when $A$ designates the set of
+active nodes at a given cycle, rather than the total number of nodes.
 
 # Architecture
 
