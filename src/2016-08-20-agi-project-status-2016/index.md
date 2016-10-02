@@ -323,7 +323,7 @@ whether some node $v$ should be active or inactive at the next cycle,
 all the nodes in $S$ being inactive implies that $v$ will be
 inactive.
 
-Sticking to the economy rule disallows gates that produce ones from
+Sticking to the economy rule disallows logic gates that produce ones from
 only zeros, i.e. unary _not_ or _neither-of_ activation rules
 may not exist.
 
@@ -341,8 +341,37 @@ active nodes at a given cycle, rather than the total number of nodes.
 
 ## Overview
 
+As envisioned, our system is made up of three major
+components:
+
+1. Pattern recognition subsystem: A built-in perception subsystem that reads
+   inputs and activates
+   internal nodes that represent concepts, i.e. patterns identified in
+   the input.
+2. Action optimizer: A built-in action subsystem whose role is to
+   connect internal nodes to optimal output nodes, given a built-in
+   objective function.
+3. Input-Output (IO) modules which create input nodes and output
+   nodes and can perform arbitrary computations and interactions with
+   the environment.
+
 <img src="img/overview.svg"
      alt="Overview"/>
+
+The inside of the system is what carries information from the input
+nodes (squares $\Box$) to the output nodes (triangles $\rhd$). It
+views input nodes and output nodes as unordered sets, with no
+_a priori_ knowledge of their role.
+
+Input nodes and output nodes can be more or less built-in, depending on
+the implementation.
+In any case, IO modules (3) are independent pieces of software that can
+create input nodes and output nodes freely, either during system
+initialization or later, dynamically. IO modules
+are responsible for activating and deactivating their input nodes, and
+they are supposed to read the binary state of the output nodes and do
+something with it.
+
 
 ## Perception
 
