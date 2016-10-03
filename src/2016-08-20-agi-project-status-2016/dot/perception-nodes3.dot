@@ -1,0 +1,40 @@
+digraph {
+  rankdir = LR
+
+  node [label = ""]
+  node [shape = circle]
+
+  {
+    node [shape = square]
+    A
+    B
+    C
+    D
+  }
+
+  {
+    node [style = invis]
+    A0
+    B0
+    C0
+    D0
+  }
+
+  {
+    edge [style = dashed]
+    A0 -> A
+    B0 -> B
+    C0 -> C
+    D0 -> D
+  }
+
+  { A B } -> AB
+  { A C } -> AC
+  { A D } -> AD
+  { B C } -> BC
+  { B D } -> BD
+  { C D } -> CD
+  { A AB } -> ABA
+  { B AB } -> BAB
+  { AC BD } -> ACBD
+}

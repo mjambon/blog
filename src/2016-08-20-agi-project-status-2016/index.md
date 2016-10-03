@@ -372,8 +372,129 @@ are responsible for activating and deactivating their input nodes, and
 they are supposed to read the binary state of the output nodes and do
 something with it.
 
-
 ## Perception
+
+### Input nodes and internal nodes
+
+The subsystem in charge of pattern identification or perception is
+made up of nodes. At a given cycle or tick of the system's clock, a
+node is either active or inactive. There are two kinds of nodes and
+they differ in the way they are activated. The input nodes, always
+represented by squares, are activated by IO modules. The other nodes
+are referred to as internal nodes or regular nodes and are activated
+by a pair of other nodes.
+
+The diagram below shows 4 input nodes and 3 internal nodes.
+
+<img src="img/perception-nodes1.svg"
+     alt="Sample nodes involved in perception"/>
+
+An internal node can be created from any pair of nodes. For instance
+it could be one input node and some other internal node:
+
+<img src="img/perception-nodes2.svg"
+     alt="Conjunction of input node and internal node"/>
+
+The slightly more complicated example below shows various ways to
+connect nodes.
+
+<img src="img/perception-nodes3.svg"
+     alt="Slighly more realistic sample nodes"/>
+
+It takes one tick of the clock to propagate information along an edge.
+An internal node $C$ constructed from nodes $(A,B)$
+is active at date $t$ if and only if
+nodes $A$ and $B$ are active at date $t-1$. It is inactive otherwise.
+
+Once an internal node is created, it will always receive information from the
+pair of nodes it was constructed from. It is an indicator of the
+current and recent input and implements a concept.
+
+### Redundancy issues
+
+Given some input nodes, infinitely many internal nodes can be
+constructed. The key of a successful design is to construct
+internal nodes that represent useful concepts or that are involved in
+the construction in useful concepts, without creating too many nodes
+that are either redundant or not useful.
+
+The diagram below shows how two internal nodes can be equivalent in
+the sense that their activity state is the same for any input. These
+are nodes denoted ABCD and ACBD, which are active at date $t$ iff each
+of the input nodes A, B, C, and D are active at date $t-2$.
+
+<img src="img/equivalent-nodes.svg"
+     alt="Equivalent nodes"/>
+
+More undesired redundancy could occur when multiple input nodes are
+equivalent. Since these input nodes are given and may not be removed
+from the system, we need a way to avoid producing redundant internal nodes.
+Here is such a case, where we assume that A and A' are always active at the
+same time. We do not want to end up with the following construction
+where AB and A'B are equivalent:
+
+<img src="img/correlated-input.svg"
+     alt="Highly correlated input"/>
+
+### Criteria that make an internal node worth creating
+
+At this point, the best idea we have about what makes a good internal
+node are those two properties:
+
+* No excessive correlation with any existing node
+* Frequent activity ahead of difficult situations
+
+The activity of a node is the sequence of states over time, i.e. a
+sequence of zeros and ones, where 1 represents an active state.
+
+We define the correlation of the activity of two nodes $A$ and $B$
+over a time window as the ratio of the frequency at which both nodes
+are active to the frequency at which at least one node is active:
+
+$$
+\mathrm{correlation(A, B)} =
+  \frac{\mathrm{frequency(A \wedge B)}}{\mathrm{frequency(A \vee B)}}
+$$
+
+Example:
+
+> A: 00010110 01101011  
+B: 00011010 01110010  
+$A \wedge B$: 00010010 01100010  
+$A \vee B$: 00011110 01111011  
+frequency($A$) = 8/16  
+frequency($B$) = 7/16  
+frequency($A \wedge B$) = 5/16  
+frequency($A \vee B$) = 10/16  
+correlation($A, B$) = 0.5
+
+Note that we could ignore all the data points where both nodes $A$ and
+$B$ are inactive. Extending the $A$ and $B$ samples with any number of zeros
+results in the same correlation of 0.5. e.g:
+
+>  A: 00010110 01101011 00000000 00000000 00000000  
+B: 00011010 01110010 00000000 00000000 00000000  
+correlation($A, B$) = 0.5
+
+Another criterion for deciding whether to create a node is its
+importance. The importance of a node can be captured by evaluating the
+degree of control of the system's objective function or mood following
+the activation of the node. The intuition is that such node can be a
+sign that some dramatic, hard-to-control changes in the environment
+are about to occur. Having such node gives us an opportunity to
+perform an action upon its activation, and it may help control the
+situation. We loosely refer to quick changes in the system's
+mood as stress.
+
+Given a system-global objective function referred to as mood or
+$\phi$, we define stress as follows over a time window $[t_1, t_2]$:
+
+$$
+\mathrm{stress}(t_1, t_2) =
+   \sum_{t = t_1}^{t_2-1} \lvert \phi_{t+1} - \phi_{t} \rvert
+$$
+
+### Outline of a growth mechanism
 
 ## Output and reinforcement
 

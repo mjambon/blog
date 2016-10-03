@@ -1,0 +1,22 @@
+digraph {
+  rankdir = LR
+
+  node [shape = circle]
+
+  {
+    node [shape = square]
+    A
+    B
+    C
+    D
+  }
+
+  { A B } -> AB
+  { C D } -> CD
+
+  { A C } -> AC
+  { B D } -> BD
+
+  { AB CD } -> ABCD
+  { AC BD } -> ACBD
+}

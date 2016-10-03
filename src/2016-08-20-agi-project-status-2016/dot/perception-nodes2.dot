@@ -1,0 +1,24 @@
+digraph {
+  rankdir = LR
+
+  node [label = ""]
+
+  node [shape = square]
+  A
+  node [ shape = circle ]
+
+  node [ style = invis ]
+  A0
+  B0
+  B1
+  node [ style = solid ]
+
+  edge [ style = dashed ]
+  A0 -> A
+  edge [ style = solid ]
+
+  B0 -> B
+  B1 -> B
+
+  { A B } -> AB
+}

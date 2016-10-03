@@ -1,0 +1,18 @@
+digraph {
+  rankdir = LR
+
+  node [shape = circle]
+
+  {
+    node [shape = square]
+    A1 [label = "A"]
+    A2 [label = "A'"]
+    B
+  }
+
+  A1B [label = "AB"]
+  A2B [label = "A'B"]
+
+  { A1 B } -> A1B
+  { A2 B } -> A2B
+}

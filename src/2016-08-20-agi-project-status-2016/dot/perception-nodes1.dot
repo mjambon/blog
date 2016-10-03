@@ -1,0 +1,41 @@
+digraph {
+  rankdir = LR
+  nodesep = 0
+
+  node [label = "", shape = square]
+  A
+  B
+  C
+  D
+
+  node [ label = "", style = invis ]
+  A0
+  B0
+  C0
+  D0
+  node [ style = solid ]
+
+  edge [ style = dashed, label = "" ]
+  A0 -> A
+  B0 -> B
+  C0 -> C
+  D0 -> D
+
+  node [ label = "", shape = circle ]
+
+  edge [ style = solid ]
+  { A B } -> AB
+  { C D } -> CD
+  { AB CD } -> ABCD
+
+  // Invisible nodes added to make the graph look balanced
+  edge [ style = invis ]
+  node [ style = invis ]
+  A -> Ax
+  B -> Bx
+  C -> Cx
+  D -> Dx
+  A_B -> AB
+  C_D -> CD
+  AB_CD -> ABCD
+}
