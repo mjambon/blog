@@ -462,7 +462,7 @@ J(\alpha(A), \alpha(B)) &=
   \frac{\lvert \alpha(A) \cap \alpha(B) \rvert}
        {\lvert \alpha(A) \cup \alpha(B) \rvert} \\
 &= \frac{\lvert \alpha(A) \cap \alpha(B) \rvert}
-        {\lvert \alpha(A) \rvert\
+        {\lvert \alpha(A) \rvert
          + \lvert \alpha(B) \rvert
          - \lvert \alpha(A) \cap \alpha(B) \rvert}
 \end{align}
