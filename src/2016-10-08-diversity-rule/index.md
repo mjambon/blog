@@ -57,36 +57,25 @@ Voters: Alice, Bob, Carlos, Dave, Eve
 
 ### Results from round 1
 
-Alice chose movie A.
-
-Bob chose movie B.
-
-Carlos chose movie B.
-
-Dave chose movie C.
-
+Alice chose movie A.  
+Bob chose movie B.  
+Carlos chose movie B.  
+Dave chose movie C.  
 Eve chose movie D.
 
 Candidate list: A, B, C, D
 
 ### Results from round 2
 
-Alice: A, C
-
-Bob: B
-
-Carlos: B, C
-
-Dave: A, B
-
+Alice: A, C  
+Bob: B  
+Carlos: B, C  
+Dave: A, B  
 Eve: D
 
-A: 2
-
-B: 3
-
-C: 2
-
+A: 2  
+B: 3  
+C: 2  
 D: 1
 
 The winner is B with 3 votes and the loser is D with 1 vote.
