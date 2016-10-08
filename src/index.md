@@ -20,6 +20,7 @@ martin@mjambon.com
 Posts
 -----
 
+* [Diversity rule: a voting system that accommodates minorities](2016-10-08-diversity-rule)
 * [Discrete concepts and discrete time](2016-09-03-discrete-indicators):
   A proposed basis for the design of engineerable intelligent systems
 * [Product ideas](2016-07-30-product-ideas)
