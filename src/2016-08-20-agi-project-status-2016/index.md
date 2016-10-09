@@ -495,12 +495,24 @@ situation. We loosely refer to quick changes in the system's
 mood as stress.
 
 Given a system-global objective function referred to as mood or
-$\phi$, we define stress as follows over a time window $[t_1, t_2]$:
+$\phi$, we define stress over a time window $[t_1, t_2]$ as the
+mean vertical speed:
 
 $$
-\mathrm{stress}(t_1, t_2) =
-   \sum_{t = t_1}^{t_2-1} \lvert \phi_{t+1} - \phi_{t} \rvert
+\mathrm{stress}(\phi)= E(\lvert \phi' \rvert)
 $$
+
+i.e.
+
+$$
+\mathrm{stress}(\phi, t_1, t_2) =
+  \frac{
+     \sum_{t = t_1}^{t_2} \lvert \phi_{t} - \phi_{t-1} \rvert
+   }
+   {t_2 - t_1}
+$$
+
+
 
 ### Outline of a growth mechanism
 
