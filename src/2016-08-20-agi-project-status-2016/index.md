@@ -512,9 +512,50 @@ $$
    {t_2 - t_1}
 $$
 
-
-
 ### Outline of a growth mechanism
+
+An input node or an internal node holds a binary reversible state that
+we call maturity. An internal node can only be created from two mature
+nodes.
+
+A node $A$ is mature iff the following properties hold:
+
+* $A$ has ever been active some minimum number of times,
+  i.e. $|\alpha(A)|$ is greater than some threshold.
+* When $A$ is active, it is also the dominant node frequently enough.
+  The definition of a dominant node is given below.
+
+At any given time, one of the active nodes is designated as the
+dominant node. The dominant node is meant to represent the concept
+that is most relevant to the current situation.
+
+There is no strict definition of the rules for choosing a dominant
+node at this time. A possibility is to compute a score for each active
+node and choose the node with the highest score. Such score would
+combine:
+
+1. the average historical stress following the activation of the node
+   over some period of time;
+2. the inverse of the frequency at which the node is active and not
+   dominant.
+
+Term (1) is meant to favor nodes that are more important because a
+difficult situation is likely to follow. Term (2) is meant to favor
+the nodes most specific to the current situation while preferring
+nodes that have been dominant before, giving them a first-mover
+advantage.
+
+The construction rule could be as follows: At each cycle, the score
+used to determine the dominant node is computed for each active
+node. A new node is created from the top two nodes $D_1$ (dominant)
+and $D_2$ iff the following conditions hold:
+
+* $D_1$ and $D_2$ are both mature;
+* $0.5 \le J(\alpha(D_1), \alpha(D_2)) < 1$
+
+The computation of $\alpha(D_1)$ and $\alpha(D_2)$ is delicate since
+the obvious, naive approach would consist in memorizing all the dates
+at which each node was ever active.
 
 ## Output and reinforcement
 
