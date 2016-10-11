@@ -556,9 +556,9 @@ and $D_2$ iff the following conditions hold:
 The computation of $\alpha(D_1)$ and $\alpha(D_2)$ is delicate since
 the obvious, naive approach would consist in memorizing all the dates
 at which each node was ever active, which could take too much memory.
-A simple workaround is to only memorize the last 100 dates or so as a
-compact skip list, and work out an estimate of the Jaccard index $J$ using
-only this recent data.
+A simple workaround is to only memorize the last 100 dates or so
+using delta encoding to reduce space requirements, and work out an
+estimate of the Jaccard index $J$ using only this recent data.
 
 ## Output and reinforcement
 
