@@ -495,19 +495,13 @@ situation. We loosely refer to quick changes in the system's
 mood as stress.
 
 Given a system-global objective function referred to as mood or
-$\phi$, we define stress over a time window $[t_1, t_2]$ as the
-mean vertical speed:
-
-$$
-\mathrm{stress}(\phi)= E(\lvert \phi' \rvert)
-$$
-
-i.e.
+$\phi$, we define stress over a time window $[t_1, t_2] \subset
+\mathbb{Z}$ as the total variation of $\phi$ divided by the window length:
 
 $$
 \mathrm{stress}(\phi, t_1, t_2) =
   \frac{
-     \sum_{t = t_1}^{t_2} \lvert \phi_{t} - \phi_{t-1} \rvert
+     \sum_{t = t_1}^{t_2-1} \lvert \phi_{t+1} - \phi_{t} \rvert
    }
    {t_2 - t_1}
 $$
