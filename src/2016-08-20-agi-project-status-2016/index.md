@@ -556,6 +556,9 @@ estimate of the Jaccard index $J$ using only this recent data.
 
 ## Output and reinforcement
 
+<img src="img/funnel.svg"
+     alt="Idealized 2D funnel subgraph"/>
+
 # Sample internal IO modules
 
 ## Automatic IO modules
