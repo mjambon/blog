@@ -556,8 +556,39 @@ estimate of the Jaccard index $J$ using only this recent data.
 
 ## Output and reinforcement
 
+### Problem
+
+Given a set of nodes $V$ and a set of output nodes $W$, determine by
+trial-and-error a mapping from $V$ to $W$ that maximizes our global
+objective function $\phi$ over a period following each action picked
+from $W$.
+
+$V$ are internal nodes, which at a given instant are either active or
+inactive. Some or all active nodes from $V$ are allowed to
+perform an action triggered by an output node.
+Among the internal nodes, some are not yet permanently bound to a
+specific output node while others may have have established a stable
+connection to a particular output.
+
+The challenge is that initially the output nodes are not connected or
+clustered in regions. There is no _a priori_ knowledge of which pairs
+of output nodes are likely to produce similar outcomes. A simple
+example would be 10 output nodes, each corresponding to a specific
+speed of a vehicle in the set $\left\{ 0, 1, \dots, 9 \right\}$. In
+this simple case, we know that speeds closer to 5 are 4 and 6. However
+the system doesn't know this initially. We want the system to find out
+by itself that when some nodes from $V$ are equally successful with two
+outputs $w_1$ and $w_2$, this indicates that $w_1$ and $w_2$ are similar,
+for this specific level of success.
+
+### Desired result
+
 <img src="img/funnel.svg"
      alt="Idealized 2D funnel subgraph"/>
+
+### Outline of a possible solution
+
+### Dealing with high local dimensionality
 
 # Sample internal IO modules
 
