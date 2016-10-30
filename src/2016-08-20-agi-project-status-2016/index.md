@@ -583,8 +583,76 @@ for this specific level of success.
 
 ### Desired result
 
-<img src="img/funnel.svg"
-     alt="Idealized 2D funnel subgraph"/>
+We wish to connect a set $W$ of outputs into a labeled graph that can be used
+to quickly explore and find a good output for a given internal node in
+$V$. The graph shall be similar to a map, where the time it takes
+to follow an edge is constant and the label associated with the edge
+is the estimated distance between the nodes. The distance between two
+nodes $w_1$ and $w_2$ is denoted $d(w_1, w_2)$.
+
+Although output nodes typically don't belong to an Euclidean space,
+the metric may be **locally** compatible with a Euclidean space of some
+dimensionality. We'll refer to this idea informally as _local
+dimensionality_, even though we don't have any explicit representation
+of coordinates at any time. We define the locality of a node $w$ as
+the set of nodes at a certain distance from $w$:
+
+$$
+\mathrm{locality}(d_1, d_2, w) = \{ u \in W\ |\ d_1 \le d(u, w) \le d_2 \}
+$$
+
+where $[d_1, d_2]$ is a range of distances.
+
+All distances are normalized into the $[0, 1]$ range which is partitioned
+into a small number of subranges, say between 3 and 10, such that each
+subrange is equally populated by actual edges. If we decided for 3
+subranges $R_1 = [0, 0.5)$, $R_2 = [0.5, 0.8)$, and $R_3 = [0.8, 1]$,
+it would mean that one third of the edges connect nodes whose distance
+is less than 0.5.
+
+Also, we want each node to be connected to the rest of the graph in an
+even fashion. In each subrange, each node should be connected to a
+the greatest variety of other nodes but also as few nodes as
+possible. Let's consider the node $w$ and neighbors $u$, $v$ in $R_2$:
+
+$$
+\begin{align}
+d(w, u) & \in R_2 \\
+d(w, v) & \in R_2
+\end{align}
+$$
+
+$v$ and $w$ should not both be connected to $w$ if $u$ and $v$ are too
+similar, i.e. if
+
+$$
+\begin{align}
+d(u,v) & \lt \min(R_2) \\
+       & \lt 0.5
+\end{align}
+$$
+
+but one of $u$ (or $v$ should be connected to $w$ if no other node connected
+to $w$ is also too similar to $u$ (or $v$).
+
+For example, if the metric was compatible with the nodes
+forming a circle, a node $w$ may be connected to other nodes as
+illustrated:
+
+<img src="img/reach.png"
+     alt="Reach illustrated with a circle"/>
+
+Labels 1, 2, 3 indicate the distance ranges $R_1$, $R_2$, and
+$R_3$. Note how $w$ is connected to two nodes in the shorter ranges
+$R_1$ and $R_2$ but can only be connected to one node in the longer
+range $R_3$.
+
+This design would allow both reach and accuracy:
+
+* Remote regions of the graph can be reached from any node in one hop.
+* Non-redundant nearest neighbors can be reached in one hop.
+* The number of edges per node is moderate, depending on local
+  dimensionality.
 
 ### Outline of a possible solution
 
