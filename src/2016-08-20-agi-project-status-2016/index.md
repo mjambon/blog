@@ -603,56 +603,91 @@ $$
 
 where $[d_1, d_2]$ is a range of distances.
 
-All distances are normalized into the $[0, 1]$ range which is partitioned
-into a small number of subranges, say between 3 and 10, such that each
-subrange is equally populated by actual edges. If we decided for 3
-subranges $R_1 = [0, 0.5)$, $R_2 = [0.5, 0.8)$, and $R_3 = [0.8, 1]$,
-it would mean that one third of the edges connect nodes whose distance
-is less than 0.5.
+All distances are normalized into $[0, 1]$. We define a partition
+of the nodes of the graph into a small number of bins corresponding to
+increasing distances from node $w$. The boundaries of the bins are
+adjusted such that the population of the bins increases exponentially
+as the distance increases.
 
-Also, we want each node to be connected to the rest of the graph in an
-even fashion. In each subrange, each node should be connected to a
-the greatest variety of other nodes but also as few nodes as
-possible. Let's consider the node $w$ and neighbors $u$, $v$ in $R_2$:
+For example we could define 5 bins of the following relative sizes:
+
+* bin $B_1$: $\frac{1}{32}$
+* bin $B_2$: $\frac{1}{16}$
+* bin $B_3$: $\frac{1}{8}$
+* bin $B_4$: $\frac{1}{4}$
+* bin $B_5$: $\frac{1}{2}+\frac{1}{32}$ (everything else)
+
+We might find that the radiuses that define the boundaries of these
+bins should be set as follows in order to satisfy the ratios listed
+above:
+
+* bin $B_1$: $0 \dots 0.12$
+* bin $B_2$: $0.12 \dots 0.30$
+* bin $B_3$: $0.30 \dots 0.46$
+* bin $B_4$: $0.46 \dots 0.74$
+* bin $B_5$: $0.74 \dots 1$
+
+In practice the goal is to estimate how many nodes of the graph fall
+into each bin, and adjust the bin boundaries to ensure the
+exponential distribution that we want to adopt.
+
+Each bin will be used to actually hold a few samples only. These
+samples are neighbors of $w$ within the range defined by the bin, and
+they shall be as distant from each other as possible. They shall
+represent directions or local dimensions worth exploring. The hope is
+that locally, only a small number of dimensions are relevant and thus
+only a small number of well-chosen nodes would be put into each bin.
+Let's consider a bin denoted $B_i$ and nodes $u$, $v$ that would fall
+into that bin:
 
 $$
 \begin{align}
-d(w, u) & \in R_2 \\
-d(w, v) & \in R_2
+d(w, u) & \in B_i \\
+d(w, v) & \in B_i
 \end{align}
 $$
 
-$v$ and $w$ should not both be connected to $w$ if $u$ and $v$ are too
-similar, i.e. if
+$u$ and $v$ may be put into the bin only if they are distant enough
+from each other. Assuming that the distances are locally compatible
+with a Euclidean space, a safe minimum distance is $\sqrt{2}$
+times the radius:
 
 $$
 \begin{align}
-d(u,v) & \lt \min(R_2) \\
-       & \lt 0.5
+d(u,v) & \ge \sqrt{2} \max(B_i) \\
 \end{align}
 $$
 
-but one of $u$ (or $v$ should be connected to $w$ if no other node connected
-to $w$ is also too similar to $u$ (or $v$).
+where $\max(B_i)$ denotes the maximum radius or upper bound of bin
+$B_i$.
 
-For example, if the metric was compatible with the nodes
-forming a circle, a node $w$ may be connected to other nodes as
-illustrated:
+The hope is to end up for each given node $w$ with such collection of
+bins, each holding a sample of nodes at different radiuses. Each bin
+has a different granularity, and its own local dimensionality, which
+indicates different directions worth exploring.
+
+An example of a very simple topology is a circle. Given 3 bins $B_1$,
+$B_2$, and $B_3$, here's is how bin elements could be distributed
+along the circle:
 
 <img src="img/reach.png"
      alt="Reach illustrated with a circle"/>
 
-Labels 1, 2, 3 indicate the distance ranges $R_1$, $R_2$, and
-$R_3$. Note how $w$ is connected to two nodes in the shorter ranges
-$R_1$ and $R_2$ but can only be connected to one node in the longer
-range $R_3$.
+Note how $w$ is connected to two nodes in the shorter ranges
+$B_1$ and $B_2$ but can only be connected to one node in the longer
+range $B_3$. In practice we expect to have to deal with more complex
+topologies, but hopefully not with a large number of dimensions
+locally. A ribbon for instance, at small scale resembles
+a 2-dimensional Euclidean space, but at large scale it is
+1-dimensional. Conversely, a spider web is 1-dimensional at small
+scale but 2-dimensional at large scale.
 
 This design would allow both reach and accuracy:
 
 * Remote regions of the graph can be reached from any node in one hop.
 * Non-redundant nearest neighbors can be reached in one hop.
 * The number of edges per node is moderate, depending on local
-  dimensionality.
+  dimensionality at the given scale.
 
 ### Outline of a possible solution
 
