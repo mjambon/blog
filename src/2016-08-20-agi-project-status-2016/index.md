@@ -611,34 +611,34 @@ as the distance increases.
 
 For example we could define 5 bins of the following relative sizes:
 
-* bin $B_1$: $\frac{1}{32}$
-* bin $B_2$: $\frac{1}{16}$
-* bin $B_3$: $\frac{1}{8}$
-* bin $B_4$: $\frac{1}{4}$
-* bin $B_5$: $\frac{1}{2}+\frac{1}{32}$ (everything else)
+* bucket $B_1$: $\frac{1}{32}$
+* bucket $B_2$: $\frac{1}{16}$
+* bucket $B_3$: $\frac{1}{8}$
+* bucket $B_4$: $\frac{1}{4}$
+* bucket $B_5$: $\frac{1}{2}+\frac{1}{32}$ (everything else)
 
 We might find that the radiuses that define the boundaries of these
-bins should be set as follows in order to satisfy the ratios listed
+buckets should be set as follows in order to satisfy the ratios listed
 above:
 
-* bin $B_1$: $0 \dots 0.12$
-* bin $B_2$: $0.12 \dots 0.30$
-* bin $B_3$: $0.30 \dots 0.46$
-* bin $B_4$: $0.46 \dots 0.74$
-* bin $B_5$: $0.74 \dots 1$
+* bucket $B_1$: $0 \dots 0.12$
+* bucket $B_2$: $0.12 \dots 0.30$
+* bucket $B_3$: $0.30 \dots 0.46$
+* bucket $B_4$: $0.46 \dots 0.74$
+* bucket $B_5$: $0.74 \dots 1$
 
 In practice the goal is to estimate how many nodes of the graph fall
-into each bin, and adjust the bin boundaries to ensure the
+into each bucket, and adjust the bucket boundaries to ensure the
 exponential distribution that we want to adopt.
 
-Each bin will be used to actually hold a few samples only. These
-samples are neighbors of $w$ within the range defined by the bin, and
+Each bucket will be used to actually hold a few samples only. These
+samples are neighbors of $w$ within the range defined by the bucket, and
 they shall be as distant from each other as possible. They shall
 represent directions or local dimensions worth exploring. The hope is
 that locally, only a small number of dimensions are relevant and thus
-only a small number of well-chosen nodes would be put into each bin.
-Let's consider a bin denoted $B_i$ and nodes $u$, $v$ that would fall
-into that bin:
+only a small number of well-chosen nodes would be put into each bucket.
+Let's consider a bucket denoted $B_i$ and nodes $u$, $v$ that would fall
+into that bucket:
 
 $$
 \begin{align}
@@ -647,7 +647,7 @@ d(w, v) & \in B_i
 \end{align}
 $$
 
-$u$ and $v$ may be put into the bin only if they are distant enough
+$u$ and $v$ may be put into the bucket only if they are distant enough
 from each other. Assuming that the distances are locally compatible
 with a Euclidean space, a safe minimum distance is $\sqrt{2}$
 times the radius:
@@ -658,16 +658,16 @@ d(u,v) & \ge \sqrt{2} \max(B_i) \\
 \end{align}
 $$
 
-where $\max(B_i)$ denotes the maximum radius or upper bound of bin
+where $\max(B_i)$ denotes the maximum radius or upper bound of bucket
 $B_i$.
 
 The hope is to end up for each given node $w$ with such collection of
-bins, each holding a sample of nodes at different radiuses. Each bin
+buckets, each holding a sample of nodes at different radiuses. Each bucket
 has a different granularity, and its own local dimensionality, which
 indicates different directions worth exploring.
 
-An example of a very simple topology is a circle. Given 3 bins $B_1$,
-$B_2$, and $B_3$, here's is how bin elements could be distributed
+An example of a very simple topology is a circle. Given 3 buckets $B_1$,
+$B_2$, and $B_3$, here's is how bucket elements could be distributed
 along the circle:
 
 <img src="img/reach.png"
@@ -689,9 +689,76 @@ This design would allow both reach and accuracy:
 * The number of edges per node is moderate, depending on local
   dimensionality at the given scale.
 
-### Outline of a possible solution
+### Outline of a possible multi-scale crawl algorithm
+
+We have a set of nodes $V$ and a set of output nodes $W$. Both sets
+are growing and are initially nonempty.
+
+At each cycle, the nodes that can trigger actions by activating
+outputs are the following:
+
+* the dominant node;
+* other important active nodes already connected to output nodes with
+  high confidence.
+
+All these nodes that trigger actions are subject to reinforcement
+after a number of cycles.
+
+Only the dominant node may not be already connected to a very
+successful output. Such node is in a learning state and the system
+needs to decide which output to activate.
+
+A learning node $v$ keeps track of the previously chosen output $w_p$
+and the currently chosen output $w_c$. It also keeps track of the feedback
+obtained after previous activations, for both $w_p$ and
+$w_c$. Feedback is the variation of the mood function $\phi$ collected
+some fixed amount of time after the action. Feedback
+is collected multiple times until a reliable average can be obtained.
+
+If the feedback obtained with $w_p$ and $w_c$ is similar, we create or
+reinforce an edge from $w_p$ to $w_c$ in $w_p$'s bucket $B_i$ corresponding
+to this level of success, and we do the same from $w_c$ to
+$w_p$. The average feedback obtained with $w_p$ and $w_c$ is treated
+as an estimate of the distance between these output nodes.
+
+$w_p$'s bucket $B_i$ contains a number of outputs which should be at a
+sufficient distance from each other to limit redundancy. For that, we
+keep track of the distances ever (or recently) estimated between pairs
+of outputs for any node in $V$. If at any time we find that distances
+between members of bucket $B_i$ are too short for this bucket,
+i.e. shorter than $\sqrt{2} \max(B_i)$, one of these members is
+excluded from the bucket.
+
+If the feedback obtained for $w_p$ is better than the feedback
+obtained with $w_c$, $w_c$ is replaced by another node taken from the
+bucket corresponding to $w_p$'s average feedback, if such node hasn't
+been already probed and discarded by $v$. Otherwise, an output is
+picked randomly from $W$, or possibly picked from a high-priority
+subset, such as outputs that are not well connected to the other
+outputs yet.
+
+If the feedback obtained for $w_c$ is better than for $w_p$, the same
+steps are taken and $w_p$ ends up being replaced by an output taken from
+a shorter-range bucket of $w_c$, or by a random output.
 
 ### Dealing with high local dimensionality
+
+The success of the approach rests upon having relatively few members
+per bucket, i.e. having low local dimensionalities at any scale.
+
+High dimensionalities can arise when many independent outputs
+exist. An example would be a large number of pairs of outputs that set
+or clear a bit used as explicit memory (see section on IO modules).
+I suspect that large memory arrays cannot be used effectively by an
+intelligent system without resorting to special-purpose algorithms.
+
+The best we can do is report situations where a bucket is getting
+full, and correct the design of the system by not creating the
+problematic outputs.
+
+We can also set a maximum bucket capacity, in which case the
+optimization speed is expected to degrade. The exact nature and impact
+of such degradation is unclear at this time.
 
 # Sample internal IO modules
 
