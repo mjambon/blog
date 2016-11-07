@@ -741,6 +741,36 @@ If the feedback obtained for $w_c$ is better than for $w_p$, the same
 steps are taken and $w_p$ ends up being replaced by an output taken from
 a shorter-range bucket of $w_c$, or by a random output.
 
+In conclusion, the plans for this part are rather fuzzy at this
+time. Related problems or solutions include:
+
+* The multi-armed bandit problem: here the difference is that we have
+  a large number bandits (nodes in $V$) instead of just one.
+* Artificial neural networks: non-trivial ANNs are essentially not
+  observable, violating the requirement for engineerability, but have
+  been studied extensively and may offer useful insights.
+* Manual grouping of outputs into regions: this requires more
+  engineering and trial-and-error in order to figure out a good
+  grouping that works in a particular model of the world. This may prove
+  particularly problematic for output nodes that are created without a
+  specific role, but which will acquire a role as the system learns to
+  take advantage of them, such as nodes managing explicit memory cells.
+
+Possible future directions:
+
+* Feedback analysis: Determine the contribution to the mood signal
+  of each pair $(v, w)$, such that a local function analog to a
+  "wavelet" is associated with each action. The sum of these
+  functions would constitute a predictive model of the mood function.
+  This would solve the problem of isolating the effect of a specific
+  action on the mood function, since many actions may have overlapping
+  effects.
+* Stability control: The goal would be to not have too many nodes explore new
+  actions simultaneously, while still letting safe actions take place.
+  We could restrict the number of simultaneously
+  active nodes that trigger an action in order to guarantee some minimum
+  stability.
+
 ### Dealing with high local dimensionality
 
 The success of the approach rests upon having relatively few members
