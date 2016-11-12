@@ -792,12 +792,31 @@ of such degradation is unclear at this time.
 
 # Sample internal IO modules
 
+An IO module is a bundle of input nodes and output nodes. It controls
+the activity of its input nodes and performs actions that depend on
+the state of its output nodes.
+
+Automatic IO modules are meant to be created by the core
+implementation of the system, as the system grows in a certain way.
+
+Other IO modules can be implemented as optional plugins which would
+either not create new inputs or new outputs after the initial setup or
+grow somewhat independently from the rest of the system.
+
 ## Automatic IO modules
 
 ### Automatic activity feedback and action feedback
 
 <img src="img/activity-feedback.svg"
      alt="Automatic activity and action feedback"/>
+
+An activity feedback module consists in one input node for each node $v$
+that has ever been a dominant node. This input node is activated each
+time $v$ becomes active and dominant. It allows the system to sense
+that a certain node was dominant.
+
+An action feedback module is an input node connected to an output
+node. It allows the system to sense that a certain action was triggered.
 
 ### Reminiscence
 
@@ -814,25 +833,41 @@ natural activation.
 
 ## Optional IO modules
 
+It's not clear how useful these simple modules are in practice or how
+many of them we would create.
+
 ### A simple feedback loop, the transmitter
 
 <img src="img/transmitter.svg"
      alt="Transmitter module"/>
+
+This module would provide a simple loop, ultimately allowing different
+nodes to activate the same input node.
 
 ### Single-bit state
 
 <img src="img/single-bit-state.svg"
      alt="Single-bit state module"/>
 
+This is a memory module that can hold one bit. One output node sets the bit
+to 0 and another sets the bit to 1. The state is read by two input
+nodes, i.e. at any time exactly one of the input nodes is active.
+
 ### Activator
 
 <img src="img/activator.svg"
      alt="Activator module"/>
 
+This is a simplified form of the single-state module described
+above. It has only one input node, activated when the state is 1.
+
 ### Toggle or 2-state round robin
 
 <img src="img/toggle.svg"
      alt="Toggle module"/>
+
+This module holds a bit whose value flips each time the output node is
+activated.
 
 # Test environments
 
