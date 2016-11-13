@@ -873,6 +873,39 @@ activated.
 
 ## Testing pure pattern identification: small B&W images
 
+<img src="img/grid.png"
+     alt="5x5 black and white grid"
+     style="display:block; margin:auto; width:50%"/>
+
+A grid of cells with binary states is planned to be used for testing
+pattern recognition, which consists in the part of the system
+that includes input nodes and internal nodes and excludes actions.
+
+To the system, the inputs are not structured in a grid initially and
+it should learn to identify relevant patterns. More specifically, we
+can feed the system with a sequence of images. There's one input node
+per pixel and we leave the image for several cycles, before
+deactivating all the input nodes for several more cycles and switch to
+a new input image.
+
+We would observe the dominant or near-dominant nodes, and check that
+similar images result in the same dominant node. With the proper
+training, the system should be able to learn how to distinguish
+classes of images that exhibit their own characteristic pattern,
+regardless of how variable the other parts of the image are.
+
+The advantages of working with a small discrete 2D grid are the following:
+
+* A human observer can readily see patterns.
+* A small number of input nodes makes it easy to create expectations
+  and tests.
+* These grids are easy to reproduce on paper or in other written documents,
+  unlike video or audio.
+
 ## Testing reinforcement: reconstruct arbitrary topologies
+
+<img src="img/flag.svg"
+     alt="Simple 1D/2D flag topology"
+     style="width:100%"/>
 
 ## Full test: competition for resources on a 2D grid
