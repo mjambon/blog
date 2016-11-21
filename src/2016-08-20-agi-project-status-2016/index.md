@@ -904,6 +904,48 @@ The advantages of working with a small discrete 2D grid are the following:
 
 ## Testing reinforcement: reconstruct arbitrary topologies
 
+### The Guessing Game
+
+Let $W$ be a set a elements, and $d$ a metric on $W$.
+Let $R$ be a sequence of elements taken from $W$.
+
+A system playing the game is given the identifiers of the elements in
+$W$ but $d$ and $R$ remain hidden from the player by the operator of
+the game.
+
+The goal of the game is to guess the elements in $R$, one after the
+other, as required by the operator, and doing so in as few guesses as
+possible. The attempts at guessing one element correctly is called a
+round. A game is a sequence of $|R|$ rounds.
+
+A guess for the hidden element $r_i$ consists in:
+
+* the player proposing an element $w$ from $W$;
+* the operator responding with $d(w, r_i)$.
+
+The round ends when the guess is correct, i.e. when $d(w, r_i) = 0$.
+
+### Objective
+
+The goal of the guessing game is to evaluate the part of our AGI
+system that searches for appropriate actions for a given active
+internal node. Feedback collected after the action is interpreted as a
+distance that we try to minimize.
+The Guessing Game represents an ideal world where the feedback from
+each action triggered by a given node is always the same and where a perfect
+action exists for each node.
+
+The system should be able to figure out the topology of $W$ and ways
+to navigate $W$ more and more efficiently as it gathers distance
+information.
+
+Simple examples are swarms of points embedded in euclidean spaces,
+such as the following:
+
+<!-- to do: ribbon -->
+
+<!-- to do: grid -->
+
 <img src="img/flag.svg"
      alt="Simple 1D/2D flag topology"
      style="width:100%"/>
