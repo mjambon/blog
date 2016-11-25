@@ -942,12 +942,58 @@ information.
 Simple examples are swarms of points embedded in euclidean spaces,
 such as the following:
 
-<!-- to do: ribbon -->
-
-<!-- to do: grid -->
-
 <img src="img/flag.svg"
      alt="Simple 1D/2D flag topology"
      style="width:100%"/>
 
 ## Full test: competition for resources on a 2D grid
+
+There are two major goals in setting up a framework for evaluating the
+intelligence of a system:
+
+* observability of the system and its environment:
+    - the world should be easy to follow for a human
+    - the world should be easy to record, slow down, and replay
+* a challenging environment where intelligent behavior is required
+
+In order to satisfy the observability requirements, a simulated
+environment is probably a better choice than having the system
+interact with our physical world. A discrete world with its own
+made-up physics is also likely to be a better choice than having to model
+continuous properties, because the inputs and outputs of our system
+are discrete. Avoiding conversions between analog and digital signals
+should simplify a number of things.
+
+The other goal is to provide an environment that is complex enough to
+require the use of intelligence. An idea here is to have multiple
+systems compete for resources within the same world. From the
+perspective a system, the other systems or individuals are simply a
+part of the environment.
+
+The envisioned test world would be set up as follows:
+
+* a finite 2-dimensional grid populated by various objects, typically
+  occupying one cell each;
+* bounded resources (e.g., food);
+* multiple systems competing for resources;
+* systems die when they're too weak and spawn copies of themselves
+  when they're doing well;
+* all the systems and the physics of the world are synchronized using the
+  same discrete clock.
+
+While there's no expectation to evolve systems using some sort of
+natural selection or genetic algorithm, this setup naturally allows
+it.
+
+# Next steps
+
+It seems reasonable at this point to pick one testable component of
+the system, refine its design and implement it. Current candidates
+include:
+
+* Perception subsystem: with inputs but no outputs, observe the
+  detection of patterns
+* Feedback analysis: when multiple actions are performed and have
+  likely overlapping effects, determine their respective contributions
+  to the objective/mood function
+* Multi-scale crawl algorithm and the Guessing Game
