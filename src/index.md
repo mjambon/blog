@@ -20,6 +20,7 @@ martin@mjambon.com
 Posts
 -----
 
+* [AGI research snapshot, 2016](2016-08-20-agi-project-status-2016)
 * [Diversity rule: a voting system that accommodates minorities](2016-10-08-diversity-rule)
 * [Discrete concepts and discrete time](2016-09-03-discrete-indicators):
   A proposed basis for the design of engineerable intelligent systems
