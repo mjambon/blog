@@ -1,6 +1,6 @@
 % AGI research snapshot, 2016
 % Martin Jambon
-% August 2016
+% August&ndash;November 2016
 
 <!-- toc -->
 
