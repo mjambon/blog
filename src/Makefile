@@ -8,7 +8,8 @@ ARTICLES = \
   2016-07-30-product-ideas \
   2016-08-20-agi-project-status-2016 \
   2016-09-03-discrete-indicators \
-  2016-10-08-diversity-rule
+  2016-10-08-diversity-rule \
+  2016-12-10-feedback-analysis
 
 HTMLDIR = ../html
 
