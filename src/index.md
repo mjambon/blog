@@ -20,14 +20,22 @@ martin@mjambon.com
 Posts
 -----
 
+AGI-related:
+
+* [Engineering emotions](2016-12-31-agi-emotions)
 * [AGI research snapshot, 2016](2016-08-20-agi-project-status-2016)
-* [Diversity rule: a voting system that accommodates minorities](2016-10-08-diversity-rule)
 * [Discrete concepts and discrete time](2016-09-03-discrete-indicators):
   A proposed basis for the design of engineerable intelligent systems
-* [Product ideas](2016-07-30-product-ideas)
 * [Windowless percentile tracking](2016-07-23-moving-percentile)
-* [Definitions of life](2016-07-24-definitions-of-life)
-* [Deep vs. fast thinking: a synchronization problem](2015-11-08-deep-vs-fast-thinking)
-* [Universal career advice](2015-01-03-universal-career-advice)
+* [Deep vs. fast thinking:
+  a synchronization problem](2015-11-08-deep-vs-fast-thinking)
 * [Intelligence precedes machines](2014-12-31-intelligence-precedes-machines)
+
+Other:
+
+* [Diversity rule:
+  a voting system that accommodates minorities](2016-10-08-diversity-rule)
+* [Product ideas](2016-07-30-product-ideas)
+* [Definitions of life](2016-07-24-definitions-of-life)
+* [Universal career advice](2015-01-03-universal-career-advice)
 * [Faith-driven science](2014-12-27-faith-driven-science)
