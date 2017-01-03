@@ -10,7 +10,8 @@ ARTICLES = \
   2016-09-03-discrete-indicators \
   2016-10-08-diversity-rule \
   2016-12-10-feedback-analysis \
-  2016-12-31-agi-emotions
+  2016-12-31-agi-emotions \
+  2017-01-02-agi-world
 
 HTMLDIR = ../html
 

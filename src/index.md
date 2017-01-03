@@ -22,6 +22,7 @@ Posts
 
 AGI-related:
 
+* [A world of intelligent machines](2017-01-02-agi-world)
 * [Engineering emotions](2016-12-31-agi-emotions)
 * [AGI research snapshot, 2016](2016-08-20-agi-project-status-2016)
 * [Discrete concepts and discrete time](2016-09-03-discrete-indicators):
