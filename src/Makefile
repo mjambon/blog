@@ -11,7 +11,8 @@ ARTICLES = \
   2016-10-08-diversity-rule \
   2016-12-10-feedback-analysis \
   2016-12-31-agi-emotions \
-  2017-01-02-agi-world
+  2017-01-02-agi-world \
+  2017-01-08-issue-voting-method
 
 HTMLDIR = ../html
 
