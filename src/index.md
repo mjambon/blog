@@ -34,6 +34,7 @@ AGI-related:
 
 Other:
 
+* [Issue Voting](2017-01-08-issue-voting-method): a proposed voting method
 * [Diversity rule:
   a voting system that accommodates minorities](2016-10-08-diversity-rule)
 * [Product ideas](2016-07-30-product-ideas)
