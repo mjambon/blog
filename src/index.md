@@ -22,6 +22,7 @@ Posts
 
 AGI-related:
 
+* [Current interests (March 2017)](2017-03-05-current-interests)
 * [A world of intelligent machines](2017-01-02-agi-world)
 * [Engineering emotions](2016-12-31-agi-emotions)
 * [AGI research snapshot, 2016](2016-08-20-agi-project-status-2016)
