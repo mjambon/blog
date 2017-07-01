@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="../blog.css">
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <meta name=viewport content="width=device-width, initial-scale=1">
+</head>
+<body>
+<h1 id="windowless-percentile-tracking">Windowless percentile tracking</h1>
+<p>This is a method driven by the same constraints as the <a href="https://en.wikipedia.org/wiki/Moving_average#Exponential_moving_average">exponential moving average</a>, but for median and other percentiles.</p>
+<p>We present an algorithm for tracking the value of a percentile, such as the median, in an infinite stream of observations whose distribution can change over time. A self-imposed constraint is that we cannot afford to keep the last <em>N</em> observations explicitly in memory. In our algorithm, the cost of updating the estimated percentile is <span class="math inline">\(O(1)\)</span> and the memory usage is also <span class="math inline">\(O(1)\)</span>. A single parameter denoted <span class="math inline">\(r\)</span> is specified by the user and expresses the trade-off between accuracy and reactivity (to changes in the distribution of the signal).</p>
+<p>Notations: in this document, all sequences and arrays are indexed starting from 0.</p>
+<h2 id="background-window-based-algorithms">Background: window-based algorithms</h2>
+<p>Given <em>N</em> a fixed window length, it is relatively straightforward to maintain a sorted array <span class="math inline">\(W\)</span> of the latest <em>N</em> observations indexed <span class="math inline">\(0\dots N-1\)</span>. The <em>p</em>-percentile is computed exactly over that window by looking up the pair of values found at index <span class="math inline">\(\lfloor (N-1)p \rfloor\)</span> and at index <span class="math inline">\(\lceil (N-1)p \rceil\)</span>, and by taking their average.</p>
+<p>For example, the median <span class="math inline">\(m\)</span> (0.5-percentile) using a window of length <span class="math inline">\(N=100\)</span> is calculated as follows once we've read 100 observations or more:</p>
+<p><span class="math display">\[m = \frac{W_{49} + W_{50}}{2}\]</span></p>
+<p>Such algorithms are not acceptable for us since they require storing the latest <em>N</em> values, where <em>N</em> is typically chosen greater than 100.</p>
+<h2 id="background-exponential-moving-average">Background: exponential moving average</h2>
+<p>An exponential moving average is a weighted average of the previous observations, in which the weight of the latest observation is always set to a fixed parameter <span class="math inline">\(r\)</span> (<span class="math inline">\(0 \lt r \le 1\)</span>) and the weight of the other values is <span class="math inline">\((1-r)\)</span> times their previous weight.</p>
+<p>After reading <span class="math inline">\(\lfloor 1/r \rfloor + 1\)</span> observations or more, the moving average for observation <em>i</em> is computed as follows:</p>
+<p><span class="math display">\[m_i = r . x_i + (1-r) . m_{i-1}\]</span></p>
+<p>In the initial phase where <span class="math inline">\(i \lt \lfloor 1/r \rfloor\)</span>, <span class="math inline">\(m_i\)</span> is calculated as the mean of all the observations so far. The rationale is that the weight of the latest observation is the nearest possible to <span class="math inline">\(r\)</span> without being smaller than the weight any of the past observations. This avoids having to set <span class="math inline">\(m_{-1}\)</span> to an arbitrary guess with a lasting impact. Updating <em>m</em> in this initial phase is done as follows:</p>
+<p><span class="math display">\[\hat{r}_i = \frac{1}{i+1}\]</span> <span class="math display">\[m_i = \hat{r}_i . x_i + (1-\hat{r}_i) . m_{i-1}\]</span></p>
+<p>This exponential moving average algorithm is used in the moving percentile algorithm described below to estimate the standard deviation of the signal.</p>
+<h2 id="moving-percentile-algorithm">Moving percentile algorithm</h2>
+<p>The <span class="math inline">\(p\)</span>-percentile is represented by the variable <span class="math inline">\(m\)</span>. It is initialized with the value of the first observation <span class="math inline">\(x_0\)</span>:</p>
+<p><span class="math display">\[ m_0 = x_0 \]</span></p>
+<p>Subsequent iterations are updated as follows, for some value of <span class="math inline">\(\delta\)</span> discussed later.</p>
+<p>If <span class="math inline">\(x_i &lt; m_{i-1}\)</span> then</p>
+<p><span class="math display">\[ m_i = m_{i-1} - \frac{\delta}{p} \]</span></p>
+<p>else if <span class="math inline">\(x_i &gt; m_{i-1}\)</span> then</p>
+<p><span class="math display">\[ m_i = m_{i-1} + \frac{\delta}{1-p} \]</span></p>
+<p>else <span class="math inline">\(x_i = m_{i-1}\)</span> and keep the previous value:</p>
+<p><span class="math display">\[ m_i = m_{i-1} \]</span></p>
+<p>If <span class="math inline">\(\delta\)</span> is not too large and not too small, <span class="math inline">\(m\)</span> is a good estimate of the <span class="math inline">\(p\)</span>-percentile. Choosing a good value for <span class="math inline">\(\delta\)</span> depends on the distribution of values around the <span class="math inline">\(p\)</span>-percentile. Excessive values of <span class="math inline">\(\delta\)</span> result in big jumps for <em>m</em> and limit the accuracy, while a <span class="math inline">\(\delta\)</span> that's too small may take too much time to converge to the <span class="math inline">\(p\)</span>-percentile as computed exactly using a window of a reasonable length.</p>
+<p>In order to express the trade-off between accuracy and convergence speed, we express <span class="math inline">\(\delta\)</span> as the product of a user-chosen constant <em>r</em> and the estimated standard deviation <span class="math inline">\(\sigma\)</span> of the input signal:</p>
+<p><span class="math display">\[ \delta_i = \sigma_i . r \]</span></p>
+<p>where <span class="math inline">\(\sigma_i\)</span> is the square root of the variance estimated by a moving average of the sequence <span class="math inline">\((\mu_i - x_i)^2\)</span> and <span class="math inline">\(\mu\)</span> is estimated by a moving average of <em>x</em>.</p>
+<p>We find that reasonable values of <span class="math inline">\(r\)</span> for many applications range from 0.001 to 0.01.</p>
+<p>The chart below shows our sample signal that was generated randomly in 3 phases:</p>
+<p><img src="img/moving-percentile-input.png"
+     alt="Distribution of the sample input data"/></p>
+<ul>
+<li>phase 1 (0-999): Uniform(0,1); expected 0.9-percentile = 0.9</li>
+<li>phase 2 (1000-1999): Uniform(2,4); expected 0.9-percentile = 3.8</li>
+<li>phase 3 (2000-2999): Uniform(0,1); expected 0.9 percentile = 0.9</li>
+</ul>
+<p>The output for window-based percentile estimators and for our moving percentile are shown here:</p>
+<p><img src="img/moving-percentile-output.png"
+     alt="Chart comparing window-based percentile estimators with
+          moving percentile"/></p>
+<p>Our moving 0.9-percentile, shown on the chart in green, reacts quickly when the signal shifts upward, because each update shifts the moving percentile upward by <span class="math inline">\(\frac{\delta}{0.1}\)</span>. However, when the signal shifts downward, it takes the moving percentile more time to react because each update shifts it downward by <span class="math inline">\(\frac{\delta}{0.9}\)</span>, which is 9 times less than in the other direction. Additionally, we can see that the downward shift is pretty steep initially and then gets less steep. This is due to the delayed update of the standard deviation <span class="math inline">\(\sigma\)</span>: the value of <span class="math inline">\(\delta\)</span> is divided by two when the estimated <span class="math inline">\(\sigma\)</span> catches up and is divided by two, reflecting the new distribution in phase 3.</p>
+<p>A sample implementation is <a href="https://github.com/mjambon/moving-percentile">available on GitHub</a>.</p>
+<p class="menu footer">
+  <a href="https://twitter.com/mjambon">@mjambon</a> 2016-07-23<br/>
+  <a href="/">Index</a>
+</p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="../blog.css">
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <meta name=viewport content="width=device-width, initial-scale=1">
+</head>
+<body>
+<h1 id="deep-vs.-fast-thinking-a-synchronization-problem">Deep vs. fast thinking: a synchronization problem</h1>
+<p>I've been thinking on and off, in my spare time, over the past 15 years about artificial general intelligence (AGI) and practical designs and implementations.</p>
+<p>I tested a handful of these ideas but haven't obtained amazing results. Almost from the beginning I have been unsatisfied with any approach that assumes a fixed set of neuron analogs. The family of systems I have focused on is based on a notion of nodes that are:</p>
+<ul>
+<li>activated from a small number of other nodes, typically just two</li>
+<li>created dynamically if they're predicted as useful based on previous activation patterns</li>
+</ul>
+<p>In these models, a node represent what I call a <em>concept</em>, which represents the conjunction of other concepts. The design principle is that nodes are the core units of the system. They correspond to intuitive ideas on how an intelligent system would function.</p>
+<p>Our model contrasts with neural networks where each node is connected to many inputs with mutable connection weights, which don't have an obvious and fixed meaning to the designer of such a system.</p>
+<p>Additionally, our models are based on discrete activation from one node to another. What this means is the system uses a discrete clock. The activation from one node to another takes one indivisible unit of time, also referred to as step, tick, or clock cycle. Each active node remains active only for one step, unless it is activated again.</p>
+<p>We define the <em>depth</em> of a concept as the minimum number of steps it takes to go from a blank state where not a single node in the system is active to the activation of this concept by activating a number of input nodes. Input nodes are nodes that can be activated from the outside.</p>
+<h2 id="claims">Claims</h2>
+<p>A. Reasoning involves deep concepts.</p>
+<p>B. The deeper the concept, the longer it needs to be kept active for more than one step. This allows for detecting the conjunction of concepts of different depths.</p>
+<p>C. Detecting the conjunction of concepts of different depths is essential to keep the size of the system practical, to allow growth, and to allow concepts of arbitrary depth.</p>
+<p>D. Reasoning involves the sequential activation and deactivation of concepts without overlap.</p>
+<p>E. The deeper the concepts involved in reasoning, the slower reasoning takes place.</p>
+<p>F. Reasoning can be made faster by improving hardware and software and reduce the real time required for a discrete step of the system. The number of steps itself cannot be reduced.</p>
+<p>G. Similar limitations are observed in the human brain, making humans slow thinkers.</p>
+<h2 id="conclusions">Conclusions</h2>
+<p>These are fun predictions for the future. If you don't understand any of what's written on this page, it's okay.</p>
+<p class="menu footer">
+  <a href="https://twitter.com/mjambon">@mjambon</a> 2015-11-08<br/>
+  <a href="/">Index</a>
+</p>
+</body>
+</html>

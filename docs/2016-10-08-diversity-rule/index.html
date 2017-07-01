@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="../blog.css">
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <meta name=viewport content="width=device-width, initial-scale=1">
+</head>
+<body>
+<h1 id="diversity-rule-a-voting-system-that-accommodates-minorities">Diversity rule: a voting system that accommodates minorities</h1>
+<p>Majority rule:</p>
+<blockquote>
+<p><em>Given a group composed of 80% people of culture X and 20% people of culture Y, ensure that 100% of the group activities are of type X.</em></p>
+</blockquote>
+<p>Proportional majority rule:</p>
+<blockquote>
+<p><em>Given a group composed of 80% people of culture X and 20% people of culture Y, ensure that 80% of the group activities are of type X and 20% are of type Y.</em></p>
+</blockquote>
+<p>Diversity rule:</p>
+<blockquote>
+<p><em>Given a group composed of 80% people of culture X and 20% people of culture Y, ensure that 50% of the group activities are of type X and 50% are of type Y.</em></p>
+</blockquote>
+<h2 id="problem">Problem</h2>
+<p>A group of people wants to organize activities that are fun to everyone, at least sometimes, and doesn't leave some members less satisfied than others over time.</p>
+<p>Most voting systems in which exactly one candidate has to be picked among several candidates tend to satisfy the greatest possible number of voters. The results obtained with such systems typically never result in electing a minority candidate.</p>
+<p>Even if each group member, in turn, is put in charge of choosing the activity, the most popular activities will be picked more frequently. Say 9 members out of 10 prefer action movies and 1 member prefers documentaries. After 10 movies, the group will have watched 9 action movies and 1 documentary. This is terrible for the member who likes documentaries, and as a result they're likely to feel left out and leave the group.</p>
+<p>Here we want to disproportionately favor unpopular candidates so that each group member has a chance to have their favorite candidate elected, even if only themselves support it. In the movie example, a good solution would be to alternate action movies and documentaries.</p>
+<h2 id="solution">Solution</h2>
+<p>The basic method consists in two rounds and results in two winners. Optionally, a third round picks a single winner.</p>
+<h3 id="round-1">Round 1</h3>
+<p>Each group member nominates their favorite candidate from within a large set of legal candidates. This can be done anonymously, but it is ensured that anyone who designates a candidate must participate in the activity that is chosen eventually. After removing the possible duplicates, this gives us the list of candidates for round 2.</p>
+<h3 id="round-2">Round 2</h3>
+<p>Group members vote anonymously using <a href="https://en.wikipedia.org/wiki/Approval_voting">approval voting</a>. The majority winner, as usual, is the candidate with the maximum number of votes. Additionally, we designate a minority winner, which is the candidate with the minimum number of votes. Ties are resolved at random.</p>
+<h3 id="round-3-optional">Round 3 (optional)</h3>
+<p>A coin toss reduces the two finalists to a single winner.</p>
+<h2 id="example">Example</h2>
+<p>Voters: Alice, Bob, Carlos, Dave, Eve</p>
+<h3 id="results-from-round-1">Results from round 1</h3>
+<p>Alice nominated movie A.<br />
+Bob nominated movie B.<br />
+Carlos nominated movie B.<br />
+Dave nominated movie C.<br />
+Eve nominated movie D.</p>
+<p>Deduplicated candidate list: A, B, C, D</p>
+<h3 id="results-from-round-2">Results from round 2</h3>
+<p>Votes:</p>
+<blockquote>
+<p>Alice: A, C<br />
+Bob: B<br />
+Carlos: B, C<br />
+Dave: A, B<br />
+Eve: D</p>
+</blockquote>
+<p>Number of votes for each candidate:</p>
+<blockquote>
+<p>A: 2<br />
+B: 3<br />
+C: 2<br />
+D: 1</p>
+</blockquote>
+<p>The majority winner is B with 3 votes and the minority winner is D with 1 vote.</p>
+<p>Both B and D are elected, if practical. Otherwise we proceed to round 3.</p>
+<h3 id="results-from-round-3">Results from round 3</h3>
+<p>If only one winner is desired, a coin toss determines either B or D as the final choice.</p>
+<h2 id="discussion">Discussion</h2>
+<p>The purpose of choosing both a majority winner and a minority winner is to encourage voters to cast their vote sincerely. If we'd just keep the minority winner as a rule, voters could vote only for their least-favorite candidates. The minority winner elected by such insincere voters would be the same as the sincere majority winner, as in regular approval voting.</p>
+<p>Note that the minority winner is not necessarily a choice that pleases nobody. It is in the interest of the voters to nominate candidates that they like since they have to take part in the activity for their candidate to be validated. Also, voters can choose to nominate a low-popularity candidate that themselves enjoy but others don't, in an attempt for their candidate to become the minority winner. This is an incentive for unconventional taste or opinions to surface up within the group.</p>
+<p class="menu footer">
+  <a href="https://twitter.com/mjambon">@mjambon</a> 2016-10-08<br/>
+  <a href="/">Index</a>
+</p>
+</body>
+</html>

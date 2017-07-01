@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="../blog.css">
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <meta name=viewport content="width=device-width, initial-scale=1">
+</head>
+<body>
+<h1 id="discrete-concepts-and-discrete-time">Discrete concepts and discrete time</h1>
+<p><em>A proposed basis for the design of engineerable intelligent systems</em></p>
+<h2 id="discrete-representation-of-concepts">Discrete representation of concepts</h2>
+<p>The system is made up of indicators. They are nodes in a directed acyclic graph (DAG) and each node holds a binary state. At a given time, an indicator is either active or inactive.</p>
+<p>There are two kinds of activators which differ in how they are activated:</p>
+<ul>
+<li>An input node is an indicator that is activated by some special-purpose module.</li>
+<li>A regular node is an indicator that is activated by two other indicators that are active simultaneously.</li>
+</ul>
+<p>Input modules can be varied in nature. They are the software interface between physical sensors and the system. For example, a video camera that delivers black and white images would send data to a video module consisting of one input node per pixel. Each white pixel would activate the corresponding input node, while the same pixel being black would leave the node inactive.</p>
+<p><img src="img/camera.svg"
+     alt="Camera module"/></p>
+<p>Regular nodes are built from exactly two other nodes, which can be regular nodes or input nodes. For example, if a node <span class="math inline">\(A\)</span> indicates &quot;the system is moving&quot; and a node <span class="math inline">\(B\)</span> indicates &quot;the presence of a forest trail&quot;, then a node <span class="math inline">\(C = (A, B)\)</span> would represent the concept that &quot;the system is hiking&quot;.</p>
+<p><img src="img/abc.svg"
+     alt="ABC"/></p>
+<h2 id="discrete-time">Discrete time</h2>
+<p>The whole system has its own internal clock that defines discrete cycles. Each cycle or &quot;tick&quot; is a computational step during which information propagates within the system.</p>
+<p>At each cycle, information propagates from one node to the next:</p>
+<ol type="1">
+<li>Each input-output (IO) module sets the binary state of the input nodes that it controls.</li>
+<li>Each regular node is activated if its two children nodes were active at the end of the previous cycle, otherwise it is deactivated.</li>
+</ol>
+<p>Given a node <span class="math inline">\(C = (A, B)\)</span>, the activation of <span class="math inline">\(C\)</span> comes always one tick behind the activation of <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>. A node <span class="math inline">\(D = (A, C)\)</span> can also be denoted <span class="math inline">\((A, (A, B))\)</span> which means that <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> must be active simultaneously, then <span class="math inline">\(A\)</span> must be active again at the next tick, and <span class="math inline">\(D\)</span> will be active the tick after that.</p>
+<p><img src="img/abcd.svg"
+     alt="ABCD"/></p>
+<h2 id="actions">Actions</h2>
+<p>Some active nodes can trigger actions of their choosing. An action consists in activating one of the action nodes provided by the IO modules. This is analogous to pressing and releasing a button.</p>
+<p>The following processes are left unspecified in this document:</p>
+<ul>
+<li>Selecting which nodes can perform an action</li>
+<li>Selecting a good action for the selected node</li>
+<li>Collecting feedback on how well the system is doing and improving the choice of actions accordingly</li>
+</ul>
+<h2 id="growth">Growth</h2>
+<p>Initially, the system is created with at least some input nodes. Regular nodes, as well as new input nodes, are created as time passes and as the system interacts with its environment.</p>
+<p>The following processes are left unspecified in this document:</p>
+<ul>
+<li>Deciding which indicators are useful</li>
+<li>Deciding which new indicators to create from pairs of existing indicators</li>
+</ul>
+<h2 id="conjunction">Conjunction</h2>
+<p>The conjunction of two concepts is defined as two indicators active at the same time. It is detected one tick later.</p>
+<h2 id="abstraction">Abstraction</h2>
+<p>In our context, abstraction is defined as activating one indicator when at least one of several indicators is active.</p>
+<p>The system does not provide such an &quot;OR&quot; construct directly like it provides an &quot;AND&quot; construct in the form of nodes activated by the conjunction of two active nodes.</p>
+<p>Solutions for abstraction must involve actions, possibly via modules that connect actions directly to input nodes without interacting with the outside world.</p>
+<p class="menu footer">
+  <a href="https://twitter.com/mjambon">@mjambon</a> 2016-09-03<br/>
+  <a href="/">Index</a>
+</p>
+</body>
+</html>

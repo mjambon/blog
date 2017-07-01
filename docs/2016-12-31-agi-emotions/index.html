@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="../blog.css">
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <meta name=viewport content="width=device-width, initial-scale=1">
+</head>
+<body>
+<h1 id="engineering-emotions">Engineering emotions</h1>
+<p><em>These are notes on managing global parameters in a family of cognitive systems <a href="../2016-08-20-agi-project-status-2016">introduced earlier</a>. They are conveniently named emotions, although our definition is purely technical, broad, and doesn't attempt to emulate specific human emotions.</em></p>
+<p>An emotion is a specific value or range of values of a global parameter of the system, which is built-in or inherited, affects the activity of the system, is triggered by some states of the system, and can be sensed by the system itself.</p>
+<p>Sensing a combination of emotions and other input can result in what we would call feelings, which are embodied by active nodes like any other perceived concept in the system.</p>
+<p>In the diagram below, the circled <span class="math inline">\(E\)</span> represents the global parameter in the state corresponding to an emotion <span class="math inline">\(E\)</span>.</p>
+<p><img src="img/emotion.svg"
+     alt="Place of an emotion in an AGI system"></p>
+<p>Unlike input nodes (sensors) or output nodes (actuators) which are created by IO modules, global parameters cannot be plugged-in using a standard API. Their value is modified by states of the system that are not accessible by IO modules and they have an effect on how the system behaves internally.</p>
+<p>Examples of possible trigger factors:</p>
+<ul>
+<li>familiarity/novelty: a large proportion of active nodes are old or young, respectively.</li>
+<li>importance: a large number or fraction of active nodes are estimated as important.</li>
+<li>incongruity: two or more high-confidence, high-importance concepts emerge but they have never co-occurred before.</li>
+</ul>
+<p>Examples of possible effects:</p>
+<ul>
+<li>panic: no more experimentation with uncertain actions; only high-confidence actions can take place.</li>
+<li>relaxing: reduced learning activity, energy savings.</li>
+</ul>
+<p>Unlike other neuron-like nodes in the system, dynamic global parameters resulting in emotions have the following properties:</p>
+<ul>
+<li>They exist during the whole life of the system.</li>
+<li>The rules for changing their values don't change during the lifetime of the system.</li>
+<li>The rules that determine their effects don't change during the lifetime of the system.</li>
+<li>There's no restriction on what part of the software they can affect.</li>
+</ul>
+<p class="menu footer">
+  <a href="https://twitter.com/mjambon">@mjambon</a> 2016-12-31<br/>
+  <a href="/">Index</a>
+</p>
+</body>
+</html>
