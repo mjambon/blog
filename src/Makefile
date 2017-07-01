@@ -15,11 +15,11 @@ ARTICLES = \
   2017-01-08-issue-voting-method \
   2017-03-05-current-interests
 
-HTMLDIR = ../html
+DOCROOT = ../docs
 
 HTML = \
-  $(HTMLDIR)/index.html \
-  $(addprefix $(HTMLDIR)/, $(addsuffix /index.html, $(ARTICLES)))
+  $(DOCROOT)/index.html \
+  $(addprefix $(DOCROOT)/, $(addsuffix /index.html, $(ARTICLES)))
 
 IMG = $(wildcard */img)
 DOT = $(wildcard */dot)
@@ -30,27 +30,27 @@ export PATH := $(UTILDIR):$(PATH)
 .PHONY: default all html img graphs css clean
 default: all
 all:
-	mkdir -p ../html
-	cp ../css/blog.css $(HTMLDIR)
+	mkdir -p $(DOCROOT)
+	cp ../css/blog.css $(DOCROOT)
 	$(MAKE) html img graphs
 
 html: $(HTML)
 
 img:
 	for x in $(IMG); do \
-    mkdir -p $(HTMLDIR)/$$x; \
-    cp -u $$x/* $(HTMLDIR)/$$x/; \
+    mkdir -p $(DOCROOT)/$$x; \
+    cp -u $$x/* $(DOCROOT)/$$x/; \
   done
 
 graphs:
 	for x in $(DOT); do \
-    render-graphs "$$x" "$(HTMLDIR)/$$(dirname $$x)/img"; \
+    render-graphs "$$x" "$(DOCROOT)/$$(dirname $$x)/img"; \
   done
 
-$(HTMLDIR)/index.html: index.md Makefile head.html
+$(DOCROOT)/index.html: index.md Makefile head.html
 	pandoc $< -o $@ -t html5 -s -c blog.css -H head.html
 
-$(HTMLDIR)/%/index.html: %/index.md \
+$(DOCROOT)/%/index.html: %/index.md \
                          Makefile head.html before-body.html after-body.html
 	mkdir -p $(dir $@)
 	options=""; \
@@ -67,4 +67,4 @@ $(HTMLDIR)/%/index.html: %/index.md \
 
 clean:
 	rm -f *~ */*~ */img/*~ */dot/*~
-	rm -rf $(HTMLDIR)
+	rm -rf $(DOCROOT)

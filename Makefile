@@ -1,18 +1,12 @@
 .PHONY: default clean
 
-ifndef BRANCH
-  GITBRANCH = $(shell git branch \
-            | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/' )
-  ifneq ($(GITBRANCH),gh-pages)
-    BRANCH = master
-  else
-    BRANCH = $(GITBRANCH)
-  endif
-endif
+DOCROOT = docs
 
 default:
-	$(MAKE) -f Makefile.$(BRANCH)
+	mkdir -p $(DOCROOT)
+	cp css/*.css $(DOCROOT)
+	$(MAKE) -C src
 
 clean:
-	$(MAKE) -f Makefile.$(BRANCH) clean
+	$(MAKE) -C src clean
 	rm -f *~
