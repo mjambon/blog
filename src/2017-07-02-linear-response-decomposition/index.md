@@ -63,22 +63,75 @@ So, while we are only interested in the immediate effects of
 actions, we need to leave sufficient time for the system to react to
 such effects.
 
-<!-- [constraint] must work in the presence of overlapping effects -->
+## Overlapping effects
 
-<!-- [constraint] learning must be incremental -->
+Multiple actions can take place simultaneously, or close
+enough that their effects on the goal function overlap.
+Our main challenge is to decompose the signal into a combination of
+responses from multiple recent actions.
 
-<!-- [constraint] must adapt when responses change over time -->
+The simplest approach is to model $\phi$ as a sum of
+responses to actions, and this is the one we'll follow.
 
-Example:
+## Incremental learning
 
-<img src="img/sample-signal-base.png"
-     alt="Expected effect of 3 event types">
+It should be possible to start inferring the effects of new actions
+when they start appearing. If only one action is new and the effects
+of all the other actions are already well known, no relearning should
+be necessary, and learning the effects of the new action should be as
+fast as if it were the only action.
 
-<img src="img/sample-signal-components.png"
-     alt="Reconstruction of a signal from events and their expected effects">
+## Adaptation
 
-<img src="img/sample-signal.png"
-     alt="Reconstructed of signal from expected effects of events">
+If the effects of actions change progressively over time, the system
+should be able to adapt. The adaptation rate should not slow down
+as the system ages.
+
+Notations
+---------
+
+Our approach doesn't require the notion of goal function or actions.
+We'll simply refer to the goal function $\phi$ as the **signal**. Each
+act is an action occurring at a given time and will be called an
+**event**. The action is the **kind** of the event.
+
+The variable $k$ will be used typically to identify each event uniquely among
+the set of events $K$.
+
+Each event is a pair $(E_k, t_k)$ of the kind $E_k$ and
+of the time $t_k$ at which it occurred.
+
+An event kind is associated with a function that represents its linear
+contribution to $\phi$. We'll denote $E_k(\tau)$ the value of this
+function at $\tau$, where $\tau$ is the time elapsed since the
+occurrence of an event of this kind. Naturally, the event has no
+contribution to $\phi$ before it occurs, so we have:
+
+$$
+\forall k \in K: \forall \tau < 0: E_k(\tau) = 0
+$$
+
+Additionally, our model assumes that the effect of any event doesn't
+last longer than $w$, called **window** length or just window:
+
+$$
+\forall k \in K: \forall \tau \ge w: E_k(\tau) = 0
+$$
+
+The only interesting values of $E_k$ are the $w$ values $E_k(0),
+E_k(1), \dots, E_k(w-1)$. These are the ones that our algorithm will
+determine, for each event kind $k \in K$.
+
+The signal $\phi$ is modeled as the sum of the effects of all events,
+i.e.
+
+$$
+\phi: t \rightarrow \sum_{k \in K} E_k(t-t_k)
+$$
+
+Given the properties of $E_k$ mentioned above, all events occurring
+outside the window ($t_k \notin [t - w + 1, t]$) can be ignored in the
+computation of $\phi(t)$.
 
 Solution
 --------
