@@ -31,6 +31,7 @@ export PATH := $(UTILDIR):$(PATH)
 default: all
 all:
 	mkdir -p $(DOCROOT)
+	echo -n mjambon.com > $(DOCROOT)/CNAME
 	cp ../css/blog.css $(DOCROOT)
 	$(MAKE) html img graphs
 

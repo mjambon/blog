@@ -21,7 +21,7 @@ itself, as a way to encourage itself to pursue certain paths.
 In such a cognitive system, there is a finite (but possibly growing)
 collection of possible actions. Each action can be viewed as a
 button. We call an act an instance of an action, i.e. the press of a
-button. An act is a pair (action, time).
+button. An act is a pair (action, instant).
 An action, naturally can correspond to a modification
 of the system in its environment, such as an attempt to move
 forward. It can also directly feed back into the system's input ports
@@ -99,7 +99,7 @@ The variable $k$ will be used typically to identify each event uniquely among
 the set of events $K$.
 
 Each event is a pair $(E_k, t_k)$ of the kind $E_k$ and
-of the time $t_k$ at which it occurred.
+of the instant $t_k$ at which it occurred.
 
 An event kind is associated with a function that represents its linear
 contribution to $\phi$. We'll denote $E_k(\tau)$ the value of this
@@ -119,8 +119,8 @@ $$
 $$
 
 The only interesting values of $E_k$ are the $w$ values $E_k(0),
-E_k(1), \dots, E_k(w-1)$. These are the ones that our algorithm will
-determine, for each event kind $k \in K$.
+E_k(1), \dots, E_k(w-1)$. These are the values that our algorithm will
+try to determine, for each event kind $k \in K$.
 
 The signal $\phi$ is modeled as the sum of the effects of all events,
 i.e.
@@ -133,15 +133,88 @@ Given the properties of $E_k$ mentioned above, all events occurring
 outside the window ($t_k \notin [t - w + 1, t]$) can be ignored in the
 computation of $\phi(t)$.
 
+Estimated or predicted equivalents of a variable are denoted with a
+hat. For example, $\hat{\phi}(t)$ is the predicted value of
+$\phi(t)$.
+
+Since estimators have a state that changes over time, the state of an
+estimator at instant $t$ uses a parenthesized superscript. For example,
+$\hat{\phi}^{(t+1)}(t)$ is the version of $\hat{\phi}$ available at
+instant $t+1$ and used to predict the past value $\phi(t)$. When the
+context allows it, we might want to use the assignment notation
+“$\leftarrow$” to indicate the computation of a state at instant $t+1$
+from a state at instant $t$:
+
+$$
+\hat{x} \leftarrow \hat{x} + 1
+$$
+
+can be used interchangeably with
+
+$$
+\hat{x}^{(t+1)} = \hat{x}^{(t)} + 1
+$$
+
 Solution
 --------
 
 ### Description
 
-Define the following: labeled events, window, contributions, delta,
-weights in delta correction
+At each step $t$ of the computation, the value of the signal is
+observed and denoted $\phi(t)$.
 
-Link to implementation: https://github.com/mjambon/unitron
+All the events that occurred within the last $w$ steps are assumed to
+contribute to the signal. The predicted signal at instant $t$ is
+denoted as $\hat{\phi}(t)$ and is computed as follows:
+
+$$
+\hat{\phi}(t) = \sum_{\{ k \in K | t_k \in [t-w-1, t] \}} \hat{E}^{(t)}(t-t_k)
+$$
+
+The difference between the prediction and the actual signal is denoted
+$\delta$:
+
+$$
+\delta_t = \hat{\phi}(t) - \phi(t)
+$$
+
+Each predicted term $\hat{E}_k^{(t)}(t-t_k)$ is an average of
+the previous values of $\tilde{E}_k$, which are the corrected
+terms. These corrected terms are defined such that at a given time
+$t$, they add up to the observed signal $\phi(t)$:
+
+$$
+\phi(t) = \sum_{\{ k \in K | t_k \in [t-w-1, t] \}} \tilde{E}^{(t)}(t-t_k)
+$$
+
+Splitting $\phi(t)$ into corrected terms is done
+by splitting and distributing the difference $\delta_t$ over the
+predicted terms:
+
+$$
+\tilde{E}^{(t)}(t-t_k) = \hat{E}^{(t)}(t-t_k) - v_k^{(t)}(t-t_k) \delta_k
+$$
+
+where each weight $v_k^{(t)}(t-t_k)$ is nonnegative. All weights at instant
+$t$ add up to 1. They are determined so as to reflect the uncertainty on each
+contributing term, so that the terms predicted consistently with high
+certainty will be corrected by a small amount while the more uncertain
+terms will be corrected by a greater amount. An estimation of the
+standard deviation of each term is used for this purpose:
+
+$$
+v_k^{(t)}(t-t_k) = \frac{ \hat{\sigma}_k^{(t)}(t-t_k) }
+                        { \sum_{\{ k \in K | t_k \in [t-w-1, t] \}}
+                            \hat{\sigma}_k^{(t)}(t-t_k) }
+$$
+
+where $\hat{\sigma}_k^{(t)}(t-t_k)$ is an estimate of the standard
+deviation of $\tilde{E}_k$ based on the earlier known values of
+$\tilde{E}_k$.
+
+Averages and standard deviations are estimated using
+[exponential smoothing](https://en.wikipedia.org/wiki/Exponential_smoothing)
+because of their simplicity, but other methods should work well too.
 
 ### Selected scenarios
 
@@ -155,7 +228,24 @@ Link to implementation: https://github.com/mjambon/unitron
   system where actions are fired by nodes representing concepts)
 - systematically co-occurring events?
 
+Applicability
+-------------
+
+- suitable for large number of actions: reinforcement only affects
+  recent actions; small computational requirements.
+- no need to select a learning rate parameter; if the conditions are
+  right, learning is very quick. The effects of each action can be
+  learned at their own rate.
+- overfitting is not seen as a problem that should be solved here;
+  (context, action) pairs with poor success or poor predictability
+  should be avoided by the cognitive system.
+
+Sample implementation
+---------------------
+
+https://github.com/mjambon/unitron
+
 References
 ----------
 
-(moving average)
+???
