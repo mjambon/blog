@@ -168,7 +168,7 @@ contribute to the signal. The predicted signal at instant $t$ is
 denoted as $\hat{\phi}(t)$ and is computed as follows:
 
 $$
-\hat{\phi}(t) = \sum_{\{ k \in K | t_k \in [t-w-1, t] \}} \hat{E}^{(t)}(t-t_k)
+\hat{\phi}(t) = \sum_{\{ k \in K | t_k \in [t-w+1, t] \}} \hat{E}^{(t)}(t-t_k)
 $$
 
 The difference between the prediction and the actual signal is denoted
@@ -184,7 +184,7 @@ terms. These corrected terms are defined such that at a given time
 $t$, they add up to the observed signal $\phi(t)$:
 
 $$
-\phi(t) = \sum_{\{ k \in K | t_k \in [t-w-1, t] \}} \tilde{E}^{(t)}(t-t_k)
+\phi(t) = \sum_{\{ k \in K | t_k \in [t-w+1, t] \}} \tilde{E}^{(t)}(t-t_k)
 $$
 
 Splitting $\phi(t)$ into corrected terms is done
@@ -204,7 +204,7 @@ standard deviation of each term is used for this purpose:
 
 $$
 v_k^{(t)}(t-t_k) = \frac{ \hat{\sigma}_k^{(t)}(t-t_k) }
-                        { \sum_{\{ k \in K | t_k \in [t-w-1, t] \}}
+                        { \sum_{\{ k \in K | t_k \in [t-w+1, t] \}}
                             \hat{\sigma}_k^{(t)}(t-t_k) }
 $$
 
