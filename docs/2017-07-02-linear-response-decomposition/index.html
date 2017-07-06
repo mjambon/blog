@@ -89,20 +89,20 @@ v_k^{(t)}(t-t_k) = \frac{ \hat{\sigma}_k^{(t)}(t-t_k) }
 <p>Note that our averages and standard deviations are estimated using exponential smoothing because of their simplicity (see appendix), but other methods should work well too. Until a certain number of samples is reached, they behave like the classic sample mean and sample standard deviation estimators. Beyond that, they give more weight to recent values.</p>
 <p>There are two classes of special cases where the standard deviation cannot be used to determine the weight:</p>
 <ul>
-<li>In the presence of fewer than 2 samples, the sample standard deviation is undefined.</li>
-<li>If the initial samples are all equal, the estimated standard deviation is 0, which results in <span class="math inline">\(\tilde{E}_k\)</span> being not updated ever again.</li>
+<li>Special case 1: In the presence of fewer than 2 samples, the sample standard deviation is undefined.</li>
+<li>Special case 2: If the initial samples are all equal, the estimated standard deviation is 0, which results in <span class="math inline">\(\tilde{E}_k\)</span> being not updated ever again.</li>
 </ul>
-<p>For the first case, a possible trick is to pretend the standard deviation is so large that all the other weights will be negligible, except those in the similar situation with an undefined standard deviation. Given <span class="math inline">\(n\)</span> such problematic terms, we can assign them each a weight of <span class="math inline">\(1/n\)</span>, and assign a weight of <span class="math inline">\(0\)</span> to the terms whose standard definition is defined.</p>
-<p>For the second case, we can impose a minimum value to the our estimate of the standard deviation. Let's call <span class="math inline">\(S\)</span> the sum of the standard deviations at instant <span class="math inline">\(t\)</span>:</p>
+<p>For special case 1, a possible trick is to pretend the standard deviation is so large that all the other weights are negligible, except those in the similar situation with an undefined standard deviation. Given <span class="math inline">\(n\)</span> such problematic terms, we can assign them each a weight of <span class="math inline">\(1/n\)</span>, and assign a weight of <span class="math inline">\(0\)</span> to the terms whose standard deviation is defined.</p>
+<p>For special case 2, we can impose a minimum value to the estimate of the standard deviation. Let's call <span class="math inline">\(S\)</span> the sum of the standard deviations at instant <span class="math inline">\(t\)</span>:</p>
 <p><span class="math display">\[
 S_t = \sum_{\{ k \in K | t_k \in [t-w+1, t] \}}
       \hat{\sigma}_k^{(t)}(t-t_k)
 \]</span></p>
-<p>If <span class="math inline">\(n\)</span> is the number of terms in the sum, i.e. the number of events within the window, we can define a minimum weight <span class="math inline">\(m_t\)</span> as a small fraction of <span class="math inline">\(S\)</span>:</p>
+<p>If <span class="math inline">\(S_t = 0\)</span>, we give an equal weight to all the terms as for special case 1. Otherwise, let <span class="math inline">\(n\)</span> be the number of terms in the sum, i.e. the number of events within the window. We define a minimum weight <span class="math inline">\(m_t\)</span> as a small fraction of <span class="math inline">\(S_t\)</span>:</p>
 <p><span class="math display">\[
-m_t = \frac{ \epsilon S_t }{n}
+m_t = \frac{\epsilon}{n} S_t
 \]</span></p>
-<p>where <span class="math inline">\(\epsilon\)</span> is a small constant such as 0.001.</p>
+<p>where <span class="math inline">\(\epsilon\)</span> is a small positive constant such as 0.001.</p>
 <p>Each weight is then defined as:</p>
 <p><span class="math display">\[
 v_k^{(t)}(t-t_k) = \frac{ \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
@@ -125,10 +125,10 @@ v_k^{(t)}(t-t_k) = \frac{ \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
 <li>no need to select a learning rate parameter; if the conditions are right, learning is very quick. The effects of each action can be learned at their own rate.</li>
 <li>overfitting is not seen as a problem that should be solved here; (context, action) pairs with poor success or poor predictability should be avoided by the cognitive system.</li>
 </ul>
-<h2 id="sample-implementation">Sample implementation</h2>
-<p>https://github.com/mjambon/unitron</p>
-<h2 id="references">References</h2>
-<p>???</p>
+<h2 id="appendix">Appendix</h2>
+<h3 id="sample-implementation">Sample implementation</h3>
+<p><a href="https://github.com/mjambon/unitron" class="uri">https://github.com/mjambon/unitron</a></p>
+<h3 id="exponential-moving-average-and-variance">Exponential moving average and variance</h3>
 <p class="menu footer">
   <a href="https://twitter.com/mjambon">@mjambon</a> 2017-07-02<br/>
   <a href="/">Index</a>

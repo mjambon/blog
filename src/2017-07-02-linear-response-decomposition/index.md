@@ -220,20 +220,20 @@ weight to recent values.
 There are two classes of special cases where the standard deviation
 cannot be used to determine the weight:
 
-* In the presence of fewer than 2 samples, the sample standard deviation is
-  undefined.
-* If the initial samples are all equal, the estimated standard
+* Special case 1: In the presence of fewer than 2 samples, the sample
+  standard deviation is undefined.
+* Special case 2: If the initial samples are all equal, the estimated standard
   deviation is 0, which results in $\tilde{E}_k$ being not updated ever
   again.
 
-For the first case, a possible trick is to pretend the standard
-deviation is so large that all the other weights will be negligible,
+For special case 1, a possible trick is to pretend the standard
+deviation is so large that all the other weights are negligible,
 except those in the similar situation with an undefined standard
 deviation. Given $n$ such problematic terms, we can assign them each a
 weight of $1/n$, and assign a weight of $0$ to the terms whose
-standard definition is defined.
+standard deviation is defined.
 
-For the second case, we can impose a minimum value to the our estimate
+For special case 2, we can impose a minimum value to the estimate
 of the standard deviation. Let's call $S$ the sum of the
 standard deviations at instant $t$:
 
@@ -242,15 +242,16 @@ S_t = \sum_{\{ k \in K | t_k \in [t-w+1, t] \}}
       \hat{\sigma}_k^{(t)}(t-t_k)
 $$
 
-If $n$ is the number of terms in the sum, i.e. the number of events
-within the window, we can define a minimum weight $m_t$ as a small fraction
-of $S$:
+If $S_t = 0$, we give an equal weight to all the terms as for special
+case&nbsp;1. Otherwise, let $n$ be the number of terms in the sum, i.e. the
+number of events within the window. We define a minimum weight $m_t$
+as a small fraction of $S_t$:
 
 $$
-m_t = \frac{ \epsilon S_t }{n}
+m_t = \frac{\epsilon}{n} S_t
 $$
 
-where $\epsilon$ is a small constant such as 0.001.
+where $\epsilon$ is a small positive constant such as 0.001.
 
 Each weight is then defined as:
 
@@ -259,7 +260,6 @@ v_k^{(t)}(t-t_k) = \frac{ \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
                         { \sum_{\{ k \in K | t_k \in [t-w+1, t] \}}
                             \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
 $$
-
 
 
 ### Selected scenarios
@@ -286,12 +286,11 @@ Applicability
   (context, action) pairs with poor success or poor predictability
   should be avoided by the cognitive system.
 
-Sample implementation
----------------------
+Appendix
+--------
 
-https://github.com/mjambon/unitron
+### Sample implementation
 
-References
-----------
+[https://github.com/mjambon/unitron](https://github.com/mjambon/unitron)
 
-???
+### Exponential moving average and variance
