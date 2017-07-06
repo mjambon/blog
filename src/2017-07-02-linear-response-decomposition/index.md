@@ -137,22 +137,20 @@ Estimated or predicted equivalents of a variable are denoted with a
 hat. For example, $\hat{\phi}(t)$ is the predicted value of
 $\phi(t)$.
 
-Since estimators have a state that changes over time, the state of an
-estimator at instant $t$ uses a parenthesized superscript. For example,
-$\hat{\phi}^{(t+1)}(t)$ is the version of $\hat{\phi}$ available at
-instant $t+1$ and used to predict the past value $\phi(t)$. When the
-context allows it, we might want to use the assignment notation
-“$\leftarrow$” to indicate the computation of a state at instant $t+1$
-from a state at instant $t$:
+Since estimators have a state that changes over time, we use
+a parenthesized superscript to specify which state we're referring
+to. In the following example, we use the variable $\hat{\mu}$ to
+represent the exponential moving average of the sequence
+$x$. $\hat{\mu}$ is updated as follows:
 
 $$
-\hat{x} \leftarrow \hat{x} + 1
+\hat{\mu}^{(t+1)} = r x_t + (1-r) \hat{\mu}^{(t)}
 $$
 
-can be used interchangeably with
+which could be implemented as the in-place assignment
 
 $$
-\hat{x}^{(t+1)} = \hat{x}^{(t)} + 1
+\hat{\mu} \leftarrow r x_t + (1-r) \hat{\mu}
 $$
 
 Solution
@@ -212,9 +210,57 @@ where $\hat{\sigma}_k^{(t)}(t-t_k)$ is an estimate of the standard
 deviation of $\tilde{E}_k$ based on the earlier known values of
 $\tilde{E}_k$.
 
-Averages and standard deviations are estimated using
-[exponential smoothing](https://en.wikipedia.org/wiki/Exponential_smoothing)
-because of their simplicity, but other methods should work well too.
+Note that our averages and standard deviations are estimated using
+exponential smoothing because of their simplicity (see appendix),
+but other methods should work well too. Until a certain number of
+samples is reached, they behave like the classic sample mean and
+sample standard deviation estimators. Beyond that, they give more
+weight to recent values.
+
+There are two classes of special cases where the standard deviation
+cannot be used to determine the weight:
+
+* In the presence of fewer than 2 samples, the sample standard deviation is
+  undefined.
+* If the initial samples are all equal, the estimated standard
+  deviation is 0, which results in $\tilde{E}_k$ being not updated ever
+  again.
+
+For the first case, a possible trick is to pretend the standard
+deviation is so large that all the other weights will be negligible,
+except those in the similar situation with an undefined standard
+deviation. Given $n$ such problematic terms, we can assign them each a
+weight of $1/n$, and assign a weight of $0$ to the terms whose
+standard definition is defined.
+
+For the second case, we can impose a minimum value to the our estimate
+of the standard deviation. Let's call $S$ the sum of the
+standard deviations at instant $t$:
+
+$$
+S_t = \sum_{\{ k \in K | t_k \in [t-w+1, t] \}}
+      \hat{\sigma}_k^{(t)}(t-t_k)
+$$
+
+If $n$ is the number of terms in the sum, i.e. the number of events
+within the window, we can define a minimum weight $m_t$ as a small fraction
+of $S$:
+
+$$
+m_t = \frac{ \epsilon S_t }{n}
+$$
+
+where $\epsilon$ is a small constant such as 0.001.
+
+Each weight is then defined as:
+
+$$
+v_k^{(t)}(t-t_k) = \frac{ \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
+                        { \sum_{\{ k \in K | t_k \in [t-w+1, t] \}}
+                            \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
+$$
+
+
 
 ### Selected scenarios
 

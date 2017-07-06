@@ -52,13 +52,13 @@
 \]</span></p>
 <p>Given the properties of <span class="math inline">\(E_k\)</span> mentioned above, all events occurring outside the window (<span class="math inline">\(t_k \notin [t - w + 1, t]\)</span>) can be ignored in the computation of <span class="math inline">\(\phi(t)\)</span>.</p>
 <p>Estimated or predicted equivalents of a variable are denoted with a hat. For example, <span class="math inline">\(\hat{\phi}(t)\)</span> is the predicted value of <span class="math inline">\(\phi(t)\)</span>.</p>
-<p>Since estimators have a state that changes over time, the state of an estimator at instant <span class="math inline">\(t\)</span> uses a parenthesized superscript. For example, <span class="math inline">\(\hat{\phi}^{(t+1)}(t)\)</span> is the version of <span class="math inline">\(\hat{\phi}\)</span> available at instant <span class="math inline">\(t+1\)</span> and used to predict the past value <span class="math inline">\(\phi(t)\)</span>. When the context allows it, we might want to use the assignment notation “<span class="math inline">\(\leftarrow\)</span>” to indicate the computation of a state at instant <span class="math inline">\(t+1\)</span> from a state at instant <span class="math inline">\(t\)</span>:</p>
+<p>Since estimators have a state that changes over time, we use a parenthesized superscript to specify which state we're referring to. In the following example, we use the variable <span class="math inline">\(\hat{\mu}\)</span> to represent the exponential moving average of the sequence <span class="math inline">\(x\)</span>. <span class="math inline">\(\hat{\mu}\)</span> is updated as follows:</p>
 <p><span class="math display">\[
-\hat{x} \leftarrow \hat{x} + 1
+\hat{\mu}^{(t+1)} = r x_t + (1-r) \hat{\mu}^{(t)}
 \]</span></p>
-<p>can be used interchangeably with</p>
+<p>which could be implemented as the in-place assignment</p>
 <p><span class="math display">\[
-\hat{x}^{(t+1)} = \hat{x}^{(t)} + 1
+\hat{\mu} \leftarrow r x_t + (1-r) \hat{\mu}
 \]</span></p>
 <h2 id="solution">Solution</h2>
 <h3 id="description">Description</h3>
@@ -86,7 +86,29 @@ v_k^{(t)}(t-t_k) = \frac{ \hat{\sigma}_k^{(t)}(t-t_k) }
                             \hat{\sigma}_k^{(t)}(t-t_k) }
 \]</span></p>
 <p>where <span class="math inline">\(\hat{\sigma}_k^{(t)}(t-t_k)\)</span> is an estimate of the standard deviation of <span class="math inline">\(\tilde{E}_k\)</span> based on the earlier known values of <span class="math inline">\(\tilde{E}_k\)</span>.</p>
-<p>Averages and standard deviations are estimated using <a href="https://en.wikipedia.org/wiki/Exponential_smoothing">exponential smoothing</a> because of their simplicity, but other methods should work well too.</p>
+<p>Note that our averages and standard deviations are estimated using exponential smoothing because of their simplicity (see appendix), but other methods should work well too. Until a certain number of samples is reached, they behave like the classic sample mean and sample standard deviation estimators. Beyond that, they give more weight to recent values.</p>
+<p>There are two classes of special cases where the standard deviation cannot be used to determine the weight:</p>
+<ul>
+<li>In the presence of fewer than 2 samples, the sample standard deviation is undefined.</li>
+<li>If the initial samples are all equal, the estimated standard deviation is 0, which results in <span class="math inline">\(\tilde{E}_k\)</span> being not updated ever again.</li>
+</ul>
+<p>For the first case, a possible trick is to pretend the standard deviation is so large that all the other weights will be negligible, except those in the similar situation with an undefined standard deviation. Given <span class="math inline">\(n\)</span> such problematic terms, we can assign them each a weight of <span class="math inline">\(1/n\)</span>, and assign a weight of <span class="math inline">\(0\)</span> to the terms whose standard definition is defined.</p>
+<p>For the second case, we can impose a minimum value to the our estimate of the standard deviation. Let's call <span class="math inline">\(S\)</span> the sum of the standard deviations at instant <span class="math inline">\(t\)</span>:</p>
+<p><span class="math display">\[
+S_t = \sum_{\{ k \in K | t_k \in [t-w+1, t] \}}
+      \hat{\sigma}_k^{(t)}(t-t_k)
+\]</span></p>
+<p>If <span class="math inline">\(n\)</span> is the number of terms in the sum, i.e. the number of events within the window, we can define a minimum weight <span class="math inline">\(m_t\)</span> as a small fraction of <span class="math inline">\(S\)</span>:</p>
+<p><span class="math display">\[
+m_t = \frac{ \epsilon S_t }{n}
+\]</span></p>
+<p>where <span class="math inline">\(\epsilon\)</span> is a small constant such as 0.001.</p>
+<p>Each weight is then defined as:</p>
+<p><span class="math display">\[
+v_k^{(t)}(t-t_k) = \frac{ \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
+                        { \sum_{\{ k \in K | t_k \in [t-w+1, t] \}}
+                            \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
+\]</span></p>
 <h3 id="selected-scenarios">Selected scenarios</h3>
 <ul>
 <li>ideal scenario: constant contributions, linear, new events not overlapping with each other, window of 1</li>
