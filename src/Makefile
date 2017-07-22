@@ -13,7 +13,8 @@ ARTICLES = \
   2017-01-02-agi-world \
   2017-01-08-issue-voting-method \
   2017-03-05-current-interests \
-  2017-07-02-linear-response-decomposition
+  2017-07-02-linear-response-decomposition \
+  2017-07-22-values
 
 DOCROOT = ../docs
 

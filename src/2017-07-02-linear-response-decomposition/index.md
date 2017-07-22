@@ -266,8 +266,13 @@ $$
 
 - ideal scenario: constant contributions, linear, new events not
   overlapping with each other, window of 1
+
 - window longer than 1?
+  (default)
+
 - random noise on some contributions?
+  (nonnoisy_contribution, noisy_contribution)
+
 - random noise on all contributions?
 - background noise on goal function?
 - non-linear effects? (and how to deal with them in the context of AGI
