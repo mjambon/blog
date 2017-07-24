@@ -1,10 +1,13 @@
-Real-time decomposition of a signal into a sum of responses to labeled events
-=============================================================================
+% Real-time decomposition of a signal into a sum of responses to labeled events
+% Martin Jambon
+% July 2017
+
+<!-- toc -->
 
 <!-- abstract -->
 
 Motivation in the context of artificial general intelligence
-------------------------------------------------------------
+=====
 
 The problem we are trying to solve arises while developing a cognitive
 system driven that operates in real-time and is driven by a single
@@ -40,9 +43,9 @@ triggered within a time window of length $w$, we wish to determine the
 impact of each action on $\phi$.
 
 General design contraints
--------------------------
+=====
 
-### Independence from context
+## Independence from context
 
 The response to an action is considered the same independently from
 the context. In the case of artificial general intelligence (AGI),
@@ -51,7 +54,7 @@ many controls ("buttons") as there are contexts. Instead of studying
 the response to an action regardless of the context, we can study the
 response to the pair (context, action).
 
-### Effects can be delayed
+## Effects can be delayed
 
 We wish to capture the "immediate" effects of an action. However, our
 system is such that during a time step it can only propagate
@@ -88,7 +91,7 @@ should be able to adapt. The adaptation rate should not slow down
 as the system ages.
 
 Notations
----------
+=====
 
 Our approach doesn't require the notion of goal function or actions.
 We'll simply refer to the goal function $\phi$ as the **signal**. Each
@@ -154,9 +157,9 @@ $$
 $$
 
 Solution
---------
+=====
 
-### Description
+## Description
 
 At each step $t$ of the computation, the value of the signal is
 observed and denoted $\phi(t)$.
@@ -166,7 +169,8 @@ contribute to the signal. The predicted signal at instant $t$ is
 denoted as $\hat{\phi}(t)$ and is computed as follows:
 
 $$
-\hat{\phi}(t) = \sum_{\{ k \in K | t_k \in [t-w+1, t] \}} \hat{E}^{(t)}(t-t_k)
+\hat{\phi}(t) = \sum_{\{ k \in K | t_k \in [t-w+1, t] \}}
+                   \hat{E}_k^{(t)}(t-t_k)
 $$
 
 The difference between the prediction and the actual signal is denoted
@@ -262,25 +266,101 @@ v_k^{(t)}(t-t_k) = \frac{ \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
 $$
 
 
-### Selected scenarios
+## Selected scenarios
 
-- ideal scenario: constant contributions, linear, new events not
-  overlapping with each other, window of 1
+A series of tests was conducted to evaluate the behavior of the system
+with different parameters and under different conditions.
 
-- window longer than 1?
-  (default)
+The source code is currently available at
+[https://github.com/mjambon/unitron](https://github.com/mjambon/unitron)
+
+### Shared protocol
+
+A single run starts from time $t=0$ and runs as many steps as
+necessary to reach specified conditions. This number of steps $T$ will
+be our main criterion for determining how well the system performs.
+
+These runs being non-deterministic, we repeat them 100 times, and
+report simple statistics on the value of $N$ in each case.
+
+The default setup consists in the following:
+
+* Two actions $A$ and $B$ may be fired at each time step, each with a
+  certain probability ($P(A) = 0.5$, $P(B) = 0.5$).
+* Each action has an additive effect on the goal function. By default,
+  A and B have effects on the value of the goal function for the
+  current step and the next two steps. The contributions of $A$
+  are $E_A = [1, -0.5, 0.25, 0, \dots]$ and the contributions of $B$
+  are $E_B = [0.1, 0.2, 0.05, 0, \dots]$.
+* The window length $w$ is 10.
+
+For example, if action $A$ is triggered at some step $t$ and action
+$B$ is triggered at $t+1$,
+and no action took place earlier and no action takes place after that,
+the values of the goal function $\phi$ are:
+$$
+\begin{eqnarray}
+\dots && \\
+\phi(t-1) &=& 0\\
+\phi(t)   &=& 1 \\
+\phi(t+1) &=& -0.5 + 0.1 \\
+\phi(t+2) &=& 0.25 + 0.2 \\
+\phi(t+3) &=& 0.05\\
+\phi(t+4) &=& 0\\
+\dots &&
+\end{eqnarray}
+$$
+
+We'll predict the values of $E_A$ and $E_B$ and look at how many steps
+it takes to get close enough to the expected values $E_A(0)$ and
+$E_B(0)$. The conditions are the following:
+
+$$
+\left\{
+  \begin{eqnarray}
+    && \left| \hat{E}_A^{(T)}(0) - E_A(0) \right| \le \mathrm{tolerance}_A \\
+    && \left| \hat{\sigma}_A^{(T)}(0) \right| \le \mathrm{maxstdev}_A
+  \end{eqnarray}
+\right.
+$$
+
+$$
+\left\{
+  \begin{eqnarray}
+    && \left| \hat{E}_B^{(T)}(0) - E_B(0) \right| \le \mathrm{tolerance}_B \\
+    && \left| \hat{\sigma}_B^{(T)}(0) \right| \le \mathrm{maxstdev}_B
+  \end{eqnarray}
+\right.
+$$
+
+with the following default thresholds:
+
+$$
+\begin{eqnarray}
+\mathrm{tolerance}_A &=& 0.05 \\
+\mathrm{maxstdev}_A  &=& 0.05 \\
+\mathrm{tolerance}_B &=& 0.05 \\
+\mathrm{maxstdev}_B  &=& 0.05
+\end{eqnarray}
+$$
+
+### Default setup
+
+### Noisy effects
 
 - random noise on some contributions?
   (nonnoisy_contribution, noisy_contribution)
 
-- random noise on all contributions?
-- background noise on goal function?
-- non-linear effects? (and how to deal with them in the context of AGI
-  system where actions are fired by nodes representing concepts)
-- systematically co-occurring events?
+### Background noise
 
-Applicability
--------------
+- background noise on goal function?
+
+### Interdependent events
+
+- B => A
+
+Conclusion
+=====
 
 - suitable for large number of actions: reinforcement only affects
   recent actions; small computational requirements.
@@ -290,12 +370,19 @@ Applicability
 - overfitting is not seen as a problem that should be solved here;
   (context, action) pairs with poor success or poor predictability
   should be avoided by the cognitive system.
+- non-linear effects cannot be handled here directly. Instead, a
+  pattern should be identified first and act as the source for a
+  specific action. If effect(A and B) = effect(A) + effect(B) + x,
+  we will form a control named AB, active one step after both A and
+  B. This now allows a linear decomposition as
+  effect(A and B)_t = effect(A)_t + effect(B)_t + effect(AB)_(t-1)
+  which works except for t=0.
 
 Appendix
---------
+=====
 
-### Sample implementation
+## Sample implementation
 
 [https://github.com/mjambon/unitron](https://github.com/mjambon/unitron)
 
-### Exponential moving average and variance
+## Exponential moving average and variance
