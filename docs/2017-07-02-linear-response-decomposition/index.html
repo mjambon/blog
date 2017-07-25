@@ -35,9 +35,13 @@
 <li><a href="#description"><span class="toc-section-number">4.1</span> Description</a></li>
 <li><a href="#selected-scenarios"><span class="toc-section-number">4.2</span> Selected scenarios</a><ul>
 <li><a href="#shared-protocol"><span class="toc-section-number">4.2.1</span> Shared protocol</a></li>
+<li><a href="#default-setup"><span class="toc-section-number">4.2.2</span> Default setup</a></li>
+<li><a href="#noisy-effects"><span class="toc-section-number">4.2.3</span> Noisy effects</a></li>
+<li><a href="#background-noise"><span class="toc-section-number">4.2.4</span> Background noise</a></li>
+<li><a href="#interdependent-events"><span class="toc-section-number">4.2.5</span> Interdependent events</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#applicability"><span class="toc-section-number">5</span> Applicability</a></li>
+<li><a href="#conclusion"><span class="toc-section-number">5</span> Conclusion</a></li>
 <li><a href="#appendix"><span class="toc-section-number">6</span> Appendix</a><ul>
 <li><a href="#sample-implementation"><span class="toc-section-number">6.1</span> Sample implementation</a></li>
 <li><a href="#exponential-moving-average-and-variance"><span class="toc-section-number">6.2</span> Exponential moving average and variance</a></li>
@@ -166,6 +170,7 @@ v_k^{(t)}(t-t_k) = \frac{ \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
 \]</span></p>
 <p>We'll predict the values of <span class="math inline">\(E_A\)</span> and <span class="math inline">\(E_B\)</span> and look at how many steps it takes to get close enough to the expected values <span class="math inline">\(E_A(0)\)</span> and <span class="math inline">\(E_B(0)\)</span>. The conditions are the following:</p>
 <p><span class="math display">\[
+\mathrm{Condition}_A
 \left\{
   \begin{eqnarray}
     &amp;&amp; \left| \hat{E}_A^{(T)}(0) - E_A(0) \right| \le \mathrm{tolerance}_A \\
@@ -174,6 +179,7 @@ v_k^{(t)}(t-t_k) = \frac{ \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
 \right.
 \]</span></p>
 <p><span class="math display">\[
+\mathrm{Condition}_B
 \left\{
   \begin{eqnarray}
     &amp;&amp; \left| \hat{E}_B^{(T)}(0) - E_B(0) \right| \le \mathrm{tolerance}_B \\
@@ -190,20 +196,40 @@ v_k^{(t)}(t-t_k) = \frac{ \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
 \mathrm{maxstdev}_B  &amp;=&amp; 0.05
 \end{eqnarray}
 \]</span></p>
+<h3 id="default-setup"><span class="header-section-number">4.2.2</span> Default setup</h3>
+<p>This setup uses only the default parameters described in the previous section.</p>
+<p>Number of steps to reach Condition<span class="math inline">\(_A\)</span>:</p>
 <ul>
-<li><p>ideal scenario: constant contributions, linear, new events not overlapping with each other, window of 1</p></li>
-<li><p>window longer than 1? (default)</p></li>
-<li><p>random noise on some contributions? (nonnoisy_contribution, noisy_contribution)</p></li>
-<li>random noise on all contributions?</li>
-<li>background noise on goal function?</li>
-<li>non-linear effects? (and how to deal with them in the context of AGI system where actions are fired by nodes representing concepts)</li>
-<li><p>systematically co-occurring events?</p></li>
+<li>mean, standard deviation: 99.2, 50.3</li>
+<li>median: 84.5</li>
+<li>10th percentile: 53.0</li>
+<li>90th percentile: 158.6</li>
 </ul>
-<h1 id="applicability"><span class="header-section-number">5</span> Applicability</h1>
+<p>Number of steps to reach Condition<span class="math inline">\(_B\)</span>:</p>
+<ul>
+<li>mean, standard deviation: 80.8, 55.9</li>
+<li>median: 71.5</li>
+<li>10th percentile: 22.9</li>
+<li>90th percentile: 144.0</li>
+</ul>
+<h3 id="noisy-effects"><span class="header-section-number">4.2.3</span> Noisy effects</h3>
+<ul>
+<li>random noise on some contributions? (nonnoisy_contribution, noisy_contribution)</li>
+</ul>
+<h3 id="background-noise"><span class="header-section-number">4.2.4</span> Background noise</h3>
+<ul>
+<li>background noise on goal function?</li>
+</ul>
+<h3 id="interdependent-events"><span class="header-section-number">4.2.5</span> Interdependent events</h3>
+<ul>
+<li>B =&gt; A</li>
+</ul>
+<h1 id="conclusion"><span class="header-section-number">5</span> Conclusion</h1>
 <ul>
 <li>suitable for large number of actions: reinforcement only affects recent actions; small computational requirements.</li>
 <li>no need to select a learning rate parameter; if the conditions are right, learning is very quick. The effects of each action can be learned at their own rate.</li>
 <li>overfitting is not seen as a problem that should be solved here; (context, action) pairs with poor success or poor predictability should be avoided by the cognitive system.</li>
+<li>non-linear effects cannot be handled here directly. Instead, a pattern should be identified first and act as the source for a specific action. If effect(A and B) = effect(A) + effect(B) + x, we will form a control named AB, active one step after both A and B. This now allows a linear decomposition as effect(A and B)_t = effect(A)_t + effect(B)<em>t + effect(AB)</em>(t-1) which works except for t=0.</li>
 </ul>
 <h1 id="appendix"><span class="header-section-number">6</span> Appendix</h1>
 <h2 id="sample-implementation"><span class="header-section-number">6.1</span> Sample implementation</h2>

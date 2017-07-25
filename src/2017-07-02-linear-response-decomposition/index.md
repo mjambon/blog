@@ -316,6 +316,7 @@ it takes to get close enough to the expected values $E_A(0)$ and
 $E_B(0)$. The conditions are the following:
 
 $$
+\mathrm{Condition}_A
 \left\{
   \begin{eqnarray}
     && \left| \hat{E}_A^{(T)}(0) - E_A(0) \right| \le \mathrm{tolerance}_A \\
@@ -325,6 +326,7 @@ $$
 $$
 
 $$
+\mathrm{Condition}_B
 \left\{
   \begin{eqnarray}
     && \left| \hat{E}_B^{(T)}(0) - E_B(0) \right| \le \mathrm{tolerance}_B \\
@@ -346,18 +348,110 @@ $$
 
 ### Default setup
 
+This setup uses only the default parameters described in the previous
+section.
+
+Number of steps to reach Condition$_A$:
+
+* mean, standard deviation: 99.2, 50.3
+* median: 84.5
+* 10th percentile: 53.0
+* 90th percentile: 158.6
+
+Number of steps to reach Condition$_B$:
+
+* mean, standard deviation: 80.8, 55.9
+* median: 71.5
+* 10th percentile: 22.9
+* 90th percentile: 144.0
+
+### Large difference between contributions
+
+In this setup, $E_A(0)$ is 100 instead of 1, while $E_B(0)$ remains
+0.1.
+
+Number of steps to reach Condition$_A$:
+
+* mean, standard deviation: 405.5, 179.5
+* median: 363.0
+* 10th percentile: 205.5
+* 90th percentile: 688.0
+
+Number of steps to reach Condition$_B$:
+
+* mean, standard deviation: 299.1, 206.1
+* median: 313.5
+* 10th percentile: 2.9
+* 90th percentile: 542.1
+
 ### Noisy effects
 
-- random noise on some contributions?
+- random noise on contribution A?
   (nonnoisy_contribution, noisy_contribution)
+
+Number of steps to reach Condition$_A$ (control):
+
+* mean, standard deviation: 70.5, 43.2
+* median: 59.5
+* 10th percentile: 34.7
+* 90th percentile: 127.0
+
+Number of steps to reach Condition$_B$ (control):
+
+* mean, standard deviation: 80.0, 63.4
+* median: 67.5
+* 10th percentile: 19.9
+* 90th percentile: 158.3
+
+Number of steps to reach Condition$_A$ (noisy):
+
+* mean, standard deviation: 68.6, 38.9
+* median: 57.5
+* 10th percentile: 31.0
+* 90th percentile: 117.6
+
+Number of steps to reach Condition$_B$ (noisy):
+
+* mean, standard deviation: 144.9, 146.7
+* median: 94.0
+* 10th percentile: 22.8
+* 90th percentile: 305.2
 
 ### Background noise
 
 - background noise on goal function?
 
+Number of steps to reach Condition$_A$:
+
+* mean, standard deviation: 105.9, 65.3
+* median: 90.0
+* 10th percentile: 52.0
+* 90th percentile: 162.1
+
+Number of steps to reach Condition$_B$:
+
+* mean, standard deviation: 91.3, 85.2
+* median: 67.5
+* 10th percentile: 21.9
+* 90th percentile: 205.8
+
 ### Interdependent events
 
 - B => A
+
+Number of steps to reach Condition$_A$:
+
+* mean, standard deviation: 115.0, 57.8
+* median: 105.0
+* 10th percentile: 48.9
+* 90th percentile: 202.7
+
+Number of steps to reach Condition$_B$:
+
+* mean, standard deviation: 136.0, 86.0
+* median: 124.0
+* 10th percentile: 43.9
+* 90th percentile: 268.2
 
 Conclusion
 =====
