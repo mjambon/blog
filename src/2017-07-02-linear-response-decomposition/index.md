@@ -384,10 +384,46 @@ Number of steps to reach Condition$_B$:
 * 10th percentile: 2.9
 * 90th percentile: 542.1
 
+In this setup, like in the default setup, it takes roughly the same
+number of steps to converge to both the lower value $E_B(0)$
+and the higher value $E_A(0)$.
+
+This is not surprising since nothing in the algorithm would treat
+values that are close to 0 differently than the value far from 0.
+
+It takes however 4-5 times longer to converge in this setup. A crude
+explanation is that even though the tolerance with respect to
+deviations wasn't changed from the original setup, the gap between the
+contributions to predict increased. If we define the relative
+tolerance as the absolute tolerance (\mathrm{tolerance}_A or
+\mathrm{tolerance}_B) over the maximum difference between expected
+contributions, we get the following relative tolerances:
+
+* $0.05/(1 - (-0.5)) = 3.3\%$ in the default setup
+* $0.05/(100 - (-0.5)) = 0.050\%$ in the new setup
+
+When scaling the tolerances accordingly
+($0.05\rightarrow 3.35$),
+the median number of steps for Condition$_A$ and Condition$_B$
+become 182.5 and 154.0 respectively.
+So the new setup requires fewer steps but not as few as the default
+setup, possibly an effect caused by all contributions being clustered
+at or around the same value except for one.
+
+Perhaps convergence tends to be faster if the contributions are more
+evenly spaced among each other.
+
 ### Noisy effects
 
-- random noise on contribution A?
-  (nonnoisy_contribution, noisy_contribution)
+In this setup, we study the effects of each event $A$ are shifted by the
+same random number following a centered normal distribution of parameter
+$\sigma=0.5$.
+
+Because we expect the contributions of $A$ to have a natural standard
+deviation around 0.5, we increased the stopping condition
+$\mathrm{maxstdev}_A$ from 0.05 to 0.5 in both the control and the
+subject. The control uses otherwise the same parameters as the default
+setup.
 
 Number of steps to reach Condition$_A$ (control):
 
@@ -405,17 +441,25 @@ Number of steps to reach Condition$_B$ (control):
 
 Number of steps to reach Condition$_A$ (noisy):
 
-* mean, standard deviation: 68.6, 38.9
-* median: 57.5
-* 10th percentile: 31.0
-* 90th percentile: 117.6
+* mean, standard deviation: 68.6, 37.0
+* median: 56.5
+* 10th percentile: 29.9
+* 90th percentile: 126.1
 
 Number of steps to reach Condition$_B$ (noisy):
 
-* mean, standard deviation: 144.9, 146.7
-* median: 94.0
-* 10th percentile: 22.8
-* 90th percentile: 305.2
+* mean, standard deviation: 129.4, 133.1
+* median: 96.0
+* 10th percentile: 3.0
+* 90th percentile: 283.0
+
+It turns out that the convergence rate for the estimation of noisy
+contributions ($E_A$) are unaffected by the fact of being noisy, but
+the non-noisy contributions take a little longer to converge, with
+large variations from one run to another.
+
+This is counter-intuitive and we don't have a good explanation for
+it.
 
 ### Background noise
 
