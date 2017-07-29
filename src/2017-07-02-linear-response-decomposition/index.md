@@ -162,7 +162,7 @@ Solution
 ## Outline
 
 Informally, the solution consists in maintaining for each action a
-number that indicates the expected effect of this action after some
+number that represents the expected effect of this action after some
 delay. Multiple actions take place, each with an expected effect
 which is a contribution to the signal at some future instant $t$.
 The expected value of the signal is the sum of the contributions at
@@ -412,8 +412,8 @@ It takes however 4-5 times longer to converge in this setup. A crude
 explanation is that even though the tolerance with respect to
 deviations wasn't changed from the original setup, the gap between the
 contributions to predict increased. If we define the relative
-tolerance as the absolute tolerance (\mathrm{tolerance}_A or
-\mathrm{tolerance}_B) over the maximum difference between expected
+tolerance as the absolute tolerance ($\mathrm{tolerance}_A$ or
+$\mathrm{tolerance}_B$) over the maximum difference between expected
 contributions, we get the following relative tolerances:
 
 * $0.05/(1 - (-0.5)) = 3.3\%$ in the default setup
@@ -536,8 +536,47 @@ Conclusion
 Appendix
 =====
 
-## Sample implementation
-
-[https://github.com/mjambon/unitron](https://github.com/mjambon/unitron)
-
 ## Exponential moving average and variance
+
+The exponential moving average $m$ of a function $f$ over
+nonnegative integers is defined as:
+
+$$
+m(f, \alpha) = t \rightarrow
+\left\{
+\begin{array}{ll}
+  f(0)                                  & t = 0\\
+  (1-\alpha_t) \cdot m(f,\alpha)(t-1) + \alpha_t \cdot f(t) & t > 0
+\end{array}
+\right.
+$$
+
+where
+
+$$
+\alpha_t = \max
+\left\{
+\begin{array}{l}
+  \frac{1}{t + 1} \\
+  \alpha
+\end{array}
+\right.
+$$
+
+and $\alpha$ is the user-defined parameter in the range $[0, 1]$
+that controls how much weight is given to recent values.
+
+An exponential moving variance $v$ is defined over positive integers
+as an exponential moving average of the squared difference between the
+signal $f$ and the previous moving average of $f$:
+
+$$
+v(f, \alpha, \alpha^\prime) =
+ m(t \rightarrow (f(t) - m(f, \alpha)(t-1))^2, \alpha^\prime)
+$$
+
+Note that $v$ is not defined for $t=0$. The moving standard deviation
+is defined as the square root of the moving variance.
+
+The parameters $\alpha$ and $\alpha^\prime$ may be chosen identical
+but this is not a requirement.
