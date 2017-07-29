@@ -159,6 +159,23 @@ $$
 Solution
 =====
 
+## Outline
+
+Informally, the solution consists in maintaining for each action a
+number that indicates the expected effect of this action after some
+delay. Multiple actions take place, each with an expected effect
+which is a contribution to the signal at some future instant $t$.
+The expected value of the signal is the sum of the contributions at
+$t$ of the previous actions.
+The observed value of the signal is used to correct the expected
+contributions into what each contribution should have been. The
+contributions are not corrected evenly, but according to a weight
+proportional to the standard deviation of the contribution. In other
+words, the more a contribution fluctuates, the more it is prone to being
+corrected. Conversely, a contribution that fluctuates less will
+receive a smaller correction relative to the other co-occurring
+contributions.
+
 ## Description
 
 At each step $t$ of the computation, the value of the signal is

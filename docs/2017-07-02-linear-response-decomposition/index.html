@@ -32,14 +32,15 @@
 </ul></li>
 <li><a href="#notations"><span class="toc-section-number">3</span> Notations</a></li>
 <li><a href="#solution"><span class="toc-section-number">4</span> Solution</a><ul>
-<li><a href="#description"><span class="toc-section-number">4.1</span> Description</a></li>
-<li><a href="#selected-scenarios"><span class="toc-section-number">4.2</span> Selected scenarios</a><ul>
-<li><a href="#shared-protocol"><span class="toc-section-number">4.2.1</span> Shared protocol</a></li>
-<li><a href="#default-setup"><span class="toc-section-number">4.2.2</span> Default setup</a></li>
-<li><a href="#large-difference-between-contributions"><span class="toc-section-number">4.2.3</span> Large difference between contributions</a></li>
-<li><a href="#noisy-effects"><span class="toc-section-number">4.2.4</span> Noisy effects</a></li>
-<li><a href="#background-noise"><span class="toc-section-number">4.2.5</span> Background noise</a></li>
-<li><a href="#interdependent-events"><span class="toc-section-number">4.2.6</span> Interdependent events</a></li>
+<li><a href="#outline"><span class="toc-section-number">4.1</span> Outline</a></li>
+<li><a href="#description"><span class="toc-section-number">4.2</span> Description</a></li>
+<li><a href="#selected-scenarios"><span class="toc-section-number">4.3</span> Selected scenarios</a><ul>
+<li><a href="#shared-protocol"><span class="toc-section-number">4.3.1</span> Shared protocol</a></li>
+<li><a href="#default-setup"><span class="toc-section-number">4.3.2</span> Default setup</a></li>
+<li><a href="#large-difference-between-contributions"><span class="toc-section-number">4.3.3</span> Large difference between contributions</a></li>
+<li><a href="#noisy-effects"><span class="toc-section-number">4.3.4</span> Noisy effects</a></li>
+<li><a href="#background-noise"><span class="toc-section-number">4.3.5</span> Background noise</a></li>
+<li><a href="#interdependent-events"><span class="toc-section-number">4.3.6</span> Interdependent events</a></li>
 </ul></li>
 </ul></li>
 <li><a href="#conclusion"><span class="toc-section-number">5</span> Conclusion</a></li>
@@ -96,7 +97,9 @@
 \hat{\mu} \leftarrow r x_t + (1-r) \hat{\mu}
 \]</span></p>
 <h1 id="solution"><span class="header-section-number">4</span> Solution</h1>
-<h2 id="description"><span class="header-section-number">4.1</span> Description</h2>
+<h2 id="outline"><span class="header-section-number">4.1</span> Outline</h2>
+<p>Informally, the solution consists in maintaining for each action a number that indicates the expected effect of this action after some delay. Multiple actions take place, each with an expected effect which is a contribution to the signal at some future instant <span class="math inline">\(t\)</span>. The expected value of the signal is the sum of the contributions at <span class="math inline">\(t\)</span> of the previous actions. The observed value of the signal is used to correct the expected contributions into what each contribution should have been. The contributions are not corrected evenly, but according to a weight proportional to the standard deviation of the contribution. In other words, the more a contribution fluctuates, the more it is prone to being corrected. Conversely, a contribution that fluctuates less will receive a smaller correction relative to the other co-occurring contributions.</p>
+<h2 id="description"><span class="header-section-number">4.2</span> Description</h2>
 <p>At each step <span class="math inline">\(t\)</span> of the computation, the value of the signal is observed and denoted <span class="math inline">\(\phi(t)\)</span>.</p>
 <p>All the events that occurred within the last <span class="math inline">\(w\)</span> steps are assumed to contribute to the signal. The predicted signal at instant <span class="math inline">\(t\)</span> is denoted as <span class="math inline">\(\hat{\phi}(t)\)</span> and is computed as follows:</p>
 <p><span class="math display">\[
@@ -145,10 +148,10 @@ v_k^{(t)}(t-t_k) = \frac{ \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
                         { \sum_{\{ k \in K | t_k \in [t-w+1, t] \}}
                             \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
 \]</span></p>
-<h2 id="selected-scenarios"><span class="header-section-number">4.2</span> Selected scenarios</h2>
+<h2 id="selected-scenarios"><span class="header-section-number">4.3</span> Selected scenarios</h2>
 <p>A series of tests was conducted to evaluate the behavior of the system with different parameters and under different conditions.</p>
 <p>The source code is currently available at <a href="https://github.com/mjambon/unitron" class="uri">https://github.com/mjambon/unitron</a></p>
-<h3 id="shared-protocol"><span class="header-section-number">4.2.1</span> Shared protocol</h3>
+<h3 id="shared-protocol"><span class="header-section-number">4.3.1</span> Shared protocol</h3>
 <p>A single run starts from time <span class="math inline">\(t=0\)</span> and runs as many steps as necessary to reach specified conditions. This number of steps <span class="math inline">\(T\)</span> will be our main criterion for determining how well the system performs.</p>
 <p>These runs being non-deterministic, we repeat them 100 times, and report simple statistics on the value of <span class="math inline">\(N\)</span> in each case.</p>
 <p>The default setup consists in the following:</p>
@@ -197,7 +200,7 @@ v_k^{(t)}(t-t_k) = \frac{ \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
 \mathrm{maxstdev}_B  &amp;=&amp; 0.05
 \end{eqnarray}
 \]</span></p>
-<h3 id="default-setup"><span class="header-section-number">4.2.2</span> Default setup</h3>
+<h3 id="default-setup"><span class="header-section-number">4.3.2</span> Default setup</h3>
 <p>This setup uses only the default parameters described in the previous section.</p>
 <p>Number of steps to reach Condition<span class="math inline">\(_A\)</span>:</p>
 <ul>
@@ -213,7 +216,7 @@ v_k^{(t)}(t-t_k) = \frac{ \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
 <li>10th percentile: 22.9</li>
 <li>90th percentile: 144.0</li>
 </ul>
-<h3 id="large-difference-between-contributions"><span class="header-section-number">4.2.3</span> Large difference between contributions</h3>
+<h3 id="large-difference-between-contributions"><span class="header-section-number">4.3.3</span> Large difference between contributions</h3>
 <p>In this setup, <span class="math inline">\(E_A(0)\)</span> is 100 instead of 1, while <span class="math inline">\(E_B(0)\)</span> remains 0.1.</p>
 <p>Number of steps to reach Condition<span class="math inline">\(_A\)</span>:</p>
 <ul>
@@ -238,7 +241,7 @@ v_k^{(t)}(t-t_k) = \frac{ \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
 </ul>
 <p>When scaling the tolerances accordingly (<span class="math inline">\(0.05\rightarrow 3.35\)</span>), the median number of steps for Condition<span class="math inline">\(_A\)</span> and Condition<span class="math inline">\(_B\)</span> become 182.5 and 154.0 respectively. So the new setup requires fewer steps but not as few as the default setup, possibly an effect caused by all contributions being clustered at or around the same value except for one.</p>
 <p>Perhaps convergence tends to be faster if the contributions are more evenly spaced among each other.</p>
-<h3 id="noisy-effects"><span class="header-section-number">4.2.4</span> Noisy effects</h3>
+<h3 id="noisy-effects"><span class="header-section-number">4.3.4</span> Noisy effects</h3>
 <p>In this setup, we study the effects of each event <span class="math inline">\(A\)</span> are shifted by the same random number following a centered normal distribution of parameter <span class="math inline">\(\sigma=0.5\)</span>.</p>
 <p>Because we expect the contributions of <span class="math inline">\(A\)</span> to have a natural standard deviation around 0.5, we increased the stopping condition <span class="math inline">\(\mathrm{maxstdev}_A\)</span> from 0.05 to 0.5 in both the control and the subject. The control uses otherwise the same parameters as the default setup.</p>
 <p>Number of steps to reach Condition<span class="math inline">\(_A\)</span> (control):</p>
@@ -271,7 +274,7 @@ v_k^{(t)}(t-t_k) = \frac{ \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
 </ul>
 <p>It turns out that the convergence rate for the estimation of noisy contributions (<span class="math inline">\(E_A\)</span>) are unaffected by the fact of being noisy, but the non-noisy contributions take a little longer to converge, with large variations from one run to another.</p>
 <p>This is counter-intuitive and we don't have a good explanation for it.</p>
-<h3 id="background-noise"><span class="header-section-number">4.2.5</span> Background noise</h3>
+<h3 id="background-noise"><span class="header-section-number">4.3.5</span> Background noise</h3>
 <ul>
 <li>background noise on goal function?</li>
 </ul>
@@ -289,7 +292,7 @@ v_k^{(t)}(t-t_k) = \frac{ \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
 <li>10th percentile: 21.9</li>
 <li>90th percentile: 205.8</li>
 </ul>
-<h3 id="interdependent-events"><span class="header-section-number">4.2.6</span> Interdependent events</h3>
+<h3 id="interdependent-events"><span class="header-section-number">4.3.6</span> Interdependent events</h3>
 <ul>
 <li>B =&gt; A</li>
 </ul>
