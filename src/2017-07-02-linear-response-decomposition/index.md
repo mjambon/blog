@@ -329,53 +329,44 @@ $$
 $$
 
 We'll predict the values of $E_A$ and $E_B$ and look at how many steps
-it takes to get close enough to the expected values $E_A(0)$ and
-$E_B(0)$. The conditions are the following:
+it takes converge to the expected values $E_A(0)$ and
+$E_B(0)$. The convergence criteria are the following:
 
 $$
-\mathrm{Condition}_A
-\left\{
-  \begin{eqnarray}
-    && \left| \hat{E}_A^{(T)}(0) - E_A(0) \right| \le \mathrm{tolerance}_A \\
-    && \left| \hat{\sigma}_A^{(T)}(0) \right| \le \mathrm{maxstdev}_A
-  \end{eqnarray}
-\right.
+\mathrm{Condition}_A:
+\left| \hat{E}_A^{(T)}(0) - E_A(0) \right| \le \epsilon_A
 $$
 
 $$
-\mathrm{Condition}_B
-\left\{
-  \begin{eqnarray}
-    && \left| \hat{E}_B^{(T)}(0) - E_B(0) \right| \le \mathrm{tolerance}_B \\
-    && \left| \hat{\sigma}_B^{(T)}(0) \right| \le \mathrm{maxstdev}_B
-  \end{eqnarray}
-\right.
+\mathrm{Condition}_B:
+\left| \hat{E}_B^{(T)}(0) - E_B(0) \right| \le \epsilon_B
 $$
 
-with the following default thresholds:
+with the following default error thresholds:
 
 $$
 \begin{eqnarray}
-\mathrm{tolerance}_A &=& 0.05 \\
-\mathrm{maxstdev}_A  &=& 0.05 \\
-\mathrm{tolerance}_B &=& 0.05 \\
-\mathrm{maxstdev}_B  &=& 0.05
+\epsilon_A &=& 0.05 \\
+\epsilon_B &=& 0.005
 \end{eqnarray}
 $$
+
+We assume convergence if a given condition remains valid for 100
+consecutive steps.
 
 ### Default setup
 
 This setup uses only the default parameters described in the previous
 section.
 
-Number of steps to reach Condition$_A$:
+Number of steps to converge to Condition$_A$:
 
 * mean, standard deviation: 99.2, 50.3
 * median: 84.5
 * 10th percentile: 53.0
 * 90th percentile: 158.6
 
-Number of steps to reach Condition$_B$:
+Number of steps to converge to Condition$_B$:
 
 * mean, standard deviation: 80.8, 55.9
 * median: 71.5
@@ -412,8 +403,8 @@ It takes however 4-5 times longer to converge in this setup. A crude
 explanation is that even though the tolerance with respect to
 deviations wasn't changed from the original setup, the gap between the
 contributions to predict increased. If we define the relative
-tolerance as the absolute tolerance ($\mathrm{tolerance}_A$ or
-$\mathrm{tolerance}_B$) over the maximum difference between expected
+tolerance as the absolute tolerance ($\epsilon_A$ or
+$\epsilon_B$) over the maximum difference between expected
 contributions, we get the following relative tolerances:
 
 * $0.05/(1 - (-0.5)) = 3.3\%$ in the default setup
@@ -480,7 +471,11 @@ it.
 
 ### Background noise
 
-- background noise on goal function?
+TODO: present results for noise stdev = 0.1, 0.5, 1
+
+This setup adds to the goal function, at each step, a random value
+following a centered normal distribution of parameter
+$\sigma=0.08$. All other parameters are set to the default values.
 
 Number of steps to reach Condition$_A$:
 
@@ -495,6 +490,10 @@ Number of steps to reach Condition$_B$:
 * median: 67.5
 * 10th percentile: 21.9
 * 90th percentile: 205.8
+
+These results are similar to those obtained with the default setup,
+even though the standard deviation of the background noise
+is close to $E_B(0)$ whose value is 0.1.
 
 ### Interdependent events
 
@@ -542,11 +541,11 @@ The exponential moving average $m$ of a function $f$ over
 nonnegative integers is defined as:
 
 $$
-m(f, \alpha) = t \rightarrow
+m_{f, \alpha} = t \rightarrow
 \left\{
 \begin{array}{ll}
   f(0)                                  & t = 0\\
-  (1-\alpha_t) \cdot m(f,\alpha)(t-1) + \alpha_t \cdot f(t) & t > 0
+  (1-\alpha_t) \cdot m_{f,\alpha}(t-1) + \alpha_t \cdot f(t) & t > 0
 \end{array}
 \right.
 $$
@@ -571,12 +570,14 @@ as an exponential moving average of the squared difference between the
 signal $f$ and the previous moving average of $f$:
 
 $$
-v(f, \alpha, \alpha^\prime) =
- m(t \rightarrow (f(t) - m(f, \alpha)(t-1))^2, \alpha^\prime)
+\begin{eqnarray}
+v_{f, \alpha, \alpha^\prime} &=& m_{g, \alpha^\prime}\\
+g &=& t \rightarrow (f(t) - m_{f, \alpha}(t-1))^2
+\end{eqnarray}
 $$
 
 Note that $v$ is not defined for $t=0$. The moving standard deviation
 is defined as the square root of the moving variance.
 
-The parameters $\alpha$ and $\alpha^\prime$ may be chosen identical
+The parameters $\alpha$ and $\alpha^\prime$ may be set to identical values
 but this is not a requirement.

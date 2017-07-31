@@ -171,44 +171,33 @@ v_k^{(t)}(t-t_k) = \frac{ \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
 \dots &amp;&amp;
 \end{eqnarray}
 \]</span></p>
-<p>We'll predict the values of <span class="math inline">\(E_A\)</span> and <span class="math inline">\(E_B\)</span> and look at how many steps it takes to get close enough to the expected values <span class="math inline">\(E_A(0)\)</span> and <span class="math inline">\(E_B(0)\)</span>. The conditions are the following:</p>
+<p>We'll predict the values of <span class="math inline">\(E_A\)</span> and <span class="math inline">\(E_B\)</span> and look at how many steps it takes converge to the expected values <span class="math inline">\(E_A(0)\)</span> and <span class="math inline">\(E_B(0)\)</span>. The convergence criteria are the following:</p>
 <p><span class="math display">\[
-\mathrm{Condition}_A
-\left\{
-  \begin{eqnarray}
-    &amp;&amp; \left| \hat{E}_A^{(T)}(0) - E_A(0) \right| \le \mathrm{tolerance}_A \\
-    &amp;&amp; \left| \hat{\sigma}_A^{(T)}(0) \right| \le \mathrm{maxstdev}_A
-  \end{eqnarray}
-\right.
+\mathrm{Condition}_A:
+\left| \hat{E}_A^{(T)}(0) - E_A(0) \right| \le \epsilon_A
 \]</span></p>
 <p><span class="math display">\[
-\mathrm{Condition}_B
-\left\{
-  \begin{eqnarray}
-    &amp;&amp; \left| \hat{E}_B^{(T)}(0) - E_B(0) \right| \le \mathrm{tolerance}_B \\
-    &amp;&amp; \left| \hat{\sigma}_B^{(T)}(0) \right| \le \mathrm{maxstdev}_B
-  \end{eqnarray}
-\right.
+\mathrm{Condition}_B:
+\left| \hat{E}_B^{(T)}(0) - E_B(0) \right| \le \epsilon_B
 \]</span></p>
-<p>with the following default thresholds:</p>
+<p>with the following default error thresholds:</p>
 <p><span class="math display">\[
 \begin{eqnarray}
-\mathrm{tolerance}_A &amp;=&amp; 0.05 \\
-\mathrm{maxstdev}_A  &amp;=&amp; 0.05 \\
-\mathrm{tolerance}_B &amp;=&amp; 0.05 \\
-\mathrm{maxstdev}_B  &amp;=&amp; 0.05
+\epsilon_A &amp;=&amp; 0.05 \\
+\epsilon_B &amp;=&amp; 0.005
 \end{eqnarray}
 \]</span></p>
+<p>We assume convergence if a given condition remains valid for 100 consecutive steps.</p>
 <h3 id="default-setup"><span class="header-section-number">4.3.2</span> Default setup</h3>
 <p>This setup uses only the default parameters described in the previous section.</p>
-<p>Number of steps to reach Condition<span class="math inline">\(_A\)</span>:</p>
+<p>Number of steps to converge to Condition<span class="math inline">\(_A\)</span>:</p>
 <ul>
 <li>mean, standard deviation: 99.2, 50.3</li>
 <li>median: 84.5</li>
 <li>10th percentile: 53.0</li>
 <li>90th percentile: 158.6</li>
 </ul>
-<p>Number of steps to reach Condition<span class="math inline">\(_B\)</span>:</p>
+<p>Number of steps to converge to Condition<span class="math inline">\(_B\)</span>:</p>
 <ul>
 <li>mean, standard deviation: 80.8, 55.9</li>
 <li>median: 71.5</li>
@@ -233,7 +222,7 @@ v_k^{(t)}(t-t_k) = \frac{ \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
 </ul>
 <p>In this setup, like in the default setup, it takes roughly the same number of steps to converge to both the lower value <span class="math inline">\(E_B(0)\)</span> and the higher value <span class="math inline">\(E_A(0)\)</span>.</p>
 <p>This is not surprising since nothing in the algorithm would treat values that are close to 0 differently than the value far from 0.</p>
-<p>It takes however 4-5 times longer to converge in this setup. A crude explanation is that even though the tolerance with respect to deviations wasn't changed from the original setup, the gap between the contributions to predict increased. If we define the relative tolerance as the absolute tolerance (<span class="math inline">\(\mathrm{tolerance}_A\)</span> or <span class="math inline">\(\mathrm{tolerance}_B\)</span>) over the maximum difference between expected contributions, we get the following relative tolerances:</p>
+<p>It takes however 4-5 times longer to converge in this setup. A crude explanation is that even though the tolerance with respect to deviations wasn't changed from the original setup, the gap between the contributions to predict increased. If we define the relative tolerance as the absolute tolerance (<span class="math inline">\(\epsilon_A\)</span> or <span class="math inline">\(\epsilon_B\)</span>) over the maximum difference between expected contributions, we get the following relative tolerances:</p>
 <ul>
 <li><span class="math inline">\(0.05/(1 - (-0.5)) = 3.3\%\)</span> in the default setup</li>
 <li><span class="math inline">\(0.05/(100 - (-0.5)) = 0.050\%\)</span> in the new setup</li>
@@ -274,9 +263,8 @@ v_k^{(t)}(t-t_k) = \frac{ \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
 <p>It turns out that the convergence rate for the estimation of noisy contributions (<span class="math inline">\(E_A\)</span>) are unaffected by the fact of being noisy, but the non-noisy contributions take a little longer to converge, with large variations from one run to another.</p>
 <p>This is counter-intuitive and we don't have a good explanation for it.</p>
 <h3 id="background-noise"><span class="header-section-number">4.3.5</span> Background noise</h3>
-<ul>
-<li>background noise on goal function?</li>
-</ul>
+<p>TODO: present results for noise stdev = 0.1, 0.5, 1</p>
+<p>This setup adds to the goal function, at each step, a random value following a centered normal distribution of parameter <span class="math inline">\(\sigma=0.08\)</span>. All other parameters are set to the default values.</p>
 <p>Number of steps to reach Condition<span class="math inline">\(_A\)</span>:</p>
 <ul>
 <li>mean, standard deviation: 105.9, 65.3</li>
@@ -291,6 +279,7 @@ v_k^{(t)}(t-t_k) = \frac{ \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
 <li>10th percentile: 21.9</li>
 <li>90th percentile: 205.8</li>
 </ul>
+<p>These results are similar to those obtained with the default setup, even though the standard deviation of the background noise is close to <span class="math inline">\(E_B(0)\)</span> whose value is 0.1.</p>
 <h3 id="interdependent-events"><span class="header-section-number">4.3.6</span> Interdependent events</h3>
 <ul>
 <li>B =&gt; A</li>
@@ -320,11 +309,11 @@ v_k^{(t)}(t-t_k) = \frac{ \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
 <h2 id="exponential-moving-average-and-variance"><span class="header-section-number">6.1</span> Exponential moving average and variance</h2>
 <p>The exponential moving average <span class="math inline">\(m\)</span> of a function <span class="math inline">\(f\)</span> over nonnegative integers is defined as:</p>
 <p><span class="math display">\[
-m(f, \alpha) = t \rightarrow
+m_{f, \alpha} = t \rightarrow
 \left\{
 \begin{array}{ll}
   f(0)                                  &amp; t = 0\\
-  (1-\alpha_t) \cdot m(f,\alpha)(t-1) + \alpha_t \cdot f(t) &amp; t &gt; 0
+  (1-\alpha_t) \cdot m_{f,\alpha}(t-1) + \alpha_t \cdot f(t) &amp; t &gt; 0
 \end{array}
 \right.
 \]</span></p>
@@ -341,11 +330,13 @@ m(f, \alpha) = t \rightarrow
 <p>and <span class="math inline">\(\alpha\)</span> is the user-defined parameter in the range <span class="math inline">\([0, 1]\)</span> that controls how much weight is given to recent values.</p>
 <p>An exponential moving variance <span class="math inline">\(v\)</span> is defined over positive integers as an exponential moving average of the squared difference between the signal <span class="math inline">\(f\)</span> and the previous moving average of <span class="math inline">\(f\)</span>:</p>
 <p><span class="math display">\[
-v(f, \alpha, \alpha^\prime) =
- m(t \rightarrow (f(t) - m(f, \alpha)(t-1))^2, \alpha^\prime)
+\begin{eqnarray}
+v_{f, \alpha, \alpha^\prime} &amp;=&amp; m_{g, \alpha^\prime}\\
+g &amp;=&amp; t \rightarrow (f(t) - m_{f, \alpha}(t-1))^2
+\end{eqnarray}
 \]</span></p>
 <p>Note that <span class="math inline">\(v\)</span> is not defined for <span class="math inline">\(t=0\)</span>. The moving standard deviation is defined as the square root of the moving variance.</p>
-<p>The parameters <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\alpha^\prime\)</span> may be chosen identical but this is not a requirement.</p>
+<p>The parameters <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\alpha^\prime\)</span> may be set to identical values but this is not a requirement.</p>
 <p class="menu footer">
   <a href="https://twitter.com/mjambon">@mjambon</a> 2017-07-02<br/>
   <a href="/">Index</a>
