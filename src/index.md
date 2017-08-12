@@ -4,11 +4,8 @@ About me
 <img src="//www.gravatar.com/avatar/ca1fd636db960bba6027154d81ef106e.png"
      alt="The author">
 
-My name is Martin Jambon. I live with my family in the San Francisco
-Bay Area where I enjoy computer programming and the exceptional outdoors.
-
-I am one of the people behind [Esper](http://esper.com), time
-management startup founded in 2013.
+Martin Jambon is my name and I have been a San Francisco Bay Area resident
+since 2010.
 
 martin@mjambon.com
 &bull; [Twitter](https://twitter.com/mjambon)
@@ -17,23 +14,27 @@ martin@mjambon.com
 &bull; [Flickr](https://www.flickr.com/photos/mjambon)
 &bull; [Strava](http://www.strava.com/athletes/750791)
 
-Posts
------
+Artificial cognition
+--------------------
 
-AGI-related:
+### Technical reports
 
-* [Current interests (March 2017)](2017-03-05-current-interests)
-* [A world of intelligent machines](2017-01-02-agi-world)
-* [Engineering emotions](2016-12-31-agi-emotions)
 * [AGI research snapshot, 2016](2016-08-20-agi-project-status-2016)
 * [Discrete concepts and discrete time](2016-09-03-discrete-indicators):
   A proposed basis for the design of engineerable intelligent systems
 * [Windowless percentile tracking](2016-07-23-moving-percentile)
+
+### Ideas
+
+* [Current interests (March 2017)](2017-03-05-current-interests)
+* [A world of intelligent machines](2017-01-02-agi-world)
+* [Engineering emotions](2016-12-31-agi-emotions)
 * [Deep vs. fast thinking:
   a synchronization problem](2015-11-08-deep-vs-fast-thinking)
 * [Intelligence precedes machines](2014-12-31-intelligence-precedes-machines)
 
-Other:
+Other things
+------------
 
 * [Issue Voting](2017-01-08-issue-voting-method): a proposed voting method
 * [Diversity rule:

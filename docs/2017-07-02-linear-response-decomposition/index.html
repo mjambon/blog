@@ -190,20 +190,24 @@ v_k^{(t)}(t-t_k) = \frac{ \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
 <p>We assume convergence if a given condition remains valid for 100 consecutive steps.</p>
 <h3 id="default-setup"><span class="header-section-number">4.3.2</span> Default setup</h3>
 <p>This setup uses only the default parameters described in the previous section.</p>
-<p>Number of steps to converge to Condition<span class="math inline">\(_A\)</span>:</p>
-<ul>
-<li>mean, standard deviation: 99.2, 50.3</li>
-<li>median: 84.5</li>
-<li>10th percentile: 53.0</li>
-<li>90th percentile: 158.6</li>
-</ul>
-<p>Number of steps to converge to Condition<span class="math inline">\(_B\)</span>:</p>
-<ul>
-<li>mean, standard deviation: 80.8, 55.9</li>
-<li>median: 71.5</li>
-<li>10th percentile: 22.9</li>
-<li>90th percentile: 144.0</li>
-</ul>
+<p>Number of steps to converge to Condition<span class="math inline">\(_{A}\)</span>:</p>
+<p><span class="math display">\[
+\begin{eqnarray}
+\mathrm{10^{th} \dots 90^{th}\ percentile} &amp;=&amp; 16.4 \dots 513.3\\
+\mathrm{median} &amp;=&amp; 220.0\\
+\hat{\mu} &amp;=&amp; 257.4\\
+\hat{\sigma} &amp;=&amp; 220.5\\
+\end{eqnarray}
+\]</span></p>
+<p>Number of steps to converge to Condition<span class="math inline">\(_{B}\)</span>:</p>
+<p><span class="math display">\[
+\begin{eqnarray}
+\mathrm{10^{th} \dots 90^{th}\ percentile} &amp;=&amp; 353.4 \dots 1048.6\\
+\mathrm{median} &amp;=&amp; 668.0\\
+\hat{\mu} &amp;=&amp; 708.0\\
+\hat{\sigma} &amp;=&amp; 289.3\\
+\end{eqnarray}
+\]</span></p>
 <h3 id="large-difference-between-contributions"><span class="header-section-number">4.3.3</span> Large difference between contributions</h3>
 <p>In this setup, <span class="math inline">\(E_A(0)\)</span> is 100 instead of 1, while <span class="math inline">\(E_B(0)\)</span> remains 0.1.</p>
 <p>Number of steps to reach Condition<span class="math inline">\(_A\)</span>:</p>

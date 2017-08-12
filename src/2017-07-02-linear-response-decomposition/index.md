@@ -359,19 +359,27 @@ consecutive steps.
 This setup uses only the default parameters described in the previous
 section.
 
-Number of steps to converge to Condition$_A$:
+Number of steps to converge to Condition$_{A}$:
 
-* mean, standard deviation: 99.2, 50.3
-* median: 84.5
-* 10th percentile: 53.0
-* 90th percentile: 158.6
+$$
+\begin{eqnarray}
+\mathrm{10^{th} \dots 90^{th}\ percentile} &=& 16.4 \dots 513.3\\
+\mathrm{median} &=& 220.0\\
+\hat{\mu} &=& 257.4\\
+\hat{\sigma} &=& 220.5\\
+\end{eqnarray}
+$$
 
-Number of steps to converge to Condition$_B$:
+Number of steps to converge to Condition$_{B}$:
 
-* mean, standard deviation: 80.8, 55.9
-* median: 71.5
-* 10th percentile: 22.9
-* 90th percentile: 144.0
+$$
+\begin{eqnarray}
+\mathrm{10^{th} \dots 90^{th}\ percentile} &=& 353.4 \dots 1048.6\\
+\mathrm{median} &=& 668.0\\
+\hat{\mu} &=& 708.0\\
+\hat{\sigma} &=& 289.3\\
+\end{eqnarray}
+$$
 
 ### Large difference between contributions
 
