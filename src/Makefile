@@ -14,7 +14,8 @@ ARTICLES = \
   2017-01-08-issue-voting-method \
   2017-03-05-current-interests \
   2017-07-02-linear-response-decomposition \
-  2017-07-22-values
+  2017-07-22-values \
+  2017-08-12-adaptive-average
 
 DOCROOT = ../docs
 
