@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="author" content="Martin Jambon">
+  <title>Adaptive average</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="../blog.css">
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <meta name=viewport content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header>
+<h1 class="title">Adaptive average</h1>
+<h2 class="author">Martin Jambon</h2>
+<h3 class="date">August 2017</h3>
+</header>
+<nav id="TOC">
+<ul>
+<li><a href="#goals"><span class="toc-section-number">1</span> Goals</a></li>
+<li><a href="#method"><span class="toc-section-number">2</span> Method</a><ul>
+<li><a href="#classic-exponential-moving-average-and-variance"><span class="toc-section-number">2.1</span> Classic exponential moving average and variance</a></li>
+<li><a href="#adaptive-average"><span class="toc-section-number">2.2</span> Adaptive average</a></li>
+</ul></li>
+<li><a href="#results"><span class="toc-section-number">3</span> Results</a></li>
+</ul>
+</nav>
+<p>This document describes a moving average designed to reflect the current value of a signal most accurately. This is an improvement over exponential moving averages for some applications.</p>
+<!-- toc -->
+<h1 id="goals"><span class="header-section-number">1</span> Goals</h1>
+<p>The adaptive average was designed for signals that typically converge toward some stable value. Such signals initially increase, decrease, or oscillate. During these phases, it is more important for the application to track the latest value of the signal rather than the average over past values which are no longer relevant. However, once the signal stabilizes, we wish to remove noise as well as high frequency components.</p>
+<p>Other practical goals shared with other moving averages are that the average can be computed at instant <span class="math inline">\(t\)</span> without knowledge of the signal's value beyond <span class="math inline">\(t\)</span>. Additionally, the algorithm must require very little memory, which makes window-based algorithms like a simple moving average not acceptable.</p>
+<h1 id="method"><span class="header-section-number">2</span> Method</h1>
+<p>The adaptive average is defined as an exponential moving average of parameter <span class="math inline">\(\alpha\)</span> where <span class="math inline">\(\alpha\)</span> varies over time. The parameter <span class="math inline">\(\alpha\)</span> at instant <span class="math inline">\(t\)</span> is denoted <span class="math inline">\(\alpha_t\)</span>.</p>
+<h2 id="classic-exponential-moving-average-and-variance"><span class="header-section-number">2.1</span> Classic exponential moving average and variance</h2>
+<p>The exponential moving average <span class="math inline">\(m\)</span> of a function <span class="math inline">\(f\)</span> over nonnegative integers is defined as:</p>
+<p><span class="math display">\[
+m_{f, \alpha} = t \rightarrow
+\left\{
+\begin{array}{ll}
+  f_0                                  &amp; t = 0\\
+  (1-\alpha_t) \cdot m_{f,\alpha}(t-1) + \alpha_t \cdot f_t &amp; t &gt; 0
+\end{array}
+\right.
+\]</span></p>
+<p>where</p>
+<p><span class="math display">\[
+\alpha_t = \max
+\left\{
+\begin{array}{l}
+  \frac{1}{t + 1} \\
+  \alpha
+\end{array}
+\right.
+\]</span></p>
+<p>and <span class="math inline">\(\alpha\)</span> is the user-defined parameter in the range <span class="math inline">\([0, 1]\)</span> that controls how much weight is given to recent values.</p>
+<p>That is, past some initial phase, <span class="math inline">\(\alpha_t\)</span> is the constant <span class="math inline">\(\alpha\)</span>.</p>
+<p>An exponential moving variance <span class="math inline">\(v\)</span> is defined over positive integers as an exponential moving average of the squared difference between the signal <span class="math inline">\(f\)</span> and the previous moving average of <span class="math inline">\(f\)</span>:</p>
+<p><span class="math display">\[
+\begin{eqnarray}
+v_{f, \alpha, \alpha^\prime} &amp;=&amp; m_{g, \alpha^\prime}\\
+g &amp;=&amp; t \rightarrow (f_t - m_{f, \alpha}(t-1))^2
+\end{eqnarray}
+\]</span></p>
+<p>Note that <span class="math inline">\(v\)</span> is not defined for <span class="math inline">\(t=0\)</span>. The moving standard deviation is defined as the square root of the moving variance.</p>
+<p>The parameters <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\alpha^\prime\)</span> may be set to identical values but this is not a requirement.</p>
+<h2 id="adaptive-average"><span class="header-section-number">2.2</span> Adaptive average</h2>
+<p>The adaptive average <span class="math inline">\(M(f)\)</span> of a signal <span class="math inline">\(f\)</span> is defined like the exponential moving average, except that <span class="math inline">\(\alpha\)</span> is no longer a constant. Several numerical parameters are involved but the default values that we use were found to work well and should be suitable for most applications. In what follows, <span class="math inline">\(m\)</span> designates a classic exponential moving average.</p>
+<p>The adaptive average <span class="math inline">\(M\)</span> is updated at instant <span class="math inline">\(t\)</span> as follows:</p>
+<p><span class="math display">\[
+M_t = \alpha_t \cdot f_t + (1-\alpha_t) \cdot M_{t-1}
+\]</span></p>
+<p><span class="math inline">\(\alpha\)</span> now ranges between a minimum value <span class="math inline">\(\alpha_{\min}\)</span> and a maximum <span class="math inline">\(\alpha_{\max}\)</span> as follows:</p>
+<span class="math display">\[\begin{eqnarray}
+\alpha_0 &amp;=&amp; \alpha_{\max} \\
+\alpha_t &amp;=&amp;  \max
+  \left\{
+    \begin{array}{l}
+      \alpha_{\min} + (\alpha_{\max} - \alpha_{\min}) \cdot I_t \\
+      \mathrm{maxshrink} \cdot \alpha_{t-1} \\
+    \end{array}
+  \right.
+\\
+\alpha_{\min} &amp;=&amp; 0.01 \\
+\alpha_{\max} &amp;=&amp; 1 \\
+\mathrm{maxshrink} &amp;=&amp; 0.9 \\
+\end{eqnarray}\]</span>
+<p>where <span class="math inline">\(I_t\)</span> is the instability of the signal <span class="math inline">\(f\)</span>. It is defined as:</p>
+<span class="math display">\[\begin{eqnarray}
+I_t &amp;=&amp; \frac{1 + \mathrm{sign}(d_t) \cdot |d_t|^{\mathrm{lowpower}}}{2} \\
+
+d_t &amp;=&amp;
+  \left\{
+    \begin{array}{ll}
+      \frac{|\mathrm{elevation}_t|}{\mathrm{traveled}_t}
+        &amp; \mathrm{traveled}_t \neq 0\\
+      1
+        &amp; \mathrm{\mathrm{traveled}_t} = 0
+    \end{array}
+  \right.
+\\
+
+\mathrm{elevation} &amp;=&amp; m(\mathrm{slope}, \alpha_{gain}) \\
+                   &amp;=&amp; \mathrm{gain} + \mathrm{loss} \\
+\mathrm{traveled} &amp;=&amp; |\mathrm{gain}| + |\mathrm{loss}| \\
+                  &amp;=&amp; \mathrm{gain} - \mathrm{loss} \\
+\mathrm{gain} &amp;=&amp; m(\max(\mathrm{slope},0), \alpha_{\mathrm{gain}}) \\
+\mathrm{loss} &amp;=&amp; m(\min(\mathrm{slope},0), \alpha_{\mathrm{gain}}) \\
+\mathrm{slope}_t &amp;=&amp;
+  \left\{
+    \begin{array}{ll}
+      f_t - f_{t-1} &amp; t \ge 0 \\
+      0             &amp; t = 0
+    \end{array}
+  \right.
+\\
+\mathrm{lowpower} &amp;=&amp; 0.5 \\
+\alpha_{\mathrm{gain}} &amp;=&amp; 0.05 \\
+\end{eqnarray}\]</span>
+<p>Implementing this recipe requires tracking two exponential moving averages <span class="math inline">\(\mathrm{gain}\)</span> and <span class="math inline">\(\mathrm{loss}\)</span> of fixed parameter <span class="math inline">\(\alpha_{\mathrm{gain}}\)</span>. From these, the values of <span class="math inline">\(\alpha\)</span> are determined at each time step.</p>
+<h1 id="results"><span class="header-section-number">3</span> Results</h1>
+<p>The graph below shows a signal that first decreases (steps 0-10) before stabilizing (steps 10-90). It then increases abruptly for some time (90-110) before stabilizing again. The values of <span class="math inline">\(\alpha\)</span> as used in the adaptive average are plotted below the main graph.</p>
+<p><a href="img/overview.png"
+   title="Click to enlarge"><img
+  src="img/overview.png"
+  alt="Graph showing a signal
+       and different types of moving averages" /></a></p>
+<p>Note how the adaptive average (solid red) follows the signal (solid blue) most closely in the following phases:</p>
+<ul>
+<li>initially and until the signal stabilizes (steps 0-20),</li>
+<li>as a reaction to an increase of the signal (steps 110-120)</li>
+</ul>
+<p>However, when the signal becomes stable, <span class="math inline">\(\alpha\)</span> decreases despite the noise, unlike the classic moving average that uses a window of fixed length and unlike an exponential moving average of fixed parameter (steps 30-90, 130-200).</p>
+<p>The following is an enlarged version of the first half of the graph:</p>
+<p><a href="img/zoom.png"
+   title="Click to enlarge"><img
+  src="img/zoom.png"
+  alt="Graph showing a signal
+       and different types of moving averages (zoomed in)" /></a></p>
+<p>At the time of writing, a sample implementation is available as part of <a href="https://github.com/mjambon/moving-percentile" class="uri">https://github.com/mjambon/moving-percentile</a>, as the modules <a href="https://github.com/mjambon/moving-percentile/blob/master/mv_adapt.ml"><code>Mv_adapt</code></a> and <a href="https://github.com/mjambon/moving-percentile/blob/master/mv_adapt_avg.mli"><code>Mv_adapt_avg</code></a>.</p>
+<p class="menu footer">
+  <a href="https://twitter.com/mjambon">@mjambon</a> 2017-08-12<br/>
+  <a href="/">Index</a>
+</p>
+</body>
+</html>
