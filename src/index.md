@@ -23,6 +23,7 @@ Artificial cognition
 * [Discrete concepts and discrete time](2016-09-03-discrete-indicators):
   A proposed basis for the design of engineerable intelligent systems
 * [Windowless percentile tracking](2016-07-23-moving-percentile)
+* [An adaptive moving average](2017-08-12-adaptive-average)
 
 ### Ideas
 

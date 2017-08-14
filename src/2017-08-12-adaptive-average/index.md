@@ -1,20 +1,22 @@
-% Adaptive average
+% An adaptive moving average
 % Martin Jambon
 % August 2017
 
 This document describes a moving average designed to reflect the
 current value of a signal most accurately. This is an improvement over
-exponential moving averages for some applications.
+exponential moving averages for some applications as it doesn't require
+a trade-off between reactivity and smoothness.
 
 <!-- toc -->
 
 Goals
 =====
 
-The adaptive average was designed for signals that typically converge
+This adaptive average was designed for signals that typically converge
 toward some stable value. Such signals initially increase, decrease,
-or oscillate. During these phases, it is more important for the application
-to track the latest value of the signal rather than the average over
+or oscillate at low frequencies.
+During these phases, it is more important for the application
+to track the latest values of the signal rather than the average over
 past values which are no longer relevant. However, once the signal
 stabilizes, we wish to remove noise as well as high frequency
 components.

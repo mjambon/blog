@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="Martin Jambon">
-  <title>Adaptive average</title>
+  <title>An adaptive moving average</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="../blog.css">
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
@@ -16,7 +16,7 @@
 </head>
 <body>
 <header>
-<h1 class="title">Adaptive average</h1>
+<h1 class="title">An adaptive moving average</h1>
 <h2 class="author">Martin Jambon</h2>
 <h3 class="date">August 2017</h3>
 </header>
@@ -30,10 +30,10 @@
 <li><a href="#results"><span class="toc-section-number">3</span> Results</a></li>
 </ul>
 </nav>
-<p>This document describes a moving average designed to reflect the current value of a signal most accurately. This is an improvement over exponential moving averages for some applications.</p>
+<p>This document describes a moving average designed to reflect the current value of a signal most accurately. This is an improvement over exponential moving averages for some applications as it doesn't require a trade-off between reactivity and smoothness.</p>
 <!-- toc -->
 <h1 id="goals"><span class="header-section-number">1</span> Goals</h1>
-<p>The adaptive average was designed for signals that typically converge toward some stable value. Such signals initially increase, decrease, or oscillate. During these phases, it is more important for the application to track the latest value of the signal rather than the average over past values which are no longer relevant. However, once the signal stabilizes, we wish to remove noise as well as high frequency components.</p>
+<p>This adaptive average was designed for signals that typically converge toward some stable value. Such signals initially increase, decrease, or oscillate at low frequencies. During these phases, it is more important for the application to track the latest values of the signal rather than the average over past values which are no longer relevant. However, once the signal stabilizes, we wish to remove noise as well as high frequency components.</p>
 <p>Other practical goals shared with other moving averages are that the average can be computed at instant <span class="math inline">\(t\)</span> without knowledge of the signal's value beyond <span class="math inline">\(t\)</span>. Additionally, the algorithm must require very little memory, which makes window-based algorithms like a simple moving average not acceptable.</p>
 <h1 id="method"><span class="header-section-number">2</span> Method</h1>
 <p>The adaptive average is defined as an exponential moving average of parameter <span class="math inline">\(\alpha\)</span> where <span class="math inline">\(\alpha\)</span> varies over time. The parameter <span class="math inline">\(\alpha\)</span> at instant <span class="math inline">\(t\)</span> is denoted <span class="math inline">\(\alpha_t\)</span>.</p>
