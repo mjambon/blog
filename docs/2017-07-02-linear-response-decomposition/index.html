@@ -37,8 +37,8 @@
 <li><a href="#selected-scenarios"><span class="toc-section-number">4.3</span> Selected scenarios</a><ul>
 <li><a href="#shared-protocol"><span class="toc-section-number">4.3.1</span> Shared protocol</a></li>
 <li><a href="#default-setup"><span class="toc-section-number">4.3.2</span> Default setup</a></li>
-<li><a href="#large-difference-between-contributions"><span class="toc-section-number">4.3.3</span> Large difference between contributions</a></li>
-<li><a href="#noisy-effects"><span class="toc-section-number">4.3.4</span> Noisy effects</a></li>
+<li><a href="#window-of-1"><span class="toc-section-number">4.3.3</span> Window of 1</a></li>
+<li><a href="#large-difference-between-contributions"><span class="toc-section-number">4.3.4</span> Large difference between contributions</a></li>
 <li><a href="#background-noise"><span class="toc-section-number">4.3.5</span> Background noise</a></li>
 <li><a href="#interdependent-events"><span class="toc-section-number">4.3.6</span> Interdependent events</a></li>
 </ul></li>
@@ -154,7 +154,7 @@ v_k^{(t)}(t-t_k) = \frac{ \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
 <ul>
 <li>Two actions <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> may be fired at each time step, each with a certain probability (<span class="math inline">\(P(A) = 0.5\)</span>, <span class="math inline">\(P(B) = 0.5\)</span>).</li>
 <li>Each action has an additive effect on the goal function. By default, A and B have effects on the value of the goal function for the current step and the next two steps. The contributions of <span class="math inline">\(A\)</span> are <span class="math inline">\(E_A = [1, -0.5, 0.25, 0, \dots]\)</span> and the contributions of <span class="math inline">\(B\)</span> are <span class="math inline">\(E_B = [0.1, 0.2, 0.05, 0, \dots]\)</span>.</li>
-<li>The window length <span class="math inline">\(w\)</span> is 10.</li>
+<li>The window length <span class="math inline">\(w\)</span> is 5.</li>
 </ul>
 <p>For example, if action <span class="math inline">\(A\)</span> is triggered at some step <span class="math inline">\(t\)</span> and action <span class="math inline">\(B\)</span> is triggered at <span class="math inline">\(t+1\)</span>, and no action took place earlier and no action takes place after that, the values of the goal function <span class="math inline">\(\phi\)</span> are: <span class="math display">\[
 \begin{eqnarray}
@@ -184,121 +184,116 @@ v_k^{(t)}(t-t_k) = \frac{ \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
 \epsilon_B &amp;=&amp; 0.005
 \end{eqnarray}
 \]</span></p>
-<p>We assume convergence if a given condition remains valid for 100 consecutive steps.</p>
+<p>We assume convergence if a given condition remains valid for a large number (1000) of consecutive steps.</p>
 <h3 id="default-setup"><span class="header-section-number">4.3.2</span> Default setup</h3>
-<p>This setup uses only the default parameters described in the previous section.</p>
-<p>Number of steps to converge to Condition<span class="math inline">\(_{A}\)</span>:</p>
+<p>This setup uses only the default parameters described in the previous section. Number of steps to converge to Condition<span class="math inline">\(_{A}\)</span>:</p>
 <p><span class="math display">\[
 \begin{eqnarray}
-\mathrm{10^{th} \dots 90^{th}\ percentile} &amp;=&amp; 16.4 \dots 513.3\\
-\mathrm{median} &amp;=&amp; 220.0\\
-\hat{\mu} &amp;=&amp; 257.4\\
-\hat{\sigma} &amp;=&amp; 220.5\\
+\mathrm{10^{th} \dots 90^{th}\ percentile} &amp;=&amp; 19.1 \dots 147.2\\
+\mathrm{median} &amp;=&amp; 70.0\\
+\hat{\mu} &amp;=&amp; 73.7\\
+\hat{\sigma} &amp;=&amp; 48.9\\
 \end{eqnarray}
 \]</span></p>
 <p>Number of steps to converge to Condition<span class="math inline">\(_{B}\)</span>:</p>
 <p><span class="math display">\[
 \begin{eqnarray}
-\mathrm{10^{th} \dots 90^{th}\ percentile} &amp;=&amp; 353.4 \dots 1048.6\\
-\mathrm{median} &amp;=&amp; 668.0\\
-\hat{\mu} &amp;=&amp; 708.0\\
-\hat{\sigma} &amp;=&amp; 289.3\\
+\mathrm{10^{th} \dots 90^{th}\ percentile} &amp;=&amp; 95.8 \dots 231.3\\
+\mathrm{median} &amp;=&amp; 149.0\\
+\hat{\mu} &amp;=&amp; 156.1\\
+\hat{\sigma} &amp;=&amp; 53.7\\
 \end{eqnarray}
 \]</span></p>
-<h3 id="large-difference-between-contributions"><span class="header-section-number">4.3.3</span> Large difference between contributions</h3>
+<h3 id="window-of-1"><span class="header-section-number">4.3.3</span> Window of 1</h3>
+<p>In this setup, each action only has an immediate effect <span class="math inline">\(E_A(0)\)</span> or <span class="math inline">\(E_B(0)\)</span> and no delayed effect (<span class="math inline">\(E_A(1)\)</span>, <span class="math inline">\(E_B(1)\)</span>, etc.).</p>
+<p>Additionally, the window length <span class="math inline">\(w\)</span> is 1, which is the smallest useful window possible. This results in very fast convergence as shown below.</p>
+<p>Number of steps to converge to Condition<span class="math inline">\(_{A}\)</span>:</p>
+<p><span class="math display">\[
+\begin{eqnarray}
+\mathrm{10^{th} \dots 90^{th}\ percentile} &amp;=&amp; 1.0 \dots 9.0\\
+\mathrm{median} &amp;=&amp; 3.0\\
+\hat{\mu} &amp;=&amp; 4.6\\
+\hat{\sigma} &amp;=&amp; 4.1\\
+\end{eqnarray}
+\]</span></p>
+<p>Number of steps to converge to Condition<span class="math inline">\(_{B}\)</span>:</p>
+<p><span class="math display">\[
+\begin{eqnarray}
+\mathrm{10^{th} \dots 90^{th}\ percentile} &amp;=&amp; 1.0 \dots 12.0\\
+\mathrm{median} &amp;=&amp; 4.0\\
+\hat{\mu} &amp;=&amp; 5.5\\
+\hat{\sigma} &amp;=&amp; 5.5\\
+\end{eqnarray}
+\]</span></p>
+<h3 id="large-difference-between-contributions"><span class="header-section-number">4.3.4</span> Large difference between contributions</h3>
 <p>In this setup, <span class="math inline">\(E_A(0)\)</span> is 100 instead of 1, while <span class="math inline">\(E_B(0)\)</span> remains 0.1.</p>
-<p>Number of steps to reach Condition<span class="math inline">\(_A\)</span>:</p>
-<ul>
-<li>mean, standard deviation: 405.5, 179.5</li>
-<li>median: 363.0</li>
-<li>10th percentile: 205.5</li>
-<li>90th percentile: 688.0</li>
-</ul>
-<p>Number of steps to reach Condition<span class="math inline">\(_B\)</span>:</p>
-<ul>
-<li>mean, standard deviation: 299.1, 206.1</li>
-<li>median: 313.5</li>
-<li>10th percentile: 2.9</li>
-<li>90th percentile: 542.1</li>
-</ul>
-<p>In this setup, like in the default setup, it takes roughly the same number of steps to converge to both the lower value <span class="math inline">\(E_B(0)\)</span> and the higher value <span class="math inline">\(E_A(0)\)</span>.</p>
-<p>This is not surprising since nothing in the algorithm would treat values that are close to 0 differently than the value far from 0.</p>
-<p>It takes however 4-5 times longer to converge in this setup. A crude explanation is that even though the tolerance with respect to deviations wasn't changed from the original setup, the gap between the contributions to predict increased. If we define the relative tolerance as the absolute tolerance (<span class="math inline">\(\epsilon_A\)</span> or <span class="math inline">\(\epsilon_B\)</span>) over the maximum difference between expected contributions, we get the following relative tolerances:</p>
-<ul>
-<li><span class="math inline">\(0.05/(1 - (-0.5)) = 3.3\%\)</span> in the default setup</li>
-<li><span class="math inline">\(0.05/(100 - (-0.5)) = 0.050\%\)</span> in the new setup</li>
-</ul>
-<p>When scaling the tolerances accordingly (<span class="math inline">\(0.05\rightarrow 3.35\)</span>), the median number of steps for Condition<span class="math inline">\(_A\)</span> and Condition<span class="math inline">\(_B\)</span> become 182.5 and 154.0 respectively. So the new setup requires fewer steps but not as few as the default setup, possibly an effect caused by all contributions being clustered at or around the same value except for one.</p>
-<p>Perhaps convergence tends to be faster if the contributions are more evenly spaced among each other.</p>
-<h3 id="noisy-effects"><span class="header-section-number">4.3.4</span> Noisy effects</h3>
-<p>In this setup, we study the effects of each event <span class="math inline">\(A\)</span> are shifted by the same random number following a centered normal distribution of parameter <span class="math inline">\(\sigma=0.5\)</span>.</p>
-<p>Because we expect the contributions of <span class="math inline">\(A\)</span> to have a natural standard deviation around 0.5, we increased the stopping condition <span class="math inline">\(\mathrm{maxstdev}_A\)</span> from 0.05 to 0.5 in both the control and the subject. The control uses otherwise the same parameters as the default setup.</p>
-<p>Number of steps to reach Condition<span class="math inline">\(_A\)</span> (control):</p>
-<ul>
-<li>mean, standard deviation: 70.5, 43.2</li>
-<li>median: 59.5</li>
-<li>10th percentile: 34.7</li>
-<li>90th percentile: 127.0</li>
-</ul>
-<p>Number of steps to reach Condition<span class="math inline">\(_B\)</span> (control):</p>
-<ul>
-<li>mean, standard deviation: 80.0, 63.4</li>
-<li>median: 67.5</li>
-<li>10th percentile: 19.9</li>
-<li>90th percentile: 158.3</li>
-</ul>
-<p>Number of steps to reach Condition<span class="math inline">\(_A\)</span> (noisy):</p>
-<ul>
-<li>mean, standard deviation: 68.6, 37.0</li>
-<li>median: 56.5</li>
-<li>10th percentile: 29.9</li>
-<li>90th percentile: 126.1</li>
-</ul>
-<p>Number of steps to reach Condition<span class="math inline">\(_B\)</span> (noisy):</p>
-<ul>
-<li>mean, standard deviation: 129.4, 133.1</li>
-<li>median: 96.0</li>
-<li>10th percentile: 3.0</li>
-<li>90th percentile: 283.0</li>
-</ul>
-<p>It turns out that the convergence rate for the estimation of noisy contributions (<span class="math inline">\(E_A\)</span>) are unaffected by the fact of being noisy, but the non-noisy contributions take a little longer to converge, with large variations from one run to another.</p>
-<p>This is counter-intuitive and we don't have a good explanation for it.</p>
+<p>Number of steps to converge to Condition<span class="math inline">\(_{A}\)</span>:</p>
+<p><span class="math display">\[
+\begin{eqnarray}
+\mathrm{10^{th} \dots 90^{th}\ percentile} &amp;=&amp; 49.6 \dots 353.0\\
+\mathrm{median} &amp;=&amp; 235.0\\
+\hat{\mu} &amp;=&amp; 215.3\\
+\hat{\sigma} &amp;=&amp; 118.3\\
+\end{eqnarray}
+\]</span></p>
+<p>Number of steps to converge to Condition<span class="math inline">\(_{B}\)</span>:</p>
+<p><span class="math display">\[
+\begin{eqnarray}
+\mathrm{10^{th} \dots 90^{th}\ percentile} &amp;=&amp; 141.4 \dots 455.5\\
+\mathrm{median} &amp;=&amp; 303.0\\
+\hat{\mu} &amp;=&amp; 300.2\\
+\hat{\sigma} &amp;=&amp; 120.1\\
+\end{eqnarray}
+\]</span></p>
+<p>It takes 2-4 times longer to converge in this setup than in the default setup. A crude explanation is that the relative error tolerance is now smaller, since <span class="math inline">\(\epsilon_A\)</span> and <span class="math inline">\(\epsilon_B\)</span> are unchanged but the gap between extreme values has increased.</p>
 <h3 id="background-noise"><span class="header-section-number">4.3.5</span> Background noise</h3>
-<p>TODO: present results for noise stdev = 0.1, 0.5, 1</p>
-<p>This setup adds to the goal function, at each step, a random value following a centered normal distribution of parameter <span class="math inline">\(\sigma=0.08\)</span>. All other parameters are set to the default values.</p>
-<p>Number of steps to reach Condition<span class="math inline">\(_A\)</span>:</p>
-<ul>
-<li>mean, standard deviation: 105.9, 65.3</li>
-<li>median: 90.0</li>
-<li>10th percentile: 52.0</li>
-<li>90th percentile: 162.1</li>
-</ul>
-<p>Number of steps to reach Condition<span class="math inline">\(_B\)</span>:</p>
-<ul>
-<li>mean, standard deviation: 91.3, 85.2</li>
-<li>median: 67.5</li>
-<li>10th percentile: 21.9</li>
-<li>90th percentile: 205.8</li>
-</ul>
-<p>These results are similar to those obtained with the default setup, even though the standard deviation of the background noise is close to <span class="math inline">\(E_B(0)\)</span> whose value is 0.1.</p>
+<p>In this setup, we study the effects of permanent background noise on the determination of constant contribution <span class="math inline">\(E_A(0)\)</span>.</p>
+<p>In order to produce noise, each event <span class="math inline">\(B\)</span> is set to occur at each time step (<span class="math inline">\(P(B)=1\)</span>) and its effects are shifted by the same random number following a centered normal distribution of parameter <span class="math inline">\(\sigma=0.5\)</span>. The control uses no noise, i.e. <span class="math inline">\(\sigma=0\)</span>.</p>
+<p>Number of steps to reach Condition<span class="math inline">\(_A\)</span> (control):</p>
+<p><span class="math display">\[
+\begin{eqnarray}
+\mathrm{10^{th} \dots 90^{th}\ percentile} &amp;=&amp; 26.7 \dots 179.2\\
+\mathrm{median} &amp;=&amp; 92.0\\
+\hat{\mu} &amp;=&amp; 97.3\\
+\hat{\sigma} &amp;=&amp; 66.6\\
+\end{eqnarray}
+\]</span></p>
+<p>Number of steps to reach Condition<span class="math inline">\(_A\)</span> (background noise):</p>
+<p><span class="math display">\[
+\begin{eqnarray}
+\mathrm{10^{th} \dots 90^{th}\ percentile} &amp;=&amp; 484.8 \dots 4706.0\\
+\mathrm{median} &amp;=&amp; 1108.0\\
+\hat{\mu} &amp;=&amp; 2113.4\\
+\hat{\sigma} &amp;=&amp; 1940.1\\
+\end{eqnarray}
+\]</span></p>
+<p>This shows that convergence toward <span class="math inline">\(E_A(0)\)</span> is slower in the presence of background noise but nonetheless happens reliably.</p>
 <h3 id="interdependent-events"><span class="header-section-number">4.3.6</span> Interdependent events</h3>
-<ul>
-<li>B =&gt; A</li>
-</ul>
-<p>Number of steps to reach Condition<span class="math inline">\(_A\)</span>:</p>
-<ul>
-<li>mean, standard deviation: 115.0, 57.8</li>
-<li>median: 105.0</li>
-<li>10th percentile: 48.9</li>
-<li>90th percentile: 202.7</li>
-</ul>
-<p>Number of steps to reach Condition<span class="math inline">\(_B\)</span>:</p>
-<ul>
-<li>mean, standard deviation: 136.0, 86.0</li>
-<li>median: 124.0</li>
-<li>10th percentile: 43.9</li>
-<li>90th percentile: 268.2</li>
-</ul>
+<p>In this setup, event <span class="math inline">\(A\)</span> occurs with a probability of 0.5 only if <span class="math inline">\(B\)</span> occurs too. <span class="math inline">\(A\)</span> never occurs alone:</p>
+<span class="math display">\[\begin{eqnarray}
+P(B) &amp;=&amp; 0.5 \\
+P(A|B) &amp;=&amp; 0.5 \\
+P(A|\neg B) &amp;=&amp; 0
+\end{eqnarray}\]</span>
+<p>The results are similar to the default setup in which <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are independent.</p>
+<p>Number of steps to converge to Condition<span class="math inline">\(_{A}\)</span>:</p>
+<p><span class="math display">\[
+\begin{eqnarray}
+\mathrm{10^{th} \dots 90^{th}\ percentile} &amp;=&amp; 4.8 \dots 168.3\\
+\mathrm{median} &amp;=&amp; 73.5\\
+\hat{\mu} &amp;=&amp; 82.4\\
+\hat{\sigma} &amp;=&amp; 64.7\\
+\end{eqnarray}
+\]</span></p>
+<p>Number of steps to converge to Condition<span class="math inline">\(_{B}\)</span>:</p>
+<p><span class="math display">\[
+\begin{eqnarray}
+\mathrm{10^{th} \dots 90^{th}\ percentile} &amp;=&amp; 90.3 \dots 297.9\\
+\mathrm{median} &amp;=&amp; 178.5\\
+\hat{\mu} &amp;=&amp; 187.5\\
+\hat{\sigma} &amp;=&amp; 87.8\\
+\end{eqnarray}
+\]</span></p>
 <h1 id="conclusion"><span class="header-section-number">5</span> Conclusion</h1>
 <ul>
 <li>suitable for large number of actions: reinforcement only affects recent actions; small computational requirements.</li>

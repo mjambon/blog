@@ -309,7 +309,7 @@ The default setup consists in the following:
   current step and the next two steps. The contributions of $A$
   are $E_A = [1, -0.5, 0.25, 0, \dots]$ and the contributions of $B$
   are $E_B = [0.1, 0.2, 0.05, 0, \dots]$.
-* The window length $w$ is 10.
+* The window length $w$ is 5.
 
 For example, if action $A$ is triggered at some step $t$ and action
 $B$ is triggered at $t+1$,
@@ -351,22 +351,21 @@ $$
 \end{eqnarray}
 $$
 
-We assume convergence if a given condition remains valid for 100
-consecutive steps.
+We assume convergence if a given condition remains valid for a large
+number (1000) of consecutive steps.
 
 ### Default setup
 
 This setup uses only the default parameters described in the previous
 section.
-
 Number of steps to converge to Condition$_{A}$:
 
 $$
 \begin{eqnarray}
-\mathrm{10^{th} \dots 90^{th}\ percentile} &=& 16.4 \dots 513.3\\
-\mathrm{median} &=& 220.0\\
-\hat{\mu} &=& 257.4\\
-\hat{\sigma} &=& 220.5\\
+\mathrm{10^{th} \dots 90^{th}\ percentile} &=& 19.1 \dots 147.2\\
+\mathrm{median} &=& 70.0\\
+\hat{\mu} &=& 73.7\\
+\hat{\sigma} &=& 48.9\\
 \end{eqnarray}
 $$
 
@@ -374,152 +373,148 @@ Number of steps to converge to Condition$_{B}$:
 
 $$
 \begin{eqnarray}
-\mathrm{10^{th} \dots 90^{th}\ percentile} &=& 353.4 \dots 1048.6\\
-\mathrm{median} &=& 668.0\\
-\hat{\mu} &=& 708.0\\
-\hat{\sigma} &=& 289.3\\
+\mathrm{10^{th} \dots 90^{th}\ percentile} &=& 95.8 \dots 231.3\\
+\mathrm{median} &=& 149.0\\
+\hat{\mu} &=& 156.1\\
+\hat{\sigma} &=& 53.7\\
 \end{eqnarray}
 $$
+
+### Window of 1
+
+In this setup, each action only has an immediate effect $E_A(0)$ or
+$E_B(0)$ and no delayed effect ($E_A(1)$, $E_B(1)$, etc.).
+
+Additionally, the window length $w$ is 1, which is the smallest useful
+window possible. This results in very fast convergence as shown below.
+
+Number of steps to converge to Condition$_{A}$:
+
+$$
+\begin{eqnarray}
+\mathrm{10^{th} \dots 90^{th}\ percentile} &=& 1.0 \dots 9.0\\
+\mathrm{median} &=& 3.0\\
+\hat{\mu} &=& 4.6\\
+\hat{\sigma} &=& 4.1\\
+\end{eqnarray}
+$$
+
+Number of steps to converge to Condition$_{B}$:
+
+$$
+\begin{eqnarray}
+\mathrm{10^{th} \dots 90^{th}\ percentile} &=& 1.0 \dots 12.0\\
+\mathrm{median} &=& 4.0\\
+\hat{\mu} &=& 5.5\\
+\hat{\sigma} &=& 5.5\\
+\end{eqnarray}
+$$
+
 
 ### Large difference between contributions
 
 In this setup, $E_A(0)$ is 100 instead of 1, while $E_B(0)$ remains
 0.1.
 
-Number of steps to reach Condition$_A$:
+Number of steps to converge to Condition$_{A}$:
 
-* mean, standard deviation: 405.5, 179.5
-* median: 363.0
-* 10th percentile: 205.5
-* 90th percentile: 688.0
+$$
+\begin{eqnarray}
+\mathrm{10^{th} \dots 90^{th}\ percentile} &=& 49.6 \dots 353.0\\
+\mathrm{median} &=& 235.0\\
+\hat{\mu} &=& 215.3\\
+\hat{\sigma} &=& 118.3\\
+\end{eqnarray}
+$$
 
-Number of steps to reach Condition$_B$:
+Number of steps to converge to Condition$_{B}$:
 
-* mean, standard deviation: 299.1, 206.1
-* median: 313.5
-* 10th percentile: 2.9
-* 90th percentile: 542.1
+$$
+\begin{eqnarray}
+\mathrm{10^{th} \dots 90^{th}\ percentile} &=& 141.4 \dots 455.5\\
+\mathrm{median} &=& 303.0\\
+\hat{\mu} &=& 300.2\\
+\hat{\sigma} &=& 120.1\\
+\end{eqnarray}
+$$
 
-In this setup, like in the default setup, it takes roughly the same
-number of steps to converge to both the lower value $E_B(0)$
-and the higher value $E_A(0)$.
+It takes 2-4 times longer to converge in this setup than in
+the default setup. A crude explanation is that the relative error
+tolerance is now smaller, since $\epsilon_A$ and $\epsilon_B$ are
+unchanged but the gap between extreme values has increased.
 
-This is not surprising since nothing in the algorithm would treat
-values that are close to 0 differently than the value far from 0.
-
-It takes however 4-5 times longer to converge in this setup. A crude
-explanation is that even though the tolerance with respect to
-deviations wasn't changed from the original setup, the gap between the
-contributions to predict increased. If we define the relative
-tolerance as the absolute tolerance ($\epsilon_A$ or
-$\epsilon_B$) over the maximum difference between expected
-contributions, we get the following relative tolerances:
-
-* $0.05/(1 - (-0.5)) = 3.3\%$ in the default setup
-* $0.05/(100 - (-0.5)) = 0.050\%$ in the new setup
-
-When scaling the tolerances accordingly
-($0.05\rightarrow 3.35$),
-the median number of steps for Condition$_A$ and Condition$_B$
-become 182.5 and 154.0 respectively.
-So the new setup requires fewer steps but not as few as the default
-setup, possibly an effect caused by all contributions being clustered
-at or around the same value except for one.
-
-Perhaps convergence tends to be faster if the contributions are more
-evenly spaced among each other.
-
-### Noisy effects
-
-In this setup, we study the effects of each event $A$ are shifted by the
-same random number following a centered normal distribution of parameter
-$\sigma=0.5$.
-
-Because we expect the contributions of $A$ to have a natural standard
-deviation around 0.5, we increased the stopping condition
-$\mathrm{maxstdev}_A$ from 0.05 to 0.5 in both the control and the
-subject. The control uses otherwise the same parameters as the default
-setup.
-
-Number of steps to reach Condition$_A$ (control):
-
-* mean, standard deviation: 70.5, 43.2
-* median: 59.5
-* 10th percentile: 34.7
-* 90th percentile: 127.0
-
-Number of steps to reach Condition$_B$ (control):
-
-* mean, standard deviation: 80.0, 63.4
-* median: 67.5
-* 10th percentile: 19.9
-* 90th percentile: 158.3
-
-Number of steps to reach Condition$_A$ (noisy):
-
-* mean, standard deviation: 68.6, 37.0
-* median: 56.5
-* 10th percentile: 29.9
-* 90th percentile: 126.1
-
-Number of steps to reach Condition$_B$ (noisy):
-
-* mean, standard deviation: 129.4, 133.1
-* median: 96.0
-* 10th percentile: 3.0
-* 90th percentile: 283.0
-
-It turns out that the convergence rate for the estimation of noisy
-contributions ($E_A$) are unaffected by the fact of being noisy, but
-the non-noisy contributions take a little longer to converge, with
-large variations from one run to another.
-
-This is counter-intuitive and we don't have a good explanation for
-it.
 
 ### Background noise
 
-TODO: present results for noise stdev = 0.1, 0.5, 1
+In this setup, we study the effects of permanent background noise
+on the determination of constant contribution $E_A(0)$.
 
-This setup adds to the goal function, at each step, a random value
-following a centered normal distribution of parameter
-$\sigma=0.08$. All other parameters are set to the default values.
+In order to produce noise, each event $B$ is set to occur at each time
+step ($P(B)=1$)
+and its effects are shifted by the same random number following a
+centered normal distribution of parameter $\sigma=0.5$. The control
+uses no noise, i.e. $\sigma=0$.
 
-Number of steps to reach Condition$_A$:
+Number of steps to reach Condition$_A$ (control):
 
-* mean, standard deviation: 105.9, 65.3
-* median: 90.0
-* 10th percentile: 52.0
-* 90th percentile: 162.1
+$$
+\begin{eqnarray}
+\mathrm{10^{th} \dots 90^{th}\ percentile} &=& 26.7 \dots 179.2\\
+\mathrm{median} &=& 92.0\\
+\hat{\mu} &=& 97.3\\
+\hat{\sigma} &=& 66.6\\
+\end{eqnarray}
+$$
 
-Number of steps to reach Condition$_B$:
+Number of steps to reach Condition$_A$ (background noise):
 
-* mean, standard deviation: 91.3, 85.2
-* median: 67.5
-* 10th percentile: 21.9
-* 90th percentile: 205.8
+$$
+\begin{eqnarray}
+\mathrm{10^{th} \dots 90^{th}\ percentile} &=& 484.8 \dots 4706.0\\
+\mathrm{median} &=& 1108.0\\
+\hat{\mu} &=& 2113.4\\
+\hat{\sigma} &=& 1940.1\\
+\end{eqnarray}
+$$
 
-These results are similar to those obtained with the default setup,
-even though the standard deviation of the background noise
-is close to $E_B(0)$ whose value is 0.1.
+This shows that convergence toward $E_A(0)$ is slower in the presence
+of background noise but nonetheless happens reliably.
 
 ### Interdependent events
 
-- B => A
+In this setup, event $A$ occurs with a probability of 0.5 only if $B$
+occurs too. $A$ never occurs alone:
 
-Number of steps to reach Condition$_A$:
+\begin{eqnarray}
+P(B) &=& 0.5 \\
+P(A|B) &=& 0.5 \\
+P(A|\neg B) &=& 0
+\end{eqnarray}
 
-* mean, standard deviation: 115.0, 57.8
-* median: 105.0
-* 10th percentile: 48.9
-* 90th percentile: 202.7
+The results are similar to the default setup in which $A$ and $B$ are
+independent.
 
-Number of steps to reach Condition$_B$:
+Number of steps to converge to Condition$_{A}$:
 
-* mean, standard deviation: 136.0, 86.0
-* median: 124.0
-* 10th percentile: 43.9
-* 90th percentile: 268.2
+$$
+\begin{eqnarray}
+\mathrm{10^{th} \dots 90^{th}\ percentile} &=& 4.8 \dots 168.3\\
+\mathrm{median} &=& 73.5\\
+\hat{\mu} &=& 82.4\\
+\hat{\sigma} &=& 64.7\\
+\end{eqnarray}
+$$
+
+Number of steps to converge to Condition$_{B}$:
+
+$$
+\begin{eqnarray}
+\mathrm{10^{th} \dots 90^{th}\ percentile} &=& 90.3 \dots 297.9\\
+\mathrm{median} &=& 178.5\\
+\hat{\mu} &=& 187.5\\
+\hat{\sigma} &=& 87.8\\
+\end{eqnarray}
+$$
 
 Conclusion
 =====
