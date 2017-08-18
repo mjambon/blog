@@ -33,7 +33,10 @@
 <li><a href="#notations"><span class="toc-section-number">3</span> Notations</a></li>
 <li><a href="#solution"><span class="toc-section-number">4</span> Solution</a><ul>
 <li><a href="#outline"><span class="toc-section-number">4.1</span> Outline</a></li>
-<li><a href="#description"><span class="toc-section-number">4.2</span> Description</a></li>
+<li><a href="#description"><span class="toc-section-number">4.2</span> Description</a><ul>
+<li><a href="#prediction-and-update"><span class="toc-section-number">4.2.1</span> Prediction and update</a></li>
+<li><a href="#details-and-refinements"><span class="toc-section-number">4.2.2</span> Details and refinements</a></li>
+</ul></li>
 <li><a href="#selected-scenarios"><span class="toc-section-number">4.3</span> Selected scenarios</a><ul>
 <li><a href="#shared-protocol"><span class="toc-section-number">4.3.1</span> Shared protocol</a></li>
 <li><a href="#default-setup"><span class="toc-section-number">4.3.2</span> Default setup</a></li>
@@ -96,54 +99,47 @@
 <h2 id="outline"><span class="header-section-number">4.1</span> Outline</h2>
 <p>Informally, the solution consists in maintaining for each action a number that represents the expected effect of this action after some delay. Multiple actions take place, each with an expected effect which is a contribution to the signal at some future instant <span class="math inline">\(t\)</span>. The expected value of the signal is the sum of the contributions at <span class="math inline">\(t\)</span> of the previous actions. The observed value of the signal is used to correct the expected contributions into what each contribution should have been. The contributions are not corrected evenly, but according to a weight proportional to the standard deviation of the contribution. In other words, the more a contribution fluctuates, the more it is prone to being corrected. Conversely, a contribution that fluctuates less will receive a smaller correction relative to the other co-occurring contributions.</p>
 <h2 id="description"><span class="header-section-number">4.2</span> Description</h2>
+<h3 id="prediction-and-update"><span class="header-section-number">4.2.1</span> Prediction and update</h3>
 <p>At each step <span class="math inline">\(t\)</span> of the computation, the value of the signal is observed and denoted <span class="math inline">\(\phi(t)\)</span>.</p>
-<p>All the events that occurred within the last <span class="math inline">\(w\)</span> steps are assumed to contribute to the signal. The predicted signal at instant <span class="math inline">\(t\)</span> is denoted as <span class="math inline">\(\hat{\phi}(t)\)</span> and is computed as follows:</p>
+<p>All the events that occurred within the last <span class="math inline">\(w\)</span> steps are assumed to contribute to the signal. The predicted signal at instant <span class="math inline">\(t\)</span> is denoted <span class="math inline">\(\hat{\phi}(t)\)</span> and is computed as follows:</p>
 <p><span class="math display">\[
 \hat{\phi}(t) = \sum_{\{ k \in K | t_k \in [t-w+1, t] \}}
                    \hat{E}_k^{(t)}(t-t_k)
+\]</span></p>
+<p>As soon as <span class="math inline">\(\phi(t)\)</span> is known, each predicted term <span class="math inline">\(\hat{E}_k^{(t)}(t-t_k)\)</span> is corrected so as to add up to the observed <span class="math inline">\(\phi(t)\)</span>:</p>
+<p><span class="math display">\[
+\phi(t) = \sum_{\{ k \in K | t_k \in [t-w+1, t] \}} \hat{E}^{(t+1)}(t-t_k)
 \]</span></p>
 <p>The difference between the prediction and the actual signal is denoted <span class="math inline">\(\delta\)</span>:</p>
 <p><span class="math display">\[
 \delta_t = \hat{\phi}(t) - \phi(t)
 \]</span></p>
-<p>Each predicted term <span class="math inline">\(\hat{E}_k^{(t)}(t-t_k)\)</span> is an average of the previous values of <span class="math inline">\(\tilde{E}_k\)</span>, which are the corrected terms. These corrected terms are defined such that at a given time <span class="math inline">\(t\)</span>, they add up to the observed signal <span class="math inline">\(\phi(t)\)</span>:</p>
+<p>The terms are corrected by receiving each a share of <span class="math inline">\(\delta_t\)</span>:</p>
 <p><span class="math display">\[
-\phi(t) = \sum_{\{ k \in K | t_k \in [t-w+1, t] \}} \tilde{E}^{(t)}(t-t_k)
+\hat{E}^{(t+1)}(t-t_k) = \hat{E}^{(t)}(t-t_k) - v_k^{(t)}(t-t_k) \delta_k
 \]</span></p>
-<p>Splitting <span class="math inline">\(\phi(t)\)</span> into corrected terms is done by splitting and distributing the difference <span class="math inline">\(\delta_t\)</span> over the predicted terms:</p>
-<p><span class="math display">\[
-\tilde{E}^{(t)}(t-t_k) = \hat{E}^{(t)}(t-t_k) - v_k^{(t)}(t-t_k) \delta_k
-\]</span></p>
-<p>where each weight <span class="math inline">\(v_k^{(t)}(t-t_k)\)</span> is nonnegative. All weights at instant <span class="math inline">\(t\)</span> add up to 1. They are determined so as to reflect the uncertainty on each contributing term, so that the terms predicted consistently with high certainty will be corrected by a small amount while the more uncertain terms will be corrected by a greater amount. An estimation of the standard deviation of each term is used for this purpose:</p>
+<p>where each weight <span class="math inline">\(v_k^{(t)}(t-t_k)\)</span> is nonnegative. All weights at instant <span class="math inline">\(t\)</span> add up to 1. They are determined so as to reflect the uncertainty on each contributing term, and so that the terms predicted consistently with high certainty will be corrected by a small amount while the more uncertain terms will be corrected by a greater amount. An estimation of the standard deviation of each term is used for this purpose:</p>
 <p><span class="math display">\[
 v_k^{(t)}(t-t_k) = \frac{ \hat{\sigma}_k^{(t)}(t-t_k) }
                         { \sum_{\{ k \in K | t_k \in [t-w+1, t] \}}
                             \hat{\sigma}_k^{(t)}(t-t_k) }
 \]</span></p>
-<p>where <span class="math inline">\(\hat{\sigma}_k^{(t)}(t-t_k)\)</span> is an estimate of the standard deviation of <span class="math inline">\(\tilde{E}_k\)</span> based on the earlier known values of <span class="math inline">\(\tilde{E}_k\)</span>.</p>
-<p>Note that our averages and standard deviations are estimated using exponential smoothing because of their simplicity (see appendix), but other methods should work well too. Until a certain number of samples is reached, they behave like the classic sample mean and sample standard deviation estimators. Beyond that, they give more weight to recent values.</p>
+<p>where <span class="math inline">\(\hat{\sigma}_k^{(t)}(t-t_k)\)</span> is an estimate of the standard deviation of <span class="math inline">\(\hat{E}_k\)</span> based on the earlier known values of <span class="math inline">\(\hat{E}_k\)</span>.</p>
+<p>Note that standard deviations are estimated using exponential smoothing because of their simplicity, but other methods should work well too. Until a certain number of samples is reached, they behave like the classic sample mean and sample standard deviation estimators. Beyond that, they give more weight to recent values.</p>
+<h3 id="details-and-refinements"><span class="header-section-number">4.2.2</span> Details and refinements</h3>
 <p>There are two classes of special cases where the standard deviation cannot be used to determine the weight:</p>
-<ul>
-<li>Special case 1: In the presence of fewer than 2 samples, the sample standard deviation is undefined.</li>
-<li>Special case 2: If the initial samples are all equal, the estimated standard deviation is 0, which results in <span class="math inline">\(\tilde{E}_k\)</span> being not updated ever again.</li>
-</ul>
-<p>For special case 1, a possible trick is to pretend the standard deviation is so large that all the other weights are negligible, except those in the similar situation with an undefined standard deviation. Given <span class="math inline">\(n\)</span> such problematic terms, we can assign them each a weight of <span class="math inline">\(1/n\)</span>, and assign a weight of <span class="math inline">\(0\)</span> to the terms whose standard deviation is defined.</p>
-<p>For special case 2, we can impose a minimum value to the estimate of the standard deviation. Let's call <span class="math inline">\(S\)</span> the sum of the standard deviations at instant <span class="math inline">\(t\)</span>:</p>
-<p><span class="math display">\[
-S_t = \sum_{\{ k \in K | t_k \in [t-w+1, t] \}}
-      \hat{\sigma}_k^{(t)}(t-t_k)
-\]</span></p>
-<p>If <span class="math inline">\(S_t = 0\)</span>, we give an equal weight to all the terms as for special case 1. Otherwise, let <span class="math inline">\(n\)</span> be the number of terms in the sum, i.e. the number of events within the window. We define a minimum weight <span class="math inline">\(m_t\)</span> as a small fraction of <span class="math inline">\(S_t\)</span>:</p>
-<p><span class="math display">\[
-m_t = \frac{\epsilon}{n} S_t
-\]</span></p>
-<p>where <span class="math inline">\(\epsilon\)</span> is a small positive constant such as 0.001.</p>
-<p>Each weight is then defined as:</p>
-<p><span class="math display">\[
-v_k^{(t)}(t-t_k) = \frac{ \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
-                        { \sum_{\{ k \in K | t_k \in [t-w+1, t] \}}
-                            \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
-\]</span></p>
+<ol type="1">
+<li>In the presence of fewer than 2 samples, the sample standard deviation is undefined.</li>
+<li>If the initial samples are all equal, the estimated standard deviation is 0, which results in <span class="math inline">\(\hat{E}_k\)</span> being not updated ever again.</li>
+</ol>
+<p>For special case (1), a possible trick is to pretend the standard deviation is so large that all the other weights are negligible, except those in the similar situation with an undefined standard deviation. Given <span class="math inline">\(n\)</span> such problematic terms, we can assign them each a weight of <span class="math inline">\(1/n\)</span>, and assign a weight of <span class="math inline">\(0\)</span> to the terms whose standard deviation is defined.</p>
+<p>For special case (2), we can impose a minimum share to each term, even if the standard deviation is zero.</p>
+<p>Additionally, we observed that with noisy background noise, non-noisy terms converge much faster if the weights are not exactly proportional to the standard deviations, but if we slightly amplify the top weights.</p>
+<p>The final recipe for obtaining the weights consists in the following:</p>
+<ol type="1">
+<li>Express the standard deviations relative to the maximum standard deviation among all the terms, denoted <span class="math inline">\(r_k\)</span> for term <span class="math inline">\(k\)</span>.</li>
+<li>Transform each <span class="math inline">\(r_k\)</span> into <span class="math inline">\(f(r_k)\)</span> to favor larger values and avoid null weights, using for example <span class="math inline">\(f : x \rightarrow \max(0.001, 0.5 x^{1.3} + 0.5 x)\)</span>, then normalize them such that they add up to 1.</li>
+</ol>
 <h2 id="selected-scenarios"><span class="header-section-number">4.3</span> Selected scenarios</h2>
 <p>A series of tests was conducted to evaluate the behavior of the system with different parameters and under different conditions.</p>
 <p>The source code is currently available at <a href="https://github.com/mjambon/unitron" class="uri">https://github.com/mjambon/unitron</a></p>

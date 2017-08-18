@@ -178,16 +178,26 @@ contributions.
 
 ## Description
 
+### Prediction and update
+
 At each step $t$ of the computation, the value of the signal is
 observed and denoted $\phi(t)$.
 
 All the events that occurred within the last $w$ steps are assumed to
 contribute to the signal. The predicted signal at instant $t$ is
-denoted as $\hat{\phi}(t)$ and is computed as follows:
+denoted $\hat{\phi}(t)$ and is computed as follows:
 
 $$
 \hat{\phi}(t) = \sum_{\{ k \in K | t_k \in [t-w+1, t] \}}
                    \hat{E}_k^{(t)}(t-t_k)
+$$
+
+As soon as $\phi(t)$ is known, each predicted term
+$\hat{E}_k^{(t)}(t-t_k)$ is corrected so as to add up to the observed
+$\phi(t)$:
+
+$$
+\phi(t) = \sum_{\{ k \in K | t_k \in [t-w+1, t] \}} \hat{E}^{(t+1)}(t-t_k)
 $$
 
 The difference between the prediction and the actual signal is denoted
@@ -197,26 +207,15 @@ $$
 \delta_t = \hat{\phi}(t) - \phi(t)
 $$
 
-Each predicted term $\hat{E}_k^{(t)}(t-t_k)$ is an average of
-the previous values of $\tilde{E}_k$, which are the corrected
-terms. These corrected terms are defined such that at a given time
-$t$, they add up to the observed signal $\phi(t)$:
+The terms are corrected by receiving each a share of $\delta_t$:
 
 $$
-\phi(t) = \sum_{\{ k \in K | t_k \in [t-w+1, t] \}} \tilde{E}^{(t)}(t-t_k)
-$$
-
-Splitting $\phi(t)$ into corrected terms is done
-by splitting and distributing the difference $\delta_t$ over the
-predicted terms:
-
-$$
-\tilde{E}^{(t)}(t-t_k) = \hat{E}^{(t)}(t-t_k) - v_k^{(t)}(t-t_k) \delta_k
+\hat{E}^{(t+1)}(t-t_k) = \hat{E}^{(t)}(t-t_k) - v_k^{(t)}(t-t_k) \delta_k
 $$
 
 where each weight $v_k^{(t)}(t-t_k)$ is nonnegative. All weights at instant
 $t$ add up to 1. They are determined so as to reflect the uncertainty on each
-contributing term, so that the terms predicted consistently with high
+contributing term, and so that the terms predicted consistently with high
 certainty will be corrected by a small amount while the more uncertain
 terms will be corrected by a greater amount. An estimation of the
 standard deviation of each term is used for this purpose:
@@ -228,60 +227,49 @@ v_k^{(t)}(t-t_k) = \frac{ \hat{\sigma}_k^{(t)}(t-t_k) }
 $$
 
 where $\hat{\sigma}_k^{(t)}(t-t_k)$ is an estimate of the standard
-deviation of $\tilde{E}_k$ based on the earlier known values of
-$\tilde{E}_k$.
+deviation of $\hat{E}_k$ based on the earlier known values of
+$\hat{E}_k$.
 
-Note that our averages and standard deviations are estimated using
-exponential smoothing because of their simplicity (see appendix),
+Note that standard deviations are estimated using
+exponential smoothing because of their simplicity,
 but other methods should work well too. Until a certain number of
 samples is reached, they behave like the classic sample mean and
 sample standard deviation estimators. Beyond that, they give more
 weight to recent values.
 
+### Details and refinements
+
 There are two classes of special cases where the standard deviation
 cannot be used to determine the weight:
 
-* Special case 1: In the presence of fewer than 2 samples, the sample
-  standard deviation is undefined.
-* Special case 2: If the initial samples are all equal, the estimated standard
-  deviation is 0, which results in $\tilde{E}_k$ being not updated ever
-  again.
+1. In the presence of fewer than 2 samples, the sample
+   standard deviation is undefined.
+2. If the initial samples are all equal, the estimated standard
+   deviation is 0, which results in $\hat{E}_k$ being not updated ever
+   again.
 
-For special case 1, a possible trick is to pretend the standard
+For special case (1), a possible trick is to pretend the standard
 deviation is so large that all the other weights are negligible,
 except those in the similar situation with an undefined standard
 deviation. Given $n$ such problematic terms, we can assign them each a
 weight of $1/n$, and assign a weight of $0$ to the terms whose
 standard deviation is defined.
 
-For special case 2, we can impose a minimum value to the estimate
-of the standard deviation. Let's call $S$ the sum of the
-standard deviations at instant $t$:
+For special case (2), we can impose a minimum share to each term, even
+if the standard deviation is zero.
 
-$$
-S_t = \sum_{\{ k \in K | t_k \in [t-w+1, t] \}}
-      \hat{\sigma}_k^{(t)}(t-t_k)
-$$
+Additionally, we observed that with noisy background noise, non-noisy
+terms converge much faster if the weights are not exactly proportional to the
+standard deviations, but if we slightly amplify the top weights.
 
-If $S_t = 0$, we give an equal weight to all the terms as for special
-case&nbsp;1. Otherwise, let $n$ be the number of terms in the sum, i.e. the
-number of events within the window. We define a minimum weight $m_t$
-as a small fraction of $S_t$:
+The final recipe for obtaining the weights consists in the following:
 
-$$
-m_t = \frac{\epsilon}{n} S_t
-$$
-
-where $\epsilon$ is a small positive constant such as 0.001.
-
-Each weight is then defined as:
-
-$$
-v_k^{(t)}(t-t_k) = \frac{ \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
-                        { \sum_{\{ k \in K | t_k \in [t-w+1, t] \}}
-                            \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
-$$
-
+1. Express the standard deviations relative to the maximum standard
+   deviation among all the terms, denoted $r_k$ for term $k$.
+2. Transform each $r_k$ into $f(r_k)$ to favor larger values and
+   avoid null weights, using for example
+   $f : x \rightarrow \max(0.001, 0.5 x^{1.3} + 0.5 x)$,
+   then normalize them such that they add up to 1.
 
 ## Selected scenarios
 
