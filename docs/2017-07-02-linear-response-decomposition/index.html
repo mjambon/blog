@@ -44,9 +44,6 @@
 </ul></li>
 </ul></li>
 <li><a href="#conclusion"><span class="toc-section-number">5</span> Conclusion</a></li>
-<li><a href="#appendix"><span class="toc-section-number">6</span> Appendix</a><ul>
-<li><a href="#exponential-moving-average-and-variance"><span class="toc-section-number">6.1</span> Exponential moving average and variance</a></li>
-</ul></li>
 </ul>
 </nav>
 <!-- toc -->
@@ -309,38 +306,6 @@ v_k^{(t)}(t-t_k) = \frac{ \max(m, \hat{\sigma}_k^{(t)}(t-t_k)) }
 <li>overfitting is not seen as a problem that should be solved here; (context, action) pairs with poor success or poor predictability should be avoided by the cognitive system.</li>
 <li>non-linear effects cannot be handled here directly. Instead, a pattern should be identified first and act as the source for a specific action. If effect(A and B) = effect(A) + effect(B) + x, we will form a control named AB, active one step after both A and B. This now allows a linear decomposition as effect(A and B)_t = effect(A)_t + effect(B)<em>t + effect(AB)</em>(t-1) which works except for t=0.</li>
 </ul>
-<h1 id="appendix"><span class="header-section-number">6</span> Appendix</h1>
-<h2 id="exponential-moving-average-and-variance"><span class="header-section-number">6.1</span> Exponential moving average and variance</h2>
-<p>The exponential moving average <span class="math inline">\(m\)</span> of a function <span class="math inline">\(f\)</span> over nonnegative integers is defined as:</p>
-<p><span class="math display">\[
-m_{f, \alpha} = t \rightarrow
-\left\{
-\begin{array}{ll}
-  f(0)                                  &amp; t = 0\\
-  (1-\alpha_t) \cdot m_{f,\alpha}(t-1) + \alpha_t \cdot f(t) &amp; t &gt; 0
-\end{array}
-\right.
-\]</span></p>
-<p>where</p>
-<p><span class="math display">\[
-\alpha_t = \max
-\left\{
-\begin{array}{l}
-  \frac{1}{t + 1} \\
-  \alpha
-\end{array}
-\right.
-\]</span></p>
-<p>and <span class="math inline">\(\alpha\)</span> is the user-defined parameter in the range <span class="math inline">\([0, 1]\)</span> that controls how much weight is given to recent values.</p>
-<p>An exponential moving variance <span class="math inline">\(v\)</span> is defined over positive integers as an exponential moving average of the squared difference between the signal <span class="math inline">\(f\)</span> and the previous moving average of <span class="math inline">\(f\)</span>:</p>
-<p><span class="math display">\[
-\begin{eqnarray}
-v_{f, \alpha, \alpha^\prime} &amp;=&amp; m_{g, \alpha^\prime}\\
-g &amp;=&amp; t \rightarrow (f(t) - m_{f, \alpha}(t-1))^2
-\end{eqnarray}
-\]</span></p>
-<p>Note that <span class="math inline">\(v\)</span> is not defined for <span class="math inline">\(t=0\)</span>. The moving standard deviation is defined as the square root of the moving variance.</p>
-<p>The parameters <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\alpha^\prime\)</span> may be set to identical values but this is not a requirement.</p>
 <p class="menu footer">
   <a href="https://twitter.com/mjambon">@mjambon</a> 2017-07-02<br/>
   <a href="/">Index</a>
