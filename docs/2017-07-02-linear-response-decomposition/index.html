@@ -50,16 +50,18 @@
 </ul>
 </nav>
 <!-- toc -->
-<!-- abstract -->
+<p>Given events occurring along a discrete timeline, the goal is to determine the effect of each event kind. The observable is a real-valued signal <span class="math inline">\(\phi\)</span> which is assumed to be a sum of the effects of recent events. The effects of any event are assumed negligible past a certain delay <span class="math inline">\(w\)</span>.</p>
+<p>The solution consists in adjusting the contributions of each event to the signal knowing which events occurred recently from <span class="math inline">\(t-w+1\)</span> to <span class="math inline">\(t\)</span> and the latest value of the signal, <span class="math inline">\(\phi(t)\)</span>. The original predicted contributions are corrected so as to predict <span class="math inline">\(\phi(t)\)</span> perfectly by absorbing a share of the difference with the predicted signal <span class="math inline">\(\hat{\phi}(t)\)</span>. Each share is determined roughly by the recent standard deviation of the contribution, allowing the predictions of stable contributions to eventually converge, regardless of fluctuations in other contributions.</p>
+<p>A valuable property of this system is that only resources corresponding to active events are involved, as opposed to systems in which all the nodes are updated at every time step.</p>
 <h1 id="motivation-in-the-context-of-artificial-general-intelligence"><span class="header-section-number">1</span> Motivation in the context of artificial general intelligence</h1>
-<p>The problem we are trying to solve arises while developing a cognitive system driven that operates in real-time and is driven by a single goal function. In this context, a goal function <span class="math inline">\(\phi\)</span> is a real-valued signal over discrete time, whose value becomes available at each time step. It represents how well the system is doing, i.e. it would combine rewards and penalties. Some of these rewards and penalties may correspond to direct interactions of the system with its environment, such as acquiring food or losing energy. Other rewards and penalties may be generated internally by the system itself, as a way to encourage itself to pursue certain paths.</p>
-<p>In such a cognitive system, there is a finite (but possibly growing) collection of possible actions. Each action can be viewed as a button. We call an act an instance of an action, i.e. the press of a button. An act is a pair (action, instant). An action, naturally can correspond to a modification of the system in its environment, such as an attempt to move forward. It can also directly feed back into the system's input ports without directly affecting the environment. No matter what kind of action is triggered, it takes some amount of time to have an effect on the goal function. Here and throughout this paper, we assume that most meaningful effects of an action occur within a given time window, which can be a short as 10 steps. We choose this window roughly to capture reactions of the system to its own decisions, so it has enough time to &quot;realize&quot; what it just did and produce a self-reward or a self-penalty. Longer-term effects of course exist and will have to be dealt with differently.</p>
+<p>The problem we are trying to solve arises while developing a cognitive system that operates in real-time and is driven by a single goal function. In this context, a goal function <span class="math inline">\(\phi\)</span> is a real-valued signal over discrete time, whose value becomes available at each time step. It represents how well the system is doing, i.e. it would combine rewards and penalties. Some of these rewards and penalties may correspond to direct interactions of the system with its environment, such as acquiring food or losing energy. Other rewards and penalties may be generated internally by the system itself, as a way to encourage itself to pursue certain paths.</p>
+<p>In such a cognitive system, there is a finite (but possibly growing) collection of possible actions. Each action can be viewed as a button. We call an act an instance of an action, i.e. the press of a button. An act is a pair (action, instant). An action, naturally can correspond to a modification of the system in its environment, such as an attempt to move forward. It can also directly feed back into the system's input ports without directly affecting the environment. No matter what kind of action is triggered, it takes some amount of time to have an effect on the goal function. Here and throughout this paper, we assume that most meaningful effects of an action occur within a given time window, which can be a short as 5 steps. We choose this window roughly to capture reactions of the system to its own decisions, so it has enough time to &quot;realize&quot; what it just did and produce a self-reward or a self-penalty. Longer-term effects of course exist and will have to be dealt with differently.</p>
 <p>Given such a goal function <span class="math inline">\(\phi\)</span> and the knowledge of which actions were triggered within a time window of length <span class="math inline">\(w\)</span>, we wish to determine the impact of each action on <span class="math inline">\(\phi\)</span>.</p>
 <h1 id="general-design-contraints"><span class="header-section-number">2</span> General design contraints</h1>
 <h2 id="independence-from-context"><span class="header-section-number">2.1</span> Independence from context</h2>
 <p>The response to an action is considered the same independently from the context. In the case of artificial general intelligence (AGI), this is generally not the case. However, it is possible to create as many controls (&quot;buttons&quot;) as there are contexts. Instead of studying the response to an action regardless of the context, we can study the response to the pair (context, action).</p>
 <h2 id="effects-can-be-delayed"><span class="header-section-number">2.2</span> Effects can be delayed</h2>
-<p>We wish to capture the &quot;immediate&quot; effects of an action. However, our system is such that during a time step it can only propagate information from one node to another. It is not organized into layers, typically several steps are required for some input information to reach the nodes in charge of triggering actions.</p>
+<p>We wish to capture the &quot;immediate&quot; effects of an action. However, our system is such that during a time step it can only propagate information from one node to another. It take normally several steps for some input information to reach the nodes in charge of triggering actions.</p>
 <p>So, while we are only interested in the immediate effects of actions, we need to leave sufficient time for the system to react to such effects.</p>
 <h2 id="overlapping-effects"><span class="header-section-number">2.3</span> Overlapping effects</h2>
 <p>Multiple actions can take place simultaneously, or close enough that their effects on the goal function overlap. Our main challenge is to decompose the signal into a combination of responses from multiple recent actions.</p>
@@ -85,8 +87,8 @@
 <p><span class="math display">\[
 \phi: t \rightarrow \sum_{k \in K} E_k(t-t_k)
 \]</span></p>
-<p>Given the properties of <span class="math inline">\(E_k\)</span> mentioned above, all events occurring outside the window (<span class="math inline">\(t_k \notin [t - w + 1, t]\)</span>) can be ignored in the computation of <span class="math inline">\(\phi(t)\)</span>.</p>
-<p>Estimated or predicted equivalents of a variable are denoted with a hat. For example, <span class="math inline">\(\hat{\phi}(t)\)</span> is the predicted value of <span class="math inline">\(\phi(t)\)</span>.</p>
+<p>Given the properties of <span class="math inline">\(E_k\)</span> mentioned above, all events occurring outside the window (<span class="math inline">\(t_k \notin [t - w + 1, t]\)</span>) can be ignored in the prediction of <span class="math inline">\(\phi(t)\)</span>, denoted <span class="math inline">\(\hat{\phi}(t)\)</span>.</p>
+<p>In general, a hat <span class="math inline">\(\hat{}\)</span> on a variable denotes a prediction of this variable.</p>
 <p>Since estimators have a state that changes over time, we use a parenthesized superscript to specify which state we're referring to. In the following example, we use the variable <span class="math inline">\(\hat{\mu}\)</span> to represent the exponential moving average of the sequence <span class="math inline">\(x\)</span>. <span class="math inline">\(\hat{\mu}\)</span> is updated as follows:</p>
 <p><span class="math display">\[
 \hat{\mu}^{(t+1)} = r x_t + (1-r) \hat{\mu}^{(t)}
@@ -97,7 +99,7 @@
 \]</span></p>
 <h1 id="solution"><span class="header-section-number">4</span> Solution</h1>
 <h2 id="outline"><span class="header-section-number">4.1</span> Outline</h2>
-<p>Informally, the solution consists in maintaining for each action a number that represents the expected effect of this action after some delay. Multiple actions take place, each with an expected effect which is a contribution to the signal at some future instant <span class="math inline">\(t\)</span>. The expected value of the signal is the sum of the contributions at <span class="math inline">\(t\)</span> of the previous actions. The observed value of the signal is used to correct the expected contributions into what each contribution should have been. The contributions are not corrected evenly, but according to a weight proportional to the standard deviation of the contribution. In other words, the more a contribution fluctuates, the more it is prone to being corrected. Conversely, a contribution that fluctuates less will receive a smaller correction relative to the other co-occurring contributions.</p>
+<p>Informally, the solution consists in maintaining for each event kind a number that represents the expected effect of this action after some delay. Multiple event of different types can take place simultaneously, each with an expected effect which is a contribution to the signal at some future instant <span class="math inline">\(t\)</span>. The expected value of the signal is the sum of the contributions at <span class="math inline">\(t\)</span> of the recent events. The observed value of the signal is used to correct the expected contributions into what each contribution should have been. The contributions are not corrected evenly, but according to a weight proportional to the standard deviation of the contribution. In other words, the more a contribution fluctuates, the more it is prone to being corrected. Conversely, a contribution that fluctuates less will receive a smaller correction relative to the other co-occurring contributions.</p>
 <h2 id="description"><span class="header-section-number">4.2</span> Description</h2>
 <h3 id="prediction-and-update"><span class="header-section-number">4.2.1</span> Prediction and update</h3>
 <p>At each step <span class="math inline">\(t\)</span> of the computation, the value of the signal is observed and denoted <span class="math inline">\(\phi(t)\)</span>.</p>
@@ -125,7 +127,7 @@ v_k^{(t)}(t-t_k) = \frac{ \hat{\sigma}_k^{(t)}(t-t_k) }
                             \hat{\sigma}_k^{(t)}(t-t_k) }
 \]</span></p>
 <p>where <span class="math inline">\(\hat{\sigma}_k^{(t)}(t-t_k)\)</span> is an estimate of the standard deviation of <span class="math inline">\(\hat{E}_k\)</span> based on the earlier known values of <span class="math inline">\(\hat{E}_k\)</span>.</p>
-<p>Note that standard deviations are estimated using exponential smoothing because of their simplicity, but other methods should work well too. Until a certain number of samples is reached, they behave like the classic sample mean and sample standard deviation estimators. Beyond that, they give more weight to recent values.</p>
+<p>Note that standard deviations are estimated using exponential smoothing because of their simplicity and low memory requirements, but other methods should work well too. Until a certain number of samples is reached, they behave like the classic sample mean and sample standard deviation estimators. Beyond that short initial phase, they give more weight to recent values.</p>
 <h3 id="details-and-refinements"><span class="header-section-number">4.2.2</span> Details and refinements</h3>
 <p>There are two classes of special cases where the standard deviation cannot be used to determine the weight:</p>
 <ol type="1">
@@ -142,13 +144,13 @@ v_k^{(t)}(t-t_k) = \frac{ \hat{\sigma}_k^{(t)}(t-t_k) }
 </ol>
 <h2 id="selected-scenarios"><span class="header-section-number">4.3</span> Selected scenarios</h2>
 <p>A series of tests was conducted to evaluate the behavior of the system with different parameters and under different conditions.</p>
-<p>The source code is currently available at <a href="https://github.com/mjambon/unitron" class="uri">https://github.com/mjambon/unitron</a></p>
+<p>The source code is currently available at <a href="https://github.com/mjambon/unitron" class="uri">https://github.com/mjambon/unitron</a>, commit <code>c725d8dd</code>.</p>
 <h3 id="shared-protocol"><span class="header-section-number">4.3.1</span> Shared protocol</h3>
 <p>A single run starts from time <span class="math inline">\(t=0\)</span> and runs as many steps as necessary to reach specified conditions. This number of steps <span class="math inline">\(T\)</span> will be our main criterion for determining how well the system performs.</p>
 <p>These runs being non-deterministic, we repeat them 100 times, and report simple statistics on the value of <span class="math inline">\(N\)</span> in each case.</p>
 <p>The default setup consists in the following:</p>
 <ul>
-<li>Two actions <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> may be fired at each time step, each with a certain probability (<span class="math inline">\(P(A) = 0.5\)</span>, <span class="math inline">\(P(B) = 0.5\)</span>).</li>
+<li>Two actions <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> may be fired at each time step, with probabilities <span class="math inline">\(P(A) = 0.5\)</span> and <span class="math inline">\(P(B) = 0.5\)</span>.</li>
 <li>Each action has an additive effect on the goal function. By default, A and B have effects on the value of the goal function for the current step and the next two steps. The contributions of <span class="math inline">\(A\)</span> are <span class="math inline">\(E_A = [1, -0.5, 0.25, 0, \dots]\)</span> and the contributions of <span class="math inline">\(B\)</span> are <span class="math inline">\(E_B = [0.1, 0.2, 0.05, 0, \dots]\)</span>.</li>
 <li>The window length <span class="math inline">\(w\)</span> is 5.</li>
 </ul>
@@ -291,12 +293,7 @@ P(A|\neg B) &amp;=&amp; 0
 \end{eqnarray}
 \]</span></p>
 <h1 id="conclusion"><span class="header-section-number">5</span> Conclusion</h1>
-<ul>
-<li>suitable for large number of actions: reinforcement only affects recent actions; small computational requirements.</li>
-<li>no need to select a learning rate parameter; if the conditions are right, learning is very quick. The effects of each action can be learned at their own rate.</li>
-<li>overfitting is not seen as a problem that should be solved here; (context, action) pairs with poor success or poor predictability should be avoided by the cognitive system.</li>
-<li>non-linear effects cannot be handled here directly. Instead, a pattern should be identified first and act as the source for a specific action. If effect(A and B) = effect(A) + effect(B) + x, we will form a control named AB, active one step after both A and B. This now allows a linear decomposition as effect(A and B)_t = effect(A)_t + effect(B)<em>t + effect(AB)</em>(t-1) which works except for t=0.</li>
-</ul>
+<p>It works fine but convergence is particularly fast with a window of length 1 and applications should probably try to take advantage of this.</p>
 <p class="menu footer">
   <a href="https://twitter.com/mjambon">@mjambon</a> 2017-07-02<br/>
   <a href="/">Index</a>

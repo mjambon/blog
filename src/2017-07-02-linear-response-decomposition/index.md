@@ -4,13 +4,32 @@
 
 <!-- toc -->
 
-<!-- abstract -->
+Given events occurring along a discrete timeline, the goal is to
+determine the effect of each event kind. The observable is a
+real-valued signal $\phi$ which is assumed to be a sum of the effects of
+recent events. The effects of any event are assumed negligible past a certain
+delay $w$.
+
+The solution consists in adjusting the contributions of each event to
+the signal knowing which events occurred recently from $t-w+1$
+to $t$ and the latest value
+of the signal, $\phi(t)$. The original predicted contributions are
+corrected so as to predict $\phi(t)$ perfectly by absorbing a share of
+the difference with the predicted signal $\hat{\phi}(t)$.
+Each share is determined roughly by the recent
+standard deviation of the contribution, allowing the predictions of
+stable contributions to eventually converge, regardless of
+fluctuations in other contributions.
+
+A valuable property of this system is that only resources
+corresponding to active events are involved, as opposed to
+systems in which all the nodes are updated at every time step.
 
 Motivation in the context of artificial general intelligence
 =====
 
 The problem we are trying to solve arises while developing a cognitive
-system driven that operates in real-time and is driven by a single
+system that operates in real-time and is driven by a single
 goal function.
 In this context, a goal function $\phi$ is a real-valued signal over
 discrete time, whose value becomes available at each time step. It
@@ -32,7 +51,7 @@ without directly affecting the environment. No matter what kind of
 action is triggered, it takes some amount of time to have an
 effect on the goal function. Here and throughout this paper, we assume
 that most meaningful effects of an action occur within a given time window,
-which can be a short as 10 steps. We choose this window roughly to
+which can be a short as 5 steps. We choose this window roughly to
 capture reactions of the system to its own decisions, so it has enough
 time to "realize" what it just did and produce a self-reward or a
 self-penalty. Longer-term effects of course exist and will have to be
@@ -58,9 +77,9 @@ response to the pair (context, action).
 
 We wish to capture the "immediate" effects of an action. However, our
 system is such that during a time step it can only propagate
-information from one node to another. It is not organized into layers,
-typically several steps are required for some input information to
-reach the nodes in charge of triggering actions.
+information from one node to another. It take normally several steps
+for some input information to reach the nodes in charge of triggering
+actions.
 
 So, while we are only interested in the immediate effects of
 actions, we need to leave sufficient time for the system to react to
@@ -134,11 +153,9 @@ $$
 
 Given the properties of $E_k$ mentioned above, all events occurring
 outside the window ($t_k \notin [t - w + 1, t]$) can be ignored in the
-computation of $\phi(t)$.
+prediction of $\phi(t)$, denoted $\hat{\phi}(t)$.
 
-Estimated or predicted equivalents of a variable are denoted with a
-hat. For example, $\hat{\phi}(t)$ is the predicted value of
-$\phi(t)$.
+In general, a hat $\hat{}$ on a variable denotes a prediction of this variable.
 
 Since estimators have a state that changes over time, we use
 a parenthesized superscript to specify which state we're referring
@@ -161,12 +178,13 @@ Solution
 
 ## Outline
 
-Informally, the solution consists in maintaining for each action a
+Informally, the solution consists in maintaining for each event kind a
 number that represents the expected effect of this action after some
-delay. Multiple actions take place, each with an expected effect
+delay. Multiple event of different types can take place
+simultaneously, each with an expected effect
 which is a contribution to the signal at some future instant $t$.
 The expected value of the signal is the sum of the contributions at
-$t$ of the previous actions.
+$t$ of the recent events.
 The observed value of the signal is used to correct the expected
 contributions into what each contribution should have been. The
 contributions are not corrected evenly, but according to a weight
@@ -231,11 +249,12 @@ deviation of $\hat{E}_k$ based on the earlier known values of
 $\hat{E}_k$.
 
 Note that standard deviations are estimated using
-exponential smoothing because of their simplicity,
+exponential smoothing because of their simplicity and low memory
+requirements,
 but other methods should work well too. Until a certain number of
 samples is reached, they behave like the classic sample mean and
-sample standard deviation estimators. Beyond that, they give more
-weight to recent values.
+sample standard deviation estimators. Beyond that short initial phase,
+they give more weight to recent values.
 
 ### Details and refinements
 
@@ -277,7 +296,8 @@ A series of tests was conducted to evaluate the behavior of the system
 with different parameters and under different conditions.
 
 The source code is currently available at
-[https://github.com/mjambon/unitron](https://github.com/mjambon/unitron)
+[https://github.com/mjambon/unitron](https://github.com/mjambon/unitron),
+commit `c725d8dd`.
 
 ### Shared protocol
 
@@ -290,8 +310,8 @@ report simple statistics on the value of $N$ in each case.
 
 The default setup consists in the following:
 
-* Two actions $A$ and $B$ may be fired at each time step, each with a
-  certain probability ($P(A) = 0.5$, $P(B) = 0.5$).
+* Two actions $A$ and $B$ may be fired at each time step, with
+  probabilities $P(A) = 0.5$ and $P(B) = 0.5$.
 * Each action has an additive effect on the goal function. By default,
   A and B have effects on the value of the goal function for the
   current step and the next two steps. The contributions of $A$
@@ -507,18 +527,6 @@ $$
 Conclusion
 =====
 
-- suitable for large number of actions: reinforcement only affects
-  recent actions; small computational requirements.
-- no need to select a learning rate parameter; if the conditions are
-  right, learning is very quick. The effects of each action can be
-  learned at their own rate.
-- overfitting is not seen as a problem that should be solved here;
-  (context, action) pairs with poor success or poor predictability
-  should be avoided by the cognitive system.
-- non-linear effects cannot be handled here directly. Instead, a
-  pattern should be identified first and act as the source for a
-  specific action. If effect(A and B) = effect(A) + effect(B) + x,
-  we will form a control named AB, active one step after both A and
-  B. This now allows a linear decomposition as
-  effect(A and B)_t = effect(A)_t + effect(B)_t + effect(AB)_(t-1)
-  which works except for t=0.
+It works fine but convergence is particularly fast with a window of
+length 1 and applications should probably try to take advantage of
+this.
