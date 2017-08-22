@@ -29,12 +29,17 @@ DOT = $(wildcard */dot)
 UTILDIR = ../util
 export PATH := $(UTILDIR):$(PATH)
 
+# Various files that don't need preprocessing and go directly under /
+SRCDOCROOTFILES = \
+  ../css/blog.css \
+  ../root/robots.txt
+
 .PHONY: default all html img graphs css clean
 default: all
 all:
 	mkdir -p $(DOCROOT)
 	echo -n mjambon.com > $(DOCROOT)/CNAME
-	cp ../css/blog.css $(DOCROOT)
+	cp -u $(SRCDOCROOTFILES) $(DOCROOT)
 	$(MAKE) html img graphs
 
 html: $(HTML)
