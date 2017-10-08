@@ -46,17 +46,21 @@
 <p>where <span class="math inline">\(\sigma_i\)</span> is the square root of the variance estimated by a moving average of the sequence <span class="math inline">\((\mu_i - x_i)^2\)</span> and <span class="math inline">\(\mu\)</span> is estimated by a moving average of <em>x</em>.</p>
 <p>We find that reasonable values of <span class="math inline">\(r\)</span> for many applications range from 0.001 to 0.01.</p>
 <p>The chart below shows our sample signal that was generated randomly in 3 phases:</p>
-<p><img src="img/moving-percentile-input.png"
-     alt="Distribution of the sample input data"/></p>
+<p><a href="img/moving-percentile-input.png"
+   title="Click to enlarge"><img
+     src="img/moving-percentile-input.png"
+     alt="Distribution of the sample input data"/></a></p>
 <ul>
 <li>phase 1 (0-999): Uniform(0,1); expected 0.9-percentile = 0.9</li>
 <li>phase 2 (1000-1999): Uniform(2,4); expected 0.9-percentile = 3.8</li>
 <li>phase 3 (2000-2999): Uniform(0,1); expected 0.9 percentile = 0.9</li>
 </ul>
 <p>The output for window-based percentile estimators and for our moving percentile are shown here:</p>
-<p><img src="img/moving-percentile-output.png"
+<p><a href="img/moving-percentile-output.png"
+   title="Click to enlarge"><img
+     src="img/moving-percentile-output.png"
      alt="Chart comparing window-based percentile estimators with
-          moving percentile"/></p>
+          moving percentile"/></a></p>
 <p>Our moving 0.9-percentile, shown on the chart in green, reacts quickly when the signal shifts upward, because each update shifts the moving percentile upward by <span class="math inline">\(\frac{\delta}{0.1}\)</span>. However, when the signal shifts downward, it takes the moving percentile more time to react because each update shifts it downward by <span class="math inline">\(\frac{\delta}{0.9}\)</span>, which is 9 times less than in the other direction. Additionally, we can see that the downward shift is pretty steep initially and then gets less steep. This is due to the delayed update of the standard deviation <span class="math inline">\(\sigma\)</span>: the value of <span class="math inline">\(\delta\)</span> is divided by two when the estimated <span class="math inline">\(\sigma\)</span> catches up and is divided by two, reflecting the new distribution in phase 3.</p>
 <p>A sample implementation is <a href="https://github.com/mjambon/moving-percentile">available on GitHub</a>.</p>
 <p class="menu footer">
