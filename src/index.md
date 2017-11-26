@@ -5,7 +5,7 @@ About me
      alt="The author">
 
 My name is Martin Jambon and I'm a software engineer based in the San
-Francisco Bay Area. In my personal time, I'm working on providing
+Francisco Bay Area. In my personal time, I work on providing
 autonomous machines with adaptability, imagination, and
 intelligence.
 The emphasis is on **generality first, applications later**.
@@ -22,7 +22,7 @@ in the system. This is a core design principle for effective
 engineering. It is based on the assumption that there's no magic in
 cognition, i.e. that intelligence as we know it can be
 implemented in a Turing machine. With that in mind, you can take a
-look at the technical reports I made available, below.
+look at technical reports I made available, below.
 
 martin@mjambon.com
 &bull; [Twitter](https://twitter.com/mjambon)
