@@ -4,7 +4,7 @@ About me
 <img src="https://www.gravatar.com/avatar/ca1fd636db960bba6027154d81ef106e.png"
      alt="The author">
 
-My name is Martin Jambon and I am a software engineer based in the San
+My name is Martin Jambon and I'm a software engineer based in the San
 Francisco Bay Area. In my personal time, I'm working on providing
 autonomous machines with adaptability, imagination, and
 intelligence.
