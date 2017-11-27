@@ -4,25 +4,11 @@ About me
 <img src="https://www.gravatar.com/avatar/ca1fd636db960bba6027154d81ef106e.png"
      alt="The author">
 
-My name is Martin Jambon and I'm a software engineer based in the San
+I'm a software engineer based in the San
 Francisco Bay Area. In my personal time, I work on providing
 autonomous machines with adaptability, imagination, and
-intelligence.
-The emphasis is on **generality first, applications later**.
-
-I'm not sure how to present this research like I'm a sane
-person. Many of the concepts I use were developed in private over the
-years, and I'll be happy to go over them with you if you're interested
-and patient.
-For example, when I claim "perception, imagination, and intuition are
-essentially the same", I use those terms with specific definitions
-that relate to the structure of the system I'm developing.
-Any such philosophical-sounding claim shall be implemented and observable
-in the system. This is a core design principle for effective
-engineering. It is based on the assumption that there's no magic in
-cognition, i.e. that intelligence as we know it can be
-implemented in a Turing machine. With that in mind, you can take a
-look at technical reports I made available, below.
+intelligence. The emphasis is on generality first, applications
+later.
 
 martin@mjambon.com
 &bull; [Twitter](https://twitter.com/mjambon)
