@@ -8,11 +8,12 @@
   <title>Real-time decomposition of a signal into a sum of responses to labeled events</title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="../blog.css">
-  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
   <meta name=viewport content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Language" content="en">
 </head>
 <body>
 <header>
@@ -268,11 +269,11 @@ v_k^{(t)}(t-t_k) = \frac{ \hat{\sigma}_k^{(t)}(t-t_k) }
 <p>This shows that convergence toward <span class="math inline">\(E_A(0)\)</span> is slower in the presence of background noise but nonetheless happens reliably.</p>
 <h3 id="interdependent-events"><span class="header-section-number">4.3.6</span> Interdependent events</h3>
 <p>In this setup, event <span class="math inline">\(A\)</span> occurs with a probability of 0.5 only if <span class="math inline">\(B\)</span> occurs too. <span class="math inline">\(A\)</span> never occurs alone:</p>
-<span class="math display">\[\begin{eqnarray}
+\begin{eqnarray}
 P(B) &amp;=&amp; 0.5 \\
 P(A|B) &amp;=&amp; 0.5 \\
 P(A|\neg B) &amp;=&amp; 0
-\end{eqnarray}\]</span>
+\end{eqnarray}
 <p>The results are similar to the default setup in which <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are independent.</p>
 <p>Number of steps to converge to Condition<span class="math inline">\(_{A}\)</span>:</p>
 <p><span class="math display">\[

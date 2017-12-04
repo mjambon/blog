@@ -66,6 +66,9 @@ h5 a, h5 a:active, h5 a:visited
 
 p {
   text-align: justify;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 @font-face {
