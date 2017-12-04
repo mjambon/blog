@@ -17,9 +17,11 @@ in the San Francisco Bay Area.
 Artificial cognition: Project Canvas
 --------------------
 
-In my personal time, I work on providing autonomous machines with
-adaptability, imagination, and intelligence. The emphasis is on
-generality first, applications later.
+In my personal time, I've been working on a project with the aim of
+providing machines with adaptability, imagination, and
+intelligence. The emphasis is on developing general proto-intelligence
+first, with the firm belief that optimizing the system for
+domain-specific applications doesn't serve that goal.
 
 ### Technical reports
 
