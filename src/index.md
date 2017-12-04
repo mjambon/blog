@@ -17,7 +17,7 @@ in the San Francisco Bay Area.
 Artificial cognition: Project Canvas
 --------------------
 
-In my personal time, I've been working on a project with the aim of
+In my personal time, I've been working toward
 providing machines with adaptability, imagination, and
 intelligence. The emphasis is on developing general proto-intelligence
 first, with the firm belief that optimizing the system for
