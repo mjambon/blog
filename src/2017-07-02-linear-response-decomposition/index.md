@@ -1,6 +1,5 @@
 % Real-time decomposition of a signal into a sum of responses to labeled events
-% Martin Jambon
-% July 2017
+% Martin Jambon, July 2017
 
 <!-- toc -->
 

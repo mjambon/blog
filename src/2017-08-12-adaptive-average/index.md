@@ -1,6 +1,5 @@
 % An adaptive moving average
-% Martin Jambon
-% August 2017
+% Martin Jambon, August 2017
 
 This document describes a moving average designed to reflect the
 current value of a signal most accurately. This is an improvement over
