@@ -7,7 +7,7 @@ About me
 I'm a software engineer, open-source developer, and researcher based
 in the San Francisco Bay Area.
 
-martin@mjambon.com
+<code>martin@mjambon.com</code>
 &bull; [Twitter](https://twitter.com/mjambon)
 &bull; [GitHub](https://github.com/mjambon)
 &bull; [LinkedIn](https://www.linkedin.com/in/mjambon)
