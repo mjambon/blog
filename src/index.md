@@ -14,7 +14,7 @@ in the San Francisco Bay Area.
 &bull; [Flickr](https://www.flickr.com/photos/mjambon)
 &bull; [Strava](http://www.strava.com/athletes/750791)
 
-Artificial cognition - Project Canvas
+Artificial cognition: Project Canvas
 --------------------
 
 In my personal time, I work on providing autonomous machines with
