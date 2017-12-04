@@ -4,11 +4,8 @@ About me
 <img src="https://www.gravatar.com/avatar/ca1fd636db960bba6027154d81ef106e.png"
      alt="The author">
 
-I'm a software engineer based in the San
-Francisco Bay Area. In my personal time, I work on providing
-autonomous machines with adaptability, imagination, and
-intelligence. The emphasis is on generality first, applications
-later.
+I'm a software engineer, open-source developer, and researcher based
+in the San Francisco Bay Area.
 
 martin@mjambon.com
 &bull; [Twitter](https://twitter.com/mjambon)
@@ -20,26 +17,37 @@ martin@mjambon.com
 Artificial cognition - Project Canvas
 --------------------
 
+In my personal time, I work on providing autonomous machines with
+adaptability, imagination, and intelligence. The emphasis is on
+generality first, applications later.
+
 ### Technical reports
 
-* [AGI research snapshot, 2016](2016-08-20-agi-project-status-2016)
-* [Discrete concepts and discrete time](2016-09-03-discrete-indicators):
-  A proposed basis for the design of engineerable intelligent systems
-* [Windowless percentile tracking](2016-07-23-moving-percentile)
 * [An adaptive moving average](2017-08-12-adaptive-average)
+  (August 2017)
 * [Real-time decomposition of a signal into a sum of responses to
   labeled events](2017-07-02-linear-response-decomposition)
+  (July 2017)
+* [Discrete concepts and discrete time](2016-09-03-discrete-indicators):
+  A proposed basis for the design of engineerable intelligent systems
+  (September 2016)
+* [AGI research snapshot, 2016](2016-08-20-agi-project-status-2016)
+  (August 2016)
+* [Windowless percentile tracking](2016-07-23-moving-percentile)
+  (July 2016)
 
 ### Ideas
 
 * [Current interests (March 2017)](2017-03-05-current-interests)
-* [A world of intelligent machines](2017-01-02-agi-world)
-* [Engineering emotions](2016-12-31-agi-emotions)
+* [A world of intelligent machines](2017-01-02-agi-world) (January 2017)
+* [Engineering emotions](2016-12-31-agi-emotions) (December 2016)
 * [Deep vs. fast thinking:
   a synchronization problem](2015-11-08-deep-vs-fast-thinking)
+  (November 2015)
 * [Intelligence precedes machines](2014-12-31-intelligence-precedes-machines)
+  (December 2014)
 
-Other things
+Random things
 ------------
 
 * [Issue Voting](2017-01-08-issue-voting-method): a proposed voting method
