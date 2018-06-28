@@ -6,6 +6,8 @@ current value of a signal most accurately. This is an improvement over
 exponential moving averages for some applications as it doesn't require
 a trade-off between reactivity and smoothness.
 
+Last revised: June 2018
+
 <!-- toc -->
 
 Goals
@@ -119,18 +121,19 @@ maximum $\alpha_{\max}$ as follows:
 where $I_t$ is the instability of the signal $f$. It is defined as:
 
 \begin{eqnarray}
-I_t &=& \frac{1 + \mathrm{sign}(d_t) \cdot |d_t|^{\mathrm{lowpower}}}{2} \\
-
-d_t &=&
-  \left\{
+I_t &=&
+   \left\{
     \begin{array}{ll}
-      \frac{|\mathrm{elevation}_t|}{\mathrm{traveled}_t}
+      \frac{1 + \mathrm{sign}(d_t) \cdot |d_t|^{\mathrm{lowpower}}}{2}
         & \mathrm{traveled}_t \neq 0\\
       1
         & \mathrm{\mathrm{traveled}_t} = 0
     \end{array}
   \right.
 \\
+
+d_t &=& 2r_t - 1 \\
+r_t &=& \frac{|\mathrm{elevation}_t|}{\mathrm{traveled}_t} \\
 
 \mathrm{elevation} &=& m(\mathrm{slope}, \alpha_{gain}) \\
                    &=& \mathrm{gain} + \mathrm{loss} \\

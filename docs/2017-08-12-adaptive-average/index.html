@@ -31,6 +31,7 @@
 </ul>
 </nav>
 <p>This document describes a moving average designed to reflect the current value of a signal most accurately. This is an improvement over exponential moving averages for some applications as it doesn't require a trade-off between reactivity and smoothness.</p>
+<p>Last revised: June 2018</p>
 <!-- toc -->
 <h1 id="goals"><span class="header-section-number">1</span> Goals</h1>
 <p>This adaptive average was designed for signals that typically converge toward some stable value. Such signals initially increase, decrease, or oscillate at low frequencies. During these phases, it is more important for the application to track the latest values of the signal rather than the average over past values which are no longer relevant. However, once the signal stabilizes, we wish to remove noise as well as high frequency components.</p>
@@ -92,18 +93,19 @@ M_t = \alpha_t \cdot f_t + (1-\alpha_t) \cdot M_{t-1}
 \end{eqnarray}
 <p>where <span class="math inline">\(I_t\)</span> is the instability of the signal <span class="math inline">\(f\)</span>. It is defined as:</p>
 \begin{eqnarray}
-I_t &amp;=&amp; \frac{1 + \mathrm{sign}(d_t) \cdot |d_t|^{\mathrm{lowpower}}}{2} \\
-
-d_t &amp;=&amp;
-  \left\{
+I_t &amp;=&amp;
+   \left\{
     \begin{array}{ll}
-      \frac{|\mathrm{elevation}_t|}{\mathrm{traveled}_t}
+      \frac{1 + \mathrm{sign}(d_t) \cdot |d_t|^{\mathrm{lowpower}}}{2}
         &amp; \mathrm{traveled}_t \neq 0\\
       1
         &amp; \mathrm{\mathrm{traveled}_t} = 0
     \end{array}
   \right.
 \\
+
+d_t &amp;=&amp; 2r_t - 1 \\
+r_t &amp;=&amp; \frac{|\mathrm{elevation}_t|}{\mathrm{traveled}_t} \\
 
 \mathrm{elevation} &amp;=&amp; m(\mathrm{slope}, \alpha_{gain}) \\
                    &amp;=&amp; \mathrm{gain} + \mathrm{loss} \\
