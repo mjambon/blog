@@ -1,64 +1,77 @@
 Glossary
 ==
 
-abstract: given two known concepts A and B, A is said more abstract
-          than B if the activation of B triggers the activation of A,
-          but the activation of A can take place without B.
+**abstract**: Given two known concepts A and B, A is said more abstract
+            than B if the activation of B triggers the activation of A,
+            but the activation of A can take place without B.
 
-action: (1) the activation of an output port, which may modify
+**action**: (1) The activation of an output port, which may modify
         the environment. An action is said internal if other systems
-        cannot sense these changes in the environment. (2) an output port.
+        cannot sense these changes in the environment. (2) An output port.
 
-activation
+**activation**: Setting a single node to its active state, its other state
+              being inactive. A node remains active only for one
+              cycle, after which it is systematically deactivated. In
+              order to be considered continuously active, a node needs
+              to be activated at each successive cycle.
 
-anticipation
+**anticipation**: A mechanism by which the system rewards itself based
+                on the expected reward for actions that it just
+                decided to take. A reward refers to the value of the
+                fitness considered to be resulting from a set of actions.
 
-cloning
+**cloning**: Copying a full system. Unlike biological cloning, this
+           includes copying all the acquired cognitive skills and
+           therefore the identity of the system.
 
-concept
+**concept**: (1) A node that represents a specific state of the
+           world. (2) An active instance of such node.
 
-concrete: the opposite of abstract.
+**concrete**: The opposite of abstract.
 
-consciousness: (deprecated in technical language)
+**context**
 
-context
+**emotion**
 
-emotion
+**environment**
 
-environment
+**familiarity**
 
-explaining: (deprecated in technical language)
+**fitness**
 
-familiarity
+**imagination**
 
-fitness
+**input**
 
-imagination
+**intelligence**
 
-input
+**intuition**
 
-intelligence
+**model**
 
-intuition
+**node**
 
-learning: (deprecated in technical language)
+**optimization**
 
-model
+**output**
 
-node
+**pattern**
 
-optimization
+**perception**
 
-output
+**signal**
 
-pattern
+**system**
 
-perception
+**world**: The union of a system and its environment.
 
-signal
+Avoided terms
+==
 
-system
+These common terms tend to confuse a lot of people and are of limited
+use for designing cognitive systems.
 
-understanding: (deprecated in technical language)
-
-world: the union of a system and its environment.
+* **consciousness**
+* **explaining**
+* **learning**
+* **understanding**
