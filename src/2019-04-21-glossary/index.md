@@ -24,14 +24,19 @@ Glossary
            includes copying all the acquired cognitive skills and
            therefore the identity of the system.
 
-**concept**: (1) A node that represents a specific state of the
-           world. (2) An active instance of such node.
+**concept**: (1) A node that represents a set of states of the
+             world. (2) An active instance of such node.
 
 **concrete**: The opposite of abstract.
 
-**context**
+**context**: (1) A concept. (2) The set of all the states of the world
+             which are sufficient to activate a node.
 
-**emotion**
+**emotion**: (1) A range of values of a built-in parameter
+             of the system which affects the behavior of the whole
+             system in a predetermined manner, is triggered by some
+             states of the system, and can be sensed by the system
+             itself. (2) A value in that range.
 
 **environment**
 
@@ -58,6 +63,8 @@ Glossary
 **pattern**
 
 **perception**
+
+**sensing**
 
 **signal**
 
