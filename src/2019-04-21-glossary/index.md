@@ -32,15 +32,19 @@ Glossary
 **context**: (1) A concept. (2) The set of all the states of the world
              which are sufficient to activate a node.
 
-**emotion**: (1) A range of values of a built-in parameter
-             of the system which affects the behavior of the whole
-             system in a predetermined manner, is triggered by some
-             states of the system, and can be sensed by the system
-             itself. (2) A value in that range.
+**emotion**: (1) A built-in parameter of the system which can take a
+             range of values and affects the behavior of the whole
+             system in a predetermined manner. Its value changes over
+             time and can be sensed by the system itself. (2) A
+             specific value of such parameter.
 
-**environment**
+**environment**: The rest of the world, with which the system
+                 exchanges information via input and output ports.
+                 Parts of the environment that are inaccessible to
+                 other systems constitute the system's private
+                 environment.
 
-**familiarity**
+**familiarity**:
 
 **fitness**
 
