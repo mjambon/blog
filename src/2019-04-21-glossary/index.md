@@ -1,28 +1,28 @@
 Glossary
 ==
 
-**abstract**: Given two known concepts A and B, A is said more abstract
-            than B if the activation of B triggers the activation of A,
-            but the activation of A can take place without B.
+**abstract**: Given two known concepts $A$ and $B$, $A$ is said more abstract
+              than $B$ if the activation of $B$ triggers the activation of $A$,
+              but the activation of $A$ can take place without $B$.
 
 **action**: (1) The activation of an output port, which may modify
-        the environment. An action is said internal if other systems
-        cannot sense these changes in the environment. (2) An output port.
+            the environment. An action is said internal if other systems
+            cannot sense these changes in the environment. (2) An output port.
 
 **activation**: Setting a single node to its active state, its other state
-              being inactive. A node remains active only for one
-              cycle, after which it is systematically deactivated. In
-              order to be considered continuously active, a node needs
-              to be activated at each successive cycle.
+                being inactive. A node remains active only for one
+                cycle, after which it is systematically deactivated. In
+                order to be considered continuously active, a node needs
+                to be activated at each successive cycle.
 
 **anticipation**: A mechanism by which the system rewards itself based
-                on the expected reward for actions that it just
-                decided to take. A reward refers to the value of the
-                fitness considered to be resulting from a set of actions.
+                  on the expected reward for actions that it just
+                  decided to take. A reward refers to the value of the
+                  fitness considered to be resulting from a set of actions.
 
 **cloning**: Copying a full system. Unlike biological cloning, this
-           includes copying all the acquired cognitive skills and
-           therefore the identity of the system.
+             includes copying all the acquired cognitive skills and
+             therefore the identity of the system.
 
 **concept**: (1) A node that represents a set of states of the
              world. (2) An active instance of such node.
@@ -44,21 +44,31 @@ Glossary
                  other systems constitute the system's private
                  environment.
 
-**familiarity**:
+**fitness**: The single numeric value that the system tries to
+             maximize. At least some of the rules that the system uses
+             to compute the fitness are built in.
 
-**fitness**
+**imagination**: The ability to activate a concept in either of two contexts,
+                 one being more abstract than the other.
 
-**imagination**
+**input**: Shorthand term for _sensing input_, which designates the
+           fixed-length bit vector refreshed at regular intervals
+           that's available to the system for sensing the environment.
+           This excludes the external reward passed to the
+           system via a special-purpose port and used in the
+           computation of the fitness.
 
-**input**
+**intelligence**: The ability for a system to adapt increasingly
+                  faster to new environments.
 
-**intelligence**
+**intuition**: The ability for a system to make decisions without
+               resorting to an emulation of Boolean
+               logic. For design and implementation purposes, imagination,
+               intuition, and perception are considered equivalent.
 
-**intuition**
+**model**: A representation of the world.
 
-**model**
-
-**node**
+**node**: 
 
 **optimization**
 
@@ -70,9 +80,7 @@ Glossary
 
 **sensing**
 
-**signal**
-
-**system**
+**system**: An instance of the machine we're building and studying.
 
 **world**: The union of a system and its environment.
 

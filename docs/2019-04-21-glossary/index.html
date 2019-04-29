@@ -7,6 +7,7 @@
   <title></title>
   <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" href="../blog.css">
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -15,7 +16,7 @@
 </head>
 <body>
 <h1 id="glossary">Glossary</h1>
-<p><strong>abstract</strong>: Given two known concepts A and B, A is said more abstract than B if the activation of B triggers the activation of A, but the activation of A can take place without B.</p>
+<p><strong>abstract</strong>: Given two known concepts <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, <span class="math inline">\(A\)</span> is said more abstract than <span class="math inline">\(B\)</span> if the activation of <span class="math inline">\(B\)</span> triggers the activation of <span class="math inline">\(A\)</span>, but the activation of <span class="math inline">\(A\)</span> can take place without <span class="math inline">\(B\)</span>.</p>
 <p><strong>action</strong>: (1) The activation of an output port, which may modify the environment. An action is said internal if other systems cannot sense these changes in the environment. (2) An output port.</p>
 <p><strong>activation</strong>: Setting a single node to its active state, its other state being inactive. A node remains active only for one cycle, after which it is systematically deactivated. In order to be considered continuously active, a node needs to be activated at each successive cycle.</p>
 <p><strong>anticipation</strong>: A mechanism by which the system rewards itself based on the expected reward for actions that it just decided to take. A reward refers to the value of the fitness considered to be resulting from a set of actions.</p>
@@ -23,23 +24,21 @@
 <p><strong>concept</strong>: (1) A node that represents a set of states of the world. (2) An active instance of such node.</p>
 <p><strong>concrete</strong>: The opposite of abstract.</p>
 <p><strong>context</strong>: (1) A concept. (2) The set of all the states of the world which are sufficient to activate a node.</p>
-<p><strong>emotion</strong>: (1) A range of values of a built-in parameter of the system which affects the behavior of the whole system in a predetermined manner, is triggered by some states of the system, and can be sensed by the system itself. (2) A value in that range.</p>
-<p><strong>environment</strong></p>
-<p><strong>familiarity</strong></p>
-<p><strong>fitness</strong></p>
-<p><strong>imagination</strong></p>
-<p><strong>input</strong></p>
-<p><strong>intelligence</strong></p>
-<p><strong>intuition</strong></p>
-<p><strong>model</strong></p>
-<p><strong>node</strong></p>
+<p><strong>emotion</strong>: (1) A built-in parameter of the system which can take a range of values and affects the behavior of the whole system in a predetermined manner. Its value changes over time and can be sensed by the system itself. (2) A specific value of such parameter.</p>
+<p><strong>environment</strong>: The rest of the world, with which the system exchanges information via input and output ports. Parts of the environment that are inaccessible to other systems constitute the system's private environment.</p>
+<p><strong>fitness</strong>: The single numeric value that the system tries to maximize. At least some of the rules that the system uses to compute the fitness are built in.</p>
+<p><strong>imagination</strong>: The ability to activate a concept in either of two contexts, one being more abstract than the other.</p>
+<p><strong>input</strong>: Shorthand term for <em>sensing input</em>, which designates the fixed-length bit vector refreshed at regular intervals that's available to the system for sensing the environment. This excludes the external reward passed to the system via a special-purpose port and used in the computation of the fitness.</p>
+<p><strong>intelligence</strong>: The ability for a system to adapt increasingly faster to new environments.</p>
+<p><strong>intuition</strong>: The ability for a system to make decisions without resorting to an emulation of Boolean logic. For design and implementation purposes, imagination, intuition, and perception are considered equivalent.</p>
+<p><strong>model</strong>: A representation of the world.</p>
+<p><strong>node</strong>:</p>
 <p><strong>optimization</strong></p>
 <p><strong>output</strong></p>
 <p><strong>pattern</strong></p>
 <p><strong>perception</strong></p>
 <p><strong>sensing</strong></p>
-<p><strong>signal</strong></p>
-<p><strong>system</strong></p>
+<p><strong>system</strong>: An instance of the machine we're building and studying.</p>
 <p><strong>world</strong>: The union of a system and its environment.</p>
 <h1 id="avoided-terms">Avoided terms</h1>
 <p>These common terms tend to confuse a lot of people and are of limited use for designing cognitive systems.</p>
