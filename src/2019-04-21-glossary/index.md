@@ -68,13 +68,22 @@ Glossary
 
 **model**: A representation of the world.
 
-**node**: 
+**node**: (1) A persistent element in the system, that can be either
+          active or inactive, and implements a concept. This is
+          somewhat analog to the notion of _neuron_ in artificial
+          neuron networks. (2) More generally, it has the
+          usual meaning of _vertex_ in graph theory.
 
-**optimization**
+**optimization**: Numeric optimization, usually referring to the
+                  maximization of the fitness variable by the system.
 
-**output**
+**output**: Fixed-length bit vector updated by the system
+            periodically. A cell in the output vector is called an
+            action. The activation of an output cell is
+            called an action as well. Such activation typically
+            results in a modification of the environment.
 
-**pattern**
+**pattern**: A set of input values identifiable by the system.
 
 **perception**
 
