@@ -1,7 +1,7 @@
 Author’s artificial intelligence glossary
 ==
 
-**abstract**: Given two known concepts $A$ and $B$, $A$ is said more abstract
+**abstract**: Given two concepts $A$ and $B$, $A$ is said more abstract
               than $B$ if the activation of $B$ triggers the activation of $A$,
               but the activation of $A$ can take place without $B$.
 
