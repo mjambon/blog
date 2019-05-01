@@ -85,9 +85,13 @@ Glossary
 
 **pattern**: A set of input values identifiable by the system.
 
-**perception**
+**perception**: The activation of a concept that's considered similar
+                to a concept of reference in another system or more
+                generally in an external model of the world.
+                For design and implementation purposes, perception is
+                considered equivalent to imagination and intuition.
 
-**sensing**
+**sensing**: The activation of input ports.
 
 **system**: An instance of the machine we're building and studying.
 
