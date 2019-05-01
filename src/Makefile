@@ -15,7 +15,8 @@ ARTICLES = \
   2017-03-05-current-interests \
   2017-07-02-linear-response-decomposition \
   2017-07-22-values \
-  2017-08-12-adaptive-average
+  2017-08-12-adaptive-average \
+  2019-04-21-glossary
 
 DOCROOT = ../docs
 
