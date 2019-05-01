@@ -17,14 +17,15 @@ in the San Francisco Bay Area.
 Artificial cognition
 --------------------
 
-In my personal time, I've been working toward
+In my personal time, I’ve been working toward
 providing machines with adaptability, imagination, and
 intelligence. The emphasis is on developing general proto-intelligence
 first, with the firm belief that optimizing the system for
-domain-specific applications doesn't serve that goal.
+domain-specific applications doesn’t serve that goal.
 
 ### Technical reports
 
+* [Author’s AI glossary](2019-04-21-glossary) (April 2019)
 * [An adaptive moving average](2017-08-12-adaptive-average)
   (August 2017)
 * [Real-time decomposition of a signal into a sum of responses to
@@ -60,7 +61,7 @@ Random things
 * [Universal career advice](2015-01-03-universal-career-advice)
 * [Faith-driven science](2014-12-27-faith-driven-science)
 
-Structural bioinformatics
+Structural bioinformatics (2000&ndash;2007)
 -------------------------
 
 The SuMo project was an attempt to identify local similarities in

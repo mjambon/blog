@@ -1,4 +1,4 @@
-Glossary
+Author’s artificial intelligence glossary
 ==
 
 **abstract**: Given two known concepts $A$ and $B$, $A$ is said more abstract
@@ -9,11 +9,14 @@ Glossary
             the environment. An action is said internal if other systems
             cannot sense these changes in the environment. (2) An output port.
 
-**activation**: Setting a single node to its active state, its other state
-                being inactive. A node remains active only for one
-                cycle, after which it is systematically deactivated. In
-                order to be considered continuously active, a node needs
-                to be activated at each successive cycle.
+**activation**: Setting a single node to its active state. A node
+                remains active only for one cycle, after which it is
+                systematically deactivated i.e. switched to its
+                default state. In order to be considered continuously
+                active, a node needs to be activated at each
+                cycle. An active node transmits a unary
+                signal to other nodes or components, while an inactive
+                node doesn’t.
 
 **anticipation**: A mechanism by which the system rewards itself based
                   on the expected reward for actions that it just
@@ -41,19 +44,24 @@ Glossary
 **environment**: The rest of the world, with which the system
                  exchanges information via input and output ports.
                  Parts of the environment that are inaccessible to
-                 other systems constitute the system's private
+                 other systems constitute the system’s private
                  environment.
 
-**fitness**: The single numeric value that the system tries to
-             maximize. At least some of the rules that the system uses
-             to compute the fitness are built in.
+**fitness**: The single numeric variable that changes over time and
+             that the system tries to maximize.
+             At least some of the rules that the system uses
+             to compute the fitness are built in. For example, an
+             external operator would press a green button to add 1 to
+             the fitness at the current cycle or a red button to
+             add -1. The intended effect is to reward or punish the
+             system and encourage certain behaviors.
 
 **imagination**: The ability to activate a concept in either of two contexts,
                  one being more abstract than the other.
 
 **input**: Shorthand term for _sensing input_, which designates the
            fixed-length bit vector refreshed at regular intervals
-           that's available to the system for sensing the environment.
+           that’s available to the system for sensing the environment.
            This excludes the external reward passed to the
            system via a special-purpose port and used in the
            computation of the fitness.
@@ -65,6 +73,8 @@ Glossary
                resorting to an emulation of Boolean
                logic. For design and implementation purposes, imagination,
                intuition, and perception are considered equivalent.
+
+**mind**: A system that works as expected.
 
 **model**: A representation of the world.
 
@@ -85,7 +95,7 @@ Glossary
 
 **pattern**: A set of input values identifiable by the system.
 
-**perception**: The activation of a concept that's considered similar
+**perception**: The activation of a concept that’s considered similar
                 to a concept of reference in another system or more
                 generally in an external model of the world.
                 For design and implementation purposes, perception is
@@ -93,17 +103,18 @@ Glossary
 
 **sensing**: The activation of input ports.
 
-**system**: An instance of the machine we're building and studying.
+**system**: An instance of the machine we’re building and studying.
 
 **world**: The union of a system and its environment.
 
 Avoided terms
 ==
 
-These common terms tend to confuse a lot of people and are of limited
-use for designing cognitive systems.
+We don’t have a good use for these common terms, so we’ll avoid them
+until we do:
 
 * **consciousness**
 * **explaining**
+* **knowledge**
 * **learning**
 * **understanding**

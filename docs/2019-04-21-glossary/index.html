@@ -15,36 +15,38 @@
   <meta http-equiv="Content-Language" content="en">
 </head>
 <body>
-<h1 id="glossary">Glossary</h1>
+<h1 id="authors-artificial-intelligence-glossary">Author’s artificial intelligence glossary</h1>
 <p><strong>abstract</strong>: Given two known concepts <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, <span class="math inline">\(A\)</span> is said more abstract than <span class="math inline">\(B\)</span> if the activation of <span class="math inline">\(B\)</span> triggers the activation of <span class="math inline">\(A\)</span>, but the activation of <span class="math inline">\(A\)</span> can take place without <span class="math inline">\(B\)</span>.</p>
 <p><strong>action</strong>: (1) The activation of an output port, which may modify the environment. An action is said internal if other systems cannot sense these changes in the environment. (2) An output port.</p>
-<p><strong>activation</strong>: Setting a single node to its active state, its other state being inactive. A node remains active only for one cycle, after which it is systematically deactivated. In order to be considered continuously active, a node needs to be activated at each successive cycle.</p>
+<p><strong>activation</strong>: Setting a single node to its active state. A node remains active only for one cycle, after which it is systematically deactivated i.e. switched to its default state. In order to be considered continuously active, a node needs to be activated at each cycle. An active node transmits a unary signal to other nodes or components, while an inactive node doesn’t.</p>
 <p><strong>anticipation</strong>: A mechanism by which the system rewards itself based on the expected reward for actions that it just decided to take. A reward refers to the value of the fitness considered to be resulting from a set of actions.</p>
 <p><strong>cloning</strong>: Copying a full system. Unlike biological cloning, this includes copying all the acquired cognitive skills and therefore the identity of the system.</p>
 <p><strong>concept</strong>: (1) A node that represents a set of states of the world. (2) An active instance of such node.</p>
 <p><strong>concrete</strong>: The opposite of abstract.</p>
 <p><strong>context</strong>: (1) A concept. (2) The set of all the states of the world which are sufficient to activate a node.</p>
 <p><strong>emotion</strong>: (1) A built-in parameter of the system which can take a range of values and affects the behavior of the whole system in a predetermined manner. Its value changes over time and can be sensed by the system itself. (2) A specific value of such parameter.</p>
-<p><strong>environment</strong>: The rest of the world, with which the system exchanges information via input and output ports. Parts of the environment that are inaccessible to other systems constitute the system's private environment.</p>
-<p><strong>fitness</strong>: The single numeric value that the system tries to maximize. At least some of the rules that the system uses to compute the fitness are built in.</p>
+<p><strong>environment</strong>: The rest of the world, with which the system exchanges information via input and output ports. Parts of the environment that are inaccessible to other systems constitute the system’s private environment.</p>
+<p><strong>fitness</strong>: The single numeric variable that changes over time and that the system tries to maximize. At least some of the rules that the system uses to compute the fitness are built in. For example, an external operator would press a green button to add 1 to the fitness at the current cycle or a red button to add -1. The intended effect is to reward or punish the system and encourage certain behaviors.</p>
 <p><strong>imagination</strong>: The ability to activate a concept in either of two contexts, one being more abstract than the other.</p>
-<p><strong>input</strong>: Shorthand term for <em>sensing input</em>, which designates the fixed-length bit vector refreshed at regular intervals that's available to the system for sensing the environment. This excludes the external reward passed to the system via a special-purpose port and used in the computation of the fitness.</p>
+<p><strong>input</strong>: Shorthand term for <em>sensing input</em>, which designates the fixed-length bit vector refreshed at regular intervals that’s available to the system for sensing the environment. This excludes the external reward passed to the system via a special-purpose port and used in the computation of the fitness.</p>
 <p><strong>intelligence</strong>: The ability for a system to adapt increasingly faster to new environments.</p>
 <p><strong>intuition</strong>: The ability for a system to make decisions without resorting to an emulation of Boolean logic. For design and implementation purposes, imagination, intuition, and perception are considered equivalent.</p>
+<p><strong>mind</strong>: A system that works as expected.</p>
 <p><strong>model</strong>: A representation of the world.</p>
 <p><strong>node</strong>: (1) A persistent element in the system, that can be either active or inactive, and implements a concept. This is somewhat analog to the notion of <em>neuron</em> in artificial neuron networks. (2) More generally, it has the usual meaning of <em>vertex</em> in graph theory.</p>
 <p><strong>optimization</strong>: Numeric optimization, usually referring to the maximization of the fitness variable by the system.</p>
 <p><strong>output</strong>: Fixed-length bit vector updated by the system periodically. A cell in the output vector is called an action. The activation of an output cell is called an action as well. Such activation typically results in a modification of the environment.</p>
 <p><strong>pattern</strong>: A set of input values identifiable by the system.</p>
-<p><strong>perception</strong>: The activation of a concept that's considered similar to a concept of reference in another system or more generally in an external model of the world. For design and implementation purposes, perception is considered equivalent to imagination and intuition.</p>
+<p><strong>perception</strong>: The activation of a concept that’s considered similar to a concept of reference in another system or more generally in an external model of the world. For design and implementation purposes, perception is considered equivalent to imagination and intuition.</p>
 <p><strong>sensing</strong>: The activation of input ports.</p>
-<p><strong>system</strong>: An instance of the machine we're building and studying.</p>
+<p><strong>system</strong>: An instance of the machine we’re building and studying.</p>
 <p><strong>world</strong>: The union of a system and its environment.</p>
 <h1 id="avoided-terms">Avoided terms</h1>
-<p>These common terms tend to confuse a lot of people and are of limited use for designing cognitive systems.</p>
+<p>We don’t have a good use for these common terms, so we’ll avoid them until we do:</p>
 <ul>
 <li><strong>consciousness</strong></li>
 <li><strong>explaining</strong></li>
+<li><strong>knowledge</strong></li>
 <li><strong>learning</strong></li>
 <li><strong>understanding</strong></li>
 </ul>
