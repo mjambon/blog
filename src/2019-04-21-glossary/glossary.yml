@@ -1,0 +1,181 @@
+---
+- term: system
+  def: >
+    An instance of the machine we’re building and studying.
+  syn:
+    - systems
+
+- term: environment
+  def: >
+    Anything that is not part of the [system], with which the [system]
+    exchanges information via input and output ports.
+    Parts of the [environment] that are inaccessible to
+    other [systems] constitute the [system]’s private
+    [environment].
+  syn:
+    - environments
+
+- term: world
+  def: >
+    The union of a [system] and its [environment].
+  syn:
+    - worlds
+
+- term: cloning
+  def: >
+    Copying a full [system]. Unlike biological cloning, this
+    includes copying all the acquired cognitive skills and
+    therefore the identity of the [system].
+
+- term: node
+  def: >
+    Any kind of persistent element in the [system], that transmits
+    information. More generally, it has the usual meaning of vertex in graph
+    theory.
+  syn:
+    - nodes
+
+- term: activation
+  def: >
+    Setting a single [node] to its [active] state. A [node]
+    remains [active] only for one cycle, after which it is
+    systematically deactivated i.e. switched to its
+    default state. In order to be considered continuously
+    [active], a [node] needs to be activated at each
+    cycle. An [active] [node] transmits a unary
+    signal to other [nodes] or components, while an [inactive]
+    [node] doesn’t.
+  syn:
+    - activate
+    - activates
+    - activating
+    - activated
+    - active
+    - inactive
+
+- term: concept
+  def: >
+    A [node] that represents a set of states of the
+    [world]. An [active] instance of such [node].
+  syn:
+    - concepts
+
+- term: action
+  def: >
+    (1) The [activation] of an output port, which may modify
+    the environment. An [action] is said internal if other [systems]
+    cannot sense these changes in the environment. (2) An output port.
+  syn:
+    - actions
+
+- term: abstract
+  def: >
+    Given two [concepts] A and B, A is said more [abstract]
+    than B if the [activation] of B triggers the [activation] of A,
+    but the [activation] of A can take place without B.
+
+- term: fitness
+  def: >
+    The single numeric variable that changes over time and
+    that the [system] tries to maximize.
+    At least some of the rules that the [system] uses
+    to compute the fitness are built in. For example, an
+    external operator would press a green button to add 1 to
+    the fitness at the current cycle or a red button to
+    add -1. The intended effect is to reward or punish the
+    [system] and encourage certain behaviors.
+
+- term: anticipation
+  def: >
+    A mechanism by which the [system] rewards itself based
+    on the expected reward for [actions] that it just
+    decided to take. A reward refers to the value of the
+    [fitness] considered to be resulting from a set of [actions].
+
+- term: concrete
+  def: >
+    The opposite of [abstract].
+
+- term: context
+  def: >
+    (1) A [concept]. (2) The set of all the states of the [world]
+    which are sufficient to activate a [node].
+  syn:
+    - contexts
+
+- term: emotion
+  def: >
+    (1) A built-in parameter of the [system] which can take a
+    range of values and affects the behavior of the whole
+    [system] in a predetermined manner. Its value changes over
+    time and can be sensed by the [system] itself. (2) A
+    specific value of such parameter.
+  syn:
+    - emotions
+
+- term: input
+  def: >
+    Shorthand term for "sensing input", which designates the
+    fixed-length bit vector refreshed at regular intervals
+    that’s available to the [system] for sensing the environment.
+    This excludes the external reward passed to the
+    [system] via a special-purpose port and used in the
+    computation of the [fitness].
+
+- term: sensing
+  def: >
+    The [activation] of [input] ports.
+
+- term: mind
+  def: >
+    A [system] that works as expected.
+  syn:
+    - minds
+
+- term: model
+  def: >
+    A representation of the [world].
+  syn:
+    - models
+
+- term: optimization
+  def: >
+    Numeric optimization, usually referring to the
+    maximization of the [fitness] variable by the [system].
+
+- term: output
+  def: >
+    Fixed-length bit vector updated by the [system]
+    periodically. A cell in the output vector is called an
+    [action]. The [activation] of an output cell is
+    called an [action] as well. Such [activation] typically
+    results in a modification of the [environment].
+
+- term: pattern
+  def: >
+    A set of [input] values identifiable by the [system].
+  syn:
+    - patterns
+
+- term: perception
+  def: >
+    The [activation] of a [concept] that’s considered similar
+    to a [concept] of reference in another [system] or more
+    generally in an external model of the [world].
+
+- term: imagination
+  def: >
+    The ability to [activate] a [concept] in either of two contexts,
+    one being more [abstract] than the other.
+
+- term: intuition
+  def: >
+    The ability for a [system] to make decisions without
+    resorting to an emulation of Boolean
+    logic. For design and implementation purposes, [imagination],
+    [intuition], and [perception] are considered equivalent.
+
+- term: intelligence
+  def: >
+    The ability for a [system] to adapt increasingly
+    faster to new [environments].
