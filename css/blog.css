@@ -4,11 +4,11 @@ body {
 
   max-width: 70ex;
   text-align: left;
-  font-family: 'Computer Modern Serif', 'Droid Serif', serif;
+  font-family: 'Droid Serif', serif;
 }
 
 pre, code {
-  font-family: 'Computer Modern Typewriter', monospace;
+  font-family: monospace;
 }
 
 h1, h2, h3, h4 {
@@ -68,37 +68,4 @@ p {
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
-}
-
-@font-face {
-  font-family: 'Computer Modern Serif';
-  src: url('fonts/cmunrm.otf');
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: 'Computer Modern Serif';
-  src: url('fonts/cmunbx.otf');
-  font-style: normal;
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'Computer Modern Serif';
-  src: url('fonts/cmunti.otf');
-  font-style: italic;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: 'Computer Modern Serif';
-  src: url('fonts/cmunbl.otf');
-  font-style: italic;
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'Computer Modern Typewriter';
-  src: url('fonts/cmuntt.otf');
 }
