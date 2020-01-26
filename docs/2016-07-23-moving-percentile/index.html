@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
-  <meta charset="utf-8">
-  <meta name="generator" content="pandoc">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
-  <link rel="stylesheet" href="../blog.css">
-  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>index</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="../blog.css" />
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -15,13 +22,14 @@
   <meta http-equiv="Content-Language" content="en">
 </head>
 <body>
+
 <h1 id="windowless-percentile-tracking">Windowless percentile tracking</h1>
 <p>This is a method driven by the same constraints as the <a href="https://en.wikipedia.org/wiki/Moving_average#Exponential_moving_average">exponential moving average</a>, but for median and other percentiles.</p>
 <p>We present an algorithm for tracking the value of a percentile, such as the median, in an infinite stream of observations whose distribution can change over time. A self-imposed constraint is that we cannot afford to keep the last <em>N</em> observations explicitly in memory. In our algorithm, the cost of updating the estimated percentile is <span class="math inline">\(O(1)\)</span> and the memory usage is also <span class="math inline">\(O(1)\)</span>. A single parameter denoted <span class="math inline">\(r\)</span> is specified by the user and expresses the trade-off between accuracy and reactivity (to changes in the distribution of the signal).</p>
 <p>Notations: in this document, all sequences and arrays are indexed starting from 0.</p>
 <h2 id="background-window-based-algorithms">Background: window-based algorithms</h2>
 <p>Given <em>N</em> a fixed window length, it is relatively straightforward to maintain a sorted array <span class="math inline">\(W\)</span> of the latest <em>N</em> observations indexed <span class="math inline">\(0\dots N-1\)</span>. The <em>p</em>-percentile is computed exactly over that window by looking up the pair of values found at index <span class="math inline">\(\lfloor (N-1)p \rfloor\)</span> and at index <span class="math inline">\(\lceil (N-1)p \rceil\)</span>, and by taking their average.</p>
-<p>For example, the median <span class="math inline">\(m\)</span> (0.5-percentile) using a window of length <span class="math inline">\(N=100\)</span> is calculated as follows once we've read 100 observations or more:</p>
+<p>For example, the median <span class="math inline">\(m\)</span> (0.5-percentile) using a window of length <span class="math inline">\(N=100\)</span> is calculated as follows once we’ve read 100 observations or more:</p>
 <p><span class="math display">\[m = \frac{W_{49} + W_{50}}{2}\]</span></p>
 <p>Such algorithms are not acceptable for us since they require storing the latest <em>N</em> values, where <em>N</em> is typically chosen greater than 100.</p>
 <h2 id="background-exponential-moving-average">Background: exponential moving average</h2>
@@ -41,7 +49,7 @@
 <p><span class="math display">\[ m_i = m_{i-1} + \frac{\delta}{1-p} \]</span></p>
 <p>else <span class="math inline">\(x_i = m_{i-1}\)</span> and keep the previous value:</p>
 <p><span class="math display">\[ m_i = m_{i-1} \]</span></p>
-<p>If <span class="math inline">\(\delta\)</span> is not too large and not too small, <span class="math inline">\(m\)</span> is a good estimate of the <span class="math inline">\(p\)</span>-percentile. Choosing a good value for <span class="math inline">\(\delta\)</span> depends on the distribution of values around the <span class="math inline">\(p\)</span>-percentile. Excessive values of <span class="math inline">\(\delta\)</span> result in big jumps for <em>m</em> and limit the accuracy, while a <span class="math inline">\(\delta\)</span> that's too small may take too much time to converge to the <span class="math inline">\(p\)</span>-percentile as computed exactly using a window of a reasonable length.</p>
+<p>If <span class="math inline">\(\delta\)</span> is not too large and not too small, <span class="math inline">\(m\)</span> is a good estimate of the <span class="math inline">\(p\)</span>-percentile. Choosing a good value for <span class="math inline">\(\delta\)</span> depends on the distribution of values around the <span class="math inline">\(p\)</span>-percentile. Excessive values of <span class="math inline">\(\delta\)</span> result in big jumps for <em>m</em> and limit the accuracy, while a <span class="math inline">\(\delta\)</span> that’s too small may take too much time to converge to the <span class="math inline">\(p\)</span>-percentile as computed exactly using a window of a reasonable length.</p>
 <p>In order to express the trade-off between accuracy and convergence speed, we express <span class="math inline">\(\delta\)</span> as the product of a user-chosen constant <em>r</em> and the estimated standard deviation <span class="math inline">\(\sigma\)</span> of the input signal:</p>
 <p><span class="math display">\[ \delta_i = \sigma_i . r \]</span></p>
 <p>where <span class="math inline">\(\sigma_i\)</span> is the square root of the variance estimated by a moving average of the sequence <span class="math inline">\((\mu_i - x_i)^2\)</span> and <span class="math inline">\(\mu\)</span> is estimated by a moving average of <em>x</em>.</p>

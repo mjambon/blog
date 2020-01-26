@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
-  <meta charset="utf-8">
-  <meta name="generator" content="pandoc">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
-  <link rel="stylesheet" href="../blog.css">
-  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>index</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="../blog.css" />
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -15,33 +21,36 @@
   <meta http-equiv="Content-Language" content="en">
 </head>
 <body>
-<h1 id="authors-artificial-intelligence-glossary">Author’s artificial intelligence glossary</h1>
-<p><strong>abstract</strong>: Given two known concepts <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, <span class="math inline">\(A\)</span> is said more abstract than <span class="math inline">\(B\)</span> if the activation of <span class="math inline">\(B\)</span> triggers the activation of <span class="math inline">\(A\)</span>, but the activation of <span class="math inline">\(A\)</span> can take place without <span class="math inline">\(B\)</span>.</p>
-<p><strong>action</strong>: (1) The activation of an output port, which may modify the environment. An action is said internal if other systems cannot sense these changes in the environment. (2) An output port.</p>
-<p><strong>activation</strong>: Setting a single node to its active state. A node remains active only for one cycle, after which it is systematically deactivated i.e. switched to its default state. In order to be considered continuously active, a node needs to be activated at each cycle. An active node transmits a unary signal to other nodes or components, while an inactive node doesn’t.</p>
-<p><strong>anticipation</strong>: A mechanism by which the system rewards itself based on the expected reward for actions that it just decided to take. A reward refers to the value of the fitness considered to be resulting from a set of actions.</p>
-<p><strong>cloning</strong>: Copying a full system. Unlike biological cloning, this includes copying all the acquired cognitive skills and therefore the identity of the system.</p>
-<p><strong>concept</strong>: (1) A node that represents a set of states of the world. (2) An active instance of such node.</p>
-<p><strong>concrete</strong>: The opposite of abstract.</p>
-<p><strong>context</strong>: (1) A concept. (2) The set of all the states of the world which are sufficient to activate a node.</p>
-<p><strong>emotion</strong>: (1) A built-in parameter of the system which can take a range of values and affects the behavior of the whole system in a predetermined manner. Its value changes over time and can be sensed by the system itself. (2) A specific value of such parameter.</p>
-<p><strong>environment</strong>: The rest of the world, with which the system exchanges information via input and output ports. Parts of the environment that are inaccessible to other systems constitute the system’s private environment.</p>
-<p><strong>fitness</strong>: The single numeric variable that changes over time and that the system tries to maximize. At least some of the rules that the system uses to compute the fitness are built in. For example, an external operator would press a green button to add 1 to the fitness at the current cycle or a red button to add -1. The intended effect is to reward or punish the system and encourage certain behaviors.</p>
-<p><strong>imagination</strong>: The ability to activate a concept in either of two contexts, one being more abstract than the other.</p>
-<p><strong>input</strong>: Shorthand term for <em>sensing input</em>, which designates the fixed-length bit vector refreshed at regular intervals that’s available to the system for sensing the environment. This excludes the external reward passed to the system via a special-purpose port and used in the computation of the fitness.</p>
-<p><strong>intelligence</strong>: The ability for a system to adapt increasingly faster to new environments.</p>
-<p><strong>intuition</strong>: The ability for a system to make decisions without resorting to an emulation of Boolean logic. For design and implementation purposes, imagination, intuition, and perception are considered equivalent.</p>
-<p><strong>mind</strong>: A system that works as expected.</p>
-<p><strong>model</strong>: A representation of the world.</p>
-<p><strong>node</strong>: (1) A persistent element in the system, that can be either active or inactive, and implements a concept. This is somewhat analog to the notion of <em>neuron</em> in artificial neuron networks. (2) More generally, it has the usual meaning of <em>vertex</em> in graph theory.</p>
-<p><strong>optimization</strong>: Numeric optimization, usually referring to the maximization of the fitness variable by the system.</p>
-<p><strong>output</strong>: Fixed-length bit vector updated by the system periodically. A cell in the output vector is called an action. The activation of an output cell is called an action as well. Such activation typically results in a modification of the environment.</p>
-<p><strong>pattern</strong>: A set of input values identifiable by the system.</p>
-<p><strong>perception</strong>: The activation of a concept that’s considered similar to a concept of reference in another system or more generally in an external model of the world. For design and implementation purposes, perception is considered equivalent to imagination and intuition.</p>
-<p><strong>sensing</strong>: The activation of input ports.</p>
-<p><strong>system</strong>: An instance of the machine we’re building and studying.</p>
-<p><strong>world</strong>: The union of a system and its environment.</p>
-<h1 id="avoided-terms">Avoided terms</h1>
+
+<h1 id="glossary">Glossary</h1>
+<p>This is a glossary of terms that I use in the context of my own work on artificial cognition.</p>
+<p>Definitions are acyclic, i.e. a definition may contain only links to previously defined terms. <a href="#dag">This forms a DAG</a> (directed acyclic graph) of terms, with the most foundational terms at the bottom.</p>
+<p><span id="ad-73797374656d"></span><strong>system</strong>: <span class="ad-contents">An instance of the machine we’re building and studying.</span></p>
+<p><span id="ad-656e7669726f6e6d656e74"></span><strong>environment</strong>: <span class="ad-contents">Anything that is not part of the <a href="#ad-73797374656d" class="ad-term-link">system</a>, with which the <a href="#ad-73797374656d" class="ad-term-link">system</a> exchanges information via input and output ports. Parts of the <a href="#ad-656e7669726f6e6d656e74" class="ad-term-link">environment</a> that are inaccessible to other <a href="#ad-73797374656d" class="ad-term-link">systems</a> constitute the <a href="#ad-73797374656d" class="ad-term-link">system</a>’s private <a href="#ad-656e7669726f6e6d656e74" class="ad-term-link">environment</a>.</span></p>
+<p><span id="ad-776f726c64"></span><strong>world</strong>: <span class="ad-contents">The union of a <a href="#ad-73797374656d" class="ad-term-link">system</a> and its <a href="#ad-656e7669726f6e6d656e74" class="ad-term-link">environment</a>.</span></p>
+<p><span id="ad-636c6f6e696e67"></span><strong>cloning</strong>: <span class="ad-contents">Copying a full <a href="#ad-73797374656d" class="ad-term-link">system</a>. Unlike biological cloning, this includes copying all the acquired cognitive skills and therefore the identity of the <a href="#ad-73797374656d" class="ad-term-link">system</a>.</span></p>
+<p><span id="ad-6e6f6465"></span><strong>node</strong>: <span class="ad-contents">Any kind of persistent element in the <a href="#ad-73797374656d" class="ad-term-link">system</a>, that transmits information. More generally, it has the usual meaning of vertex in graph theory.</span></p>
+<p><span id="ad-61637469766174696f6e"></span><strong>activation</strong>: <span class="ad-contents">Setting a single <a href="#ad-6e6f6465" class="ad-term-link">node</a> to its <a href="#ad-61637469766174696f6e" class="ad-term-link">active</a> state. A <a href="#ad-6e6f6465" class="ad-term-link">node</a> remains <a href="#ad-61637469766174696f6e" class="ad-term-link">active</a> only for one cycle, after which it is systematically deactivated i.e. switched to its default state. In order to be considered continuously <a href="#ad-61637469766174696f6e" class="ad-term-link">active</a>, a <a href="#ad-6e6f6465" class="ad-term-link">node</a> needs to be activated at each cycle. An <a href="#ad-61637469766174696f6e" class="ad-term-link">active</a> <a href="#ad-6e6f6465" class="ad-term-link">node</a> transmits a unary signal to other <a href="#ad-6e6f6465" class="ad-term-link">nodes</a> or components, while an <a href="#ad-61637469766174696f6e" class="ad-term-link">inactive</a> <a href="#ad-6e6f6465" class="ad-term-link">node</a> doesn’t.</span></p>
+<p><span id="ad-636f6e63657074"></span><strong>concept</strong>: <span class="ad-contents">A <a href="#ad-6e6f6465" class="ad-term-link">node</a> that represents a set of states of the <a href="#ad-776f726c64" class="ad-term-link">world</a>. An <a href="#ad-61637469766174696f6e" class="ad-term-link">active</a> instance of such <a href="#ad-6e6f6465" class="ad-term-link">node</a>.</span></p>
+<p><span id="ad-616374696f6e"></span><strong>action</strong>: <span class="ad-contents">(1) The <a href="#ad-61637469766174696f6e" class="ad-term-link">activation</a> of an output port, which may modify the environment. An <a href="#ad-616374696f6e" class="ad-term-link">action</a> is said internal if other <a href="#ad-73797374656d" class="ad-term-link">systems</a> cannot sense these changes in the environment. (2) An output port.</span></p>
+<p><span id="ad-6162737472616374"></span><strong>abstract</strong>: <span class="ad-contents">Given two <a href="#ad-636f6e63657074" class="ad-term-link">concepts</a> A and B, A is said more <a href="#ad-6162737472616374" class="ad-term-link">abstract</a> than B if the <a href="#ad-61637469766174696f6e" class="ad-term-link">activation</a> of B triggers the <a href="#ad-61637469766174696f6e" class="ad-term-link">activation</a> of A, but the <a href="#ad-61637469766174696f6e" class="ad-term-link">activation</a> of A can take place without B.</span></p>
+<p><span id="ad-6669746e657373"></span><strong>fitness</strong>: <span class="ad-contents">The single numeric variable that changes over time and that the <a href="#ad-73797374656d" class="ad-term-link">system</a> tries to maximize. At least some of the rules that the <a href="#ad-73797374656d" class="ad-term-link">system</a> uses to compute the fitness are built in. For example, an external operator would press a green button to add 1 to the fitness at the current cycle or a red button to add -1. The intended effect is to reward or punish the <a href="#ad-73797374656d" class="ad-term-link">system</a> and encourage certain behaviors.</span></p>
+<p><span id="ad-616e74696369706174696f6e"></span><strong>anticipation</strong>: <span class="ad-contents">A mechanism by which the <a href="#ad-73797374656d" class="ad-term-link">system</a> rewards itself based on the expected reward for <a href="#ad-616374696f6e" class="ad-term-link">actions</a> that it just decided to take. A reward refers to the value of the <a href="#ad-6669746e657373" class="ad-term-link">fitness</a> considered to be resulting from a set of <a href="#ad-616374696f6e" class="ad-term-link">actions</a>.</span></p>
+<p><span id="ad-636f6e6372657465"></span><strong>concrete</strong>: <span class="ad-contents">The opposite of <a href="#ad-6162737472616374" class="ad-term-link">abstract</a>.</span></p>
+<p><span id="ad-636f6e74657874"></span><strong>context</strong>: <span class="ad-contents">(1) A <a href="#ad-636f6e63657074" class="ad-term-link">concept</a>. (2) The set of all the states of the <a href="#ad-776f726c64" class="ad-term-link">world</a> which are sufficient to activate a <a href="#ad-6e6f6465" class="ad-term-link">node</a>.</span></p>
+<p><span id="ad-656d6f74696f6e"></span><strong>emotion</strong>: <span class="ad-contents">(1) A built-in parameter of the <a href="#ad-73797374656d" class="ad-term-link">system</a> which can take a range of values and affects the behavior of the whole <a href="#ad-73797374656d" class="ad-term-link">system</a> in a predetermined manner. Its value changes over time and can be sensed by the <a href="#ad-73797374656d" class="ad-term-link">system</a> itself. (2) A specific value of such parameter.</span></p>
+<p><span id="ad-696e707574"></span><strong>input</strong>: <span class="ad-contents">Shorthand term for "sensing input", which designates the fixed-length bit vector refreshed at regular intervals that’s available to the <a href="#ad-73797374656d" class="ad-term-link">system</a> for sensing the environment. This excludes the external reward passed to the <a href="#ad-73797374656d" class="ad-term-link">system</a> via a special-purpose port and used in the computation of the <a href="#ad-6669746e657373" class="ad-term-link">fitness</a>.</span></p>
+<p><span id="ad-73656e73696e67"></span><strong>sensing</strong>: <span class="ad-contents">The <a href="#ad-61637469766174696f6e" class="ad-term-link">activation</a> of <a href="#ad-696e707574" class="ad-term-link">input</a> ports.</span></p>
+<p><span id="ad-6d696e64"></span><strong>mind</strong>: <span class="ad-contents">A <a href="#ad-73797374656d" class="ad-term-link">system</a> that works as expected.</span></p>
+<p><span id="ad-6d6f64656c"></span><strong>model</strong>: <span class="ad-contents">A representation of the <a href="#ad-776f726c64" class="ad-term-link">world</a>.</span></p>
+<p><span id="ad-6f7074696d697a6174696f6e"></span><strong>optimization</strong>: <span class="ad-contents">Numeric optimization, usually referring to the maximization of the <a href="#ad-6669746e657373" class="ad-term-link">fitness</a> variable by the <a href="#ad-73797374656d" class="ad-term-link">system</a>.</span></p>
+<p><span id="ad-6f7574707574"></span><strong>output</strong>: <span class="ad-contents">Fixed-length bit vector updated by the <a href="#ad-73797374656d" class="ad-term-link">system</a> periodically. A cell in the output vector is called an <a href="#ad-616374696f6e" class="ad-term-link">action</a>. The <a href="#ad-61637469766174696f6e" class="ad-term-link">activation</a> of an output cell is called an <a href="#ad-616374696f6e" class="ad-term-link">action</a> as well. Such <a href="#ad-61637469766174696f6e" class="ad-term-link">activation</a> typically results in a modification of the <a href="#ad-656e7669726f6e6d656e74" class="ad-term-link">environment</a>.</span></p>
+<p><span id="ad-7061747465726e"></span><strong>pattern</strong>: <span class="ad-contents">A set of <a href="#ad-696e707574" class="ad-term-link">input</a> values identifiable by the <a href="#ad-73797374656d" class="ad-term-link">system</a>.</span></p>
+<p><span id="ad-70657263657074696f6e"></span><strong>perception</strong>: <span class="ad-contents">The <a href="#ad-61637469766174696f6e" class="ad-term-link">activation</a> of a <a href="#ad-636f6e63657074" class="ad-term-link">concept</a> that’s considered similar to a <a href="#ad-636f6e63657074" class="ad-term-link">concept</a> of reference in another <a href="#ad-73797374656d" class="ad-term-link">system</a> or more generally in an external model of the <a href="#ad-776f726c64" class="ad-term-link">world</a>.</span></p>
+<p><span id="ad-696d6167696e6174696f6e"></span><strong>imagination</strong>: <span class="ad-contents">The ability to <a href="#ad-61637469766174696f6e" class="ad-term-link">activate</a> a <a href="#ad-636f6e63657074" class="ad-term-link">concept</a> in either of two contexts, one being more <a href="#ad-6162737472616374" class="ad-term-link">abstract</a> than the other.</span></p>
+<p><span id="ad-696e74756974696f6e"></span><strong>intuition</strong>: <span class="ad-contents">The ability for a <a href="#ad-73797374656d" class="ad-term-link">system</a> to make decisions without resorting to an emulation of Boolean logic. For design and implementation purposes, <a href="#ad-696d6167696e6174696f6e" class="ad-term-link">imagination</a>, <a href="#ad-696e74756974696f6e" class="ad-term-link">intuition</a>, and <a href="#ad-70657263657074696f6e" class="ad-term-link">perception</a> are considered equivalent.</span></p>
+<p><span id="ad-696e74656c6c6967656e6365"></span><strong>intelligence</strong>: <span class="ad-contents">The ability for a <a href="#ad-73797374656d" class="ad-term-link">system</a> to adapt increasingly faster to new <a href="#ad-656e7669726f6e6d656e74" class="ad-term-link">environments</a>.</span></p>
+<h2 id="avoided-terms">Avoided terms</h2>
 <p>We don’t have a good use for these common terms, so we’ll avoid them until we do:</p>
 <ul>
 <li><strong>consciousness</strong></li>
@@ -50,6 +59,8 @@
 <li><strong>learning</strong></li>
 <li><strong>understanding</strong></li>
 </ul>
+<p><span id="dag"></span> <a href="img/glossary-dag.png"><img src="img/glossary-dag.png" title="Graph showing the dependencies between definitions of this glossary." /></a></p>
+<p>This acyclic glossary and its graph representation were formatted with <a href="https://github.com/mjambon/ad">ad</a>, a command-line utility I created for the occasion.</p>
 <p class="menu footer">
   <a href="https://twitter.com/mjambon">@mjambon</a> 2019-04-21<br/>
   <a href="/">Index</a>

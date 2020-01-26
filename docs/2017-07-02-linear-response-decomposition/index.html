@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
-  <meta charset="utf-8">
-  <meta name="generator" content="pandoc">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <meta name="author" content="Martin Jambon, July 2017">
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Martin Jambon, July 2017" />
   <title>Real-time decomposition of a signal into a sum of responses to labeled events</title>
-  <style type="text/css">code{white-space: pre;}</style>
-  <link rel="stylesheet" href="../blog.css">
-  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="../blog.css" />
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -16,14 +23,16 @@
   <meta http-equiv="Content-Language" content="en">
 </head>
 <body>
-<header>
+
+<header id="title-block-header">
 <h1 class="title">Real-time decomposition of a signal into a sum of responses to labeled events</h1>
-<h2 class="author">Martin Jambon, July 2017</h2>
+<p class="author">Martin Jambon, July 2017</p>
 </header>
-<nav id="TOC">
+<nav id="TOC" role="doc-toc">
 <ul>
 <li><a href="#motivation-in-the-context-of-artificial-general-intelligence"><span class="toc-section-number">1</span> Motivation in the context of artificial general intelligence</a></li>
-<li><a href="#general-design-contraints"><span class="toc-section-number">2</span> General design contraints</a><ul>
+<li><a href="#general-design-contraints"><span class="toc-section-number">2</span> General design contraints</a>
+<ul>
 <li><a href="#independence-from-context"><span class="toc-section-number">2.1</span> Independence from context</a></li>
 <li><a href="#effects-can-be-delayed"><span class="toc-section-number">2.2</span> Effects can be delayed</a></li>
 <li><a href="#overlapping-effects"><span class="toc-section-number">2.3</span> Overlapping effects</a></li>
@@ -31,13 +40,16 @@
 <li><a href="#adaptation"><span class="toc-section-number">2.5</span> Adaptation</a></li>
 </ul></li>
 <li><a href="#notations"><span class="toc-section-number">3</span> Notations</a></li>
-<li><a href="#solution"><span class="toc-section-number">4</span> Solution</a><ul>
+<li><a href="#solution"><span class="toc-section-number">4</span> Solution</a>
+<ul>
 <li><a href="#outline"><span class="toc-section-number">4.1</span> Outline</a></li>
-<li><a href="#description"><span class="toc-section-number">4.2</span> Description</a><ul>
+<li><a href="#description"><span class="toc-section-number">4.2</span> Description</a>
+<ul>
 <li><a href="#prediction-and-update"><span class="toc-section-number">4.2.1</span> Prediction and update</a></li>
 <li><a href="#details-and-refinements"><span class="toc-section-number">4.2.2</span> Details and refinements</a></li>
 </ul></li>
-<li><a href="#selected-scenarios"><span class="toc-section-number">4.3</span> Selected scenarios</a><ul>
+<li><a href="#selected-scenarios"><span class="toc-section-number">4.3</span> Selected scenarios</a>
+<ul>
 <li><a href="#shared-protocol"><span class="toc-section-number">4.3.1</span> Shared protocol</a></li>
 <li><a href="#default-setup"><span class="toc-section-number">4.3.2</span> Default setup</a></li>
 <li><a href="#window-of-1"><span class="toc-section-number">4.3.3</span> Window of 1</a></li>
@@ -53,32 +65,32 @@
 <p>Given events occurring along a discrete timeline, the goal is to determine the effect of each event kind. The observable is a real-valued signal <span class="math inline">\(\phi\)</span> which is assumed to be a sum of the effects of recent events. The effects of any event are assumed negligible past a certain delay <span class="math inline">\(w\)</span>.</p>
 <p>The solution consists in adjusting the contributions of each event to the signal knowing which events occurred recently from <span class="math inline">\(t-w+1\)</span> to <span class="math inline">\(t\)</span> and the latest value of the signal, <span class="math inline">\(\phi(t)\)</span>. The original predicted contributions are corrected so as to predict <span class="math inline">\(\phi(t)\)</span> perfectly by absorbing a share of the difference with the predicted signal <span class="math inline">\(\hat{\phi}(t)\)</span>. Each share is determined roughly by the recent standard deviation of the contribution, allowing the predictions of stable contributions to eventually converge, regardless of fluctuations in other contributions.</p>
 <p>A valuable property of this system is that only resources corresponding to active events are involved, as opposed to systems in which all the nodes are updated at every time step.</p>
-<h1 id="motivation-in-the-context-of-artificial-general-intelligence"><span class="header-section-number">1</span> Motivation in the context of artificial general intelligence</h1>
-<p>The problem we are trying to solve arises while developing a cognitive system that operates in real-time and is driven by a single goal function. In this context, a goal function <span class="math inline">\(\phi\)</span> is a real-valued signal over discrete time, whose value becomes available at each time step. It represents how well the system is doing, i.e. it would combine rewards and penalties. Some of these rewards and penalties may correspond to direct interactions of the system with its environment, such as acquiring food or losing energy. Other rewards and penalties may be generated internally by the system itself, as a way to encourage itself to pursue certain paths.</p>
-<p>In such a cognitive system, there is a finite (but possibly growing) collection of possible actions. Each action can be viewed as a button. We call an act an instance of an action, i.e. the press of a button. An act is a pair (action, instant). An action, naturally can correspond to a modification of the system in its environment, such as an attempt to move forward. It can also directly feed back into the system's input ports without directly affecting the environment. No matter what kind of action is triggered, it takes some amount of time to have an effect on the goal function. Here and throughout this paper, we assume that most meaningful effects of an action occur within a given time window, which can be a short as 5 steps. We choose this window roughly to capture reactions of the system to its own decisions, so it has enough time to &quot;realize&quot; what it just did and produce a self-reward or a self-penalty. Longer-term effects of course exist and will have to be dealt with differently.</p>
+<h1 data-number="1" id="motivation-in-the-context-of-artificial-general-intelligence" data-number="1"><span class="header-section-number">1</span> Motivation in the context of artificial general intelligence</h1>
+<p>The problem we are trying to solve arises while developing a cognitive system that operates in real-time and is driven by a single goal function. In this context, a goal function <span class="math inline">\(\phi\)</span> is a real-valued signal over discrete time, whose value becomes available at each time step. It represents how well the system is doing, i.e. it would combine rewards and penalties. Some of these rewards and penalties may correspond to direct interactions of the system with its environment, such as acquiring food or losing energy. Other rewards and penalties may be generated internally by the system itself, as a way to encourage itself to pursue certain paths.</p>
+<p>In such a cognitive system, there is a finite (but possibly growing) collection of possible actions. Each action can be viewed as a button. We call an act an instance of an action, i.e. the press of a button. An act is a pair (action, instant). An action, naturally can correspond to a modification of the system in its environment, such as an attempt to move forward. It can also directly feed back into the system’s input ports without directly affecting the environment. No matter what kind of action is triggered, it takes some amount of time to have an effect on the goal function. Here and throughout this paper, we assume that most meaningful effects of an action occur within a given time window, which can be a short as 5 steps. We choose this window roughly to capture reactions of the system to its own decisions, so it has enough time to “realize” what it just did and produce a self-reward or a self-penalty. Longer-term effects of course exist and will have to be dealt with differently.</p>
 <p>Given such a goal function <span class="math inline">\(\phi\)</span> and the knowledge of which actions were triggered within a time window of length <span class="math inline">\(w\)</span>, we wish to determine the impact of each action on <span class="math inline">\(\phi\)</span>.</p>
-<h1 id="general-design-contraints"><span class="header-section-number">2</span> General design contraints</h1>
-<h2 id="independence-from-context"><span class="header-section-number">2.1</span> Independence from context</h2>
-<p>The response to an action is considered the same independently from the context. In the case of artificial general intelligence (AGI), this is generally not the case. However, it is possible to create as many controls (&quot;buttons&quot;) as there are contexts. Instead of studying the response to an action regardless of the context, we can study the response to the pair (context, action).</p>
-<h2 id="effects-can-be-delayed"><span class="header-section-number">2.2</span> Effects can be delayed</h2>
-<p>We wish to capture the &quot;immediate&quot; effects of an action. However, our system is such that during a time step it can only propagate information from one node to another. It take normally several steps for some input information to reach the nodes in charge of triggering actions.</p>
+<h1 data-number="2" id="general-design-contraints" data-number="2"><span class="header-section-number">2</span> General design contraints</h1>
+<h2 data-number="2.1" id="independence-from-context" data-number="2.1"><span class="header-section-number">2.1</span> Independence from context</h2>
+<p>The response to an action is considered the same independently from the context. In the case of artificial general intelligence (AGI), this is generally not the case. However, it is possible to create as many controls (“buttons”) as there are contexts. Instead of studying the response to an action regardless of the context, we can study the response to the pair (context, action).</p>
+<h2 data-number="2.2" id="effects-can-be-delayed" data-number="2.2"><span class="header-section-number">2.2</span> Effects can be delayed</h2>
+<p>We wish to capture the “immediate” effects of an action. However, our system is such that during a time step it can only propagate information from one node to another. It take normally several steps for some input information to reach the nodes in charge of triggering actions.</p>
 <p>So, while we are only interested in the immediate effects of actions, we need to leave sufficient time for the system to react to such effects.</p>
-<h2 id="overlapping-effects"><span class="header-section-number">2.3</span> Overlapping effects</h2>
+<h2 data-number="2.3" id="overlapping-effects" data-number="2.3"><span class="header-section-number">2.3</span> Overlapping effects</h2>
 <p>Multiple actions can take place simultaneously, or close enough that their effects on the goal function overlap. Our main challenge is to decompose the signal into a combination of responses from multiple recent actions.</p>
-<p>The simplest approach is to model <span class="math inline">\(\phi\)</span> as a sum of responses to actions, and this is the one we'll follow.</p>
-<h2 id="incremental-learning"><span class="header-section-number">2.4</span> Incremental learning</h2>
+<p>The simplest approach is to model <span class="math inline">\(\phi\)</span> as a sum of responses to actions, and this is the one we’ll follow.</p>
+<h2 data-number="2.4" id="incremental-learning" data-number="2.4"><span class="header-section-number">2.4</span> Incremental learning</h2>
 <p>It should be possible to start inferring the effects of new actions when they start appearing. If only one action is new and the effects of all the other actions are already well known, no relearning should be necessary, and learning the effects of the new action should be as fast as if it were the only action.</p>
-<h2 id="adaptation"><span class="header-section-number">2.5</span> Adaptation</h2>
+<h2 data-number="2.5" id="adaptation" data-number="2.5"><span class="header-section-number">2.5</span> Adaptation</h2>
 <p>If the effects of actions change progressively over time, the system should be able to adapt. The adaptation rate should not slow down as the system ages.</p>
-<h1 id="notations"><span class="header-section-number">3</span> Notations</h1>
-<p>Our approach doesn't require the notion of goal function or actions. We'll simply refer to the goal function <span class="math inline">\(\phi\)</span> as the <strong>signal</strong>. Each act is an action occurring at a given time and will be called an <strong>event</strong>. The action is the <strong>kind</strong> of the event.</p>
+<h1 data-number="3" id="notations" data-number="3"><span class="header-section-number">3</span> Notations</h1>
+<p>Our approach doesn’t require the notion of goal function or actions. We’ll simply refer to the goal function <span class="math inline">\(\phi\)</span> as the <strong>signal</strong>. Each act is an action occurring at a given time and will be called an <strong>event</strong>. The action is the <strong>kind</strong> of the event.</p>
 <p>The variable <span class="math inline">\(k\)</span> will be used typically to identify each event uniquely among the set of events <span class="math inline">\(K\)</span>.</p>
 <p>Each event is a pair <span class="math inline">\((E_k, t_k)\)</span> of the kind <span class="math inline">\(E_k\)</span> and of the instant <span class="math inline">\(t_k\)</span> at which it occurred.</p>
-<p>An event kind is associated with a function that represents its linear contribution to <span class="math inline">\(\phi\)</span>. We'll denote <span class="math inline">\(E_k(\tau)\)</span> the value of this function at <span class="math inline">\(\tau\)</span>, where <span class="math inline">\(\tau\)</span> is the time elapsed since the occurrence of an event of this kind. Naturally, the event has no contribution to <span class="math inline">\(\phi\)</span> before it occurs, so we have:</p>
+<p>An event kind is associated with a function that represents its linear contribution to <span class="math inline">\(\phi\)</span>. We’ll denote <span class="math inline">\(E_k(\tau)\)</span> the value of this function at <span class="math inline">\(\tau\)</span>, where <span class="math inline">\(\tau\)</span> is the time elapsed since the occurrence of an event of this kind. Naturally, the event has no contribution to <span class="math inline">\(\phi\)</span> before it occurs, so we have:</p>
 <p><span class="math display">\[
 \forall k \in K: \forall \tau &lt; 0: E_k(\tau) = 0
 \]</span></p>
-<p>Additionally, our model assumes that the effect of any event doesn't last longer than <span class="math inline">\(w\)</span>, called <strong>window</strong> length or just window:</p>
+<p>Additionally, our model assumes that the effect of any event doesn’t last longer than <span class="math inline">\(w\)</span>, called <strong>window</strong> length or just window:</p>
 <p><span class="math display">\[
 \forall k \in K: \forall \tau \ge w: E_k(\tau) = 0
 \]</span></p>
@@ -89,7 +101,7 @@
 \]</span></p>
 <p>Given the properties of <span class="math inline">\(E_k\)</span> mentioned above, all events occurring outside the window (<span class="math inline">\(t_k \notin [t - w + 1, t]\)</span>) can be ignored in the prediction of <span class="math inline">\(\phi(t)\)</span>, denoted <span class="math inline">\(\hat{\phi}(t)\)</span>.</p>
 <p>In general, a hat <span class="math inline">\(\hat{}\)</span> on a variable denotes a prediction of this variable.</p>
-<p>Since estimators have a state that changes over time, we use a parenthesized superscript to specify which state we're referring to. In the following example, we use the variable <span class="math inline">\(\hat{\mu}\)</span> to represent the exponential moving average of the sequence <span class="math inline">\(x\)</span>. <span class="math inline">\(\hat{\mu}\)</span> is updated as follows:</p>
+<p>Since estimators have a state that changes over time, we use a parenthesized superscript to specify which state we’re referring to. In the following example, we use the variable <span class="math inline">\(\hat{\mu}\)</span> to represent the exponential moving average of the sequence <span class="math inline">\(x\)</span>. <span class="math inline">\(\hat{\mu}\)</span> is updated as follows:</p>
 <p><span class="math display">\[
 \hat{\mu}^{(t+1)} = r x_t + (1-r) \hat{\mu}^{(t)}
 \]</span></p>
@@ -97,11 +109,11 @@
 <p><span class="math display">\[
 \hat{\mu} \leftarrow r x_t + (1-r) \hat{\mu}
 \]</span></p>
-<h1 id="solution"><span class="header-section-number">4</span> Solution</h1>
-<h2 id="outline"><span class="header-section-number">4.1</span> Outline</h2>
+<h1 data-number="4" id="solution" data-number="4"><span class="header-section-number">4</span> Solution</h1>
+<h2 data-number="4.1" id="outline" data-number="4.1"><span class="header-section-number">4.1</span> Outline</h2>
 <p>Informally, the solution consists in maintaining for each event kind a number that represents the expected effect of this action after some delay. Multiple event of different types can take place simultaneously, each with an expected effect which is a contribution to the signal at some future instant <span class="math inline">\(t\)</span>. The expected value of the signal is the sum of the contributions at <span class="math inline">\(t\)</span> of the recent events. The observed value of the signal is used to correct the expected contributions into what each contribution should have been. The contributions are not corrected evenly, but according to a weight proportional to the standard deviation of the contribution. In other words, the more a contribution fluctuates, the more it is prone to being corrected. Conversely, a contribution that fluctuates less will receive a smaller correction relative to the other co-occurring contributions.</p>
-<h2 id="description"><span class="header-section-number">4.2</span> Description</h2>
-<h3 id="prediction-and-update"><span class="header-section-number">4.2.1</span> Prediction and update</h3>
+<h2 data-number="4.2" id="description" data-number="4.2"><span class="header-section-number">4.2</span> Description</h2>
+<h3 data-number="4.2.1" id="prediction-and-update" data-number="4.2.1"><span class="header-section-number">4.2.1</span> Prediction and update</h3>
 <p>At each step <span class="math inline">\(t\)</span> of the computation, the value of the signal is observed and denoted <span class="math inline">\(\phi(t)\)</span>.</p>
 <p>All the events that occurred within the last <span class="math inline">\(w\)</span> steps are assumed to contribute to the signal. The predicted signal at instant <span class="math inline">\(t\)</span> is denoted <span class="math inline">\(\hat{\phi}(t)\)</span> and is computed as follows:</p>
 <p><span class="math display">\[
@@ -128,7 +140,7 @@ v_k^{(t)}(t-t_k) = \frac{ \hat{\sigma}_k^{(t)}(t-t_k) }
 \]</span></p>
 <p>where <span class="math inline">\(\hat{\sigma}_k^{(t)}(t-t_k)\)</span> is an estimate of the standard deviation of <span class="math inline">\(\hat{E}_k\)</span> based on the earlier known values of <span class="math inline">\(\hat{E}_k\)</span>.</p>
 <p>Note that standard deviations are estimated using exponential smoothing because of their simplicity and low memory requirements, but other methods should work well too. Until a certain number of samples is reached, they behave like the classic sample mean and sample standard deviation estimators. Beyond that short initial phase, they give more weight to recent values.</p>
-<h3 id="details-and-refinements"><span class="header-section-number">4.2.2</span> Details and refinements</h3>
+<h3 data-number="4.2.2" id="details-and-refinements" data-number="4.2.2"><span class="header-section-number">4.2.2</span> Details and refinements</h3>
 <p>There are two classes of special cases where the standard deviation cannot be used to determine the weight:</p>
 <ol type="1">
 <li>In the presence of fewer than 2 samples, the sample standard deviation is undefined.</li>
@@ -142,10 +154,10 @@ v_k^{(t)}(t-t_k) = \frac{ \hat{\sigma}_k^{(t)}(t-t_k) }
 <li>Express the standard deviations relative to the maximum standard deviation among all the terms, denoted <span class="math inline">\(r_k\)</span> for term <span class="math inline">\(k\)</span>.</li>
 <li>Transform each <span class="math inline">\(r_k\)</span> into <span class="math inline">\(f(r_k)\)</span> to favor larger values and avoid null weights, using for example <span class="math inline">\(f : x \rightarrow \max(0.001, 0.5 x^{1.3} + 0.5 x)\)</span>, then normalize them such that they add up to 1.</li>
 </ol>
-<h2 id="selected-scenarios"><span class="header-section-number">4.3</span> Selected scenarios</h2>
+<h2 data-number="4.3" id="selected-scenarios" data-number="4.3"><span class="header-section-number">4.3</span> Selected scenarios</h2>
 <p>A series of tests was conducted to evaluate the behavior of the system with different parameters and under different conditions.</p>
-<p>The source code is currently available at <a href="https://github.com/mjambon/unitron" class="uri">https://github.com/mjambon/unitron</a>, commit <code>c725d8dd</code>.</p>
-<h3 id="shared-protocol"><span class="header-section-number">4.3.1</span> Shared protocol</h3>
+<p>The source code is currently available at <a href="https://github.com/mjambon/unitron">https://github.com/mjambon/unitron</a>, commit <code>c725d8dd</code>.</p>
+<h3 data-number="4.3.1" id="shared-protocol" data-number="4.3.1"><span class="header-section-number">4.3.1</span> Shared protocol</h3>
 <p>A single run starts from time <span class="math inline">\(t=0\)</span> and runs as many steps as necessary to reach specified conditions. This number of steps <span class="math inline">\(T\)</span> will be our main criterion for determining how well the system performs.</p>
 <p>These runs being non-deterministic, we repeat them 100 times, and report simple statistics on the value of <span class="math inline">\(N\)</span> in each case.</p>
 <p>The default setup consists in the following:</p>
@@ -166,7 +178,7 @@ v_k^{(t)}(t-t_k) = \frac{ \hat{\sigma}_k^{(t)}(t-t_k) }
 \dots &amp;&amp;
 \end{eqnarray}
 \]</span></p>
-<p>We'll predict the values of <span class="math inline">\(E_A\)</span> and <span class="math inline">\(E_B\)</span> and look at how many steps it takes converge to the expected values <span class="math inline">\(E_A(0)\)</span> and <span class="math inline">\(E_B(0)\)</span>. The convergence criteria are the following:</p>
+<p>We’ll predict the values of <span class="math inline">\(E_A\)</span> and <span class="math inline">\(E_B\)</span> and look at how many steps it takes converge to the expected values <span class="math inline">\(E_A(0)\)</span> and <span class="math inline">\(E_B(0)\)</span>. The convergence criteria are the following:</p>
 <p><span class="math display">\[
 \mathrm{Condition}_A:
 \left| \hat{E}_A^{(T)}(0) - E_A(0) \right| \le \epsilon_A
@@ -183,7 +195,7 @@ v_k^{(t)}(t-t_k) = \frac{ \hat{\sigma}_k^{(t)}(t-t_k) }
 \end{eqnarray}
 \]</span></p>
 <p>We assume convergence if a given condition remains valid for a large number (1000) of consecutive steps.</p>
-<h3 id="default-setup"><span class="header-section-number">4.3.2</span> Default setup</h3>
+<h3 data-number="4.3.2" id="default-setup" data-number="4.3.2"><span class="header-section-number">4.3.2</span> Default setup</h3>
 <p>This setup uses only the default parameters described in the previous section. Number of steps to converge to Condition<span class="math inline">\(_{A}\)</span>:</p>
 <p><span class="math display">\[
 \begin{eqnarray}
@@ -202,7 +214,7 @@ v_k^{(t)}(t-t_k) = \frac{ \hat{\sigma}_k^{(t)}(t-t_k) }
 \hat{\sigma} &amp;=&amp; 53.7\\
 \end{eqnarray}
 \]</span></p>
-<h3 id="window-of-1"><span class="header-section-number">4.3.3</span> Window of 1</h3>
+<h3 data-number="4.3.3" id="window-of-1" data-number="4.3.3"><span class="header-section-number">4.3.3</span> Window of 1</h3>
 <p>In this setup, each action only has an immediate effect <span class="math inline">\(E_A(0)\)</span> or <span class="math inline">\(E_B(0)\)</span> and no delayed effect (<span class="math inline">\(E_A(1)\)</span>, <span class="math inline">\(E_B(1)\)</span>, etc.).</p>
 <p>Additionally, the window length <span class="math inline">\(w\)</span> is 1, which is the smallest useful window possible. This results in very fast convergence as shown below.</p>
 <p>Number of steps to converge to Condition<span class="math inline">\(_{A}\)</span>:</p>
@@ -223,7 +235,7 @@ v_k^{(t)}(t-t_k) = \frac{ \hat{\sigma}_k^{(t)}(t-t_k) }
 \hat{\sigma} &amp;=&amp; 5.5\\
 \end{eqnarray}
 \]</span></p>
-<h3 id="large-difference-between-contributions"><span class="header-section-number">4.3.4</span> Large difference between contributions</h3>
+<h3 data-number="4.3.4" id="large-difference-between-contributions" data-number="4.3.4"><span class="header-section-number">4.3.4</span> Large difference between contributions</h3>
 <p>In this setup, <span class="math inline">\(E_A(0)\)</span> is 100 instead of 1, while <span class="math inline">\(E_B(0)\)</span> remains 0.1.</p>
 <p>Number of steps to converge to Condition<span class="math inline">\(_{A}\)</span>:</p>
 <p><span class="math display">\[
@@ -244,9 +256,9 @@ v_k^{(t)}(t-t_k) = \frac{ \hat{\sigma}_k^{(t)}(t-t_k) }
 \end{eqnarray}
 \]</span></p>
 <p>It takes 2-4 times longer to converge in this setup than in the default setup. A crude explanation is that the relative error tolerance is now smaller, since <span class="math inline">\(\epsilon_A\)</span> and <span class="math inline">\(\epsilon_B\)</span> are unchanged but the gap between extreme values has increased.</p>
-<h3 id="background-noise"><span class="header-section-number">4.3.5</span> Background noise</h3>
+<h3 data-number="4.3.5" id="background-noise" data-number="4.3.5"><span class="header-section-number">4.3.5</span> Background noise</h3>
 <p>In this setup, we study the effects of permanent background noise on the determination of constant contribution <span class="math inline">\(E_A(0)\)</span>.</p>
-<p>In order to produce noise, each event <span class="math inline">\(B\)</span> is set to occur at each time step (<span class="math inline">\(P(B)=1\)</span>) and its effects are shifted by the same random number following a centered normal distribution of parameter <span class="math inline">\(\sigma=0.5\)</span>. The control uses no noise, i.e. <span class="math inline">\(\sigma=0\)</span>.</p>
+<p>In order to produce noise, each event <span class="math inline">\(B\)</span> is set to occur at each time step (<span class="math inline">\(P(B)=1\)</span>) and its effects are shifted by the same random number following a centered normal distribution of parameter <span class="math inline">\(\sigma=0.5\)</span>. The control uses no noise, i.e. <span class="math inline">\(\sigma=0\)</span>.</p>
 <p>Number of steps to reach Condition<span class="math inline">\(_A\)</span> (control):</p>
 <p><span class="math display">\[
 \begin{eqnarray}
@@ -266,13 +278,13 @@ v_k^{(t)}(t-t_k) = \frac{ \hat{\sigma}_k^{(t)}(t-t_k) }
 \end{eqnarray}
 \]</span></p>
 <p>This shows that convergence toward <span class="math inline">\(E_A(0)\)</span> is slower in the presence of background noise but nonetheless happens reliably.</p>
-<h3 id="interdependent-events"><span class="header-section-number">4.3.6</span> Interdependent events</h3>
+<h3 data-number="4.3.6" id="interdependent-events" data-number="4.3.6"><span class="header-section-number">4.3.6</span> Interdependent events</h3>
 <p>In this setup, event <span class="math inline">\(A\)</span> occurs with a probability of 0.5 only if <span class="math inline">\(B\)</span> occurs too. <span class="math inline">\(A\)</span> never occurs alone:</p>
-\begin{eqnarray}
+<p><span class="math display">\[\begin{eqnarray}
 P(B) &amp;=&amp; 0.5 \\
 P(A|B) &amp;=&amp; 0.5 \\
 P(A|\neg B) &amp;=&amp; 0
-\end{eqnarray}
+\end{eqnarray}\]</span></p>
 <p>The results are similar to the default setup in which <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are independent.</p>
 <p>Number of steps to converge to Condition<span class="math inline">\(_{A}\)</span>:</p>
 <p><span class="math display">\[
@@ -292,7 +304,7 @@ P(A|\neg B) &amp;=&amp; 0
 \hat{\sigma} &amp;=&amp; 87.8\\
 \end{eqnarray}
 \]</span></p>
-<h1 id="conclusion"><span class="header-section-number">5</span> Conclusion</h1>
+<h1 data-number="5" id="conclusion" data-number="5"><span class="header-section-number">5</span> Conclusion</h1>
 <p>It works fine but convergence is particularly fast with a window of length 1 and applications should probably try to take advantage of this.</p>
 <p class="menu footer">
   <a href="https://twitter.com/mjambon">@mjambon</a> 2017-07-02<br/>

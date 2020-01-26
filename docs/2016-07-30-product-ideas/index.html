@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
-  <meta charset="utf-8">
-  <meta name="generator" content="pandoc">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title></title>
-  <style type="text/css">code{white-space: pre;}</style>
-  <link rel="stylesheet" href="../blog.css">
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>index</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="../blog.css" />
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -14,6 +21,7 @@
   <meta http-equiv="Content-Language" content="en">
 </head>
 <body>
+
 <h1 id="product-ideas">Product ideas</h1>
 <p>This is a collection of ideas of products and features that I would love to use. So if you could build them for me that would be awesome ☺ Thanks.</p>
 <h2 id="normalized-performance-scoring-for-race-results">Normalized performance scoring for race results</h2>
@@ -26,15 +34,15 @@
 <li>After each race, the competitor would know how well they performed relative to their recent performances.</li>
 <li>No need for elites to join races against other elites in order to track their progress throughout the year.</li>
 </ul>
-<p>The normalized score can be expressed as a pace, a speed or a finish time on a well-known course that comes with little variability from one year to another. For distance running, such reference could be the Berlin marathon. Trail runners could use this road race as well, or some trail race where the weather is the same from one year to another. Or it could be simply &quot;last year's Western States 100&quot;, knowing that this year's times would be slighly different because of the weather.</p>
+<p>The normalized score can be expressed as a pace, a speed or a finish time on a well-known course that comes with little variability from one year to another. For distance running, such reference could be the Berlin marathon. Trail runners could use this road race as well, or some trail race where the weather is the same from one year to another. Or it could be simply “last year’s Western States 100”, knowing that this year’s times would be slighly different because of the weather.</p>
 <p>A possible algorithm could use an iterative approach over a large set of race results:</p>
 <ol type="1">
-<li>The initial season's score of each athlete is initialized with the same value for everyone.</li>
-<li>For each race in the season (e.g. last 12 months), the race's score of each athlete is computed from their season's score and from the results of the other competitors. At least in the first iteration, this increases the race's score of the top finishers and lowers the score of the bottom finishers.</li>
-<li>For each athlete, recompute the season's average score from each race's score. The bottom performances of the athlete (e.g. bottom 25%) can be ignored as a means of eliminating bad days on which the athlete finished but got accidentally delayed (athlete fell, got lost, had stomach issues, etc.).</li>
+<li>The initial season’s score of each athlete is initialized with the same value for everyone.</li>
+<li>For each race in the season (e.g. last 12 months), the race’s score of each athlete is computed from their season’s score and from the results of the other competitors. At least in the first iteration, this increases the race’s score of the top finishers and lowers the score of the bottom finishers.</li>
+<li>For each athlete, recompute the season’s average score from each race’s score. The bottom performances of the athlete (e.g. bottom 25%) can be ignored as a means of eliminating bad days on which the athlete finished but got accidentally delayed (athlete fell, got lost, had stomach issues, etc.).</li>
 <li>Go to 2 until the scores no longer change significantly.</li>
 </ol>
-<p>Applicability: <a href="https://ultrasignup.com">Ultrasignup</a> for example could use this. A unique identifier of each athlete and a large number of races results for a given sport is all that's needed.</p>
+<p>Applicability: <a href="https://ultrasignup.com">Ultrasignup</a> for example could use this. A unique identifier of each athlete and a large number of races results for a given sport is all that’s needed.</p>
 <h2 id="housekeeping-robot">Housekeeping robot</h2>
 <p>A robot that uses machine vision to identify objects within found in the household, puts them back where they should be, and cleans the surfaces that should be cleaned. This robot would have a way to pick up a variety of objects. The robot would be trained by its human operator to do the following:</p>
 <ul>
@@ -44,25 +52,25 @@
 <li>identify types of surfaces that need cleaning</li>
 <li>identify power sockets and plug into them for maximum vacuuming/cleaning power</li>
 </ul>
-<p>We're hoping such technology will be available by 2020 and will be affordable, since it looks about as hard as self-driving cars.</p>
+<p>We’re hoping such technology will be available by 2020 and will be affordable, since it looks about as hard as self-driving cars.</p>
 <h2 id="algorithmic-anti-harassment-for-online-social-networks">Algorithmic anti-harassment for online social networks</h2>
-<p>This is a problem for Twitter where the default is that anyone can talk to and harass anyone, and for Facebook where the default is that people need to be made friends explicitly. Facebook offers manual settings to let anyone comment on certain posts, but it's done manually and ends up being as problematic as Twitter's full openness.</p>
+<p>This is a problem for Twitter where the default is that anyone can talk to and harass anyone, and for Facebook where the default is that people need to be made friends explicitly. Facebook offers manual settings to let anyone comment on certain posts, but it’s done manually and ends up being as problematic as Twitter’s full openness.</p>
 <p>We want to:</p>
 <ul>
-<li>allow only reasonable people to react to a person's posts,</li>
+<li>allow only reasonable people to react to a person’s posts,</li>
 <li>not have to give them permission manually,</li>
 <li>automatically prevent abusive users from reacting,</li>
 <li>raise the threshold for reacting to a post as the post becomes popular and the number of reactions increases.</li>
 </ul>
-<p>Whether a user may comment on someone's post could be influenced by:</p>
+<p>Whether a user may comment on someone’s post could be influenced by:</p>
 <ul>
-<li>Familiarity between these users, i.e. how much communication happened between them in the past.</li>
+<li>Familiarity between these users, i.e. how much communication happened between them in the past.</li>
 <li>Cordiality: reacting user being rarely blocked.</li>
-<li>Quality: reacting user's reactions being often liked by original posters.</li>
+<li>Quality: reacting user’s reactions being often liked by original posters.</li>
 <li>Indirect trust: original poster likes people who like the reacting user.</li>
 <li>Traffic: not too many people have reacted to the post already.</li>
 </ul>
-<p>Why doesn't Twitter do this already as of 2016? Beats me.</p>
+<p>Why doesn’t Twitter do this already as of 2016? Beats me.</p>
 <p class="menu footer">
   <a href="https://twitter.com/mjambon">@mjambon</a> 2016-07-30<br/>
   <a href="/">Index</a>
