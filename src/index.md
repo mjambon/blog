@@ -1,11 +1,11 @@
 About me
---------
+--
 
 <img src="https://www.gravatar.com/avatar/ca1fd636db960bba6027154d81ef106e.png"
      alt="The author">
 
-I'm a software engineer, open-source developer, and researcher based
-in the San Francisco Bay Area.
+I'm a software developer, creator, and researcher originally from
+France and based in the San Francisco Bay Area.
 
 <code>martin@mjambon.com</code>
 &bull; [Twitter](https://twitter.com/mjambon)
@@ -15,7 +15,7 @@ in the San Francisco Bay Area.
 &bull; [Strava](http://www.strava.com/athletes/750791)
 
 Artificial cognition
---------------------
+--
 
 In my personal time, I’ve been working toward
 providing machines with adaptability, imagination, and
@@ -23,9 +23,13 @@ intelligence. The emphasis is on developing general proto-intelligence
 first, with the firm belief that optimizing the system for
 domain-specific applications doesn’t serve that goal.
 
+The implementation of the
+[architecture laid out in 2016](2016-08-20-agi-project-status-2016) is
+still ongoing as of 2020. It is now closed-source.
+
 ### Technical reports
 
-* [Author’s AI glossary](2019-04-21-glossary) (April 2019)
+* [Artificial cognition glossary](2019-04-21-glossary) (April 2019)
 * [An adaptive moving average](2017-08-12-adaptive-average)
   (August 2017)
 * [Real-time decomposition of a signal into a sum of responses to
@@ -50,19 +54,56 @@ domain-specific applications doesn’t serve that goal.
 * [Intelligence precedes machines](2014-12-31-intelligence-precedes-machines)
   (December 2014)
 
-Random things
-------------
+Miscellaneous blog posts
+--
 
-* [Issue Voting](2017-01-08-issue-voting-method): a proposed voting method
-* [Diversity rule:
-  a voting system that accommodates minorities](2016-10-08-diversity-rule)
-* [Product ideas](2016-07-30-product-ideas)
-* [Definitions of life](2016-07-24-definitions-of-life)
-* [Universal career advice](2015-01-03-universal-career-advice)
-* [Faith-driven science](2014-12-27-faith-driven-science)
+* [Issue Voting](2017-01-08-issue-voting-method) (2017): a proposed
+  voting method
+* [Diversity rule: a voting system that accommodates
+  minorities](2016-10-08-diversity-rule) (2016)
+* [Product ideas](2016-07-30-product-ideas) (2016)
+* [Definitions of life](2016-07-24-definitions-of-life) (2016)
+* [Universal career advice](2015-01-03-universal-career-advice) (2015)
+* [Faith-driven science](2014-12-27-faith-driven-science) (2014)
+
+Proofs-of-concept
+--
+
+These original ideas come with some implementation that works, but aren't
+widely known or used by many. Work would be needed to publicize them
+or make them widely accessible.
+
+* [ad](https://github.com/mjambon/ad) (2020): Validation and
+  formatting of acyclic dictionaries. The goal is to allow thinkers to
+  present their respective world views in a concise and unambiguous
+  manner, without resorting to mathematical formalism.
+* [unpurple](https://github.com/mjambon/purple-fringe) (2012):
+  An algorithm for removing purple-fringe defects from
+  photos. Available to all in GIMP via G'MIC.
+* [dutop](https://github.com/mjambon/dutop) (2011): A command for
+  identifying what subtrees take up the most space in a file
+  system. Typically used when running into "no space left on device"
+  errors.
+* [wcl](https://github.com/mjambon/wcl) (2011): A command for
+  estimating the number of lines of large files. Useful when dealing
+  routinely with 100,000,000 records or more.
+
+Notable open-source projects
+--
+
+These tools have been or were used professionally by multiple independent
+users. They were all initiated by me, with or without support from
+an employer.
+
+* [atd](https://github.com/ahrefs/atd) (2010)
+* [yojson](https://github.com/ocaml-community/yojson) (2010)
+* [cppo](https://github.com/ocaml-community/cppo) (2009)
+* [mikmatch](https://github.com/mjambon/mikmatch) (2004, defunct):
+  extension of OCaml's ML-style pattern-matching syntax with
+  regexps. Was based on Camlp4 which since has fallen from grace.
 
 Structural bioinformatics (2000&ndash;2007)
--------------------------
+--
 
 The SuMo project was an attempt to identify local similarities in
 unrelated 3D structures of proteins, in the hope that they would share
