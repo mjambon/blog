@@ -4,8 +4,8 @@ About me
 <img src="https://www.gravatar.com/avatar/ca1fd636db960bba6027154d81ef106e.png"
      alt="The author">
 
-I'm a software developer, creator, and researcher originally from
-France and based in the San Francisco Bay Area.
+I'm a software developer, creator, and researcher. Originally from
+France, I live in the San Francisco Bay Area.
 
 <code>martin@mjambon.com</code>
 &bull; [Twitter](https://twitter.com/mjambon)
@@ -17,11 +17,12 @@ France and based in the San Francisco Bay Area.
 Artificial cognition
 --
 
-In my personal time, I’ve been working toward
-providing machines with adaptability, imagination, and
-intelligence. The emphasis is on developing general proto-intelligence
-first, with the firm belief that optimizing the system for
-domain-specific applications doesn’t serve that goal.
+In my personal time, I develop theories and software for creating
+machines that will live their own lives and take care of themselves.
+The emphasis is on developing a general form of proto-intelligence
+first, and not any specific application. This endeavor is more of an
+art project than an industrial project, as ultimately it is about
+creating artificial individuals, not tools.
 
 The implementation of the
 [architecture laid out in 2016](2016-08-20-agi-project-status-2016) is
@@ -102,22 +103,33 @@ an employer.
   extension of OCaml's ML-style pattern-matching syntax with
   regexps. Was based on Camlp4 which since has fallen from grace.
 
-Structural bioinformatics (2000&ndash;2007)
+Structural bioinformatics (2000-2007)
 --
 
-The SuMo project was an attempt to identify local similarities in
-unrelated 3D structures of proteins, in the hope that they would share
-a similar biological function.
+For my PhD and postdoc, I worked on tools to study the 3D structure of
+proteins. While my postdoc experience wasn't a thrill
+scientifically speaking, I some moderate success with my PhD work in
+France.
+
+The SuMo project (2000-2003) was an attempt to identify local
+similarities among unrelated 3D structures of proteins, in the hope that
+they would share a similar biological function.
 
 This involved complex heuristics for somewhat limited results.
 It permanently convinced me that a system capable of forming its own
 intuition about the behavior of proteins would be the key to
 solving this problem, and many others.
 
+In the process, I became a scientific poster enthusiast. Here's an
+example of my creations, which I presented at an international
+conference in 2005:
+
 <a href="paper/proteins/poster-ismb05.png"
    title="Click to enlarge"><img
      alt="Poster"
-     src="paper/proteins/poster-ismb05-300px.png"></a>
+     src="paper/proteins/poster-ismb05-600px.png"></a>
+
+Publications relevant to the SuMo project:
 
 * Jambon, M. A bioinformatic system for searching functional similarities
   in 3D structures of proteins.
