@@ -74,7 +74,7 @@ These original ideas come with some implementation that works, but aren't
 widely known or used by many. Work would be needed to publicize them
 or make them widely accessible.
 
-* [ad](https://github.com/mjambon/ad) (2020): Validation and
+* [vanity](https://github.com/mjambon/vanity) (2020): Validation and
   formatting of acyclic dictionaries. The goal is to allow thinkers to
   present their respective world views in a concise and unambiguous
   manner, without resorting to mathematical formalism.

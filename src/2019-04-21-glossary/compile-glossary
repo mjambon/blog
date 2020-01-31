@@ -1,6 +1,6 @@
 #! /bin/bash
 #
-# Compile the glossary in yaml/ad format into HTML.
+# Compile the glossary in yaml/vanity format into HTML.
 # This produces a DAG of the terms.
 #
 # This script must be called manually each time the source glossary is edited.
@@ -11,10 +11,10 @@
 set -eu
 
 mkdir -p _build
-ad -t dot < glossary.yml > _build/glossary.dot
+vanity -t dot < glossary.yml > _build/glossary.dot
 dot -Tpng _build/glossary.dot -o img/glossary-dag.png
 
-ad -s \
+vanity -s \
   --title='Glossary' \
   -B before-body.html \
   -A after-body.html \
