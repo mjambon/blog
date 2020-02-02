@@ -20,4 +20,4 @@ vanity -s \
   -A after-body.html \
   < glossary.yml > _build/glossary.html
 
-pandoc _build/glossary.html -o index.md
+pandoc _build/glossary.html -T 'Glossary' -o index.md

@@ -1,3 +1,8 @@
+---
+lang: en
+title: Glossary
+---
+
 Glossary
 ========
 
