@@ -14,10 +14,15 @@ mkdir -p _build
 vanity -t dot < glossary.yml > _build/glossary.dot
 dot -Tpng _build/glossary.dot -o img/glossary-dag.png
 
-vanity -s \
-  --title='Glossary' \
-  -B before-body.html \
-  -A after-body.html \
-  < glossary.yml > _build/glossary.html
+(
+  cat before-body.html
+  vanity < glossary.yml
+  cat after-body.html
+) > _build/glossary.html
 
-pandoc _build/glossary.html -T 'Glossary' -o index.md
+(
+  cat <<EOF
+% Glossary
+EOF
+  pandoc -t markdown _build/glossary.html
+) > index.md

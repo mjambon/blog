@@ -1,11 +1,4 @@
----
-lang: en
-title: Glossary
----
-
-Glossary
-========
-
+% Glossary
 This is a glossary of terms that I use in the context of my own work on
 artificial cognition.
 
