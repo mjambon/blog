@@ -203,5 +203,5 @@ until we do:
               this glossary.")](img/glossary-deps.png)
 
 This acyclic glossary and its graph representation were formatted with
-[vanity](https://github.com/mjambon/vanity), a command-line utility I
-created for the occasion.
+[vanity](https://github.com/mjambon/vanity) and
+[Graphviz](https://www.graphviz.org/) (`tred` and `dot`).
