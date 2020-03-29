@@ -11,8 +11,8 @@
 set -eu
 
 mkdir -p _build
-vanity -t dot < glossary.yml > _build/glossary.dot
-dot -Tpng _build/glossary.dot -o img/glossary-dag.png
+vanity -t dot < glossary.yml | tred > _build/glossary-deps.dot
+dot -Tpng _build/glossary-deps.dot -o img/glossary-deps.png
 
 (
   cat before-body.html

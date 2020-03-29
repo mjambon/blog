@@ -199,8 +199,8 @@ until we do:
 -   **understanding**
 
 []{#dag}
-[![](img/glossary-dag.png "Graph showing the dependencies between definitions of
-              this glossary.")](img/glossary-dag.png)
+[![](img/glossary-deps.png "Graph showing the dependencies between definitions of
+              this glossary.")](img/glossary-deps.png)
 
 This acyclic glossary and its graph representation were formatted with
 [vanity](https://github.com/mjambon/vanity), a command-line utility I
