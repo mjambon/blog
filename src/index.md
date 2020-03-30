@@ -46,6 +46,8 @@ still ongoing as of 2020. It is now closed-source.
 
 ### Ideas
 
+<!-- * [Software “engineering”
+notes](2020-03-29-software-engineering-notes) (March 2020) -->
 * [Current interests (March 2017)](2017-03-05-current-interests)
 * [A world of intelligent machines](2017-01-02-agi-world) (January 2017)
 * [Engineering emotions](2016-12-31-agi-emotions) (December 2016)
