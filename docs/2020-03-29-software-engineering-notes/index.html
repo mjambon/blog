@@ -27,21 +27,8 @@
 <h1 class="title">Software “Engineering” Notes</h1>
 <p class="author">Martin Jambon, March 2020</p>
 </header>
-<nav id="TOC" role="doc-toc">
-<ul>
-<li><a href="#tell-us-why-we-need-that-code"><span class="toc-section-number">1</span> Tell us why [we need that code]</a></li>
-<li><a href="#min-builds-or-less"><span class="toc-section-number">2</span> 3-min builds or less</a></li>
-<li><a href="#dont-break-my-focus"><span class="toc-section-number">3</span> Don’t break my focus</a></li>
-<li><a href="#supervisor-could-fill-in-for-me"><span class="toc-section-number">4</span> Supervisor could fill in for me</a></li>
-<li><a href="#no-deadlines"><span class="toc-section-number">5</span> No deadlines</a></li>
-<li><a href="#consistent-incentives"><span class="toc-section-number">6</span> Consistent incentives</a></li>
-<li><a href="#zero-effort-build"><span class="toc-section-number">7</span> Zero-effort build</a></li>
-<li><a href="#accountability-for-technical-choices"><span class="toc-section-number">8</span> Accountability for technical choices</a></li>
-</ul>
-</nav>
 <p>These are a few rules I like, based on my experience. This is not meant to be an exhaustive list, just things that are on my mind or that I didn’t realize until recently.</p>
-<!-- toc -->
-<h1 data-number="1" id="tell-us-why-we-need-that-code" data-number="1"><span class="header-section-number">1</span> Tell us why [we need that code]</h1>
+<h1 id="tell-us-why-we-need-that-code">Tell us why [we need that code]</h1>
 <p>Rule: When producing a piece of code of any size, make sure it comes with a concise explanation of why it has to exist. Answers to the following questions must be obvious to a naive reader:</p>
 <ul>
 <li>Who or what needs it?</li>
@@ -56,6 +43,7 @@
 <li>Use evocative names.</li>
 <li>Have a short, low-maintenance readme for each component of the project.</li>
 <li>Describe the intent behind a non-trivial function.</li>
+<li>Leave notes about code weaknesses and things that may need more work.</li>
 </ul>
 <p>What happens when followed:</p>
 <ul>
@@ -66,23 +54,32 @@
 <p>What happens when not followed:</p>
 <ul>
 <li>Lengthy reconstruction: a new contributor has to guess what the existing code does without knowing its structure. Not knowing what is part of a grand design and what was meant to be improved is challenging. Sometimes it is even faster to throw the whole project away and start a fresh implementation. Any of this is costly.</li>
-<li>Bugs: new contributors start making changes without understanding their implications. Bad code piles up. New superficial features get delivered. Manager is happy. Bugs get fixed. New bugs gets produced. New contributors are hired. Manager is ecstatic. More complexity piles up. Nothing really new was accomplished. System is now a behemoth with 10 maintainers focused solely on its survival.</li>
-<li>10x programmers are born. The mythical 10x programmer is one who delivers inscrutable code at a fast rate, leaving other contributors puzzled and unable to extend it or fix it.</li>
+<li>Bugs: new contributors start making changes without understanding their implications. Bad code piles up. New contributors are hired to keep up with maintenance.</li>
+<li>10x programmers are born. The now infamous “10x programmer” is one who delivers inscrutable code at a fast rate. They leave other contributors puzzled and unable to extend it or fix it. Team productivity tanks.</li>
 </ul>
 <p>Song: <a href="https://www.youtube.com/watch?v=H3LbzjFJdSA">Bronski Beat - Why ?</a></p>
-<h1 data-number="2" id="min-builds-or-less" data-number="2"><span class="header-section-number">2</span> 3-min builds or less</h1>
-<p>Song: <a href="https://www.youtube.com/watch?v=HdqCk2MnKQk">Mano Negra - King Kong Five</a></p>
-<h1 data-number="3" id="dont-break-my-focus" data-number="3"><span class="header-section-number">3</span> Don’t break my focus</h1>
+<h1 id="build-under-3-minutes">Build under 3 minutes</h1>
+<p>Rule: A routine <code>make</code> invocation may take no more than 3 minutes. Or whatever time allows the developer to stay focused and not start checking their email or other distractions.</p>
+<p>What happens when followed:</p>
+<ul>
+<li>No interruptions. Happiness. Things get done fast.</li>
+</ul>
+<p>What happens when not followed:</p>
+<ul>
+<li>Developer has to wait 5 minutes for their code to compile or pass tests. They go and check their email or company chat. Or maybe they go get coffee, or lunch. The 5-min break turns into a 15-min or 30-min break. Employee gets back to their desk and needs to refocus. This adds another 5-10 minutes. In the end, it’s a series 20-min to 40-min breaks interleaved with 10-20 minutes of coding. Nothing gets done fast. Programmer gets sad.</li>
+</ul>
+<p>Song: <a href="https://youtu.be/HdqCk2MnKQk?t=19">Mano Negra - King Kong Five</a></p>
+<h1 id="dont-break-my-focus">Don’t break my focus</h1>
 <p>Song: <a href="https://www.youtube.com/watch?v=HgzGwKwLmgM">Queen - Don’t Stop Me Now</a></p>
-<h1 data-number="4" id="supervisor-could-fill-in-for-me" data-number="4"><span class="header-section-number">4</span> Supervisor could fill in for me</h1>
-<p>Song: <a href="">Whitney Houston - How Will I know?</a></p>
-<h1 data-number="5" id="no-deadlines" data-number="5"><span class="header-section-number">5</span> No deadlines</h1>
+<h1 id="supervisor-could-fill-in-for-me">Supervisor could fill in for me</h1>
+<p>Song: <a href="https://www.youtube.com/watch?v=9AjkUyX0rVw">USA For Africa - We Are the World</a></p>
+<h1 id="no-deadlines">No deadlines</h1>
 <p>Song: <a href="https://www.youtube.com/watch?v=9jK-NcRmVcw">Europe - The Final Countdown</a></p>
-<h1 data-number="6" id="consistent-incentives" data-number="6"><span class="header-section-number">6</span> Consistent incentives</h1>
+<h1 id="consistent-incentives">Consistent incentives</h1>
 <p>Song: <a href="https://www.youtube.com/watch?v=PyeWRd7ZEBs">Pet Shop Boys - Opportunities (Let’s Make Lots of Money)</a></p>
-<h1 data-number="7" id="zero-effort-build" data-number="7"><span class="header-section-number">7</span> Zero-effort build</h1>
+<h1 id="zero-effort-build">Zero-effort build</h1>
 <p>Song: <a href="https://www.youtube.com/watch?v=cCDorntnIYw">Marsheaux - Eyes Without a Face</a></p>
-<h1 data-number="8" id="accountability-for-technical-choices" data-number="8"><span class="header-section-number">8</span> Accountability for technical choices</h1>
+<h1 id="accountability-for-technical-choices">Accountability for technical choices</h1>
 <p>Song: <a href="https://www.youtube.com/watch?v=G228uZgAD0c">Hillbilly Moon Explosion &amp; Mark ‘Sparky’ Philips - My Love For Evermore</a></p>
 <p class="menu footer">
   <a href="https://twitter.com/mjambon">@mjambon</a> 2020-03-29<br/>
