@@ -45,13 +45,13 @@
 <li>Describe the intent behind a non-trivial function.</li>
 <li>Leave notes about code weaknesses and things that may need more work.</li>
 </ul>
-<p>What happens when followed:</p>
+<p>If followed:</p>
 <ul>
 <li>Navigability: readers not familiar with the project can quickly find what they’re looking for, by reading the project description, then finding the right component, then finding the right file, then finding the right function.</li>
 <li>Debuggability: it’s hard to fix a piece of code if we don’t know what it’s supposed to do.</li>
 <li>Memory: contributors come and go, whether it was originally intended or not. A brain dump of the original author can be passed to the future generations of maintainers.</li>
 </ul>
-<p>What happens when not followed:</p>
+<p>If not followed:</p>
 <ul>
 <li>Lengthy reconstruction: a new contributor has to guess what the existing code does without knowing its structure. Not knowing what is part of a grand design and what was meant to be improved is challenging. Sometimes it is even faster to throw the whole project away and start a fresh implementation. Any of this is costly.</li>
 <li>Bugs: new contributors start making changes without understanding their implications. Bad code piles up. New contributors are hired to keep up with maintenance.</li>
@@ -60,27 +60,57 @@
 <p>Song: <a href="https://www.youtube.com/watch?v=H3LbzjFJdSA">Bronski Beat - Why ?</a></p>
 <h1 id="build-under-3-minutes">Build under 3 minutes</h1>
 <p>Rule: A routine <code>make</code> invocation may take no more than 3 minutes. Or whatever time allows the developer to stay focused and not start checking their email or other distractions.</p>
-<p>What happens when followed:</p>
-<ul>
-<li>No interruptions. Happiness. Things get done fast.</li>
-</ul>
-<p>What happens when not followed:</p>
-<ul>
-<li>Developer has to wait 5 minutes for their code to compile or pass tests. They go and check their email or company chat. Or maybe they go get coffee, or lunch. The 5-min break turns into a 15-min or 30-min break. Employee gets back to their desk and needs to refocus. This adds another 5-10 minutes. In the end, it’s a series 20-min to 40-min breaks interleaved with 10-20 minutes of coding. Nothing gets done fast. Programmer gets sad.</li>
-</ul>
+<p>If followed: No interruptions. Happiness. Things get done fast.</p>
+<p>If not followed: Developer has to wait 5 minutes for their code to compile or pass tests. They go and check their email or company chat. Or maybe they go get coffee, or lunch. The 5-min break turns into a 15-min or 30-min break. Employee gets back to their desk and needs to refocus. This adds another 5-10 minutes. In the end, it’s a series 20-min to 40-min breaks interleaved with 10-20 minutes of coding. Nothing gets done fast. Programmer gets sad.</p>
 <p>Song: <a href="https://youtu.be/HdqCk2MnKQk?t=19">Mano Negra - King Kong Five</a></p>
 <h1 id="dont-break-my-focus">Don’t break my focus</h1>
+<p>Rule: It’s ok to interrupt a programmer only for things that don’t require them to focus on something else. For everything else, use asynchronous communication.</p>
+<p>Examples: Interrupting someone to ask for their home address is usually ok. Interrupting someone to ask them what they think of a piece of code is not acceptable.</p>
+<p>If followed: Programmer gets their job done.</p>
+<p>If not followed: 30 minutes are needed to refocus after each interruption.</p>
 <p>Song: <a href="https://www.youtube.com/watch?v=HgzGwKwLmgM">Queen - Don’t Stop Me Now</a></p>
 <h1 id="supervisor-could-fill-in-for-me">Supervisor could fill in for me</h1>
-<p>Song: <a href="https://www.youtube.com/watch?v=9AjkUyX0rVw">USA For Africa - We Are the World</a></p>
+<p>Rule: The programmer’s supervisor, if any, must be able to take over the programmer’s job were they to leave the team.</p>
+<p>If followed:</p>
+<ul>
+<li>Programmer can take a vacation, get sick, leave, etc. without complications.</li>
+<li>Supervisor can evaluate their work.</li>
+<li>Supervisor can create the correct incentives for shaping the team’s productivity.</li>
+</ul>
+<p>If not followed:</p>
+<ul>
+<li>Supervisor hires and fires the wrong people.</li>
+<li>Supervisor cannot provide adequate tools and a productive environment.</li>
+<li>Supervisor cannot settle conflicts.</li>
+<li>Supervisor is useless as a supervisor.</li>
+</ul>
+<p>Song: <a href="https://www.youtube.com/watch?v=ZMsvwwp6S7Q">Bruno Mars - Count on me</a></p>
 <h1 id="no-deadlines">No deadlines</h1>
+<p>Rule: Don’t set or accept deadlines for software deliverables. Aim for shorter average times and tolerate greater standard deviation on how long it takes to get tasks done. For this, set long-term goals (multiple months) and reward efforts that facilitate future work.</p>
+<p>Why: You’ll know how long a task is going to take only if you’ve already done it. But you shouldn’t have to do it again. Your job is automation. Find ways to reuse code. Take advantage of open-source tools and publish new ones, instead of doing the same repetitive tasks as millions of other programmers.</p>
+<p>If followed:</p>
+<ul>
+<li>Increased productivity.</li>
+<li>Low stress.</li>
+</ul>
+<p>If not followed:</p>
+<ul>
+<li>Too much code to maintain.</li>
+<li>Low productivity due to lack of clean-up efforts.</li>
+</ul>
 <p>Song: <a href="https://www.youtube.com/watch?v=9jK-NcRmVcw">Europe - The Final Countdown</a></p>
 <h1 id="consistent-incentives">Consistent incentives</h1>
+<p>Rule: Team leaders and superiors must set incentives consistent with best software engineering practices.</p>
+<p>Examples:</p>
+<ul>
+<li>Encourage code quality over quantity.</li>
+<li>Encourage selfless efforts.</li>
+</ul>
 <p>Song: <a href="https://www.youtube.com/watch?v=PyeWRd7ZEBs">Pet Shop Boys - Opportunities (Let’s Make Lots of Money)</a></p>
 <h1 id="zero-effort-build">Zero-effort build</h1>
-<p>Song: <a href="https://www.youtube.com/watch?v=cCDorntnIYw">Marsheaux - Eyes Without a Face</a></p>
+<p>Song: <a href="https://www.youtube.com/watch?v=cCDorntnIYw">Marsheaux - Eyes Without a Face</a> I just like this song.</p>
 <h1 id="accountability-for-technical-choices">Accountability for technical choices</h1>
-<p>Song: <a href="https://www.youtube.com/watch?v=G228uZgAD0c">Hillbilly Moon Explosion &amp; Mark ‘Sparky’ Philips - My Love For Evermore</a></p>
+<p>Song: <a href="https://www.youtube.com/watch?v=G228uZgAD0c">Hillbilly Moon Explosion &amp; Mark ‘Sparky’ Philips - My Love For Evermore</a> I like this song too!</p>
 <p class="menu footer">
   <a href="https://twitter.com/mjambon">@mjambon</a> 2020-03-29<br/>
   <a href="/">Index</a>

@@ -29,7 +29,7 @@ Examples:
 * Leave notes about code weaknesses and things that may need more
   work.
 
-What happens when followed:
+If followed:
 
 * Navigability: readers not familiar with the project can quickly find
   what they're looking for, by reading the project description, then
@@ -41,7 +41,7 @@ What happens when followed:
   or not. A brain dump of the original author can be passed to the
   future generations of maintainers.
 
-What happens when not followed:
+If not followed:
 
 * Lengthy reconstruction: a new contributor has to guess what the
   existing code does without knowing its structure. Not knowing what
@@ -65,48 +65,108 @@ Rule: A routine `make` invocation may take no more than 3 minutes. Or
 whatever time allows the developer to stay focused and not start
 checking their email or other distractions.
 
-What happens when followed:
+If followed: No interruptions. Happiness. Things get done fast.
 
-* No interruptions. Happiness. Things get done fast.
-
-What happens when not followed:
-
-* Developer has to wait 5 minutes for their code to compile or pass
-  tests. They go and check their email or company chat. Or maybe they
-  go get coffee, or lunch. The 5-min break turns into a 15-min or
-  30-min break. Employee gets back to their desk and needs to
-  refocus. This adds another 5-10 minutes. In the end, it's a series
-  20-min to 40-min breaks interleaved with 10-20 minutes of coding.
-  Nothing gets done fast. Programmer gets sad.
+If not followed: Developer has to wait 5 minutes for
+their code to compile or pass tests. They go and check their email or
+company chat. Or maybe they go get coffee, or lunch. The 5-min break
+turns into a 15-min or 30-min break. Employee gets back to their desk
+and needs to refocus. This adds another 5-10 minutes. In the end, it's
+a series 20-min to 40-min breaks interleaved with 10-20 minutes of
+coding.  Nothing gets done fast. Programmer gets sad.
 
 Song: [Mano Negra - King Kong Five](https://youtu.be/HdqCk2MnKQk?t=19)
 
 Don't break my focus
 ==
 
+Rule: It's ok to interrupt a programmer only for things that don't
+require them to focus on something else. For everything else, use
+asynchronous communication.
+
+Examples: Interrupting someone to ask for their home address is usually
+ok. Interrupting someone to ask them what they think of a piece of
+code is not acceptable.
+
+If followed: Programmer gets their job done.
+
+If not followed: 30 minutes are needed to refocus after each
+interruption.
+
 Song: [Queen - Don't Stop Me Now](https://www.youtube.com/watch?v=HgzGwKwLmgM)
 
 Supervisor could fill in for me
 ==
 
-Song: [USA For Africa - We Are the World](https://www.youtube.com/watch?v=9AjkUyX0rVw)
+Rule: The programmer's supervisor, if any, must be able to take over
+the programmer's job were they to leave the team.
+
+If followed:
+
+* Programmer can take a vacation, get sick, leave, etc. without complications.
+* Supervisor can evaluate their work.
+* Supervisor can create the correct incentives for shaping the team's
+  productivity.
+
+If not followed:
+
+* Supervisor hires and fires the wrong people.
+* Supervisor cannot provide adequate tools and a productive
+  environment.
+* Supervisor cannot settle conflicts.
+* Supervisor is useless as a supervisor.
+
+Song: [Bruno Mars - Count on me](https://www.youtube.com/watch?v=ZMsvwwp6S7Q)
 
 No deadlines
 ==
+
+Rule: Don't set or accept deadlines for software deliverables.
+Aim for shorter average times and tolerate greater standard deviation
+on how long it takes to get tasks done. For this, set long-term goals
+(multiple months) and reward efforts that facilitate future work.
+
+Why: You'll know how long a task is going to take
+only if you've already done it. But you shouldn't have to do it
+again. Your job is automation. Find ways to reuse code.
+Take advantage of open-source tools and publish new ones, instead of
+doing the same repetitive tasks as millions of other programmers.
+
+If followed:
+
+* Increased productivity.
+* Low stress.
+
+If not followed:
+
+* Too much code to maintain.
+* Low productivity due to lack of clean-up efforts.
 
 Song: [Europe - The Final Countdown](https://www.youtube.com/watch?v=9jK-NcRmVcw)
 
 Consistent incentives
 ==
 
-Song: [Pet Shop Boys - Opportunities (Let's Make Lots of Money)](https://www.youtube.com/watch?v=PyeWRd7ZEBs)
+Rule: Team leaders and superiors must set incentives consistent with
+best software engineering practices.
+
+Examples:
+
+* Encourage code quality over quantity.
+* Encourage selfless efforts.
+
+Song: [Pet Shop Boys - Opportunities (Let's Make Lots of
+Money)](https://www.youtube.com/watch?v=PyeWRd7ZEBs)
 
 Zero-effort build
 ==
 
-Song: [Marsheaux - Eyes Without a Face](https://www.youtube.com/watch?v=cCDorntnIYw)
+Song: [Marsheaux - Eyes Without a
+Face](https://www.youtube.com/watch?v=cCDorntnIYw) I just like this song.
 
 Accountability for technical choices
 ==
 
-Song: [Hillbilly Moon Explosion & Mark 'Sparky' Philips - My Love For Evermore](https://www.youtube.com/watch?v=G228uZgAD0c)
+Song: [Hillbilly Moon Explosion & Mark 'Sparky' Philips - My Love For
+Evermore](https://www.youtube.com/watch?v=G228uZgAD0c) I like this
+song too!
