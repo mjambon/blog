@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Martin Jambon, March 2020" />
-  <title>Software “Engineering” Notes</title>
+  <title>Software Engineering Notes</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -24,26 +24,25 @@
 <body>
 
 <header id="title-block-header">
-<h1 class="title">Software “Engineering” Notes</h1>
+<h1 class="title">Software Engineering Notes</h1>
 <p class="author">Martin Jambon, March 2020</p>
 </header>
 <nav id="TOC" role="doc-toc">
 <ul>
-<li><a href="#tell-us-why-we-need-that-code"><span class="toc-section-number">1</span> Tell us why [we need that code]</a></li>
+<li><a href="#tell-us-why-we-need-that-code"><span class="toc-section-number">1</span> Tell us why we need that code</a></li>
 <li><a href="#dont-break-my-focus"><span class="toc-section-number">2</span> Don’t break my focus</a></li>
 <li><a href="#supervisor-could-fill-in-for-me"><span class="toc-section-number">3</span> Supervisor could fill in for me</a></li>
 <li><a href="#eliminate-future-tasks"><span class="toc-section-number">4</span> Eliminate future tasks</a></li>
 <li><a href="#no-deadlines"><span class="toc-section-number">5</span> No deadlines</a></li>
 <li><a href="#consistent-incentives"><span class="toc-section-number">6</span> Consistent incentives</a></li>
-<li><a href="#routine-build-under-3-minutes"><span class="toc-section-number">7</span> Routine build under 3 minutes</a></li>
-<li><a href="#zero-effort-build"><span class="toc-section-number">8</span> Zero-effort build</a></li>
+<li><a href="#zero-effort-build"><span class="toc-section-number">7</span> Zero-effort build</a></li>
+<li><a href="#routine-build-under-3-minutes"><span class="toc-section-number">8</span> Routine build under 3 minutes</a></li>
 <li><a href="#accountability-for-technical-choices"><span class="toc-section-number">9</span> Accountability for technical choices</a></li>
 </ul>
 </nav>
 <p>These are a few rules I like, drawn from my experience. Like all good rules, they’re really just guidelines. Nothing’s set in stone. Execution is what matters.</p>
-<p>The accompanying songs can be happily ignored.</p>
 <!-- toc -->
-<h1 data-number="1" id="tell-us-why-we-need-that-code" data-number="1"><span class="header-section-number">1</span> Tell us why [we need that code]</h1>
+<h1 data-number="1" id="tell-us-why-we-need-that-code" data-number="1"><span class="header-section-number">1</span> Tell us why we need that code</h1>
 <p>Rule: When producing a piece of code of any size, make sure it comes with a concise explanation of why it has to exist. Answers to the following questions must be obvious to a naive reader:</p>
 <ul>
 <li>Who or what needs it?</li>
@@ -72,13 +71,11 @@
 <li>Bugs: new contributors start making changes without understanding their implications. Bad code piles up. New contributors are hired to keep up with maintenance.</li>
 <li>10x programmers are born. The now infamous “10x programmer” is one who delivers inscrutable code at a fast rate. They leave other contributors puzzled and unable to extend it or fix it. Team productivity tanks.</li>
 </ul>
-<p>Song: <a href="https://www.youtube.com/watch?v=H3LbzjFJdSA">Bronski Beat - Why?</a> (1984)</p>
 <h1 data-number="2" id="dont-break-my-focus" data-number="2"><span class="header-section-number">2</span> Don’t break my focus</h1>
 <p>Rule: It’s ok to interrupt a programmer only for things that don’t require them to focus on something else. For everything else, use asynchronous communication.</p>
 <p>Examples: Interrupting someone to ask for their home address is usually ok. Interrupting someone to ask them what they think of a piece of code is not acceptable.</p>
 <p>If followed: Programmer gets their job done.</p>
 <p>If not followed: 30 minutes are needed to refocus after each interruption.</p>
-<p>Song: <a href="https://www.youtube.com/watch?v=HgzGwKwLmgM">Queen - Don’t Stop Me Now</a> (1978)</p>
 <h1 data-number="3" id="supervisor-could-fill-in-for-me" data-number="3"><span class="header-section-number">3</span> Supervisor could fill in for me</h1>
 <p>Rule: The programmer’s supervisor, if any, must be able to take over the programmer’s job were they to leave the team.</p>
 <p>If followed:</p>
@@ -94,12 +91,10 @@
 <li>Supervisor cannot settle conflicts.</li>
 <li>Supervisor is useless as a supervisor.</li>
 </ul>
-<p>Song: <a href="https://www.youtube.com/watch?v=ZMsvwwp6S7Q">Bruno Mars - Count on me</a> (2010)</p>
 <p><a name="eliminate"></a></p>
 <h1 data-number="4" id="eliminate-future-tasks" data-number="4"><span class="header-section-number">4</span> Eliminate future tasks</h1>
 <p>Rule: If the programmer can eliminate future work for themselves or for their peers, they should take the time to do so. It is important that the manager sees this as well and supports such unscheduled tasks. See also the “<a href="#deadlines">No deadlines</a>” rule.</p>
 <p>Example: Take a month to create a tool that will eliminate two years of work across the team.</p>
-<p>Song: <a href="https://www.youtube.com/watch?v=azEvfD4C6ow">Rathergood - Bagger 288!</a> (2009), an ode to a <a href="https://en.wikipedia.org/wiki/Bagger_288">giant mobile excavator in Germany</a> which can move 240,000 tons of dirt per day.</p>
 <p><a name="deadlines"></a></p>
 <h1 data-number="5" id="no-deadlines" data-number="5"><span class="header-section-number">5</span> No deadlines</h1>
 <p>Rule: Eliminate deadlines as much as possible.</p>
@@ -119,7 +114,6 @@
 <li>Low productivity due to lack of clean-up efforts.</li>
 <li>Team spends time fixing bugs.</li>
 </ul>
-<p>Song: <a href="https://www.youtube.com/watch?v=9jK-NcRmVcw">Europe - The Final Countdown</a> (1986)</p>
 <h1 data-number="6" id="consistent-incentives" data-number="6"><span class="header-section-number">6</span> Consistent incentives</h1>
 <p>Rule: Managers must set incentives consistent with best software engineering practices. They must identify and eliminate counter-productive incentives.</p>
 <p>Examples:</p>
@@ -128,13 +122,7 @@
 <li>Encourage selfless efforts.</li>
 <li>Encourage initiative.</li>
 </ul>
-<p>Song: <a href="https://www.youtube.com/watch?v=PyeWRd7ZEBs">Pet Shop Boys - Opportunities (Let’s Make Lots of Money)</a> (1986), a song about greed.</p>
-<h1 data-number="7" id="routine-build-under-3-minutes" data-number="7"><span class="header-section-number">7</span> Routine build under 3 minutes</h1>
-<p>Rule: A routine <code>make</code> invocation may take no more than 3 minutes. Or whatever time allows the developer to stay focused and not start checking their email or other distractions.</p>
-<p>If followed: No interruptions. Happiness. Things get done fast.</p>
-<p>If not followed: Developer has to wait 5 minutes for their code to compile or pass tests. They go and check their email or company chat. Or maybe they go get coffee, or lunch. The 5-min break turns into a 15-min or 30-min break. Employee gets back to their desk and needs to refocus. This adds another 5-10 minutes. In the end, it’s a series 20-min to 40-min breaks interleaved with 10-20 minutes of coding. Nothing gets done fast. Programmer gets sad.</p>
-<p>Song: <a href="https://youtu.be/HdqCk2MnKQk?t=19">Mano Negra - King Kong Five</a> (1989) because it’s a short song? And it’s French.</p>
-<h1 data-number="8" id="zero-effort-build" data-number="8"><span class="header-section-number">8</span> Zero-effort build</h1>
+<h1 data-number="7" id="zero-effort-build" data-number="7"><span class="header-section-number">7</span> Zero-effort build</h1>
 <p>Rule: Any project or subproject can be built, tested, and deployed without thinking.</p>
 <p>Example: A project is trivially built, tested, and installed with the following commands:</p>
 <ul>
@@ -143,7 +131,10 @@
 <li><code>make install</code></li>
 </ul>
 <p>Any deviation from this scheme adds to the cognitive burden of the person who needs to build the project.</p>
-<p>Song: <a href="https://www.youtube.com/watch?v=cCDorntnIYw">Marsheaux - Eyes Without a Face</a> (2012) I just like this song. A good cover of the <a href="https://www.youtube.com/watch?v=9OFpfTd0EIs">Billy Idol classic</a> (1983).</p>
+<h1 data-number="8" id="routine-build-under-3-minutes" data-number="8"><span class="header-section-number">8</span> Routine build under 3 minutes</h1>
+<p>Rule: A routine <code>make</code> invocation may take no more than 3 minutes. Or whatever time allows the developer to stay focused and not start checking their email or other distractions.</p>
+<p>If followed: No interruptions. Happiness. Things get done fast.</p>
+<p>If not followed: Developer has to wait 5 minutes for their code to compile or pass tests. They go and check their email or company chat. Or maybe they go get coffee, or lunch. The 5-min break turns into a 15-min or 30-min break. Employee gets back to their desk and needs to refocus. This adds another 5-10 minutes. In the end, it’s a series 20-min to 40-min breaks interleaved with 10-20 minutes of coding. Nothing gets done fast. Programmer gets sad.</p>
 <h1 data-number="9" id="accountability-for-technical-choices" data-number="9"><span class="header-section-number">9</span> Accountability for technical choices</h1>
 <p>Rule: Let the programmer choose their tools and hold them accountable.</p>
 <p>What if they do:</p>
@@ -163,7 +154,6 @@
 <li>Nobody really owns successes or failures.</li>
 <li>Team members stop caring.</li>
 </ul>
-<p>Song: <a href="https://www.youtube.com/watch?v=G228uZgAD0c">Hillbilly Moon Explosion &amp; Mark ‘Sparky’ Philips - My Love For Evermore</a> (2011) I like this song too!</p>
 <p class="menu footer">
   <a href="https://twitter.com/mjambon">@mjambon</a> 2020-03-29<br/>
   <a href="/">Index</a>
