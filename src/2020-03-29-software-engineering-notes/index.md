@@ -1,9 +1,13 @@
 % Software “Engineering” Notes
 % Martin Jambon, March 2020
 
-These are a few rules I like, based on my experience. This is not
-meant to be an exhaustive list, just things that are on my mind or that
-I didn't realize until recently.
+These are a few rules I like, drawn from my experience.
+Like all good rules, they're really just guidelines. Nothing's
+set in stone. Execution is what matters.
+
+The accompanying songs can be happily ignored.
+
+<!-- toc -->
 
 Tell us why [we need that code]
 ==
@@ -56,26 +60,7 @@ If not followed:
   delivers inscrutable code at a fast rate. They leave other contributors
   puzzled and unable to extend it or fix it. Team productivity tanks.
 
-Song: [Bronski Beat - Why ?](https://www.youtube.com/watch?v=H3LbzjFJdSA)
-
-Build under 3 minutes
-==
-
-Rule: A routine `make` invocation may take no more than 3 minutes. Or
-whatever time allows the developer to stay focused and not start
-checking their email or other distractions.
-
-If followed: No interruptions. Happiness. Things get done fast.
-
-If not followed: Developer has to wait 5 minutes for
-their code to compile or pass tests. They go and check their email or
-company chat. Or maybe they go get coffee, or lunch. The 5-min break
-turns into a 15-min or 30-min break. Employee gets back to their desk
-and needs to refocus. This adds another 5-10 minutes. In the end, it's
-a series 20-min to 40-min breaks interleaved with 10-20 minutes of
-coding.  Nothing gets done fast. Programmer gets sad.
-
-Song: [Mano Negra - King Kong Five](https://youtu.be/HdqCk2MnKQk?t=19)
+Song: [Bronski Beat - Why?](https://www.youtube.com/watch?v=H3LbzjFJdSA) (1984)
 
 Don't break my focus
 ==
@@ -93,7 +78,7 @@ If followed: Programmer gets their job done.
 If not followed: 30 minutes are needed to refocus after each
 interruption.
 
-Song: [Queen - Don't Stop Me Now](https://www.youtube.com/watch?v=HgzGwKwLmgM)
+Song: [Queen - Don't Stop Me Now](https://www.youtube.com/watch?v=HgzGwKwLmgM) (1978)
 
 Supervisor could fill in for me
 ==
@@ -116,21 +101,44 @@ If not followed:
 * Supervisor cannot settle conflicts.
 * Supervisor is useless as a supervisor.
 
-Song: [Bruno Mars - Count on me](https://www.youtube.com/watch?v=ZMsvwwp6S7Q)
+Song: [Bruno Mars - Count on me](https://www.youtube.com/watch?v=ZMsvwwp6S7Q) (2010)
+
+<a name="eliminate"></a>
+
+Eliminate future tasks
+==
+
+Rule: If the programmer can eliminate future work for themselves or
+for their peers, they should take the time to do so. It is important
+that the manager sees this as well and supports such unscheduled
+tasks. See also the “[No deadlines](#deadlines)” rule.
+
+Example: Take a month to create a tool that will eliminate two years
+of work across the team.
+
+Song: [Rathergood - Bagger 288!](https://www.youtube.com/watch?v=azEvfD4C6ow)
+(2009), an ode to a [giant mobile excavator in
+Germany](https://en.wikipedia.org/wiki/Bagger_288) which can move 240,000
+tons of dirt per day.
+
+<a name="deadlines"></a>
 
 No deadlines
 ==
 
-Rule: Don't set or accept deadlines for software deliverables.
-Aim for shorter average times and tolerate greater standard deviation
-on how long it takes to get tasks done. For this, set long-term goals
-(multiple months) and reward efforts that facilitate future work.
+Rule: Eliminate deadlines as much as possible.
 
-Why: You'll know how long a task is going to take
-only if you've already done it. But you shouldn't have to do it
-again. Your job is automation. Find ways to reuse code.
-Take advantage of open-source tools and publish new ones, instead of
-doing the same repetitive tasks as millions of other programmers.
+Justification:
+
+* Opportunities for automating the team's tasks should
+  not be missed due to the pressure to stick to a schedule. See also
+  the “[Eliminate future tasks](#eliminate)” rule.
+* Occasional refactoring work must be undertaken to keep things
+  running smoothly. It should be
+  done before the code base becomes too messy so as to avoid
+  [boiling the frog](https://en.wikipedia.org/wiki/Boiling_frog).
+  Such work typically has no visible impact on the product.
+  This is why it requires understanding and support from management.
 
 If followed:
 
@@ -139,34 +147,96 @@ If followed:
 
 If not followed:
 
-* Too much code to maintain.
+* Too much code piles up, needs maintenance.
 * Low productivity due to lack of clean-up efforts.
+* Team spends time fixing bugs.
 
-Song: [Europe - The Final Countdown](https://www.youtube.com/watch?v=9jK-NcRmVcw)
+Song: [Europe - The Final
+Countdown](https://www.youtube.com/watch?v=9jK-NcRmVcw)
+(1986)
 
 Consistent incentives
 ==
 
-Rule: Team leaders and superiors must set incentives consistent with
-best software engineering practices.
+Rule: Managers must set incentives consistent with
+best software engineering practices. They must identify and eliminate
+counter-productive incentives.
 
 Examples:
 
 * Encourage code quality over quantity.
 * Encourage selfless efforts.
+* Encourage initiative.
 
 Song: [Pet Shop Boys - Opportunities (Let's Make Lots of
-Money)](https://www.youtube.com/watch?v=PyeWRd7ZEBs)
+Money)](https://www.youtube.com/watch?v=PyeWRd7ZEBs) (1986), a song
+about greed.
+
+Routine build under 3 minutes
+==
+
+Rule: A routine `make` invocation may take no more than 3 minutes. Or
+whatever time allows the developer to stay focused and not start
+checking their email or other distractions.
+
+If followed: No interruptions. Happiness. Things get done fast.
+
+If not followed: Developer has to wait 5 minutes for
+their code to compile or pass tests. They go and check their email or
+company chat. Or maybe they go get coffee, or lunch. The 5-min break
+turns into a 15-min or 30-min break. Employee gets back to their desk
+and needs to refocus. This adds another 5-10 minutes. In the end, it's
+a series 20-min to 40-min breaks interleaved with 10-20 minutes of
+coding.  Nothing gets done fast. Programmer gets sad.
+
+Song: [Mano Negra - King Kong Five](https://youtu.be/HdqCk2MnKQk?t=19)
+(1989) because it's a short song? And it's French.
 
 Zero-effort build
 ==
 
+Rule: Any project or subproject can be built, tested, and
+deployed without thinking.
+
+Example: A project is trivially built, tested, and installed with the
+following commands:
+
+* `make`
+* `make test`
+* `make install`
+
+Any deviation from this scheme adds to the cognitive burden of the
+person who needs to build the project.
+
 Song: [Marsheaux - Eyes Without a
-Face](https://www.youtube.com/watch?v=cCDorntnIYw) I just like this song.
+Face](https://www.youtube.com/watch?v=cCDorntnIYw) (2012) I just like this
+song. A good cover of the [Billy Idol
+classic](https://www.youtube.com/watch?v=9OFpfTd0EIs) (1983).
 
 Accountability for technical choices
 ==
 
+Rule: Let the programmer choose their tools and hold them
+accountable.
+
+What if they do:
+
+* Programmers choose what makes them more productive in their
+  specialty.
+* Programmers stand by their work.
+* Manager doesn't have to be an expert at everything.
+* Manager is trusted and loved.
+
+What if they don't:
+
+* Manager is not an expert, chooses inadequate or obsolete tools.
+* Programmers are unproductive.
+* Programmers get frustrated.
+* Manager gets frustrated.
+* Manager gets disrespected.
+* Nobody really owns successes or failures.
+* Team members stop caring.
+
 Song: [Hillbilly Moon Explosion & Mark 'Sparky' Philips - My Love For
-Evermore](https://www.youtube.com/watch?v=G228uZgAD0c) I like this
-song too!
+Evermore](https://www.youtube.com/watch?v=G228uZgAD0c) (2011)
+I like this song too!
