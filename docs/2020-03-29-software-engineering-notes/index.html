@@ -43,11 +43,12 @@
 <p>These are a few rules I like, drawn from my experience. Like all good rules, they’re really just guidelines. Nothing’s set in stone. Execution is what matters.</p>
 <!-- toc -->
 <h1 data-number="1" id="tell-us-why-we-need-that-code" data-number="1"><span class="header-section-number">1</span> Tell us why we need that code</h1>
-<p>Rule: When producing a piece of code of any size, make sure it comes with a concise explanation of why it has to exist. Answers to the following questions must be obvious to a naive reader:</p>
+<p>Rule: When producing a piece of code of any size, make sure it comes with a concise explanation of <em>why</em> it has to exist.</p>
+<p>Answers to the following questions must be obvious to a naive reader:</p>
 <ul>
 <li>Who or what needs it?</li>
-<li>What is it for? Where can I learn more about it if necessary?</li>
-<li>Couldn’t we do with an existing library?</li>
+<li>What is it for? Where can I learn more about it?</li>
+<li>Why not use an existing library?</li>
 <li>What does it depend on? How much maintenance will be needed?</li>
 <li>Who understands it best?</li>
 </ul>
@@ -56,23 +57,23 @@
 <li>Start <em>all</em> source files with at least <em>some</em> description of where they fit in the project.</li>
 <li>Use evocative names.</li>
 <li>Have a short, low-maintenance readme for each component of the project.</li>
-<li>Describe the intent behind a non-trivial function.</li>
-<li>Leave notes about code weaknesses and things that may need more work.</li>
+<li>Describe the intent behind a long function.</li>
+<li>Leave notes about room for improvement.</li>
 </ul>
 <p>If followed:</p>
 <ul>
-<li>Navigability: readers not familiar with the project can quickly find what they’re looking for, by reading the project description, then finding the right component, then finding the right file, then finding the right function.</li>
-<li>Debuggability: it’s hard to fix a piece of code if we don’t know what it’s supposed to do.</li>
-<li>Memory: contributors come and go, whether it was originally intended or not. A brain dump of the original author can be passed to the future generations of maintainers.</li>
+<li>Navigability: Outsiders can quickly locate things by reading the project description, then find the right component, then find the right file, then find the right function.</li>
+<li>Debuggability: We can’t fix it if we don’t know what it’s supposed to do.</li>
+<li>History: Contributors come and go. Finding a brain dump of the original author saves the day.</li>
 </ul>
 <p>If not followed:</p>
 <ul>
-<li>Lengthy reconstruction: a new contributor has to guess what the existing code does without knowing its structure. Not knowing what is part of a grand design and what was meant to be improved is challenging. Sometimes it is even faster to throw the whole project away and start a fresh implementation. Any of this is costly.</li>
-<li>Bugs: new contributors start making changes without understanding their implications. Bad code piles up. New contributors are hired to keep up with maintenance.</li>
-<li>10x programmers are born. The now infamous “10x programmer” is one who delivers inscrutable code at a fast rate. They leave other contributors puzzled and unable to extend it or fix it. Team productivity tanks.</li>
+<li>Lengthy reconstruction: A new contributor has to guess what the existing code does without knowing its structure. Not knowing what is part of a grand design and what was meant to be improved is challenging. Sometimes it is even faster to throw the whole project away and start a fresh implementation. Any of this is costly.</li>
+<li>Bugs: New contributors start making changes without understanding their implications. Bad code piles up. New contributors are hired to keep up with maintenance.</li>
+<li>10x programmers are born. The infamous “10x programmer” is one who delivers inscrutable code at a fast rate. They leave other contributors puzzled and unable to extend it or fix it. Team productivity tanks.</li>
 </ul>
 <h1 data-number="2" id="dont-break-my-focus" data-number="2"><span class="header-section-number">2</span> Don’t break my focus</h1>
-<p>Rule: It’s ok to interrupt a programmer only for things that don’t require them to focus on something else. For everything else, use asynchronous communication.</p>
+<p>Rule: It’s fine to interrupt a programmer only for things that don’t require them to focus on something else. For everything else, use asynchronous communication.</p>
 <p>Examples: Interrupting someone to ask for their home address is usually ok. Interrupting someone to ask them what they think of a piece of code is not acceptable.</p>
 <p>If followed: Programmer gets their job done.</p>
 <p>If not followed: 30 minutes are needed to refocus after each interruption.</p>
