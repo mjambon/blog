@@ -1,9 +1,8 @@
 % Software Engineering Notes
 % Martin Jambon, March 2020
 
-These are a few rules I like, drawn from my experience.
-Like all good rules, they're really just guidelines. Nothing's
-set in stone. Execution is what matters.
+Many of these rules are highly counter-intuitive to inexperienced
+programmers and engineering managers. Use responsibly.
 
 <!-- toc -->
 
@@ -99,9 +98,10 @@ Eliminate future tasks
 ==
 
 Rule: If the programmer can eliminate future work for themselves or
-for their peers, they should take the time to do so. It is important
-that the manager sees this as well and supports such unscheduled
-tasks. See also the “[No deadlines](#deadlines)” rule.
+for their peers, they should take the time to do so.
+
+It is important that the manager sees this as well and supports such
+unscheduled tasks. See also the “[No deadlines](#deadlines)” rule.
 
 Example: Take a month to create a tool that will eliminate two years
 of work across the team.
@@ -115,13 +115,11 @@ Rule: Eliminate deadlines as much as possible.
 
 Justification:
 
-* Opportunities for automating the team's tasks should
-  not be missed due to the pressure to stick to a schedule. See also
-  the “[Eliminate future tasks](#eliminate)” rule.
-* Occasional refactoring work must be undertaken to keep things
-  running smoothly. It should be
-  done before the code base becomes too messy so as to avoid
-  [boiling the frog](https://en.wikipedia.org/wiki/Boiling_frog).
+* Don't skip opportunities for automation due to the pressure to stick
+  to a schedule. See also the “[Eliminate future tasks](#eliminate)” rule.
+* Keep things running smoothly by investing in occasional refactoring
+  work. It should be done before the code base becomes too messy so as
+  to avoid [boiling the frog](https://en.wikipedia.org/wiki/Boiling_frog).
   Such work typically has no visible impact on the product.
   This is why it requires understanding and support from management.
 
@@ -148,12 +146,12 @@ Examples:
 * Encourage code quality over quantity.
 * Encourage selfless efforts.
 * Encourage initiative.
+* Reward automation proportionally to cost savings.
 
 Zero-effort build
 ==
 
-Rule: Any project or subproject can be built, tested, and
-deployed without thinking.
+Rule: Any project can be built, tested, and deployed without thinking.
 
 Example: A project is trivially built, tested, and installed with the
 following commands:
@@ -165,18 +163,20 @@ following commands:
 Any deviation from this scheme adds to the cognitive burden of the
 person who needs to build the project.
 
-Routine build under 3 minutes
+Routine build under 2 minutes
 ==
 
-Rule: A routine `make` invocation may take no more than 3 minutes. Or
-whatever time allows the developer to stay focused and not start
-checking their email or other distractions.
+Rule: A routine `make` invocation should be short enough for the
+developer to _not lose focus_. This is 1 to 2 minutes.
+
+Beyond that, the developer loses focus and starts looking at other
+things. Prevent that context switch.
 
 If followed: No interruptions. Happiness. Things get done fast.
 
 If not followed: Developer has to wait 5 minutes for
 their code to compile or pass tests. They go and check their email or
-company chat. Or maybe they go get coffee, or lunch. The 5-min break
+company chat. Or maybe they go get coffee or a snack. The 5-min break
 turns into a 15-min or 30-min break. Employee gets back to their desk
 and needs to refocus. This adds another 5-10 minutes. In the end, it's
 a series 20-min to 40-min breaks interleaved with 10-20 minutes of
@@ -187,6 +187,10 @@ Accountability for technical choices
 
 Rule: Let the programmer choose their tools and hold them
 accountable.
+
+> “A good craftsman never blames his tools”
+
+because he gets to choose them!
 
 What if they do:
 
@@ -205,3 +209,37 @@ What if they don't:
 * Manager gets disrespected.
 * Nobody really owns successes or failures.
 * Team members stop caring.
+
+Group culture sticks
+==
+
+Rule: Don't change a culture, replace it.
+
+The culture of a group of people never shifts progressively to
+a different culture. You can only leave the group, join
+another group, or start a new group. A culture is defined by a set of
+behaviors. When these behaviors get in the way of effective software
+engineering, the group will fail rather than changing its habits.
+
+This is why acqui-hires, i.e. the hiring of a successful group of
+workers, is valuable to large companies. By joining as a group,
+these workers hopefully keep doing things the way they used to,
+instead of adopting the unsuccessful practices of the hiring
+company.
+
+Don't do what you don't understand
+==
+
+Rule: If you don't know what it's for and why it should work, don't use
+it. Drop it. This applies to rules, tools, methods, and processes at
+all levels of an organization.
+
+Of course, this applies to the rules mentioned in this article! Don't
+apply them if they're not justified in your situation.
+
+Justification: Shallow imitation or “[cargo
+cult](https://en.wikipedia.org/wiki/Cargo_cult)” comes at a cost:
+
+* Doesn't produce the expected results
+* Wastes time
+* Weakens initiatives that really matter
