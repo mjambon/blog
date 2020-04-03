@@ -1,7 +1,7 @@
 About me
 --
 
-<img src="https://www.gravatar.com/avatar/ca1fd636db960bba6027154d81ef106e.png"
+<img src="https://s.gravatar.com/avatar/ca1fd636db960bba6027154d81ef106e?s=80"
      alt="The author">
 
 I'm a software developer, creator, and researcher. Originally from
