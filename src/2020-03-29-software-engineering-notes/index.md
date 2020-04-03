@@ -219,7 +219,7 @@ The culture of a group of people never shifts progressively to
 a different culture. You can only leave the group, join
 another group, or start a new group. A culture is defined by a set of
 behaviors. When these behaviors get in the way of effective software
-engineering, the group will fail rather than changing its habits.
+engineering, the group will fail rather than change.
 
 This is why acqui-hires, i.e. the hiring of a successful group of
 workers, is valuable to large companies. By joining as a group,
