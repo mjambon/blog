@@ -2,7 +2,7 @@
 % Martin Jambon, March 2020
 
 Many of these rules are highly counter-intuitive to inexperienced
-programmers and engineering managers. Use responsibly.
+programmers and engineering managers. Use responsibly. 🙂
 
 <!-- toc -->
 
