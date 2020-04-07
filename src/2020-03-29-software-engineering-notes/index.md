@@ -137,7 +137,7 @@ If not followed:
 Consistent incentives
 ==
 
-Rule: Managers must set incentives consistent with
+Rule: Managers must set incentives consistently with
 best software engineering practices. They must identify and eliminate
 counter-productive incentives.
 
