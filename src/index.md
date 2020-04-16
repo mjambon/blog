@@ -99,7 +99,7 @@ users. They were all initiated by me, with or without support from
 an employer.
 
 * [dune-deps](https://github.com/mjambon/dune-deps) (2020): Extracts
-  a useful dependency graph for an OCaml project.
+  a useful dependency graph from an OCaml project.
 * [atd](https://github.com/ahrefs/atd) (2010): Code generator for
   making JSON pleasant and flexible to use with OCaml. Comes with its
   own type definition language designed to be adaptable to various data
