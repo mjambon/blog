@@ -17,7 +17,8 @@ ARTICLES = \
   2017-07-22-values \
   2017-08-12-adaptive-average \
   2019-04-21-glossary \
-  2020-03-29-software-engineering-notes
+  2020-03-29-software-engineering-notes \
+  2020-06-28-dynamic-signal-uniformization
 
 DOCROOT = ../docs
 
