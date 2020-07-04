@@ -15,6 +15,10 @@ of ratings given by a particular judge into scores that can be
 compared from one judge to another, regardless of how harsh or generous
 the judges are.
 
+Given $n$ bins, the amortized cost of adding a sample to the model is
+$O(\log n)$ and the cost of normalizing an input sample is $O(\log n)$
+as well.
+
 Problem
 ==
 

@@ -42,6 +42,7 @@
 </nav>
 <!-- toc -->
 <p>This article presents a heuristic for mapping a real-valued random signal that follows an arbitrary distribution to a uniform distribution over <span class="math inline">\([0, 1]\)</span>. It’s based on maintaining <span class="math inline">\(n\)</span> bins, each representing an equal slice of the distribution. The average values of the bins are used to define a piecewise linear mapping from the original distribution to the uniform distribution. The result is a function that normalizes any input signal onto <span class="math inline">\([0, 1]\)</span>. It also has the ability to adjust to changes in the distribution over time. A usage scenario is the normalization of ratings given by a particular judge into scores that can be compared from one judge to another, regardless of how harsh or generous the judges are.</p>
+<p>Given <span class="math inline">\(n\)</span> bins, the amortized cost of adding a sample to the model is <span class="math inline">\(O(\log n)\)</span> and the cost of normalizing an input sample is <span class="math inline">\(O(\log n)\)</span> as well.</p>
 <h1 data-number="1" id="problem" data-number="1"><span class="header-section-number">1</span> Problem</h1>
 <p>We are concerned with the practical problem of normalizing ratings from an external source into consistent scores with a universal meaning. An external source might be a human assigning some sort of ratings or feedback, using a subjective scale. We would like to normalize those ratings such that their value has the same meaning,</p>
 <ol type="1">
