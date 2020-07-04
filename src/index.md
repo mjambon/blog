@@ -30,6 +30,8 @@ still ongoing as of 2020. It is now closed-source.
 
 ### Technical reports
 
+* [Dynamic signal uniformization](2020-06-28-dynamic-signal-uniformization)
+  (June 2020)
 * [Artificial cognition glossary](2019-04-21-glossary) (April 2019)
 * [An adaptive moving average](2017-08-12-adaptive-average)
   (August 2017)
