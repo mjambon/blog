@@ -59,7 +59,8 @@ axioms of set theory.]{.vanity-contents}
 []{#vanity-72756c65}**rule**: [An
 [artificial](#vanity-6172746966696369616c){.vanity-term-link}
 constraint. Unlike a physical constraint which can apply to various
-portions of a model, an artificial constraint applies to
+portions of a [model](#vanity-6d6f64656c){.vanity-term-link}, an
+artificial constraint applies to
 [individual](#vanity-696e646976696475616c){.vanity-term-link} members of
 a society, and said members can decide whether to follow
 it.]{.vanity-contents}

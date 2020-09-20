@@ -79,7 +79,7 @@
 - term: rule
   def: >-
     An [artificial] constraint. Unlike a physical constraint which can
-    apply to various portions of a model, an artificial constraint
+    apply to various portions of a [model], an artificial constraint
     applies to [individual] members of a society, and said members can
     decide whether to follow it.
   syn:
