@@ -6,33 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Martin Jambon, June 2020" />
   <title>Dynamic Signal Uniformization</title>
-  <style>
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
   </style>
   <link rel="stylesheet" href="../blog.css" />
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
+  <script src="/usr/share/javascript/mathjax/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
   <meta name=viewport content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Language" content="en">
 </head>
 <body>
-
 <header id="title-block-header">
 <h1 class="title">Dynamic Signal Uniformization</h1>
 <p class="author">Martin Jambon, June 2020</p>
 </header>
-<nav id="TOC" role="doc-toc">
+<nav id="TOC">
 <ul>
 <li><a href="#problem"><span class="toc-section-number">1</span> Problem</a></li>
-<li><a href="#solution-outline"><span class="toc-section-number">2</span> Solution outline</a>
-<ul>
+<li><a href="#solution-outline"><span class="toc-section-number">2</span> Solution outline</a><ul>
 <li><a href="#distribution-tracking"><span class="toc-section-number">2.1</span> Distribution tracking</a></li>
 <li><a href="#normalization"><span class="toc-section-number">2.2</span> Normalization</a></li>
 </ul></li>
@@ -43,7 +36,7 @@
 <!-- toc -->
 <p>This article presents a heuristic for mapping a real-valued random signal that follows an arbitrary distribution to a uniform distribution over <span class="math inline">\([0, 1]\)</span>. It’s based on maintaining <span class="math inline">\(n\)</span> bins, each representing an equal slice of the distribution. The average values of the bins are used to define a piecewise linear mapping from the original distribution to the uniform distribution. The result is a function that normalizes any input signal onto <span class="math inline">\([0, 1]\)</span>. It also has the ability to adjust to changes in the distribution over time. A usage scenario is the normalization of ratings given by a particular judge into scores that can be compared from one judge to another, regardless of how harsh or generous the judges are.</p>
 <p>Given <span class="math inline">\(n\)</span> bins, the amortized cost of adding a sample to the model is <span class="math inline">\(O(\log n)\)</span> and the cost of normalizing an input sample is <span class="math inline">\(O(\log n)\)</span> as well.</p>
-<h1 data-number="1" id="problem" data-number="1"><span class="header-section-number">1</span> Problem</h1>
+<h1 id="problem"><span class="header-section-number">1</span> Problem</h1>
 <p>We are concerned with the practical problem of normalizing ratings from an external source into consistent scores with a universal meaning. An external source might be a human assigning some sort of ratings or feedback, using a subjective scale. We would like to normalize those ratings such that their value has the same meaning,</p>
 <ol type="1">
 <li>regardless of the distribution of the original ratings from a particular source, and</li>
@@ -55,7 +48,7 @@
 <li>to be mapped into a normalized score using the modeled distribution.</li>
 </ul>
 <p>This article focuses on the main idea behind the solution. The more tedious work such as the initialization phase or handling interpolation at the extremities of the distribution is published as part of the source code for our implementation.</p>
-<h1 data-number="2" id="solution-outline" data-number="2"><span class="header-section-number">2</span> Solution outline</h1>
+<h1 id="solution-outline"><span class="header-section-number">2</span> Solution outline</h1>
 <p>Given a stream of input numbers, we have to build and maintain some data structure that models the input distribution, which we call the distribution tracker. We add new samples to the tracker in order to initialize or update the model. We also want to be able to obtain a normalized score by passing in a sample input without necessarily updating the tracker. This is summarized by the following OCaml interface:</p>
 <pre><code>type tracker
 val add : tracker -&gt; float -&gt; unit
@@ -63,7 +56,7 @@ val normalize : tracker -&gt; float -&gt; float
 
 (* Combine &#39;add&#39; and &#39;normalize&#39;. *)
 val map : tracker -&gt; float -&gt; float</code></pre>
-<h2 data-number="2.1" id="distribution-tracking" data-number="2.1"><span class="header-section-number">2.1</span> Distribution tracking</h2>
+<h2 id="distribution-tracking"><span class="header-section-number">2.1</span> Distribution tracking</h2>
 <p>The algorithm uses two main parameters:</p>
 <ul>
 <li><span class="math inline">\(\alpha\)</span>, the number within (0, 1) used in the computation of an exponential moving average (EMA) for each bin;</li>
@@ -79,14 +72,14 @@ for i in 0 ... n - 1:
   update_ema(ema[i], acc[i])</code></pre>
 <p>As is, this algorithm requires <span class="math inline">\(n\)</span> samples before the <code>ema</code> array could be initialized. Then it can be used to normalize any input sample.</p>
 <p>In practice, we’d like to start normalizing samples on the fly, before seeing <span class="math inline">\(n\)</span> samples. This is done during the initialization phase by sorting the array, whose length is <span class="math inline">\(i+1\)</span> rather than <span class="math inline">\(n\)</span>, right after adding each sample. This shorter array can then be used in place of the normal array of length <span class="math inline">\(n\)</span> for normalizing some input. Once this initialization phase is over, we sort the accumulator <code>acc</code> normally, just once every <span class="math inline">\(n\)</span> samples.</p>
-<h2 data-number="2.2" id="normalization" data-number="2.2"><span class="header-section-number">2.2</span> Normalization</h2>
+<h2 id="normalization"><span class="header-section-number">2.2</span> Normalization</h2>
 <p>The <code>ema</code> array provides <span class="math inline">\(n\)</span> averages derived from input samples, which are guaranteed to be sorted in increasing order. Given an input sample to normalize, the two nearest bins are identified by some variant of binary search.</p>
 <ul>
 <li>If the sample lies between the values of the two bins, simple linear interpolation is performed.</li>
 <li>If the sample falls outside of the interval defined by the two bins, i.e. it is lower than the value in bin 0 or greater than the value in bin <span class="math inline">\(n-1\)</span>, then a more complex treatment is applied, so as to prevent the normalized result from falling outside <span class="math inline">\([0, 1]\)</span>.</li>
 </ul>
 <p>For accurate, tested algorithms, please refer to the OCaml implementation.</p>
-<h1 data-number="3" id="results" data-number="3"><span class="header-section-number">3</span> Results</h1>
+<h1 id="results"><span class="header-section-number">3</span> Results</h1>
 <p>The <code>uniformize</code> program was used to apply the <code>map</code> function to each input sample.</p>
 <p>The following input signal was generated:</p>
 <p><a href="img/input.png"
@@ -104,7 +97,7 @@ for i in 0 ... n - 1:
      src="img/output.png"
      alt="Distribution of the sample output data"/></a></p>
 <p>Normalization appears to give reasonable results fairly quickly from the beginning, as long as the distribution remains the same. However, it takes about 600 samples to recover from the changes in distribution once it stops changing (from sample 1000 to around 1600).</p>
-<h1 data-number="4" id="sample-implementation" data-number="4"><span class="header-section-number">4</span> Sample implementation</h1>
+<h1 id="sample-implementation"><span class="header-section-number">4</span> Sample implementation</h1>
 <p>This implementation provides the missing details about the algorithms, unit tests, and a command-line program called <code>uniformize</code>: <a href="https://github.com/mjambon/uniformize">https://github.com/mjambon/uniformize</a></p>
 <p class="menu footer">
   <a href="https://twitter.com/mjambon">@mjambon</a> 2020-06-28<br/>

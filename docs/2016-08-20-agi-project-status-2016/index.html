@@ -6,96 +6,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Martin Jambon" />
   <title>AGI research snapshot, 2016</title>
-  <style>
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
   </style>
   <link rel="stylesheet" href="../blog.css" />
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
+  <script src="/usr/share/javascript/mathjax/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
   <meta name=viewport content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Language" content="en">
 </head>
 <body>
-
 <header id="title-block-header">
 <h1 class="title">AGI research snapshot, 2016</h1>
 <p class="author">Martin Jambon</p>
 <p class="date">August–November 2016</p>
 </header>
-<nav id="TOC" role="doc-toc">
+<nav id="TOC">
 <ul>
 <li><a href="#motivations"><span class="toc-section-number">1</span> Motivations</a></li>
-<li><a href="#a-practical-definition-of-general-intelligence"><span class="toc-section-number">2</span> A practical definition of general intelligence</a>
-<ul>
+<li><a href="#a-practical-definition-of-general-intelligence"><span class="toc-section-number">2</span> A practical definition of general intelligence</a><ul>
 <li><a href="#framework-for-defining-and-evaluating-intelligence"><span class="toc-section-number">2.1</span> Framework for defining and evaluating intelligence</a></li>
 <li><a href="#sample-method-for-evaluating-intelligence"><span class="toc-section-number">2.2</span> Sample method for evaluating intelligence</a></li>
-<li><a href="#criticism-of-the-systemenvironment-duality"><span class="toc-section-number">2.3</span> Criticism of the system/environment duality</a>
-<ul>
+<li><a href="#criticism-of-the-systemenvironment-duality"><span class="toc-section-number">2.3</span> Criticism of the system/environment duality</a><ul>
 <li><a href="#tools"><span class="toc-section-number">2.3.1</span> Tools</a></li>
 <li><a href="#cooperation"><span class="toc-section-number">2.3.2</span> Cooperation</a></li>
 <li><a href="#an-acceptable-compromise"><span class="toc-section-number">2.3.3</span> An acceptable compromise</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#other-useful-definitions-of-intelligence"><span class="toc-section-number">3</span> Other useful definitions of intelligence</a>
-<ul>
+<li><a href="#other-useful-definitions-of-intelligence"><span class="toc-section-number">3</span> Other useful definitions of intelligence</a><ul>
 <li><a href="#intuition"><span class="toc-section-number">3.1</span> Intuition</a></li>
 <li><a href="#self-control"><span class="toc-section-number">3.2</span> Self-control</a></li>
 </ul></li>
-<li><a href="#considerations-about-the-methodology"><span class="toc-section-number">4</span> Considerations about the methodology</a>
-<ul>
+<li><a href="#considerations-about-the-methodology"><span class="toc-section-number">4</span> Considerations about the methodology</a><ul>
 <li><a href="#modularity-and-testability"><span class="toc-section-number">4.1</span> Modularity and testability</a></li>
 <li><a href="#simplicity"><span class="toc-section-number">4.2</span> Simplicity</a></li>
 </ul></li>
-<li><a href="#computational-model"><span class="toc-section-number">5</span> Computational model</a>
-<ul>
+<li><a href="#computational-model"><span class="toc-section-number">5</span> Computational model</a><ul>
 <li><a href="#discrete-time"><span class="toc-section-number">5.1</span> Discrete time</a></li>
 <li><a href="#one-node-per-abstraction"><span class="toc-section-number">5.2</span> One node per abstraction</a></li>
 </ul></li>
-<li><a href="#architecture"><span class="toc-section-number">6</span> Architecture</a>
-<ul>
+<li><a href="#architecture"><span class="toc-section-number">6</span> Architecture</a><ul>
 <li><a href="#overview"><span class="toc-section-number">6.1</span> Overview</a></li>
-<li><a href="#perception"><span class="toc-section-number">6.2</span> Perception</a>
-<ul>
+<li><a href="#perception"><span class="toc-section-number">6.2</span> Perception</a><ul>
 <li><a href="#input-nodes-and-internal-nodes"><span class="toc-section-number">6.2.1</span> Input nodes and internal nodes</a></li>
 <li><a href="#redundancy-issues"><span class="toc-section-number">6.2.2</span> Redundancy issues</a></li>
 <li><a href="#criteria-that-make-an-internal-node-worth-creating"><span class="toc-section-number">6.2.3</span> Criteria that make an internal node worth creating</a></li>
 <li><a href="#outline-of-a-growth-mechanism"><span class="toc-section-number">6.2.4</span> Outline of a growth mechanism</a></li>
 </ul></li>
-<li><a href="#output-and-reinforcement"><span class="toc-section-number">6.3</span> Output and reinforcement</a>
-<ul>
+<li><a href="#output-and-reinforcement"><span class="toc-section-number">6.3</span> Output and reinforcement</a><ul>
 <li><a href="#problem"><span class="toc-section-number">6.3.1</span> Problem</a></li>
 <li><a href="#desired-result"><span class="toc-section-number">6.3.2</span> Desired result</a></li>
 <li><a href="#outline-of-a-possible-multi-scale-crawl-algorithm"><span class="toc-section-number">6.3.3</span> Outline of a possible multi-scale crawl algorithm</a></li>
 <li><a href="#dealing-with-high-local-dimensionality"><span class="toc-section-number">6.3.4</span> Dealing with high local dimensionality</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#sample-internal-io-modules"><span class="toc-section-number">7</span> Sample internal IO modules</a>
-<ul>
-<li><a href="#automatic-io-modules"><span class="toc-section-number">7.1</span> Automatic IO modules</a>
-<ul>
+<li><a href="#sample-internal-io-modules"><span class="toc-section-number">7</span> Sample internal IO modules</a><ul>
+<li><a href="#automatic-io-modules"><span class="toc-section-number">7.1</span> Automatic IO modules</a><ul>
 <li><a href="#automatic-activity-feedback-and-action-feedback"><span class="toc-section-number">7.1.1</span> Automatic activity feedback and action feedback</a></li>
 <li><a href="#reminiscence"><span class="toc-section-number">7.1.2</span> Reminiscence</a></li>
 </ul></li>
-<li><a href="#optional-io-modules"><span class="toc-section-number">7.2</span> Optional IO modules</a>
-<ul>
+<li><a href="#optional-io-modules"><span class="toc-section-number">7.2</span> Optional IO modules</a><ul>
 <li><a href="#a-simple-feedback-loop-the-transmitter"><span class="toc-section-number">7.2.1</span> A simple feedback loop, the transmitter</a></li>
 <li><a href="#single-bit-state"><span class="toc-section-number">7.2.2</span> Single-bit state</a></li>
 <li><a href="#activator"><span class="toc-section-number">7.2.3</span> Activator</a></li>
 <li><a href="#toggle-or-2-state-round-robin"><span class="toc-section-number">7.2.4</span> Toggle or 2-state round robin</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#test-environments"><span class="toc-section-number">8</span> Test environments</a>
-<ul>
+<li><a href="#test-environments"><span class="toc-section-number">8</span> Test environments</a><ul>
 <li><a href="#testing-pure-pattern-identification-small-bw-images"><span class="toc-section-number">8.1</span> Testing pure pattern identification: small B&amp;W images</a></li>
-<li><a href="#testing-reinforcement-reconstruct-arbitrary-topologies"><span class="toc-section-number">8.2</span> Testing reinforcement: reconstruct arbitrary topologies</a>
-<ul>
+<li><a href="#testing-reinforcement-reconstruct-arbitrary-topologies"><span class="toc-section-number">8.2</span> Testing reinforcement: reconstruct arbitrary topologies</a><ul>
 <li><a href="#the-guessing-game"><span class="toc-section-number">8.2.1</span> The Guessing Game</a></li>
 <li><a href="#objective"><span class="toc-section-number">8.2.2</span> Objective</a></li>
 </ul></li>
@@ -105,12 +86,12 @@
 </ul>
 </nav>
 <!-- toc -->
-<h1 data-number="1" id="motivations" data-number="1"><span class="header-section-number">1</span> Motivations</h1>
+<h1 id="motivations"><span class="header-section-number">1</span> Motivations</h1>
 <p>I have been working on and off since 1999 on ideas and programs with the aim of eventually achieving artificial general intelligence (AGI).</p>
 <p>This is a write-up of my current thoughts, approaches, and designs. While we don’t have a working AGI system yet, it seems like a good idea to share the state of my research with others.</p>
-<h1 data-number="2" id="a-practical-definition-of-general-intelligence" data-number="2"><span class="header-section-number">2</span> A practical definition of general intelligence</h1>
+<h1 id="a-practical-definition-of-general-intelligence"><span class="header-section-number">2</span> A practical definition of general intelligence</h1>
 <p>From the beginning my goal has been to come up with software running on commodity computers that demonstrates <em>some intelligent behavior</em>. It’s not about rivaling humans at typical human activities such as playing games or classifying images. It’s about demonstrating modest but real bits of general intelligence.</p>
-<h2 data-number="2.1" id="framework-for-defining-and-evaluating-intelligence" data-number="2.1"><span class="header-section-number">2.1</span> Framework for defining and evaluating intelligence</h2>
+<h2 id="framework-for-defining-and-evaluating-intelligence"><span class="header-section-number">2.1</span> Framework for defining and evaluating intelligence</h2>
 <p>We’ll define general intelligence, or intelligence for short, within the following informal framework:</p>
 <ol type="1">
 <li>Some definition of time.</li>
@@ -132,7 +113,7 @@
 <p>A system’s intelligence is measured by how fast it learns to optimize the objective function in an arbitrarily new environment, compared to a younger version of itself.</p>
 </blockquote>
 <p>An example of an arbitrarily complex environment is a setup where multiple systems compete for a resource, such as food. Each system views the other systems as part of the environment. When a system’s objective function, or health, becomes too low, it is removed from the environment and the healthiest of the systems is cloned.</p>
-<h2 data-number="2.2" id="sample-method-for-evaluating-intelligence" data-number="2.2"><span class="header-section-number">2.2</span> Sample method for evaluating intelligence</h2>
+<h2 id="sample-method-for-evaluating-intelligence"><span class="header-section-number">2.2</span> Sample method for evaluating intelligence</h2>
 <p>In our framework, the world <span class="math inline">\(W\)</span> is partitioned into a system <span class="math inline">\(S\)</span> and an environment <span class="math inline">\(E\)</span>:</p>
 <p><span class="math display">\[
 W = S \oplus E
@@ -152,41 +133,41 @@ I(t_0, t_1, t_2, E, S) =
 \]</span></p>
 <p>This is straightforward to compute if we can save and restore the state of the world, i.e. if such world is a simulation in our control.</p>
 <p>Note also that according to this definition, a system is intelligent if from <span class="math inline">\(t_0\)</span> to <span class="math inline">\(t_1\)</span> it learns something useful for dealing with the environment encountered from <span class="math inline">\(t_1\)</span> to <span class="math inline">\(t_2\)</span>. A system that performs already well at <span class="math inline">\(t_0\)</span> but can’t learn anything new won’t be considered intelligent even if it outperforms most other systems for optimizing the objective function. Humans might refer to such individual as wise, but as far as we are concerned, it is no longer capable of general intelligence.</p>
-<h2 data-number="2.3" id="criticism-of-the-systemenvironment-duality" data-number="2.3"><span class="header-section-number">2.3</span> Criticism of the system/environment duality</h2>
+<h2 id="criticism-of-the-systemenvironment-duality"><span class="header-section-number">2.3</span> Criticism of the system/environment duality</h2>
 <p>Our framework is based on a separation between a system and its environment. This matches the view that the human intelligence is determined by the brain, located in the human body which has clear physical boundaries.</p>
 <p>An intelligent system is fundamentally open as it exchanges information with its environment, by definition. By modifying the environment to improve its success, the system can become intimately dependent on it. Tools and cooperation are prime examples of co-evolution of an intelligent system and its environment.</p>
-<h3 data-number="2.3.1" id="tools" data-number="2.3.1"><span class="header-section-number">2.3.1</span> Tools</h3>
+<h3 id="tools"><span class="header-section-number">2.3.1</span> Tools</h3>
 <p>Tools are external resources that are not typically treated as part of the intelligent system, but are key to a more efficient use of the environment by a system who learned to use those tools.</p>
-<h3 data-number="2.3.2" id="cooperation" data-number="2.3.2"><span class="header-section-number">2.3.2</span> Cooperation</h3>
+<h3 id="cooperation"><span class="header-section-number">2.3.2</span> Cooperation</h3>
 <p>Cooperation can emerge when other intelligent systems exist in the world and they benefit from working together. Groups of humans are typically not considered as sharing a brain, despite living in organized societies with individuals having widely different roles. This is highly beneficial to the group. Indeed, single humans having to sruvive without contacts with other humans, even with some tools, tend to do much more poorly than as an organized group.</p>
-<h3 data-number="2.3.3" id="an-acceptable-compromise" data-number="2.3.3"><span class="header-section-number">2.3.3</span> An acceptable compromise</h3>
+<h3 id="an-acceptable-compromise"><span class="header-section-number">2.3.3</span> An acceptable compromise</h3>
 <p>The expectation of tools and cooperation are reasons why a good, general definition of intelligence may not define a system as a clear-cut piece of the world. Instead, one might want to base a definition of intelligence on notions such as the time it takes to obtain information, regardless of whether this information is obtained by sensing, by reasoning, or by querying resources using some language.</p>
 <p>It seems that we could obtain a simpler definition of intelligence by eliminating the complex framework required to by the system/environment model, which we haven’t even tried to define formally.</p>
 <p>Note that we may not need a formal definition of intelligence in order to design and implement software that achieves our goal of AGI. We’ll stick with the system/environment model as it corresponds closely to how machines are defined and constructed.</p>
-<h1 data-number="3" id="other-useful-definitions-of-intelligence" data-number="3"><span class="header-section-number">3</span> Other useful definitions of intelligence</h1>
-<h2 data-number="3.1" id="intuition" data-number="3.1"><span class="header-section-number">3.1</span> Intuition</h2>
+<h1 id="other-useful-definitions-of-intelligence"><span class="header-section-number">3</span> Other useful definitions of intelligence</h1>
+<h2 id="intuition"><span class="header-section-number">3.1</span> Intuition</h2>
 <p><em>General intelligence is the ability to become familiar with arbitrary structures.</em></p>
 <p>This view focuses on two main notions. The first one is that knowledge about the world can be modeled as some sort of graph that relates different concepts. The second notion is that not only any kind of knowledge can be acquired, but also that with enough exposure to the relevant information, an intelligent system can become capable of quickly making predictions and turning them into assumptions. For example, when seeing four fingers from a partially hidden human hand, one assumes unconsciously that there is a fifth finger hidden.</p>
 <p>In contrast, statistical learning or machine learning would lack the mechanisms allowing it to make good predictions for arbitrary data, hence the more restricted definition of learning:</p>
 <p><em>Learning is the ability to become familiar with some structures.</em></p>
 <p>Cognitive activities such as imagination, intuition, and unconscious bias are related and are characteristic of all systems capable of learning. Among them, systems capable of general intelligence distinguish themselves by the ability, given enough time, to correct or override unconscious bias.</p>
-<h2 data-number="3.2" id="self-control" data-number="3.2"><span class="header-section-number">3.2</span> Self-control</h2>
+<h2 id="self-control"><span class="header-section-number">3.2</span> Self-control</h2>
 <p><em>General intelligence is characterized by the ability to develop new behaviors and to adopt or maintain a behavior independently from the immediate environment.</em></p>
 <p>This characterization of intelligence is not a full definition, but more of a necessary condition of how a system should work internally for the system’s creators to maintain a hope of achieving general intelligence.</p>
 <p>A related definition mentions goals rather than behaviors but we treat them as roughly equivalent. A behavior is a way of a achieving a goal. It can be seen as the activation of a subsystem and the maintenance of this state for as long as the system is pursuing the goal. By preferring the term behavior over goal, we wish to leave aside the questions of consciousness and free will.</p>
 <p>A simple example is the decision for an animal to climb a mountain even though it requires a lot of energy. A naive individual might simply try to avoid going up whenever possible because it consumes energy, which requires finding more food. A more experienced individual may however push itself to go against its original instinct to not go uphill, and this would require a behavior or goal that could be called “exploration”. A long-term benefit would be to find a more prosperous valley on the other side of the mountain. Achieving this result necessitates adopting an originally unintuitive exploratory behavior. Once the whole mountain range has been explored, though, the system should switch to another behavior such as exploiting the newfound resources, while not spending too much effort climbing mountains.</p>
-<h1 data-number="4" id="considerations-about-the-methodology" data-number="4"><span class="header-section-number">4</span> Considerations about the methodology</h1>
-<h2 data-number="4.1" id="modularity-and-testability" data-number="4.1"><span class="header-section-number">4.1</span> Modularity and testability</h2>
+<h1 id="considerations-about-the-methodology"><span class="header-section-number">4</span> Considerations about the methodology</h1>
+<h2 id="modularity-and-testability"><span class="header-section-number">4.1</span> Modularity and testability</h2>
 <p>Successful software architectures are made up of components that can be tested independently. The reason for that is not structural. The human brain works extremely well despite a very intricate structure. However the human brain is not a machine in the sense that it wasn’t designed, built, and modified by engineers. Instead it evolved in the least efficient way, which happens to be how some programming beginners modify existing programs: by single mutations and repeated trial-and-error over the whole system. In the case of the human brain, it’s a process involving the life of one or multiple human individuals who carry a new version of a gene or some other genetic variant. Given favorable testing conditions in the environment, the proportion of individuals with this version of the gene will increase or decrease within the population, generation after generation. So it is possible to change a random line of code in a program and run the whole program in many possible scenarios. However, it is not only very slow to introduce new features or fix problems this way, it also results in incomprehensible source code that forces future engineers to adopt the same slow trial-and-error approach.</p>
 <p>In short, good software engineering practices must be used. The system is made up of components. Each component interacts with other components via a clear interface and shall be tested independently from the other components. A component itself is usually made up of subcomponents, with the same property of testability.</p>
-<h2 data-number="4.2" id="simplicity" data-number="4.2"><span class="header-section-number">4.2</span> Simplicity</h2>
+<h2 id="simplicity"><span class="header-section-number">4.2</span> Simplicity</h2>
 <p>A simpler system is not just cheaper to develop because of its reduced size. There are also fewer parameters to adjust manually, and such parameters are not always numeric. It could be that instead of one component, we have two components meant for different functions and they might slightly differ in their structure. We will try to avoid manually designing components of similar structure, whenever possible.</p>
-<h1 data-number="5" id="computational-model" data-number="5"><span class="header-section-number">5</span> Computational model</h1>
+<h1 id="computational-model"><span class="header-section-number">5</span> Computational model</h1>
 <p>For our system, as well as test environments, we prefer architectures and models that are as discrete as possible. It makes computation more straightforward with digital computers and it eliminates the need for debatable thresholds to determine the boundaries of various components.</p>
-<h2 data-number="5.1" id="discrete-time" data-number="5.1"><span class="header-section-number">5.1</span> Discrete time</h2>
+<h2 id="discrete-time"><span class="header-section-number">5.1</span> Discrete time</h2>
 <p>Our system’s unit of time, or tick, is defined by one computation cycle. The actual physical time it takes for the system to perform a cycle may vary. As we will eventually be concerned with interacting with the physical world, we design our system such that a computation cycle can terminate within a fixed amount of physical time, i.e. real-time, given realistic hardware.</p>
 <p>In particular, a computation cycle will be defined such that it is trivial to decompose it into simple steps that can be performed in parallel, assuming uniform random-access memory (RAM). Thus, accessing data from anywhere in the system has a bounded, reasonable cost in physical time. RAM may be an area where modern computers already surpass biological brains and we will take advantage of it since our goal is not to simulate such brain.</p>
-<h2 data-number="5.2" id="one-node-per-abstraction" data-number="5.2"><span class="header-section-number">5.2</span> One node per abstraction</h2>
+<h2 id="one-node-per-abstraction"><span class="header-section-number">5.2</span> One node per abstraction</h2>
 <p>Our system is made up of nodes of a small, fixed number of types. Nodes are connected together in certain ways to form a graph that allows information to propagate.</p>
 <p>A strong design principle that we follow is that once created and connected, the function of a node can be retraced by inspecting the structure of the graph.</p>
 <p>As a consequence, we design our system such that information propagates as an all-or-nothing signal along the edges of the graph. At a given time, a node is either active or inactive, never in an intermediate state. This is a fundamental difference with artificial neural networks (ANN).</p>
@@ -195,8 +176,8 @@ I(t_0, t_1, t_2, E, S) =
 <p>Sticking to the economy rule disallows logic gates that produce ones from only zeros, i.e. unary <em>not</em> or <em>neither-of</em> activation rules may not exist.</p>
 <p>The economy rule is implemented by inactivating all previously-active nodes unless they are activated by other nodes, of which at least one was previously active.</p>
 <p>The number <span class="math inline">\(\lvert S\rvert\)</span> of nodes needed to determine the state of another node is bounded. It is 1 or 2 in our current design. Therefore the cost of computing the next state of the nodes of the system is <span class="math inline">\(O(\lvert A\rvert)\)</span> when <span class="math inline">\(A\)</span> designates the set of active nodes at a given cycle, rather than the total number of nodes.</p>
-<h1 data-number="6" id="architecture" data-number="6"><span class="header-section-number">6</span> Architecture</h1>
-<h2 data-number="6.1" id="overview" data-number="6.1"><span class="header-section-number">6.1</span> Overview</h2>
+<h1 id="architecture"><span class="header-section-number">6</span> Architecture</h1>
+<h2 id="overview"><span class="header-section-number">6.1</span> Overview</h2>
 <p>As envisioned, our system is made up of three major components:</p>
 <ol type="1">
 <li>Pattern recognition subsystem: A built-in perception subsystem that reads inputs and activates internal nodes that represent concepts, i.e. patterns identified in the input.</li>
@@ -207,8 +188,8 @@ I(t_0, t_1, t_2, E, S) =
      alt="Overview"/></p>
 <p>The inside of the system is what carries information from the input nodes (squares <span class="math inline">\(\Box\)</span>) to the output nodes (triangles <span class="math inline">\(\rhd\)</span>). It views input nodes and output nodes as unordered sets, with no <em>a priori</em> knowledge of their role.</p>
 <p>Input nodes and output nodes can be more or less built-in, depending on the implementation. In any case, IO modules (3) are independent pieces of software that can create input nodes and output nodes freely, either during system initialization or later, dynamically. IO modules are responsible for activating and deactivating their input nodes, and they are supposed to read the binary state of the output nodes and do something with it.</p>
-<h2 data-number="6.2" id="perception" data-number="6.2"><span class="header-section-number">6.2</span> Perception</h2>
-<h3 data-number="6.2.1" id="input-nodes-and-internal-nodes" data-number="6.2.1"><span class="header-section-number">6.2.1</span> Input nodes and internal nodes</h3>
+<h2 id="perception"><span class="header-section-number">6.2</span> Perception</h2>
+<h3 id="input-nodes-and-internal-nodes"><span class="header-section-number">6.2.1</span> Input nodes and internal nodes</h3>
 <p>The subsystem in charge of pattern identification or perception is made up of nodes. At a given cycle or tick of the system’s clock, a node is either active or inactive. There are two kinds of nodes and they differ in the way they are activated. The input nodes, always represented by squares, are activated by IO modules. The other nodes are referred to as internal nodes or regular nodes and are activated by a pair of other nodes.</p>
 <p>The diagram below shows 4 input nodes and 3 internal nodes.</p>
 <p><img src="img/perception-nodes1.svg"
@@ -221,7 +202,7 @@ I(t_0, t_1, t_2, E, S) =
      alt="Slighly more realistic sample nodes"/></p>
 <p>It takes one tick of the clock to propagate information along an edge. An internal node <span class="math inline">\(C\)</span> constructed from nodes <span class="math inline">\((A,B)\)</span> is active at date <span class="math inline">\(t\)</span> if and only if nodes <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are active at date <span class="math inline">\(t-1\)</span>. It is inactive otherwise.</p>
 <p>Once an internal node is created, it will always receive information from the pair of nodes it was constructed from. It is an indicator of the current and recent input and implements a concept.</p>
-<h3 data-number="6.2.2" id="redundancy-issues" data-number="6.2.2"><span class="header-section-number">6.2.2</span> Redundancy issues</h3>
+<h3 id="redundancy-issues"><span class="header-section-number">6.2.2</span> Redundancy issues</h3>
 <p>Given some input nodes, infinitely many internal nodes can be constructed. The key of a successful design is to construct internal nodes that represent useful concepts or that are involved in the construction in useful concepts, without creating too many nodes that are either redundant or not useful.</p>
 <p>The diagram below shows how two internal nodes can be equivalent in the sense that their activity state is the same for any input. These are nodes denoted ABCD and ACBD, which are active at date <span class="math inline">\(t\)</span> iff each of the input nodes A, B, C, and D are active at date <span class="math inline">\(t-2\)</span>.</p>
 <p><img src="img/equivalent-nodes.svg"
@@ -229,7 +210,7 @@ I(t_0, t_1, t_2, E, S) =
 <p>More undesired redundancy could occur when multiple input nodes are equivalent. Since these input nodes are given and may not be removed from the system, we need a way to avoid producing redundant internal nodes. Here is such a case, where we assume that A and A’ are always active at the same time. We do not want to end up with the following construction where AB and A’B are equivalent:</p>
 <p><img src="img/correlated-input.svg"
      alt="Highly correlated input"/></p>
-<h3 data-number="6.2.3" id="criteria-that-make-an-internal-node-worth-creating" data-number="6.2.3"><span class="header-section-number">6.2.3</span> Criteria that make an internal node worth creating</h3>
+<h3 id="criteria-that-make-an-internal-node-worth-creating"><span class="header-section-number">6.2.3</span> Criteria that make an internal node worth creating</h3>
 <p>At this point, the best idea we have about what makes a good internal node are those two properties:</p>
 <ul>
 <li>No excessive similarity with any existing node</li>
@@ -274,7 +255,7 @@ successive states of B: 00011010 01110010<br />
    }
    {t_2 - t_1}
 \]</span></p>
-<h3 data-number="6.2.4" id="outline-of-a-growth-mechanism" data-number="6.2.4"><span class="header-section-number">6.2.4</span> Outline of a growth mechanism</h3>
+<h3 id="outline-of-a-growth-mechanism"><span class="header-section-number">6.2.4</span> Outline of a growth mechanism</h3>
 <p>An input node or an internal node holds a binary reversible state that we call maturity. An internal node can only be created from two mature nodes.</p>
 <p>A node <span class="math inline">\(A\)</span> is mature iff the following properties hold:</p>
 <ul>
@@ -294,12 +275,12 @@ successive states of B: 00011010 01110010<br />
 <li><span class="math inline">\(0.5 \le J(\alpha(D_1), \alpha(D_2)) &lt; 1\)</span></li>
 </ul>
 <p>The computation of <span class="math inline">\(\alpha(D_1)\)</span> and <span class="math inline">\(\alpha(D_2)\)</span> is delicate since the obvious, naive approach would consist in memorizing all the dates at which each node was ever active, which could take too much memory. A simple workaround is to only memorize the last 100 dates or so using delta encoding to reduce space requirements, and work out an estimate of the Jaccard index <span class="math inline">\(J\)</span> using only this recent data.</p>
-<h2 data-number="6.3" id="output-and-reinforcement" data-number="6.3"><span class="header-section-number">6.3</span> Output and reinforcement</h2>
-<h3 data-number="6.3.1" id="problem" data-number="6.3.1"><span class="header-section-number">6.3.1</span> Problem</h3>
+<h2 id="output-and-reinforcement"><span class="header-section-number">6.3</span> Output and reinforcement</h2>
+<h3 id="problem"><span class="header-section-number">6.3.1</span> Problem</h3>
 <p>Given a set of nodes <span class="math inline">\(V\)</span> and a set of output nodes <span class="math inline">\(W\)</span>, determine by trial-and-error a mapping from <span class="math inline">\(V\)</span> to <span class="math inline">\(W\)</span> that maximizes our global objective function <span class="math inline">\(\phi\)</span> over a period following each action picked from <span class="math inline">\(W\)</span>.</p>
 <p><span class="math inline">\(V\)</span> are internal nodes, which at a given instant are either active or inactive. Some or all active nodes from <span class="math inline">\(V\)</span> are allowed to perform an action triggered by an output node. Among the internal nodes, some are not yet permanently bound to a specific output node while others may have have established a stable connection to a particular output.</p>
 <p>The challenge is that initially the output nodes are not connected or clustered in regions. There is no <em>a priori</em> knowledge of which pairs of output nodes are likely to produce similar outcomes. A simple example would be 10 output nodes, each corresponding to a specific speed of a vehicle in the set <span class="math inline">\(\left\{ 0, 1, \dots, 9 \right\}\)</span>. In this simple case, we know that speeds closer to 5 are 4 and 6. However the system doesn’t know this initially. We want the system to find out by itself that when some nodes from <span class="math inline">\(V\)</span> are equally successful with two outputs <span class="math inline">\(w_1\)</span> and <span class="math inline">\(w_2\)</span>, this indicates that <span class="math inline">\(w_1\)</span> and <span class="math inline">\(w_2\)</span> are similar, for this specific level of success.</p>
-<h3 data-number="6.3.2" id="desired-result" data-number="6.3.2"><span class="header-section-number">6.3.2</span> Desired result</h3>
+<h3 id="desired-result"><span class="header-section-number">6.3.2</span> Desired result</h3>
 <p>We wish to connect a set <span class="math inline">\(W\)</span> of outputs into a labeled graph that can be used to quickly explore and find a good output for a given internal node in <span class="math inline">\(V\)</span>. The graph shall be similar to a map, where the time it takes to follow an edge is constant and the label associated with the edge is the estimated distance between the nodes. The distance between two nodes <span class="math inline">\(w_1\)</span> and <span class="math inline">\(w_2\)</span> is denoted <span class="math inline">\(d(w_1, w_2)\)</span>.</p>
 <p>Although output nodes typically don’t belong to an Euclidean space, the metric may be <strong>locally</strong> compatible with a Euclidean space of some dimensionality. We’ll refer to this idea informally as <em>local dimensionality</em>, even though we don’t have any explicit representation of coordinates at any time. We define the locality of a node <span class="math inline">\(w\)</span> as the set of nodes at a certain distance from <span class="math inline">\(w\)</span>:</p>
 <p><span class="math display">\[
@@ -349,7 +330,7 @@ d(u,v) &amp; \ge \sqrt{2} \max(B_i) \\
 <li>Non-redundant nearest neighbors can be reached in one hop.</li>
 <li>The number of edges per node is moderate, depending on local dimensionality at the given scale.</li>
 </ul>
-<h3 data-number="6.3.3" id="outline-of-a-possible-multi-scale-crawl-algorithm" data-number="6.3.3"><span class="header-section-number">6.3.3</span> Outline of a possible multi-scale crawl algorithm</h3>
+<h3 id="outline-of-a-possible-multi-scale-crawl-algorithm"><span class="header-section-number">6.3.3</span> Outline of a possible multi-scale crawl algorithm</h3>
 <p>We have a set of nodes <span class="math inline">\(V\)</span> and a set of output nodes <span class="math inline">\(W\)</span>. Both sets are growing and are initially nonempty.</p>
 <p>At each cycle, the nodes that can trigger actions by activating outputs are the following:</p>
 <ul>
@@ -374,45 +355,45 @@ d(u,v) &amp; \ge \sqrt{2} \max(B_i) \\
 <li>Feedback analysis: Determine the contribution to the mood signal of each pair <span class="math inline">\((v, w)\)</span>, such that a local function analog to a “wavelet” is associated with each action. The sum of these functions would constitute a predictive model of the mood function. This would solve the problem of isolating the effect of a specific action on the mood function, since many actions may have overlapping effects.</li>
 <li>Stability control: The goal would be to not have too many nodes explore new actions simultaneously, while still letting safe actions take place. We could restrict the number of simultaneously active nodes that trigger an action in order to guarantee some minimum stability.</li>
 </ul>
-<h3 data-number="6.3.4" id="dealing-with-high-local-dimensionality" data-number="6.3.4"><span class="header-section-number">6.3.4</span> Dealing with high local dimensionality</h3>
+<h3 id="dealing-with-high-local-dimensionality"><span class="header-section-number">6.3.4</span> Dealing with high local dimensionality</h3>
 <p>The success of the approach rests upon having relatively few members per bucket, i.e. having low local dimensionalities at any scale.</p>
 <p>High dimensionalities can arise when many independent outputs exist. An example would be a large number of pairs of outputs that set or clear a bit used as explicit memory (see section on IO modules). I suspect that large memory arrays cannot be used effectively by an intelligent system without resorting to special-purpose algorithms.</p>
 <p>The best we can do is report situations where a bucket is getting full, and correct the design of the system by not creating the problematic outputs.</p>
 <p>We can also set a maximum bucket capacity, in which case the optimization speed is expected to degrade. The exact nature and impact of such degradation is unclear at this time.</p>
-<h1 data-number="7" id="sample-internal-io-modules" data-number="7"><span class="header-section-number">7</span> Sample internal IO modules</h1>
+<h1 id="sample-internal-io-modules"><span class="header-section-number">7</span> Sample internal IO modules</h1>
 <p>An IO module is a bundle of input nodes and output nodes. It controls the activity of its input nodes and performs actions that depend on the state of its output nodes.</p>
 <p>Automatic IO modules are meant to be created by the core implementation of the system, as the system grows in a certain way.</p>
 <p>Other IO modules can be implemented as optional plugins which would either not create new inputs or new outputs after the initial setup or grow somewhat independently from the rest of the system.</p>
-<h2 data-number="7.1" id="automatic-io-modules" data-number="7.1"><span class="header-section-number">7.1</span> Automatic IO modules</h2>
-<h3 data-number="7.1.1" id="automatic-activity-feedback-and-action-feedback" data-number="7.1.1"><span class="header-section-number">7.1.1</span> Automatic activity feedback and action feedback</h3>
+<h2 id="automatic-io-modules"><span class="header-section-number">7.1</span> Automatic IO modules</h2>
+<h3 id="automatic-activity-feedback-and-action-feedback"><span class="header-section-number">7.1.1</span> Automatic activity feedback and action feedback</h3>
 <p><img src="img/activity-feedback.svg"
      alt="Automatic activity and action feedback"/></p>
 <p>An activity feedback module consists in one input node for each node <span class="math inline">\(v\)</span> that has ever been a dominant node. This input node is activated each time <span class="math inline">\(v\)</span> becomes active and dominant. It allows the system to sense that a certain node was dominant.</p>
 <p>An action feedback module is an input node connected to an output node. It allows the system to sense that a certain action was triggered.</p>
-<h3 data-number="7.1.2" id="reminiscence" data-number="7.1.2"><span class="header-section-number">7.1.2</span> Reminiscence</h3>
+<h3 id="reminiscence"><span class="header-section-number">7.1.2</span> Reminiscence</h3>
 <p><img src="img/reminiscence.svg"
      alt="Reminiscence"/></p>
 <p>For each once-dominant node, a reminiscence module is created as shown above. Each time the node is active again (dominant or not), the input node is activated. That same input node can be activated via a dedicated output node chosen by any dominant node. As a result, the input node is always active one tick after the original node and can also be activated artificially, triggering the same effects as a natural activation.</p>
-<h2 data-number="7.2" id="optional-io-modules" data-number="7.2"><span class="header-section-number">7.2</span> Optional IO modules</h2>
+<h2 id="optional-io-modules"><span class="header-section-number">7.2</span> Optional IO modules</h2>
 <p>It’s not clear how useful these simple modules are in practice or how many of them we would create.</p>
-<h3 data-number="7.2.1" id="a-simple-feedback-loop-the-transmitter" data-number="7.2.1"><span class="header-section-number">7.2.1</span> A simple feedback loop, the transmitter</h3>
+<h3 id="a-simple-feedback-loop-the-transmitter"><span class="header-section-number">7.2.1</span> A simple feedback loop, the transmitter</h3>
 <p><img src="img/transmitter.svg"
      alt="Transmitter module"/></p>
 <p>This module would provide a simple loop, ultimately allowing different nodes to activate the same input node.</p>
-<h3 data-number="7.2.2" id="single-bit-state" data-number="7.2.2"><span class="header-section-number">7.2.2</span> Single-bit state</h3>
+<h3 id="single-bit-state"><span class="header-section-number">7.2.2</span> Single-bit state</h3>
 <p><img src="img/single-bit-state.svg"
      alt="Single-bit state module"/></p>
 <p>This is a memory module that can hold one bit. One output node sets the bit to 0 and another sets the bit to 1. The state is read by two input nodes, i.e. at any time exactly one of the input nodes is active.</p>
-<h3 data-number="7.2.3" id="activator" data-number="7.2.3"><span class="header-section-number">7.2.3</span> Activator</h3>
+<h3 id="activator"><span class="header-section-number">7.2.3</span> Activator</h3>
 <p><img src="img/activator.svg"
      alt="Activator module"/></p>
 <p>This is a simplified form of the single-state module described above. It has only one input node, activated when the state is 1.</p>
-<h3 data-number="7.2.4" id="toggle-or-2-state-round-robin" data-number="7.2.4"><span class="header-section-number">7.2.4</span> Toggle or 2-state round robin</h3>
+<h3 id="toggle-or-2-state-round-robin"><span class="header-section-number">7.2.4</span> Toggle or 2-state round robin</h3>
 <p><img src="img/toggle.svg"
      alt="Toggle module"/></p>
 <p>This module holds a bit whose value flips each time the output node is activated.</p>
-<h1 data-number="8" id="test-environments" data-number="8"><span class="header-section-number">8</span> Test environments</h1>
-<h2 data-number="8.1" id="testing-pure-pattern-identification-small-bw-images" data-number="8.1"><span class="header-section-number">8.1</span> Testing pure pattern identification: small B&amp;W images</h2>
+<h1 id="test-environments"><span class="header-section-number">8</span> Test environments</h1>
+<h2 id="testing-pure-pattern-identification-small-bw-images"><span class="header-section-number">8.1</span> Testing pure pattern identification: small B&amp;W images</h2>
 <p><img src="img/grid.png"
      alt="5x5 black and white grid"
      style="display:block; margin:auto; width:50%"/></p>
@@ -425,8 +406,8 @@ d(u,v) &amp; \ge \sqrt{2} \max(B_i) \\
 <li>A small number of input nodes makes it easy to create expectations and tests.</li>
 <li>These grids are easy to reproduce on paper or in other written documents, unlike video or audio.</li>
 </ul>
-<h2 data-number="8.2" id="testing-reinforcement-reconstruct-arbitrary-topologies" data-number="8.2"><span class="header-section-number">8.2</span> Testing reinforcement: reconstruct arbitrary topologies</h2>
-<h3 data-number="8.2.1" id="the-guessing-game" data-number="8.2.1"><span class="header-section-number">8.2.1</span> The Guessing Game</h3>
+<h2 id="testing-reinforcement-reconstruct-arbitrary-topologies"><span class="header-section-number">8.2</span> Testing reinforcement: reconstruct arbitrary topologies</h2>
+<h3 id="the-guessing-game"><span class="header-section-number">8.2.1</span> The Guessing Game</h3>
 <p>Let <span class="math inline">\(W\)</span> be a set a elements, and <span class="math inline">\(d\)</span> a metric on <span class="math inline">\(W\)</span>. Let <span class="math inline">\(R\)</span> be a sequence of elements taken from <span class="math inline">\(W\)</span>.</p>
 <p>A system playing the game is given the identifiers of the elements in <span class="math inline">\(W\)</span> but <span class="math inline">\(d\)</span> and <span class="math inline">\(R\)</span> remain hidden from the player by the operator of the game.</p>
 <p>The goal of the game is to guess the elements in <span class="math inline">\(R\)</span>, one after the other, as required by the operator, and doing so in as few guesses as possible. The attempts at guessing one element correctly is called a round. A game is a sequence of <span class="math inline">\(|R|\)</span> rounds.</p>
@@ -436,14 +417,14 @@ d(u,v) &amp; \ge \sqrt{2} \max(B_i) \\
 <li>the operator responding with <span class="math inline">\(d(w, r_i)\)</span>.</li>
 </ul>
 <p>The round ends when the guess is correct, i.e. when <span class="math inline">\(d(w, r_i) = 0\)</span>.</p>
-<h3 data-number="8.2.2" id="objective" data-number="8.2.2"><span class="header-section-number">8.2.2</span> Objective</h3>
+<h3 id="objective"><span class="header-section-number">8.2.2</span> Objective</h3>
 <p>The goal of the guessing game is to evaluate the part of our AGI system that searches for appropriate actions for a given active internal node. Feedback collected after the action is interpreted as a distance that we try to minimize. The Guessing Game represents an ideal world where the feedback from each action triggered by a given node is always the same and where a perfect action exists for each node.</p>
 <p>The system should be able to figure out the topology of <span class="math inline">\(W\)</span> and ways to navigate <span class="math inline">\(W\)</span> more and more efficiently as it gathers distance information.</p>
 <p>Simple examples are swarms of points embedded in euclidean spaces, such as the following:</p>
 <p><img src="img/flag.svg"
      alt="Simple 1D/2D flag topology"
      style="width:100%"/></p>
-<h2 data-number="8.3" id="full-test-competition-for-resources-on-a-2d-grid" data-number="8.3"><span class="header-section-number">8.3</span> Full test: competition for resources on a 2D grid</h2>
+<h2 id="full-test-competition-for-resources-on-a-2d-grid"><span class="header-section-number">8.3</span> Full test: competition for resources on a 2D grid</h2>
 <p>There are two major goals in setting up a framework for evaluating the intelligence of a system:</p>
 <ul>
 <li>observability of the system and its environment:
@@ -464,7 +445,7 @@ d(u,v) &amp; \ge \sqrt{2} \max(B_i) \\
 <li>all the systems and the physics of the world are synchronized using the same discrete clock.</li>
 </ul>
 <p>While there’s no expectation to evolve systems using some sort of natural selection or genetic algorithm, this setup naturally allows it.</p>
-<h1 data-number="9" id="next-steps" data-number="9"><span class="header-section-number">9</span> Next steps</h1>
+<h1 id="next-steps"><span class="header-section-number">9</span> Next steps</h1>
 <p>It seems reasonable at this point to pick one testable component of the system, refine its design and implement it. Current candidates include:</p>
 <ul>
 <li>Perception subsystem: with inputs but no outputs, observe the detection of patterns</li>

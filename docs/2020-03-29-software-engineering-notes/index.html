@@ -6,28 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Martin Jambon, March 2020" />
   <title>Software Engineering Notes</title>
-  <style>
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
   </style>
   <link rel="stylesheet" href="../blog.css" />
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
   <meta name=viewport content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Language" content="en">
 </head>
 <body>
-
 <header id="title-block-header">
 <h1 class="title">Software Engineering Notes</h1>
 <p class="author">Martin Jambon, March 2020</p>
 </header>
-<nav id="TOC" role="doc-toc">
+<nav id="TOC">
 <ul>
 <li><a href="#tell-us-why-we-need-that-code"><span class="toc-section-number">1</span> Tell us why we need that code</a></li>
 <li><a href="#dont-break-my-focus"><span class="toc-section-number">2</span> Don’t break my focus</a></li>
@@ -44,7 +38,7 @@
 </nav>
 <p>Many of these rules are highly counter-intuitive to inexperienced programmers and engineering managers. Use responsibly. 🙂</p>
 <!-- toc -->
-<h1 data-number="1" id="tell-us-why-we-need-that-code" data-number="1"><span class="header-section-number">1</span> Tell us why we need that code</h1>
+<h1 id="tell-us-why-we-need-that-code"><span class="header-section-number">1</span> Tell us why we need that code</h1>
 <p>Rule: When producing a piece of code of any size, make sure it comes with a concise explanation of <em>why</em> it has to exist.</p>
 <p>Answers to the following questions must be obvious to a naive reader:</p>
 <ul>
@@ -74,12 +68,12 @@
 <li>Bugs: New contributors start making changes without understanding their implications. Bad code piles up. New contributors are hired to keep up with maintenance.</li>
 <li>10x programmers are born. The infamous “10x programmer” is one who delivers inscrutable code at a fast rate. They leave other contributors puzzled and unable to extend it or fix it. Team productivity tanks.</li>
 </ul>
-<h1 data-number="2" id="dont-break-my-focus" data-number="2"><span class="header-section-number">2</span> Don’t break my focus</h1>
+<h1 id="dont-break-my-focus"><span class="header-section-number">2</span> Don’t break my focus</h1>
 <p>Rule: It’s fine to interrupt a programmer only for things that don’t require them to focus on something else. For everything else, use asynchronous communication.</p>
 <p>Examples: Interrupting someone to ask for their home address is usually ok. Interrupting someone to ask them what they think of a piece of code is not acceptable.</p>
 <p>If followed: Programmer gets their job done.</p>
 <p>If not followed: 30 minutes are needed to refocus after each interruption.</p>
-<h1 data-number="3" id="supervisor-could-fill-in-for-me" data-number="3"><span class="header-section-number">3</span> Supervisor could fill in for me</h1>
+<h1 id="supervisor-could-fill-in-for-me"><span class="header-section-number">3</span> Supervisor could fill in for me</h1>
 <p>Rule: The programmer’s supervisor, if any, must be able to take over the programmer’s job were they to leave the team.</p>
 <p>If followed:</p>
 <ul>
@@ -95,12 +89,12 @@
 <li>Supervisor is useless as a supervisor.</li>
 </ul>
 <p><a name="eliminate"></a></p>
-<h1 data-number="4" id="eliminate-future-tasks" data-number="4"><span class="header-section-number">4</span> Eliminate future tasks</h1>
+<h1 id="eliminate-future-tasks"><span class="header-section-number">4</span> Eliminate future tasks</h1>
 <p>Rule: If the programmer can eliminate future work for themselves or for their peers, they should take the time to do so.</p>
 <p>It is important that the manager sees this as well and supports such unscheduled tasks. See also the “<a href="#deadlines">No deadlines</a>” rule.</p>
 <p>Example: Take a month to create a tool that will eliminate two years of work across the team.</p>
 <p><a name="deadlines"></a></p>
-<h1 data-number="5" id="no-deadlines" data-number="5"><span class="header-section-number">5</span> No deadlines</h1>
+<h1 id="no-deadlines"><span class="header-section-number">5</span> No deadlines</h1>
 <p>Rule: Eliminate deadlines as much as possible.</p>
 <p>Justification:</p>
 <ul>
@@ -118,7 +112,7 @@
 <li>Low productivity due to lack of clean-up efforts.</li>
 <li>Team spends time fixing bugs.</li>
 </ul>
-<h1 data-number="6" id="consistent-incentives" data-number="6"><span class="header-section-number">6</span> Consistent incentives</h1>
+<h1 id="consistent-incentives"><span class="header-section-number">6</span> Consistent incentives</h1>
 <p>Rule: Managers must set incentives consistently with best software engineering practices. They must identify and eliminate counter-productive incentives.</p>
 <p>Examples:</p>
 <ul>
@@ -127,7 +121,7 @@
 <li>Encourage initiative.</li>
 <li>Reward automation proportionally to cost savings.</li>
 </ul>
-<h1 data-number="7" id="zero-effort-build" data-number="7"><span class="header-section-number">7</span> Zero-effort build</h1>
+<h1 id="zero-effort-build"><span class="header-section-number">7</span> Zero-effort build</h1>
 <p>Rule: Any project can be built, tested, and deployed without thinking.</p>
 <p>Example: A project is trivially built, tested, and installed with the following commands:</p>
 <ul>
@@ -136,12 +130,12 @@
 <li><code>make install</code></li>
 </ul>
 <p>Any deviation from this scheme adds to the cognitive burden of the person who needs to build the project.</p>
-<h1 data-number="8" id="routine-build-under-2-minutes" data-number="8"><span class="header-section-number">8</span> Routine build under 2 minutes</h1>
+<h1 id="routine-build-under-2-minutes"><span class="header-section-number">8</span> Routine build under 2 minutes</h1>
 <p>Rule: A routine <code>make</code> invocation should be short enough for the developer to <em>not lose focus</em>. This is 1 to 2 minutes.</p>
 <p>Beyond that, the developer loses focus and starts looking at other things. Prevent that context switch.</p>
 <p>If followed: No interruptions. Happiness. Things get done fast.</p>
 <p>If not followed: Developer has to wait 5 minutes for their code to compile or pass tests. They go and check their email or company chat. Or maybe they go get coffee or a snack. The 5-min break turns into a 15-min or 30-min break. Employee gets back to their desk and needs to refocus. This adds another 5-10 minutes. In the end, it’s a series 20-min to 40-min breaks interleaved with 10-20 minutes of coding. Nothing gets done fast. Programmer gets sad.</p>
-<h1 data-number="9" id="accountability-for-technical-choices" data-number="9"><span class="header-section-number">9</span> Accountability for technical choices</h1>
+<h1 id="accountability-for-technical-choices"><span class="header-section-number">9</span> Accountability for technical choices</h1>
 <p>Rule: Let the programmer choose their tools and hold them accountable.</p>
 <blockquote>
 <p>“A good craftsman never blames his tools”</p>
@@ -164,11 +158,11 @@
 <li>Nobody really owns successes or failures.</li>
 <li>Team members stop caring.</li>
 </ul>
-<h1 data-number="10" id="group-culture-sticks" data-number="10"><span class="header-section-number">10</span> Group culture sticks</h1>
+<h1 id="group-culture-sticks"><span class="header-section-number">10</span> Group culture sticks</h1>
 <p>Rule: Don’t change a culture, replace it.</p>
 <p>The culture of a group of people never shifts progressively to a different culture. You can only leave the group, join another group, or start a new group. A culture is defined by a set of behaviors. When these behaviors get in the way of effective software engineering, the group will fail rather than change.</p>
 <p>This is why acqui-hires, i.e. the hiring of a successful group of workers, is valuable to large companies. By joining as a group, these workers hopefully keep doing things the way they used to, instead of adopting the unsuccessful practices of the hiring company.</p>
-<h1 data-number="11" id="dont-do-what-you-dont-understand" data-number="11"><span class="header-section-number">11</span> Don’t do what you don’t understand</h1>
+<h1 id="dont-do-what-you-dont-understand"><span class="header-section-number">11</span> Don’t do what you don’t understand</h1>
 <p>Rule: If you don’t know what it’s for and why it should work, don’t use it. Drop it. This applies to rules, tools, methods, and processes at all levels of an organization.</p>
 <p>Of course, this applies to the rules mentioned in this article! Don’t apply them if they’re not justified in your situation.</p>
 <p>Justification: Shallow imitation or “<a href="https://en.wikipedia.org/wiki/Cargo_cult">cargo cult</a>” comes at a cost:</p>
