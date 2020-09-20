@@ -1,0 +1,93 @@
+---
+# Editing guidelines:
+#
+# - Keep it easy to maintain.
+# - Only add a term if it has a crystal-clear definition.
+# - When two terms are synonymous, redirect one to the other.
+# - Warn against terms with context-sensitive definitions and
+#   discourage their use when context is unclear.
+# - Terms with standard definitions can have an entry in this
+#   dictionary, but for the sake of simplicity they should say so and not
+#   attempt to redefine the term precisely.
+# - Context about how and when a term is used is welcome. This
+#   generally involves concepts for which a definition will be given
+#   only later.
+#
+- term: world
+  def: >-
+    A subject of study plus everything that interacts with it
+    directly or indirectly. It is normally referred to as "the"
+    world because it is everything that exists. There is no mathematical
+    definition for it.
+    Referring to multiple worlds or to "a" world is an abuse of language
+    indicating a model of the world that is made up of multiple independent
+    models.
+
+- term: model
+  def: >-
+    An unambiguous representation of the [world]. As such, a model can
+    in principle be translated into another language and recovered
+    back without loss.
+    A model is necessarily simpler than the world in which it can be
+    expressed.
+
+- term: time
+  def: >-
+    An ordering over the states of a [model]. Time is the breakdown of a
+    model into a sequence of objects called states with constraints
+    over those states.
+    A more specific definition of time is part of each model, if the
+    model relies on such notion of time or successive states.
+    Unless otherwise specified, the stepwise execution of computer
+    programs uses a discrete, nonnegative index t
+    to reference the successive steps of a computation. An ideal
+    scenario is a computation of discrete states starting from an
+    initial state t = 0 and a transition function. The transition
+    function computes the next state from the previous one. Such
+    computations are called simulations.
+    More generally however, when there is no need for computing successive
+    states, time is usually modeled as the real line.
+
+- term: individual
+  def: >-
+    In a [model] of the [world], an individual is a mutable
+    entity which interacts with the rest of world, including other
+    individuals. Each individual exists for some continuous period of
+    [time], usually in a binary fashion: at a given time, the individual
+    either exists or doesn't exist.
+  syn:
+    - individuals
+
+- term: artificial
+  def: >-
+    The property of being created by [individuals], as
+    opposed to being imposed by the [model] of the [world] in which the
+    individuals exist.
+
+- term: identity
+  def: >-
+    The collection of properties associated with an [individual].
+  syn:
+    - identities
+
+- term: set
+  def: >-
+    A set as defined in mathematics by the axioms of set theory.
+  syn:
+    - sets
+
+- term: rule
+  def: >-
+    An [artificial] constraint. Unlike a physical constraint which can
+    apply to various portions of a model, an artificial constraint
+    applies to [individual] members of a society, and said members can
+    decide whether to follow it.
+  syn:
+    - rules
+
+- term: society
+  def: >-
+    A [set] of [individuals] known as society members within
+    a [model] of the [world], and associated with [rules].
+  syn:
+    - societies

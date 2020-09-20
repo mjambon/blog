@@ -1,0 +1,28 @@
+#! /bin/bash
+#
+# Compile the glossary in yaml/vanity format into HTML.
+# This produces a DAG of the terms.
+#
+# This script must be called manually each time the source glossary is edited.
+# It produces files in the format supported by blog's generic makefile rules:
+# - index.md
+# - img/
+
+set -eu
+
+mkdir -p _build
+vanity -t dot < glossary.yml | tred > _build/glossary-deps.dot
+dot -Tpng _build/glossary-deps.dot -o img/glossary-deps.png
+
+(
+  cat before-body.html
+  vanity < glossary.yml
+  cat after-body.html
+) > _build/glossary.html
+
+(
+  cat <<EOF
+% Dictionary
+EOF
+  pandoc -t markdown _build/glossary.html
+) > index.md
