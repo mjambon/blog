@@ -59,6 +59,12 @@ still ongoing as of 2020. It is now closed-source.
 * [Intelligence precedes machines](2014-12-31-intelligence-precedes-machines)
   (December 2014)
 
+### Unfinished or in progress
+
+* [Dictionary](2020-09-12-dictionary): an attempt to express my
+  views about everything as a set of definitions, in a format that
+  encourages consistency.
+
 Miscellaneous blog posts
 --
 
