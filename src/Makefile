@@ -72,7 +72,7 @@ $(DOCROOT)/%/index.html: %/index.md \
   date=$$(echo $@ | grep -o '[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]'); \
   pandoc $< \
     -f markdown+pandoc_title_block -t html5 \
-    -s --mathjax \
+    -s --mathjax='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_CHTML-full' \
     -c ../blog.css -B before-body.html -A after-body.html -H head.html \
     $$options \
   | sed -e "s/@@DATE@@/$$date/g" > $@
