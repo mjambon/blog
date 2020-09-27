@@ -65,10 +65,25 @@
   syn:
     - individuals
 
+- term: system
+  def: >-
+    A system refers to a partial [model]. It can be obtained by
+    taking some elements of a [world] model and ignoring all
+    interactions with the rest of the world, or by modeling the rest of
+    the world in a simpler manner than in the original model. For
+    example, modeling a car could consist in retaining a model of the
+    car components as well as a model of a road and how the car
+    interacts with the road, discarding all other elements of the
+    world such as buildings and trees. In this example, the car is the
+    system and the road is the rest of the world.
+  syn:
+    - systems
+
 - term: environment
   def: >-
-    In a [model] comprising [individuals], the environment refers to
-    everything in the model that's not part of the individual.
+    In a [model] comprising [systems], the environment refers to
+    everything in the model that's not part of the system under
+    consideration.
   syn:
     - environments
 

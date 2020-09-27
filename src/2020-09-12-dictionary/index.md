@@ -43,11 +43,22 @@ individuals. Each individual exists for some continuous period of
 fashion: at a given time, the individual either exists or doesn\'t
 exist.]{.vanity-contents}
 
+[]{#vanity-73797374656d}**system**: [A system refers to a partial
+[model](#vanity-6d6f64656c){.vanity-term-link}. It can be obtained by
+taking some elements of a [world](#vanity-776f726c64){.vanity-term-link}
+model and ignoring all interactions with the rest of the world, or by
+modeling the rest of the world in a simpler manner than in the original
+model. For example, modeling a car could consist in retaining a model of
+the car components as well as a model of a road and how the car
+interacts with the road, discarding all other elements of the world such
+as buildings and trees. In this example, the car is the system and the
+road is the rest of the world.]{.vanity-contents}
+
 []{#vanity-656e7669726f6e6d656e74}**environment**: [In a
 [model](#vanity-6d6f64656c){.vanity-term-link} comprising
-[individuals](#vanity-696e646976696475616c){.vanity-term-link}, the
-environment refers to everything in the model that\'s not part of the
-individual.]{.vanity-contents}
+[systems](#vanity-73797374656d){.vanity-term-link}, the environment
+refers to everything in the model that\'s not part of the system under
+consideration.]{.vanity-contents}
 
 []{#vanity-6172746966696369616c}**artificial**: [The property of being
 created by
