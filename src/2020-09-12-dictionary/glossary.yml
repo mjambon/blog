@@ -12,16 +12,21 @@
 # - Context about how and when a term is used is welcome. This
 #   generally involves concepts for which a definition will be given
 #   only later.
+# - State prerequisites.
+# - Give examples.
 #
 - term: world
   def: >-
     A subject of study plus everything that interacts with it
     directly or indirectly. It is normally referred to as "the"
-    world because it is everything that exists. There is no mathematical
-    definition for it.
-    Referring to multiple worlds or to "a" world is an abuse of language
-    indicating a model of the world that is made up of multiple independent
-    models.
+    world because it is everything that exists from the subject's
+    perspective. An interaction can be modeled as a flow of
+    information, for some definition of information to be specified.
+    A world is isolated from everything else, and therefore anything
+    modeled within the world cannot learn anything about the existence
+    or the nature of other worlds.
+  syn:
+    - worlds
 
 - term: model
   def: >-
@@ -30,6 +35,8 @@
     back without loss.
     A model is necessarily simpler than the world in which it can be
     expressed.
+  syn:
+    - models
 
 - term: time
   def: >-
@@ -57,6 +64,13 @@
     either exists or doesn't exist.
   syn:
     - individuals
+
+- term: environment
+  def: >-
+    In a [model] comprising [individuals], the environment refers to
+    everything in the model that's not part of the individual.
+  syn:
+    - environments
 
 - term: artificial
   def: >-
@@ -91,3 +105,41 @@
     a [model] of the [world], and associated with [rules].
   syn:
     - societies
+
+- term: tool
+  def: >-
+    A tool, in the very general sense that interests us, is an extension
+    of what's normally considered the body of an individual and
+    facilitates their interaction with the [environment]. This
+    definition includes all machines, methods, and processes stored
+    outside of the normal body of an individual. In the usual human world,
+    this includes not just physical devices such as a hammer or a
+    computer, but also all data stored outside the body such as books
+    and other recordings. Therefore, other individuals can also be
+    considered as tools according this definition.
+  syn:
+    - tools
+    - machine
+    - machines
+    - method
+    - methods
+    - process
+    - processes
+
+- term: science
+  def: >-
+    The activity consisting in creating and refining [models] of the
+    [world].
+
+- term: engineering
+  def: >-
+    The activity of making [tools].
+
+- term: mathematics
+  def: >-
+    The study of the structure of unambiguous statements. Mathematics
+    are useful for dealing with [models] in [science], [engineering], and
+    other fields of study.
+  syn:
+    - math
+    - maths
