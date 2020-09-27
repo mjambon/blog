@@ -1,9 +1,27 @@
 % Dictionary
-This is an attempt to construct a dictionary of various terms which I
+I\'ve always wanted to communicate my general thoughts about the world
+but didn\'t want to write a book for a few reasons. First, I have
+limited talent for writing and I\'m not particularly interested in the
+art of storytelling. Second, my thoughts change and by the time I would
+be done writing a chapter, I would have changed my mind about it and
+would have to rewrite the whole chapter, if not the rest of the book.
+Third, concepts don\'t follow a particular order like a good story. Some
+terms are defined independently from each other and the reader should
+not have to read one before the other, nor should they have to work hard
+to guess which chapters can be safely skipped. This is why instead of a
+book made of chapters and paragraphs, I\'ve decided to use a dictionary
+format, with the additional constraint that there be no cyclic
+definitions.
+
+The avoidance of mutually-dependent definitions results in an acyclic
+[dependency graph](#dag) shown at the bottom of this page. It gives the
+reader a quick view of which concepts are more foundational than others.
+
+This dictionary is an attempt to define or clarify various terms I
 consider important and unambiguous in my view of the world. Emphasis is
-placed on simplicity, consistency, and approachability. This document is
-meant to evolve on a continuous basis rather than being the subject of
-official releases.
+placed on simplicity, consistency, and approachability. If I deem the
+approach successful, the document will [grow and evolve over
+time](https://github.com/mjambon/blog/commits/master/src/2020-09-12-dictionary/glossary.yml).
 
 []{#vanity-776f726c64}**world**: [A subject of study plus everything
 that interacts with it directly or indirectly. It is normally referred
