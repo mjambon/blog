@@ -55,16 +55,6 @@
     More generally however, when there is no need for computing successive
     states, time is usually modeled as the real line.
 
-- term: individual
-  def: >-
-    In a [model] of the [world], an individual is a mutable
-    entity which interacts with the rest of world, including other
-    individuals. Each individual exists for some continuous period of
-    [time], usually in a binary fashion: at a given time, the individual
-    either exists or doesn't exist.
-  syn:
-    - individuals
-
 - term: system
   def: >-
     A system refers to a partial [model]. It can be obtained by
@@ -86,6 +76,16 @@
     consideration.
   syn:
     - environments
+
+- term: individual
+  def: >-
+    In a [model] of the [world], an individual is a mutable
+    [system] which interacts with the rest of world, including other
+    individuals. Each individual exists for some continuous period of
+    [time], usually in a binary fashion: at a given time, the individual
+    either exists or doesn't exist.
+  syn:
+    - individuals
 
 - term: artificial
   def: >-

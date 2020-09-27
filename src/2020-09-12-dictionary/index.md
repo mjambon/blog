@@ -34,15 +34,6 @@ computations are called simulations. More generally however, when there
 is no need for computing successive states, time is usually modeled as
 the real line.]{.vanity-contents}
 
-[]{#vanity-696e646976696475616c}**individual**: [In a
-[model](#vanity-6d6f64656c){.vanity-term-link} of the
-[world](#vanity-776f726c64){.vanity-term-link}, an individual is a
-mutable entity which interacts with the rest of world, including other
-individuals. Each individual exists for some continuous period of
-[time](#vanity-74696d65){.vanity-term-link}, usually in a binary
-fashion: at a given time, the individual either exists or doesn\'t
-exist.]{.vanity-contents}
-
 []{#vanity-73797374656d}**system**: [A system refers to a partial
 [model](#vanity-6d6f64656c){.vanity-term-link}. It can be obtained by
 taking some elements of a [world](#vanity-776f726c64){.vanity-term-link}
@@ -59,6 +50,16 @@ road is the rest of the world.]{.vanity-contents}
 [systems](#vanity-73797374656d){.vanity-term-link}, the environment
 refers to everything in the model that\'s not part of the system under
 consideration.]{.vanity-contents}
+
+[]{#vanity-696e646976696475616c}**individual**: [In a
+[model](#vanity-6d6f64656c){.vanity-term-link} of the
+[world](#vanity-776f726c64){.vanity-term-link}, an individual is a
+mutable [system](#vanity-73797374656d){.vanity-term-link} which
+interacts with the rest of world, including other individuals. Each
+individual exists for some continuous period of
+[time](#vanity-74696d65){.vanity-term-link}, usually in a binary
+fashion: at a given time, the individual either exists or doesn\'t
+exist.]{.vanity-contents}
 
 []{#vanity-6172746966696369616c}**artificial**: [The property of being
 created by
