@@ -77,9 +77,29 @@
   syn:
     - environments
 
+- term: parameter
+  def: >-
+    A parameter of a [model] is any property of this model that is left
+    unspecified, defining a function in the usual mathematical sense.
+    In general, a model can have any number of parameters.
+  syn:
+    - parameters
+
+- term: state
+  def: >-
+    A particular instantiation of the [parameters] of a [model].
+  syn:
+    - states
+
+- term: mutable
+  def: >-
+    An entity is said mutable when it consists of [time]-indexed
+    sequence of [states]. Such sequence of states is meant to represent
+    successive transformation of an initial object within a model.
+
 - term: individual
   def: >-
-    In a [model] of the [world], an individual is a mutable
+    In a [model] of the [world], an individual is a [mutable]
     [system] which interacts with the rest of world, including other
     individuals. Each individual exists for some continuous period of
     [time], usually in a binary fashion: at a given time, the individual
@@ -120,6 +140,12 @@
     a [model] of the [world], and associated with [rules].
   syn:
     - societies
+
+- term: nature
+  def: >-
+    A model of the world without a [society].
+  syn:
+    - natural
 
 - term: tool
   def: >-

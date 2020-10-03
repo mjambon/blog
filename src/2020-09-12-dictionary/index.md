@@ -69,12 +69,29 @@ road is the rest of the world.]{.vanity-contents}
 refers to everything in the model that\'s not part of the system under
 consideration.]{.vanity-contents}
 
+[]{#vanity-706172616d65746572}**parameter**: [A parameter of a
+[model](#vanity-6d6f64656c){.vanity-term-link} is any property of this
+model that is left unspecified, defining a function in the usual
+mathematical sense. In general, a model can have any number of
+parameters.]{.vanity-contents}
+
+[]{#vanity-7374617465}**state**: [A particular instantiation of the
+[parameters](#vanity-706172616d65746572){.vanity-term-link} of a
+[model](#vanity-6d6f64656c){.vanity-term-link}.]{.vanity-contents}
+
+[]{#vanity-6d757461626c65}**mutable**: [An entity is said mutable when
+it consists of [time](#vanity-74696d65){.vanity-term-link}-indexed
+sequence of [states](#vanity-7374617465){.vanity-term-link}. Such
+sequence of states is meant to represent successive transformation of an
+initial object within a model.]{.vanity-contents}
+
 []{#vanity-696e646976696475616c}**individual**: [In a
 [model](#vanity-6d6f64656c){.vanity-term-link} of the
 [world](#vanity-776f726c64){.vanity-term-link}, an individual is a
-mutable [system](#vanity-73797374656d){.vanity-term-link} which
-interacts with the rest of world, including other individuals. Each
-individual exists for some continuous period of
+[mutable](#vanity-6d757461626c65){.vanity-term-link}
+[system](#vanity-73797374656d){.vanity-term-link} which interacts with
+the rest of world, including other individuals. Each individual exists
+for some continuous period of
 [time](#vanity-74696d65){.vanity-term-link}, usually in a binary
 fashion: at a given time, the individual either exists or doesn\'t
 exist.]{.vanity-contents}
@@ -109,6 +126,9 @@ it.]{.vanity-contents}
 society members within a [model](#vanity-6d6f64656c){.vanity-term-link}
 of the [world](#vanity-776f726c64){.vanity-term-link}, and associated
 with [rules](#vanity-72756c65){.vanity-term-link}.]{.vanity-contents}
+
+[]{#vanity-6e6174757265}**nature**: [A model of the world without a
+[society](#vanity-736f6369657479){.vanity-term-link}.]{.vanity-contents}
 
 []{#vanity-746f6f6c}**tool**: [A tool, in the very general sense that
 interests us, is an extension of what\'s normally considered the body of
