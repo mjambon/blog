@@ -232,3 +232,16 @@
     An algorithm is a [program] that terminates.
   syn:
     - algorithms
+
+- term: mind
+  def: >-
+    The components of a [system] that make it more durable
+    independently from its other properties.
+    This tentative definition is meant to incorporate the dualist notion
+    that the mind is separate from the rest of the body and somewhat
+    optional, while emphasizing that it's only a simplified model
+    useful for studying decision processes.
+
+- term: cognition
+  def: >-
+    The properties of a [mind].

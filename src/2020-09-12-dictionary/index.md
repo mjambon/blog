@@ -190,6 +190,17 @@ between [logic](#vanity-6c6f676963){.vanity-term-link} and
 [program](#vanity-70726f6772616d){.vanity-term-link} that
 terminates.]{.vanity-contents}
 
+[]{#vanity-6d696e64}**mind**: [The components of a
+[system](#vanity-73797374656d){.vanity-term-link} that make it more
+durable independently from its other properties. This tentative
+definition is meant to incorporate the dualist notion that the mind is
+separate from the rest of the body and somewhat optional, while
+emphasizing that it\'s only a simplified model useful for studying
+decision processes.]{.vanity-contents}
+
+[]{#vanity-636f676e6974696f6e}**cognition**: [The properties of a
+[mind](#vanity-6d696e64){.vanity-term-link}.]{.vanity-contents}
+
 []{#dag}
 [![](img/glossary-deps.png "Graph showing the dependencies between definitions of
               this glossary.")](img/glossary-deps.png)
