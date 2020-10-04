@@ -163,7 +163,9 @@ instructions and carries them out predictably. A computer can be
 [mutable](#vanity-6d757461626c65){.vanity-term-link}, discrete storage
 space. Turing machines are idealized representations of computers with
 unbounded storage or memory; they are used in theoretical studies for
-proving some properties of computers.]{.vanity-contents}
+proving some properties of computers. This definition excludes
+hypercomputers, which would allow solving problems that Turing machines
+cannot, such as the halting problem.]{.vanity-contents}
 
 []{#vanity-6c6f676963}**logic**: [The
 [mathematical](#vanity-6d617468656d6174696373){.vanity-term-link}

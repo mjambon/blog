@@ -196,7 +196,9 @@
     comprising a [mutable], discrete storage space. Turing machines
     are idealized representations of computers with unbounded storage
     or memory; they are used in theoretical studies for proving some
-    properties of computers.
+    properties of computers. This definition excludes
+    hypercomputers, which would allow solving problems that Turing
+    machines cannot, such as the halting problem.
   syn:
     - computers
     - computation
