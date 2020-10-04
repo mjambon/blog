@@ -174,6 +174,10 @@ systems and characterizing what can and cannot be done with mathematics
 and
 [computers](#vanity-636f6d7075746572){.vanity-term-link}.]{.vanity-contents}
 
+[]{#vanity-636f6d7075746174696f6e}**computation**: [The successive
+states of a
+[computer](#vanity-636f6d7075746572){.vanity-term-link}.]{.vanity-contents}
+
 []{#vanity-70726f6772616d}**program**: [A computer program in the usual
 sense. A program consists of a finite collection of instructions that
 can be executed by a computer or by a Turing machine. A program may or
@@ -184,11 +188,23 @@ terminates is not always possible, which is known as the halting
 problem. A program can be viewed as a mathematical proof and vice-versa,
 which is known as the Curry-Howard correspondence, and offers a link
 between [logic](#vanity-6c6f676963){.vanity-term-link} and
-[computation](#vanity-636f6d7075746572){.vanity-term-link}.]{.vanity-contents}
+[computation](#vanity-636f6d7075746174696f6e){.vanity-term-link}.]{.vanity-contents}
 
 []{#vanity-616c676f726974686d}**algorithm**: [An algorithm is a
 [program](#vanity-70726f6772616d){.vanity-term-link} that
 terminates.]{.vanity-contents}
+
+[]{#vanity-616374696f6e}**action**: [A change in a
+[system](#vanity-73797374656d){.vanity-term-link} that determines a
+change elsewhere in the [world](#vanity-776f726c64){.vanity-term-link}
+[model](#vanity-6d6f64656c){.vanity-term-link}, possibly in the system
+itself.]{.vanity-contents}
+
+[]{#vanity-6465636973696f6e}**decision**: [An
+[action](#vanity-616374696f6e){.vanity-term-link} of a
+[system](#vanity-73797374656d){.vanity-term-link} onto itself, in
+particular when examining a small selection of possible actions that are
+mutually exclusive.]{.vanity-contents}
 
 []{#vanity-6d696e64}**mind**: [The components of a
 [system](#vanity-73797374656d){.vanity-term-link} that make it more
@@ -196,7 +212,8 @@ durable independently from its other properties. This tentative
 definition is meant to incorporate the dualist notion that the mind is
 separate from the rest of the body and somewhat optional, while
 emphasizing that it\'s only a simplified model useful for studying
-decision processes.]{.vanity-contents}
+[decision](#vanity-6465636973696f6e){.vanity-term-link}
+[processes](#vanity-636f6d7075746174696f6e){.vanity-term-link}.]{.vanity-contents}
 
 []{#vanity-636f676e6974696f6e}**cognition**: [The properties of a
 [mind](#vanity-6d696e64){.vanity-term-link}.]{.vanity-contents}

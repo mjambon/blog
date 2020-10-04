@@ -167,8 +167,6 @@
     - machines
     - method
     - methods
-    - process
-    - processes
 
 - term: science
   def: >-
@@ -201,8 +199,6 @@
     machines cannot, such as the halting problem.
   syn:
     - computers
-    - computation
-    - computations
 
 - term: logic
   def: >-
@@ -211,6 +207,14 @@
     and cannot be done with mathematics and [computers].
   syn:
     - logics
+
+- term: computation
+  def: >-
+    The successive states of a [computer].
+  syn:
+    - computations
+    - process
+    - processes
 
 - term: program
   def: >-
@@ -233,6 +237,19 @@
   syn:
     - algorithms
 
+- term: action
+  def: >-
+    A change in a [system] that determines a change
+    elsewhere in the [world] [model], possibly in the system itself.
+  syn:
+    - actions
+
+- term: decision
+  def: >-
+    An [action] of a [system] onto itself, in particular when
+    examining a small selection of possible actions that are mutually
+    exclusive.
+
 - term: mind
   def: >-
     The components of a [system] that make it more durable
@@ -240,7 +257,7 @@
     This tentative definition is meant to incorporate the dualist notion
     that the mind is separate from the rest of the body and somewhat
     optional, while emphasizing that it's only a simplified model
-    useful for studying decision processes.
+    useful for studying [decision] [processes].
 
 - term: cognition
   def: >-
