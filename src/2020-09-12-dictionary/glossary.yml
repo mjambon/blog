@@ -57,6 +57,9 @@
     computations are called simulations.
     More generally however, when there is no need for computing successive
     states, time is usually modeled as the real line.
+  syn:
+    - successive
+    - step
 
 - term: system
   def: >-
@@ -210,7 +213,7 @@
 
 - term: computation
   def: >-
-    The successive states of a [computer].
+    The [successive] [states] of a [computer].
   syn:
     - computations
     - process
@@ -239,8 +242,9 @@
 
 - term: action
   def: >-
-    A change in a [system] that determines a change
-    elsewhere in the [world] [model], possibly in the system itself.
+    A change in two [successive] [states] of a [system] that determines
+    a change elsewhere in the [world] [model], possibly in the system
+    itself.
   syn:
     - actions
 

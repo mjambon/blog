@@ -174,8 +174,9 @@ systems and characterizing what can and cannot be done with mathematics
 and
 [computers](#vanity-636f6d7075746572){.vanity-term-link}.]{.vanity-contents}
 
-[]{#vanity-636f6d7075746174696f6e}**computation**: [The successive
-states of a
+[]{#vanity-636f6d7075746174696f6e}**computation**: [The
+[successive](#vanity-74696d65){.vanity-term-link}
+[states](#vanity-7374617465){.vanity-term-link} of a
 [computer](#vanity-636f6d7075746572){.vanity-term-link}.]{.vanity-contents}
 
 []{#vanity-70726f6772616d}**program**: [A computer program in the usual
@@ -194,7 +195,9 @@ between [logic](#vanity-6c6f676963){.vanity-term-link} and
 [program](#vanity-70726f6772616d){.vanity-term-link} that
 terminates.]{.vanity-contents}
 
-[]{#vanity-616374696f6e}**action**: [A change in a
+[]{#vanity-616374696f6e}**action**: [A change in two
+[successive](#vanity-74696d65){.vanity-term-link}
+[states](#vanity-7374617465){.vanity-term-link} of a
 [system](#vanity-73797374656d){.vanity-term-link} that determines a
 change elsewhere in the [world](#vanity-776f726c64){.vanity-term-link}
 [model](#vanity-6d6f64656c){.vanity-term-link}, possibly in the system
