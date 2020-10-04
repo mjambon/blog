@@ -37,6 +37,9 @@
     expressed.
   syn:
     - models
+    - modeled
+    - representation
+    - represented
 
 - term: time
   def: >-
@@ -184,3 +187,46 @@
   syn:
     - math
     - maths
+    - mathematical
+
+- term: computer
+  def: >-
+    A finite [system] that reads discrete instructions and carries them out
+    predictably. A computer can be [represented] as a sequence of [states]
+    comprising a [mutable], discrete storage space. Turing machines
+    are idealized representations of computers with unbounded storage
+    or memory; they are used in theoretical studies for proving some
+    properties of computers.
+  syn:
+    - computers
+    - computation
+    - computations
+
+- term: logic
+  def: >-
+    The [mathematical] subfield of logic. It is focused on the
+    general properties of formal systems and characterizing what can
+    and cannot be done with mathematics and [computers].
+  syn:
+    - logics
+
+- term: program
+  def: >-
+    A computer program in the usual sense. A program consists of a
+    finite collection of instructions that can be executed by a
+    computer or by a Turing machine. A program may or may not take
+    external input. In theoretical studies, the input is often
+    baked into the program or into the initial state of the computer's
+    memory. A program may or not terminate. Determining whether a
+    program terminates is not always possible, which is known as the
+    halting problem. A program can be viewed as a mathematical proof
+    and vice-versa, which is known as the Curry-Howard correspondence,
+    and offers a link between [logic] and [computation].
+  syn:
+    - programs
+
+- term: algorithm
+  def: >-
+    An algorithm is a [program] that terminates.
+  syn:
+    - algorithms

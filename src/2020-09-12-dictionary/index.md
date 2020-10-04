@@ -155,6 +155,39 @@ with [models](#vanity-6d6f64656c){.vanity-term-link} in
 [engineering](#vanity-656e67696e656572696e67){.vanity-term-link}, and
 other fields of study.]{.vanity-contents}
 
+[]{#vanity-636f6d7075746572}**computer**: [A finite
+[system](#vanity-73797374656d){.vanity-term-link} that reads discrete
+instructions and carries them out predictably. A computer can be
+[represented](#vanity-6d6f64656c){.vanity-term-link} as a sequence of
+[states](#vanity-7374617465){.vanity-term-link} comprising a
+[mutable](#vanity-6d757461626c65){.vanity-term-link}, discrete storage
+space. Turing machines are idealized representations of computers with
+unbounded storage or memory; they are used in theoretical studies for
+proving some properties of computers.]{.vanity-contents}
+
+[]{#vanity-6c6f676963}**logic**: [The
+[mathematical](#vanity-6d617468656d6174696373){.vanity-term-link}
+subfield of logic. It is focused on the general properties of formal
+systems and characterizing what can and cannot be done with mathematics
+and
+[computers](#vanity-636f6d7075746572){.vanity-term-link}.]{.vanity-contents}
+
+[]{#vanity-70726f6772616d}**program**: [A computer program in the usual
+sense. A program consists of a finite collection of instructions that
+can be executed by a computer or by a Turing machine. A program may or
+may not take external input. In theoretical studies, the input is often
+baked into the program or into the initial state of the computer\'s
+memory. A program may or not terminate. Determining whether a program
+terminates is not always possible, which is known as the halting
+problem. A program can be viewed as a mathematical proof and vice-versa,
+which is known as the Curry-Howard correspondence, and offers a link
+between [logic](#vanity-6c6f676963){.vanity-term-link} and
+[computation](#vanity-636f6d7075746572){.vanity-term-link}.]{.vanity-contents}
+
+[]{#vanity-616c676f726974686d}**algorithm**: [An algorithm is a
+[program](#vanity-70726f6772616d){.vanity-term-link} that
+terminates.]{.vanity-contents}
+
 []{#dag}
 [![](img/glossary-deps.png "Graph showing the dependencies between definitions of
               this glossary.")](img/glossary-deps.png)
