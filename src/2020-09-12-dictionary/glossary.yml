@@ -83,6 +83,16 @@
   syn:
     - environments
 
+- term: sensing
+  def: >-
+    The acquisition of raw data by a [system] from the [environment].
+    This is usually done by special-purpose parts of the system, which
+    are called sensors.
+  syn:
+    - sensed
+    - sensor
+    - sensors
+
 - term: parameter
   def: >-
     A parameter of a [model] is any property of this model that is left
@@ -266,3 +276,36 @@
 - term: cognition
   def: >-
     The properties of a [mind].
+
+- term: concept
+  def: >-
+    A binary state within a [mind]. A concept is generally
+    considered to be turned on or off by the activity of the mind,
+    including other concepts.
+  syn:
+    - concepts
+
+- term: abstract
+  def: >-
+    A [concept] is said more abstract than another when its full
+    definition from elementary concepts is more complex.
+
+- term: concrete
+  def: >-
+    The opposite of [abstract]. A [concept] is more concrete than
+    another when it is less abstract. In a [mind], the most concrete
+    concepts are the [states] of [sensors].
+
+- term: intuition
+  def: >-
+    The activation of [abstract] [concepts] or ideas within a [mind].
+
+- term: imagination
+  def: >-
+    A form of [intuition] involving [concepts] that are easily
+    communicated (definition?).
+
+- term: perception
+  def: >-
+    A form of [imagination] involving [concepts] that form a [model] of
+    the [world] as it being [sensed].

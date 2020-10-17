@@ -69,6 +69,12 @@ road is the rest of the world.]{.vanity-contents}
 refers to everything in the model that\'s not part of the system under
 consideration.]{.vanity-contents}
 
+[]{#vanity-73656e73696e67}**sensing**: [The acquisition of raw data by a
+[system](#vanity-73797374656d){.vanity-term-link} from the
+[environment](#vanity-656e7669726f6e6d656e74){.vanity-term-link}. This
+is usually done by special-purpose parts of the system, which are called
+sensors.]{.vanity-contents}
+
 []{#vanity-706172616d65746572}**parameter**: [A parameter of a
 [model](#vanity-6d6f64656c){.vanity-term-link} is any property of this
 model that is left unspecified, defining a function in the usual
@@ -220,6 +226,41 @@ emphasizing that it\'s only a simplified model useful for studying
 
 []{#vanity-636f676e6974696f6e}**cognition**: [The properties of a
 [mind](#vanity-6d696e64){.vanity-term-link}.]{.vanity-contents}
+
+[]{#vanity-636f6e63657074}**concept**: [A binary state within a
+[mind](#vanity-6d696e64){.vanity-term-link}. A concept is generally
+considered to be turned on or off by the activity of the mind, including
+other concepts.]{.vanity-contents}
+
+[]{#vanity-6162737472616374}**abstract**: [A
+[concept](#vanity-636f6e63657074){.vanity-term-link} is said more
+abstract than another when its full definition from elementary concepts
+is more complex.]{.vanity-contents}
+
+[]{#vanity-636f6e6372657465}**concrete**: [The opposite of
+[abstract](#vanity-6162737472616374){.vanity-term-link}. A
+[concept](#vanity-636f6e63657074){.vanity-term-link} is more concrete
+than another when it is less abstract. In a
+[mind](#vanity-6d696e64){.vanity-term-link}, the most concrete concepts
+are the [states](#vanity-7374617465){.vanity-term-link} of
+[sensors](#vanity-73656e73696e67){.vanity-term-link}.]{.vanity-contents}
+
+[]{#vanity-696e74756974696f6e}**intuition**: [The activation of
+[abstract](#vanity-6162737472616374){.vanity-term-link}
+[concepts](#vanity-636f6e63657074){.vanity-term-link} or ideas within a
+[mind](#vanity-6d696e64){.vanity-term-link}.]{.vanity-contents}
+
+[]{#vanity-696d6167696e6174696f6e}**imagination**: [A form of
+[intuition](#vanity-696e74756974696f6e){.vanity-term-link} involving
+[concepts](#vanity-636f6e63657074){.vanity-term-link} that are easily
+communicated (definition?).]{.vanity-contents}
+
+[]{#vanity-70657263657074696f6e}**perception**: [A form of
+[imagination](#vanity-696d6167696e6174696f6e){.vanity-term-link}
+involving [concepts](#vanity-636f6e63657074){.vanity-term-link} that
+form a [model](#vanity-6d6f64656c){.vanity-term-link} of the
+[world](#vanity-776f726c64){.vanity-term-link} as it being
+[sensed](#vanity-73656e73696e67){.vanity-term-link}.]{.vanity-contents}
 
 []{#dag}
 [![](img/glossary-deps.png "Graph showing the dependencies between definitions of
