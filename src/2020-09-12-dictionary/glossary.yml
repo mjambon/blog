@@ -300,12 +300,47 @@
   def: >-
     The activation of [abstract] [concepts] or ideas within a [mind].
 
-- term: imagination
-  def: >-
-    A form of [intuition] involving [concepts] that are easily
-    communicated (definition?).
-
 - term: perception
   def: >-
-    A form of [imagination] involving [concepts] that form a [model] of
-    the [world] as it being [sensed].
+    A form of [intuition] involving [concepts] that form a [model] of
+    the [world] as it is being [sensed].
+
+- term: reaction
+  def: >-
+    An [action] that is triggered within a [mind] by the presence of
+    a particular [concept].
+  syn:
+    - reactions
+    - react
+    - reacting
+
+- term: optimization
+  def: >-
+    An activity consisting in modifying a [system] so as to increase
+    its fitness, which is a number, specifically an element taken from
+    an order set. The goal function, objective function or fitness
+    function is the function that maps a [state] of a system to the
+    number referred to as fitness.
+  syn:
+    - optimum
+    - maximum
+    - minimum
+    - optimize
+    - optimizing
+    - fitness
+    - benefit
+    - benefits
+
+- term: symbol
+  def: >-
+    A conventional representation of a [concept]. It is a component
+    of the [world] to which some members of a [society] will [react] in
+    a similar manner and that does not provide [benefits] other than
+    eliciting similar reactions in others.
+  syn:
+    - symbols
+
+- term: imagination
+  def: >-
+    A form of [intuition], generally involving [concepts] for which
+    [symbols] already exist.

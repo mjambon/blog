@@ -250,17 +250,41 @@ are the [states](#vanity-7374617465){.vanity-term-link} of
 [concepts](#vanity-636f6e63657074){.vanity-term-link} or ideas within a
 [mind](#vanity-6d696e64){.vanity-term-link}.]{.vanity-contents}
 
-[]{#vanity-696d6167696e6174696f6e}**imagination**: [A form of
-[intuition](#vanity-696e74756974696f6e){.vanity-term-link} involving
-[concepts](#vanity-636f6e63657074){.vanity-term-link} that are easily
-communicated (definition?).]{.vanity-contents}
-
 []{#vanity-70657263657074696f6e}**perception**: [A form of
-[imagination](#vanity-696d6167696e6174696f6e){.vanity-term-link}
-involving [concepts](#vanity-636f6e63657074){.vanity-term-link} that
-form a [model](#vanity-6d6f64656c){.vanity-term-link} of the
-[world](#vanity-776f726c64){.vanity-term-link} as it being
+[intuition](#vanity-696e74756974696f6e){.vanity-term-link} involving
+[concepts](#vanity-636f6e63657074){.vanity-term-link} that form a
+[model](#vanity-6d6f64656c){.vanity-term-link} of the
+[world](#vanity-776f726c64){.vanity-term-link} as it is being
 [sensed](#vanity-73656e73696e67){.vanity-term-link}.]{.vanity-contents}
+
+[]{#vanity-7265616374696f6e}**reaction**: [An
+[action](#vanity-616374696f6e){.vanity-term-link} that is triggered
+within a [mind](#vanity-6d696e64){.vanity-term-link} by the presence of
+a particular
+[concept](#vanity-636f6e63657074){.vanity-term-link}.]{.vanity-contents}
+
+[]{#vanity-6f7074696d697a6174696f6e}**optimization**: [An activity
+consisting in modifying a
+[system](#vanity-73797374656d){.vanity-term-link} so as to increase its
+fitness, which is a number, specifically an element taken from an order
+set. The goal function, objective function or fitness function is the
+function that maps a [state](#vanity-7374617465){.vanity-term-link} of a
+system to the number referred to as fitness.]{.vanity-contents}
+
+[]{#vanity-73796d626f6c}**symbol**: [A conventional representation of a
+[concept](#vanity-636f6e63657074){.vanity-term-link}. It is a component
+of the [world](#vanity-776f726c64){.vanity-term-link} to which some
+members of a [society](#vanity-736f6369657479){.vanity-term-link} will
+[react](#vanity-7265616374696f6e){.vanity-term-link} in a similar manner
+and that does not provide
+[benefits](#vanity-6f7074696d697a6174696f6e){.vanity-term-link} other
+than eliciting similar reactions in others.]{.vanity-contents}
+
+[]{#vanity-696d6167696e6174696f6e}**imagination**: [A form of
+[intuition](#vanity-696e74756974696f6e){.vanity-term-link}, generally
+involving [concepts](#vanity-636f6e63657074){.vanity-term-link} for
+which [symbols](#vanity-73796d626f6c){.vanity-term-link} already
+exist.]{.vanity-contents}
 
 []{#dag}
 [![](img/glossary-deps.png "Graph showing the dependencies between definitions of
