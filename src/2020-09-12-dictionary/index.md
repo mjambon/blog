@@ -34,9 +34,22 @@ other worlds.]{.vanity-contents}
 
 []{#vanity-6d6f64656c}**model**: [An unambiguous representation of the
 [world](#vanity-776f726c64){.vanity-term-link}. As such, a model can in
-principle be translated into another language and recovered back without
-loss. A model is necessarily simpler than the world in which it can be
-expressed.]{.vanity-contents}
+principle, given sufficient technology, be translated into another
+language and recovered back without loss. A model is necessarily simpler
+than the world in which it can be expressed. An example of a simple
+model is the representation of the sun and the earth as points in a
+2-dimensional Euclidean space, with the sun being immobile and the earth
+rotating in a circular orbit over a one-year period. Elementary
+mathematical knowledge is sufficient to read and copy this model without
+mistakes. Our definition of a model includes any arrangement of
+information that is believed to form a world model but may not be
+accessed or copied in its entirety. For example, a human body, mostly in
+its brain, holds world model, some of which was learned by interacting
+with it since birth. While we may not have the technology to copy
+correctly and completely the relevant information from a human brain, we
+assume it\'s all in there. Such world model that\'s a necessary part of
+any human mind shall not be confused with whatever explicit models a
+thinker or scientist can construct and publish.]{.vanity-contents}
 
 []{#vanity-74696d65}**time**: [An ordering over the states of a
 [model](#vanity-6d6f64656c){.vanity-term-link}. Time is the breakdown of
@@ -266,10 +279,11 @@ a particular
 []{#vanity-6f7074696d697a6174696f6e}**optimization**: [An activity
 consisting in modifying a
 [system](#vanity-73797374656d){.vanity-term-link} so as to increase its
-fitness, which is a number, specifically an element taken from an order
-set. The goal function, objective function or fitness function is the
-function that maps a [state](#vanity-7374617465){.vanity-term-link} of a
-system to the number referred to as fitness.]{.vanity-contents}
+fitness, which is a number, specifically an element taken from an
+ordered set. The goal function, objective function or fitness function
+is the function that maps a
+[state](#vanity-7374617465){.vanity-term-link} of a system to the number
+referred to as fitness.]{.vanity-contents}
 
 []{#vanity-73796d626f6c}**symbol**: [A conventional representation of a
 [concept](#vanity-636f6e63657074){.vanity-term-link}. It is a component
