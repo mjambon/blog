@@ -54,6 +54,7 @@
     - modeled
     - representation
     - represented
+  img: earth-model.jpg
 
 - term: time
   def: >-
@@ -74,6 +75,7 @@
   syn:
     - successive
     - step
+  img: time.jpg
 
 - term: system
   def: >-
