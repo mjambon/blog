@@ -32,6 +32,10 @@ is isolated from everything else, and therefore anything modeled within
 the world cannot learn anything about the existence or the nature of
 other worlds. ]{.vanity-contents}
 
+::: {.vanity-image-div}
+[![](img/world.jpg){.vanity-image-img}](img/world.jpg)
+:::
+
 []{#vanity-6d6f64656c}**model**: [An unambiguous representation of the
 [world](#vanity-776f726c64){.vanity-term-link}. As such, a model can in
 principle, given sufficient technology, be translated into another
@@ -84,17 +88,29 @@ interacts with the road, discarding all other elements of the world such
 as buildings and trees. In this example, the car is the system and the
 road is the rest of the world. ]{.vanity-contents}
 
+::: {.vanity-image-div}
+[![](img/system.jpg){.vanity-image-img}](img/system.jpg)
+:::
+
 []{#vanity-656e7669726f6e6d656e74}**environment**: [In a
 [model](#vanity-6d6f64656c){.vanity-term-link} comprising
 [systems](#vanity-73797374656d){.vanity-term-link}, the environment
 refers to everything in the model that\'s not part of the system under
 consideration. ]{.vanity-contents}
 
+::: {.vanity-image-div}
+[![](img/environment.jpg){.vanity-image-img}](img/environment.jpg)
+:::
+
 []{#vanity-73656e73696e67}**sensing**: [The acquisition of raw data by a
 [system](#vanity-73797374656d){.vanity-term-link} from the
 [environment](#vanity-656e7669726f6e6d656e74){.vanity-term-link}. This
 is usually done by special-purpose parts of the system, which are called
 sensors. ]{.vanity-contents}
+
+::: {.vanity-image-div}
+[![](img/sensing.jpg){.vanity-image-img}](img/sensing.jpg)
+:::
 
 []{#vanity-706172616d65746572}**parameter**: [A parameter of a
 [model](#vanity-6d6f64656c){.vanity-term-link} is any property of this
@@ -105,6 +121,10 @@ parameters. ]{.vanity-contents}
 []{#vanity-7374617465}**state**: [A particular instantiation of the
 [parameters](#vanity-706172616d65746572){.vanity-term-link} of a
 [model](#vanity-6d6f64656c){.vanity-term-link}. ]{.vanity-contents}
+
+::: {.vanity-image-div}
+[![](img/state.jpg){.vanity-image-img}](img/state.jpg)
+:::
 
 []{#vanity-6d757461626c65}**mutable**: [An entity is said mutable when
 it consists of [time](#vanity-74696d65){.vanity-term-link}-indexed
@@ -122,6 +142,10 @@ for some continuous period of
 [time](#vanity-74696d65){.vanity-term-link}, usually in a binary
 fashion: at a given time, the individual either exists or doesn\'t
 exist. ]{.vanity-contents}
+
+::: {.vanity-image-div}
+[![](img/individual.jpg){.vanity-image-img}](img/individual.jpg)
+:::
 
 []{#vanity-6172746966696369616c}**artificial**: [The property of being
 created by

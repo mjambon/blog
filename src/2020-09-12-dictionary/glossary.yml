@@ -27,6 +27,7 @@
     or the nature of other worlds.
   syn:
     - worlds
+  img: world.jpg
 
 - term: model
   def: >-
@@ -90,6 +91,7 @@
     system and the road is the rest of the world.
   syn:
     - systems
+  img: system.jpg
 
 - term: environment
   def: >-
@@ -98,6 +100,7 @@
     consideration.
   syn:
     - environments
+  img: environment.jpg
 
 - term: sensing
   def: >-
@@ -108,6 +111,7 @@
     - sensed
     - sensor
     - sensors
+  img: sensing.jpg
 
 - term: parameter
   def: >-
@@ -122,6 +126,7 @@
     A particular instantiation of the [parameters] of a [model].
   syn:
     - states
+  img: state.jpg
 
 - term: mutable
   def: >-
@@ -138,6 +143,7 @@
     either exists or doesn't exist.
   syn:
     - individuals
+  img: individual.jpg
 
 - term: artificial
   def: >-
