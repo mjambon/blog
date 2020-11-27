@@ -194,6 +194,10 @@ also all data stored outside the body such as books and other
 recordings. Therefore, other individuals can also be considered as tools
 according this definition. ]{.vanity-contents}
 
+::: {.vanity-image-div}
+[![](img/tool.jpg){.vanity-image-img}](img/tool.jpg)
+:::
+
 []{#vanity-736369656e6365}**science**: [The activity consisting in
 creating and refining [models](#vanity-6d6f64656c){.vanity-term-link} of
 the [world](#vanity-776f726c64){.vanity-term-link}. ]{.vanity-contents}
@@ -263,6 +267,10 @@ itself. ]{.vanity-contents}
 [system](#vanity-73797374656d){.vanity-term-link} onto itself, in
 particular when examining a small selection of possible actions that are
 mutually exclusive. ]{.vanity-contents}
+
+::: {.vanity-image-div}
+[![](img/actions.jpg){.vanity-image-img}](img/actions.jpg)
+:::
 
 []{#vanity-6d696e64}**mind**: [The components of a
 [system](#vanity-73797374656d){.vanity-term-link} that make it more

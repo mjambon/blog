@@ -1,0 +1,15 @@
+#! /bin/bash
+#
+# Take the original images and reduce their size to as to make the web page
+# faster to load.
+#
+set -eu
+
+src_dir=img/orig
+dst_dir=img
+
+for src in "$src_dir"/*.jpg; do
+  dst=$dst_dir/$(basename "$src")
+  echo "resize $src -> $dst"
+  convert "$src" -resize 500x500 "$dst"
+done

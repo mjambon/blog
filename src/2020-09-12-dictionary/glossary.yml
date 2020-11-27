@@ -202,6 +202,7 @@
     - machines
     - method
     - methods
+  img: tool.jpg
 
 - term: science
   def: >-
@@ -285,6 +286,7 @@
     An [action] of a [system] onto itself, in particular when
     examining a small selection of possible actions that are mutually
     exclusive.
+  img: actions.jpg
 
 - term: mind
   def: >-
