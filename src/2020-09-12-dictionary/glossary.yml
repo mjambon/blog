@@ -380,7 +380,7 @@
 - term: implicit model
   def: >-
     A [model] implemented by a [mind]. A mind makes [decisions]
-    at least partially by relying on an internal structure of the
+    at least partially by relying on some internal structure in the
     [system], without relying on a [symbolism]
     or language that makes it transferable to other [individuals].
     This internal structure is considered an implicit world model.

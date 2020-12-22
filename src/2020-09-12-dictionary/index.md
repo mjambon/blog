@@ -354,7 +354,7 @@ which [symbols](#vanity-73796d626f6c){.vanity-term-link} already exist.
 [model](#vanity-6d6f64656c){.vanity-term-link} implemented by a
 [mind](#vanity-6d696e64){.vanity-term-link}. A mind makes
 [decisions](#vanity-6465636973696f6e){.vanity-term-link} at least
-partially by relying on an internal structure of the
+partially by relying on some internal structure in the
 [system](#vanity-73797374656d){.vanity-term-link}, without relying on a
 [symbolism](#vanity-73796d626f6c){.vanity-term-link} or language that
 makes it transferable to other
