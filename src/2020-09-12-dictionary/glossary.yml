@@ -287,19 +287,26 @@
     examining a small selection of possible actions that are mutually
     exclusive.
   img: actions.jpg
+  syn:
+    - decisions
 
 - term: mind
   def: >-
-    The components of a [system] that make it more durable
+    (1) The components of a [system] that make it more durable
     independently from its other properties.
     This tentative definition is meant to incorporate the dualist notion
     that the mind is separate from the rest of the body and somewhat
     optional, while emphasizing that it's only a simplified model
     useful for studying [decision] [processes].
+    (2) A self-improving [world] [model]. In this equivalent view, the mind
+    continuously gathers information about the [environment] around the
+    system and uses it to make better decisions.
 
 - term: cognition
   def: >-
     The properties of a [mind].
+  syn:
+    - cognitive
 
 - term: concept
   def: >-
@@ -363,8 +370,31 @@
     eliciting similar reactions in others.
   syn:
     - symbols
+    - symbolism
 
 - term: imagination
   def: >-
     A form of [intuition], generally involving [concepts] for which
     [symbols] already exist.
+
+- term: implicit model
+  def: >-
+    A [model] implemented by a [mind]. A mind makes [decisions]
+    at least partially by relying on an internal structure of the
+    [system], without relying on a [symbolism]
+    or language that makes it transferable to other [individuals].
+    This internal structure is considered an implicit world model.
+  syn:
+    - implicitly
+
+- term: explicit model
+  def: >-
+    A [model] transferable by a [system] to another system using [symbols]
+    forming a language.
+  syn:
+    - explicitly
+
+- term: understanding
+  def: >-
+    A measure of how much a [mind] reproduces - [implicitly] or
+    [explicitly] - some external [model].

@@ -272,15 +272,19 @@ mutually exclusive. ]{.vanity-contents}
 [![](img/actions.jpg){.vanity-image-img}](img/actions.jpg)
 :::
 
-[]{#vanity-6d696e64}**mind**: [The components of a
+[]{#vanity-6d696e64}**mind**: [(1) The components of a
 [system](#vanity-73797374656d){.vanity-term-link} that make it more
 durable independently from its other properties. This tentative
 definition is meant to incorporate the dualist notion that the mind is
 separate from the rest of the body and somewhat optional, while
 emphasizing that it\'s only a simplified model useful for studying
 [decision](#vanity-6465636973696f6e){.vanity-term-link}
-[processes](#vanity-636f6d7075746174696f6e){.vanity-term-link}.
-]{.vanity-contents}
+[processes](#vanity-636f6d7075746174696f6e){.vanity-term-link}. (2) A
+self-improving [world](#vanity-776f726c64){.vanity-term-link}
+[model](#vanity-6d6f64656c){.vanity-term-link}. In this equivalent view,
+the mind continuously gathers information about the
+[environment](#vanity-656e7669726f6e6d656e74){.vanity-term-link} around
+the system and uses it to make better decisions. ]{.vanity-contents}
 
 []{#vanity-636f676e6974696f6e}**cognition**: [The properties of a
 [mind](#vanity-6d696e64){.vanity-term-link}. ]{.vanity-contents}
@@ -344,6 +348,31 @@ than eliciting similar reactions in others. ]{.vanity-contents}
 [intuition](#vanity-696e74756974696f6e){.vanity-term-link}, generally
 involving [concepts](#vanity-636f6e63657074){.vanity-term-link} for
 which [symbols](#vanity-73796d626f6c){.vanity-term-link} already exist.
+]{.vanity-contents}
+
+[]{#vanity-696d706c69636974206d6f64656c}**implicit model**: [A
+[model](#vanity-6d6f64656c){.vanity-term-link} implemented by a
+[mind](#vanity-6d696e64){.vanity-term-link}. A mind makes
+[decisions](#vanity-6465636973696f6e){.vanity-term-link} at least
+partially by relying on an internal structure of the
+[system](#vanity-73797374656d){.vanity-term-link}, without relying on a
+[symbolism](#vanity-73796d626f6c){.vanity-term-link} or language that
+makes it transferable to other
+[individuals](#vanity-696e646976696475616c){.vanity-term-link}. This
+internal structure is considered an implicit world model.
+]{.vanity-contents}
+
+[]{#vanity-6578706c69636974206d6f64656c}**explicit model**: [A
+[model](#vanity-6d6f64656c){.vanity-term-link} transferable by a
+[system](#vanity-73797374656d){.vanity-term-link} to another system
+using [symbols](#vanity-73796d626f6c){.vanity-term-link} forming a
+language. ]{.vanity-contents}
+
+[]{#vanity-756e6465727374616e64696e67}**understanding**: [A measure of
+how much a [mind](#vanity-6d696e64){.vanity-term-link} reproduces -
+[implicitly](#vanity-696d706c69636974206d6f64656c){.vanity-term-link} or
+[explicitly](#vanity-6578706c69636974206d6f64656c){.vanity-term-link} -
+some external [model](#vanity-6d6f64656c){.vanity-term-link}.
 ]{.vanity-contents}
 
 []{#dag}
