@@ -377,8 +377,9 @@ the essential features of some external
 placing the mind in an
 [environment](#vanity-656e7669726f6e6d656e74){.vanity-term-link} that
 requires quick [decisions](#vanity-6465636973696f6e){.vanity-term-link}
-that benefit from identifying features of the model without much work.
-(2) The properties of a mind that allow it to extend its implicit
+that benefit from identifying features of the model without much
+[computation](#vanity-636f6d7075746174696f6e){.vanity-term-link}. (2)
+The properties of a mind that allow it to extend its implicit
 [world](#vanity-776f726c64){.vanity-term-link} model.
 ]{.vanity-contents}
 
