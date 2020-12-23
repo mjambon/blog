@@ -370,11 +370,15 @@ language. ]{.vanity-contents}
 
 []{#vanity-756e6465727374616e64696e67}**understanding**: [(1) Some
 measure of how much a [mind](#vanity-6d696e64){.vanity-term-link}
-reproduces -
-[implicitly](#vanity-696d706c69636974206d6f64656c){.vanity-term-link} or
-[explicitly](#vanity-6578706c69636974206d6f64656c){.vanity-term-link} -
-some external [model](#vanity-6d6f64656c){.vanity-term-link}. (2) The
-properties of a mind that allow it to extend its implicit
+reproduces
+[implicitly](#vanity-696d706c69636974206d6f64656c){.vanity-term-link}
+the essential features of some external
+[model](#vanity-6d6f64656c){.vanity-term-link}. It can be tested by
+placing the mind in an
+[environment](#vanity-656e7669726f6e6d656e74){.vanity-term-link} that
+requires quick [decisions](#vanity-6465636973696f6e){.vanity-term-link}
+that benefit from identifying features of the model without much work.
+(2) The properties of a mind that allow it to extend its implicit
 [world](#vanity-776f726c64){.vanity-term-link} model.
 ]{.vanity-contents}
 
