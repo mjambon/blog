@@ -368,11 +368,14 @@ internal structure is considered an implicit world model.
 using [symbols](#vanity-73796d626f6c){.vanity-term-link} forming a
 language. ]{.vanity-contents}
 
-[]{#vanity-756e6465727374616e64696e67}**understanding**: [A measure of
-how much a [mind](#vanity-6d696e64){.vanity-term-link} reproduces -
+[]{#vanity-756e6465727374616e64696e67}**understanding**: [(1) Some
+measure of how much a [mind](#vanity-6d696e64){.vanity-term-link}
+reproduces -
 [implicitly](#vanity-696d706c69636974206d6f64656c){.vanity-term-link} or
 [explicitly](#vanity-6578706c69636974206d6f64656c){.vanity-term-link} -
-some external [model](#vanity-6d6f64656c){.vanity-term-link}.
+some external [model](#vanity-6d6f64656c){.vanity-term-link}. (2) The
+properties of a mind that allow it to extend its implicit
+[world](#vanity-776f726c64){.vanity-term-link} model.
 ]{.vanity-contents}
 
 []{#dag}
