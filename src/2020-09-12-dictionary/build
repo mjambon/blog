@@ -22,7 +22,7 @@ dot -Tpng _build/glossary-deps.dot -o img/glossary-deps.png
 
 (
   cat <<EOF
-% Dictionary
+% Minimal Dictionary
 EOF
   pandoc -t markdown _build/glossary.html
 ) > index.md

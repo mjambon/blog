@@ -1,4 +1,4 @@
-% Dictionary
+% Minimal Dictionary
 I\'ve always wanted to communicate my general thoughts about the world
 but didn\'t want to write a book for a few reasons. First, I have
 limited talent for writing and I\'m not particularly interested in the

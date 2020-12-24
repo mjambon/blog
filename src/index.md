@@ -28,11 +28,19 @@ The implementation of the
 [architecture laid out in 2016](2016-08-20-agi-project-status-2016) is
 still ongoing as of 2020. It is now closed-source.
 
+### Definitions
+
+* [Minimal Dictionary](2020-09-12-dictionary): small dictionary of
+  basic terms loosely related to natural and artificial minds and their
+  interaction with the world. It is structured as a DAG, forbidding
+  cyclic definitions.
+* [Artificial cognition glossary](2019-04-21-glossary): glossary of
+  technical terms used in my own work on designing artificial minds.
+
 ### Technical reports
 
 * [Dynamic signal uniformization](2020-06-28-dynamic-signal-uniformization)
   (June 2020)
-* [Artificial cognition glossary](2019-04-21-glossary) (April 2019)
 * [An adaptive moving average](2017-08-12-adaptive-average)
   (August 2017)
 * [Real-time decomposition of a signal into a sum of responses to
@@ -58,12 +66,6 @@ still ongoing as of 2020. It is now closed-source.
   (November 2015)
 * [Intelligence precedes machines](2014-12-31-intelligence-precedes-machines)
   (December 2014)
-
-### Unfinished or in progress
-
-* [Dictionary](2020-09-12-dictionary): an attempt to express my
-  views about everything as a set of definitions, in a format that
-  encourages consistency.
 
 Miscellaneous blog posts
 --
