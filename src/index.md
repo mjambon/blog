@@ -70,6 +70,7 @@ still ongoing as of 2020. It is now closed-source.
 Miscellaneous blog posts
 --
 
+* [Signs they're an authoritarian](2020-12-25-authoritarian) (2020)
 * [Issue Voting](2017-01-08-issue-voting-method) (2017): a proposed
   voting method
 * [Diversity rule: a voting system that accommodates

@@ -19,7 +19,8 @@ ARTICLES = \
   2019-04-21-glossary \
   2020-03-29-software-engineering-notes \
   2020-06-28-dynamic-signal-uniformization \
-  2020-09-12-dictionary
+  2020-09-12-dictionary \
+  2020-12-25-authoritarian
 
 DOCROOT = ../docs
 
