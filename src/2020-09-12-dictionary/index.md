@@ -335,6 +335,11 @@ is the function that maps a
 [state](#vanity-7374617465){.vanity-term-link} of a system to the number
 referred to as fitness. ]{.vanity-contents}
 
+[]{#vanity-666565646261636b}**feedback**: [Input of the
+[fitness](#vanity-6f7074696d697a6174696f6e){.vanity-term-link} function
+of a [system](#vanity-73797374656d){.vanity-term-link}.
+]{.vanity-contents}
+
 []{#vanity-73796d626f6c}**symbol**: [A conventional representation of a
 [concept](#vanity-636f6e63657074){.vanity-term-link}. It is a component
 of the [world](#vanity-776f726c64){.vanity-term-link} to which some
@@ -343,6 +348,10 @@ members of a [society](#vanity-736f6369657479){.vanity-term-link} will
 and that does not provide
 [benefits](#vanity-6f7074696d697a6174696f6e){.vanity-term-link} other
 than eliciting similar reactions in others. ]{.vanity-contents}
+
+[]{#vanity-6c616e6775616765}**language**: [Combinations of
+[symbols](#vanity-73796d626f6c){.vanity-term-link} forming \... symbols.
+]{.vanity-contents}
 
 []{#vanity-696d6167696e6174696f6e}**imagination**: [A form of
 [intuition](#vanity-696e74756974696f6e){.vanity-term-link}, generally
@@ -382,6 +391,43 @@ that benefit from identifying features of the model without much
 The properties of a mind that allow it to extend its implicit
 [world](#vanity-776f726c64){.vanity-term-link} model.
 ]{.vanity-contents}
+
+[]{#vanity-636f6d6d756e69636174696f6e}**communication**: [Transfer of
+[concepts](#vanity-636f6e63657074){.vanity-term-link} from an
+[individual](#vanity-696e646976696475616c){.vanity-term-link} to other
+individuals. A concept is the activation of a construct within a
+particular [mind](#vanity-6d696e64){.vanity-term-link}. In general, two
+individuals with similar experience and exposed to the same input will
+activate approximately equivalent concepts. For example, when seeing an
+apple, some kind of neuron may light up, corresponding to the
+approximately defined concept of \"an apple being present in front of
+them\". We distinguish concepts, which are internal to each mind, from
+[symbols](#vanity-73796d626f6c){.vanity-term-link} which are
+placeholders meant to activate, trigger, or elicit a particular concept.
+Communication may or may not rely on symbols.
+[Language](#vanity-6c616e6775616765){.vanity-term-link} relies on
+symbols to represent concepts. An example of communication without
+symbols is teaching by example, such as an animal showing their
+offspring how to catch prey by just doing it. ]{.vanity-contents}
+
+[]{#vanity-7461626f6f}**taboo**: [A
+[concept](#vanity-636f6e63657074){.vanity-term-link} that is being
+avoided by an individual or group of individuals. Keeping in mind that a
+concept is the activation of a particular state of the mind, avoiding a
+concept is a complex process. It requires some training that consists in
+identifying situations that may lead to the concept, and favoring
+actions that take the focus away from the taboo concept. It is important
+to distinguish a taboo from any undesirable situation. A taboo concept
+is not just about avoiding a specific situation but also avoiding
+thinking about it. For example, the concept \"a tiger is attacking me\"
+for most people is not taboo because we don\'t have a problem imagining
+this. The actual concept that we want to avoid is \"the tiger is really
+attacking me right now\". A taboo is a concept that is completely
+avoided, possibly due to threats
+[communicated](#vanity-636f6d6d756e69636174696f6e){.vanity-term-link} by
+others or more generally due to fear caused by
+[negative](#vanity-666565646261636b){.vanity-term-link} past experience
+involving co-occurring concepts. ]{.vanity-contents}
 
 []{#dag}
 [![](img/glossary-deps.png "Graph showing the dependencies between definitions of

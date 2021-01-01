@@ -362,6 +362,13 @@
     - benefit
     - benefits
 
+- term: feedback
+  def: >-
+    Input of the [fitness] function of a [system].
+  syn:
+    - positive
+    - negative
+
 - term: symbol
   def: >-
     A conventional representation of a [concept]. It is a component
@@ -371,6 +378,10 @@
   syn:
     - symbols
     - symbolism
+
+- term: language
+  def: >-
+    Combinations of [symbols] forming ... symbols.
 
 - term: imagination
   def: >-
@@ -403,3 +414,41 @@
     features of the model without much [computation].
     (2) The properties of a mind that allow it to extend its implicit
     [world] model.
+
+- term: communication
+  def: >-
+    Transfer of [concepts] from an [individual] to other individuals.
+    A concept is the activation of a construct within a
+    particular [mind]. In general, two individuals with similar
+    experience and exposed to the same input will
+    activate approximately equivalent concepts. For example, when
+    seeing an apple, some kind of neuron may light up, corresponding to
+    the approximately defined concept of "an apple being present in
+    front of them". We distinguish concepts, which are internal to
+    each mind, from [symbols] which are placeholders meant to
+    activate, trigger, or elicit a particular concept. Communication
+    may or may not rely on symbols. [Language] relies on symbols to
+    represent concepts. An example of communication without symbols is
+    teaching by example, such as an animal showing their offspring how
+    to catch prey by just doing it.
+  syn:
+    - communicated
+
+- term: taboo
+  def: >-
+    A [concept] that is being avoided by an individual or group of
+    individuals. Keeping in mind that a concept is the activation of a
+    particular state of the mind, avoiding a concept is a complex
+    process. It requires some training that consists in
+    identifying situations that may lead to the concept, and favoring
+    actions that take the focus away from the taboo concept.
+    It is important to distinguish a taboo from any undesirable
+    situation. A taboo concept is not just about avoiding a specific
+    situation but also avoiding thinking about it. For example, the
+    concept "a tiger is attacking me" for most people is not taboo
+    because we don't have a problem imagining this. The actual concept
+    that we want to avoid is "the tiger is really attacking me right now".
+    A taboo is a concept that is completely avoided, possibly due to
+    threats [communicated] by others or more generally due to fear
+    caused by [negative] past experience involving co-occurring
+    concepts.
