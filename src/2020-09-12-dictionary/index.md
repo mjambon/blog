@@ -396,10 +396,10 @@ The properties of a mind that allow it to extend its implicit
 [concepts](#vanity-636f6e63657074){.vanity-term-link} from an
 [individual](#vanity-696e646976696475616c){.vanity-term-link} to other
 individuals. A concept is the activation of a construct within a
-particular [mind](#vanity-6d696e64){.vanity-term-link}. In general, two
-individuals with similar experience and exposed to the same input will
-activate approximately equivalent concepts. For example, when seeing an
-apple, some kind of neuron may light up, corresponding to the
+particular [mind](#vanity-6d696e64){.vanity-term-link}. In general and
+ideally, two individuals with similar experience and exposed to the same
+input will activate approximately equivalent concepts. For example, when
+seeing an apple, some kind of neuron may light up, corresponding to the
 approximately defined concept of \"an apple being present in front of
 them\". We distinguish concepts, which are internal to each mind, from
 [symbols](#vanity-73796d626f6c){.vanity-term-link} which are
