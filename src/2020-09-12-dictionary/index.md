@@ -412,18 +412,21 @@ offspring how to catch prey by just doing it. ]{.vanity-contents}
 
 []{#vanity-7461626f6f}**taboo**: [A
 [concept](#vanity-636f6e63657074){.vanity-term-link} that is being
-avoided by an individual or group of individuals. Keeping in mind that a
-concept is the activation of a particular state of the mind, avoiding a
-concept is a complex process. It requires some training that consists in
+avoided by one or more
+[individuals](#vanity-696e646976696475616c){.vanity-term-link}. Keeping
+in mind that a concept is the activation of a particular state of the
+[mind](#vanity-6d696e64){.vanity-term-link}, avoiding a concept is a
+complex process. It takes the mind some training that consists in
 identifying situations that may lead to the concept, and favoring
-actions that take the focus away from the taboo concept. It is important
-to distinguish a taboo from any undesirable situation. A taboo concept
-is not just about avoiding a specific situation but also avoiding
-thinking about it. For example, the concept \"a tiger is attacking me\"
-for most people is not taboo because we don\'t have a problem imagining
-this. The actual concept that we want to avoid is \"the tiger is really
-attacking me right now\". A taboo is a concept that is completely
-avoided, possibly due to threats
+[decisions](#vanity-6465636973696f6e){.vanity-term-link} that take the
+focus away from the taboo concept. It is important to distinguish a
+taboo from any undesirable situation. A taboo concept is not just about
+avoiding a specific situation but also avoiding thinking about it. For
+example, the concept \"a tiger is attacking me\" for most people is not
+taboo because we don\'t have a problem imagining this. The actual
+concept that we want to avoid is \"the tiger is attacking me right now
+for real\". A taboo is a concept that is completely avoided, possibly
+due to threats
 [communicated](#vanity-636f6d6d756e69636174696f6e){.vanity-term-link} by
 others or more generally due to fear caused by
 [negative](#vanity-666565646261636b){.vanity-term-link} past experience
