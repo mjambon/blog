@@ -198,12 +198,32 @@ according this definition. ]{.vanity-contents}
 [![](img/tool.jpg){.vanity-image-img}](img/tool.jpg)
 :::
 
-[]{#vanity-736369656e6365}**science**: [The activity consisting in
+[]{#vanity-6163746976697479}**activity**: [Collection of events
+involving [individuals](#vanity-696e646976696475616c){.vanity-term-link}
+using specific [tools](#vanity-746f6f6c){.vanity-term-link} or methods.
+]{.vanity-contents}
+
+[]{#vanity-736369656e6365}**science**: [The
+[activity](#vanity-6163746976697479){.vanity-term-link} consisting in
 creating and refining [models](#vanity-6d6f64656c){.vanity-term-link} of
 the [world](#vanity-776f726c64){.vanity-term-link}. ]{.vanity-contents}
 
-[]{#vanity-656e67696e656572696e67}**engineering**: [The activity of
-making [tools](#vanity-746f6f6c){.vanity-term-link}. ]{.vanity-contents}
+[]{#vanity-6372656174696f6e}**creation**:
+[[Activity](#vanity-6163746976697479){.vanity-term-link} whose impact on
+the [world](#vanity-776f726c64){.vanity-term-link} is noticed and
+becomes associated with a new concept, in some
+[model](#vanity-6d6f64656c){.vanity-term-link} of interest.
+]{.vanity-contents}
+
+[]{#vanity-656e67696e656572696e67}**engineering**: [The
+[activity](#vanity-6163746976697479){.vanity-term-link} of
+[creating](#vanity-6372656174696f6e){.vanity-term-link}
+[tools](#vanity-746f6f6c){.vanity-term-link}. ]{.vanity-contents}
+
+[]{#vanity-617274}**art**: [The
+[activity](#vanity-6163746976697479){.vanity-term-link} of
+[creating](#vanity-6372656174696f6e){.vanity-term-link} anything that is
+not a [tool](#vanity-746f6f6c){.vanity-term-link}. ]{.vanity-contents}
 
 []{#vanity-6d617468656d6174696373}**mathematics**: [The study of the
 structure of unambiguous statements. Mathematics are useful for dealing

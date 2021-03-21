@@ -204,14 +204,31 @@
     - methods
   img: tool.jpg
 
+- term: activity
+  def: >-
+    Collection of events involving [individuals] using specific [tools] or
+    methods.
+
 - term: science
   def: >-
-    The activity consisting in creating and refining [models] of the
+    The [activity] consisting in creating and refining [models] of the
     [world].
+
+- term: creation
+  def: >-
+    [Activity] whose impact on the [world] is noticed and becomes associated
+    with a new concept, in some [model] of interest.
+  syn:
+    - create
+    - creating
 
 - term: engineering
   def: >-
-    The activity of making [tools].
+    The [activity] of [creating] [tools].
+
+- term: art
+  def: >-
+    The [activity] of [creating] anything that is not a [tool].
 
 - term: mathematics
   def: >-
