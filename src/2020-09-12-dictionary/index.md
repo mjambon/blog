@@ -369,8 +369,56 @@ and that does not provide
 [benefits](#vanity-6f7074696d697a6174696f6e){.vanity-term-link} other
 than eliciting similar reactions in others. ]{.vanity-contents}
 
-[]{#vanity-6c616e6775616765}**language**: [Combinations of
-[symbols](#vanity-73796d626f6c){.vanity-term-link} forming \... symbols.
+[]{#vanity-73656e74656e6365}**sentence**: [A sentence is a compound
+[symbol](#vanity-73796d626f6c){.vanity-term-link} i.e. a symbol formed
+by combining multiple symbols into one. ]{.vanity-contents}
+
+[]{#vanity-6c616e6775616765}**language**: [A collection of
+[symbols](#vanity-73796d626f6c){.vanity-term-link} produced by combining
+other symbols. A combination of symbols that itself forms a symbol is
+referred to as a [compound
+symbol](#vanity-73656e74656e6365){.vanity-term-link} or a
+[sentence](#vanity-73656e74656e6365){.vanity-term-link}. One shall
+distinguish formal languages from informal languages.
+]{.vanity-contents}
+
+[]{#vanity-696e666f726d616c206c616e6775616765}**informal language**: [An
+informal language is a
+[language](#vanity-6c616e6775616765){.vanity-term-link} made of
+ambiguous [symbols](#vanity-73796d626f6c){.vanity-term-link}. A simple
+symbol or a [compound
+symbol](#vanity-73656e74656e6365){.vanity-term-link} is ambiguous if it
+elicits different
+[reactions](#vanity-7265616374696f6e){.vanity-term-link} in different
+people. For example, a simple English sentence like \"the sky is blue\"
+is ambiguous at least because different people have different notions of
+the color blue or whether this claim asserts that the sky is always
+blue. The missing details are usually called \"context\" but for an
+informal language, it is not possible to provide all the context for a
+[sentence](#vanity-73656e74656e6365){.vanity-term-link} to become
+unambiguous. What prevents this is how each
+[mind](#vanity-6d696e64){.vanity-term-link} produces
+[concepts](#vanity-636f6e63657074){.vanity-term-link} and reacts to them
+as a function of its own state rather than just as a function of new
+external data. ]{.vanity-contents}
+
+[]{#vanity-666f726d616c206c616e6775616765}**formal language**: [A formal
+language is a [language](#vanity-6c616e6775616765){.vanity-term-link}
+defined mathematically, or equivalently unambiguously. Most programming
+languages can be thought of as formal languages, even if in practice
+certain aspects of the language are left undefined. Another example of
+\"almost formal\" languages are mathematical proofs. While ordinary
+mathematical proofs are expressed in a natural language such as English,
+they are believed to be translatable into one or more equivalent
+proof-checking
+[algorithms](#vanity-616c676f726974686d){.vanity-term-link} by different
+people. Since not everyone understands a given mathematical proof, the
+key is to convince the audience that they understand the proof only if
+they really do. As a shortcut, we might therefore allow ourselves to
+treat most mathematical discourse as using a formal language. This
+contrasts with everyday [informal
+languages](#vanity-696e666f726d616c206c616e6775616765){.vanity-term-link},
+which are not believed nor designed to be unambiguous.
 ]{.vanity-contents}
 
 []{#vanity-696d6167696e6174696f6e}**imagination**: [A form of
