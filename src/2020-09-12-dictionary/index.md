@@ -367,7 +367,16 @@ members of a [society](#vanity-736f6369657479){.vanity-term-link} will
 [react](#vanity-7265616374696f6e){.vanity-term-link} in a similar manner
 and that does not provide
 [benefits](#vanity-6f7074696d697a6174696f6e){.vanity-term-link} other
-than eliciting similar reactions in others. ]{.vanity-contents}
+than eliciting similar reactions in others. A special case of symbol is
+one that is used only by single
+[individual](#vanity-696e646976696475616c){.vanity-term-link}. It
+suffices that the concept be identified as such by the individual to be
+considered a symbol. For example, \"that feeling when I do X\" shall be
+considered an internal symbol because it\'s a concept whose presence is
+clearly identified and the subject might try to reproduce it with the
+aim of eliciting a particular
+[reaction](#vanity-7265616374696f6e){.vanity-term-link} in their own
+[mind](#vanity-6d696e64){.vanity-term-link}. ]{.vanity-contents}
 
 []{#vanity-73656e74656e6365}**sentence**: [A sentence is a compound
 [symbol](#vanity-73796d626f6c){.vanity-term-link} i.e. a symbol formed
