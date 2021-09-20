@@ -373,8 +373,8 @@ is one that\'s used only by single
 suffices that the concept be identified as such by the individual to be
 considered a symbol. For example, \"that feeling when I do X\" shall be
 considered an internal symbol because it\'s a concept whose presence is
-clearly identified and the subject might try to reproduce it with the
-aim of eliciting a particular
+clearly identified by the subject. The subject might then try to
+reproduce it with the aim of eliciting a particular
 [reaction](#vanity-7265616374696f6e){.vanity-term-link} in their own
 [mind](#vanity-6d696e64){.vanity-term-link}. ]{.vanity-contents}
 
