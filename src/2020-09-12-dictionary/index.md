@@ -368,7 +368,7 @@ members of a [society](#vanity-736f6369657479){.vanity-term-link} will
 and that does not provide
 [benefits](#vanity-6f7074696d697a6174696f6e){.vanity-term-link} other
 than eliciting similar reactions in others. A special case of a symbol
-is one that\'s used only by single
+is one that\'s used only by a single
 [individual](#vanity-696e646976696475616c){.vanity-term-link}. It
 suffices that the concept be identified as such by the individual to be
 considered a symbol. For example, \"that feeling when I do X\" shall be
