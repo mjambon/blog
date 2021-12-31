@@ -20,7 +20,8 @@ ARTICLES = \
   2020-03-29-software-engineering-notes \
   2020-06-28-dynamic-signal-uniformization \
   2020-09-12-dictionary \
-  2020-12-25-authoritarian
+  2020-12-25-authoritarian \
+  2021-12-31-mind-vs-identity
 
 DOCROOT = ../docs
 
