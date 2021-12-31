@@ -56,8 +56,7 @@ still ongoing as of 2020. It is now closed-source.
 
 ### Ideas
 
-* [Software engineering
-  notes](2020-03-29-software-engineering-notes) (March 2020)
+* [Mind ≠ Identity](2021-12-31-mind-vs-identity) (December 2021)
 * [Current interests (March 2017)](2017-03-05-current-interests)
 * [A world of intelligent machines](2017-01-02-agi-world) (January 2017)
 * [Engineering emotions](2016-12-31-agi-emotions) (December 2016)
@@ -71,6 +70,8 @@ Miscellaneous blog posts
 --
 
 * [Signs they're an authoritarian](2020-12-25-authoritarian) (2020)
+* [Software engineering
+  notes](2020-03-29-software-engineering-notes) (2020)
 * [Issue Voting](2017-01-08-issue-voting-method) (2017): a proposed
   voting method
 * [Diversity rule: a voting system that accommodates

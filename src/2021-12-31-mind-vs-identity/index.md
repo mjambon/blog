@@ -1,4 +1,4 @@
-% Mind vs. identity
+% Mind ≠ Identity
 
 Can two minds merge into one, given enough connectivity? Can we create
 a machine or man-machine hybrid that behaves like two individual minds
