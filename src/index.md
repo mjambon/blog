@@ -26,15 +26,15 @@ creating artificial individuals, not tools.
 
 The implementation of the
 [architecture laid out in 2016](2016-08-20-agi-project-status-2016) is
-still ongoing as of 2020. It is now closed-source.
+still ongoing as of 2022. It is now closed-source.
 
 ### Definitions
 
-* [Minimal Dictionary](2020-09-12-dictionary): small dictionary of
+* [Minimal Dictionary](2020-09-12-dictionary) (2020-): small dictionary of
   basic terms loosely related to natural and artificial minds and their
   interaction with the world. It is structured as a DAG, forbidding
   cyclic definitions.
-* [Artificial cognition glossary](2019-04-21-glossary): glossary of
+* [Artificial cognition glossary](2019-04-21-glossary) (2019-): glossary of
   technical terms used in my own work on designing artificial minds.
 
 ### Technical reports
