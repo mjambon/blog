@@ -16,7 +16,7 @@ dot -Tpng _build/glossary-deps.dot -o img/glossary-deps.png
 
 (
   cat before-body.html
-  vanity < glossary.yml
+  vanity --index-placement=before < glossary.yml
   cat after-body.html
 ) > _build/glossary.html
 

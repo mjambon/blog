@@ -6,6 +6,32 @@ Definitions are acyclic, i.e. a definition may contain only links to
 previously defined terms. [This forms a DAG](#dag) (directed acyclic
 graph) of terms, with the most foundational terms at the bottom.
 
+[abstract](#vanity-6162737472616374){.vanity-term-link},
+[action](#vanity-616374696f6e){.vanity-term-link},
+[activation](#vanity-61637469766174696f6e){.vanity-term-link},
+[anticipation](#vanity-616e74696369706174696f6e){.vanity-term-link},
+[cloning](#vanity-636c6f6e696e67){.vanity-term-link},
+[concept](#vanity-636f6e63657074){.vanity-term-link},
+[concrete](#vanity-636f6e6372657465){.vanity-term-link},
+[context](#vanity-636f6e74657874){.vanity-term-link},
+[emotion](#vanity-656d6f74696f6e){.vanity-term-link},
+[environment](#vanity-656e7669726f6e6d656e74){.vanity-term-link},
+[fitness](#vanity-6669746e657373){.vanity-term-link},
+[imagination](#vanity-696d6167696e6174696f6e){.vanity-term-link},
+[input](#vanity-696e707574){.vanity-term-link},
+[intelligence](#vanity-696e74656c6c6967656e6365){.vanity-term-link},
+[intuition](#vanity-696e74756974696f6e){.vanity-term-link},
+[mind](#vanity-6d696e64){.vanity-term-link},
+[model](#vanity-6d6f64656c){.vanity-term-link},
+[node](#vanity-6e6f6465){.vanity-term-link},
+[optimization](#vanity-6f7074696d697a6174696f6e){.vanity-term-link},
+[output](#vanity-6f7574707574){.vanity-term-link},
+[pattern](#vanity-7061747465726e){.vanity-term-link},
+[perception](#vanity-70657263657074696f6e){.vanity-term-link},
+[sensing](#vanity-73656e73696e67){.vanity-term-link},
+[system](#vanity-73797374656d){.vanity-term-link},
+[world](#vanity-776f726c64){.vanity-term-link}
+
 []{#vanity-73797374656d}**system**: [An instance of the machine we're
 building and studying. ]{.vanity-contents}
 
