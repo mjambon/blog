@@ -1,4 +1,5 @@
 ARTICLES = \
+  gallery \
   2014-12-27-faith-driven-science \
   2014-12-31-intelligence-precedes-machines \
   2015-01-03-universal-career-advice \
@@ -53,7 +54,7 @@ html: $(HTML)
 img:
 	for x in $(IMG); do \
     mkdir -p $(DOCROOT)/$$x; \
-    cp -u $$x/* $(DOCROOT)/$$x/; \
+    cp -r -u $$x/* $(DOCROOT)/$$x/; \
   done
 
 graphs:
