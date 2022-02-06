@@ -1,8 +1,9 @@
 About me
 --
 
-<img src="https://s.gravatar.com/avatar/ca1fd636db960bba6027154d81ef106e?s=80"
-     alt="The author">
+<img src="img/mjambon-brown-2022.jpg"
+     width="100" height="100"
+     alt="portrait">
 
 I'm a software developer, creator, and researcher. Originally from
 France, I live in the San Francisco Bay Area.

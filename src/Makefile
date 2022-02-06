@@ -30,7 +30,7 @@ HTML = \
   $(DOCROOT)/index.html \
   $(addprefix $(DOCROOT)/, $(addsuffix /index.html, $(ARTICLES)))
 
-IMG = $(wildcard */img)
+IMG = img $(wildcard */img)
 DOT = $(wildcard */dot)
 
 UTILDIR = ../util
