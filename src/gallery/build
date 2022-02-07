@@ -23,6 +23,6 @@ for name in $(ls -r -1 img/original); do
     convert -resize 800x800 "$orig" "$medium"
   fi
   cat >> index.md <<EOF
-[<img src="$medium" alt="abstract"/>]($large)
+[<img src="$medium" style="padding:20px 0px" alt="abstract"/>]($large)
 EOF
 done
