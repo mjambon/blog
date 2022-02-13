@@ -10,3 +10,7 @@
 [<img src="img/medium/img-20220116-2.jpg" style="padding:20px 0px" alt="abstract"/>](img/large/img-20220116-2.jpg)
 [<img src="img/medium/img-20220116-1.jpg" style="padding:20px 0px" alt="abstract"/>](img/large/img-20220116-1.jpg)
 [<img src="img/medium/img-20220109.jpg" style="padding:20px 0px" alt="abstract"/>](img/large/img-20220109.jpg)
+
+[This work](https://mjambon.com/gallery) © 2022
+by [Martin Jambon](https://mjambon.com) is licensed under
+[CC BY-NC-ND 4.0](http://creativecommons.org/licenses/by-nc-nd/4.0/).
