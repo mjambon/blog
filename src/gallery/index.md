@@ -4,27 +4,41 @@
 <p>
 [<img src="img/other/instagram-logo.png" style="width:1.5em">](https://www.instagram.com/martinjambon/)
 </p>
-
-[<img src="img/medium/img-20220312-4.jpg" style="padding:20px 0px" alt="abstract"/>](img/large/img-20220312-4.jpg)
-[<img src="img/medium/img-20220312-3.jpg" style="padding:20px 0px" alt="abstract"/>](img/large/img-20220312-3.jpg)
-[<img src="img/medium/img-20220312-2.jpg" style="padding:20px 0px" alt="abstract"/>](img/large/img-20220312-2.jpg)
-[<img src="img/medium/img-20220312-1.jpg" style="padding:20px 0px" alt="abstract"/>](img/large/img-20220312-1.jpg)
-[<img src="img/medium/img-20220305-3.jpg" style="padding:20px 0px" alt="abstract"/>](img/large/img-20220305-3.jpg)
-[<img src="img/medium/img-20220305-2.jpg" style="padding:20px 0px" alt="abstract"/>](img/large/img-20220305-2.jpg)
-[<img src="img/medium/img-20220305-1.jpg" style="padding:20px 0px" alt="abstract"/>](img/large/img-20220305-1.jpg)
-[<img src="img/medium/img-20220226.jpg" style="padding:20px 0px" alt="abstract"/>](img/large/img-20220226.jpg)
-[<img src="img/medium/img-20220221.jpg" style="padding:20px 0px" alt="abstract"/>](img/large/img-20220221.jpg)
-[<img src="img/medium/img-20220220.jpg" style="padding:20px 0px" alt="abstract"/>](img/large/img-20220220.jpg)
-[<img src="img/medium/img-20220212.jpg" style="padding:20px 0px" alt="abstract"/>](img/large/img-20220212.jpg)
-[<img src="img/medium/img-20220207.jpg" style="padding:20px 0px" alt="abstract"/>](img/large/img-20220207.jpg)
-[<img src="img/medium/img-20220205.jpg" style="padding:20px 0px" alt="abstract"/>](img/large/img-20220205.jpg)
-[<img src="img/medium/img-20220131.jpg" style="padding:20px 0px" alt="abstract"/>](img/large/img-20220131.jpg)
-[<img src="img/medium/img-20220123.jpg" style="padding:20px 0px" alt="abstract"/>](img/large/img-20220123.jpg)
-[<img src="img/medium/img-20220122.jpg" style="padding:20px 0px" alt="abstract"/>](img/large/img-20220122.jpg)
-[<img src="img/medium/img-20220116-2.jpg" style="padding:20px 0px" alt="abstract"/>](img/large/img-20220116-2.jpg)
-[<img src="img/medium/img-20220116-1.jpg" style="padding:20px 0px" alt="abstract"/>](img/large/img-20220116-1.jpg)
-[<img src="img/medium/img-20220109.jpg" style="padding:20px 0px" alt="abstract"/>](img/large/img-20220109.jpg)
-
-[This work](https://mjambon.com/gallery) © 2022
-by [Martin Jambon](https://mjambon.com) is licensed under
-[CC BY-NC-ND 4.0](http://creativecommons.org/licenses/by-nc-nd/4.0/).
+[<img src="img/medium/img-20220312-4.jpg" title="Portrait of a dreamer" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220312-4.jpg)
+<p style="color:#666">Portrait of a dreamer, 2022</p>
+[<img src="img/medium/img-20220312-3.jpg" title="Alice jambon" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220312-3.jpg)
+<p style="color:#666">Alice jambon, 2022</p>
+[<img src="img/medium/img-20220312-2.jpg" title="Portrait of a girl" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220312-2.jpg)
+<p style="color:#666">Portrait of a girl, 2022</p>
+[<img src="img/medium/img-20220312-1.jpg" title="Vulnerable man" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220312-1.jpg)
+<p style="color:#666">Vulnerable man, 2022</p>
+[<img src="img/medium/img-20220305-3.jpg" title="Untitled" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220305-3.jpg)
+<p style="color:#666">Untitled, 2022</p>
+[<img src="img/medium/img-20220305-2.jpg" title="Untitled" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220305-2.jpg)
+<p style="color:#666">Untitled, 2022</p>
+[<img src="img/medium/img-20220305-1.jpg" title="Untitled" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220305-1.jpg)
+<p style="color:#666">Untitled, 2022</p>
+[<img src="img/medium/img-20220226.jpg" title="War" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220226.jpg)
+<p style="color:#666">War, 2022</p>
+[<img src="img/medium/img-20220221.jpg" title="Untitled" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220221.jpg)
+<p style="color:#666">Untitled, 2022</p>
+[<img src="img/medium/img-20220220.jpg" title="Brutalist intervention" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220220.jpg)
+<p style="color:#666">Brutalist intervention, 2022</p>
+[<img src="img/medium/img-20220212.jpg" title="Untitled" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220212.jpg)
+<p style="color:#666">Untitled, 2022</p>
+[<img src="img/medium/img-20220207.jpg" title="Untitled" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220207.jpg)
+<p style="color:#666">Untitled, 2022</p>
+[<img src="img/medium/img-20220205.jpg" title="Untitled" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220205.jpg)
+<p style="color:#666">Untitled, 2022</p>
+[<img src="img/medium/img-20220131.jpg" title="Untitled" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220131.jpg)
+<p style="color:#666">Untitled, 2022</p>
+[<img src="img/medium/img-20220123.jpg" title="Untitled" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220123.jpg)
+<p style="color:#666">Untitled, 2022</p>
+[<img src="img/medium/img-20220122.jpg" title="Untitled" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220122.jpg)
+<p style="color:#666">Untitled, 2022</p>
+[<img src="img/medium/img-20220116-2.jpg" title="Untitled" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220116-2.jpg)
+<p style="color:#666">Untitled, 2022</p>
+[<img src="img/medium/img-20220116-1.jpg" title="Untitled" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220116-1.jpg)
+<p style="color:#666">Untitled, 2022</p>
+[<img src="img/medium/img-20220109.jpg" title="Untitled" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220109.jpg)
+<p style="color:#666">Untitled, 2022</p>
