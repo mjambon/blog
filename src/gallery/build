@@ -11,6 +11,14 @@ import html
 import os
 import subprocess
 
+# The built-in '.capitalize()' method will downcase the rest of the string,
+# which we don't want.
+def capitalize(s: str) -> str:
+    if len(s) > 0:
+        return s[0].upper() + s[1:]
+    else:
+        return s
+
 def generate(row_reader: Any, md_file: TextIO) -> None:
     md_file.write(
         """% Artwork by Martin Jambon
@@ -24,7 +32,7 @@ def generate(row_reader: Any, md_file: TextIO) -> None:
     for row in row_reader:
         img_id = row['identifier']
         year = date.fromisoformat(row['date']).year
-        title = row['title'].capitalize()
+        title = capitalize(row['title'])
         if not title:
             title = 'Untitled'
         img_name = img_id + '.jpg'
@@ -44,7 +52,7 @@ def generate(row_reader: Any, md_file: TextIO) -> None:
         caption = f"""{title}, {year}"""
         md_file.write(
             f'[<img src="{html.escape(medium)}" '
-            f'title="{html.escape(title.capitalize())}" '
+            f'title="{html.escape(title)}" '
             f'style="padding:40px 0px 0px 0px" '
             f'alt="abstract art"/>]({html.escape(large)})'
             f'\n'
