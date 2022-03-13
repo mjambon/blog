@@ -36,8 +36,8 @@
 <p style="color:#666">Untitled, 2022</p>
 [<img src="img/medium/img-20220122.jpg" title="Untitled" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220122.jpg)
 <p style="color:#666">Untitled, 2022</p>
-[<img src="img/medium/img-20220116-2.jpg" title="Untitled" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220116-2.jpg)
-<p style="color:#666">Untitled, 2022</p>
+[<img src="img/medium/img-20220116-2.jpg" title="Red" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220116-2.jpg)
+<p style="color:#666">Red, 2022</p>
 [<img src="img/medium/img-20220116-1.jpg" title="Untitled" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220116-1.jpg)
 <p style="color:#666">Untitled, 2022</p>
 [<img src="img/medium/img-20220109.jpg" title="Untitled" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220109.jpg)
