@@ -4,6 +4,8 @@
 <p>
 [<img src="img/other/instagram-logo.png" style="width:1.5em">](https://www.instagram.com/martinjambon/)
 </p>
+[<img src="img/medium/img-20220313.jpg" title="Propaganda" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220313.jpg)
+<p style="color:#666">Propaganda, 2022</p>
 [<img src="img/medium/img-20220312-4.jpg" title="Portrait of a dreamer" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220312-4.jpg)
 <p style="color:#666">Portrait of a dreamer, 2022</p>
 [<img src="img/medium/img-20220312-3.jpg" title="Alice Jambon" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220312-3.jpg)
