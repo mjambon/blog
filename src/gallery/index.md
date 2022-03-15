@@ -30,8 +30,8 @@
 <p style="color:#666">Untitled, 2022</p>
 [<img src="img/medium/img-20220207.jpg" title="Untitled" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220207.jpg)
 <p style="color:#666">Untitled, 2022</p>
-[<img src="img/medium/img-20220205.jpg" title="Untitled" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220205.jpg)
-<p style="color:#666">Untitled, 2022</p>
+[<img src="img/medium/img-20220205.jpg" title="Meats of Iceland" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220205.jpg)
+<p style="color:#666">Meats of Iceland, 2022</p>
 [<img src="img/medium/img-20220131.jpg" title="Untitled" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220131.jpg)
 <p style="color:#666">Untitled, 2022</p>
 [<img src="img/medium/img-20220123.jpg" title="Untitled" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220123.jpg)
