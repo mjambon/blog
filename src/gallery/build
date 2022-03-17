@@ -5,7 +5,7 @@
 #
 
 from datetime import date
-from typing import Any, TextIO
+from typing import Any, Dict, TextIO
 import csv
 import html
 import os
@@ -18,6 +18,36 @@ def capitalize(s: str) -> str:
         return s[0].upper() + s[1:]
     else:
         return s
+
+def print_row(row: Dict[str, Any], md_file: TextIO) -> None:
+    img_id = row['identifier']
+    year = date.fromisoformat(row['date']).year
+    title = capitalize(row['title'])
+    if not title:
+        title = 'Untitled'
+    img_name = img_id + '.jpg'
+
+    # Generate images of different sizes
+    orig = 'img/original/' + img_name
+
+    large = 'img/large/' + img_name
+    if not os.path.isfile(large):
+        subprocess.run(["convert", "-resize", "1600x1600", orig, large])
+
+    medium = 'img/medium/' + img_name
+    if not os.path.isfile(medium):
+        subprocess.run(["convert", "-resize", "800x800", orig, medium])
+
+    # Write to main page
+    caption = f"""{title}, {year}"""
+    md_file.write(
+        f'[<img src="{html.escape(medium)}" '
+        f'title="{html.escape(title)}" '
+        f'style="padding:40px 0px 0px 0px" '
+        f'alt="abstract art"/>]({html.escape(large)})'
+        f'\n'
+        f'<p style="color:#666">{html.escape(caption)}</p>\n'
+    )
 
 def generate(row_reader: Any, md_file: TextIO) -> None:
     md_file.write(
@@ -32,34 +62,8 @@ def generate(row_reader: Any, md_file: TextIO) -> None:
 """
     )
     for row in row_reader:
-        img_id = row['identifier']
-        year = date.fromisoformat(row['date']).year
-        title = capitalize(row['title'])
-        if not title:
-            title = 'Untitled'
-        img_name = img_id + '.jpg'
-
-        # Generate images of different sizes
-        orig = 'img/original/' + img_name
-
-        large = 'img/large/' + img_name
-        if not os.path.isfile(large):
-            subprocess.run(["convert", "-resize", "1600x1600", orig, large])
-
-        medium = 'img/medium/' + img_name
-        if not os.path.isfile(medium):
-            subprocess.run(["convert", "-resize", "800x800", orig, medium])
-
-        # Write to main page
-        caption = f"""{title}, {year}"""
-        md_file.write(
-            f'[<img src="{html.escape(medium)}" '
-            f'title="{html.escape(title)}" '
-            f'style="padding:40px 0px 0px 0px" '
-            f'alt="abstract art"/>]({html.escape(large)})'
-            f'\n'
-            f'<p style="color:#666">{html.escape(caption)}</p>\n'
-        )
+        if row['show'] == '1':
+            print_row(row, md_file)
 
 def main() -> None:
     os.makedirs('img/large', exist_ok=True)
