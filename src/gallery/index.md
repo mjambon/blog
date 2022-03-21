@@ -6,6 +6,10 @@
 [<img src="img/other/twitter-logo.png" style="height:1.5em;padding:0em 0.5em">](https://twitter.com/mjambon)
 [<img src="img/other/facebook-logo.png" style="height:1.5em;padding:0em 0.5em">](https://facebook.com/0xfff)
 </p>
+[<img src="img/medium/img-20220320-2.jpg" title="In bloom" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220320-2.jpg)
+<p style="color:#666">In bloom, 2022</p>
+[<img src="img/medium/img-20220320-1.jpg" title="Embedded in spacetime" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220320-1.jpg)
+<p style="color:#666">Embedded in spacetime, 2022</p>
 [<img src="img/medium/img-20220317.jpg" title="Boredom" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220317.jpg)
 <p style="color:#666">Boredom, 2022</p>
 [<img src="img/medium/img-20220313.jpg" title="Propaganda" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220313.jpg)
