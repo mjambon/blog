@@ -28,8 +28,8 @@
 <p style="color:#666">Vulnerable man, 2022</p>
 [<img src="img/medium/img-20220305-3.jpg" title="Untitled" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220305-3.jpg)
 <p style="color:#666">Untitled, 2022</p>
-[<img src="img/medium/img-20220305-2.jpg" title="Untitled" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220305-2.jpg)
-<p style="color:#666">Untitled, 2022</p>
+[<img src="img/medium/img-20220305-2.jpg" title="Midair" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220305-2.jpg)
+<p style="color:#666">Midair, 2022</p>
 [<img src="img/medium/img-20220226.jpg" title="War" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220226.jpg)
 <p style="color:#666">War, 2022</p>
 [<img src="img/medium/img-20220221.jpg" title="Untitled" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220221.jpg)
