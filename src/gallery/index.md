@@ -6,6 +6,8 @@
 [<img src="img/other/twitter-logo.png" style="height:1.5em;padding:0em 0.5em">](https://twitter.com/mjambon)
 [<img src="img/other/facebook-logo.png" style="height:1.5em;padding:0em 0.5em">](https://facebook.com/0xfff)
 </p>
+[<img src="img/medium/img-20220329.jpg" title="Country life" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220329.jpg)
+<p style="color:#666">Country life, 2022</p>
 [<img src="img/medium/img-20220322-2.jpg" title="Soleil patatoïde terrifiant" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220322-2.jpg)
 <p style="color:#666">Soleil patatoïde terrifiant, 2022</p>
 [<img src="img/medium/img-20220320-2.jpg" title="In bloom" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220320-2.jpg)

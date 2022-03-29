@@ -1,26 +1,27 @@
-identifier,date,title,medium,tags,description,show
-img-20220322-2,2022-03-22,soleil patatoïde terrifiant,acrylic markers on black paper,,,1
-img-20220322-1,2022-03-22,multiple threats,acrylic markers on paper,,,0
-img-20220320-2,2022-03-20,in bloom,acrylic markers on brown paper,,,1
-img-20220320-1,2022-03-20,embedded in spacetime,acrylic markers on brown paper,,,1
-img-20220317,2022-03-17,boredom,acrylic markers on black paper,,,1
-img-20220313,2022-03-13,propaganda,acrylic on canvas,painting,,1
-img-20220312-4,2022-03-12,portrait of a dreamer,charcoal pencils on paper,"charcoal,portrait",,1
-img-20220312-3,2022-03-12,Alice Jambon,charcoal pencils on paper,"charcoal,portrait",,1
-img-20220312-2,2022-03-12,portrait of a girl,charcoal pencils on paper,"charcoal,portrait",,1
-img-20220312-1,2022-03-12,vulnerable man,charcoal pencils on paper,"charcoal,portrait",,1
-img-20220305-3,2022-03-05,,acrylic markers on brown paper,,,1
-img-20220305-2,2022-03-05,,acrylic markers on brown paper,,,1
-img-20220305-1,2022-03-05,,acrylic markers on paper,,,0
-img-20220226,2022-02-26,war,acrylic on canvas,painting,,1
-img-20220221,2022-02-21,,acrylic on paper,painting,,1
-img-20220220,2022-02-20,brutalist intervention,acrylic on canvas,painting,,1
-img-20220212,2022-02-12,,acrylic on canvas,painting,,1
-img-20220207,2022-02-07,,acrylic on paper,painting,,1
-img-20220205,2022-02-05,meats of Iceland,acrylic on paper,painting,,1
-img-20220131,2022-01-31,,acrylic on paper,painting,,1
-img-20220123,2022-01-23,,acrylic on paper,painting,,1
-img-20220122,2022-01-22,10:15 on a Saturday night,acrylic on paper,painting,,1
-img-20220116-2,2022-01-16,red,acrylic on paper,painting,,1
-img-20220116-1,2022-01-16,,acrylic on paper,painting,,1
-img-20220109,2022-01-09,,acrylic on paper,painting,,1
+identifier,date,title,medium,tags,description,show,favorite
+img-20220329,2022-03-29,country life,acrylic markers on black paper,,,1,0
+img-20220322-2,2022-03-22,soleil patatoïde terrifiant,acrylic markers on black paper,,,1,1
+img-20220322-1,2022-03-22,multiple threats,acrylic markers on paper,,,0,0
+img-20220320-2,2022-03-20,in bloom,acrylic markers on brown paper,,,1,0
+img-20220320-1,2022-03-20,embedded in spacetime,acrylic markers on brown paper,,,1,1
+img-20220317,2022-03-17,boredom,acrylic markers on black paper,,,1,1
+img-20220313,2022-03-13,propaganda,acrylic on canvas,painting,,1,0
+img-20220312-4,2022-03-12,portrait of a dreamer,charcoal pencils on paper,"charcoal,portrait",,1,0
+img-20220312-3,2022-03-12,Alice Jambon,charcoal pencils on paper,"charcoal,portrait",,1,0
+img-20220312-2,2022-03-12,portrait of a girl,charcoal pencils on paper,"charcoal,portrait",,1,0
+img-20220312-1,2022-03-12,vulnerable man,charcoal pencils on paper,"charcoal,portrait",,1,0
+img-20220305-3,2022-03-05,,acrylic markers on brown paper,,,1,0
+img-20220305-2,2022-03-05,,acrylic markers on brown paper,,,1,0
+img-20220305-1,2022-03-05,,acrylic markers on paper,,,0,0
+img-20220226,2022-02-26,war,acrylic on canvas,painting,,1,1
+img-20220221,2022-02-21,,acrylic on paper,painting,,1,0
+img-20220220,2022-02-20,brutalist intervention,acrylic on canvas,painting,,1,0
+img-20220212,2022-02-12,,acrylic on canvas,painting,,1,0
+img-20220207,2022-02-07,,acrylic on paper,painting,,1,0
+img-20220205,2022-02-05,meats of Iceland,acrylic on paper,painting,,1,0
+img-20220131,2022-01-31,,acrylic on paper,painting,,1,0
+img-20220123,2022-01-23,,acrylic on paper,painting,,1,0
+img-20220122,2022-01-22,10:15 on a Saturday night,acrylic on paper,painting,,1,0
+img-20220116-2,2022-01-16,red,acrylic on paper,painting,,1,0
+img-20220116-1,2022-01-16,,acrylic on paper,painting,,1,0
+img-20220109,2022-01-09,,acrylic on paper,painting,,1,0
