@@ -9,12 +9,12 @@ I'm a software developer, creator, and researcher. Originally from
 France, I live in the San Francisco Bay Area.
 
 <code>martin@mjambon.com</code>
+&bull; [Art](gallery)
 &bull; [Twitter](https://twitter.com/mjambon)
 &bull; [GitHub](https://github.com/mjambon)
 &bull; [LinkedIn](https://www.linkedin.com/in/mjambon)
 &bull; [Flickr](https://www.flickr.com/photos/mjambon)
 &bull; [Strava](http://www.strava.com/athletes/750791)
-&bull; [Artwork](gallery)
 
 Artificial cognition
 --
