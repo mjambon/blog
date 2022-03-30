@@ -1,18 +1,19 @@
 identifier,date,title,medium,tags,description,show,favorite
-img-20220329,2022-03-29,country life,acrylic markers on black paper,,,1,0
-img-20220322-2,2022-03-22,soleil patatoïde terrifiant,acrylic markers on black paper,,,1,1
-img-20220322-1,2022-03-22,multiple threats,acrylic markers on paper,,,0,0
-img-20220320-2,2022-03-20,in bloom,acrylic markers on brown paper,,,1,0
-img-20220320-1,2022-03-20,embedded in spacetime,acrylic markers on brown paper,,,1,1
-img-20220317,2022-03-17,boredom,acrylic markers on black paper,,,1,1
+img-20220330,2022-03-30,influence,acrylic marker on brown paper,monochrome,,1,1
+img-20220329,2022-03-29,country life,acrylic marker on black paper,,,1,0
+img-20220322-2,2022-03-22,soleil patatoïde terrifiant,acrylic marker on black paper,,,1,1
+img-20220322-1,2022-03-22,multiple threats,acrylic marker on paper,,,0,0
+img-20220320-2,2022-03-20,in bloom,acrylic marker on brown paper,,,1,0
+img-20220320-1,2022-03-20,embedded in spacetime,acrylic marker on brown paper,monochrome,,1,1
+img-20220317,2022-03-17,boredom,acrylic marker on black paper,,,1,1
 img-20220313,2022-03-13,propaganda,acrylic on canvas,painting,,1,0
-img-20220312-4,2022-03-12,portrait of a dreamer,charcoal pencils on paper,"charcoal,portrait",,1,0
-img-20220312-3,2022-03-12,Alice Jambon,charcoal pencils on paper,"charcoal,portrait",,1,0
-img-20220312-2,2022-03-12,portrait of a girl,charcoal pencils on paper,"charcoal,portrait",,1,0
-img-20220312-1,2022-03-12,vulnerable man,charcoal pencils on paper,"charcoal,portrait",,1,0
-img-20220305-3,2022-03-05,,acrylic markers on brown paper,,,1,0
-img-20220305-2,2022-03-05,midair,acrylic markers on brown paper,,,1,1
-img-20220305-1,2022-03-05,,acrylic markers on paper,,,0,0
+img-20220312-4,2022-03-12,portrait of a dreamer,charcoal pencils on paper,"charcoal,portrait,monochrome",,1,0
+img-20220312-3,2022-03-12,Alice Jambon,charcoal pencils on paper,"charcoal,portrait,monochrome",,1,0
+img-20220312-2,2022-03-12,portrait of a girl,charcoal pencils on paper,"charcoal,portrait,monochrome",,1,0
+img-20220312-1,2022-03-12,vulnerable man,charcoal pencils on paper,"charcoal,portrait,monochrome",,1,0
+img-20220305-3,2022-03-05,,acrylic marker on brown paper,,,1,0
+img-20220305-2,2022-03-05,midair,acrylic marker on brown paper,,,1,1
+img-20220305-1,2022-03-05,,acrylic marker on paper,,,0,0
 img-20220226,2022-02-26,war,acrylic on canvas,painting,,1,1
 img-20220221,2022-02-21,,acrylic on paper,painting,,1,0
 img-20220220,2022-02-20,brutalist intervention,acrylic on canvas,painting,,1,0
