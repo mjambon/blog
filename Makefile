@@ -13,6 +13,11 @@ default:
 	cp -u paper/proteins/* $(DOCROOT)/paper/proteins
 	$(MAKE) -C src
 
+.PHONY: live
+live:
+	xdg-open http://0.0.0.0:8000/
+	python -m http.server --directory docs 8000
+
 clean:
 	$(MAKE) -C src clean
 	rm -f *~
