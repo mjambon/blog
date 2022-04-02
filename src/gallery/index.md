@@ -6,6 +6,18 @@
 [<img src="img/other/twitter-logo.png" style="height:1.5em;padding:0em 0.5em">](https://twitter.com/mjambon)
 [<img src="img/other/facebook-logo.png" style="height:1.5em;padding:0em 0.5em">](https://facebook.com/0xfff)
 </p>
+[<img src="img/medium/img-20220401-6.jpg" title="What’s left of America" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220401-6.jpg)
+<p style="color:#666">What’s left of America, 2022</p>
+[<img src="img/medium/img-20220401-5.jpg" title="Rainstorm" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220401-5.jpg)
+<p style="color:#666">Rainstorm, 2022</p>
+[<img src="img/medium/img-20220401-4.jpg" title="Play with your food" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220401-4.jpg)
+<p style="color:#666">Play with your food, 2022</p>
+[<img src="img/medium/img-20220401-3.jpg" title="Gathering" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220401-3.jpg)
+<p style="color:#666">Gathering, 2022</p>
+[<img src="img/medium/img-20220401-2.jpg" title="Bubble gum" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220401-2.jpg)
+<p style="color:#666">Bubble gum, 2022</p>
+[<img src="img/medium/img-20220401-1.jpg" title="Jenny was a friend of conifers" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220401-1.jpg)
+<p style="color:#666">Jenny was a friend of conifers, 2022</p>
 [<img src="img/medium/img-20220330.jpg" title="Influence" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220330.jpg)
 <p style="color:#666">Influence, 2022</p>
 [<img src="img/medium/img-20220329.jpg" title="Country life" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220329.jpg)
