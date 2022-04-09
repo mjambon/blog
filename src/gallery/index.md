@@ -6,6 +6,8 @@
 [<img src="img/other/twitter-logo.png" style="height:1.5em;padding:0em 0.5em">](https://twitter.com/mjambon)
 [<img src="img/other/facebook-logo.png" style="height:1.5em;padding:0em 0.5em">](https://facebook.com/0xfff)
 </p>
+[<img src="img/medium/img-20220409.jpg" title="Conflict" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220409.jpg)
+<p style="color:#666">Conflict, 2022</p>
 [<img src="img/medium/img-20220405.jpg" title="Insouciance" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220405.jpg)
 <p style="color:#666">Insouciance, 2022</p>
 [<img src="img/medium/img-20220403-3.jpg" title="Procreation" style="padding:40px 0px 0px 0px" alt="abstract art"/>](img/large/img-20220403-3.jpg)
