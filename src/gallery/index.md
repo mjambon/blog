@@ -355,5 +355,5 @@
   [CC BY-NC-ND 4.0](http://creativecommons.org/licenses/by-nc-nd/4.0/).
   If you would like to borrow the originals for display in a
   public venue, please contact the artist
-  <a href="mailto:martin@mjambon.com">martin@mjambon.com</a>.
+  <a href="mailto:martin@mjambon.com">martin@mjambon.com</a>. 🙏
 </p>
