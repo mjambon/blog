@@ -348,3 +348,12 @@
     Untitled, 2022
   </figcaption>
 </figure>
+
+<p class="discreet" style="margin-top:4em">
+  [These artworks](https://mjambon.com/gallery) © 2022
+  by [Martin Jambon](https://mjambon.com) are licensed under
+  [CC BY-NC-ND 4.0](http://creativecommons.org/licenses/by-nc-nd/4.0/).
+  If you would like to borrow the originals for display in a
+  public venue, please contact the artist
+  <a href="mailto:martin@mjambon.com">martin@mjambon.com</a>.
+</p>

@@ -32,6 +32,10 @@ img {
   color: #a0a0a0;
 }
 
+.discreet, .discreet a, .discreet a:active, .discreet a:visited {
+  color: #666;
+}
+
 .header {
   text-align: right;
 }
