@@ -7,6 +7,15 @@
 [<img src="img/other/facebook-logo.png" style="height:1.5em;padding:0em 0.5em">](https://facebook.com/0xfff)
 </p>
 
+<figure style="margin: 0px 0%; padding-top: 40px">
+  <a href="img/large/img-20220419.jpg">
+    <img src="img/medium/img-20220419.jpg" alt='abstract art' />
+  </a>
+  <figcaption style="color:#666; margin: 1em 0em">
+    Your choice of meat, 2022
+  </figcaption>
+</figure>
+
 <figure style="margin: 0px 1%; padding-top: 40px">
   <a href="img/large/img-20220415.jpg">
     <img src="img/medium/img-20220415.jpg" alt='abstract art' />
