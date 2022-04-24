@@ -8,6 +8,15 @@
 </p>
 
 <figure style="margin: 0px 0%; padding-top: 40px">
+  <a href="img/large/img-20220424.jpg">
+    <img src="img/medium/img-20220424.jpg" alt='abstract art' />
+  </a>
+  <figcaption style="color:#666; margin: 1em 0em">
+    Archéologie, 2022
+  </figcaption>
+</figure>
+
+<figure style="margin: 0px 0%; padding-top: 40px">
   <a href="img/large/img-20220419.jpg">
     <img src="img/medium/img-20220419.jpg" alt='abstract art' />
   </a>
