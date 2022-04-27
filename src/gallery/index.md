@@ -8,6 +8,24 @@
 </p>
 
 <figure style="margin: 0px 0%; padding-top: 40px">
+  <a href="img/large/img-20220426-2.jpg">
+    <img src="img/medium/img-20220426-2.jpg" alt='abstract art' />
+  </a>
+  <figcaption style="color:#666; margin: 1em 0em">
+    Floating blue shape, 2022
+  </figcaption>
+</figure>
+
+<figure style="margin: 0px 0%; padding-top: 40px">
+  <a href="img/large/img-20220426-1.jpg">
+    <img src="img/medium/img-20220426-1.jpg" alt='abstract art' />
+  </a>
+  <figcaption style="color:#666; margin: 1em 0em">
+    L&#x27;idée de la neige, 2022
+  </figcaption>
+</figure>
+
+<figure style="margin: 0px 0%; padding-top: 40px">
   <a href="img/large/img-20220424.jpg">
     <img src="img/medium/img-20220424.jpg" alt='abstract art' />
   </a>
