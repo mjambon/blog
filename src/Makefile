@@ -1,5 +1,6 @@
 ARTICLES = \
   gallery \
+  gallery/all \
   2014-12-27-faith-driven-science \
   2014-12-31-intelligence-precedes-machines \
   2015-01-03-universal-career-advice \
@@ -65,7 +66,7 @@ graphs:
 $(DOCROOT)/index.html: index.md Makefile head.html
 	pandoc $< -o $@ -t html5 -s -c blog.css -H head.html
 
-$(DOCROOT)/%/index.html: %/index.md \
+$(DOCROOT)/%/index.html $(DOCROOT)/%/%/index.html: %/index.md \
                          Makefile head.html before-body.html after-body.html
 	mkdir -p $(dir $@)
 	options=""; \
@@ -76,7 +77,7 @@ $(DOCROOT)/%/index.html: %/index.md \
   pandoc $< \
     -f markdown+pandoc_title_block -t html5 \
     -s --mathjax='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_CHTML-full' \
-    -c ../blog.css -B before-body.html -A after-body.html -H head.html \
+    -c /blog.css -B before-body.html -A after-body.html -H head.html \
     $$options \
   | sed -e "s/@@DATE@@/$$date/g" > $@
 
