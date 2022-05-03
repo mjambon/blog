@@ -11,6 +11,15 @@
 </p>
 
 <figure style="margin: 0px 0%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20220503.jpg">
+    <img src="/gallery/img/medium/img-20220503.jpg" alt='abstract art' />
+  </a>
+  <figcaption style="color:#666; margin: 1em 0em">
+    Surgery, 2022
+  </figcaption>
+</figure>
+
+<figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220502.jpg">
     <img src="/gallery/img/medium/img-20220502.jpg" alt='abstract art' />
   </a>
