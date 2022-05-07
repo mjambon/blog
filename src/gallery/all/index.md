@@ -10,6 +10,15 @@
   <a href="/gallery">artist's picks</a> | <a >all</a>
 </p>
 
+<figure style="margin: 0px 2%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20220506.jpg">
+    <img src="/gallery/img/medium/img-20220506.jpg" alt='abstract art' />
+  </a>
+  <figcaption style="color:#666; margin: 1em 0em">
+    Toxic fumes, 2022
+  </figcaption>
+</figure>
+
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220504-2.jpg">
     <img src="/gallery/img/medium/img-20220504-2.jpg" alt='abstract art' />
