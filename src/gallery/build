@@ -46,6 +46,10 @@ def figure_scaling(image_filename: str) -> float:
     else:
         return math.sqrt(aspect_ratio / max_aspect_ratio)
 
+def needs_rebuild(src: str, dst: str) -> bool:
+    return not os.path.isfile(dst) \
+        or os.path.getmtime(dst) < os.path.getmtime(src)
+
 def print_row(row: Dict[str, Any], md_file: TextIO) -> None:
     img_id = row['identifier']
     year = date.fromisoformat(row['date']).year
@@ -58,11 +62,11 @@ def print_row(row: Dict[str, Any], md_file: TextIO) -> None:
     orig = 'img/original/' + img_name
 
     large = 'img/large/' + img_name
-    if not os.path.isfile(large):
+    if needs_rebuild(orig, large):
         subprocess.run(["convert", "-resize", "1600x1600", orig, large])
 
     medium = 'img/medium/' + img_name
-    if not os.path.isfile(medium):
+    if needs_rebuild(orig, medium):
         subprocess.run(["convert", "-resize", "800x800", orig, medium])
 
     # This resizes the image on the page so that all images have the same
