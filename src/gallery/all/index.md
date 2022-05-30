@@ -11,6 +11,24 @@
 </p>
 
 <figure style="margin: 0px 1%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20220529.jpg">
+    <img src="/gallery/img/medium/img-20220529.jpg" alt='abstract art' />
+  </a>
+  <figcaption style="color:#666; margin: 1em 0em">
+    Isolement culturel forcé, 2022
+  </figcaption>
+</figure>
+
+<figure style="margin: 0px 2%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20220523.jpg">
+    <img src="/gallery/img/medium/img-20220523.jpg" alt='abstract art' />
+  </a>
+  <figcaption style="color:#666; margin: 1em 0em">
+    Meltdown, 2022
+  </figcaption>
+</figure>
+
+<figure style="margin: 0px 1%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220521.jpg">
     <img src="/gallery/img/medium/img-20220521.jpg" alt='abstract art' />
   </a>
