@@ -83,7 +83,9 @@ def print_row(row: Dict[str, Any], md_file: TextIO) -> None:
 f"""
 <figure style="margin: 0px {fig_margin}%; padding-top: 40px">
   <a href="{html.escape(large_img_url)}">
-    <img src="{html.escape(medium_img_url)}" alt='abstract art' />
+    <img src="{html.escape(medium_img_url)}"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     {html.escape(caption)}

@@ -12,7 +12,9 @@
 
 <figure style="margin: 0px 1%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220530.jpg">
-    <img src="/gallery/img/medium/img-20220530.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220530.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Duel, 2022
@@ -21,7 +23,9 @@
 
 <figure style="margin: 0px 1%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220529.jpg">
-    <img src="/gallery/img/medium/img-20220529.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220529.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Isolement culturel forcé, 2022
@@ -30,7 +34,9 @@
 
 <figure style="margin: 0px 2%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220523.jpg">
-    <img src="/gallery/img/medium/img-20220523.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220523.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Meltdown, 2022
@@ -39,7 +45,9 @@
 
 <figure style="margin: 0px 1%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220521.jpg">
-    <img src="/gallery/img/medium/img-20220521.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220521.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     La visite, 2022
@@ -48,7 +56,9 @@
 
 <figure style="margin: 0px 1%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220508-2.jpg">
-    <img src="/gallery/img/medium/img-20220508-2.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220508-2.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Le paysan moderne, 2022
@@ -57,7 +67,9 @@
 
 <figure style="margin: 0px 1%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220508-1.jpg">
-    <img src="/gallery/img/medium/img-20220508-1.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220508-1.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     American pop, 2022
@@ -66,7 +78,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220507.jpg">
-    <img src="/gallery/img/medium/img-20220507.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220507.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Statuette #1, 2022
@@ -75,7 +89,9 @@
 
 <figure style="margin: 0px 2%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220506.jpg">
-    <img src="/gallery/img/medium/img-20220506.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220506.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Toxic fumes, 2022
@@ -84,7 +100,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220504-2.jpg">
-    <img src="/gallery/img/medium/img-20220504-2.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220504-2.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Final moments, 2022
@@ -93,7 +111,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220504-1.jpg">
-    <img src="/gallery/img/medium/img-20220504-1.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220504-1.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Labourage et pâturage, 2022
@@ -102,7 +122,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220503.jpg">
-    <img src="/gallery/img/medium/img-20220503.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220503.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Surgery, 2022
@@ -111,7 +133,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220502.jpg">
-    <img src="/gallery/img/medium/img-20220502.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220502.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Bandwagon, 2022
@@ -120,7 +144,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220429.jpg">
-    <img src="/gallery/img/medium/img-20220429.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220429.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Bubbles, 2022
@@ -129,7 +155,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220426-2.jpg">
-    <img src="/gallery/img/medium/img-20220426-2.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220426-2.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Floating blue shape, 2022
@@ -138,7 +166,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220426-1.jpg">
-    <img src="/gallery/img/medium/img-20220426-1.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220426-1.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     L&#x27;idée de la neige, 2022
@@ -147,7 +177,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220424.jpg">
-    <img src="/gallery/img/medium/img-20220424.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220424.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Archéologie, 2022
@@ -156,7 +188,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220419.jpg">
-    <img src="/gallery/img/medium/img-20220419.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220419.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Your choice of meat, 2022
@@ -165,7 +199,9 @@
 
 <figure style="margin: 0px 1%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220415.jpg">
-    <img src="/gallery/img/medium/img-20220415.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220415.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Participation, 2022
@@ -174,7 +210,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220413-2.jpg">
-    <img src="/gallery/img/medium/img-20220413-2.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220413-2.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Water, 2022
@@ -183,7 +221,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220413-1.jpg">
-    <img src="/gallery/img/medium/img-20220413-1.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220413-1.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Springtime, 2022
@@ -192,7 +232,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220409.jpg">
-    <img src="/gallery/img/medium/img-20220409.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220409.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Conflict, 2022
@@ -201,7 +243,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220405.jpg">
-    <img src="/gallery/img/medium/img-20220405.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220405.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Insouciance, 2022
@@ -210,7 +254,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220403-3.jpg">
-    <img src="/gallery/img/medium/img-20220403-3.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220403-3.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Procreation, 2022
@@ -219,7 +265,9 @@
 
 <figure style="margin: 0px 7%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220403-2.jpg">
-    <img src="/gallery/img/medium/img-20220403-2.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220403-2.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Ocean view, 2022
@@ -228,7 +276,9 @@
 
 <figure style="margin: 0px 7%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220403-1.jpg">
-    <img src="/gallery/img/medium/img-20220403-1.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220403-1.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Parasites, 2022
@@ -237,7 +287,9 @@
 
 <figure style="margin: 0px 1%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220401-6.jpg">
-    <img src="/gallery/img/medium/img-20220401-6.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220401-6.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     What’s left of America, 2022
@@ -246,7 +298,9 @@
 
 <figure style="margin: 0px 13%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220401-5.jpg">
-    <img src="/gallery/img/medium/img-20220401-5.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220401-5.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Rainstorm, 2022
@@ -255,7 +309,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220401-4.jpg">
-    <img src="/gallery/img/medium/img-20220401-4.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220401-4.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Play with your food, 2022
@@ -264,7 +320,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220401-3.jpg">
-    <img src="/gallery/img/medium/img-20220401-3.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220401-3.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Gathering, 2022
@@ -273,7 +331,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220401-2.jpg">
-    <img src="/gallery/img/medium/img-20220401-2.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220401-2.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Bubble gum, 2022
@@ -282,7 +342,9 @@
 
 <figure style="margin: 0px 1%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220401-1.jpg">
-    <img src="/gallery/img/medium/img-20220401-1.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220401-1.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Jenny was a friend of conifers, 2022
@@ -291,7 +353,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220330.jpg">
-    <img src="/gallery/img/medium/img-20220330.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220330.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Influence, 2022
@@ -300,7 +364,9 @@
 
 <figure style="margin: 0px 14%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220329.jpg">
-    <img src="/gallery/img/medium/img-20220329.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220329.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Country life, 2022
@@ -309,7 +375,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220322-2.jpg">
-    <img src="/gallery/img/medium/img-20220322-2.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220322-2.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Soleil patatoïde terrifiant, 2022
@@ -318,7 +386,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220320-2.jpg">
-    <img src="/gallery/img/medium/img-20220320-2.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220320-2.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     In bloom, 2022
@@ -327,7 +397,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220320-1.jpg">
-    <img src="/gallery/img/medium/img-20220320-1.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220320-1.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Embedded in spacetime, 2022
@@ -336,7 +408,9 @@
 
 <figure style="margin: 0px 15%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220317.jpg">
-    <img src="/gallery/img/medium/img-20220317.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220317.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Boredom, 2022
@@ -345,7 +419,9 @@
 
 <figure style="margin: 0px 2%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220313.jpg">
-    <img src="/gallery/img/medium/img-20220313.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220313.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Propaganda, 2022
@@ -354,7 +430,9 @@
 
 <figure style="margin: 0px 13%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220312-4.jpg">
-    <img src="/gallery/img/medium/img-20220312-4.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220312-4.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Portrait of a dreamer, 2022
@@ -363,7 +441,9 @@
 
 <figure style="margin: 0px 12%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220312-3.jpg">
-    <img src="/gallery/img/medium/img-20220312-3.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220312-3.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Alice Jambon, 2022
@@ -372,7 +452,9 @@
 
 <figure style="margin: 0px 13%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220312-2.jpg">
-    <img src="/gallery/img/medium/img-20220312-2.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220312-2.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Portrait of a girl, 2022
@@ -381,7 +463,9 @@
 
 <figure style="margin: 0px 13%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220312-1.jpg">
-    <img src="/gallery/img/medium/img-20220312-1.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220312-1.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Vulnerable man, 2022
@@ -390,7 +474,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220305-3.jpg">
-    <img src="/gallery/img/medium/img-20220305-3.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220305-3.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Untitled, 2022
@@ -399,7 +485,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220305-2.jpg">
-    <img src="/gallery/img/medium/img-20220305-2.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220305-2.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Midair, 2022
@@ -408,7 +496,9 @@
 
 <figure style="margin: 0px 2%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220226.jpg">
-    <img src="/gallery/img/medium/img-20220226.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220226.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     War, 2022
@@ -417,7 +507,9 @@
 
 <figure style="margin: 0px 1%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220221.jpg">
-    <img src="/gallery/img/medium/img-20220221.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220221.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Untitled, 2022
@@ -426,7 +518,9 @@
 
 <figure style="margin: 0px 2%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220220.jpg">
-    <img src="/gallery/img/medium/img-20220220.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220220.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Brutalist intervention, 2022
@@ -435,7 +529,9 @@
 
 <figure style="margin: 0px 2%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220212.jpg">
-    <img src="/gallery/img/medium/img-20220212.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220212.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Untitled, 2022
@@ -444,7 +540,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220207.jpg">
-    <img src="/gallery/img/medium/img-20220207.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220207.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Untitled, 2022
@@ -453,7 +551,9 @@
 
 <figure style="margin: 0px 1%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220205.jpg">
-    <img src="/gallery/img/medium/img-20220205.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220205.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Meats of Iceland, 2022
@@ -462,7 +562,9 @@
 
 <figure style="margin: 0px 1%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220131.jpg">
-    <img src="/gallery/img/medium/img-20220131.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220131.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Untitled, 2022
@@ -471,7 +573,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220123.jpg">
-    <img src="/gallery/img/medium/img-20220123.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220123.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Untitled, 2022
@@ -480,7 +584,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220122.jpg">
-    <img src="/gallery/img/medium/img-20220122.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220122.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     10:15 on a Saturday night, 2022
@@ -489,7 +595,9 @@
 
 <figure style="margin: 0px 1%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220116-2.jpg">
-    <img src="/gallery/img/medium/img-20220116-2.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220116-2.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Red, 2022
@@ -498,7 +606,9 @@
 
 <figure style="margin: 0px 1%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220116-1.jpg">
-    <img src="/gallery/img/medium/img-20220116-1.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220116-1.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Untitled, 2022
@@ -507,7 +617,9 @@
 
 <figure style="margin: 0px 2%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220109.jpg">
-    <img src="/gallery/img/medium/img-20220109.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220109.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Untitled, 2022

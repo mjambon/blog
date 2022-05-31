@@ -12,7 +12,9 @@
 
 <figure style="margin: 0px 1%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220530.jpg">
-    <img src="/gallery/img/medium/img-20220530.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220530.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Duel, 2022
@@ -21,7 +23,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220504-1.jpg">
-    <img src="/gallery/img/medium/img-20220504-1.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220504-1.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Labourage et pâturage, 2022
@@ -30,7 +34,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220429.jpg">
-    <img src="/gallery/img/medium/img-20220429.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220429.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Bubbles, 2022
@@ -39,7 +45,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220424.jpg">
-    <img src="/gallery/img/medium/img-20220424.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220424.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Archéologie, 2022
@@ -48,7 +56,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220419.jpg">
-    <img src="/gallery/img/medium/img-20220419.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220419.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Your choice of meat, 2022
@@ -57,7 +67,9 @@
 
 <figure style="margin: 0px 1%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220415.jpg">
-    <img src="/gallery/img/medium/img-20220415.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220415.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Participation, 2022
@@ -66,7 +78,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220413-1.jpg">
-    <img src="/gallery/img/medium/img-20220413-1.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220413-1.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Springtime, 2022
@@ -75,7 +89,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220405.jpg">
-    <img src="/gallery/img/medium/img-20220405.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220405.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Insouciance, 2022
@@ -84,7 +100,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220403-3.jpg">
-    <img src="/gallery/img/medium/img-20220403-3.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220403-3.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Procreation, 2022
@@ -93,7 +111,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220401-4.jpg">
-    <img src="/gallery/img/medium/img-20220401-4.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220401-4.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Play with your food, 2022
@@ -102,7 +122,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220330.jpg">
-    <img src="/gallery/img/medium/img-20220330.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220330.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Influence, 2022
@@ -111,7 +133,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220322-2.jpg">
-    <img src="/gallery/img/medium/img-20220322-2.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220322-2.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Soleil patatoïde terrifiant, 2022
@@ -120,7 +144,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220320-1.jpg">
-    <img src="/gallery/img/medium/img-20220320-1.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220320-1.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Embedded in spacetime, 2022
@@ -129,7 +155,9 @@
 
 <figure style="margin: 0px 15%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220317.jpg">
-    <img src="/gallery/img/medium/img-20220317.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220317.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Boredom, 2022
@@ -138,7 +166,9 @@
 
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220305-2.jpg">
-    <img src="/gallery/img/medium/img-20220305-2.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220305-2.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     Midair, 2022
@@ -147,7 +177,9 @@
 
 <figure style="margin: 0px 2%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220226.jpg">
-    <img src="/gallery/img/medium/img-20220226.jpg" alt='abstract art' />
+    <img src="/gallery/img/medium/img-20220226.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
     War, 2022
