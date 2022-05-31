@@ -186,6 +186,17 @@
   </figcaption>
 </figure>
 
+<figure style="margin: 0px 2%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20220212.jpg">
+    <img src="/gallery/img/medium/img-20220212.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
+  </a>
+  <figcaption style="color:#666; margin: 1em 0em">
+    Untitled, 2022
+  </figcaption>
+</figure>
+
 <p class="discreet" style="margin-top:4em">
   [These artworks](https://mjambon.com/gallery/all) © 2022
   by [Martin Jambon](https://mjambon.com) are licensed under
