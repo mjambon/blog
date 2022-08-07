@@ -3,12 +3,38 @@
 
 <p>
 [<img src="/gallery/img/other/instagram-logo.png" style="height:1.5em;padding:0em 0.5em">](https://www.instagram.com/martinjambon/)
-[<img src="/gallery/img/other/twitter-logo.png" style="height:1.5em;padding:0em 0.5em">](https://twitter.com/mjambon)
-[<img src="/gallery/img/other/facebook-logo.png" style="height:1.5em;padding:0em 0.5em">](https://facebook.com/0xfff)
 </p>
 <p>
   <a >artist's picks</a> | <a href="/gallery/all">all</a>
 </p>
+
+<figure style="margin: 0px 1%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20220803-1.jpg">
+    <img src="/gallery/img/medium/img-20220803-1.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
+  </a>
+  <figcaption style="color:#666; margin: 1em 0em">
+    <div>Settled, 2022</div>
+    
+<div style='font-size: 80%'>30.5 cm × 22.9 cm</div>
+
+  </figcaption>
+</figure>
+
+<figure style="margin: 0px 1%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20220801-2.jpg">
+    <img src="/gallery/img/medium/img-20220801-2.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
+  </a>
+  <figcaption style="color:#666; margin: 1em 0em">
+    <div>Space nugget, 2022</div>
+    
+<div style='font-size: 80%'>27.9 cm × 21.6 cm</div>
+
+  </figcaption>
+</figure>
 
 <figure style="margin: 0px 1%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220530.jpg">
@@ -17,7 +43,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Duel, 2022
+    <div>Duel, 2022</div>
+    
+<div style='font-size: 80%'>30.5 cm × 22.9 cm</div>
+
   </figcaption>
 </figure>
 
@@ -28,7 +57,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Labourage et pâturage, 2022
+    <div>Labourage et pâturage, 2022</div>
+    
+<div style='font-size: 80%'>30.5 cm × 22.9 cm</div>
+
   </figcaption>
 </figure>
 
@@ -39,7 +71,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Bubbles, 2022
+    <div>Bubbles, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -50,7 +83,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Archéologie, 2022
+    <div>Archéologie, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -61,7 +95,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Your choice of meat, 2022
+    <div>Your choice of meat, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -72,7 +107,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Participation, 2022
+    <div>Participation, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -83,7 +119,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Springtime, 2022
+    <div>Springtime, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -94,7 +131,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Insouciance, 2022
+    <div>Insouciance, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -105,7 +143,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Procreation, 2022
+    <div>Procreation, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -116,7 +155,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Play with your food, 2022
+    <div>Play with your food, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -127,7 +167,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Influence, 2022
+    <div>Influence, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -138,7 +179,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Soleil patatoïde terrifiant, 2022
+    <div>Soleil patatoïde terrifiant, 2022</div>
+    
+<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
+
   </figcaption>
 </figure>
 
@@ -149,7 +193,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Embedded in spacetime, 2022
+    <div>Embedded in spacetime, 2022</div>
+    
+<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
+
   </figcaption>
 </figure>
 
@@ -160,7 +207,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Boredom, 2022
+    <div>Boredom, 2022</div>
+    
+<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
+
   </figcaption>
 </figure>
 
@@ -171,7 +221,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Midair, 2022
+    <div>Midair, 2022</div>
+    
+<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
+
   </figcaption>
 </figure>
 
@@ -182,7 +235,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    War, 2022
+    <div>War, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -193,7 +247,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Untitled, 2022
+    <div>Untitled, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -201,7 +256,5 @@
   [These artworks](https://mjambon.com/gallery/all) © 2022
   by [Martin Jambon](https://mjambon.com) are licensed under
   [CC BY-NC-ND 4.0](http://creativecommons.org/licenses/by-nc-nd/4.0/).
-  If you would like to borrow the originals for display in a
-  public venue, please contact the artist
-  <a href="mailto:martin@mjambon.com">martin@mjambon.com</a>. 🙏
+  The originals are available for lending to friends and family.
 </p>

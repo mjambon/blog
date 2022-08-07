@@ -3,6 +3,11 @@ build:
 	mypy --strict build
 	./build
 
+.PHONY: rebuild
+rebuild:
+	mypy --strict build
+	./build --force
+
 .PHONY: all
 all:
 	$(MAKE) build

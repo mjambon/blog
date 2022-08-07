@@ -5,7 +5,8 @@
 #
 
 from datetime import date
-from typing import Any, Dict, TextIO, Tuple
+from typing import Any, Dict, List, Optional, TextIO, Tuple
+import argparse
 import csv
 import json
 import html
@@ -50,8 +51,33 @@ def needs_rebuild(src: str, dst: str) -> bool:
     return not os.path.isfile(dst) \
         or os.path.getmtime(dst) < os.path.getmtime(src)
 
-def print_row(row: Dict[str, Any], md_file: TextIO) -> None:
-    img_id = row['identifier']
+def inches_to_cm(x: float) -> float:
+    return 2.54 * x
+
+def format_dimensions(row: Dict[str, Any]) -> Optional[str]:
+    width_cm = -1.0
+    height_cm = -1.0
+    if row['width_in'] and row['height_in']:
+        width_cm = inches_to_cm(float(row['width_in']))
+        height_cm = inches_to_cm(float(row['height_in']))
+    if row['width_cm'] and row['height_cm']:
+        width_cm = float(row['width_cm'])
+        height_cm = float(row['height_cm'])
+    if width_cm > 0:
+        return f"{width_cm:.1f} cm × {height_cm:.1f} cm"
+    else:
+        return None
+
+
+def verbose_command(argv: List[str]) -> None:
+    print(f"{' '.join(argv)}")
+    subprocess.run(argv)
+
+
+def print_row(row: Dict[str, Any],
+              md_file: TextIO,
+              force: bool = False) -> None:
+    img_id = row['image_id']
     year = date.fromisoformat(row['date']).year
     title = capitalize(row['title'])
     if not title:
@@ -62,12 +88,12 @@ def print_row(row: Dict[str, Any], md_file: TextIO) -> None:
     orig = 'img/original/' + img_name
 
     large = 'img/large/' + img_name
-    if needs_rebuild(orig, large):
-        subprocess.run(["convert", "-resize", "1600x1600", orig, large])
+    if force or needs_rebuild(orig, large):
+        verbose_command(["convert", "-resize", "1600x1600", orig, large])
 
     medium = 'img/medium/' + img_name
-    if needs_rebuild(orig, medium):
-        subprocess.run(["convert", "-resize", "800x800", orig, medium])
+    if force or needs_rebuild(orig, medium):
+        verbose_command(["convert", "-resize", "800x800", orig, medium])
 
     # This resizes the image on the page so that all images have the same
     # surface area. (except for those which are too wide, which will be
@@ -77,8 +103,17 @@ def print_row(row: Dict[str, Any], md_file: TextIO) -> None:
     large_img_url = IMG_PATH + '/large/' + img_name
     medium_img_url = IMG_PATH + '/medium/' + img_name
 
+    main_caption = html.escape(f"{title}, {year}")
+    main_caption_html = f"<div>{html.escape(main_caption)}</div>"
+
+    dimensions = format_dimensions(row)
+    dim_html = ""
+    if dimensions:
+        dim_html = f"""
+<div style='font-size: 80%'>{html.escape(dimensions)}</div>
+"""
+
     # Write to main page
-    caption = f"""{title}, {year}"""
     md_file.write(
 f"""
 <figure style="margin: 0px {fig_margin}%; padding-top: 40px">
@@ -88,13 +123,17 @@ f"""
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    {html.escape(caption)}
+    {main_caption_html}
+    {dim_html}
   </figcaption>
 </figure>
 """
     )
 
-def generate(row_reader: Any, md_file: TextIO, faves_only: bool) -> None:
+def generate(row_reader: Any,
+             md_file: TextIO,
+             faves_only: bool = False,
+             force: bool = False) -> None:
     picks_href = f'href="{html.escape(PICKS_PATH)}"'
     all_href = f'href="{html.escape(ALL_PATH)}"'
     if faves_only:
@@ -107,8 +146,6 @@ def generate(row_reader: Any, md_file: TextIO, faves_only: bool) -> None:
 
 <p>
 [<img src="/gallery/img/other/instagram-logo.png" style="height:1.5em;padding:0em 0.5em">](https://www.instagram.com/martinjambon/)
-[<img src="/gallery/img/other/twitter-logo.png" style="height:1.5em;padding:0em 0.5em">](https://twitter.com/mjambon)
-[<img src="/gallery/img/other/facebook-logo.png" style="height:1.5em;padding:0em 0.5em">](https://facebook.com/0xfff)
 </p>
 <p>
   <a {picks_href}>artist's picks</a> | <a {all_href}>all</a>
@@ -117,36 +154,42 @@ def generate(row_reader: Any, md_file: TextIO, faves_only: bool) -> None:
     )
     for row in row_reader:
         if row['show'] == '1' and (row['favorite'] == '1' or not faves_only):
-            print_row(row, md_file)
+            print_row(row, md_file, force=force)
     md_file.write(
         """
 <p class="discreet" style="margin-top:4em">
   [These artworks](https://mjambon.com/gallery/all) © 2022
   by [Martin Jambon](https://mjambon.com) are licensed under
   [CC BY-NC-ND 4.0](http://creativecommons.org/licenses/by-nc-nd/4.0/).
-  If you would like to borrow the originals for display in a
-  public venue, please contact the artist
-  <a href="mailto:martin@mjambon.com">martin@mjambon.com</a>. 🙏
+  The originals are available for lending to friends and family.
 </p>
 """
     )
 
-def make_page(md_filename: str, faves_only: bool) -> None:
+
+def make_page(md_filename: str,
+              faves_only: bool = False,
+              force: bool = False) -> None:
    with open('data.csv', 'r') as csvfile:
        row_reader = csv.DictReader(csvfile)
        with open(md_filename, 'w') as mdfile:
-           generate(row_reader, mdfile, faves_only)
+           generate(row_reader, mdfile, faves_only=faves_only, force=force)
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description='Process some integers.')
+    parser.add_argument('--force', action='store_true',
+                    help='resize all images rather than being lazy about it')
+    args = parser.parse_args()
+
     os.makedirs('img/large', exist_ok=True)
     os.makedirs('img/medium', exist_ok=True)
 
     # Artist's picks
-    make_page('index.md', True)
+    make_page('index.md', faves_only=True, force=args.force)
 
     # All artworks
     os.makedirs('all', exist_ok=True)
-    make_page('all/index.md', False)
+    make_page('all/index.md', faves_only=False, force=args.force)
 
 main()

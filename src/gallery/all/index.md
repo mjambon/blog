@@ -3,12 +3,94 @@
 
 <p>
 [<img src="/gallery/img/other/instagram-logo.png" style="height:1.5em;padding:0em 0.5em">](https://www.instagram.com/martinjambon/)
-[<img src="/gallery/img/other/twitter-logo.png" style="height:1.5em;padding:0em 0.5em">](https://twitter.com/mjambon)
-[<img src="/gallery/img/other/facebook-logo.png" style="height:1.5em;padding:0em 0.5em">](https://facebook.com/0xfff)
 </p>
 <p>
   <a href="/gallery">artist's picks</a> | <a >all</a>
 </p>
+
+<figure style="margin: 0px 2%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20220803-2.jpg">
+    <img src="/gallery/img/medium/img-20220803-2.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
+  </a>
+  <figcaption style="color:#666; margin: 1em 0em">
+    <div>Space debris, 2022</div>
+    
+<div style='font-size: 80%'>27.9 cm × 21.6 cm</div>
+
+  </figcaption>
+</figure>
+
+<figure style="margin: 0px 1%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20220803-1.jpg">
+    <img src="/gallery/img/medium/img-20220803-1.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
+  </a>
+  <figcaption style="color:#666; margin: 1em 0em">
+    <div>Settled, 2022</div>
+    
+<div style='font-size: 80%'>30.5 cm × 22.9 cm</div>
+
+  </figcaption>
+</figure>
+
+<figure style="margin: 0px 1%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20220801-2.jpg">
+    <img src="/gallery/img/medium/img-20220801-2.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
+  </a>
+  <figcaption style="color:#666; margin: 1em 0em">
+    <div>Space nugget, 2022</div>
+    
+<div style='font-size: 80%'>27.9 cm × 21.6 cm</div>
+
+  </figcaption>
+</figure>
+
+<figure style="margin: 0px 1%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20220801-1.jpg">
+    <img src="/gallery/img/medium/img-20220801-1.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
+  </a>
+  <figcaption style="color:#666; margin: 1em 0em">
+    <div>Reorganization, 2022</div>
+    
+<div style='font-size: 80%'>30.5 cm × 22.9 cm</div>
+
+  </figcaption>
+</figure>
+
+<figure style="margin: 0px 2%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20220731.jpg">
+    <img src="/gallery/img/medium/img-20220731.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
+  </a>
+  <figcaption style="color:#666; margin: 1em 0em">
+    <div>Wrinkles, 2022</div>
+    
+<div style='font-size: 80%'>27.9 cm × 21.6 cm</div>
+
+  </figcaption>
+</figure>
+
+<figure style="margin: 0px 2%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20220702.jpg">
+    <img src="/gallery/img/medium/img-20220702.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
+  </a>
+  <figcaption style="color:#666; margin: 1em 0em">
+    <div>Magic glue, 2022</div>
+    
+<div style='font-size: 80%'>27.9 cm × 21.6 cm</div>
+
+  </figcaption>
+</figure>
 
 <figure style="margin: 0px 2%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220626.jpg">
@@ -17,7 +99,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    What are we going to do with you?, 2022
+    <div>What are we going to do with you?, 2022</div>
+    
+<div style='font-size: 80%'>27.9 cm × 21.6 cm</div>
+
   </figcaption>
 </figure>
 
@@ -28,7 +113,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Sédentarité, 2022
+    <div>Sédentarité, 2022</div>
+    
+<div style='font-size: 80%'>27.9 cm × 21.6 cm</div>
+
   </figcaption>
 </figure>
 
@@ -39,7 +127,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Attaque, 2022
+    <div>Attaque, 2022</div>
+    
+<div style='font-size: 80%'>30.5 cm × 22.9 cm</div>
+
   </figcaption>
 </figure>
 
@@ -50,7 +141,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Duel, 2022
+    <div>Duel, 2022</div>
+    
+<div style='font-size: 80%'>30.5 cm × 22.9 cm</div>
+
   </figcaption>
 </figure>
 
@@ -61,7 +155,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Isolement culturel forcé, 2022
+    <div>Isolement culturel forcé, 2022</div>
+    
+<div style='font-size: 80%'>30.5 cm × 22.9 cm</div>
+
   </figcaption>
 </figure>
 
@@ -72,7 +169,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Meltdown, 2022
+    <div>Meltdown, 2022</div>
+    
+<div style='font-size: 80%'>27.9 cm × 21.6 cm</div>
+
   </figcaption>
 </figure>
 
@@ -83,7 +183,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    La visite, 2022
+    <div>La visite, 2022</div>
+    
+<div style='font-size: 80%'>27.9 cm × 21.6 cm</div>
+
   </figcaption>
 </figure>
 
@@ -94,7 +197,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Le paysan moderne, 2022
+    <div>Le paysan moderne, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -105,7 +209,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    American pop, 2022
+    <div>American pop, 2022</div>
+    
+<div style='font-size: 80%'>27.9 cm × 21.6 cm</div>
+
   </figcaption>
 </figure>
 
@@ -116,7 +223,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Statuette #1, 2022
+    <div>Statuette #1, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -127,7 +235,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Toxic fumes, 2022
+    <div>Toxic fumes, 2022</div>
+    
+<div style='font-size: 80%'>27.9 cm × 21.6 cm</div>
+
   </figcaption>
 </figure>
 
@@ -138,7 +249,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Final moments, 2022
+    <div>Final moments, 2022</div>
+    
+<div style='font-size: 80%'>30.5 cm × 22.9 cm</div>
+
   </figcaption>
 </figure>
 
@@ -149,7 +263,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Labourage et pâturage, 2022
+    <div>Labourage et pâturage, 2022</div>
+    
+<div style='font-size: 80%'>30.5 cm × 22.9 cm</div>
+
   </figcaption>
 </figure>
 
@@ -160,7 +277,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Surgery, 2022
+    <div>Surgery, 2022</div>
+    
+<div style='font-size: 80%'>27.9 cm × 21.6 cm</div>
+
   </figcaption>
 </figure>
 
@@ -171,7 +291,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Bandwagon, 2022
+    <div>Bandwagon, 2022</div>
+    
+<div style='font-size: 80%'>27.9 cm × 21.6 cm</div>
+
   </figcaption>
 </figure>
 
@@ -182,7 +305,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Bubbles, 2022
+    <div>Bubbles, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -193,7 +317,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Floating blue shape, 2022
+    <div>Floating blue shape, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -204,7 +329,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    L&#x27;idée de la neige, 2022
+    <div>L&amp;#x27;idée de la neige, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -215,7 +341,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Archéologie, 2022
+    <div>Archéologie, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -226,7 +353,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Your choice of meat, 2022
+    <div>Your choice of meat, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -237,7 +365,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Participation, 2022
+    <div>Participation, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -248,7 +377,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Water, 2022
+    <div>Water, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -259,7 +389,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Springtime, 2022
+    <div>Springtime, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -270,7 +401,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Conflict, 2022
+    <div>Conflict, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -281,7 +413,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Insouciance, 2022
+    <div>Insouciance, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -292,7 +425,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Procreation, 2022
+    <div>Procreation, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -303,7 +437,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Ocean view, 2022
+    <div>Ocean view, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -314,7 +449,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Parasites, 2022
+    <div>Parasites, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -325,7 +461,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    What’s left of America, 2022
+    <div>What’s left of America, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -336,7 +473,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Rainstorm, 2022
+    <div>Rainstorm, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -347,7 +485,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Play with your food, 2022
+    <div>Play with your food, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -358,7 +497,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Gathering, 2022
+    <div>Gathering, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -369,7 +509,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Bubble gum, 2022
+    <div>Bubble gum, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -380,7 +521,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Jenny was a friend of conifers, 2022
+    <div>Jenny was a friend of conifers, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -391,7 +533,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Influence, 2022
+    <div>Influence, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -402,7 +545,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Country life, 2022
+    <div>Country life, 2022</div>
+    
+<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
+
   </figcaption>
 </figure>
 
@@ -413,7 +559,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Soleil patatoïde terrifiant, 2022
+    <div>Soleil patatoïde terrifiant, 2022</div>
+    
+<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
+
   </figcaption>
 </figure>
 
@@ -424,7 +573,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    In bloom, 2022
+    <div>In bloom, 2022</div>
+    
+<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
+
   </figcaption>
 </figure>
 
@@ -435,7 +587,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Embedded in spacetime, 2022
+    <div>Embedded in spacetime, 2022</div>
+    
+<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
+
   </figcaption>
 </figure>
 
@@ -446,7 +601,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Boredom, 2022
+    <div>Boredom, 2022</div>
+    
+<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
+
   </figcaption>
 </figure>
 
@@ -457,7 +615,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Propaganda, 2022
+    <div>Propaganda, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -468,7 +627,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Portrait of a dreamer, 2022
+    <div>Portrait of a dreamer, 2022</div>
+    
+<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
+
   </figcaption>
 </figure>
 
@@ -479,7 +641,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Alice Jambon, 2022
+    <div>Alice Jambon, 2022</div>
+    
+<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
+
   </figcaption>
 </figure>
 
@@ -490,7 +655,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Portrait of a girl, 2022
+    <div>Portrait of a girl, 2022</div>
+    
+<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
+
   </figcaption>
 </figure>
 
@@ -501,7 +669,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Vulnerable man, 2022
+    <div>Vulnerable man, 2022</div>
+    
+<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
+
   </figcaption>
 </figure>
 
@@ -512,7 +683,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Untitled, 2022
+    <div>Untitled, 2022</div>
+    
+<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
+
   </figcaption>
 </figure>
 
@@ -523,7 +697,10 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Midair, 2022
+    <div>Midair, 2022</div>
+    
+<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
+
   </figcaption>
 </figure>
 
@@ -534,7 +711,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    War, 2022
+    <div>War, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -545,7 +723,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Untitled, 2022
+    <div>Untitled, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -556,7 +735,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Brutalist intervention, 2022
+    <div>Brutalist intervention, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -567,7 +747,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Untitled, 2022
+    <div>Untitled, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -578,7 +759,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Untitled, 2022
+    <div>Untitled, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -589,7 +771,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Meats of Iceland, 2022
+    <div>Meats of Iceland, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -600,7 +783,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Untitled, 2022
+    <div>Untitled, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -611,7 +795,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Untitled, 2022
+    <div>Untitled, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -622,7 +807,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    10:15 on a Saturday night, 2022
+    <div>10:15 on a Saturday night, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -633,7 +819,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Red, 2022
+    <div>Red, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -644,7 +831,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Untitled, 2022
+    <div>Untitled, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -655,7 +843,8 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    Untitled, 2022
+    <div>Untitled, 2022</div>
+    
   </figcaption>
 </figure>
 
@@ -663,7 +852,5 @@
   [These artworks](https://mjambon.com/gallery/all) © 2022
   by [Martin Jambon](https://mjambon.com) are licensed under
   [CC BY-NC-ND 4.0](http://creativecommons.org/licenses/by-nc-nd/4.0/).
-  If you would like to borrow the originals for display in a
-  public venue, please contact the artist
-  <a href="mailto:martin@mjambon.com">martin@mjambon.com</a>. 🙏
+  The originals are available for lending to friends and family.
 </p>
