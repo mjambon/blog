@@ -67,7 +67,7 @@
 <p>Our moving 0.9-percentile, shown on the chart in green, reacts quickly when the signal shifts upward, because each update shifts the moving percentile upward by <span class="math inline">\(\frac{\delta}{0.1}\)</span>. However, when the signal shifts downward, it takes the moving percentile more time to react because each update shifts it downward by <span class="math inline">\(\frac{\delta}{0.9}\)</span>, which is 9 times less than in the other direction. Additionally, we can see that the downward shift is pretty steep initially and then gets less steep. This is due to the delayed update of the standard deviation <span class="math inline">\(\sigma\)</span>: the value of <span class="math inline">\(\delta\)</span> is divided by two when the estimated <span class="math inline">\(\sigma\)</span> catches up and is divided by two, reflecting the new distribution in phase 3.</p>
 <p>A sample implementation is <a href="https://github.com/mjambon/moving-percentile">available on GitHub</a>.</p>
 <p class="menu footer">
-  <a href="https://twitter.com/mjambon">@mjambon</a> 2016-07-23<br/>
+  <a href="mailto:contact@mjambon.com">contact@mjambon.com</a> 2016-07-23<br/>
   <a href="/">Home</a>
 </p>
 </body>
