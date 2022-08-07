@@ -9,7 +9,7 @@ I'm a software developer, creator, and researcher. Originally from
 France, I live in the San Francisco Bay Area.
 
 <code>martin@mjambon.com</code>
-&bull; [Art](gallery)
+&bull; [Artwork](gallery)
 &bull; [Twitter](https://twitter.com/mjambon)
 &bull; [GitHub](https://github.com/mjambon)
 &bull; [LinkedIn](https://www.linkedin.com/in/mjambon)

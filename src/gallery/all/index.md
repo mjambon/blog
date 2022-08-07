@@ -852,5 +852,6 @@
   [These artworks](https://mjambon.com/gallery/all) © 2022
   by [Martin Jambon](https://mjambon.com) are licensed under
   [CC BY-NC-ND 4.0](http://creativecommons.org/licenses/by-nc-nd/4.0/).
-  The originals are available for lending to friends and family.
+  Originals are available for lending to family and friends in the
+  San Francisco Bay Area.
 </p>
