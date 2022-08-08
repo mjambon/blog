@@ -3,7 +3,7 @@
 
 <div style="text-align:right">[<img src="/gallery/img/other/instagram-logo.png" style="height:1.5em;padding:0em 0.5em">](https://www.instagram.com/martinjambon/)</div>
 <p>
-Lending artworks to friends in the San Francisco Bay Area since 2022.
+Lending artworks to Bay Area friends since 2022.
 </p>
 <div>artist&#x27;s favorites | <a href="/gallery/all"
    style="color:black">show all artworks</a></div>

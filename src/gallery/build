@@ -95,6 +95,19 @@ def print_row(row: Dict[str, Any],
     if force or needs_rebuild(orig, medium):
         verbose_command(["convert", "-resize", "800x800", orig, medium])
 
+    # Padded square images for Instagram
+    square = 'img/square/' + img_name
+    if force or needs_rebuild(orig, square):
+        verbose_command([
+            "convert",
+            orig,
+            "-resize", "1450x1450>",
+            "-background", "#eee",
+            "-gravity", "center",
+            "-extent", "1600x1600",
+            square
+        ])
+
     # This resizes the image on the page so that all images have the same
     # surface area. (except for those which are too wide, which will be
     # rendered with a smaller surface area)
@@ -163,7 +176,7 @@ def generate(row_reader: Any,
 
 <div style="text-align:right">[<img src="/gallery/img/other/instagram-logo.png" style="height:1.5em;padding:0em 0.5em">](https://www.instagram.com/martinjambon/)</div>
 <p>
-Lending artworks to friends in the San Francisco Bay Area since 2022.
+Lending artworks to Bay Area friends since 2022.
 </p>
 <div>{links_html}</div>
 """
