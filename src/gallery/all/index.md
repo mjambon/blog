@@ -544,7 +544,7 @@
   <figcaption style="color:#666; margin: 1em 0em">
     <div>Country life, 2022</div>
     
-<div style='font-size: 80%'>29.7 cm × 21.0 cm</div>
+<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
 
   </figcaption>
 </figure>
@@ -558,7 +558,7 @@
   <figcaption style="color:#666; margin: 1em 0em">
     <div>Soleil patatoïde terrifiant, 2022</div>
     
-<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
+<div style='font-size: 80%'>29.7 cm × 21.0 cm</div>
 
   </figcaption>
 </figure>
@@ -572,7 +572,7 @@
   <figcaption style="color:#666; margin: 1em 0em">
     <div>In bloom, 2022</div>
     
-<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
+<div style='font-size: 80%'>29.7 cm × 21.0 cm</div>
 
   </figcaption>
 </figure>
@@ -586,7 +586,7 @@
   <figcaption style="color:#666; margin: 1em 0em">
     <div>Embedded in spacetime, 2022</div>
     
-<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
+<div style='font-size: 80%'>29.7 cm × 21.0 cm</div>
 
   </figcaption>
 </figure>
@@ -600,7 +600,7 @@
   <figcaption style="color:#666; margin: 1em 0em">
     <div>Boredom, 2022</div>
     
-<div style='font-size: 80%'>29.7 cm × 21.0 cm</div>
+<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
 
   </figcaption>
 </figure>
@@ -626,7 +626,7 @@
   <figcaption style="color:#666; margin: 1em 0em">
     <div>Portrait of a dreamer, 2022</div>
     
-<div style='font-size: 80%'>29.7 cm × 21.0 cm</div>
+<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
 
   </figcaption>
 </figure>
@@ -640,7 +640,7 @@
   <figcaption style="color:#666; margin: 1em 0em">
     <div>Alice Jambon, 2022</div>
     
-<div style='font-size: 80%'>29.7 cm × 21.0 cm</div>
+<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
 
   </figcaption>
 </figure>
@@ -654,7 +654,7 @@
   <figcaption style="color:#666; margin: 1em 0em">
     <div>Portrait of a girl, 2022</div>
     
-<div style='font-size: 80%'>29.7 cm × 21.0 cm</div>
+<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
 
   </figcaption>
 </figure>
@@ -668,7 +668,7 @@
   <figcaption style="color:#666; margin: 1em 0em">
     <div>Vulnerable man, 2022</div>
     
-<div style='font-size: 80%'>29.7 cm × 21.0 cm</div>
+<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
 
   </figcaption>
 </figure>
@@ -682,7 +682,7 @@
   <figcaption style="color:#666; margin: 1em 0em">
     <div>Untitled, 2022</div>
     
-<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
+<div style='font-size: 80%'>29.7 cm × 21.0 cm</div>
 
   </figcaption>
 </figure>
@@ -696,7 +696,7 @@
   <figcaption style="color:#666; margin: 1em 0em">
     <div>Midair, 2022</div>
     
-<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
+<div style='font-size: 80%'>29.7 cm × 21.0 cm</div>
 
   </figcaption>
 </figure>

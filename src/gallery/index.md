@@ -178,7 +178,7 @@
   <figcaption style="color:#666; margin: 1em 0em">
     <div>Soleil patatoïde terrifiant, 2022</div>
     
-<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
+<div style='font-size: 80%'>29.7 cm × 21.0 cm</div>
 
   </figcaption>
 </figure>
@@ -192,7 +192,7 @@
   <figcaption style="color:#666; margin: 1em 0em">
     <div>Embedded in spacetime, 2022</div>
     
-<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
+<div style='font-size: 80%'>29.7 cm × 21.0 cm</div>
 
   </figcaption>
 </figure>
@@ -206,7 +206,7 @@
   <figcaption style="color:#666; margin: 1em 0em">
     <div>Boredom, 2022</div>
     
-<div style='font-size: 80%'>29.7 cm × 21.0 cm</div>
+<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
 
   </figcaption>
 </figure>
@@ -220,7 +220,7 @@
   <figcaption style="color:#666; margin: 1em 0em">
     <div>Midair, 2022</div>
     
-<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
+<div style='font-size: 80%'>29.7 cm × 21.0 cm</div>
 
   </figcaption>
 </figure>
