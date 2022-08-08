@@ -326,7 +326,7 @@
          style="background-color:#eee; padding:3%; width: 94%"/>
   </a>
   <figcaption style="color:#666; margin: 1em 0em">
-    <div>L&amp;#x27;idée de la neige, 2022</div>
+    <div>L&#x27;idée de la neige, 2022</div>
     
   </figcaption>
 </figure>
@@ -849,6 +849,8 @@
   [These artworks](https://mjambon.com/gallery/all) © 2022
   by [Martin Jambon](https://mjambon.com) are licensed under
   [CC BY-NC-ND 4.0](http://creativecommons.org/licenses/by-nc-nd/4.0/).
-  Originals are available for lending to family and friends in the
-  San Francisco Bay Area.
+</p>
+
+<p class="discreet">
+Lending artworks to friends in the San Francisco Bay Area.
 </p>
