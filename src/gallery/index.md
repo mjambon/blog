@@ -206,7 +206,7 @@
   <figcaption style="color:#666; margin: 1em 0em">
     <div>Boredom, 2022</div>
     
-<div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
+<div style='font-size: 80%'>29.7 cm × 21.0 cm</div>
 
   </figcaption>
 </figure>
