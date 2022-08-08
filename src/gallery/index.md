@@ -28,7 +28,7 @@
   <figcaption style="color:#666; margin: 1em 0em">
     <div>Space nugget, 2022</div>
     
-<div style='font-size: 80%'>27.9 cm × 21.6 cm</div>
+<div style='font-size: 80%'>30.5 cm × 22.9 cm</div>
 
   </figcaption>
 </figure>
