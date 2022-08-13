@@ -36,6 +36,20 @@ Lending artworks to Bay Area friends since 2022.
   </figcaption>
 </figure>
 
+<figure style="margin: 0px 2%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20220626.jpg">
+    <img src="/gallery/img/medium/img-20220626.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
+  </a>
+  <figcaption style="color:#666; margin: 1em 0em">
+    <div>What are we going to do with you?, 2022</div>
+    
+<div style='font-size: 80%'>27.9 cm × 21.6 cm</div>
+
+  </figcaption>
+</figure>
+
 <figure style="margin: 0px 1%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220530.jpg">
     <img src="/gallery/img/medium/img-20220530.jpg"
