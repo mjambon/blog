@@ -2,8 +2,13 @@ About me
 --
 
 <img src="img/mjambon-brown-2022.jpg"
-     width="100" height="100"
+     style="width:100px"
      alt="portrait">
+<a href="/gallery">
+  <img src="/img/img-20220801-2.jpg"
+       alt="abstract art"
+       style="height: 100px"/>
+</a>
 
 I'm a software developer, creator, and researcher. Originally from
 France, I live in the San Francisco Bay Area.
@@ -178,7 +183,8 @@ Visit [my online gallery](gallery).
 <a href="/gallery">
   <img src="/img/img-20220801-2.jpg"
        alt='abstract art'
-       style="background-color:#eee; padding:3%; width: 94%"/> </a>
+       style="background-color:#eee; padding:3%; width: 94%"/>
+</a>
 <figcaption style="color:#666; margin: 1em 0em">
 <div>
 Space nugget, 2022
