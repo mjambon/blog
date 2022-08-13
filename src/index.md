@@ -1,5 +1,4 @@
-About me
---
+% Martin Jambon
 
 <img src="img/mjambon-brown-2022.jpg"
      style="width:100px"
