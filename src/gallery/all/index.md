@@ -5,6 +5,7 @@
   [<img src="/gallery/img/other/mj.png" style="height:1.5em;padding:0em 0.5em"
         title="Portfolio">](https://martinj.art/)
   [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
         style="height:1.5em;padding:0em 0.5em">](https://www.instagram.com/martinjambon/)
 </div>
 <p>
