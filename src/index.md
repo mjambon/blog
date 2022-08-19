@@ -176,7 +176,7 @@ Publications relevant to the SuMo project:
 Original artwork (2022-present)
 --
 
-Visit [my online gallery](gallery).
+Visit [my portfolio](https://martinj.art) or [my entire collection](gallery).
 
 <figure style="margin: 0px 1%; padding-top: 40px">
 <a href="/gallery">
