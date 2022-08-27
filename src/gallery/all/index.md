@@ -14,6 +14,32 @@ Lending artworks to Bay Area friends since 2022.
 <div><a href="/gallery"
    style="color:black">show artist&#x27;s favorites</a> | all artworks</div>
 
+<figure style="margin: 0px 0%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20220827.jpg">
+    <img src="/gallery/img/medium/img-20220827.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
+  </a>
+  <figcaption style="color:#666; margin: 1em 0em">
+    <div>Violence, 2022</div>
+    
+<div style='font-size: 80%'>101.6 cm × 76.2 cm</div>
+
+  </figcaption>
+</figure>
+
+<figure style="margin: 0px 7%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20220821.jpg">
+    <img src="/gallery/img/medium/img-20220821.jpg"
+         alt='abstract art'
+         style="background-color:#eee; padding:3%; width: 94%"/>
+  </a>
+  <figcaption style="color:#666; margin: 1em 0em">
+    <div>Pink and gold, 2022</div>
+    
+  </figcaption>
+</figure>
+
 <figure style="margin: 0px 2%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220820-2.jpg">
     <img src="/gallery/img/medium/img-20220820-2.jpg"
