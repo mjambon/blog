@@ -5,8 +5,8 @@
 /* grey frame around each artwork image */
 img.artwork {
   background-color:#eee;
-  padding:3%;
-  width: 94%";
+  padding: 3%;
+  width: 94%;
 }
 
 figcaption {
