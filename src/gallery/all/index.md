@@ -51,11 +51,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Ego, 2022
- <a href="#img-20220831"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Ego, 2022
+  <a href="#img-20220831"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>101.6 cm × 76.2 cm</div>
@@ -73,11 +72,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Violence, 2022
- <a href="#img-20220827"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Violence, 2022
+  <a href="#img-20220827"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>101.6 cm × 76.2 cm</div>
@@ -95,11 +93,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Pink and gold, 2022
- <a href="#img-20220821"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Pink and gold, 2022
+  <a href="#img-20220821"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -115,11 +112,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- San Francisco, 2022
- <a href="#img-20220820-2"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  San Francisco, 2022
+  <a href="#img-20220820-2"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>35.6 cm × 27.9 cm</div>
@@ -137,11 +133,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Sunshine, 2022
- <a href="#img-20220820-1"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Sunshine, 2022
+  <a href="#img-20220820-1"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>45.7 cm × 35.6 cm</div>
@@ -159,11 +154,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Heaven and hell but mostly hell, 2022
- <a href="#img-20220813"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Heaven and hell but mostly hell, 2022
+  <a href="#img-20220813"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>35.6 cm × 27.9 cm</div>
@@ -181,11 +175,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Space debris, 2022
- <a href="#img-20220803-2"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Space debris, 2022
+  <a href="#img-20220803-2"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>27.9 cm × 21.6 cm</div>
@@ -203,11 +196,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Settled, 2022
- <a href="#img-20220803-1"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Settled, 2022
+  <a href="#img-20220803-1"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>30.5 cm × 22.9 cm</div>
@@ -225,11 +217,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Space nugget, 2022
- <a href="#img-20220801-2"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Space nugget, 2022
+  <a href="#img-20220801-2"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>30.5 cm × 22.9 cm</div>
@@ -247,11 +238,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Reorganization, 2022
- <a href="#img-20220801-1"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Reorganization, 2022
+  <a href="#img-20220801-1"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>30.5 cm × 22.9 cm</div>
@@ -269,11 +259,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Wrinkles, 2022
- <a href="#img-20220731"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Wrinkles, 2022
+  <a href="#img-20220731"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>27.9 cm × 21.6 cm</div>
@@ -291,11 +280,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Magic glue, 2022
- <a href="#img-20220702"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Magic glue, 2022
+  <a href="#img-20220702"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>27.9 cm × 21.6 cm</div>
@@ -313,11 +301,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- What are we going to do with you?, 2022
- <a href="#img-20220626"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  What are we going to do with you?, 2022
+  <a href="#img-20220626"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>27.9 cm × 21.6 cm</div>
@@ -335,11 +322,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Sédentarité, 2022
- <a href="#img-20220611-2"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Sédentarité, 2022
+  <a href="#img-20220611-2"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>27.9 cm × 21.6 cm</div>
@@ -357,11 +343,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Attaque, 2022
- <a href="#img-20220611-1"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Attaque, 2022
+  <a href="#img-20220611-1"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>30.5 cm × 22.9 cm</div>
@@ -379,11 +364,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Duel, 2022
- <a href="#img-20220530"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Duel, 2022
+  <a href="#img-20220530"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>30.5 cm × 22.9 cm</div>
@@ -401,11 +385,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Isolement culturel forcé, 2022
- <a href="#img-20220529"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Isolement culturel forcé, 2022
+  <a href="#img-20220529"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>30.5 cm × 22.9 cm</div>
@@ -423,11 +406,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Meltdown, 2022
- <a href="#img-20220523"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Meltdown, 2022
+  <a href="#img-20220523"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>27.9 cm × 21.6 cm</div>
@@ -445,11 +427,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- La visite, 2022
- <a href="#img-20220521"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  La visite, 2022
+  <a href="#img-20220521"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>27.9 cm × 21.6 cm</div>
@@ -467,11 +448,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Le paysan moderne, 2022
- <a href="#img-20220508-2"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Le paysan moderne, 2022
+  <a href="#img-20220508-2"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -487,11 +467,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- American pop, 2022
- <a href="#img-20220508-1"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  American pop, 2022
+  <a href="#img-20220508-1"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>27.9 cm × 21.6 cm</div>
@@ -509,11 +488,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Statuette #1, 2022
- <a href="#img-20220507"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Statuette #1, 2022
+  <a href="#img-20220507"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -529,11 +507,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Toxic fumes, 2022
- <a href="#img-20220506"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Toxic fumes, 2022
+  <a href="#img-20220506"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>27.9 cm × 21.6 cm</div>
@@ -551,11 +528,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Final moments, 2022
- <a href="#img-20220504-2"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Final moments, 2022
+  <a href="#img-20220504-2"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>30.5 cm × 22.9 cm</div>
@@ -573,11 +549,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Labourage et pâturage, 2022
- <a href="#img-20220504-1"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Labourage et pâturage, 2022
+  <a href="#img-20220504-1"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>30.5 cm × 22.9 cm</div>
@@ -595,11 +570,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Surgery, 2022
- <a href="#img-20220503"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Surgery, 2022
+  <a href="#img-20220503"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>27.9 cm × 21.6 cm</div>
@@ -617,11 +591,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Bandwagon, 2022
- <a href="#img-20220502"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Bandwagon, 2022
+  <a href="#img-20220502"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>27.9 cm × 21.6 cm</div>
@@ -639,11 +612,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Bubbles, 2022
- <a href="#img-20220429"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Bubbles, 2022
+  <a href="#img-20220429"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -659,11 +631,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Floating blue shape, 2022
- <a href="#img-20220426-2"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Floating blue shape, 2022
+  <a href="#img-20220426-2"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -679,11 +650,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- L&#x27;idée de la neige, 2022
- <a href="#img-20220426-1"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  L&#x27;idée de la neige, 2022
+  <a href="#img-20220426-1"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -699,11 +669,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Archéologie, 2022
- <a href="#img-20220424"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Archéologie, 2022
+  <a href="#img-20220424"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -719,11 +688,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Your choice of meat, 2022
- <a href="#img-20220419"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Your choice of meat, 2022
+  <a href="#img-20220419"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -739,11 +707,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Participation, 2022
- <a href="#img-20220415"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Participation, 2022
+  <a href="#img-20220415"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -759,11 +726,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Water, 2022
- <a href="#img-20220413-2"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Water, 2022
+  <a href="#img-20220413-2"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -779,11 +745,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Springtime, 2022
- <a href="#img-20220413-1"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Springtime, 2022
+  <a href="#img-20220413-1"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -799,11 +764,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Conflict, 2022
- <a href="#img-20220409"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Conflict, 2022
+  <a href="#img-20220409"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -819,11 +783,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Insouciance, 2022
- <a href="#img-20220405"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Insouciance, 2022
+  <a href="#img-20220405"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -839,11 +802,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Procreation, 2022
- <a href="#img-20220403-3"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Procreation, 2022
+  <a href="#img-20220403-3"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -859,11 +821,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Ocean view, 2022
- <a href="#img-20220403-2"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Ocean view, 2022
+  <a href="#img-20220403-2"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -879,11 +840,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Parasites, 2022
- <a href="#img-20220403-1"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Parasites, 2022
+  <a href="#img-20220403-1"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -899,11 +859,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- What’s left of America, 2022
- <a href="#img-20220401-6"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  What’s left of America, 2022
+  <a href="#img-20220401-6"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -919,11 +878,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Rainstorm, 2022
- <a href="#img-20220401-5"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Rainstorm, 2022
+  <a href="#img-20220401-5"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -939,11 +897,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Play with your food, 2022
- <a href="#img-20220401-4"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Play with your food, 2022
+  <a href="#img-20220401-4"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -959,11 +916,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Gathering, 2022
- <a href="#img-20220401-3"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Gathering, 2022
+  <a href="#img-20220401-3"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -979,11 +935,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Bubble gum, 2022
- <a href="#img-20220401-2"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Bubble gum, 2022
+  <a href="#img-20220401-2"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -999,11 +954,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Jenny was a friend of conifers, 2022
- <a href="#img-20220401-1"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Jenny was a friend of conifers, 2022
+  <a href="#img-20220401-1"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -1019,11 +973,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Influence, 2022
- <a href="#img-20220330"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Influence, 2022
+  <a href="#img-20220330"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -1039,11 +992,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Country life, 2022
- <a href="#img-20220329"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Country life, 2022
+  <a href="#img-20220329"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
@@ -1061,11 +1013,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Soleil patatoïde terrifiant, 2022
- <a href="#img-20220322-2"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Soleil patatoïde terrifiant, 2022
+  <a href="#img-20220322-2"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>29.7 cm × 21.0 cm</div>
@@ -1083,11 +1034,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- In bloom, 2022
- <a href="#img-20220320-2"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  In bloom, 2022
+  <a href="#img-20220320-2"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>29.7 cm × 21.0 cm</div>
@@ -1105,11 +1055,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Embedded in spacetime, 2022
- <a href="#img-20220320-1"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Embedded in spacetime, 2022
+  <a href="#img-20220320-1"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>29.7 cm × 21.0 cm</div>
@@ -1127,11 +1076,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Boredom, 2022
- <a href="#img-20220317"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Boredom, 2022
+  <a href="#img-20220317"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
@@ -1149,11 +1097,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Propaganda, 2022
- <a href="#img-20220313"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Propaganda, 2022
+  <a href="#img-20220313"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -1169,11 +1116,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Portrait of a dreamer, 2022
- <a href="#img-20220312-4"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Portrait of a dreamer, 2022
+  <a href="#img-20220312-4"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
@@ -1191,11 +1137,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Alice Jambon, 2022
- <a href="#img-20220312-3"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Alice Jambon, 2022
+  <a href="#img-20220312-3"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
@@ -1213,11 +1158,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Portrait of a girl, 2022
- <a href="#img-20220312-2"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Portrait of a girl, 2022
+  <a href="#img-20220312-2"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
@@ -1235,11 +1179,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Vulnerable man, 2022
- <a href="#img-20220312-1"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Vulnerable man, 2022
+  <a href="#img-20220312-1"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>21.0 cm × 29.7 cm</div>
@@ -1257,11 +1200,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Untitled, 2022
- <a href="#img-20220305-3"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Untitled, 2022
+  <a href="#img-20220305-3"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>29.7 cm × 21.0 cm</div>
@@ -1279,11 +1221,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Midair, 2022
- <a href="#img-20220305-2"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Midair, 2022
+  <a href="#img-20220305-2"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
 <div style='font-size: 80%'>29.7 cm × 21.0 cm</div>
@@ -1301,11 +1242,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- War, 2022
- <a href="#img-20220226"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  War, 2022
+  <a href="#img-20220226"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -1321,11 +1261,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Untitled, 2022
- <a href="#img-20220221"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Untitled, 2022
+  <a href="#img-20220221"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -1341,11 +1280,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Brutalist intervention, 2022
- <a href="#img-20220220"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Brutalist intervention, 2022
+  <a href="#img-20220220"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -1361,11 +1299,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Untitled, 2022
- <a href="#img-20220212"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Untitled, 2022
+  <a href="#img-20220212"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -1381,11 +1318,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Untitled, 2022
- <a href="#img-20220207"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Untitled, 2022
+  <a href="#img-20220207"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -1401,11 +1337,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Meats of Iceland, 2022
- <a href="#img-20220205"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Meats of Iceland, 2022
+  <a href="#img-20220205"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -1421,11 +1356,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Untitled, 2022
- <a href="#img-20220131"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Untitled, 2022
+  <a href="#img-20220131"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -1441,11 +1375,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Untitled, 2022
- <a href="#img-20220123"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Untitled, 2022
+  <a href="#img-20220123"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -1461,11 +1394,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- 10:15 on a Saturday night, 2022
- <a href="#img-20220122"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  10:15 on a Saturday night, 2022
+  <a href="#img-20220122"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -1481,11 +1413,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Red, 2022
- <a href="#img-20220116-2"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Red, 2022
+  <a href="#img-20220116-2"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -1501,11 +1432,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Untitled, 2022
- <a href="#img-20220116-1"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Untitled, 2022
+  <a href="#img-20220116-1"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>
@@ -1521,11 +1451,10 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
- Untitled, 2022
- <a href="#img-20220109"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
-</div>
+  Untitled, 2022
+  <a href="#img-20220109"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
 
     
   </figcaption>

@@ -118,12 +118,14 @@ def print_row(row: Dict[str, Any],
     medium_img_url = IMG_PATH + '/medium/' + img_name
 
     main_caption = f"{title}, {year}"
+    # Fragile: pandoc really wants to insert <p> elements but we're trying
+    # to avoid that. The backslash below disables the insertion of <p>.
     main_caption_html = f"""
 <div class="main_caption">
- {html.escape(main_caption)}
- <a href="#{html.escape(hash_name)}"
-    title="Direct link to artwork"
-    class="hash_link">#</a>
+  {html.escape(main_caption)}
+  <a href="#{html.escape(hash_name)}"
+     title="Direct link to artwork"
+     class="hash_link">#</a>\
 </div>
 """
 
