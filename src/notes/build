@@ -146,11 +146,23 @@ def write_note_page(note: Dict[str, Any]) -> None:
     md_file = folder / 'index.md'
     os.makedirs(folder, exist_ok=True)
     with open(md_file, 'w') as output:
-        output.write(f"""
+        output.write(f"""\
 % {note['title']}
-% {note['date']}
 
 {"".join(note['body'])}
+
+_Martin Jambon, {note['date'].strftime("%B %d, %Y")}_
+""")
+
+
+def write_note_inline(note: Dict[str, Any], md_output: TextIO) -> None:
+    slug = note['slug']
+    md_output.write(f"""
+### <a name="{slug}"></a>{note['title']}
+
+{"".join(note['body'])}
+
+_Martin Jambon, [{note['date'].strftime("%B %d, %Y")}]({slug})_
 """)
 
 
@@ -168,15 +180,22 @@ def generate(input_notes_file: str,
     )
     makefile_output.write('NOTE_PATHS =')
     notes = parse_notes_from_file(input_notes_file)
+
+    # write to index
     for note in notes:
-        # write to index
-        md_output.write(f"""* [{note['title']}]({note['slug']})
+        md_output.write(f"""* [{note['title']}](#{note['slug']})
 """)
-        # write to makefile
+    for note in notes:
+        write_note_inline(note, md_output)
+
+    # write to makefile
+    for note in notes:
         makefile_output.write(f""" \\\n  notes/{note['slug']}""")
 
-        # write individual page
+    # write individual pages
+    for note in notes:
         write_note_page(note)
+
     makefile_output.write("\n")
 
 def main() -> None:

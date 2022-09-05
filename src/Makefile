@@ -4,6 +4,7 @@ include notes/index.mk
 ARTICLES = \
   gallery \
   gallery/all \
+  notes \
   $(NOTE_PATHS) \
   2014-12-27-faith-driven-science \
   2014-12-31-intelligence-precedes-machines \
