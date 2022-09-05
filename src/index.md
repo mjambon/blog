@@ -61,6 +61,7 @@ still ongoing as of 2022. It is now closed-source.
 
 ### Ideas
 
+* [Notes](notes) A growing collection of short notes (2022-)
 * [Mind ≠ Identity](2021-12-31-mind-vs-identity) (December 2021)
 * [Current interests (March 2017)](2017-03-05-current-interests)
 * [A world of intelligent machines](2017-01-02-agi-world) (January 2017)

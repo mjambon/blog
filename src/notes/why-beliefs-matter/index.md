@@ -16,5 +16,4 @@ why it's important that beliefs or their communicated form be
 sufficiently correct for the application at hand.
 
 
-
 _Martin Jambon, September 03, 2022_
