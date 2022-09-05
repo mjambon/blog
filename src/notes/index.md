@@ -123,6 +123,7 @@ many useful models, it is always possible to extend the model without
 respecting the causality relationships.
 
 Causality is usually of this form:
+
 * two categories of events are recognized.
 * An event is a state of the system at a point in time.
 * The events occur within a time (range) from one another with some
