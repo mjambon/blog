@@ -1,63 +1,5 @@
-<!-- This file gets split into a bunch of pages.
-Format:
-- document separator is three or more stars followed by slug: ***
-  file-name
-- fields 'title', 'date' follow in any order without blank lines:
-  * The title field is used in the table of contents i.e. the document that
-    links to all the notes on one page. It also shows as the title of
-    the page.
-  * The date field is used to tell the reader when a note was first
-    published. The format is YYYY-MM-DD.
-- a blank line marks the beginning of the markdown document
-- document content is markdown as understood by the rest of this site.
-  Title and date should not be repeated as they will be automatically
-  inserted and formatted.
+% Own you sh*t
 
-
-  *** slugs-are-great
-  title: yo
-  date: 2002-09-04
-
-  blah
-
-  *** something-else
-  title: Wow
-  date: 2023-12-31
-
-  hey
-
--->
-
-*** it-doesnt-matter-what-qualifies-as-art
-title: It doesn't matter what qualifies as art
-date: 2022-09-04
-
-It doesn't matter what qualifies as art. "art" isn't an absolute or
-necessary concept, it's a label that may or may not make sense in a
-given context. When a label stops making sense, obsessing over it is
-madness.
-
-*** why-beliefs-matter
-title: Why do beliefs matter?
-date: 2022-09-03
-
-In my model of mind, beliefs are explicit (conscious) parts of the
-world model that a mind maintains. They can be communicated or revised
-as necessary and in that sense, they're no different from notes on
-paper. So why do they matter? They're used like notes or any other
-symbols that were planted in the environment as reminders of some
-concepts. I view this "symbol planting" as a way to (re)populate the
-imagination on demand. It could be your own imagination or the
-imagination of others. It bypasses original sensing. For example, the
-written description of a banana can substitute itself to the sight of
-an actual banana. I see beliefs as imagination primers, and
-imagination sets the context for (intuitive) decision making. That's
-why it's important that beliefs or their communicated form be
-sufficiently correct for the application at hand.
-
-*** own-your-sh-t
-title: Own you sh*t
-date: 2022-08-17
 
 Own your sh*t. It's called sh*t for a reason. It's your legacy and
 it's not perfect. It never is.
@@ -128,18 +70,6 @@ minds - have failed massively. See for example dictatorships or
 attempts to create pure collectivist societies where everyone is
 equally deserving regardless of they do.
 
-*** causality-doesnt-exist
-title: Causality doesn't exist
-date: 2022-07-15
 
-Causality doesn't exist in the scientific sense. While it's present in
-many useful models, it is always possible to extend the model without
-respecting the causality relationships.
 
-Causality is usually of this form:
-* two categories of events are recognized.
-* An event is a state of the system at a point in time.
-* The events occur within a time (range) from one another with some
-  statistical correlation.
-* The event occurring first is said to cause the event that occurs
-  earlier.
+_Martin Jambon, August 17, 2022_
