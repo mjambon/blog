@@ -3,8 +3,8 @@
 
 There's no correct perception, only useful perception.
 
-The interpretation or sensory input - perception - is a process that
-generates concepts in a givenn context. Elements of context that
+The interpretation of sensory input - perception - is a process that
+generates concepts in a given context. Elements of context that
 influence perception include:
 
 - genetics of the individual mind
