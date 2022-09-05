@@ -41,6 +41,27 @@ Lending artworks to Bay Area friends since 2022.
 <div><a href="/gallery"
    style="color:black">show artist&#x27;s favorites</a> | all artworks</div>
 
+<a name="img-20220905">
+<figure style="margin: 0px 8%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20220905.jpg">
+    <img src="/gallery/img/medium/img-20220905.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Everything, 2022
+  <a href="#img-20220905"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+<div style='font-size: 80%'>20.3 cm × 20.3 cm</div>
+
+  </figcaption>
+</figure>
+
 <a name="img-20220903">
 <figure style="margin: 0px 7%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220903.jpg">
