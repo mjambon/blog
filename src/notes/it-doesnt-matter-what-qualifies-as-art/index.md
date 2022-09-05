@@ -7,5 +7,4 @@ given context. When a label stops making sense, obsessing over it is
 madness.
 
 
-
 _Martin Jambon, September 04, 2022_

@@ -137,8 +137,12 @@ def parse_note(note: Dict[str, Any]) -> Dict[str, Any]:
 
 
 def parse_notes_from_file(filename: str) -> List[Dict[str, Any]]:
-    notes = split_notes(filename)
-    return [ parse_note(x) for x in notes ]
+    raw_notes = split_notes(filename)
+    notes = [ parse_note(x) for x in raw_notes ]
+    # Sort from most recent to oldest
+    key = lambda x: x['date']
+    notes.sort(reverse=True, key=key)
+    return notes
 
 
 def write_note_page(note: Dict[str, Any]) -> None:

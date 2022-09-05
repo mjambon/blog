@@ -12,7 +12,6 @@ given context. When a label stops making sense, obsessing over it is
 madness.
 
 
-
 _Martin Jambon, [September 04, 2022](it-doesnt-matter-what-qualifies-as-art)_
 
 ### <a name="why-beliefs-matter"></a>Why do beliefs matter?
@@ -31,6 +30,7 @@ an actual banana. I see beliefs as imagination primers, and
 imagination sets the context for (intuitive) decision making. That's
 why it's important that beliefs or their communicated form be
 sufficiently correct for the application at hand.
+
 
 
 _Martin Jambon, [September 03, 2022](why-beliefs-matter)_
