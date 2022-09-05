@@ -1,7 +1,7 @@
 % Own you sh*t
 
 
-Own your sh*t. It's called sh*t for a reason. It's your legacy and
+Own your sh\*t. It's called sh\*t for a reason. It's your legacy and
 it's not perfect. It never is.
 
 Justification:
@@ -32,6 +32,7 @@ are considered less responsible than others but nonetheless, it's hard
 to find cases where someone else is held responsible instead. Examples
 of classes of people that have been historically considered less
 responsible include:
+
 * slaves
 * minors
 * women
