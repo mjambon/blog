@@ -21,7 +21,7 @@ This dictionary is an attempt to define or clarify various terms I
 consider important and unambiguous in my view of the world. Emphasis is
 placed on simplicity, consistency, and approachability. If I deem the
 approach successful, the document will [grow and evolve over
-time](https://github.com/mjambon/blog/commits/master/src/2020-09-12-dictionary/glossary.yml).
+time](https://github.com/mjambon/blog/commits/master/src/dictionary/glossary.yml).
 
 [abstract](#vanity-6162737472616374){.vanity-term-link},
 [action](#vanity-616374696f6e){.vanity-term-link},

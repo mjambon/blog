@@ -35,7 +35,7 @@ still ongoing as of 2022. It is now closed-source.
 
 ### Definitions
 
-* [Minimal Dictionary](2020-09-12-dictionary) (2020-): small dictionary of
+* [Minimal Dictionary](dictionary) (2020-): small dictionary of
   basic terms loosely related to natural and artificial minds and their
   interaction with the world. It is structured as a DAG, forbidding
   cyclic definitions.
