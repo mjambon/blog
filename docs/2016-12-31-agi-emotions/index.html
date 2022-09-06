@@ -17,6 +17,33 @@
   <meta http-equiv="Content-Language" content="en">
 </head>
 <body>
+<style>
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li.navitem {
+  float: right;
+}
+
+li.navitem a:hover {
+  text-decoration: underline;
+}
+
+a.navitem {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: black;
+}
+</style>
+<ul class="navbar">
+  <li class="navitem"><a href="/gallery" class="navitem">Gallery</a></li>
+  <li class="navitem"><a href="/notes" class="navitem">Notes</a></li>
+  <li class="navitem"><a href="/" class="navitem">Home</a></li>
+</ul>
 <h1 id="engineering-emotions">Engineering emotions</h1>
 <p><em>These are notes on managing global parameters in a family of cognitive systems <a href="../2016-08-20-agi-project-status-2016">introduced earlier</a>. They are conveniently named emotions, although our definition is purely technical, broad, and doesn’t attempt to emulate specific human emotions.</em></p>
 <p>An emotion is a specific value or range of values of a global parameter of the system, which is built-in or inherited, affects the activity of the system, is triggered by some states of the system, and can be sensed by the system itself.</p>

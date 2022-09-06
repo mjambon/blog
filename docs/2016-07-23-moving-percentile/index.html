@@ -17,6 +17,33 @@
   <meta http-equiv="Content-Language" content="en">
 </head>
 <body>
+<style>
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li.navitem {
+  float: right;
+}
+
+li.navitem a:hover {
+  text-decoration: underline;
+}
+
+a.navitem {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: black;
+}
+</style>
+<ul class="navbar">
+  <li class="navitem"><a href="/gallery" class="navitem">Gallery</a></li>
+  <li class="navitem"><a href="/notes" class="navitem">Notes</a></li>
+  <li class="navitem"><a href="/" class="navitem">Home</a></li>
+</ul>
 <h1 id="windowless-percentile-tracking">Windowless percentile tracking</h1>
 <p>This is a method driven by the same constraints as the <a href="https://en.wikipedia.org/wiki/Moving_average#Exponential_moving_average">exponential moving average</a>, but for median and other percentiles.</p>
 <p>We present an algorithm for tracking the value of a percentile, such as the median, in an infinite stream of observations whose distribution can change over time. A self-imposed constraint is that we cannot afford to keep the last <em>N</em> observations explicitly in memory. In our algorithm, the cost of updating the estimated percentile is <span class="math inline">\(O(1)\)</span> and the memory usage is also <span class="math inline">\(O(1)\)</span>. A single parameter denoted <span class="math inline">\(r\)</span> is specified by the user and expresses the trade-off between accuracy and reactivity (to changes in the distribution of the signal).</p>

@@ -68,8 +68,11 @@ graphs:
     render-graphs "$$x" "$(DOCROOT)/$$(dirname $$x)/img"; \
   done
 
-$(DOCROOT)/index.html: index.md Makefile head.html
-	pandoc $< -o $@ -t html5 -s -c blog.css -H head.html
+# TODO: use the same exact command as for the other pages
+$(DOCROOT)/index.html: index.md \
+			Makefile head.html before-body.html after-body.html
+	pandoc $< -o $@ -t html5 -s \
+	-c blog.css -B before-body.html -A after-body.html -H head.html
 
 $(DOCROOT)/%/index.html $(DOCROOT)/%/%/index.html: %/index.md \
                          Makefile head.html before-body.html after-body.html
