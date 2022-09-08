@@ -41,6 +41,48 @@ Lending artworks to Bay Area friends since 2022.
 <div><a href="/gallery"
    style="color:black">show artist&#x27;s favorites</a> | all artworks</div>
 
+<a name="img-20220907-2">
+<figure style="margin: 0px 2%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20220907-2.jpg">
+    <img src="/gallery/img/medium/img-20220907-2.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Look On Down From The Bridge (after Mazzy Star), 2022
+  <a href="#img-20220907-2"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+<div style='font-size: 80%'>35.6 cm × 27.9 cm</div>
+
+  </figcaption>
+</figure>
+
+<a name="img-20220907-1">
+<figure style="margin: 0px 2%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20220907-1.jpg">
+    <img src="/gallery/img/medium/img-20220907-1.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Life as we know it, 2022
+  <a href="#img-20220907-1"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+<div style='font-size: 80%'>35.6 cm × 27.9 cm</div>
+
+  </figcaption>
+</figure>
+
 <a name="img-20220905">
 <figure style="margin: 0px 8%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220905.jpg">

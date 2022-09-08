@@ -89,12 +89,18 @@ def print_row(row: Dict[str, Any],
     orig = 'img/original/' + img_name
 
     large = 'img/large/' + img_name
+    # JPEG image quality. Default quality is 92, max is 100.
+    quality = "95"
     if force or needs_rebuild(orig, large):
-        verbose_command(["convert", "-resize", "1600x1600", orig, large])
+        verbose_command(["convert", "-resize", "1600x1600",
+                         "-quality", quality,
+                         orig, large])
 
     medium = 'img/medium/' + img_name
     if force or needs_rebuild(orig, medium):
-        verbose_command(["convert", "-resize", "800x800", orig, medium])
+        verbose_command(["convert", "-resize", "800x800",
+                         "-quality", quality,
+                         orig, medium])
 
     # Padded square images for Instagram
     square = 'img/square/' + img_name
@@ -106,6 +112,7 @@ def print_row(row: Dict[str, Any],
             "-background", "#eee",
             "-gravity", "center",
             "-extent", "1600x1600",
+            "-quality", quality,
             square
         ])
 
