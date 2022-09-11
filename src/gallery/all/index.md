@@ -723,7 +723,7 @@ Lending artworks to Bay Area friends since 2022.
      class="hash_link">#</a></div>
 
     
-<div style='font-size: 80%'>21.0 cm × 29.7 cm, paper</div>
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 
   </figcaption>
 </figure>
@@ -744,7 +744,7 @@ Lending artworks to Bay Area friends since 2022.
      class="hash_link">#</a></div>
 
     
-<div style='font-size: 80%'>21.0 cm × 29.7 cm, paper (unavail.)</div>
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper (unavail.)</div>
 
   </figcaption>
 </figure>
@@ -765,7 +765,7 @@ Lending artworks to Bay Area friends since 2022.
      class="hash_link">#</a></div>
 
     
-<div style='font-size: 80%'>21.0 cm × 29.7 cm, paper</div>
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 
   </figcaption>
 </figure>
@@ -786,7 +786,7 @@ Lending artworks to Bay Area friends since 2022.
      class="hash_link">#</a></div>
 
     
-<div style='font-size: 80%'>21.0 cm × 29.7 cm, paper</div>
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 
   </figcaption>
 </figure>
@@ -807,7 +807,7 @@ Lending artworks to Bay Area friends since 2022.
      class="hash_link">#</a></div>
 
     
-<div style='font-size: 80%'>21.0 cm × 29.7 cm, paper</div>
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 
   </figcaption>
 </figure>
@@ -849,7 +849,7 @@ Lending artworks to Bay Area friends since 2022.
      class="hash_link">#</a></div>
 
     
-<div style='font-size: 80%'>21.0 cm × 29.7 cm, paper</div>
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 
   </figcaption>
 </figure>
@@ -870,7 +870,7 @@ Lending artworks to Bay Area friends since 2022.
      class="hash_link">#</a></div>
 
     
-<div style='font-size: 80%'>21.0 cm × 29.7 cm, paper</div>
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 
   </figcaption>
 </figure>
@@ -891,7 +891,7 @@ Lending artworks to Bay Area friends since 2022.
      class="hash_link">#</a></div>
 
     
-<div style='font-size: 80%'>21.0 cm × 29.7 cm, paper (unavail.)</div>
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper (unavail.)</div>
 
   </figcaption>
 </figure>
@@ -912,7 +912,7 @@ Lending artworks to Bay Area friends since 2022.
      class="hash_link">#</a></div>
 
     
-<div style='font-size: 80%'>21.0 cm × 29.7 cm, paper</div>
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 
   </figcaption>
 </figure>
@@ -933,7 +933,7 @@ Lending artworks to Bay Area friends since 2022.
      class="hash_link">#</a></div>
 
     
-<div style='font-size: 80%'>21.0 cm × 29.7 cm, paper</div>
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 
   </figcaption>
 </figure>
@@ -1015,6 +1015,8 @@ Lending artworks to Bay Area friends since 2022.
      class="hash_link">#</a></div>
 
     
+<div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+
   </figcaption>
 </figure>
 
@@ -1034,6 +1036,8 @@ Lending artworks to Bay Area friends since 2022.
      class="hash_link">#</a></div>
 
     
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
   </figcaption>
 </figure>
 
@@ -1053,6 +1057,8 @@ Lending artworks to Bay Area friends since 2022.
      class="hash_link">#</a></div>
 
     
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
   </figcaption>
 </figure>
 
@@ -1072,6 +1078,8 @@ Lending artworks to Bay Area friends since 2022.
      class="hash_link">#</a></div>
 
     
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
   </figcaption>
 </figure>
 
@@ -1091,6 +1099,8 @@ Lending artworks to Bay Area friends since 2022.
      class="hash_link">#</a></div>
 
     
+<div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+
   </figcaption>
 </figure>
 
@@ -1110,6 +1120,8 @@ Lending artworks to Bay Area friends since 2022.
      class="hash_link">#</a></div>
 
     
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
   </figcaption>
 </figure>
 
@@ -1234,6 +1246,8 @@ Lending artworks to Bay Area friends since 2022.
      class="hash_link">#</a></div>
 
     
+<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
   </figcaption>
 </figure>
 
@@ -1421,6 +1435,8 @@ Lending artworks to Bay Area friends since 2022.
      class="hash_link">#</a></div>
 
     
+<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
   </figcaption>
 </figure>
 
@@ -1434,7 +1450,7 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Untitled, 2022
+  3, 2022
   <a href="#img-20220221"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -1459,6 +1475,8 @@ Lending artworks to Bay Area friends since 2022.
      class="hash_link">#</a></div>
 
     
+<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
   </figcaption>
 </figure>
 
@@ -1478,6 +1496,8 @@ Lending artworks to Bay Area friends since 2022.
      class="hash_link">#</a></div>
 
     
+<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
   </figcaption>
 </figure>
 
@@ -1491,12 +1511,14 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Untitled, 2022
+  Valentine’s day, 2022
   <a href="#img-20220207"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
     
+<div style='font-size: 80%'>24.0 cm × 18.0 cm, paper</div>
+
   </figcaption>
 </figure>
 
@@ -1531,12 +1553,14 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Untitled, 2022
+  Sushi, 2022
   <a href="#img-20220131"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
     
+<div style='font-size: 80%'>24.0 cm × 18.0 cm, paper</div>
+
   </figcaption>
 </figure>
 
@@ -1550,12 +1574,14 @@ Lending artworks to Bay Area friends since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Untitled, 2022
+  Meatlets, 2022
   <a href="#img-20220123"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
     
+<div style='font-size: 80%'>24.0 cm × 18.0 cm, paper</div>
+
   </figcaption>
 </figure>
 
@@ -1575,6 +1601,8 @@ Lending artworks to Bay Area friends since 2022.
      class="hash_link">#</a></div>
 
     
+<div style='font-size: 80%'>24.0 cm × 18.0 cm, paper</div>
+
   </figcaption>
 </figure>
 
@@ -1613,6 +1641,8 @@ Lending artworks to Bay Area friends since 2022.
      class="hash_link">#</a></div>
 
     
+<div style='font-size: 80%'>20.0 cm × 15.0 cm, paper</div>
+
   </figcaption>
 </figure>
 
@@ -1632,6 +1662,8 @@ Lending artworks to Bay Area friends since 2022.
      class="hash_link">#</a></div>
 
     
+<div style='font-size: 80%'>25.0 cm × 20.0 cm, paper</div>
+
   </figcaption>
 </figure>
 
