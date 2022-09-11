@@ -1,4 +1,4 @@
-% Own you sh*t
+% Own your sh*t
 
 
 Own your sh\*t. It's called sh\*t for a reason. It's your legacy and

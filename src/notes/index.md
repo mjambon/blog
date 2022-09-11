@@ -5,7 +5,7 @@
 * [There's no correct perception](#theres-no-correct-perception)
 * [It doesn't matter what qualifies as art](#it-doesnt-matter-what-qualifies-as-art)
 * [Why do beliefs matter?](#why-beliefs-matter)
-* [Own you sh*t](#own-your-sh-t)
+* [Own your sh*t](#own-your-sh-t)
 * [Causality doesn't exist](#causality-doesnt-exist)
 
 ### <a name="the-value-of-art"></a>The value of art
@@ -135,7 +135,7 @@ sufficiently correct for the application at hand.
 
 _Martin Jambon, [September 03, 2022](why-beliefs-matter)_
 
-### <a name="own-your-sh-t"></a>Own you sh*t
+### <a name="own-your-sh-t"></a>Own your sh*t
 
 
 Own your sh\*t. It's called sh\*t for a reason. It's your legacy and

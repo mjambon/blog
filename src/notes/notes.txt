@@ -141,7 +141,7 @@ why it's important that beliefs or their communicated form be
 sufficiently correct for the application at hand.
 
 *** own-your-sh-t
-title: Own you sh*t
+title: Own your sh*t
 date: 2022-08-17
 
 Own your sh\*t. It's called sh\*t for a reason. It's your legacy and
