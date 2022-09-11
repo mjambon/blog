@@ -49,7 +49,7 @@ its story is, the higher a luxury or non-functional object can sell:
 * art: objects with interesting and unique stories
 
 Great art is the product of a unique and remarkable timeline, making it hard
-to duplicate. It's relatively easy to duplicate the Mona Lisa, but the
+to truly duplicate. It's relatively easy to duplicate the Mona Lisa, but the
 resulting copies are worthless in comparison because they don't add
 much to the history of art. However, discovering a new painting by
 Leonardo da Vinci, even a mediocre one, would be a major event and
