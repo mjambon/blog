@@ -54,7 +54,7 @@ def needs_rebuild(src: str, dst: str) -> bool:
 def inches_to_cm(x: float) -> float:
     return 2.54 * x
 
-def format_dimensions(row: Dict[str, Any]) -> Optional[str]:
+def format_dimensions(row: Dict[str, str]) -> Optional[str]:
     width_cm = -1.0
     height_cm = -1.0
     if row['width_in'] and row['height_in']:
@@ -68,13 +68,25 @@ def format_dimensions(row: Dict[str, Any]) -> Optional[str]:
     else:
         return None
 
+def format_support(row: Dict[str, str]) -> Optional[str]:
+    support = row['support']
+    if support:
+        return support
+    else:
+        return None
+
+def format_availability(row: Dict[str, str]) -> Optional[str]:
+    if row['possessor'] != 'Martin Jambon':
+        return '(unavail.)'
+    else:
+        return None
 
 def verbose_command(argv: List[str]) -> None:
     print(f"{' '.join(argv)}")
     subprocess.run(argv)
 
 
-def print_row(row: Dict[str, Any],
+def print_row(row: Dict[str, str],
               md_file: TextIO,
               force: bool = False) -> None:
     img_id = row['image_id']
@@ -137,10 +149,17 @@ def print_row(row: Dict[str, Any],
 """
 
     dimensions = format_dimensions(row)
+    support = format_support(row)
+    availability = format_availability(row)
     dim_html = ""
     if dimensions:
+        line = dimensions
+        if support:
+            line += f", {support}"
+        if availability:
+            line += f" {availability}"
         dim_html = f"""
-<div style='font-size: 80%'>{html.escape(dimensions)}</div>
+<div style='font-size: 80%'>{html.escape(line)}</div>
 """
 
     # Write to main page
