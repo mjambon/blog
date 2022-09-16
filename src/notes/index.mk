@@ -1,4 +1,5 @@
 NOTE_PATHS = \
+  notes/lasting-interest \
   notes/the-value-of-art \
   notes/expert-vs-professional \
   notes/theres-no-correct-perception \

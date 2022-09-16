@@ -28,6 +28,18 @@ Format:
 
 -->
 
+*** lasting-interest
+title: Lasting interest
+date: 2022-09-16
+
+A good painting for home is one that looks a little bit different each
+time you look at it. Public space art displays - even museums - don't
+have this requirement. It's often enough for them to be cool the first
+time you see them and boring thereafter.
+
+Repeated exposures to a movie or to a significant have the same
+issue.
+
 *** the-value-of-art
 title: The value of art
 date: 2022-09-10
