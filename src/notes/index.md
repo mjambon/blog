@@ -30,7 +30,7 @@ something that can't be enforced with rules.
 
 **tolerance**: intentional avoidance of destructive action<br>
 **respect**: feeling of appreciation toward someone's behavior as in
-  "I like what they do".<br>
+  "I like what they do"<br>
 **disrespect**: absence of respect<br>
 **love**: feeling of appreciation toward a whole person rather than
   specific behavior<br>
