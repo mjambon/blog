@@ -23,7 +23,7 @@ something that can't be enforced with rules.
 * You may avoid being fired due to leaders or laws that require
   tolerance but that won't earn you respect.
 * Your enemies can respect you and still butcher you.
-* Tolerance can be a default behavior towards strangers - and I would
+* Tolerance can be a default behavior toward strangers - and I would
   recommend it - but a relationship doesn't start with mutual
   respect. It starts with mere tolerance.
 * Disrespect is simply the absence of respect. It doesn't imply hatred.
