@@ -47,18 +47,12 @@ something that can't be enforced with rules.
   respect. It starts with mere tolerance.
 * Disrespect is simply the absence of respect. It doesn't imply hatred.
 
-### Definitions
-
-**tolerance**: intentional avoidance of destructive action
-
+**tolerance**: intentional avoidance of destructive action<br>
 **respect**: feeling of appreciation toward someone's behavior as in
-  "I like what they do".
-
-**disrespect**: absence of respect
-
+  "I like what they do".<br>
+**disrespect**: absence of respect<br>
 **love**: feeling of appreciation toward a whole person rather than
-  specific behavior
-
+  specific behavior<br>
 **hatred**: feeling that someone should not be around (?)
 
 *** lasting-interest
