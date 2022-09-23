@@ -41,6 +41,27 @@ Lending artworks to Bay Area friends since 2022.
 <div><a href="/gallery"
    style="color:black">show artist&#x27;s favorites</a> | all artworks</div>
 
+<a name="img-20220922">
+<figure style="margin: 0px 1%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20220922.jpg">
+    <img src="/gallery/img/medium/img-20220922.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Écosystème flambant neuf, 2022
+  <a href="#img-20220922"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
+  </figcaption>
+</figure>
+
 <a name="img-20220917">
 <figure style="margin: 0px 7%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220917.jpg">
