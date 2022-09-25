@@ -104,6 +104,27 @@ Lending artworks to Bay Area friends since 2022.
   </figcaption>
 </figure>
 
+<a name="img-20220813">
+<figure style="margin: 0px 2%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20220813.jpg">
+    <img src="/gallery/img/medium/img-20220813.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Heaven and hell but mostly hell, 2022
+  <a href="#img-20220813"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
+  </figcaption>
+</figure>
+
 <a name="img-20220803-1">
 <figure style="margin: 0px 1%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220803-1.jpg">
@@ -326,27 +347,6 @@ Lending artworks to Bay Area friends since 2022.
 <div class="main_caption">
   Insouciance, 2022
   <a href="#img-20220405"
-     title="Direct link to artwork"
-     class="hash_link">#</a></div>
-
-    
-<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
-
-  </figcaption>
-</figure>
-
-<a name="img-20220403-3">
-<figure style="margin: 0px 0%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20220403-3.jpg">
-    <img src="/gallery/img/medium/img-20220403-3.jpg"
-         alt="abstract art"
-         class="artwork"/>
-  </a>
-  <figcaption>
-    
-<div class="main_caption">
-  Procreation, 2022
-  <a href="#img-20220403-3"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
