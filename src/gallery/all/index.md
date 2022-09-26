@@ -36,7 +36,7 @@ figcaption {
         style="height:1.5em;padding:0em 0.5em">](https://www.instagram.com/martinjambon/)
 </div>
 <p>
-Lending artworks to Bay Area friends since 2022.
+Making whatever I want since 2022.
 </p>
 <div><a href="/gallery"
    style="color:black">show artist&#x27;s favorites</a> | all artworks</div>
