@@ -1,4 +1,5 @@
 NOTE_PATHS = \
+  notes/should-i-reply \
   notes/respect-is-earned \
   notes/lasting-interest \
   notes/the-value-of-art \

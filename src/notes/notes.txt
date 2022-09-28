@@ -28,6 +28,22 @@ Format:
 
 -->
 
+*** should-i-reply
+title: Should I reply?
+date: 2022-09-28
+
+> Someone says something on social media. I want to reply. Should I
+> really reply?
+
+A decision diagram to help keep your
+impulses in check:
+
+[<img src="/notes/img/reply.png"
+      title="click to enlarge"
+      alt="a decision graph; see dot source code">](/notes/img/reply.png)
+
+[source code](/notes/img/reply.dot)
+
 *** respect-is-earned
 title: Respect is earned
 date: 2022-09-20

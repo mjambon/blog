@@ -1,0 +1,61 @@
+/* dot -Tpng reply.dot > reply.png */
+digraph LR {
+  node [shape=box]
+  post [label="\
+Someone says something on social media.\n
+I want to reply. Should I really reply?"];
+
+  node [shape=ellipse]
+  mean [label="Is my response mean?"]
+  involvement [label="Does the conversation already involve me?"]
+  duplicate [label="Did someone already mention that?"]
+  relationship [label="Do they know me?"]
+  compassion [label="Is my reaction emotional support?"]
+  like [label="Do they like me?"]
+  obvious [label="\
+Is my reply obvious from the facts\n\
+presented in the conversation?"]
+  public [label="\
+Is my reply detailed\n\
+in a publicly-accessible document?"]
+  interesting [label="\
+Is it interesting to at least\n\
+some of my audience?"]
+  joke [label="Is it a joke?"]
+  getit [label="Will they get my joke?"]
+  question [label="Am I replying with a question?"]
+  ontopic [label="Is my question on topic?"]
+
+  node [shape=box]
+  yes [label="Yes, reply."]
+  no [label="No, do not reply."]
+
+  post -> mean
+  mean -> no [label="yes"]
+  mean -> compassion [label="no"]
+  compassion -> yes [label="yes"]
+  compassion -> involvement [label="no"]
+  involvement -> duplicate [label="no"]
+  involvement -> relationship [label="yes"]
+  duplicate -> no [label="yes"]
+  duplicate -> relationship [label="no"]
+  relationship -> like [label="yes"]
+  relationship -> obvious [label="no"]
+  like -> yes [label="yes"]
+  like -> obvious [label="I don't know"]
+  like -> no [label="no"]
+  obvious -> no [label="yes"]
+  obvious -> public [label="no"]
+  public -> interesting [label="yes"]
+  public -> joke [label="no"]
+  interesting -> yes [label="yes"]
+  interesting -> no [label="no"]
+  joke -> getit [label="yes"]
+  joke -> question [label="no"]
+  getit -> yes [label="yes"]
+  getit -> no [label="no"]
+  question -> ontopic [label="yes"]
+  question -> no [label="no"]
+  ontopic -> no [label="no"]
+  ontopic -> yes [label="yes"]
+}
