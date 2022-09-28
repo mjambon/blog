@@ -14,10 +14,10 @@
 ### <a name="should-i-reply"></a>Should I reply?
 
 
-> Someone says something on social media. I want to reply. Should I
-> really reply?
+Someone says something on social media. I want to reply. Should I
+really reply?
 
-A decision diagram to help keep your
+Here's a decision diagram to help keep my
 impulses in check:
 
 [<img src="/notes/img/reply.png"
