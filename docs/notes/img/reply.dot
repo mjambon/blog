@@ -18,7 +18,7 @@ I want to reply. Should I really reply?"];
 Did someone already mention\n\
 what I'm about to say?"]
   relationship [label="Do they know me?"]
-  compassion [label="Is it emotional support?"]
+  compassion [label="Is my response pure emotional support?"]
   like [label="Do they like me?"]
   obvious [label="\
 Is my reply obvious from the facts\n\
