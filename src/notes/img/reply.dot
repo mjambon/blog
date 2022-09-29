@@ -1,4 +1,10 @@
-/* dot -Tpng reply.dot > reply.png */
+/*
+  Command to produce an image from this code:
+
+    dot -Tpng reply.dot > reply.png
+
+  See https://graphviz.org/
+*/
 digraph LR {
   node [shape=box]
   post [label="\
@@ -8,9 +14,11 @@ I want to reply. Should I really reply?"];
   node [shape=ellipse]
   mean [label="Is my response mean?"]
   involvement [label="Does the conversation already involve me?"]
-  duplicate [label="Did someone already mention that?"]
+  duplicate [label="\
+Did someone already mention\n\
+what I'm about to say?"]
   relationship [label="Do they know me?"]
-  compassion [label="Is my reaction emotional support?"]
+  compassion [label="Is it emotional support?"]
   like [label="Do they like me?"]
   obvious [label="\
 Is my reply obvious from the facts\n\
@@ -31,31 +39,31 @@ some of my audience?"]
   no [label="No, do not reply."]
 
   post -> mean
-  mean -> no [label="yes"]
-  mean -> compassion [label="no"]
-  compassion -> yes [label="yes"]
-  compassion -> involvement [label="no"]
-  involvement -> duplicate [label="no"]
-  involvement -> relationship [label="yes"]
-  duplicate -> no [label="yes"]
-  duplicate -> relationship [label="no"]
-  relationship -> like [label="yes"]
-  relationship -> obvious [label="no"]
-  like -> yes [label="yes"]
-  like -> obvious [label="I don't know"]
-  like -> no [label="no"]
-  obvious -> no [label="yes"]
-  obvious -> public [label="no"]
-  public -> interesting [label="yes"]
-  public -> joke [label="no"]
-  interesting -> yes [label="yes"]
-  interesting -> no [label="no"]
-  joke -> getit [label="yes"]
-  joke -> question [label="no"]
-  getit -> yes [label="yes"]
-  getit -> no [label="no"]
-  question -> ontopic [label="yes"]
-  question -> no [label="no"]
-  ontopic -> no [label="no"]
-  ontopic -> yes [label="yes"]
+  mean -> no [taillabel="yes"]
+  mean -> compassion [taillabel="no"]
+  compassion -> yes [taillabel="yes"]
+  compassion -> involvement [taillabel="no"]
+  involvement -> duplicate [taillabel="no"]
+  involvement -> relationship [taillabel="yes"]
+  duplicate -> no [taillabel="yes"]
+  duplicate -> relationship [taillabel="no"]
+  relationship -> like [taillabel="yes"]
+  relationship -> obvious [taillabel="no"]
+  like -> yes [taillabel="yes"]
+  like -> obvious [taillabel="I don't know"]
+  like -> no [taillabel="no"]
+  obvious -> no [taillabel="yes"]
+  obvious -> public [taillabel="no"]
+  public -> interesting [taillabel="yes"]
+  public -> joke [taillabel="no"]
+  interesting -> yes [taillabel="yes"]
+  interesting -> no [taillabel="no"]
+  joke -> getit [taillabel="yes"]
+  joke -> question [taillabel="no"]
+  getit -> yes [taillabel="yes"]
+  getit -> no [taillabel="no"]
+  question -> ontopic [taillabel="yes"]
+  question -> no [taillabel="no"]
+  ontopic -> no [taillabel="no"]
+  ontopic -> yes [taillabel="yes"]
 }
