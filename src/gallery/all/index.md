@@ -41,6 +41,27 @@ Making whatever I want since 2022.
 <div><a href="/gallery"
    style="color:black">show artist&#x27;s favorites</a> | all artworks</div>
 
+<a name="img-20220929">
+<figure style="margin: 0px 0%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20220929.jpg">
+    <img src="/gallery/img/medium/img-20220929.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Nos ancêtres les Barbapapa, 2022
+  <a href="#img-20220929"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+  </figcaption>
+</figure>
+
 <a name="img-20220927-4">
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/gallery/img/large/img-20220927-4.jpg">
