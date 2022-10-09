@@ -51,7 +51,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Encerclement, 2022
+  Encerclement (Surrounding), 2022
   <a href="#img-20220924"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -114,7 +114,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Heaven and hell but mostly hell, 2022
+  Heaven And Hell But Mostly Hell (Le paradis et l’enfer mais surtout l’enfer), 2022
   <a href="#img-20220813"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -135,7 +135,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Settled, 2022
+  Settled (Bien établi), 2022
   <a href="#img-20220803-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -156,7 +156,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Space nugget, 2022
+  Space Nugget (Pépite spatiale), 2022
   <a href="#img-20220801-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -177,7 +177,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  What are we going to do with you?, 2022
+  What Are We Going To Do With You? (Mais qu’allons nous faire de toi ?), 2022
   <a href="#img-20220626"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -240,7 +240,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Bubbles, 2022
+  Bubbles (Bulles), 2022
   <a href="#img-20220429"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -261,7 +261,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Archéologie, 2022
+  Archéologie (Archaeology), 2022
   <a href="#img-20220424"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -282,7 +282,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Your choice of meat, 2022
+  Your Choice Of Meat (Votre choix de viande), 2022
   <a href="#img-20220419"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -324,7 +324,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Springtime, 2022
+  Springtime (Printemps), 2022
   <a href="#img-20220413-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -366,7 +366,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Play with your food, 2022
+  Play With Your Food (Joue avec ta nourriture), 2022
   <a href="#img-20220401-4"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -429,7 +429,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Embedded in spacetime, 2022
+  Embedded In Spacetime (Incrusté dans l&#x27;espace-temps), 2022
   <a href="#img-20220320-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -450,7 +450,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Boredom, 2022
+  Boredom (L&#x27;ennui), 2022
   <a href="#img-20220317"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -471,7 +471,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Midair, 2022
+  Midair (Au milieu du ciel), 2022
   <a href="#img-20220305-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -492,7 +492,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  War, 2022
+  War (La guerre), 2022
   <a href="#img-20220226"
      title="Direct link to artwork"
      class="hash_link">#</a></div>

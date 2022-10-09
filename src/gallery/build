@@ -12,6 +12,7 @@ import json
 import html
 import math
 import os
+import re
 import subprocess
 
 FAVES_PATH = '/gallery'
@@ -25,6 +26,18 @@ def capitalize(s: str) -> str:
         return s[0].upper() + s[1:]
     else:
         return s
+
+def capitalize_fr(s: str) -> str:
+    return capitalize(s)
+
+# Zero-width matching just before a letter that should be capitalized
+# according to English usage.
+# This works only for standard English letters a-z.
+WORD_START_RE = r"(?:^|(?<=\s))(?=[a-z])"
+
+# Because '.title()' does a shit job.
+def capitalize_en(s: str) -> str:
+    return "".join([ capitalize(word) for word in re.split(WORD_START_RE, s) ])
 
 # Uses 'identify' from ImageMagick
 def image_dimensions(image_filename: str) -> Tuple[int, int]:
@@ -85,15 +98,34 @@ def verbose_command(argv: List[str]) -> None:
     print(f"{' '.join(argv)}")
     subprocess.run(argv)
 
+def get_title(row: Dict[str, str]) -> str:
+    title_en = capitalize_en(row['title_en'])
+    title_fr = capitalize_fr(row['title_fr'])
+    title_lang = row['title_lang']
+    title1 = None
+    title2 = None
+    if title_lang == "en":
+        title1 = title_en
+        title2 = title_fr
+    elif title_lang == "fr":
+        title1 = title_fr
+        title2 = title_en
+    elif title_lang:
+        raise Exception(f"Unsupported language '{title_lang}' in row {row}")
+    if title1:
+        title = title1
+        if title2 and title2 != title1:
+            title = f"{title} ({title2})"
+        return title
+    else:
+        return 'Untitled'
 
 def print_row(row: Dict[str, str],
               md_file: TextIO,
               force: bool = False) -> None:
     img_id = row['image_id']
     year = date.fromisoformat(row['date']).year
-    title = capitalize(row['title'])
-    if not title:
-        title = 'Untitled'
+    title = get_title(row)
     img_name = img_id + '.jpg'
     hash_name = img_id
 
