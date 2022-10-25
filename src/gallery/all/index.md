@@ -41,6 +41,27 @@ Making whatever I want since 2022.
 <div><a href="/gallery"
    style="color:black">show artist&#x27;s favorites</a> | all artworks</div>
 
+<a name="img-20221023">
+<figure style="margin: 0px 1%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221023.jpg">
+    <img src="/gallery/img/medium/img-20221023.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Organique (Organic), 2022
+  <a href="#img-20221023"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+<div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+
+  </figcaption>
+</figure>
+
 <a name="img-20221017">
 <figure style="margin: 0px 7%; padding-top: 40px">
   <a href="/gallery/img/large/img-20221017.jpg">
