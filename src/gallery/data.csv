@@ -1,6 +1,6 @@
 artwork_id,image_id,date,title_fr,title_en,title_lang,medium,support,width_cm,height_cm,width_in,height_in,tags,show,favorite,possessor,notes
 mj-20221030-2,img-20221030-2,2022-10-30,l’oeuf et la poule,the chicken and the egg,en,acrylic marker on black paper,paper,,,11,8.5,,1,0,Martin Jambon,
-mj-20221030-1,img-20221030-1,2022-10-30,formation atmosphérique,atmospheric formation,fr,acrylic marker and paint on canvas,canvas,,,14,11,,1,0,Martin Jambon,
+mj-20221030-1,img-20221030-1,2022-10-30,formation atmosphérique,atmospheric formation,fr,acrylic marker and paint on canvas,canvas,,,14,11,,1,1,Martin Jambon,
 mj-20221023,img-20221023,2022-10-23,organique,organic,fr,acrylic marker on paper,paper,,,12,9,,1,0,Martin Jambon,
 mj-20221017,img-20221017,2022-10-17,la ville,the city,en,oil on brass leaf on canvas,canvas,,,8,8,,1,0,Martin Jambon,
 mj-20221016-3,img-20221016-3,2022-10-16,,rock and roll,en,acrylic marker on paper,paper,29.7,21,,,,1,0,Martin Jambon,
@@ -16,7 +16,7 @@ mj-20220927-1,img-20220927-1,2022-09-27,,,,acrylic marker on paper,paper,29.7,21
 mj-20220924,img-20220924,2022-09-24,encerclement,surrounding,fr,acrylic marker on canvas,canvas,,,14,11,,1,1,Martin Jambon,
 mj-20220922,img-20220922,2022-09-22,écosystème flambant neuf,brand new ecosystem,fr,acrylic marker on canvas,canvas,,,14,11,,1,0,Martin Jambon,
 mj-20220917,img-20220917,2022-09-17,pomme,apple,en,acrylic paint and metal on canvas,canvas,,,8,8,,1,0,Martin Jambon,
-mj-20220907-2,img-20220907-2,2022-09-07,,Look On Down From The Bridge (after Mazzy Star),en,acrylic marker on canvas,canvas,,,14,11,monochrome,1,1,Martin Jambon,
+mj-20220907-2,img-20220907-2,2022-09-07,,Look On Down From The Bridge (after Mazzy Star),en,acrylic marker on canvas,canvas,,,14,11,monochrome,1,0,Martin Jambon,
 mj-20220907-1,img-20220907-1,2022-09-07,la vie telle qu’on la connaît,life as we know it,en,acrylic marker on canvas,canvas,,,14,11,,1,0,Martin Jambon,
 mj-20220905,img-20220905,2022-09-05,tout,everything,en,acrylic marker on canvas,canvas,,,8,8,,1,0,Martin Jambon,
 mj-20220903,img-20220903,2022-09-03,vendredi,Friday,en,acrylic marker on canvas,canvas,,,8,8,,1,0,Martin Jambon,
