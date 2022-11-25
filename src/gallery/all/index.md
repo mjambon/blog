@@ -41,6 +41,521 @@ Making whatever I want since 2022.
 <div><a href="/gallery"
    style="color:black">show artist&#x27;s favorites</a> | all artworks</div>
 
+<a name="img-20221125-27">
+<figure style="margin: 0px 0%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221125-27.jpg">
+    <img src="/gallery/img/medium/img-20221125-27.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Le printemps à Barbizon, par Millet (Spring At Barbizon), 2022
+  <a href="#img-20221125-27"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+<div style='font-size: 80%'>14.2 cm × 10.0 cm, paper</div>
+
+  </figcaption>
+</figure>
+
+<a name="img-20221125-26">
+<figure style="margin: 0px 14%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221125-26.jpg">
+    <img src="/gallery/img/medium/img-20221125-26.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Paysage avec deux paysannes, par Millet (Landscape With Two Peasant Women), 2022
+  <a href="#img-20221125-26"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+  </figcaption>
+</figure>
+
+<a name="img-20221125-25">
+<figure style="margin: 0px 2%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221125-25.jpg">
+    <img src="/gallery/img/medium/img-20221125-25.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  La gardeuse d´oies, par Millet (The Goose Girl), 2022
+  <a href="#img-20221125-25"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+  </figcaption>
+</figure>
+
+<a name="img-20221125-24">
+<figure style="margin: 0px 14%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221125-24.jpg">
+    <img src="/gallery/img/medium/img-20221125-24.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Le départ pour le travail, par Millet (Going To Work), 2022
+  <a href="#img-20221125-24"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+  </figcaption>
+</figure>
+
+<a name="img-20221125-23">
+<figure style="margin: 0px 14%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221125-23.jpg">
+    <img src="/gallery/img/medium/img-20221125-23.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  L´homme à la houe, par Millet (The Man With The Hoe), 2022
+  <a href="#img-20221125-23"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+  </figcaption>
+</figure>
+
+<a name="img-20221125-22">
+<figure style="margin: 0px 0%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221125-22.jpg">
+    <img src="/gallery/img/medium/img-20221125-22.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Berger gardant son troupeau, par Millet (Shepherd Tending His Flock), 2022
+  <a href="#img-20221125-22"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+  </figcaption>
+</figure>
+
+<a name="img-20221125-21">
+<figure style="margin: 0px 0%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221125-21.jpg">
+    <img src="/gallery/img/medium/img-20221125-21.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  La bergerie, par Millet (The Sheepfold, Moonlight), 2022
+  <a href="#img-20221125-21"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+  </figcaption>
+</figure>
+
+<a name="img-20221125-20">
+<figure style="margin: 0px 0%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221125-20.jpg">
+    <img src="/gallery/img/medium/img-20221125-20.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Le semeur, par Millet (The Sower), 2022
+  <a href="#img-20221125-20"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+  </figcaption>
+</figure>
+
+<a name="img-20221125-19">
+<figure style="margin: 0px 0%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221125-19.jpg">
+    <img src="/gallery/img/medium/img-20221125-19.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Meules de foin, automne, par Millet (Haystacks: Autumn), 2022
+  <a href="#img-20221125-19"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+  </figcaption>
+</figure>
+
+<a name="img-20221125-18">
+<figure style="margin: 0px 0%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221125-18.jpg">
+    <img src="/gallery/img/medium/img-20221125-18.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  La baigneuse, par Millet (The Bather), 2022
+  <a href="#img-20221125-18"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+  </figcaption>
+</figure>
+
+<a name="img-20221125-17">
+<figure style="margin: 0px 17%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221125-17.jpg">
+    <img src="/gallery/img/medium/img-20221125-17.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Paysage d´automne avec un troupeau de dindes, par Millet (Autumn Landscape With A Flock Of Turkeys), 2022
+  <a href="#img-20221125-17"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+  </figcaption>
+</figure>
+
+<a name="img-20221125-16">
+<figure style="margin: 0px 0%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221125-16.jpg">
+    <img src="/gallery/img/medium/img-20221125-16.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Les planteurs de pommes de terre, par Millet (The Potato Planters), 2022
+  <a href="#img-20221125-16"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+  </figcaption>
+</figure>
+
+<a name="img-20221125-15">
+<figure style="margin: 0px 14%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221125-15.jpg">
+    <img src="/gallery/img/medium/img-20221125-15.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  La jeune couturière, par Millet (The Young Seamstress), 2022
+  <a href="#img-20221125-15"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+  </figcaption>
+</figure>
+
+<a name="img-20221125-14">
+<figure style="margin: 0px 0%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221125-14.jpg">
+    <img src="/gallery/img/medium/img-20221125-14.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  La chasse aux oiseaux de nuit, par Millet (Hunting Birds At Night), 2022
+  <a href="#img-20221125-14"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+  </figcaption>
+</figure>
+
+<a name="img-20221125-13">
+<figure style="margin: 0px 14%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221125-13.jpg">
+    <img src="/gallery/img/medium/img-20221125-13.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  La leçon de tricot, par Millet (The Knitting Lesson), 2022
+  <a href="#img-20221125-13"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+  </figcaption>
+</figure>
+
+<a name="img-20221125-12">
+<figure style="margin: 0px 14%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221125-12.jpg">
+    <img src="/gallery/img/medium/img-20221125-12.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Baigneuse assise au bord de l’eau, par Millet (Naked Peasant Girl At The River), 2022
+  <a href="#img-20221125-12"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+  </figcaption>
+</figure>
+
+<a name="img-20221125-11">
+<figure style="margin: 0px 0%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221125-11.jpg">
+    <img src="/gallery/img/medium/img-20221125-11.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Les glaneuses, par Millet (The Gleaners), 2022
+  <a href="#img-20221125-11"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+  </figcaption>
+</figure>
+
+<a name="img-20221125-10">
+<figure style="margin: 0px 14%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221125-10.jpg">
+    <img src="/gallery/img/medium/img-20221125-10.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Printemps (Daphnis et Chloé), par Millet (Spring (Daphnis And Chloë)), 2022
+  <a href="#img-20221125-10"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+  </figcaption>
+</figure>
+
+<a name="img-20221125-9">
+<figure style="margin: 0px 0%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221125-9.jpg">
+    <img src="/gallery/img/medium/img-20221125-9.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Scène de jardin, par Millet (Garden Scene), 2022
+  <a href="#img-20221125-9"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+  </figcaption>
+</figure>
+
+<a name="img-20221125-8">
+<figure style="margin: 0px 0%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221125-8.jpg">
+    <img src="/gallery/img/medium/img-20221125-8.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Paysan répandant du fumier, par Millet (Peasant Spreading Manure), 2022
+  <a href="#img-20221125-8"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+  </figcaption>
+</figure>
+
+<a name="img-20221125-7">
+<figure style="margin: 0px 14%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221125-7.jpg">
+    <img src="/gallery/img/medium/img-20221125-7.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  La récolte de pommes de terre, par Millet (Harvesting Potatoes), 2022
+  <a href="#img-20221125-7"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+  </figcaption>
+</figure>
+
+<a name="img-20221125-6">
+<figure style="margin: 0px 14%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221125-6.jpg">
+    <img src="/gallery/img/medium/img-20221125-6.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Blanchisseuse, par Millet (Laundress), 2022
+  <a href="#img-20221125-6"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+  </figcaption>
+</figure>
+
+<a name="img-20221125-5">
+<figure style="margin: 0px 14%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221125-5.jpg">
+    <img src="/gallery/img/medium/img-20221125-5.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Femme avec un râteau, par Millet (Woman With A Rake), 2022
+  <a href="#img-20221125-5"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+  </figcaption>
+</figure>
+
+<a name="img-20221125-4">
+<figure style="margin: 0px 14%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221125-4.jpg">
+    <img src="/gallery/img/medium/img-20221125-4.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  L´angélus, par Millet (The Angelus), 2022
+  <a href="#img-20221125-4"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+  </figcaption>
+</figure>
+
+<a name="img-20221125-3">
+<figure style="margin: 0px 14%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221125-3.jpg">
+    <img src="/gallery/img/medium/img-20221125-3.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Bergère assise sur un rocher, par Millet (Shepherdess Seated On A Rock), 2022
+  <a href="#img-20221125-3"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+  </figcaption>
+</figure>
+
+<a name="img-20221125-2">
+<figure style="margin: 0px 14%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221125-2.jpg">
+    <img src="/gallery/img/medium/img-20221125-2.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Le semeur, par Millet (The Sower), 2022
+  <a href="#img-20221125-2"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+  </figcaption>
+</figure>
+
+<a name="img-20221125-1">
+<figure style="margin: 0px 0%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221125-1.jpg">
+    <img src="/gallery/img/medium/img-20221125-1.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Bergère avec son troupeau, par Millet (Shepherdess With Her Flock), 2022
+  <a href="#img-20221125-1"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+  </figcaption>
+</figure>
+
 <a name="img-20221030-2">
 <figure style="margin: 0px 1%; padding-top: 40px">
   <a href="/gallery/img/large/img-20221030-2.jpg">
