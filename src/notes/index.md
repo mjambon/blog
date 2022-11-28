@@ -32,7 +32,7 @@ first place.
 Here, we consider that the information contained in the world grows
 over time because the world is the product of a random data generator
 that underlies everything. This theory assumes some fundamental notion
-of time and an origin of time where the world start from nothing and
+of time and an origin of time where the world starts from nothing and
 gets more complex as random data or "matter" gets produced. This
 theory feels satisfying when we consider the existence of an initial
 state containing zero information. It is dubious for other reasons:
@@ -71,7 +71,7 @@ A complete world model would have only one possible instanciation of
 variables, making it as simple as the empty model containing no
 variable and no structure.
 
-## Idea 5: We can't compute why the world exist
+#### Idea 5: We can't compute why the world exist
 
 Maybe we need a hypercomputer and a hypermind to make sense of
 why anything exists. A hypercomputer is a hypothetical computer that can
