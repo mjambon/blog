@@ -1,4 +1,5 @@
 NOTE_PATHS = \
+  notes/why-does-anything-exist \
   notes/should-i-reply \
   notes/respect-is-earned \
   notes/lasting-interest \
