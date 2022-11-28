@@ -62,16 +62,16 @@ unknowns and constraints between these variables. The constraints form the
 structure of the model. The size of a maximally-compressed structure
 of the model gives us its information content.
 The complexity of a correct but partial model relates to the
-number of possible instanciations of variables in the model.
+number of possible instantiations of variables in the model.
 If two variables are constrained to always have the same value,
 they're considered redundant and collapsed into one. This leads to the
 elimination of all the redundant variables and of all the variables
 constrained to take a single value.
-A complete world model would have only one possible instanciation of
+A complete world model would have only one possible instantiation of
 variables, making it as simple as the empty model containing no
 variable and no structure.
 
-#### Idea 5: We can't compute why the world exist
+#### Idea 5: We can't compute why the world exists
 
 Maybe we need a hypercomputer and a hypermind to make sense of
 why anything exists. A hypercomputer is a hypothetical computer that can
