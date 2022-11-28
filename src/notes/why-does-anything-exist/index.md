@@ -37,7 +37,7 @@ up with a satisfying, rigorous definition of "everything". Everyone
 with perfect knowledge would have to agree with that definition since
 the theory rests on there being a single, natural everything.
 
-#### Idea 4: The amount of information of the world is zero
+#### Idea 4: The world as a whole contains no information
 
 We could have a new "theory of information" where information held by
 a model collapses as the knowledge about this system approaches
