@@ -93,7 +93,7 @@ variable and no structure.
 Maybe we need a hypercomputer and a hypermind to make sense of
 why anything exists. A hypercomputer is a hypothetical computer that can
 carry out an infinite, countable number of operations within a
-finite number of steps. A hypermind would be a mind that can emulate
+finite number of steps. A hypermind would be a mind that could emulate
 a hypercomputer if it feels like it.
 
 *** should-i-reply
