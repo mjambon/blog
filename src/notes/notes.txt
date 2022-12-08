@@ -29,7 +29,7 @@ Format:
 -->
 
 *** theres-no-evil-only-extreme-judgments
-title: There's no evil, only extreme judgments
+title: There's no evil, only extreme judgments.
 date: 2022-11-27
 
 *** why-does-anything-exist

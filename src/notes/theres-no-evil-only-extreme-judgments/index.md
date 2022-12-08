@@ -1,4 +1,4 @@
-% There's no evil, only extreme judgments
+% There's no evil, only extreme judgments.
 
 
 
