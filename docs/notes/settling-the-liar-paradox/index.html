@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Settling the liar’s paradox</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="/blog.css" />
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Language" content="en">
+</head>
+<body>
+<style>
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li.navitem {
+  float: right;
+}
+
+li.navitem a:hover {
+  text-decoration: underline;
+}
+
+a.navitem {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: black;
+}
+</style>
+<ul class="navbar">
+  <li class="navitem"><a href="/gallery" class="navitem">Gallery</a></li>
+  <li class="navitem"><a href="/notes" class="navitem">Notes</a></li>
+  <li class="navitem"><a href="/dictionary" class="navitem">Dictionary</a></li>
+  <li class="navitem"><a href="/" class="navitem">Home</a></li>
+</ul>
+<header id="title-block-header">
+<h1 class="title">Settling the liar’s paradox</h1>
+</header>
+<p>The liar’s paradox is the problem of interpreting a sentence uttered by someone who never tells the truth, in which they claim they’re not telling the truth.</p>
+<p>The paradox comes from the confusion between truth and belief. Consider the following:</p>
+<ul>
+<li>Like anyone else, a liar has beliefs and they may or may not be true.</li>
+<li>A liar is someone who produces sentences which are not their beliefs.</li>
+</ul>
+<p>Therefore, the truthfulness of a statement is independent from whether the person making them is lying. The common phrase “tell the truth” is a misnomer and should be instead “state your belief”.</p>
+<p>When someone makes a statement, it is assumed that they express one of their beliefs. In the case of a liar, this assumption is incorrect. We could check this if we had a perfect lie detector that reads their mind.</p>
+<p>A given statement is characterized by a pair (believed?, true?). The first value indicates whether the author believes the statement:</p>
+<ul>
+<li>believed (B)</li>
+<li>disbelieved (D)</li>
+<li>agnostic (A): neither believed nor disbelieved</li>
+</ul>
+<p>The second value indicates whether the statement is true in a <strong>model of reference</strong> consisting of a deductive system accompanied with the set of statements that were either proven or disproven:</p>
+<ul>
+<li>true (T): we have a proof for the statement</li>
+<li>false (F): we have a proof of its negation</li>
+<li>other (O): we don’t have a proof, for whatever reason</li>
+</ul>
+<p>This gives us nine categories of statements. Highlighted statements are the most commonly encountered:</p>
+<ul>
+<li><strong>[B, T]</strong> the honest expression of a correct belief;</li>
+<li><strong>[B, F]</strong> mistake: the honest expression of an incorrect belief;</li>
+<li><strong>[B, O]</strong> genuine discovery, false discovery, or expression of faith: the honest expression of a belief that was neither proven nor disproven in the model of reference;</li>
+<li><strong>[D, F]</strong> ordinary lie: a statement that their author believes to be false and is indeed false;</li>
+<li>[D, T] correct lie: statement that their author believes to be false but is in fact true.</li>
+<li>[D, O] malicious misguidance: a statement that their authors believes to be false but was neither proven nor disproven in the model of reference;</li>
+<li>[A, F], [A, T], [A, O]: a type of lie for which the author doesn’t know the truth but pretends they do and make something up. It could be made in an effort to appear confident in front of a particular audience.</li>
+</ul>
+<p>Since we just settled the liar’s paradox, we might as well settle the meaning of truth.</p>
+<p><strong>truth</strong>: whether a statement was proven within a model of reference taken to be universal. Science is the activity conducted by a society, such as humanity, that builds such a world model. This model gets revised and extended over time by reconciliating it with other models derived from experimental observations and computations. In practice, there’s not a unique place where our universal model is written unambiguously. Even if we decided the exact collection of books and articles that compose it, it would contain inconsistencies due to various types of mistakes, approximations, and guesses. However, it would also contain a lot of redundancy, allowing certain statements to be considered more reliable than others. Those are what we call the truth in ordinary speech.</p>
+<p>There is no absolute truth, only models.</p>
+<p><em>Martin Jambon, December 10, 2022</em></p>
+<p class="menu footer">
+  <a href="mailto:contact@mjambon.com">contact@mjambon.com</a> <br/>
+  <a href="/">Home</a>
+</p>
+</body>
+</html>
