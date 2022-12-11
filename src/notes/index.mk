@@ -1,4 +1,5 @@
 NOTE_PATHS = \
+  notes/cohesion-by-threat-of-mutual-destruction \
   notes/theres-no-evil-only-extreme-judgments \
   notes/why-does-anything-exist \
   notes/should-i-reply \
