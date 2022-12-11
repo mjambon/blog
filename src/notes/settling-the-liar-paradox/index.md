@@ -62,7 +62,8 @@ are the most commonly encountered:
 The liar's paradox is now settled. There are two steps to the story:
 
 1. The liar forms a belief which is "I'm not lying (for the thing
-   I'm about to say)".
+   I'm about to say)". Most likely, they're genuinely trying to quit
+   lying.
 2. The liar expresses the negation of that belief, "I'm lying",
    because they're still a liar and old habits die hard.
    This can be verified by the lie detector.
