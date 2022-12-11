@@ -20,7 +20,9 @@
 
 The liar's paradox is the problem of interpreting a sentence uttered
 by someone who never tells the truth, in which they claim they're
-not telling the truth.
+not telling the truth. The liar says:
+
+> I'm lying.
 
 The paradox comes from the confusion between truth and
 belief. Consider the following:
