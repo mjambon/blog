@@ -21,14 +21,11 @@ IMG_PATH = '/gallery/img'
 
 # The built-in '.capitalize()' method will downcase the rest of the string,
 # which we don't want.
-def capitalize(s: str) -> str:
+def capitalize_first_char(s: str) -> str:
     if len(s) > 0:
         return s[0].upper() + s[1:]
     else:
         return s
-
-def capitalize_fr(s: str) -> str:
-    return capitalize(s)
 
 # Zero-width matching just before a letter that should be capitalized
 # according to English usage.
@@ -36,8 +33,19 @@ def capitalize_fr(s: str) -> str:
 WORD_START_RE = r"(?:^|(?<=\s))(?=[a-z])"
 
 # Because '.title()' does a shit job.
+#
+# This capitalizes too much. Capitalization rules for English require
+# distinguishing nouns from other words, which requires a dictionary.
+# Let's not use this function.
+def capitalize_all_words(s: str) -> str:
+    return "".join([ capitalize_first_char(word)
+                     for word in re.split(WORD_START_RE, s) ])
+
+def capitalize_fr(s: str) -> str:
+    return capitalize_first_char(s)
+
 def capitalize_en(s: str) -> str:
-    return "".join([ capitalize(word) for word in re.split(WORD_START_RE, s) ])
+    return capitalize_first_char(s)
 
 # Uses 'identify' from ImageMagick
 def image_dimensions(image_filename: str) -> Tuple[int, int]:

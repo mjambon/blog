@@ -51,7 +51,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Le centre du monde (The Center Of The World), 2022
+  Le centre du monde (The Center of the World), 2022
   <a href="#img-20221127"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -93,7 +93,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Le départ pour le travail, par Millet (Going To Work), 2022
+  Le départ pour le travail, par Millet (Going to Work), 2022
   <a href="#img-20221125-24"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -114,7 +114,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  L´homme à la houe, par Millet (The Man With The Hoe), 2022
+  L´homme à la houe, par Millet (The Man With the Hoe), 2022
   <a href="#img-20221125-23"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -156,7 +156,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Baigneuse assise au bord de l’eau, par Millet (Naked Peasant Girl At The River), 2022
+  Baigneuse assise au bord de l’eau, par Millet (Naked Peasant Girl at the River), 2022
   <a href="#img-20221125-12"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -198,7 +198,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Bergère assise sur un rocher, par Millet (Shepherdess Seated On A Rock), 2022
+  Bergère assise sur un rocher, par Millet (Shepherdess Seated on a Rock), 2022
   <a href="#img-20221125-3"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -282,7 +282,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Heaven And Hell But Mostly Hell (Le paradis et l’enfer mais surtout l’enfer), 2022
+  Heaven and Hell but Mostly Hell (Le paradis et l’enfer mais surtout l’enfer), 2022
   <a href="#img-20220813"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -345,7 +345,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  What Are We Going To Do With You? (Mais qu’allons nous faire de toi ?), 2022
+  What Are We Going to Do with You? (Mais qu’allons nous faire de toi ?), 2022
   <a href="#img-20220626"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -450,7 +450,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Your Choice Of Meat (Votre choix de viande), 2022
+  Your Choice of Meat (Votre choix de viande), 2022
   <a href="#img-20220419"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -534,7 +534,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Play With Your Food (Joue avec ta nourriture), 2022
+  Play with your Food (Joue avec ta nourriture), 2022
   <a href="#img-20220401-4"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -597,7 +597,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Embedded In Spacetime (Incrusté dans l&#x27;espace-temps), 2022
+  Embedded in Spacetime (Incrusté dans l&#x27;espace-temps), 2022
   <a href="#img-20220320-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>

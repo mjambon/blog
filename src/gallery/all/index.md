@@ -72,7 +72,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Life In Plastic, 2022
+  Life in Plastic, 2022
   <a href="#img-20221230-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -135,7 +135,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Le centre du monde (The Center Of The World), 2022
+  Le centre du monde (The Center of the World), 2022
   <a href="#img-20221127"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -156,7 +156,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Le printemps à Barbizon, par Millet (Spring At Barbizon), 2022
+  Le printemps à Barbizon, par Millet (Spring at Barbizon), 2022
   <a href="#img-20221125-27"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -177,7 +177,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Paysage avec deux paysannes, par Millet (Landscape With Two Peasant Women), 2022
+  Paysage avec deux paysannes, par Millet (Landscape with Two Peasant Women), 2022
   <a href="#img-20221125-26"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -219,7 +219,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Le départ pour le travail, par Millet (Going To Work), 2022
+  Le départ pour le travail, par Millet (Going to Work), 2022
   <a href="#img-20221125-24"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -240,7 +240,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  L´homme à la houe, par Millet (The Man With The Hoe), 2022
+  L´homme à la houe, par Millet (The Man With the Hoe), 2022
   <a href="#img-20221125-23"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -261,7 +261,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Berger gardant son troupeau, par Millet (Shepherd Tending His Flock), 2022
+  Berger gardant son troupeau, par Millet (Shepherd Tending his Flock), 2022
   <a href="#img-20221125-22"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -366,7 +366,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Paysage d´automne avec un troupeau de dindes, par Millet (Autumn Landscape With A Flock Of Turkeys), 2022
+  Paysage d´automne avec un troupeau de dindes, par Millet (Autumn Landscape with a Flock of Turkeys), 2022
   <a href="#img-20221125-17"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -429,7 +429,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  La chasse aux oiseaux de nuit, par Millet (Hunting Birds At Night), 2022
+  La chasse aux oiseaux de nuit, par Millet (Hunting Birds at Night), 2022
   <a href="#img-20221125-14"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -471,7 +471,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Baigneuse assise au bord de l’eau, par Millet (Naked Peasant Girl At The River), 2022
+  Baigneuse assise au bord de l’eau, par Millet (Naked Peasant Girl at the River), 2022
   <a href="#img-20221125-12"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -513,7 +513,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Printemps (Daphnis et Chloé), par Millet (Spring (Daphnis And Chloë)), 2022
+  Printemps (Daphnis et Chloé), par Millet (Spring (Daphnis and Chloë)), 2022
   <a href="#img-20221125-10"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -618,7 +618,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Femme avec un râteau, par Millet (Woman With A Rake), 2022
+  Femme avec un râteau, par Millet (Woman With a Rake), 2022
   <a href="#img-20221125-5"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -660,7 +660,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Bergère assise sur un rocher, par Millet (Shepherdess Seated On A Rock), 2022
+  Bergère assise sur un rocher, par Millet (Shepherdess Seated on a Rock), 2022
   <a href="#img-20221125-3"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -702,7 +702,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Bergère avec son troupeau, par Millet (Shepherdess With Her Flock), 2022
+  Bergère avec son troupeau, par Millet (Shepherdess with her Flock), 2022
   <a href="#img-20221125-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -723,7 +723,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  The Chicken And The Egg (L’oeuf et la poule), 2022
+  The Chicken and the Egg (L’oeuf et la poule), 2022
   <a href="#img-20221030-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -807,7 +807,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Rock And Roll, 2022
+  Rock and Roll, 2022
   <a href="#img-20221016-3"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -891,7 +891,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  L&#x27;inéluctable émergence de Kim Kardashian (The Inevitable Emergence Of Kim Kardashian), 2022
+  L&#x27;inéluctable émergence de Kim Kardashian (The Inevitable Emergence of Kim Kardashian), 2022
   <a href="#img-20221002-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -912,7 +912,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Nos ancêtres les Barbapapa (Our Ancestors, The Barbapapas), 2022
+  Nos ancêtres les Barbapapa (Our Ancestors, the Barbapapas), 2022
   <a href="#img-20220929"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -1017,7 +1017,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Look On Down From The Bridge (after Mazzy Star), 2022
+  Look on Down from the Bridge (after Mazzy Star), 2022
   <a href="#img-20220907-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -1038,7 +1038,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Life As We Know It (La vie telle qu’on la connaît), 2022
+  Life as We Know It (La vie telle qu’on la connaît), 2022
   <a href="#img-20220907-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -1143,7 +1143,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Pink And Gold (Rose et or), 2022
+  Pink and Gold (Rose et or), 2022
   <a href="#img-20220821"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -1204,7 +1204,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Heaven And Hell But Mostly Hell (Le paradis et l’enfer mais surtout l’enfer), 2022
+  Heaven and Hell but Mostly Hell (Le paradis et l’enfer mais surtout l’enfer), 2022
   <a href="#img-20220813"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -1372,7 +1372,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  What Are We Going To Do With You? (Mais qu’allons nous faire de toi ?), 2022
+  What Are We Going to Do with You? (Mais qu’allons nous faire de toi ?), 2022
   <a href="#img-20220626"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -1725,7 +1725,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  L&#x27;idée de la neige (The Idea Of Snow), 2022
+  L&#x27;idée de la neige (The Idea of Snow), 2022
   <a href="#img-20220426-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -1767,7 +1767,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Your Choice Of Meat (Votre choix de viande), 2022
+  Your Choice of Meat (Votre choix de viande), 2022
   <a href="#img-20220419"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -1956,7 +1956,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  What’s Left Of America (Ce qui reste de l’Amérique), 2022
+  What’s Left of America (Ce qui reste de l’Amérique), 2022
   <a href="#img-20220401-6"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -1996,7 +1996,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Play With Your Food (Joue avec ta nourriture), 2022
+  Play with your Food (Joue avec ta nourriture), 2022
   <a href="#img-20220401-4"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -2059,7 +2059,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Jenny Was A Friend Of Conifers, 2022
+  Jenny Was a Friend of Conifers, 2022
   <a href="#img-20220401-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -2164,7 +2164,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Embedded In Spacetime (Incrusté dans l&#x27;espace-temps), 2022
+  Embedded in Spacetime (Incrusté dans l&#x27;espace-temps), 2022
   <a href="#img-20220320-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -2248,7 +2248,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Portrait Of A Dreamer (Portrait d´un rêveur), 2022
+  Portrait of a Dreamer (Portrait d´un rêveur), 2022
   <a href="#img-20220312-4"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -2290,7 +2290,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Portrait Of A Girl (Portrait d´une fille), 2022
+  Portrait of a Girl (Portrait d´une fille), 2022
   <a href="#img-20220312-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -2498,7 +2498,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Meats Of Iceland (Les viandes d´Icelande), 2022
+  Meats of Iceland (Les viandes d´Icelande), 2022
   <a href="#img-20220205"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
@@ -2561,7 +2561,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  10:15 On A Saturday Night, 2022
+  10:15 on a Saturday Night, 2022
   <a href="#img-20220122"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
