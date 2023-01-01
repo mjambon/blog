@@ -41,6 +41,27 @@ Making whatever I want since 2022.
 <div><a href="/gallery"
    style="color:black">show artist&#x27;s favorites</a> | all artworks</div>
 
+<a name="img-20221231">
+<figure style="margin: 0px 2%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20221231.jpg">
+    <img src="/gallery/img/medium/img-20221231.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Interface homme-machine (Human-Machine Interface), 2022
+  <a href="#img-20221231"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+<div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
+
+  </figcaption>
+</figure>
+
 <a name="img-20221230-2">
 <figure style="margin: 0px 2%; padding-top: 40px">
   <a href="/gallery/img/large/img-20221230-2.jpg">
@@ -57,7 +78,7 @@ Making whatever I want since 2022.
      class="hash_link">#</a></div>
 
     
-<div style='font-size: 80%'>35.6 cm × 27.9 cm</div>
+<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
 
   </figcaption>
 </figure>
@@ -78,7 +99,7 @@ Making whatever I want since 2022.
      class="hash_link">#</a></div>
 
     
-<div style='font-size: 80%'>34.0 cm × 26.5 cm</div>
+<div style='font-size: 80%'>34.0 cm × 26.5 cm, acrylic sheet</div>
 
   </figcaption>
 </figure>
