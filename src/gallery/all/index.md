@@ -93,7 +93,7 @@ Making whatever I want since 2022.
   <figcaption>
     
 <div class="main_caption">
-  Interface homme-machine (Human-Machine Interface), 2022
+  Interface homme-machine (Man-Machine Interface), 2022
   <a href="#img-20221231"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
