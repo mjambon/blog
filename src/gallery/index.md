@@ -41,6 +41,27 @@ Making whatever I want since 2022.
 <div>artist&#x27;s favorites | <a href="/gallery/all"
    style="color:black">show all artworks</a></div>
 
+<a name="img-20230111">
+<figure style="margin: 0px 2%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20230111.jpg">
+    <img src="/gallery/img/medium/img-20230111.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  The Promise (La promesse), 2023
+  <a href="#img-20230111"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+<div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
+
+  </figcaption>
+</figure>
+
 <a name="img-20221230-2">
 <figure style="margin: 0px 2%; padding-top: 40px">
   <a href="/gallery/img/large/img-20221230-2.jpg">
