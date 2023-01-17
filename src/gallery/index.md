@@ -36,7 +36,8 @@ figcaption {
         style="height:1.5em;padding:0em 0.5em">](https://www.instagram.com/martinjambon/)
 </div>
 <p>
-Making whatever I want since 2022.
+I'm a French painter active since 2022. Born in Orléans, France in 1977,
+I'm based in the San Francisco Bay Area.
 </p>
 <div>artist&#x27;s favorites | <a href="/gallery/all"
    style="color:black">show all artworks</a></div>
