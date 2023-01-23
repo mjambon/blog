@@ -39,8 +39,34 @@ figcaption {
 I'm a French painter active since 2022. Born in Orléans, France in 1977,
 I'm based in the San Francisco Bay Area.
 </p>
+<p>
+Stay in touch via [Instagram](https://www.instagram.com/martinjambon/)
+or email <a href="mailto:info@mjambon.com">info@mjambon.com</a>
+for any inquiry.
+</p>
 <div><a href="/gallery"
    style="color:black">show artist&#x27;s favorites</a> | all artworks</div>
+
+<a name="img-20230122">
+<figure style="margin: 0px 2%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20230122.jpg">
+    <img src="/gallery/img/medium/img-20230122.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Plan de la ville (City Map), 2023
+  <a href="#img-20230122"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+    
+<div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
+
+  </figcaption>
+</figure>
 
 <a name="img-20230116">
 <figure style="margin: 0px 2%; padding-top: 40px">

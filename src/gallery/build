@@ -289,6 +289,11 @@ figcaption {{
 I'm a French painter active since 2022. Born in Orléans, France in 1977,
 I'm based in the San Francisco Bay Area.
 </p>
+<p>
+Stay in touch via [Instagram](https://www.instagram.com/martinjambon/)
+or email <a href="mailto:info@mjambon.com">info@mjambon.com</a>
+for any inquiry.
+</p>
 <div>{links_html}</div>
 """
     )
