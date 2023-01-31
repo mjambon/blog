@@ -9,7 +9,7 @@
        style="height: 100px"/>
 </a>
 
-I'm a software developer, creator, and researcher. Originally from
+I'm a programmer, creator, and researcher. Originally from
 France, I live in the San Francisco Bay Area.
 
 <code>martin@mjambon.com</code>
