@@ -15,6 +15,7 @@ figcaption {
 }
 
 .main_caption {
+  margin-top: 0.5em;
 }
 
 .hash_link {
@@ -47,6 +48,28 @@ for any inquiry.
 <div><a href="/gallery"
    style="color:black">show artist&#x27;s favorites</a> | all artworks</div>
 
+<a name="img-20230129">
+<figure style="margin: 0px 2%; padding-top: 40px">
+  <a href="/gallery/img/large/img-20230129.jpg">
+    <img src="/gallery/img/medium/img-20230129.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  L’impossible salut de l’âme mécanique (The Impossible Salvation of the Mechanical Soul)
+  <a href="#img-20230129"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+<div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
+
+<div class="main_caption">Martin Jambon, 2023</div>
+
+  </figcaption>
+</figure>
+
 <a name="img-20230122">
 <figure style="margin: 0px 2%; padding-top: 40px">
   <a href="/gallery/img/large/img-20230122.jpg">
@@ -57,13 +80,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Plan de la ville (City Map), 2023
+  Plan de la ville (City Map)
   <a href="#img-20230122"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
+
+<div class="main_caption">Martin Jambon, 2023</div>
 
   </figcaption>
 </figure>
@@ -78,13 +102,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Mode d’emploi (User Manual), 2023
+  Mode d’emploi (User Manual)
   <a href="#img-20230116"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
+
+<div class="main_caption">Martin Jambon, 2023</div>
 
   </figcaption>
 </figure>
@@ -99,13 +124,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  The Promise (La promesse), 2023
+  The Promise (La promesse)
   <a href="#img-20230111"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
+
+<div class="main_caption">Martin Jambon, 2023</div>
 
   </figcaption>
 </figure>
@@ -120,13 +146,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Humanity, part III (L’humanité, 3ème partie), 2023
+  Humanity, part III (L’humanité, 3ème partie)
   <a href="#img-20230108-4"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
+
+<div class="main_caption">Martin Jambon, 2023</div>
 
   </figcaption>
 </figure>
@@ -141,13 +168,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Humanity, part II (L’humanité, 2ème partie), 2023
+  Humanity, part II (L’humanité, 2ème partie)
   <a href="#img-20230108-3"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
+
+<div class="main_caption">Martin Jambon, 2023</div>
 
   </figcaption>
 </figure>
@@ -162,13 +190,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Humanity, part I (L’humanité, 1ère partie), 2023
+  Humanity, part I (L’humanité, 1ère partie)
   <a href="#img-20230108-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
+
+<div class="main_caption">Martin Jambon, 2023</div>
 
   </figcaption>
 </figure>
@@ -183,13 +212,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Métamorphose (Metamorphosis), 2023
+  Métamorphose (Metamorphosis)
   <a href="#img-20230108-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
+
+<div class="main_caption">Martin Jambon, 2023</div>
 
   </figcaption>
 </figure>
@@ -204,13 +234,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  L’histoire (History), 2023
+  L’histoire (History)
   <a href="#img-20230102"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
+
+<div class="main_caption">Martin Jambon, 2023</div>
 
   </figcaption>
 </figure>
@@ -225,13 +256,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Interface homme-machine (Man-Machine Interface), 2022
+  Interface homme-machine (Man-Machine Interface)
   <a href="#img-20221231"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -246,13 +278,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Un repas équilibré (A Balanced Meal), 2022
+  Un repas équilibré (A Balanced Meal)
   <a href="#img-20221230-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -267,13 +300,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Life in Plastic, 2022
+  Life in Plastic
   <a href="#img-20221230-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>34.0 cm × 26.5 cm, acrylic sheet</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -288,13 +322,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Opportunités (Opportunities), 2022
+  Opportunités (Opportunities)
   <a href="#img-20221221"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -309,13 +344,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  La ligne (The Line), 2022
+  La ligne (The Line)
   <a href="#img-20221204"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -330,13 +366,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Le centre du monde (The Center of the World), 2022
+  Le centre du monde (The Center of the World)
   <a href="#img-20221127"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -351,13 +388,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Le printemps à Barbizon, par Millet (Spring at Barbizon), 2022
+  Le printemps à Barbizon, par Millet (Spring at Barbizon)
   <a href="#img-20221125-27"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>14.2 cm × 10.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -372,13 +410,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Paysage avec deux paysannes, par Millet (Landscape with Two Peasant Women), 2022
+  Paysage avec deux paysannes, par Millet (Landscape with Two Peasant Women)
   <a href="#img-20221125-26"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>10.0 cm × 14.2 cm</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -393,13 +432,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  La gardeuse d´oies, par Millet (The Goose Girl), 2022
+  La gardeuse d´oies, par Millet (The Goose Girl)
   <a href="#img-20221125-25"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>14.2 cm × 10.0 cm</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -414,13 +454,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Le départ pour le travail, par Millet (Going to Work), 2022
+  Le départ pour le travail, par Millet (Going to Work)
   <a href="#img-20221125-24"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>10.0 cm × 14.2 cm</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -435,13 +476,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  L´homme à la houe, par Millet (The Man With the Hoe), 2022
+  L´homme à la houe, par Millet (The Man With the Hoe)
   <a href="#img-20221125-23"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>10.0 cm × 14.2 cm</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -456,13 +498,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Berger gardant son troupeau, par Millet (Shepherd Tending his Flock), 2022
+  Berger gardant son troupeau, par Millet (Shepherd Tending his Flock)
   <a href="#img-20221125-22"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>14.2 cm × 10.0 cm</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -477,13 +520,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  La bergerie, par Millet (The Sheepfold, Moonlight), 2022
+  La bergerie, par Millet (The Sheepfold, Moonlight)
   <a href="#img-20221125-21"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>14.2 cm × 10.0 cm</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -498,13 +542,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Le semeur, par Millet (The Sower), 2022
+  Le semeur, par Millet (The Sower)
   <a href="#img-20221125-20"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>14.2 cm × 10.0 cm</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -519,13 +564,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Meules de foin, automne, par Millet (Haystacks: Autumn), 2022
+  Meules de foin, automne, par Millet (Haystacks: Autumn)
   <a href="#img-20221125-19"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>14.2 cm × 10.0 cm</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -540,13 +586,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  La baigneuse, par Millet (The Bather), 2022
+  La baigneuse, par Millet (The Bather)
   <a href="#img-20221125-18"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>14.2 cm × 10.0 cm</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -561,13 +608,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Paysage d´automne avec un troupeau de dindes, par Millet (Autumn Landscape with a Flock of Turkeys), 2022
+  Paysage d´automne avec un troupeau de dindes, par Millet (Autumn Landscape with a Flock of Turkeys)
   <a href="#img-20221125-17"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>10.0 cm × 14.2 cm</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -582,13 +630,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Les planteurs de pommes de terre, par Millet (The Potato Planters), 2022
+  Les planteurs de pommes de terre, par Millet (The Potato Planters)
   <a href="#img-20221125-16"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>14.2 cm × 10.0 cm</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -603,13 +652,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  La jeune couturière, par Millet (The Young Seamstress), 2022
+  La jeune couturière, par Millet (The Young Seamstress)
   <a href="#img-20221125-15"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>10.0 cm × 14.2 cm</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -624,13 +674,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  La chasse aux oiseaux de nuit, par Millet (Hunting Birds at Night), 2022
+  La chasse aux oiseaux de nuit, par Millet (Hunting Birds at Night)
   <a href="#img-20221125-14"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>14.2 cm × 10.0 cm</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -645,13 +696,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  La leçon de tricot, par Millet (The Knitting Lesson), 2022
+  La leçon de tricot, par Millet (The Knitting Lesson)
   <a href="#img-20221125-13"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>10.0 cm × 14.2 cm</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -666,13 +718,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Baigneuse assise au bord de l’eau, par Millet (Naked Peasant Girl at the River), 2022
+  Baigneuse assise au bord de l’eau, par Millet (Naked Peasant Girl at the River)
   <a href="#img-20221125-12"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>10.0 cm × 14.2 cm</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -687,13 +740,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Les glaneuses, par Millet (The Gleaners), 2022
+  Les glaneuses, par Millet (The Gleaners)
   <a href="#img-20221125-11"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>14.2 cm × 10.0 cm</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -708,13 +762,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Printemps (Daphnis et Chloé), par Millet (Spring (Daphnis and Chloë)), 2022
+  Printemps (Daphnis et Chloé), par Millet (Spring (Daphnis and Chloë))
   <a href="#img-20221125-10"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>10.0 cm × 14.2 cm</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -729,13 +784,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Scène de jardin, par Millet (Garden Scene), 2022
+  Scène de jardin, par Millet (Garden Scene)
   <a href="#img-20221125-9"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>14.2 cm × 10.0 cm</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -750,13 +806,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Paysan répandant du fumier, par Millet (Peasant Spreading Manure), 2022
+  Paysan répandant du fumier, par Millet (Peasant Spreading Manure)
   <a href="#img-20221125-8"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>14.2 cm × 10.0 cm</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -771,13 +828,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  La récolte de pommes de terre, par Millet (Harvesting Potatoes), 2022
+  La récolte de pommes de terre, par Millet (Harvesting Potatoes)
   <a href="#img-20221125-7"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>10.0 cm × 14.2 cm</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -792,13 +850,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Blanchisseuse, par Millet (Laundress), 2022
+  Blanchisseuse, par Millet (Laundress)
   <a href="#img-20221125-6"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>10.0 cm × 14.2 cm</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -813,13 +872,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Femme avec un râteau, par Millet (Woman With a Rake), 2022
+  Femme avec un râteau, par Millet (Woman With a Rake)
   <a href="#img-20221125-5"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>10.0 cm × 14.2 cm</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -834,13 +894,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  L´angélus, par Millet (The Angelus), 2022
+  L´angélus, par Millet (The Angelus)
   <a href="#img-20221125-4"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>14.2 cm × 10.0 cm</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -855,13 +916,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Bergère assise sur un rocher, par Millet (Shepherdess Seated on a Rock), 2022
+  Bergère assise sur un rocher, par Millet (Shepherdess Seated on a Rock)
   <a href="#img-20221125-3"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>10.0 cm × 14.2 cm</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -876,13 +938,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Le semeur, par Millet (The Sower), 2022
+  Le semeur, par Millet (The Sower)
   <a href="#img-20221125-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>10.0 cm × 14.2 cm</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -897,13 +960,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Bergère avec son troupeau, par Millet (Shepherdess with her Flock), 2022
+  Bergère avec son troupeau, par Millet (Shepherdess with her Flock)
   <a href="#img-20221125-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>14.2 cm × 10.0 cm</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -918,13 +982,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  The Chicken and the Egg (L’oeuf et la poule), 2022
+  The Chicken and the Egg (L’oeuf et la poule)
   <a href="#img-20221030-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -939,13 +1004,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Formation atmosphérique (Atmospheric Formation), 2022
+  Formation atmosphérique (Atmospheric Formation)
   <a href="#img-20221030-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -960,13 +1026,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Organique (Organic), 2022
+  Organique (Organic)
   <a href="#img-20221023"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -981,13 +1048,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  The City (La ville), 2022
+  The City (La ville)
   <a href="#img-20221017"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>20.3 cm × 20.3 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1002,13 +1070,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Rock and Roll, 2022
+  Rock and Roll
   <a href="#img-20221016-3"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1023,13 +1092,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Green (Vert), 2022
+  Green (Vert)
   <a href="#img-20221016-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>20.3 cm × 20.3 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1044,13 +1114,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Untitled, 2022
+  Untitled
   <a href="#img-20221016-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>20.3 cm × 20.3 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1065,13 +1136,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Floating Blobs, 2022
+  Floating Blobs
   <a href="#img-20221002-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1086,13 +1158,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  L&#x27;inéluctable émergence de Kim Kardashian (The Inevitable Emergence of Kim Kardashian), 2022
+  L&#x27;inéluctable émergence de Kim Kardashian (The Inevitable Emergence of Kim Kardashian)
   <a href="#img-20221002-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1107,13 +1180,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Nos ancêtres les Barbapapa (Our Ancestors, the Barbapapas), 2022
+  Nos ancêtres les Barbapapa (Our Ancestors, the Barbapapas)
   <a href="#img-20220929"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1128,13 +1202,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Apple #2 (Pomme no. 2), 2022
+  Apple #2 (Pomme no. 2)
   <a href="#img-20220927-4"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1149,13 +1224,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Encerclement (Surrounding), 2022
+  Encerclement (Surrounding)
   <a href="#img-20220924"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1170,13 +1246,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Écosystème flambant neuf (Brand New Ecosystem), 2022
+  Écosystème flambant neuf (Brand New Ecosystem)
   <a href="#img-20220922"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1191,13 +1268,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Apple (Pomme), 2022
+  Apple (Pomme)
   <a href="#img-20220917"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>20.3 cm × 20.3 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1212,13 +1290,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Look on Down from the Bridge (after Mazzy Star), 2022
+  Look on Down from the Bridge (after Mazzy Star)
   <a href="#img-20220907-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1233,13 +1312,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Life as We Know It (La vie telle qu’on la connaît), 2022
+  Life as We Know It (La vie telle qu’on la connaît)
   <a href="#img-20220907-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1254,13 +1334,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Everything (Tout), 2022
+  Everything (Tout)
   <a href="#img-20220905"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>20.3 cm × 20.3 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1275,13 +1356,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Friday (Vendredi), 2022
+  Friday (Vendredi)
   <a href="#img-20220903"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>20.3 cm × 20.3 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1296,13 +1378,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Ego, 2022
+  Ego
   <a href="#img-20220831"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>101.6 cm × 76.2 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1317,13 +1400,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Violence, 2022
+  Violence
   <a href="#img-20220827"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>101.6 cm × 76.2 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1338,12 +1422,13 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Pink and Gold (Rose et or), 2022
+  Pink and Gold (Rose et or)
   <a href="#img-20220821"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
+<div class="main_caption">Martin Jambon, 2022</div>
+
   </figcaption>
 </figure>
 
@@ -1357,13 +1442,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  San Francisco, 2022
+  San Francisco
   <a href="#img-20220820-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1378,13 +1464,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Sunshine (Ensoleillement), 2022
+  Sunshine (Ensoleillement)
   <a href="#img-20220820-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>45.7 cm × 35.6 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1399,13 +1486,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Heaven and Hell but Mostly Hell (Le paradis et l’enfer mais surtout l’enfer), 2022
+  Heaven and Hell but Mostly Hell (Le paradis et l’enfer mais surtout l’enfer)
   <a href="#img-20220813"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1420,13 +1508,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Space Debris (Débris spatiaux), 2022
+  Space Debris (Débris spatiaux)
   <a href="#img-20220803-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1441,13 +1530,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Settled (Bien établi), 2022
+  Settled (Bien établi)
   <a href="#img-20220803-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1462,13 +1552,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Space Nugget (Pépite spatiale), 2022
+  Space Nugget (Pépite spatiale)
   <a href="#img-20220801-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1483,13 +1574,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Reorganization (Réorganisation), 2022
+  Reorganization (Réorganisation)
   <a href="#img-20220801-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1504,13 +1596,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Wrinkles (Plis), 2022
+  Wrinkles (Plis)
   <a href="#img-20220731"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1525,13 +1618,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Untitled, 2022
+  Untitled
   <a href="#img-20220710"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1546,13 +1640,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Magic Glue (Colle magique), 2022
+  Magic Glue (Colle magique)
   <a href="#img-20220702"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1567,14 +1662,16 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  What Are We Going to Do with You? (Mais qu’allons nous faire de toi ?), 2022
+  What Are We Going to Do with You? (Mais qu’allons nous faire de toi ?)
   <a href="#img-20220626"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
-<div style='font-size: 80%'>27.9 cm × 21.6 cm, paper (unavail.)</div>
+<div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
 
+<div class="main_caption">Martin Jambon, 2022</div>
+
+<div style='font-style: italic'>Private collection</div>
   </figcaption>
 </figure>
 
@@ -1588,13 +1685,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Sédentarité (Sedentarity), 2022
+  Sédentarité (Sedentarity)
   <a href="#img-20220611-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1609,13 +1707,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Attaque (Attack), 2022
+  Attaque (Attack)
   <a href="#img-20220611-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1630,13 +1729,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Duel, 2022
+  Duel
   <a href="#img-20220530"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
-<div style='font-size: 80%'>30.5 cm × 22.9 cm, paper (unavail.)</div>
+<div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1651,13 +1751,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Isolement culturel forcé (Forced Cultural Isolation), 2022
+  Isolement culturel forcé (Forced Cultural Isolation)
   <a href="#img-20220529"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1672,13 +1773,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Meltdown (Effondrement), 2022
+  Meltdown (Effondrement)
   <a href="#img-20220523"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1693,13 +1795,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  La visite (The Visit), 2022
+  La visite (The Visit)
   <a href="#img-20220521"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1714,12 +1817,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Le paysan moderne (The Modern Peasant), 2022
+  Le paysan moderne (The Modern Peasant)
   <a href="#img-20220508-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
+<div class="main_caption">Martin Jambon, 2022</div>
+
+<div style='font-style: italic'>Ephemeral</div>
   </figcaption>
 </figure>
 
@@ -1733,13 +1838,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  American Pop (Pop américaine), 2022
+  American Pop (Pop américaine)
   <a href="#img-20220508-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1754,12 +1860,13 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Statuette no. 1 (Statuette #1), 2022
+  Statuette no. 1 (Statuette #1)
   <a href="#img-20220507"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
+<div class="main_caption">Martin Jambon, 2022</div>
+
   </figcaption>
 </figure>
 
@@ -1773,13 +1880,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Toxic Fumes (Vapeurs toxiques), 2022
+  Toxic Fumes (Vapeurs toxiques)
   <a href="#img-20220506"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1794,13 +1902,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Final Moments (Derniers moments), 2022
+  Final Moments (Derniers moments)
   <a href="#img-20220504-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1815,13 +1924,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Labourage et pâturage, 2022
+  Labourage et pâturage
   <a href="#img-20220504-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
-<div style='font-size: 80%'>30.5 cm × 22.9 cm, paper (unavail.)</div>
+<div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1836,13 +1946,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Surgery (Chirurgie), 2022
+  Surgery (Chirurgie)
   <a href="#img-20220503"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1857,13 +1968,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Bandwagon, 2022
+  Bandwagon
   <a href="#img-20220502"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1878,13 +1990,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Bubbles (Bulles), 2022
+  Bubbles (Bulles)
   <a href="#img-20220429"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1899,14 +2012,16 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Floating Blue Shape (Forme flottante bleue), 2022
+  Floating Blue Shape (Forme flottante bleue)
   <a href="#img-20220426-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
-<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper (unavail.)</div>
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 
+<div class="main_caption">Martin Jambon, 2022</div>
+
+<div style='font-style: italic'>Private collection</div>
   </figcaption>
 </figure>
 
@@ -1920,13 +2035,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  L&#x27;idée de la neige (The Idea of Snow), 2022
+  L&#x27;idée de la neige (The Idea of Snow)
   <a href="#img-20220426-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1941,13 +2057,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Archéologie (Archaeology), 2022
+  Archéologie (Archaeology)
   <a href="#img-20220424"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1962,13 +2079,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Your Choice of Meat (Votre choix de viande), 2022
+  Your Choice of Meat (Votre choix de viande)
   <a href="#img-20220419"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -1983,13 +2101,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Participation, 2022
+  Participation
   <a href="#img-20220415"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2004,13 +2123,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Water (Eau), 2022
+  Water (Eau)
   <a href="#img-20220413-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2025,13 +2145,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Springtime (Printemps), 2022
+  Springtime (Printemps)
   <a href="#img-20220413-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2046,14 +2167,16 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Conflict (Conflit), 2022
+  Conflict (Conflit)
   <a href="#img-20220409"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
-<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper (unavail.)</div>
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 
+<div class="main_caption">Martin Jambon, 2022</div>
+
+<div style='font-style: italic'>Private collection</div>
   </figcaption>
 </figure>
 
@@ -2067,13 +2190,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Insouciance, 2022
+  Insouciance
   <a href="#img-20220405"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2088,13 +2212,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Procreation (Procréation), 2022
+  Procreation (Procréation)
   <a href="#img-20220403-3"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2109,13 +2234,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Ocean View (Vue sur mer), 2022
+  Ocean View (Vue sur mer)
   <a href="#img-20220403-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>20.3 cm × 20.3 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2130,13 +2256,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Parasites, 2022
+  Parasites
   <a href="#img-20220403-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>20.3 cm × 20.3 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2151,12 +2278,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  What’s Left of America (Ce qui reste de l’Amérique), 2022
+  What’s Left of America (Ce qui reste de l’Amérique)
   <a href="#img-20220401-6"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
+<div class="main_caption">Martin Jambon, 2022</div>
+
+<div style='font-style: italic'>Ephemeral</div>
   </figcaption>
 </figure>
 
@@ -2170,13 +2299,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Rainstorm (Orage), 2022
+  Rainstorm (Orage)
   <a href="#img-20220401-5"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2191,13 +2321,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Play with your Food (Joue avec ta nourriture), 2022
+  Play with your Food (Joue avec ta nourriture)
   <a href="#img-20220401-4"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2212,13 +2343,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Gathering (Rassemblement), 2022
+  Gathering (Rassemblement)
   <a href="#img-20220401-3"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2233,13 +2365,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Bubble Gum (Bubble gum), 2022
+  Bubble Gum (Bubble gum)
   <a href="#img-20220401-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2254,13 +2387,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Jenny Was a Friend of Conifers, 2022
+  Jenny Was a Friend of Conifers
   <a href="#img-20220401-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2275,13 +2409,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Influence, 2022
+  Influence
   <a href="#img-20220330"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2296,13 +2431,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Country Life (La vie à la campagne), 2022
+  Country Life (La vie à la campagne)
   <a href="#img-20220329"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>21.0 cm × 29.7 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2317,13 +2453,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Soleil patatoïde terrifiant, 2022
+  Soleil patatoïde terrifiant
   <a href="#img-20220322-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2338,13 +2475,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  In Bloom (Floraison), 2022
+  In Bloom (Floraison)
   <a href="#img-20220320-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2359,13 +2497,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Embedded in Spacetime (Incrusté dans l&#x27;espace-temps), 2022
+  Embedded in Spacetime (Incrusté dans l&#x27;espace-temps)
   <a href="#img-20220320-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2380,13 +2519,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Boredom (L&#x27;ennui), 2022
+  Boredom (L&#x27;ennui)
   <a href="#img-20220317"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>21.0 cm × 29.7 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2401,13 +2541,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Propaganda (Propagande), 2022
+  Propaganda (Propagande)
   <a href="#img-20220313"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2422,13 +2563,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Untitled, 2022
+  Untitled
   <a href="#img-20220312-7"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2443,13 +2585,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Portrait of a Dreamer (Portrait d´un rêveur), 2022
+  Portrait of a Dreamer (Portrait d´un rêveur)
   <a href="#img-20220312-4"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>21.0 cm × 29.7 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2464,13 +2607,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Alice Jambon, 2022
+  Alice Jambon
   <a href="#img-20220312-3"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>21.0 cm × 29.7 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2485,13 +2629,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Portrait of a Girl (Portrait d´une fille), 2022
+  Portrait of a Girl (Portrait d´une fille)
   <a href="#img-20220312-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>21.0 cm × 29.7 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2506,13 +2651,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Vulnerable Man (Un homme vulnérable), 2022
+  Vulnerable Man (Un homme vulnérable)
   <a href="#img-20220312-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>21.0 cm × 29.7 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2527,13 +2673,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Untitled, 2022
+  Untitled
   <a href="#img-20220309"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2548,13 +2695,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Untitled, 2022
+  Untitled
   <a href="#img-20220305-3"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2569,13 +2717,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Midair (Au milieu du ciel), 2022
+  Midair (Au milieu du ciel)
   <a href="#img-20220305-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2590,13 +2739,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  War (La guerre), 2022
+  War (La guerre)
   <a href="#img-20220226"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2611,12 +2761,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  3, 2022
+  3
   <a href="#img-20220221"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
+<div class="main_caption">Martin Jambon, 2022</div>
+
+<div style='font-style: italic'>Private collection</div>
   </figcaption>
 </figure>
 
@@ -2630,13 +2782,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Brutalist Intervention (Intervention brutaliste), 2022
+  Brutalist Intervention (Intervention brutaliste)
   <a href="#img-20220220"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2651,13 +2804,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Untitled, 2022
+  Untitled
   <a href="#img-20220212"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2672,13 +2826,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Valentine’s Day (La Saint-Valentin), 2022
+  Valentine’s Day (La Saint-Valentin)
   <a href="#img-20220207"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>24.0 cm × 18.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2693,13 +2848,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Meats of Iceland (Les viandes d´Icelande), 2022
+  Meats of Iceland (Les viandes d´Icelande)
   <a href="#img-20220205"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>32.0 cm × 24.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2714,13 +2870,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Sushi, 2022
+  Sushi
   <a href="#img-20220131"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>24.0 cm × 18.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2735,13 +2892,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Meatlets (Viandelettes), 2022
+  Meatlets (Viandelettes)
   <a href="#img-20220123"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>24.0 cm × 18.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2756,13 +2914,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  10:15 on a Saturday Night, 2022
+  10:15 on a Saturday Night
   <a href="#img-20220122"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>24.0 cm × 18.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2777,12 +2936,13 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Red (Rouge), 2022
+  Red (Rouge)
   <a href="#img-20220116-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
+<div class="main_caption">Martin Jambon, 2022</div>
+
   </figcaption>
 </figure>
 
@@ -2796,13 +2956,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Untitled, 2022
+  Untitled
   <a href="#img-20220116-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>20.0 cm × 15.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -2817,13 +2978,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Untitled, 2022
+  Untitled
   <a href="#img-20220109"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>25.0 cm × 20.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>

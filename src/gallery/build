@@ -96,9 +96,12 @@ def format_support(row: Dict[str, str]) -> Optional[str]:
     else:
         return None
 
-def format_availability(row: Dict[str, str]) -> Optional[str]:
-    if row['possessor'] != 'Martin Jambon':
-        return '(unavail.)'
+def format_location(row: Dict[str, str]) -> Optional[str]:
+    poss = row['possessor_kind']
+    if poss == 'private' or poss == 'family':
+        return 'Private collection'
+    elif poss == 'ephemeral':
+        return 'Ephemeral'
     else:
         return None
 
@@ -176,7 +179,7 @@ def print_row(row: Dict[str, str],
     large_img_url = IMG_PATH + '/large/' + img_name
     medium_img_url = IMG_PATH + '/medium/' + img_name
 
-    main_caption = f"{title}, {year}"
+    main_caption = f"{title}"
     # Fragile: pandoc really wants to insert <p> elements but we're trying
     # to avoid that. The backslash below disables the insertion of <p>.
     main_caption_html = f"""
@@ -190,16 +193,24 @@ def print_row(row: Dict[str, str],
 
     dimensions = format_dimensions(row)
     support = format_support(row)
-    availability = format_availability(row)
+    location = format_location(row)
     dim_html = ""
     if dimensions:
         line = dimensions
         if support:
             line += f", {support}"
-        if availability:
-            line += f" {availability}"
         dim_html = f"""
 <div style='font-size: 80%'>{html.escape(line)}</div>
+"""
+
+    author_html = f"""
+<div class="main_caption">Martin Jambon, {year}</div>
+"""
+
+    loc_html = ""
+    if location:
+        loc_html = f"""
+<div style='font-style: italic'>{html.escape(location)}</div>\
 """
 
     # Write to main page
@@ -213,8 +224,7 @@ f"""
          class="artwork"/>
   </a>
   <figcaption>
-    {main_caption_html}
-    {dim_html}
+    {main_caption_html}{dim_html}{author_html}{loc_html}
   </figcaption>
 </figure>
 """
@@ -265,6 +275,7 @@ figcaption {{
 }}
 
 .main_caption {{
+  margin-top: 0.5em;
 }}
 
 .hash_link {{

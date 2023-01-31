@@ -15,6 +15,7 @@ figcaption {
 }
 
 .main_caption {
+  margin-top: 0.5em;
 }
 
 .hash_link {
@@ -57,13 +58,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Plan de la ville (City Map), 2023
+  Plan de la ville (City Map)
   <a href="#img-20230122"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
+
+<div class="main_caption">Martin Jambon, 2023</div>
 
   </figcaption>
 </figure>
@@ -78,13 +80,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Mode d’emploi (User Manual), 2023
+  Mode d’emploi (User Manual)
   <a href="#img-20230116"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
+
+<div class="main_caption">Martin Jambon, 2023</div>
 
   </figcaption>
 </figure>
@@ -99,13 +102,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  The Promise (La promesse), 2023
+  The Promise (La promesse)
   <a href="#img-20230111"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
+
+<div class="main_caption">Martin Jambon, 2023</div>
 
   </figcaption>
 </figure>
@@ -120,13 +124,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Un repas équilibré (A Balanced Meal), 2022
+  Un repas équilibré (A Balanced Meal)
   <a href="#img-20221230-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -141,13 +146,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Le centre du monde (The Center of the World), 2022
+  Le centre du monde (The Center of the World)
   <a href="#img-20221127"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -162,13 +168,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Formation atmosphérique (Atmospheric Formation), 2022
+  Formation atmosphérique (Atmospheric Formation)
   <a href="#img-20221030-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -183,13 +190,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Encerclement (Surrounding), 2022
+  Encerclement (Surrounding)
   <a href="#img-20220924"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -204,13 +212,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  San Francisco, 2022
+  San Francisco
   <a href="#img-20220820-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -225,13 +234,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Heaven and Hell but Mostly Hell (Le paradis et l’enfer mais surtout l’enfer), 2022
+  Heaven and Hell but Mostly Hell (Le paradis et l’enfer mais surtout l’enfer)
   <a href="#img-20220813"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -246,13 +256,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Settled (Bien établi), 2022
+  Settled (Bien établi)
   <a href="#img-20220803-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -267,13 +278,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Space Nugget (Pépite spatiale), 2022
+  Space Nugget (Pépite spatiale)
   <a href="#img-20220801-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -288,14 +300,16 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  What Are We Going to Do with You? (Mais qu’allons nous faire de toi ?), 2022
+  What Are We Going to Do with You? (Mais qu’allons nous faire de toi ?)
   <a href="#img-20220626"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
-<div style='font-size: 80%'>27.9 cm × 21.6 cm, paper (unavail.)</div>
+<div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
 
+<div class="main_caption">Martin Jambon, 2022</div>
+
+<div style='font-style: italic'>Private collection</div>
   </figcaption>
 </figure>
 
@@ -309,13 +323,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Duel, 2022
+  Duel
   <a href="#img-20220530"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
-<div style='font-size: 80%'>30.5 cm × 22.9 cm, paper (unavail.)</div>
+<div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -330,13 +345,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Labourage et pâturage, 2022
+  Labourage et pâturage
   <a href="#img-20220504-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
-<div style='font-size: 80%'>30.5 cm × 22.9 cm, paper (unavail.)</div>
+<div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -351,13 +367,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Bubbles (Bulles), 2022
+  Bubbles (Bulles)
   <a href="#img-20220429"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -372,13 +389,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Archéologie (Archaeology), 2022
+  Archéologie (Archaeology)
   <a href="#img-20220424"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -393,13 +411,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Your Choice of Meat (Votre choix de viande), 2022
+  Your Choice of Meat (Votre choix de viande)
   <a href="#img-20220419"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -414,13 +433,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Participation, 2022
+  Participation
   <a href="#img-20220415"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -435,13 +455,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Springtime (Printemps), 2022
+  Springtime (Printemps)
   <a href="#img-20220413-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -456,13 +477,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Insouciance, 2022
+  Insouciance
   <a href="#img-20220405"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -477,13 +499,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Play with your Food (Joue avec ta nourriture), 2022
+  Play with your Food (Joue avec ta nourriture)
   <a href="#img-20220401-4"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -498,13 +521,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Influence, 2022
+  Influence
   <a href="#img-20220330"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -519,13 +543,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Soleil patatoïde terrifiant, 2022
+  Soleil patatoïde terrifiant
   <a href="#img-20220322-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -540,13 +565,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Embedded in Spacetime (Incrusté dans l&#x27;espace-temps), 2022
+  Embedded in Spacetime (Incrusté dans l&#x27;espace-temps)
   <a href="#img-20220320-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -561,13 +587,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Boredom (L&#x27;ennui), 2022
+  Boredom (L&#x27;ennui)
   <a href="#img-20220317"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>21.0 cm × 29.7 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -582,13 +609,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Midair (Au milieu du ciel), 2022
+  Midair (Au milieu du ciel)
   <a href="#img-20220305-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -603,13 +631,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  War (La guerre), 2022
+  War (La guerre)
   <a href="#img-20220226"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
@@ -624,13 +653,14 @@ for any inquiry.
   <figcaption>
     
 <div class="main_caption">
-  Untitled, 2022
+  Untitled
   <a href="#img-20220212"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-    
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
 
   </figcaption>
 </figure>
