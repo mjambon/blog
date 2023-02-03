@@ -18,6 +18,7 @@ import subprocess
 FAVES_PATH = '/gallery'
 ALL_PATH = '/gallery/all'
 IMG_PATH = '/gallery/img'
+ART_PATH = '/art'
 
 # The built-in '.capitalize()' method will downcase the rest of the string,
 # which we don't want.
@@ -131,6 +132,119 @@ def get_title(row: Dict[str, str]) -> str:
     else:
         return 'Untitled'
 
+def make_standalone_page(row: Dict[str, str]) -> str:
+    artwork_id = row['artwork_id']
+    img_id = row['image_id']
+    year = date.fromisoformat(row['date']).year
+    title = get_title(row)
+    img_name = img_id + '.jpg'
+    hash_name = img_id
+
+    img_url = IMG_PATH + '/original/' + img_name
+    html_dir = 'art/' + artwork_id
+    html_file = html_dir + '/index.html'
+    os.makedirs(html_dir, exist_ok=True)
+
+    # URL of this page, to be returned to the caller
+    img_page_url = ART_PATH + '/' + artwork_id
+
+    # URL to this artwork on the gallery listing
+    gallery_url = f"{ALL_PATH}#{hash_name}"
+
+    main_caption = f"{title}"
+    main_caption_html = f"""
+<div>
+  {html.escape(main_caption)}
+</div>
+"""
+
+    dimensions = format_dimensions(row)
+    support = format_support(row)
+    location = format_location(row)
+    dim_html = ""
+    if dimensions:
+        line = dimensions
+        if support:
+            line += f", {support}"
+        dim_html = f"""
+<div style='font-size: 80%'>{html.escape(line)}</div>
+"""
+
+    author_html = f"""
+<div class="main_caption">Martin Jambon, {year}</div>
+"""
+
+    loc_html = ""
+    if location:
+        loc_html = f"""
+<div style='font-style: italic'>{html.escape(location)}</div>
+"""
+
+    page_contents = f"""
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <title>{html.escape(title)}</title>
+  <style type="text/css">
+    body {{
+      background-color: white;
+    }}
+
+    div.center {{
+      max-width: 80%;
+      max-height: 60%;
+
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      margin: auto;
+      text-align: center;
+    }}
+
+    img.artwork {{
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+      text-align: left;
+    }}
+
+    .caption {{
+      display: inline-block;
+      width: 70%;
+
+      margin: 3em 0em;
+      color: grey;
+    }}
+
+    a {{
+      color: inherit;
+      text-decoration: none;
+    }}
+  </style>
+</head>
+<body>
+  <div class="center">
+    <img class="artwork" src="{img_url}"/>
+    <div class="caption">
+      <a href="{html.escape(gallery_url)}">
+        {main_caption_html}{author_html}
+        <div style="margin:1em 0em">
+          {dim_html}{loc_html}
+        </div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
+"""
+    with open(html_file, "w") as out:
+        out.write(page_contents)
+    return img_page_url
+
 def print_row(row: Dict[str, str],
               md_file: TextIO,
               force: bool = False) -> None:
@@ -139,6 +253,8 @@ def print_row(row: Dict[str, str],
     title = get_title(row)
     img_name = img_id + '.jpg'
     hash_name = img_id
+
+    img_page_url = make_standalone_page(row)
 
     # Generate images of different sizes
     orig = 'img/original/' + img_name
@@ -176,7 +292,6 @@ def print_row(row: Dict[str, str],
     # rendered with a smaller surface area)
     fig_margin = int((1.0 - figure_scaling(medium)) / 2 * 100)
 
-    large_img_url = IMG_PATH + '/large/' + img_name
     medium_img_url = IMG_PATH + '/medium/' + img_name
 
     main_caption = f"{title}"
@@ -218,13 +333,14 @@ def print_row(row: Dict[str, str],
 f"""
 <a name="{html.escape(hash_name)}">
 <figure style="margin: 0px {fig_margin}%; padding-top: 40px">
-  <a href="{html.escape(large_img_url)}">
+  <a href="{html.escape(img_page_url)}">
     <img src="{html.escape(medium_img_url)}"
          alt="abstract art"
          class="artwork"/>
   </a>
   <figcaption>
-    {main_caption_html}{dim_html}{author_html}{loc_html}
+    {main_caption_html}{author_html}\
+    <div style="margin:0.5em 0em">{dim_html}{loc_html}</div>
   </figcaption>
 </figure>
 """
@@ -274,10 +390,6 @@ figcaption {{
   margin: 1em 0em;
 }}
 
-.main_caption {{
-  margin-top: 0.5em;
-}}
-
 .hash_link {{
   visibility: hidden;
 }}
@@ -313,7 +425,7 @@ for any inquiry.
             print_row(row, md_file, force=force)
     md_file.write(
         """
-<p class="discreet" style="margin-top:4em">
+<p class="discreet" style="margin:4em 0em">
   [These artworks](https://mjambon.com/gallery/all) © 2022
   by [Martin Jambon](https://mjambon.com) are licensed under
   [CC BY-NC-ND 4.0](http://creativecommons.org/licenses/by-nc-nd/4.0/).

@@ -14,10 +14,6 @@ figcaption {
   margin: 1em 0em;
 }
 
-.main_caption {
-  margin-top: 0.5em;
-}
-
 .hash_link {
   visibility: hidden;
 }
@@ -50,7 +46,7 @@ for any inquiry.
 
 <a name="img-20230122">
 <figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20230122.jpg">
+  <a href="/art/mj-20230122">
     <img src="/gallery/img/medium/img-20230122.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -63,16 +59,16 @@ for any inquiry.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
-
 <div class="main_caption">Martin Jambon, 2023</div>
-
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
+</div>
   </figcaption>
 </figure>
 
 <a name="img-20230116">
 <figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20230116.jpg">
+  <a href="/art/mj-20230116">
     <img src="/gallery/img/medium/img-20230116.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -85,16 +81,16 @@ for any inquiry.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
-
 <div class="main_caption">Martin Jambon, 2023</div>
-
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
+</div>
   </figcaption>
 </figure>
 
 <a name="img-20230111">
 <figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20230111.jpg">
+  <a href="/art/mj-20230111">
     <img src="/gallery/img/medium/img-20230111.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -107,16 +103,16 @@ for any inquiry.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
-
 <div class="main_caption">Martin Jambon, 2023</div>
-
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
+</div>
   </figcaption>
 </figure>
 
 <a name="img-20221230-2">
 <figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20221230-2.jpg">
+  <a href="/art/mj-20221230-2">
     <img src="/gallery/img/medium/img-20221230-2.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -129,16 +125,16 @@ for any inquiry.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
-
 <div class="main_caption">Martin Jambon, 2022</div>
-
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+</div>
   </figcaption>
 </figure>
 
 <a name="img-20221127">
 <figure style="margin: 0px 1%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20221127.jpg">
+  <a href="/art/mj-20221127">
     <img src="/gallery/img/medium/img-20221127.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -151,16 +147,16 @@ for any inquiry.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
-
 <div class="main_caption">Martin Jambon, 2022</div>
-
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+</div>
   </figcaption>
 </figure>
 
 <a name="img-20221030-1">
 <figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20221030-1.jpg">
+  <a href="/art/mj-20221030-1">
     <img src="/gallery/img/medium/img-20221030-1.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -173,16 +169,16 @@ for any inquiry.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
-
 <div class="main_caption">Martin Jambon, 2022</div>
-
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+</div>
   </figcaption>
 </figure>
 
 <a name="img-20220924">
 <figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20220924.jpg">
+  <a href="/art/mj-20220924">
     <img src="/gallery/img/medium/img-20220924.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -195,16 +191,16 @@ for any inquiry.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
-
 <div class="main_caption">Martin Jambon, 2022</div>
-
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+</div>
   </figcaption>
 </figure>
 
 <a name="img-20220820-2">
 <figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20220820-2.jpg">
+  <a href="/art/mj-20220820-2">
     <img src="/gallery/img/medium/img-20220820-2.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -217,16 +213,16 @@ for any inquiry.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
-
 <div class="main_caption">Martin Jambon, 2022</div>
-
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+</div>
   </figcaption>
 </figure>
 
 <a name="img-20220813">
 <figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20220813.jpg">
+  <a href="/art/mj-20220813">
     <img src="/gallery/img/medium/img-20220813.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -239,16 +235,16 @@ for any inquiry.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
-
 <div class="main_caption">Martin Jambon, 2022</div>
-
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+</div>
   </figcaption>
 </figure>
 
 <a name="img-20220803-1">
 <figure style="margin: 0px 1%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20220803-1.jpg">
+  <a href="/art/mj-20220803-1">
     <img src="/gallery/img/medium/img-20220803-1.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -261,16 +257,16 @@ for any inquiry.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
-
 <div class="main_caption">Martin Jambon, 2022</div>
-
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+</div>
   </figcaption>
 </figure>
 
 <a name="img-20220801-2">
 <figure style="margin: 0px 1%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20220801-2.jpg">
+  <a href="/art/mj-20220801-2">
     <img src="/gallery/img/medium/img-20220801-2.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -283,16 +279,16 @@ for any inquiry.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
-
 <div class="main_caption">Martin Jambon, 2022</div>
-
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+</div>
   </figcaption>
 </figure>
 
 <a name="img-20220626">
 <figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20220626.jpg">
+  <a href="/art/mj-20220626">
     <img src="/gallery/img/medium/img-20220626.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -305,17 +301,17 @@ for any inquiry.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
+<div class="main_caption">Martin Jambon, 2022</div>
+    <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
-
-<div style='font-style: italic'>Private collection</div>
+<div style='font-style: italic'>Private collection</div></div>
   </figcaption>
 </figure>
 
 <a name="img-20220530">
 <figure style="margin: 0px 1%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20220530.jpg">
+  <a href="/art/mj-20220530">
     <img src="/gallery/img/medium/img-20220530.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -328,16 +324,16 @@ for any inquiry.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
-
 <div class="main_caption">Martin Jambon, 2022</div>
-
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+</div>
   </figcaption>
 </figure>
 
 <a name="img-20220504-1">
 <figure style="margin: 0px 0%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20220504-1.jpg">
+  <a href="/art/mj-20220504-1">
     <img src="/gallery/img/medium/img-20220504-1.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -350,16 +346,16 @@ for any inquiry.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
-
 <div class="main_caption">Martin Jambon, 2022</div>
-
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+</div>
   </figcaption>
 </figure>
 
 <a name="img-20220429">
 <figure style="margin: 0px 0%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20220429.jpg">
+  <a href="/art/mj-20220429">
     <img src="/gallery/img/medium/img-20220429.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -372,16 +368,16 @@ for any inquiry.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
-
 <div class="main_caption">Martin Jambon, 2022</div>
-
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+</div>
   </figcaption>
 </figure>
 
 <a name="img-20220424">
 <figure style="margin: 0px 0%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20220424.jpg">
+  <a href="/art/mj-20220424">
     <img src="/gallery/img/medium/img-20220424.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -394,16 +390,16 @@ for any inquiry.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
-
 <div class="main_caption">Martin Jambon, 2022</div>
-
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+</div>
   </figcaption>
 </figure>
 
 <a name="img-20220419">
 <figure style="margin: 0px 0%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20220419.jpg">
+  <a href="/art/mj-20220419">
     <img src="/gallery/img/medium/img-20220419.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -416,16 +412,16 @@ for any inquiry.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
-
 <div class="main_caption">Martin Jambon, 2022</div>
-
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+</div>
   </figcaption>
 </figure>
 
 <a name="img-20220415">
 <figure style="margin: 0px 1%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20220415.jpg">
+  <a href="/art/mj-20220415">
     <img src="/gallery/img/medium/img-20220415.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -438,16 +434,16 @@ for any inquiry.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
-
 <div class="main_caption">Martin Jambon, 2022</div>
-
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+</div>
   </figcaption>
 </figure>
 
 <a name="img-20220413-1">
 <figure style="margin: 0px 0%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20220413-1.jpg">
+  <a href="/art/mj-20220413-1">
     <img src="/gallery/img/medium/img-20220413-1.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -460,16 +456,16 @@ for any inquiry.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
-
 <div class="main_caption">Martin Jambon, 2022</div>
-
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+</div>
   </figcaption>
 </figure>
 
 <a name="img-20220405">
 <figure style="margin: 0px 0%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20220405.jpg">
+  <a href="/art/mj-20220405">
     <img src="/gallery/img/medium/img-20220405.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -482,16 +478,16 @@ for any inquiry.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
-
 <div class="main_caption">Martin Jambon, 2022</div>
-
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+</div>
   </figcaption>
 </figure>
 
 <a name="img-20220401-4">
 <figure style="margin: 0px 0%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20220401-4.jpg">
+  <a href="/art/mj-20220401-4">
     <img src="/gallery/img/medium/img-20220401-4.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -504,16 +500,16 @@ for any inquiry.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
-
 <div class="main_caption">Martin Jambon, 2022</div>
-
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+</div>
   </figcaption>
 </figure>
 
 <a name="img-20220330">
 <figure style="margin: 0px 0%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20220330.jpg">
+  <a href="/art/mj-20220330">
     <img src="/gallery/img/medium/img-20220330.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -526,16 +522,16 @@ for any inquiry.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
-
 <div class="main_caption">Martin Jambon, 2022</div>
-
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+</div>
   </figcaption>
 </figure>
 
 <a name="img-20220322-2">
 <figure style="margin: 0px 0%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20220322-2.jpg">
+  <a href="/art/mj-20220322-2">
     <img src="/gallery/img/medium/img-20220322-2.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -548,16 +544,16 @@ for any inquiry.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
-
 <div class="main_caption">Martin Jambon, 2022</div>
-
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+</div>
   </figcaption>
 </figure>
 
 <a name="img-20220320-1">
 <figure style="margin: 0px 0%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20220320-1.jpg">
+  <a href="/art/mj-20220320-1">
     <img src="/gallery/img/medium/img-20220320-1.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -570,16 +566,16 @@ for any inquiry.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
-
 <div class="main_caption">Martin Jambon, 2022</div>
-
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+</div>
   </figcaption>
 </figure>
 
 <a name="img-20220317">
 <figure style="margin: 0px 15%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20220317.jpg">
+  <a href="/art/mj-20220317">
     <img src="/gallery/img/medium/img-20220317.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -592,16 +588,16 @@ for any inquiry.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div style='font-size: 80%'>21.0 cm × 29.7 cm, paper</div>
-
 <div class="main_caption">Martin Jambon, 2022</div>
-
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>21.0 cm × 29.7 cm, paper</div>
+</div>
   </figcaption>
 </figure>
 
 <a name="img-20220305-2">
 <figure style="margin: 0px 0%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20220305-2.jpg">
+  <a href="/art/mj-20220305-2">
     <img src="/gallery/img/medium/img-20220305-2.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -614,16 +610,16 @@ for any inquiry.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
-
 <div class="main_caption">Martin Jambon, 2022</div>
-
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+</div>
   </figcaption>
 </figure>
 
 <a name="img-20220226">
 <figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20220226.jpg">
+  <a href="/art/mj-20220226">
     <img src="/gallery/img/medium/img-20220226.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -636,16 +632,16 @@ for any inquiry.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
-
 <div class="main_caption">Martin Jambon, 2022</div>
-
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+</div>
   </figcaption>
 </figure>
 
 <a name="img-20220212">
 <figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/gallery/img/large/img-20220212.jpg">
+  <a href="/art/mj-20220212">
     <img src="/gallery/img/medium/img-20220212.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -658,14 +654,14 @@ for any inquiry.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
-
 <div class="main_caption">Martin Jambon, 2022</div>
-
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+</div>
   </figcaption>
 </figure>
 
-<p class="discreet" style="margin-top:4em">
+<p class="discreet" style="margin:4em 0em">
   [These artworks](https://mjambon.com/gallery/all) © 2022
   by [Martin Jambon](https://mjambon.com) are licensed under
   [CC BY-NC-ND 4.0](http://creativecommons.org/licenses/by-nc-nd/4.0/).

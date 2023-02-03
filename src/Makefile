@@ -53,9 +53,18 @@ all:
 	mkdir -p $(DOCROOT)
 	echo -n mjambon.com > $(DOCROOT)/CNAME
 	cp -u $(SRCDOCROOTFILES) $(DOCROOT)
-	$(MAKE) html img graphs
+	$(MAKE) html img graphs other-html
 
+.PHONY: html
 html: $(HTML)
+
+.PHONY: other-html
+other-html:
+	for x in gallery/art/*; do \
+	  name=$$(basename $$x); \
+	  mkdir -p $(DOCROOT)/art/$$name; \
+	  cp -u $$x/index.html $(DOCROOT)/art/$$name/; \
+	done
 
 img:
 	for x in $(IMG); do \
