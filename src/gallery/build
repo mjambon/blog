@@ -230,7 +230,8 @@ def make_standalone_page(row: Dict[str, str]) -> str:
   <div class="center">
     <img class="artwork" src="{img_url}"/>
     <div class="caption">
-      <a href="{html.escape(gallery_url)}">
+      <a href="{html.escape(gallery_url)}"
+         title="view in gallery">
         {main_caption_html}{author_html}
         <div style="margin:1em 0em">
           {dim_html}{loc_html}
@@ -333,7 +334,8 @@ def print_row(row: Dict[str, str],
 f"""
 <a name="{html.escape(hash_name)}">
 <figure style="margin: 0px {fig_margin}%; padding-top: 40px">
-  <a href="{html.escape(img_page_url)}">
+  <a href="{html.escape(img_page_url)}"
+     title="open dedicated page">
     <img src="{html.escape(medium_img_url)}"
          alt="abstract art"
          class="artwork"/>

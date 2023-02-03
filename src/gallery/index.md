@@ -46,7 +46,8 @@ for any inquiry.
 
 <a name="img-20230122">
 <figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/art/mj-20230122">
+  <a href="/art/mj-20230122"
+     title="open dedicated page">
     <img src="/gallery/img/medium/img-20230122.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -68,7 +69,8 @@ for any inquiry.
 
 <a name="img-20230116">
 <figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/art/mj-20230116">
+  <a href="/art/mj-20230116"
+     title="open dedicated page">
     <img src="/gallery/img/medium/img-20230116.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -90,7 +92,8 @@ for any inquiry.
 
 <a name="img-20230111">
 <figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/art/mj-20230111">
+  <a href="/art/mj-20230111"
+     title="open dedicated page">
     <img src="/gallery/img/medium/img-20230111.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -112,7 +115,8 @@ for any inquiry.
 
 <a name="img-20221230-2">
 <figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/art/mj-20221230-2">
+  <a href="/art/mj-20221230-2"
+     title="open dedicated page">
     <img src="/gallery/img/medium/img-20221230-2.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -134,7 +138,8 @@ for any inquiry.
 
 <a name="img-20221127">
 <figure style="margin: 0px 1%; padding-top: 40px">
-  <a href="/art/mj-20221127">
+  <a href="/art/mj-20221127"
+     title="open dedicated page">
     <img src="/gallery/img/medium/img-20221127.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -156,7 +161,8 @@ for any inquiry.
 
 <a name="img-20221030-1">
 <figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/art/mj-20221030-1">
+  <a href="/art/mj-20221030-1"
+     title="open dedicated page">
     <img src="/gallery/img/medium/img-20221030-1.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -178,7 +184,8 @@ for any inquiry.
 
 <a name="img-20220924">
 <figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/art/mj-20220924">
+  <a href="/art/mj-20220924"
+     title="open dedicated page">
     <img src="/gallery/img/medium/img-20220924.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -200,7 +207,8 @@ for any inquiry.
 
 <a name="img-20220820-2">
 <figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/art/mj-20220820-2">
+  <a href="/art/mj-20220820-2"
+     title="open dedicated page">
     <img src="/gallery/img/medium/img-20220820-2.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -222,7 +230,8 @@ for any inquiry.
 
 <a name="img-20220813">
 <figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/art/mj-20220813">
+  <a href="/art/mj-20220813"
+     title="open dedicated page">
     <img src="/gallery/img/medium/img-20220813.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -244,7 +253,8 @@ for any inquiry.
 
 <a name="img-20220803-1">
 <figure style="margin: 0px 1%; padding-top: 40px">
-  <a href="/art/mj-20220803-1">
+  <a href="/art/mj-20220803-1"
+     title="open dedicated page">
     <img src="/gallery/img/medium/img-20220803-1.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -266,7 +276,8 @@ for any inquiry.
 
 <a name="img-20220801-2">
 <figure style="margin: 0px 1%; padding-top: 40px">
-  <a href="/art/mj-20220801-2">
+  <a href="/art/mj-20220801-2"
+     title="open dedicated page">
     <img src="/gallery/img/medium/img-20220801-2.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -288,7 +299,8 @@ for any inquiry.
 
 <a name="img-20220626">
 <figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/art/mj-20220626">
+  <a href="/art/mj-20220626"
+     title="open dedicated page">
     <img src="/gallery/img/medium/img-20220626.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -311,7 +323,8 @@ for any inquiry.
 
 <a name="img-20220530">
 <figure style="margin: 0px 1%; padding-top: 40px">
-  <a href="/art/mj-20220530">
+  <a href="/art/mj-20220530"
+     title="open dedicated page">
     <img src="/gallery/img/medium/img-20220530.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -333,7 +346,8 @@ for any inquiry.
 
 <a name="img-20220504-1">
 <figure style="margin: 0px 0%; padding-top: 40px">
-  <a href="/art/mj-20220504-1">
+  <a href="/art/mj-20220504-1"
+     title="open dedicated page">
     <img src="/gallery/img/medium/img-20220504-1.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -355,7 +369,8 @@ for any inquiry.
 
 <a name="img-20220429">
 <figure style="margin: 0px 0%; padding-top: 40px">
-  <a href="/art/mj-20220429">
+  <a href="/art/mj-20220429"
+     title="open dedicated page">
     <img src="/gallery/img/medium/img-20220429.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -377,7 +392,8 @@ for any inquiry.
 
 <a name="img-20220424">
 <figure style="margin: 0px 0%; padding-top: 40px">
-  <a href="/art/mj-20220424">
+  <a href="/art/mj-20220424"
+     title="open dedicated page">
     <img src="/gallery/img/medium/img-20220424.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -399,7 +415,8 @@ for any inquiry.
 
 <a name="img-20220419">
 <figure style="margin: 0px 0%; padding-top: 40px">
-  <a href="/art/mj-20220419">
+  <a href="/art/mj-20220419"
+     title="open dedicated page">
     <img src="/gallery/img/medium/img-20220419.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -421,7 +438,8 @@ for any inquiry.
 
 <a name="img-20220415">
 <figure style="margin: 0px 1%; padding-top: 40px">
-  <a href="/art/mj-20220415">
+  <a href="/art/mj-20220415"
+     title="open dedicated page">
     <img src="/gallery/img/medium/img-20220415.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -443,7 +461,8 @@ for any inquiry.
 
 <a name="img-20220413-1">
 <figure style="margin: 0px 0%; padding-top: 40px">
-  <a href="/art/mj-20220413-1">
+  <a href="/art/mj-20220413-1"
+     title="open dedicated page">
     <img src="/gallery/img/medium/img-20220413-1.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -465,7 +484,8 @@ for any inquiry.
 
 <a name="img-20220405">
 <figure style="margin: 0px 0%; padding-top: 40px">
-  <a href="/art/mj-20220405">
+  <a href="/art/mj-20220405"
+     title="open dedicated page">
     <img src="/gallery/img/medium/img-20220405.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -487,7 +507,8 @@ for any inquiry.
 
 <a name="img-20220401-4">
 <figure style="margin: 0px 0%; padding-top: 40px">
-  <a href="/art/mj-20220401-4">
+  <a href="/art/mj-20220401-4"
+     title="open dedicated page">
     <img src="/gallery/img/medium/img-20220401-4.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -509,7 +530,8 @@ for any inquiry.
 
 <a name="img-20220330">
 <figure style="margin: 0px 0%; padding-top: 40px">
-  <a href="/art/mj-20220330">
+  <a href="/art/mj-20220330"
+     title="open dedicated page">
     <img src="/gallery/img/medium/img-20220330.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -531,7 +553,8 @@ for any inquiry.
 
 <a name="img-20220322-2">
 <figure style="margin: 0px 0%; padding-top: 40px">
-  <a href="/art/mj-20220322-2">
+  <a href="/art/mj-20220322-2"
+     title="open dedicated page">
     <img src="/gallery/img/medium/img-20220322-2.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -553,7 +576,8 @@ for any inquiry.
 
 <a name="img-20220320-1">
 <figure style="margin: 0px 0%; padding-top: 40px">
-  <a href="/art/mj-20220320-1">
+  <a href="/art/mj-20220320-1"
+     title="open dedicated page">
     <img src="/gallery/img/medium/img-20220320-1.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -575,7 +599,8 @@ for any inquiry.
 
 <a name="img-20220317">
 <figure style="margin: 0px 15%; padding-top: 40px">
-  <a href="/art/mj-20220317">
+  <a href="/art/mj-20220317"
+     title="open dedicated page">
     <img src="/gallery/img/medium/img-20220317.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -597,7 +622,8 @@ for any inquiry.
 
 <a name="img-20220305-2">
 <figure style="margin: 0px 0%; padding-top: 40px">
-  <a href="/art/mj-20220305-2">
+  <a href="/art/mj-20220305-2"
+     title="open dedicated page">
     <img src="/gallery/img/medium/img-20220305-2.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -619,7 +645,8 @@ for any inquiry.
 
 <a name="img-20220226">
 <figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/art/mj-20220226">
+  <a href="/art/mj-20220226"
+     title="open dedicated page">
     <img src="/gallery/img/medium/img-20220226.jpg"
          alt="abstract art"
          class="artwork"/>
@@ -641,7 +668,8 @@ for any inquiry.
 
 <a name="img-20220212">
 <figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/art/mj-20220212">
+  <a href="/art/mj-20220212"
+     title="open dedicated page">
     <img src="/gallery/img/medium/img-20220212.jpg"
          alt="abstract art"
          class="artwork"/>
