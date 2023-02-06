@@ -33,13 +33,23 @@ figcaption {
         style="height:1.5em;padding:0em 0.5em">](https://www.instagram.com/martinjambon/)
 </div>
 <p>
-I'm a French painter active since 2022. Born in Orléans, France in 1977,
-I'm based in the San Francisco Bay Area.
+I started painting only in 2022, without formal training.
+Born in Orléans, France in 1977,
+I'm based in Palo Alto, in the San Francisco Bay Area.
 </p>
 <p>
-Stay in touch via [Instagram](https://www.instagram.com/martinjambon/)
-or email <a href="mailto:info@mjambon.com">info@mjambon.com</a>
-for any inquiry.
+Follow my progress via [Instagram](https://www.instagram.com/martinjambon/)
+or email me at <a href="mailto:art@mjambon.com">art@mjambon.com</a>
+as needed.
+</p>
+<p>
+Would you like to receive a quarterly newsletter from me? I can set this up
+if more than zero people are interested. Please
+<a href="mailto:art@mjambon.com?subject=Newsletter&amp;body=Hello Martin, I would be interested in receiving a quarterly newsletter about your art!">let me know</a>.
+</p>
+<p>
+Are you interested in displaying my artworks in your public space for free?
+Please get in touch!
 </p>
 <div>artist&#x27;s favorites | <a href="/gallery/all"
    style="color:black">show all artworks</a></div>
