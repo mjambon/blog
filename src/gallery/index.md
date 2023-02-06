@@ -49,7 +49,7 @@ if more than zero people are interested. Please
 </p>
 <p>
 Are you interested in displaying my artworks in your public space for free?
-Please get in touch!
+I'd love to to that! Please get in touch.
 </p>
 <div>artist&#x27;s favorites | <a href="/gallery/all"
    style="color:black">show all artworks</a></div>
