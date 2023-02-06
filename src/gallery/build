@@ -140,7 +140,7 @@ def make_standalone_page(row: Dict[str, str]) -> str:
     img_name = img_id + '.jpg'
     hash_name = img_id
 
-    img_url = IMG_PATH + '/original/' + img_name
+    img_url = IMG_PATH + '/large/' + img_name
     html_dir = 'art/' + artwork_id
     html_file = html_dir + '/index.html'
     os.makedirs(html_dir, exist_ok=True)
