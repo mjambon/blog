@@ -33,9 +33,10 @@ figcaption {
         style="height:1.5em;padding:0em 0.5em">](https://www.instagram.com/martinjambon/)
 </div>
 <p>
-I started painting only in 2022, without formal training.
+I started painting only in 2022 with no formal training.
 Born in Orléans, France in 1977,
-I'm based in Palo Alto, in the San Francisco Bay Area.
+I'm based in Palo Alto, in the San Francisco Bay Area, on the West Coast
+of the United States.
 </p>
 <p>
 Follow my progress via [Instagram](https://www.instagram.com/martinjambon/)
