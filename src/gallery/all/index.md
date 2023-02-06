@@ -56,7 +56,7 @@ I'd love to do that! Please get in touch.
    style="color:black">show artist&#x27;s favorites</a> | all artworks</div>
 
 <a name="img-20230205">
-<figure style="margin: 0px 1%; padding-top: 40px">
+<figure style="margin: 0px 2%; padding-top: 40px">
   <a href="/art/mj-20230205"
      title="open dedicated page">
     <img src="/gallery/img/medium/img-20230205.jpg"
