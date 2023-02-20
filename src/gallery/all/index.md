@@ -44,16 +44,34 @@ or email me at <a href="mailto:art@mjambon.com">art@mjambon.com</a>
 as needed.
 </p>
 <p>
-Would you like to receive a quarterly newsletter from me? I can set this up
-if more than zero people are interested. Please
-<a href="mailto:art@mjambon.com?subject=Newsletter&amp;body=Hello Martin, I would be interested in receiving a quarterly newsletter about your art!">let me know</a>.
-</p>
-<p>
 Are you interested in displaying my artworks in your public space for free?
 I'd love to do that! Please get in touch.
 </p>
 <div><a href="/gallery"
    style="color:black">show artist&#x27;s favorites</a> | all artworks</div>
+
+<a name="img-20230219">
+<figure style="margin: 0px 3%; padding-top: 40px">
+  <a href="/art/mj-20230219"
+     title="open dedicated page">
+    <img src="/gallery/img/medium/img-20230219.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Omplaskiz
+  <a href="#img-20230219"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+<div class="main_caption">Martin Jambon, 2023</div>
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
+</div>
+  </figcaption>
+</figure>
 
 <a name="img-20230212">
 <figure style="margin: 0px 2%; padding-top: 40px">
