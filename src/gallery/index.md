@@ -99,7 +99,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2023  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
 </div>
@@ -123,7 +123,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2023  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
 </div>
@@ -147,7 +147,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2023  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
 </div>
@@ -171,7 +171,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2023  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
 </div>
@@ -195,7 +195,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2023  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
 </div>
@@ -219,7 +219,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
 </div>
@@ -243,7 +243,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
 </div>
@@ -267,7 +267,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
 </div>
@@ -291,7 +291,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
 </div>
@@ -315,7 +315,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
 </div>
@@ -339,7 +339,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
 </div>
@@ -363,7 +363,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
 </div>
@@ -387,7 +387,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
 </div>
@@ -411,7 +411,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
 
@@ -436,7 +436,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
 </div>
@@ -460,7 +460,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
 </div>
@@ -484,7 +484,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 </div>
@@ -508,7 +508,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 </div>
@@ -532,7 +532,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 </div>
@@ -556,7 +556,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
 </div>
@@ -580,7 +580,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 </div>
@@ -604,7 +604,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 </div>
@@ -628,7 +628,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 </div>
@@ -652,7 +652,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 </div>
@@ -676,7 +676,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 </div>
@@ -700,7 +700,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 </div>
@@ -724,7 +724,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>21.0 cm × 29.7 cm, paper</div>
 </div>
@@ -748,7 +748,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 </div>
@@ -772,7 +772,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
 </div>
@@ -796,7 +796,7 @@ I'm currently looking for opportunities to display my artworks in public.
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
 </div>

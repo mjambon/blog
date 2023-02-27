@@ -87,7 +87,7 @@ figcaption {
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>24.0 cm × 18.0 cm, paper</div>
 </div>
@@ -111,7 +111,7 @@ figcaption {
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>32.0 cm × 24.0 cm, paper</div>
 </div>
@@ -135,7 +135,7 @@ figcaption {
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>24.0 cm × 18.0 cm, paper</div>
 </div>
@@ -159,7 +159,7 @@ figcaption {
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>24.0 cm × 18.0 cm, paper</div>
 </div>
@@ -183,7 +183,7 @@ figcaption {
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>24.0 cm × 18.0 cm, paper</div>
 </div>
@@ -207,7 +207,7 @@ figcaption {
 
 <div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
-        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
+        style="height:1em;padding:0em 0.5em;vertical-align:middle;opacity:0.6">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>20.0 cm × 15.0 cm, paper</div>
 </div>
