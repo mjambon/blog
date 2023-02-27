@@ -68,27 +68,15 @@ figcaption {
 }
 </style>
 
-<div style="text-align:right">
-  [<img src="/gallery/img/other/mj.png" style="height:1.5em;padding:0em 0.5em"
-        title="Portfolio">](https://martinj.art/)
-  [<img src="/gallery/img/other/instagram-logo.png"
-        title="Instagram"
-        style="height:1.5em;padding:0em 0.5em">](https://www.instagram.com/martinjambon/)
-</div>
 <p>
-I started painting only in 2022 with no formal training.
 Born in Orléans, France in 1977,
 I'm based in Palo Alto, in the San Francisco Bay Area, on the West Coast
-of the United States.
+of the United States. I started painting in 2022.
 </p>
 <p>
-Follow my progress via [Instagram](https://www.instagram.com/martinjambon/)
-or email me at <a href="mailto:art@mjambon.com">art@mjambon.com</a>
-as needed.
-</p>
-<p>
-Are you interested in displaying my artworks in your public space for free?
-I'd love to do that! Please get in touch.
+Follow me on [Instagram](https://www.instagram.com/martinjambon/)
+or email me at <a href="mailto:art@mjambon.com">art@mjambon.com</a>.
+I'm currently looking for opportunities to display my artworks in public.
 </p>
 <div>artist&#x27;s favorites | <a href="/gallery/all">show all artworks</a></div>
 
@@ -109,7 +97,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2023</div>
+<div class="main_caption">  Martin Jambon, 2023  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
 </div>
@@ -131,7 +121,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2023</div>
+<div class="main_caption">  Martin Jambon, 2023  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
 </div>
@@ -153,7 +145,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2023</div>
+<div class="main_caption">  Martin Jambon, 2023  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
 </div>
@@ -175,7 +169,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2023</div>
+<div class="main_caption">  Martin Jambon, 2023  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
 </div>
@@ -197,7 +193,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2023</div>
+<div class="main_caption">  Martin Jambon, 2023  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
 </div>
@@ -219,7 +217,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
 </div>
@@ -241,7 +241,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
 </div>
@@ -263,7 +265,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
 </div>
@@ -285,7 +289,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
 </div>
@@ -307,7 +313,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
 </div>
@@ -329,7 +337,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
 </div>
@@ -351,7 +361,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
 </div>
@@ -373,7 +385,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
 </div>
@@ -395,7 +409,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
 
@@ -418,7 +434,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
 </div>
@@ -440,7 +458,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
 </div>
@@ -462,7 +482,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 </div>
@@ -484,7 +506,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 </div>
@@ -506,7 +530,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 </div>
@@ -528,7 +554,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
 </div>
@@ -550,7 +578,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 </div>
@@ -572,7 +602,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 </div>
@@ -594,7 +626,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 </div>
@@ -616,7 +650,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 </div>
@@ -638,7 +674,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 </div>
@@ -660,7 +698,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 </div>
@@ -682,7 +722,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>21.0 cm × 29.7 cm, paper</div>
 </div>
@@ -704,7 +746,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 </div>
@@ -726,7 +770,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
 </div>
@@ -748,7 +794,9 @@ I'd love to do that! Please get in touch.
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
 </div>

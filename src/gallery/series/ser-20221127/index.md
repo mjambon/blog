@@ -85,7 +85,9 @@ figcaption {
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2023</div>
+<div class="main_caption">  Martin Jambon, 2023  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
 </div>
@@ -107,7 +109,9 @@ figcaption {
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2023</div>
+<div class="main_caption">  Martin Jambon, 2023  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
 </div>
@@ -129,7 +133,9 @@ figcaption {
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
 </div>
@@ -151,7 +157,9 @@ figcaption {
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
 </div>
@@ -173,7 +181,9 @@ figcaption {
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
 </div>
@@ -195,7 +205,9 @@ figcaption {
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
-<div class="main_caption">Martin Jambon, 2022</div>
+<div class="main_caption">  Martin Jambon, 2022  [<img src="/gallery/img/other/instagram-logo.png"
+        title="Instagram"
+        style="height:1em;padding:0em 0.5em;vertical-align:middle">](https://www.instagram.com/martinjambon/)</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
 </div>
