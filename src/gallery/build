@@ -373,8 +373,8 @@ f"""
     )
 
 VARIANTS = [
-    ('faves', "artist's favorites", FAVES_PATH),
-    ('all', 'all artworks', ALL_PATH),
+    ('faves', "popular", FAVES_PATH),
+    ('all', 'latest', ALL_PATH),
 ]
 
 # Generate the page-specific HTML for the full gallery (not series)
@@ -386,7 +386,7 @@ def make_page_html_all(faves_only: bool) -> str:
             text = descr
             htm = f"{html.escape(text)}"
         else:
-            text = f"show {descr}"
+            text = f"{descr}"
             htm = f"""<a href="{html.escape(path)}">{html.escape(text)}</a>"""
         links.append(htm)
     links_html = " | ".join(links)

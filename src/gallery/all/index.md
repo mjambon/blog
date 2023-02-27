@@ -78,7 +78,7 @@ Follow me on [Instagram](https://www.instagram.com/martinjambon/)
 or email me at <a href="mailto:art@mjambon.com">art@mjambon.com</a>.
 I'm currently looking for opportunities to display my artworks in public.
 </p>
-<div><a href="/gallery">show artist&#x27;s favorites</a> | all artworks</div>
+<div><a href="/gallery">popular</a> | latest</div>
 
 <div class="artworks">
 
