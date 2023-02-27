@@ -72,3 +72,25 @@ p {
   -ms-hyphens: auto;
   hyphens: auto;
 }
+
+/*** Navigation bar ***/
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li.navitem {
+  float: right;
+}
+
+li.navitem a:hover {
+  text-decoration: underline;
+}
+
+a.navitem {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: black;
+}
