@@ -50,6 +50,7 @@ I'd love to do that! Please get in touch.
 <div><a href="/gallery"
    style="color:black">show artist&#x27;s favorites</a> | all artworks</div>
 
+
 <a name="img-20230219">
 <figure style="margin: 0px 3%; padding-top: 40px">
   <a href="/art/mj-20230219"

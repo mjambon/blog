@@ -25,281 +25,95 @@ figcaption {
 }
 </style>
 
-<div style="text-align:right">
-  [<img src="/gallery/img/other/mj.png" style="height:1.5em;padding:0em 0.5em"
-        title="Portfolio">](https://martinj.art/)
-  [<img src="/gallery/img/other/instagram-logo.png"
-        title="Instagram"
-        style="height:1.5em;padding:0em 0.5em">](https://www.instagram.com/martinjambon/)
-</div>
-<p>
-I started painting only in 2022 with no formal training.
-Born in Orléans, France in 1977,
-I'm based in Palo Alto, in the San Francisco Bay Area, on the West Coast
-of the United States.
-</p>
-<p>
-Follow my progress via [Instagram](https://www.instagram.com/martinjambon/)
-or email me at <a href="mailto:art@mjambon.com">art@mjambon.com</a>
-as needed.
-</p>
-<p>
-Are you interested in displaying my artworks in your public space for free?
-I'd love to do that! Please get in touch.
-</p>
-<div>artist&#x27;s favorites | <a href="/gallery/all"
-   style="color:black">show all artworks</a></div>
 
-
-<a name="img-20230212">
-<figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/art/mj-20230212"
-     title="open dedicated page">
-    <img src="/gallery/img/medium/img-20230212.jpg"
-         alt="abstract art"
-         class="artwork"/>
-  </a>
-  <figcaption>
-    
-<div class="main_caption">
-  Phlobbz
-  <a href="#img-20230212"
-     title="Direct link to artwork"
-     class="hash_link">#</a></div>
-
-<div class="main_caption">Martin Jambon, 2023</div>
-    <div style="margin:0.5em 0em">
-<div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
-</div>
-  </figcaption>
-</figure>
-
-<a name="img-20230129">
-<figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/art/mj-20230129"
-     title="open dedicated page">
-    <img src="/gallery/img/medium/img-20230129.jpg"
-         alt="abstract art"
-         class="artwork"/>
-  </a>
-  <figcaption>
-    
-<div class="main_caption">
-  L’impossible salut de l’âme mécanique (The Impossible Salvation of the Mechanical Soul)
-  <a href="#img-20230129"
-     title="Direct link to artwork"
-     class="hash_link">#</a></div>
-
-<div class="main_caption">Martin Jambon, 2023</div>
-    <div style="margin:0.5em 0em">
-<div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
-</div>
-  </figcaption>
-</figure>
-
-<a name="img-20230122">
-<figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/art/mj-20230122"
-     title="open dedicated page">
-    <img src="/gallery/img/medium/img-20230122.jpg"
-         alt="abstract art"
-         class="artwork"/>
-  </a>
-  <figcaption>
-    
-<div class="main_caption">
-  Plan de la ville (City Map)
-  <a href="#img-20230122"
-     title="Direct link to artwork"
-     class="hash_link">#</a></div>
-
-<div class="main_caption">Martin Jambon, 2023</div>
-    <div style="margin:0.5em 0em">
-<div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
-</div>
-  </figcaption>
-</figure>
-
-<a name="img-20230116">
-<figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/art/mj-20230116"
-     title="open dedicated page">
-    <img src="/gallery/img/medium/img-20230116.jpg"
-         alt="abstract art"
-         class="artwork"/>
-  </a>
-  <figcaption>
-    
-<div class="main_caption">
-  Mode d’emploi (User Manual)
-  <a href="#img-20230116"
-     title="Direct link to artwork"
-     class="hash_link">#</a></div>
-
-<div class="main_caption">Martin Jambon, 2023</div>
-    <div style="margin:0.5em 0em">
-<div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
-</div>
-  </figcaption>
-</figure>
-
-<a name="img-20230111">
-<figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/art/mj-20230111"
-     title="open dedicated page">
-    <img src="/gallery/img/medium/img-20230111.jpg"
-         alt="abstract art"
-         class="artwork"/>
-  </a>
-  <figcaption>
-    
-<div class="main_caption">
-  The Promise (La promesse)
-  <a href="#img-20230111"
-     title="Direct link to artwork"
-     class="hash_link">#</a></div>
-
-<div class="main_caption">Martin Jambon, 2023</div>
-    <div style="margin:0.5em 0em">
-<div style='font-size: 80%'>35.6 cm × 27.9 cm, wood panel</div>
-</div>
-  </figcaption>
-</figure>
-
-<a name="img-20221230-2">
-<figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/art/mj-20221230-2"
-     title="open dedicated page">
-    <img src="/gallery/img/medium/img-20221230-2.jpg"
-         alt="abstract art"
-         class="artwork"/>
-  </a>
-  <figcaption>
-    
-<div class="main_caption">
-  Un repas équilibré (A Balanced Meal)
-  <a href="#img-20221230-2"
-     title="Direct link to artwork"
-     class="hash_link">#</a></div>
-
-<div class="main_caption">Martin Jambon, 2022</div>
-    <div style="margin:0.5em 0em">
-<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
-</div>
-  </figcaption>
-</figure>
-
-<a name="img-20221127">
+<a name="img-20221030-2">
 <figure style="margin: 0px 1%; padding-top: 40px">
-  <a href="/art/mj-20221127"
+  <a href="/art/mj-20221030-2"
      title="open dedicated page">
-    <img src="/gallery/img/medium/img-20221127.jpg"
+    <img src="/gallery/img/medium/img-20221030-2.jpg"
          alt="abstract art"
          class="artwork"/>
   </a>
   <figcaption>
     
 <div class="main_caption">
-  Le centre du monde (The Center of the World)
-  <a href="#img-20221127"
+  The Chicken and the Egg (L’oeuf et la poule)
+  <a href="#img-20221030-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
 <div class="main_caption">Martin Jambon, 2022</div>
     <div style="margin:0.5em 0em">
-<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+<div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
 </div>
   </figcaption>
 </figure>
 
-<a name="img-20221030-1">
-<figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/art/mj-20221030-1"
+<a name="img-20221023">
+<figure style="margin: 0px 1%; padding-top: 40px">
+  <a href="/art/mj-20221023"
      title="open dedicated page">
-    <img src="/gallery/img/medium/img-20221030-1.jpg"
+    <img src="/gallery/img/medium/img-20221023.jpg"
          alt="abstract art"
          class="artwork"/>
   </a>
   <figcaption>
     
 <div class="main_caption">
-  Formation atmosphérique (Atmospheric Formation)
-  <a href="#img-20221030-1"
+  Organique (Organic)
+  <a href="#img-20221023"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
 <div class="main_caption">Martin Jambon, 2022</div>
     <div style="margin:0.5em 0em">
-<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+<div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
 </div>
   </figcaption>
 </figure>
 
-<a name="img-20220924">
-<figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/art/mj-20220924"
+<a name="img-20221016-3">
+<figure style="margin: 0px 0%; padding-top: 40px">
+  <a href="/art/mj-20221016-3"
      title="open dedicated page">
-    <img src="/gallery/img/medium/img-20220924.jpg"
+    <img src="/gallery/img/medium/img-20221016-3.jpg"
          alt="abstract art"
          class="artwork"/>
   </a>
   <figcaption>
     
 <div class="main_caption">
-  Encerclement (Surrounding)
-  <a href="#img-20220924"
+  Rock and Roll
+  <a href="#img-20221016-3"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
 <div class="main_caption">Martin Jambon, 2022</div>
     <div style="margin:0.5em 0em">
-<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 </div>
   </figcaption>
 </figure>
 
-<a name="img-20220820-2">
+<a name="img-20220803-2">
 <figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/art/mj-20220820-2"
+  <a href="/art/mj-20220803-2"
      title="open dedicated page">
-    <img src="/gallery/img/medium/img-20220820-2.jpg"
+    <img src="/gallery/img/medium/img-20220803-2.jpg"
          alt="abstract art"
          class="artwork"/>
   </a>
   <figcaption>
     
 <div class="main_caption">
-  San Francisco
-  <a href="#img-20220820-2"
+  Space Debris (Débris spatiaux)
+  <a href="#img-20220803-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
 <div class="main_caption">Martin Jambon, 2022</div>
     <div style="margin:0.5em 0em">
-<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
-</div>
-  </figcaption>
-</figure>
-
-<a name="img-20220813">
-<figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/art/mj-20220813"
-     title="open dedicated page">
-    <img src="/gallery/img/medium/img-20220813.jpg"
-         alt="abstract art"
-         class="artwork"/>
-  </a>
-  <figcaption>
-    
-<div class="main_caption">
-  Heaven and Hell but Mostly Hell (Le paradis et l’enfer mais surtout l’enfer)
-  <a href="#img-20220813"
-     title="Direct link to artwork"
-     class="hash_link">#</a></div>
-
-<div class="main_caption">Martin Jambon, 2022</div>
-    <div style="margin:0.5em 0em">
-<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
+<div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
 </div>
   </figcaption>
 </figure>
@@ -350,6 +164,98 @@ I'd love to do that! Please get in touch.
   </figcaption>
 </figure>
 
+<a name="img-20220801-1">
+<figure style="margin: 0px 1%; padding-top: 40px">
+  <a href="/art/mj-20220801-1"
+     title="open dedicated page">
+    <img src="/gallery/img/medium/img-20220801-1.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Reorganization (Réorganisation)
+  <a href="#img-20220801-1"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+</div>
+  </figcaption>
+</figure>
+
+<a name="img-20220731">
+<figure style="margin: 0px 2%; padding-top: 40px">
+  <a href="/art/mj-20220731"
+     title="open dedicated page">
+    <img src="/gallery/img/medium/img-20220731.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Wrinkles (Plis)
+  <a href="#img-20220731"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
+</div>
+  </figcaption>
+</figure>
+
+<a name="img-20220710">
+<figure style="margin: 0px 0%; padding-top: 40px">
+  <a href="/art/mj-20220710"
+     title="open dedicated page">
+    <img src="/gallery/img/medium/img-20220710.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Untitled
+  <a href="#img-20220710"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
+</div>
+  </figcaption>
+</figure>
+
+<a name="img-20220702">
+<figure style="margin: 0px 2%; padding-top: 40px">
+  <a href="/art/mj-20220702"
+     title="open dedicated page">
+    <img src="/gallery/img/medium/img-20220702.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Magic Glue (Colle magique)
+  <a href="#img-20220702"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
+</div>
+  </figcaption>
+</figure>
+
 <a name="img-20220626">
 <figure style="margin: 0px 2%; padding-top: 40px">
   <a href="/art/mj-20220626"
@@ -374,6 +280,52 @@ I'd love to do that! Please get in touch.
   </figcaption>
 </figure>
 
+<a name="img-20220611-2">
+<figure style="margin: 0px 2%; padding-top: 40px">
+  <a href="/art/mj-20220611-2"
+     title="open dedicated page">
+    <img src="/gallery/img/medium/img-20220611-2.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Sédentarité (Sedentarity)
+  <a href="#img-20220611-2"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
+</div>
+  </figcaption>
+</figure>
+
+<a name="img-20220611-1">
+<figure style="margin: 0px 1%; padding-top: 40px">
+  <a href="/art/mj-20220611-1"
+     title="open dedicated page">
+    <img src="/gallery/img/medium/img-20220611-1.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Attaque (Attack)
+  <a href="#img-20220611-1"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+</div>
+  </figcaption>
+</figure>
+
 <a name="img-20220530">
 <figure style="margin: 0px 1%; padding-top: 40px">
   <a href="/art/mj-20220530"
@@ -387,6 +339,144 @@ I'd love to do that! Please get in touch.
 <div class="main_caption">
   Duel
   <a href="#img-20220530"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+</div>
+  </figcaption>
+</figure>
+
+<a name="img-20220529">
+<figure style="margin: 0px 1%; padding-top: 40px">
+  <a href="/art/mj-20220529"
+     title="open dedicated page">
+    <img src="/gallery/img/medium/img-20220529.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Isolement culturel forcé (Forced Cultural Isolation)
+  <a href="#img-20220529"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>30.5 cm × 22.9 cm, paper</div>
+</div>
+  </figcaption>
+</figure>
+
+<a name="img-20220523">
+<figure style="margin: 0px 2%; padding-top: 40px">
+  <a href="/art/mj-20220523"
+     title="open dedicated page">
+    <img src="/gallery/img/medium/img-20220523.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Meltdown (Effondrement)
+  <a href="#img-20220523"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
+</div>
+  </figcaption>
+</figure>
+
+<a name="img-20220521">
+<figure style="margin: 0px 1%; padding-top: 40px">
+  <a href="/art/mj-20220521"
+     title="open dedicated page">
+    <img src="/gallery/img/medium/img-20220521.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  La visite (The Visit)
+  <a href="#img-20220521"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
+</div>
+  </figcaption>
+</figure>
+
+<a name="img-20220508-1">
+<figure style="margin: 0px 1%; padding-top: 40px">
+  <a href="/art/mj-20220508-1"
+     title="open dedicated page">
+    <img src="/gallery/img/medium/img-20220508-1.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  American Pop (Pop américaine)
+  <a href="#img-20220508-1"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
+</div>
+  </figcaption>
+</figure>
+
+<a name="img-20220506">
+<figure style="margin: 0px 2%; padding-top: 40px">
+  <a href="/art/mj-20220506"
+     title="open dedicated page">
+    <img src="/gallery/img/medium/img-20220506.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Toxic Fumes (Vapeurs toxiques)
+  <a href="#img-20220506"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
+</div>
+  </figcaption>
+</figure>
+
+<a name="img-20220504-2">
+<figure style="margin: 0px 0%; padding-top: 40px">
+  <a href="/art/mj-20220504-2"
+     title="open dedicated page">
+    <img src="/gallery/img/medium/img-20220504-2.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Final Moments (Derniers moments)
+  <a href="#img-20220504-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
@@ -420,6 +510,52 @@ I'd love to do that! Please get in touch.
   </figcaption>
 </figure>
 
+<a name="img-20220503">
+<figure style="margin: 0px 0%; padding-top: 40px">
+  <a href="/art/mj-20220503"
+     title="open dedicated page">
+    <img src="/gallery/img/medium/img-20220503.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Surgery (Chirurgie)
+  <a href="#img-20220503"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
+</div>
+  </figcaption>
+</figure>
+
+<a name="img-20220502">
+<figure style="margin: 0px 0%; padding-top: 40px">
+  <a href="/art/mj-20220502"
+     title="open dedicated page">
+    <img src="/gallery/img/medium/img-20220502.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Bandwagon
+  <a href="#img-20220502"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>27.9 cm × 21.6 cm, paper</div>
+</div>
+  </figcaption>
+</figure>
+
 <a name="img-20220429">
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/art/mj-20220429"
@@ -433,6 +569,53 @@ I'd love to do that! Please get in touch.
 <div class="main_caption">
   Bubbles (Bulles)
   <a href="#img-20220429"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+</div>
+  </figcaption>
+</figure>
+
+<a name="img-20220426-2">
+<figure style="margin: 0px 0%; padding-top: 40px">
+  <a href="/art/mj-20220426-2"
+     title="open dedicated page">
+    <img src="/gallery/img/medium/img-20220426-2.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Floating Blue Shape (Forme flottante bleue)
+  <a href="#img-20220426-2"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+
+<div style='font-style: italic'>Private collection</div></div>
+  </figcaption>
+</figure>
+
+<a name="img-20220426-1">
+<figure style="margin: 0px 0%; padding-top: 40px">
+  <a href="/art/mj-20220426-1"
+     title="open dedicated page">
+    <img src="/gallery/img/medium/img-20220426-1.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  L&#x27;idée de la neige (The Idea of Snow)
+  <a href="#img-20220426-1"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
@@ -535,75 +718,6 @@ I'd love to do that! Please get in touch.
   </figcaption>
 </figure>
 
-<a name="img-20220405">
-<figure style="margin: 0px 0%; padding-top: 40px">
-  <a href="/art/mj-20220405"
-     title="open dedicated page">
-    <img src="/gallery/img/medium/img-20220405.jpg"
-         alt="abstract art"
-         class="artwork"/>
-  </a>
-  <figcaption>
-    
-<div class="main_caption">
-  Insouciance
-  <a href="#img-20220405"
-     title="Direct link to artwork"
-     class="hash_link">#</a></div>
-
-<div class="main_caption">Martin Jambon, 2022</div>
-    <div style="margin:0.5em 0em">
-<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
-</div>
-  </figcaption>
-</figure>
-
-<a name="img-20220401-4">
-<figure style="margin: 0px 0%; padding-top: 40px">
-  <a href="/art/mj-20220401-4"
-     title="open dedicated page">
-    <img src="/gallery/img/medium/img-20220401-4.jpg"
-         alt="abstract art"
-         class="artwork"/>
-  </a>
-  <figcaption>
-    
-<div class="main_caption">
-  Play with your Food (Joue avec ta nourriture)
-  <a href="#img-20220401-4"
-     title="Direct link to artwork"
-     class="hash_link">#</a></div>
-
-<div class="main_caption">Martin Jambon, 2022</div>
-    <div style="margin:0.5em 0em">
-<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
-</div>
-  </figcaption>
-</figure>
-
-<a name="img-20220330">
-<figure style="margin: 0px 0%; padding-top: 40px">
-  <a href="/art/mj-20220330"
-     title="open dedicated page">
-    <img src="/gallery/img/medium/img-20220330.jpg"
-         alt="abstract art"
-         class="artwork"/>
-  </a>
-  <figcaption>
-    
-<div class="main_caption">
-  Influence
-  <a href="#img-20220330"
-     title="Direct link to artwork"
-     class="hash_link">#</a></div>
-
-<div class="main_caption">Martin Jambon, 2022</div>
-    <div style="margin:0.5em 0em">
-<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
-</div>
-  </figcaption>
-</figure>
-
 <a name="img-20220322-2">
 <figure style="margin: 0px 0%; padding-top: 40px">
   <a href="/art/mj-20220322-2"
@@ -627,19 +741,19 @@ I'd love to do that! Please get in touch.
   </figcaption>
 </figure>
 
-<a name="img-20220320-1">
+<a name="img-20220320-2">
 <figure style="margin: 0px 0%; padding-top: 40px">
-  <a href="/art/mj-20220320-1"
+  <a href="/art/mj-20220320-2"
      title="open dedicated page">
-    <img src="/gallery/img/medium/img-20220320-1.jpg"
+    <img src="/gallery/img/medium/img-20220320-2.jpg"
          alt="abstract art"
          class="artwork"/>
   </a>
   <figcaption>
     
 <div class="main_caption">
-  Embedded in Spacetime (Incrusté dans l&#x27;espace-temps)
-  <a href="#img-20220320-1"
+  In Bloom (Floraison)
+  <a href="#img-20220320-2"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
@@ -650,25 +764,48 @@ I'd love to do that! Please get in touch.
   </figcaption>
 </figure>
 
-<a name="img-20220317">
-<figure style="margin: 0px 15%; padding-top: 40px">
-  <a href="/art/mj-20220317"
+<a name="img-20220309">
+<figure style="margin: 0px 0%; padding-top: 40px">
+  <a href="/art/mj-20220309"
      title="open dedicated page">
-    <img src="/gallery/img/medium/img-20220317.jpg"
+    <img src="/gallery/img/medium/img-20220309.jpg"
          alt="abstract art"
          class="artwork"/>
   </a>
   <figcaption>
     
 <div class="main_caption">
-  Boredom (L&#x27;ennui)
-  <a href="#img-20220317"
+  Untitled
+  <a href="#img-20220309"
      title="Direct link to artwork"
      class="hash_link">#</a></div>
 
 <div class="main_caption">Martin Jambon, 2022</div>
     <div style="margin:0.5em 0em">
-<div style='font-size: 80%'>21.0 cm × 29.7 cm, paper</div>
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
+</div>
+  </figcaption>
+</figure>
+
+<a name="img-20220305-3">
+<figure style="margin: 0px 0%; padding-top: 40px">
+  <a href="/art/mj-20220305-3"
+     title="open dedicated page">
+    <img src="/gallery/img/medium/img-20220305-3.jpg"
+         alt="abstract art"
+         class="artwork"/>
+  </a>
+  <figcaption>
+    
+<div class="main_caption">
+  Untitled
+  <a href="#img-20220305-3"
+     title="Direct link to artwork"
+     class="hash_link">#</a></div>
+
+<div class="main_caption">Martin Jambon, 2022</div>
+    <div style="margin:0.5em 0em">
+<div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
 </div>
   </figcaption>
 </figure>
@@ -692,52 +829,6 @@ I'd love to do that! Please get in touch.
 <div class="main_caption">Martin Jambon, 2022</div>
     <div style="margin:0.5em 0em">
 <div style='font-size: 80%'>29.7 cm × 21.0 cm, paper</div>
-</div>
-  </figcaption>
-</figure>
-
-<a name="img-20220226">
-<figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/art/mj-20220226"
-     title="open dedicated page">
-    <img src="/gallery/img/medium/img-20220226.jpg"
-         alt="abstract art"
-         class="artwork"/>
-  </a>
-  <figcaption>
-    
-<div class="main_caption">
-  War (La guerre)
-  <a href="#img-20220226"
-     title="Direct link to artwork"
-     class="hash_link">#</a></div>
-
-<div class="main_caption">Martin Jambon, 2022</div>
-    <div style="margin:0.5em 0em">
-<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
-</div>
-  </figcaption>
-</figure>
-
-<a name="img-20220212">
-<figure style="margin: 0px 2%; padding-top: 40px">
-  <a href="/art/mj-20220212"
-     title="open dedicated page">
-    <img src="/gallery/img/medium/img-20220212.jpg"
-         alt="abstract art"
-         class="artwork"/>
-  </a>
-  <figcaption>
-    
-<div class="main_caption">
-  Untitled
-  <a href="#img-20220212"
-     title="Direct link to artwork"
-     class="hash_link">#</a></div>
-
-<div class="main_caption">Martin Jambon, 2022</div>
-    <div style="margin:0.5em 0em">
-<div style='font-size: 80%'>35.6 cm × 27.9 cm, canvas</div>
 </div>
   </figcaption>
 </figure>
