@@ -208,6 +208,7 @@ def make_standalone_page(row: Dict[str, str]) -> None:
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
   <meta charset="utf-8" />
+  <meta name=viewport content="width=device-width, initial-scale=1">
   <title>{html.escape(title)}</title>
   <style type="text/css">
     body {{
@@ -396,6 +397,7 @@ def generate_series(
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
   <meta charset="utf-8" />
+  <meta name=viewport content="width=device-width, initial-scale=1">
   <title>{html.escape(page.title)}</title>
   <link rel="stylesheet" href="/blog.css" />
   <style type="text/css">
@@ -502,15 +504,16 @@ def print_main_row(
     # rendered with a smaller surface area)
     fig_margin = int((1.0 - figure_scaling(medium)) / 2 * 100)
 
-    row_html = f"""
+    # no whitespace between inline blocks to avoid undesirable spacing
+    row_html = f"""\
 <a href="{html.escape(series_url)}"
-   class="series_link">
+   class="series_link">\
 <div class="box">
   <div class="shadowbox"></div>
   <div class="textbox">{html.escape(title)}</div>
   <img class="artwork" src="{html.escape(img_url)}"/>
-</div>
-</a>
+</div>\
+</a>\
 """
     # Write to main page
     html_file.write(row_html)
@@ -528,6 +531,7 @@ def generate_main(
 <html>
 <head>
 <meta charset="utf-8" />
+<meta name=viewport content="width=device-width, initial-scale=1">
 <title>Martin J.</title>
 <style type="text/css">
 body {{
@@ -576,9 +580,9 @@ body, a, a:active, a:visited {{
 
 .contents {{
   margin-top: 6ex;
-  display: flex;
   flex-wrap: wrap;
   line-height: 0;
+  text-align: center;
 }}
 
 .box {{
@@ -587,6 +591,7 @@ body, a, a:active, a:visited {{
   width: 25ex;
   height: 25ex;
   overflow: hidden;
+  text-align: left;
 }}
 
 .textbox {{
@@ -649,6 +654,11 @@ or email me at <a href="mailto:art@mjambon.com">art@mjambon.com</a>.
                 img_id=img_id,
                 title=title
             )
+        # Hack: fillers that allow the images in the last visible row to
+        # be left-aligned rather than centered.
+        for i in range(3):
+            out.write('<div class="box"></div>')
+
         out.write(
         """
 </div>
