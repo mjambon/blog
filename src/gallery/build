@@ -657,7 +657,7 @@ or email me at <a href="mailto:art@mjambon.com">art@mjambon.com</a>.
         # Hack: fillers that allow the images in the last visible row to
         # be left-aligned rather than centered.
         for i in range(3):
-            out.write('<div class="box"></div>')
+            out.write('<div class="box" style="height:0"></div>')
 
         out.write(
         """
