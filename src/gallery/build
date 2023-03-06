@@ -151,10 +151,16 @@ def get_img_page_url(row: Dict[str, str]) -> str:
     return f"{ART_PATH}/{row['artwork_id']}"
 
 
+# 2022-09-08 -> September 2022
+def reformat_date(isodate: str) -> str:
+    date_ = date.fromisoformat(isodate)
+    return f"{date_.strftime('%B')} {date_.year}"
+
+
 def make_standalone_page(row: Dict[str, str]) -> None:
     artwork_id = row['artwork_id']
     img_id = row['image_id']
-    year = date.fromisoformat(row['date']).year
+    date_str = reformat_date(row['date'])
     title = get_title(row)
     img_name = img_id + '.jpg'
     hash_name = img_id
@@ -188,7 +194,7 @@ def make_standalone_page(row: Dict[str, str]) -> None:
 
     author_html = f"""
 <div class="main_caption">
-  Martin Jambon, {year}
+  Martin Jambon, {date_str}
   <a href="https://www.instagram.com/martinjambon/">
     <img src="/gallery/img/other/instagram-logo.png"
         title="Instagram"
@@ -277,7 +283,7 @@ def print_series_row(row: Dict[str, str],
               generate_dependencies: bool = False,
               force: bool = False) -> None:
     img_id = row['image_id']
-    year = date.fromisoformat(row['date']).year
+    date_str = reformat_date(row['date'])
     title = get_title(row)
     img_name = img_id + '.jpg'
     hash_name = img_id
@@ -349,7 +355,7 @@ def print_series_row(row: Dict[str, str],
 
     author_html = f"""
 <div class="main_caption">\
-  Martin Jambon, {year}\
+  Martin Jambon, {date_str}\
   <a href="https://www.instagram.com/martinjambon/">
     <img src="/gallery/img/other/instagram-logo.png"
          title="Instagram"
