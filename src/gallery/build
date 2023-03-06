@@ -115,7 +115,7 @@ def format_location(row: Dict[str, str]) -> Optional[str]:
     poss = row['possessor_kind']
     if poss == 'private' or poss == 'family':
         return 'Private collection'
-    elif poss == 'ephemeral':
+    elif poss == 'ephemeral' or poss == 'recycled':
         return 'Ephemeral'
     else:
         return None
