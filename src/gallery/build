@@ -489,13 +489,10 @@ figcaption {{
 
 # Print what represents a series on the main page.
 def print_main_row(
-        row: Dict[str, str],
         html_file: TextIO,
-        force: bool = False) -> None:
-    series_id = row['series_id']
-    img_id = row['image_id']
-    short_description = row['short_description_en']
-    series_url = f'{SERIES_PATH}/{series_id}'
+        series_url: str,
+        img_id: str,
+        title: str) -> None:
     img_name = f'{img_id}.jpg'
     img_url = f'{IMG_PATH}/medium/{img_name}'
 
@@ -510,7 +507,7 @@ def print_main_row(
    class="series_link">
 <div class="box">
   <div class="shadowbox"></div>
-  <div class="textbox">{html.escape(short_description)}</div>
+  <div class="textbox">{html.escape(title)}</div>
   <img class="artwork" src="{html.escape(img_url)}"/>
 </div>
 </a>
@@ -521,6 +518,7 @@ def print_main_row(
 
 def generate_main(
         html_file: str,
+        artwork_rows: List[Dict[str, str]],
         series_rows: List[Dict[str, str]],
         force: bool = False) -> None:
     print(f"### Generating {html_file}")
@@ -628,14 +626,29 @@ of the United States. I started painting in 2022.
 <p>
 Follow me on <a href="https://www.instagram.com/martinjambon">Instagram</a>
 or email me at <a href="mailto:art@mjambon.com">art@mjambon.com</a>.
-I'm currently looking for opportunities to display my artworks in public.
 </p>
 <div class="contents">
 """
     )
 
+        latest_img_id = artwork_rows[0]['image_id']
+        print_main_row(
+            html_file=out,
+            series_url=ALL_PATH,
+            img_id=latest_img_id,
+            title='Latest'
+        )
         for row in series_rows:
-            print_main_row(row, out, force=force)
+            series_id = row['series_id']
+            series_url = f'{SERIES_PATH}/{series_id}'
+            img_id = row['image_id']
+            title = row['short_description_en']
+            print_main_row(
+                html_file=out,
+                series_url=series_url,
+                img_id=img_id,
+                title=title
+            )
         out.write(
         """
 </div>
@@ -711,6 +724,6 @@ def main() -> None:
         generate_series(page, generate_dependencies=False, force=args.force)
 
     # Main page
-    generate_main('index.html', series_rows, force=args.force)
+    generate_main('index.html', artwork_rows, series_rows, force=args.force)
 
 main()
