@@ -67,19 +67,6 @@ figcaption {
   color: #666;
 }
 </style>
-
-<p>
-Born in Orléans, France in 1977,
-I'm based in Palo Alto, in the San Francisco Bay Area, on the West Coast
-of the United States. I started painting in 2022.
-</p>
-<p>
-Follow me on [Instagram](https://www.instagram.com/martinjambon/)
-or email me at <a href="mailto:art@mjambon.com">art@mjambon.com</a>.
-I'm currently looking for opportunities to display my artworks in public.
-</p>
-<div><a href="/gallery">popular</a> | latest</div>
-
 <div class="artworks">
 
 <a name="img-20230219">

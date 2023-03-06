@@ -19,10 +19,12 @@ import subprocess
 FAVES_PATH = '/gallery'
 ALL_PATH = '/gallery/all'
 IMG_PATH = '/gallery/img'
+SERIES_PATH = '/gallery/series'
 ART_PATH = '/art'
 
 @dataclass
 class Page:
+    title: str
     # Folder containing the md and html files
     folder: str
     # Output file
@@ -144,7 +146,12 @@ def get_title(row: Dict[str, str]) -> str:
     else:
         return 'Untitled'
 
-def make_standalone_page(row: Dict[str, str]) -> str:
+
+def get_img_page_url(row: Dict[str, str]) -> str:
+    return f"{ART_PATH}/{row['artwork_id']}"
+
+
+def make_standalone_page(row: Dict[str, str]) -> None:
     artwork_id = row['artwork_id']
     img_id = row['image_id']
     year = date.fromisoformat(row['date']).year
@@ -156,9 +163,6 @@ def make_standalone_page(row: Dict[str, str]) -> str:
     html_dir = 'art/' + artwork_id
     html_file = html_dir + '/index.html'
     os.makedirs(html_dir, exist_ok=True)
-
-    # URL of this page, to be returned to the caller
-    img_page_url = ART_PATH + '/' + artwork_id
 
     # URL to this artwork on the gallery listing
     gallery_url = f"{ALL_PATH}#{hash_name}"
@@ -264,10 +268,12 @@ def make_standalone_page(row: Dict[str, str]) -> str:
 """
     with open(html_file, "w") as out:
         out.write(page_contents)
-    return img_page_url
 
-def print_row(row: Dict[str, str],
+
+# Print an artwork on a page showing a series.
+def print_series_row(row: Dict[str, str],
               md_file: TextIO,
+              generate_dependencies: bool = False,
               force: bool = False) -> None:
     img_id = row['image_id']
     year = date.fromisoformat(row['date']).year
@@ -275,38 +281,39 @@ def print_row(row: Dict[str, str],
     img_name = img_id + '.jpg'
     hash_name = img_id
 
-    img_page_url = make_standalone_page(row)
-
-    # Generate images of different sizes
-    orig = 'img/original/' + img_name
-
-    large = 'img/large/' + img_name
-    # JPEG image quality. Default quality is 92, max is 100.
-    quality = "95"
-    if force or needs_rebuild(orig, large):
-        verbose_command(["convert", "-resize", "1600x1600",
-                         "-quality", quality,
-                         orig, large])
-
     medium = 'img/medium/' + img_name
-    if force or needs_rebuild(orig, medium):
-        verbose_command(["convert", "-resize", "800x800",
-                         "-quality", quality,
-                         orig, medium])
+    if generate_dependencies:
+        make_standalone_page(row)
 
-    # Padded square images for Instagram
-    square = 'img/square/' + img_name
-    if force or needs_rebuild(orig, square):
-        verbose_command([
-            "convert",
-            orig,
-            "-resize", "1450x1450>",
-            "-background", "#eee",
-            "-gravity", "center",
-            "-extent", "1600x1600",
-            "-quality", quality,
-            square
-        ])
+        # Generate images of different sizes
+        orig = 'img/original/' + img_name
+
+        large = 'img/large/' + img_name
+        # JPEG image quality. Default quality is 92, max is 100.
+        quality = "95"
+        if force or needs_rebuild(orig, large):
+            verbose_command(["convert", "-resize", "1600x1600",
+                             "-quality", quality,
+                             orig, large])
+
+        if force or needs_rebuild(orig, medium):
+            verbose_command(["convert", "-resize", "800x800",
+                             "-quality", quality,
+                             orig, medium])
+
+        # Padded square images for Instagram
+        square = 'img/square/' + img_name
+        if force or needs_rebuild(orig, square):
+            verbose_command([
+                "convert",
+                orig,
+                "-resize", "1450x1450>",
+                "-background", "#eee",
+                "-gravity", "center",
+                "-extent", "1600x1600",
+                "-quality", quality,
+                square
+            ])
 
     # This resizes the image on the page so that all images have the same
     # surface area. (except for those which are too wide, which will be
@@ -355,6 +362,7 @@ def print_row(row: Dict[str, str],
 """
 
     # Write to main page
+    img_page_url = get_img_page_url(row)
     md_file.write(
 f"""
 <a name="{html.escape(hash_name)}">
@@ -372,50 +380,20 @@ f"""
 """
     )
 
-VARIANTS = [
-    ('faves', "popular", FAVES_PATH),
-    ('all', 'latest', ALL_PATH),
-]
-
-# Generate the page-specific HTML for the full gallery (not series)
-def make_page_html_all(faves_only: bool) -> str:
-    active_variant = 'faves' if faves_only else 'all'
-    links = []
-    for variant, descr, path in VARIANTS:
-        if variant == active_variant:
-            text = descr
-            htm = f"{html.escape(text)}"
-        else:
-            text = f"{descr}"
-            htm = f"""<a href="{html.escape(path)}">{html.escape(text)}</a>"""
-        links.append(htm)
-    links_html = " | ".join(links)
-
-    return f"""
-<p>
-Born in Orléans, France in 1977,
-I'm based in Palo Alto, in the San Francisco Bay Area, on the West Coast
-of the United States. I started painting in 2022.
-</p>
-<p>
-Follow me on [Instagram](https://www.instagram.com/martinjambon/)
-or email me at <a href="mailto:art@mjambon.com">art@mjambon.com</a>.
-I'm currently looking for opportunities to display my artworks in public.
-</p>
-<div>{links_html}</div>
-"""
 
 #
 # We're producing mixed Markdown/HTML code. Beware that blank lines
 # result in the creation of <p> elements.
 #
-def generate(page: Page,
-             force: bool = False) -> None:
+def generate_series(
+        page: Page,
+        generate_dependencies: bool,
+        force: bool = False) -> None:
     print(f"### Generating {page.md_file}")
     rows = page.rows
     with open(page.md_file, 'w') as out:
         out.write(
-        f"""% Martin J.
+        f"""% {html.escape(page.title)}
 <!-- generated by './build' -->
 
 <style>
@@ -484,13 +462,12 @@ figcaption {{
   color: #666;
 }}
 </style>
-{page.page_specific_html}
 <div class="artworks">
 """
     )
         for row in rows:
             if row['show'] == '1':
-                print_row(row, out, force=force)
+                print_series_row(row, out, generate_dependencies, force=force)
         out.write(
         """
 </div>
@@ -503,30 +480,197 @@ figcaption {{
         )
 
 
+# Print what represents a series on the main page.
+def print_main_row(
+        row: Dict[str, str],
+        md_file: TextIO,
+        force: bool = False) -> None:
+    series_id = row['series_id']
+    img_id = row['image_id']
+    short_description = row['short_description_en']
+    series_url = f'{SERIES_PATH}/{series_id}'
+    img_name = f'{img_id}.jpg'
+    img_url = f'{IMG_PATH}/medium/{img_name}'
+
+    medium = f'img/medium/{img_name}'
+    # This resizes the image on the page so that all images have the same
+    # surface area. (except for those which are too wide, which will be
+    # rendered with a smaller surface area)
+    fig_margin = int((1.0 - figure_scaling(medium)) / 2 * 100)
+
+    row_html = f"""
+<a href="{html.escape(series_url)}"
+   class="series_link">
+<div class="box">
+  <div class="shadowbox"></div>
+  <div class="textbox">{html.escape(short_description)}</div>
+  <img class="artwork" src="{html.escape(img_url)}"/>
+</div>
+</a>
+"""
+    # Write to main page
+    md_file.write(row_html)
+
+
+def generate_main(
+        html_file: str,
+        series_rows: List[Dict[str, str]],
+        force: bool = False) -> None:
+    print(f"### Generating {html_file}")
+    with open(html_file, 'w') as out:
+        out.write(
+        f"""<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Martin J.</title>
+<style type="text/css">
+body {{
+  margin: 6.5em auto 2.5em auto;
+  padding: 0.5em 1.5em;
+  max-width: 100ex;
+  font-family: sans-serif;
+}}
+
+body, a, a:active, a:visited {{
+  color: #666;
+}}
+
+@media (hover: hover) {{
+  .shadowbox {{
+    position: absolute;
+
+    /* fade in and out */
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+  }}
+
+  .box:hover .shadowbox {{
+    visibility: visible;
+    opacity: 1;
+  }}
+
+  .textbox {{
+    /* fade in and out */
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+  }}
+
+  .box:hover .textbox {{
+    visibility: visible;
+    opacity: 1;
+  }}
+}}
+
+.contents {{
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 0;
+}}
+
+.box {{
+  position: relative;
+  display: inline-block;
+  width: 25ex;
+  height: 25ex;
+  overflow: hidden;
+}}
+
+.textbox {{
+  color: white;
+  font-size: 120%;
+  font-weight: bold;
+  line-height: normal;
+
+  /* center */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* show text over the image on mobile devices */
+  z-index: 2;
+}}
+
+.series_link, .series_link:hover {{
+  text-decoration: none;
+}}
+
+img.artwork {{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transform: scale(1.6);
+}}
+</style>
+<h1>Martin J.</h1>
+<p>
+Born in Orléans, France in 1977,
+I'm based in Palo Alto, in the San Francisco Bay Area, on the West Coast
+of the United States. I started painting in 2022.
+</p>
+<p>
+Follow me on <a href="https://www.instagram.com/martinjambon">Instagram</a>
+or email me at <a href="mailto:art@mjambon.com">art@mjambon.com</a>.
+I'm currently looking for opportunities to display my artworks in public.
+</p>
+<div class="contents">
+"""
+    )
+
+        for row in series_rows:
+            print_main_row(row, out, force=force)
+        out.write(
+        """
+</div>
+"""
+        )
+
+
 def load_artworks_csv() -> List[Dict[str, str]]:
     with open('artworks.csv', 'r') as csvfile:
         row_reader = csv.DictReader(csvfile)
         return list(row_reader)
 
 
-def extract_series(rows: List[Dict[str, str]]) -> List[Page]:
-    tbl: Dict[str, List[Dict[str,str]]] = {}
-    for row in rows:
+def load_series_csv() -> List[Dict[str, str]]:
+    with open('series.csv', 'r') as csvfile:
+        row_reader = csv.DictReader(csvfile)
+        return list(row_reader)
+
+
+# Group artworks by series ID
+def extract_series(series_rows: List[Dict[str, str]],
+                   artwork_rows: List[Dict[str, str]]) -> List[Page]:
+    series_tbl = { row['series_id']:row for row in series_rows }
+    artwork_groups: Dict[str, List[Dict[str,str]]] = {}
+    for row in artwork_rows:
         key = row['series']
         if key:
-            if key in tbl:
-                tbl[key].append(row)
+            if key in artwork_groups:
+                artwork_groups[key].append(row)
             else:
-                tbl[key] = [row]
+                artwork_groups[key] = [row]
     def create_page(series_id: str, rows: List[Dict[str,str]]) -> Page:
+        title = series_tbl[series_id]['short_description_en'];
         os.makedirs(f'series/{series_id}', exist_ok=True)
         return Page(
+            title=title,
             folder=f'series/{series_id}',
             md_file=f'series/{series_id}/index.md',
             page_specific_html='',
             rows=rows
         )
-    return [ create_page(series_id, rows) for series_id, rows in tbl.items() ]
+    return [ create_page(series_id, rows)
+             for series_id, rows in artwork_groups.items() ]
 
 
 def main() -> None:
@@ -538,32 +682,25 @@ def main() -> None:
     os.makedirs('img/large', exist_ok=True)
     os.makedirs('img/medium', exist_ok=True)
 
-    rows = load_artworks_csv()
+    artwork_rows = load_artworks_csv()
+    series_rows = load_series_csv()
 
     # All artworks
     os.makedirs('all', exist_ok=True)
     page_all = Page(
+        title='Martin J.',
         folder='all',
-        md_file='all/index.md',
-        page_specific_html=make_page_html_all(faves_only=False),
-        rows=rows
+        md_file='all/index.html',
+        page_specific_html='This is everything.',
+        rows=artwork_rows
     )
-    generate(page_all, force=args.force)
-
-    # Artist's picks
-    page_faves = Page(
-        folder='.',
-        md_file='index.md',
-        page_specific_html=make_page_html_all(faves_only=True),
-        rows=[ row for row in rows if row['favorite'] == '1' ]
-    )
-    generate(page_faves, force=args.force)
+    generate_series(page_all, generate_dependencies=True, force=args.force)
 
     # Series
     os.makedirs('series', exist_ok=True)
-    series_pages = extract_series(rows)
+    series_pages = extract_series(series_rows, artwork_rows)
     for page in series_pages:
-        generate(page, force=args.force)
+        generate_series(page, generate_dependencies=False, force=args.force)
 
     # Write makefile to be included in the main makefile
     with open('index.mk', 'w') as makefile_output:
@@ -571,5 +708,8 @@ def main() -> None:
         for page in series_pages:
             makefile_output.write(f""" \\\n  gallery/{page.folder}""")
         makefile_output.write("\n")
+
+    # Main page
+    generate_main('index.html', series_rows, force=args.force)
 
 main()

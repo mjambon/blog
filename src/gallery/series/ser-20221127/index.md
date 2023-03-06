@@ -67,7 +67,6 @@ figcaption {
   color: #666;
 }
 </style>
-
 <div class="artworks">
 
 <a name="img-20230108-1">

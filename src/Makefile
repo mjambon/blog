@@ -4,8 +4,6 @@ include gallery/index.mk
 
 ARTICLES = \
   dictionary \
-  gallery \
-  gallery/all \
   $(GALLERY_PATHS) \
   notes \
   $(NOTE_PATHS) \
@@ -62,6 +60,8 @@ html: $(HTML)
 
 .PHONY: other-html
 other-html:
+	cp -u gallery/index.html $(DOCROOT)/gallery/
+	cp -u gallery/all/index.html $(DOCROOT)/gallery/all/
 	for x in gallery/art/*; do \
 	  name=$$(basename $$x); \
 	  mkdir -p $(DOCROOT)/art/$$name; \
