@@ -1,4 +1,4 @@
-% Wealth vs. Money
+% Wealth vs. money
 
 
 If you destroy someone's property, it decreases the world's total

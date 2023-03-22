@@ -29,7 +29,7 @@ Format:
 -->
 
 *** wealth-vs-money
-title: Wealth vs. Money
+title: Wealth vs. money
 date: 2023-03-22
 
 If you destroy someone's property, it decreases the world's total
