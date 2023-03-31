@@ -28,6 +28,13 @@ Format:
 
 -->
 
+*** risk
+title: Risk
+date: 2023-03-30
+
+Risk is a property of a world model. The world itself doesn't have risk, it 
+just is.
+
 *** wealth-vs-money
 title: Wealth vs. money
 date: 2023-03-22

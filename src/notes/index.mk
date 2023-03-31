@@ -1,4 +1,5 @@
 NOTE_PATHS = \
+  notes/risk \
   notes/wealth-vs-money \
   notes/settling-the-liar-paradox \
   notes/cohesion-by-threat-of-mutual-destruction \
