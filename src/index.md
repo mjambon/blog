@@ -21,6 +21,25 @@ France, I live in the San Francisco Bay Area.
 &bull; [Flickr](https://www.flickr.com/photos/mjambon)
 &bull; [Strava](http://www.strava.com/athletes/750791)
 
+Art (2022-present)
+--
+
+Follow me on [Instagram](https://www.instagram.com/martinjambon) or
+visit [my entire collection](https://martinj.art).
+
+<figure style="margin: 0px 1%; padding-top: 40px">
+<a href="/gallery">
+  <img src="/img/img-20220801-2.jpg"
+       alt='abstract art'
+       style="background-color:#eee; padding:3%; width: 94%"/>
+</a>
+<figcaption style="color:#666; margin: 1em 0em">
+<div>
+Space nugget, 2022
+</div>
+</figcaption>
+</figure>
+
 Artificial cognition
 --
 
@@ -175,22 +194,3 @@ Publications relevant to the SuMo project:
   The SuMo server: 3D search for protein functional sites.
   <a href="paper/proteins/sumo2005.pdf">Bioinformatics.
   2005 Sep 1; 21(20):3929­3930</a>.
-
-Art (2022-present)
---
-
-Follow me on [Instagram](https://www.instagram.com/martinjambon) or
-visit [my entire collection](https://martinj.art).
-
-<figure style="margin: 0px 1%; padding-top: 40px">
-<a href="/gallery">
-  <img src="/img/img-20220801-2.jpg"
-       alt='abstract art'
-       style="background-color:#eee; padding:3%; width: 94%"/>
-</a>
-<figcaption style="color:#666; margin: 1em 0em">
-<div>
-Space nugget, 2022
-</div>
-</figcaption>
-</figure>
