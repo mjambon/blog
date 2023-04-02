@@ -3,7 +3,7 @@
 <img src="img/mjambon-brown-2022.jpg"
      style="width:100px"
      alt="portrait">
-<a href="/gallery">
+<a href="https://martinj.art">
   <img src="/img/img-20220801-2.jpg"
        alt="abstract art"
        style="height: 100px"/>
@@ -176,10 +176,11 @@ Publications relevant to the SuMo project:
   <a href="paper/proteins/sumo2005.pdf">Bioinformatics.
   2005 Sep 1; 21(20):3929­3930</a>.
 
-Original artwork (2022-present)
+Art (2022-present)
 --
 
-Visit [my portfolio](https://martinj.art) or [my entire collection](gallery).
+Follow me on [Instagram](https://www.instagram.com/martinjambon) or
+visit [my entire collection](https://martinj.art).
 
 <figure style="margin: 0px 1%; padding-top: 40px">
 <a href="/gallery">
