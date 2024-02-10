@@ -25,7 +25,7 @@ Art (2022-present)
 --
 
 Follow me on [Instagram](https://www.instagram.com/martinjambon) or
-visit [my entire collection](https://martinj.art).
+visit [my online gallery](https://martinj.art).
 
 <figure style="margin: 0px 1%; padding-top: 40px">
 <a href="/gallery">
