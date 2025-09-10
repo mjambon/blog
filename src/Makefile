@@ -26,7 +26,8 @@ ARTICLES = \
   2020-03-29-software-engineering-notes \
   2020-06-28-dynamic-signal-uniformization \
   2020-12-25-authoritarian \
-  2021-12-31-mind-vs-identity
+  2021-12-31-mind-vs-identity \
+  2025-09-10-ocaml-projects
 
 DOCROOT = ../docs
 

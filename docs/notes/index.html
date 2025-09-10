@@ -5,16 +5,29 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Notes</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
   </style>
   <link rel="stylesheet" href="/blog.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
   <meta name=viewport content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Language" content="en">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_CHTML-full"
+  type="text/javascript"></script>
 </head>
 <body>
 <ul class="navbar">
@@ -30,157 +43,351 @@
 <ul>
 <li><a href="#risk">Risk</a></li>
 <li><a href="#wealth-vs-money">Wealth vs. money</a></li>
-<li><a href="#settling-the-liar-paradox">Settling the liar’s paradox</a></li>
-<li><a href="#cohesion-by-threat-of-mutual-destruction">Cohesion by threat of mutual destruction</a></li>
-<li><a href="#theres-no-evil-only-extreme-judgments">There’s no evil, only extreme judgments.</a></li>
+<li><a href="#settling-the-liar-paradox">Settling the liar’s
+paradox</a></li>
+<li><a href="#cohesion-by-threat-of-mutual-destruction">Cohesion by
+threat of mutual destruction</a></li>
+<li><a href="#theres-no-evil-only-extreme-judgments">There’s no evil,
+only extreme judgments.</a></li>
 <li><a href="#why-does-anything-exist">Why does anything exist?</a></li>
 <li><a href="#should-i-reply">Should I reply?</a></li>
 <li><a href="#respect-is-earned">Respect is earned</a></li>
 <li><a href="#lasting-interest">Lasting interest</a></li>
 <li><a href="#the-value-of-art">The value of art</a></li>
 <li><a href="#expert-vs-professional">Expert vs. professional</a></li>
-<li><a href="#theres-no-correct-perception">There’s no correct perception</a></li>
-<li><a href="#it-doesnt-matter-what-qualifies-as-art">It doesn’t matter what qualifies as art</a></li>
+<li><a href="#theres-no-correct-perception">There’s no correct
+perception</a></li>
+<li><a href="#it-doesnt-matter-what-qualifies-as-art">It doesn’t matter
+what qualifies as art</a></li>
 <li><a href="#why-beliefs-matter">Why do beliefs matter?</a></li>
 <li><a href="#own-your-sh-t">Own your sh*t</a></li>
 <li><a href="#causality-doesnt-exist">Causality doesn’t exist</a></li>
 </ul>
 <h3 id="risk"><a name="risk"></a>Risk</h3>
-<p>Risk is a property of a world model. The world itself doesn’t have risk, it just is.</p>
+<p>Risk is a property of a world model. The world itself doesn’t have
+risk, it just is.</p>
 <p><em>Martin Jambon, <a href="risk">March 30, 2023</a></em></p>
-<h3 id="wealth-vs.-money"><a name="wealth-vs-money"></a>Wealth vs. money</h3>
-<p>If you destroy someone’s property, it decreases the world’s total wealth, whether you pay to fix the damage or you run away.</p>
-<p>The distinction between wealth and money was never taught to me, let alone in school. I don’t know why. It’s essential because the concept of wealth holds even in a society without individual property.</p>
-<p><em>Martin Jambon, <a href="wealth-vs-money">March 22, 2023</a></em></p>
-<h3 id="settling-the-liars-paradox"><a name="settling-the-liar-paradox"></a>Settling the liar’s paradox</h3>
-<p>The liar’s paradox is the problem of interpreting a sentence uttered by someone who never tells the truth, in which they claim they’re not telling the truth. The liar says:</p>
+<h3 id="wealth-vs.-money"><a name="wealth-vs-money"></a>Wealth
+vs. money</h3>
+<p>If you destroy someone’s property, it decreases the world’s total
+wealth, whether you pay to fix the damage or you run away.</p>
+<p>The distinction between wealth and money was never taught to me, let
+alone in school. I don’t know why. It’s essential because the concept of
+wealth holds even in a society without individual property.</p>
+<p><em>Martin Jambon, <a href="wealth-vs-money">March 22,
+2023</a></em></p>
+<h3
+id="settling-the-liars-paradox"><a name="settling-the-liar-paradox"></a>Settling
+the liar’s paradox</h3>
+<p>The liar’s paradox is the problem of interpreting a sentence uttered
+by someone who never tells the truth, in which they claim they’re not
+telling the truth. The liar says:</p>
 <blockquote>
 <p>“I’m lying.”</p>
 </blockquote>
-<p>The paradox comes from the confusion between truth and belief. Consider the following:</p>
+<p>The paradox comes from the confusion between truth and belief.
+Consider the following:</p>
 <ul>
-<li>Like anyone else, a liar has beliefs and they may or may not be true.</li>
-<li>A liar is someone who produces sentences which are not their beliefs.</li>
+<li>Like anyone else, a liar has beliefs and they may or may not be
+true.</li>
+<li>A liar is someone who produces sentences which are not their
+beliefs.</li>
 </ul>
-<p>Therefore, the truthfulness of a statement is independent from whether the person making them is lying. The common phrase “tell the truth” is a misnomer and should be instead “state your belief”.</p>
-<p>When someone makes a statement, it is assumed that they express one of their beliefs. In the case of a liar, this assumption is incorrect. We could check this if we had a perfect lie detector that reads their mind.</p>
-<p>A given statement is characterized by a pair (believed?, true?). The first value indicates whether the author believes the statement:</p>
+<p>Therefore, the truthfulness of a statement is independent from
+whether the person making them is lying. The common phrase “tell the
+truth” is a misnomer and should be instead “state your belief”.</p>
+<p>When someone makes a statement, it is assumed that they express one
+of their beliefs. In the case of a liar, this assumption is incorrect.
+We could check this if we had a perfect lie detector that reads their
+mind.</p>
+<p>A given statement is characterized by a pair (believed?, true?). The
+first value indicates whether the author believes the statement:</p>
 <ul>
 <li>believed (B)</li>
 <li>disbelieved (D)</li>
 <li>agnostic (A): neither believed nor disbelieved</li>
 </ul>
-<p>The second value indicates whether the statement is true in a <strong>model of reference</strong> consisting of a deductive system accompanied with the set of statements that were either proven or disproven:</p>
+<p>The second value indicates whether the statement is true in a
+<strong>model of reference</strong> consisting of a deductive system
+accompanied with the set of statements that were either proven or
+disproven:</p>
 <ul>
 <li>true (T): we have a proof for the statement</li>
 <li>false (F): we have a proof of its negation</li>
 <li>other (O): we don’t have a proof, for whatever reason</li>
 </ul>
-<p>This gives us nine categories of statements. Highlighted statements are the most commonly encountered:</p>
+<p>This gives us nine categories of statements. Highlighted statements
+are the most commonly encountered:</p>
 <ul>
-<li><strong>[B, T]</strong> the honest expression of a correct belief;</li>
-<li><strong>[B, F]</strong> mistake: the honest expression of an incorrect belief;</li>
-<li><strong>[B, O]</strong> genuine discovery, false discovery, or expression of faith: the honest expression of a belief that was neither proven nor disproven in the model of reference;</li>
-<li><strong>[D, F]</strong> ordinary lie: a statement that their author believes to be false and is indeed false;</li>
-<li>[D, T] correct lie: statement that their author believes to be false but is in fact true.</li>
-<li>[D, O] malicious misguidance: a statement that their authors believes to be false but was neither proven nor disproven in the model of reference;</li>
-<li>[A, F], [A, T], [A, O]: a type of lie for which the author doesn’t know the truth but pretends they do and make something up. It could be made in an effort to appear confident in front of a particular audience.</li>
+<li><strong>[B, T]</strong> the honest expression of a correct
+belief;</li>
+<li><strong>[B, F]</strong> mistake: the honest expression of an
+incorrect belief;</li>
+<li><strong>[B, O]</strong> genuine discovery, false discovery, or
+expression of faith: the honest expression of a belief that was neither
+proven nor disproven in the model of reference;</li>
+<li><strong>[D, F]</strong> ordinary lie: a statement that their author
+believes to be false and is indeed false;</li>
+<li>[D, T] correct lie: statement that their author believes to be false
+but is in fact true.</li>
+<li>[D, O] malicious misguidance: a statement that their authors
+believes to be false but was neither proven nor disproven in the model
+of reference;</li>
+<li>[A, F], [A, T], [A, O]: a type of lie for which the author doesn’t
+know the truth but pretends they do and make something up. It could be
+made in an effort to appear confident in front of a particular
+audience.</li>
 </ul>
-<p>The liar’s paradox is now settled. There are two steps to the story:</p>
+<p>The liar’s paradox is now settled. There are two steps to the
+story:</p>
 <ol type="1">
-<li>The liar forms a belief which is “I’m not lying (for the thing I’m about to say)”. Most likely, they’re genuinely trying to quit lying.</li>
-<li>The liar expresses the negation of that belief, “I’m lying”, because they’re still a liar and old habits die hard. This can be verified by the lie detector. Their belief was incorrect. Their statement is correct by chance. This is the unusual case [D, T] above, a correct lie.</li>
+<li>The liar forms a belief which is “I’m not lying (for the thing I’m
+about to say)”. Most likely, they’re genuinely trying to quit
+lying.</li>
+<li>The liar expresses the negation of that belief, “I’m lying”, because
+they’re still a liar and old habits die hard. This can be verified by
+the lie detector. Their belief was incorrect. Their statement is correct
+by chance. This is the unusual case [D, T] above, a correct lie.</li>
 </ol>
-<p>Since we just settled the liar’s paradox, we might as well settle the meaning of truth.</p>
-<p><strong>truth</strong>: whether a statement was proven within a model of reference taken to be universal. Science is the activity conducted by a society, such as humanity, that builds such a world model. This model gets revised and extended over time by reconciliating it with other models derived from experimental observations and computations. In practice, there’s not a unique place where our universal model is written unambiguously. Even if we decided the exact collection of books and articles that compose it, it would contain inconsistencies due to various types of mistakes, approximations, and guesses. However, it would also contain a lot of redundancy, allowing certain statements to be considered more reliable than others. Those are what we call the truth in ordinary speech.</p>
+<p>Since we just settled the liar’s paradox, we might as well settle the
+meaning of truth.</p>
+<p><strong>truth</strong>: whether a statement was proven within a model
+of reference taken to be universal. Science is the activity conducted by
+a society, such as humanity, that builds such a world model. This model
+gets revised and extended over time by reconciliating it with other
+models derived from experimental observations and computations. In
+practice, there’s not a unique place where our universal model is
+written unambiguously. Even if we decided the exact collection of books
+and articles that compose it, it would contain inconsistencies due to
+various types of mistakes, approximations, and guesses. However, it
+would also contain a lot of redundancy, allowing certain statements to
+be considered more reliable than others. Those are what we call the
+truth in ordinary speech.</p>
 <p>There is no absolute truth, only models.</p>
-<p><em>Martin Jambon, <a href="settling-the-liar-paradox">December 10, 2022</a></em></p>
-<h3 id="cohesion-by-threat-of-mutual-destruction"><a name="cohesion-by-threat-of-mutual-destruction"></a>Cohesion by threat of mutual destruction</h3>
-<p>Claim: All societies emerge as groups of individuals that have the property of <em>destructive equality</em>.</p>
-<p>Definition: <strong>destructive equality</strong>: a group of individuals has the property of destructive equality if and only if any member of the group can destroy value faster than any other member can produce something of equivalent value.</p>
-<p>A society is therefore a mutually-beneficial association held together by the persisting threat of destruction as a means of punishment for violating the society’s rules.</p>
+<p><em>Martin Jambon, <a href="settling-the-liar-paradox">December 10,
+2022</a></em></p>
+<h3
+id="cohesion-by-threat-of-mutual-destruction"><a name="cohesion-by-threat-of-mutual-destruction"></a>Cohesion
+by threat of mutual destruction</h3>
+<p>Claim: All societies emerge as groups of individuals that have the
+property of <em>destructive equality</em>.</p>
+<p>Definition: <strong>destructive equality</strong>: a group of
+individuals has the property of destructive equality if and only if any
+member of the group can destroy value faster than any other member can
+produce something of equivalent value.</p>
+<p>A society is therefore a mutually-beneficial association held
+together by the persisting threat of destruction as a means of
+punishment for violating the society’s rules.</p>
 <p>Examples:</p>
 <ul>
-<li>Intelligent animals such as elephants or chimpanzes aren’t part of modern human society because they’re no threat to humans.</li>
-<li>Slaves are not proper members of their master’s society. However, once slaves become threats to their masters, possibly through gaining education, they’re freed i.e. they’re made members of the same society as their masters.</li>
+<li>Intelligent animals such as elephants or chimpanzes aren’t part of
+modern human society because they’re no threat to humans.</li>
+<li>Slaves are not proper members of their master’s society. However,
+once slaves become threats to their masters, possibly through gaining
+education, they’re freed i.e. they’re made members of the same society
+as their masters.</li>
 </ul>
 <p>Consequences:</p>
 <ul>
-<li>Society rules exist to prevent threats of mutual destruction from realizing.</li>
-<li>In general, large wealth inequalities are still possible within the same society.</li>
-<li>As a consequence of mutual threats, a split in society cannot occur without the isolation of sub-populations. Conversely, the increase of communication between nations that were once considered separate societies results in the merging of those societies.</li>
-<li>There’s a limit to how much value a society member can control. Multibillionaires are merely tolerated by other society members. If they were to abuse their power, others would organize to stop it by enforcing or creating new laws.</li>
-<li>Societies organized in multiple tiers or castes with different birth privileges tend to become more uniform as all members acquire the same education and means of revolt.</li>
+<li>Society rules exist to prevent threats of mutual destruction from
+realizing.</li>
+<li>In general, large wealth inequalities are still possible within the
+same society.</li>
+<li>As a consequence of mutual threats, a split in society cannot occur
+without the isolation of sub-populations. Conversely, the increase of
+communication between nations that were once considered separate
+societies results in the merging of those societies.</li>
+<li>There’s a limit to how much value a society member can control.
+Multibillionaires are merely tolerated by other society members. If they
+were to abuse their power, others would organize to stop it by enforcing
+or creating new laws.</li>
+<li>Societies organized in multiple tiers or castes with different birth
+privileges tend to become more uniform as all members acquire the same
+education and means of revolt.</li>
 </ul>
-<p><em>Martin Jambon, <a href="cohesion-by-threat-of-mutual-destruction">December 10, 2022</a></em></p>
-<h3 id="theres-no-evil-only-extreme-judgments."><a name="theres-no-evil-only-extreme-judgments"></a>There’s no evil, only extreme judgments.</h3>
-<p><em>Martin Jambon, <a href="theres-no-evil-only-extreme-judgments">November 27, 2022</a></em></p>
-<h3 id="why-does-anything-exist"><a name="why-does-anything-exist"></a>Why does anything exist?</h3>
-<p>Since at least the reader of this text exists, something exists. Isn’t that great? Now, why do things exist? It must be costly to create things out of nothing. Maybe that’s okay because something has always existed. Here are some ideas relating to the question of why anything exists.</p>
+<p><em>Martin Jambon, <a
+href="cohesion-by-threat-of-mutual-destruction">December 10,
+2022</a></em></p>
+<h3
+id="theres-no-evil-only-extreme-judgments."><a name="theres-no-evil-only-extreme-judgments"></a>There’s
+no evil, only extreme judgments.</h3>
+<p><em>Martin Jambon, <a
+href="theres-no-evil-only-extreme-judgments">November 27,
+2022</a></em></p>
+<h3
+id="why-does-anything-exist"><a name="why-does-anything-exist"></a>Why
+does anything exist?</h3>
+<p>Since at least the reader of this text exists, something exists.
+Isn’t that great? Now, why do things exist? It must be costly to create
+things out of nothing. Maybe that’s okay because something has always
+existed. Here are some ideas relating to the question of why anything
+exists.</p>
 <h4 id="idea-1-god-created-the-world">Idea 1: God created the world</h4>
-<p>This one is listed only because it’s popular. Obviously, it doesn’t help us at all because it doesn’t explain why a creator exists in the first place.</p>
+<p>This one is listed only because it’s popular. Obviously, it doesn’t
+help us at all because it doesn’t explain why a creator exists in the
+first place.</p>
 <h4 id="idea-2-the-world-is-random">Idea 2: The world is random</h4>
-<p>Here, we consider that the information contained in the world grows over time because the world is the product of a random data generator that underlies everything. This theory assumes some fundamental notion of time and an origin of time where the world starts from nothing and gets more complex as random data or “matter” gets produced. This theory feels satisfying when we consider the existence of an initial state containing zero information. It is dubious for other reasons:</p>
+<p>Here, we consider that the information contained in the world grows
+over time because the world is the product of a random data generator
+that underlies everything. This theory assumes some fundamental notion
+of time and an origin of time where the world starts from nothing and
+gets more complex as random data or “matter” gets produced. This theory
+feels satisfying when we consider the existence of an initial state
+containing zero information. It is dubious for other reasons:</p>
 <ul>
-<li>Like for the god hypothesis, it doesn’t explain why a random data generator would exist in the first place.</li>
-<li>This model assumes time and the origin of time. This would have to be modeled as part of the random data generator, making it non-trivial.</li>
+<li>Like for the god hypothesis, it doesn’t explain why a random data
+generator would exist in the first place.</li>
+<li>This model assumes time and the origin of time. This would have to
+be modeled as part of the random data generator, making it
+non-trivial.</li>
 </ul>
 <h4 id="idea-3-everything-exists">Idea 3: Everything exists</h4>
-<p>If everything exists, then the world taken as a whole is trivial and it’s equivalent to not existing at all. A difficulty would be to come up with a satisfying, rigorous definition of “everything”. Everyone with perfect knowledge would have to agree with that definition since the theory rests on there being a single, natural everything.</p>
-<h4 id="idea-4-the-world-as-a-whole-contains-no-information">Idea 4: The world as a whole contains no information</h4>
-<p>We could have a new “theory of information” where information held by a model collapses as the knowledge about this system approaches completeness.</p>
-<p>We could model a system using a collection of variables representing unknowns and constraints between these variables. The constraints form the structure of the model. The size of a maximally-compressed structure of the model gives us its information content. The complexity of a correct but partial model relates to the number of possible instantiations of variables in the model. If two variables are constrained to always have the same value, they’re considered redundant and collapsed into one. This leads to the elimination of all the redundant variables and of all the variables constrained to take a single value. A complete world model would have only one possible instantiation of variables, making it as simple as the empty model containing no variable and no structure.</p>
-<h4 id="idea-5-we-cant-compute-why-the-world-exists">Idea 5: We can’t compute why the world exists</h4>
-<p>Maybe we need a hypercomputer and a hypermind to make sense of why anything exists. A hypercomputer is a hypothetical computer that can carry out an infinite, countable number of operations within a finite number of steps. A hypermind would be a mind that could emulate a hypercomputer if it feels like it.</p>
-<p><em>Martin Jambon, <a href="why-does-anything-exist">November 27, 2022</a></em></p>
-<h3 id="should-i-reply"><a name="should-i-reply"></a>Should I reply?</h3>
-<p>Someone says something on social media. I want to reply. Should I really reply?</p>
+<p>If everything exists, then the world taken as a whole is trivial and
+it’s equivalent to not existing at all. A difficulty would be to come up
+with a satisfying, rigorous definition of “everything”. Everyone with
+perfect knowledge would have to agree with that definition since the
+theory rests on there being a single, natural everything.</p>
+<h4 id="idea-4-the-world-as-a-whole-contains-no-information">Idea 4: The
+world as a whole contains no information</h4>
+<p>We could have a new “theory of information” where information held by
+a model collapses as the knowledge about this system approaches
+completeness.</p>
+<p>We could model a system using a collection of variables representing
+unknowns and constraints between these variables. The constraints form
+the structure of the model. The size of a maximally-compressed structure
+of the model gives us its information content. The complexity of a
+correct but partial model relates to the number of possible
+instantiations of variables in the model. If two variables are
+constrained to always have the same value, they’re considered redundant
+and collapsed into one. This leads to the elimination of all the
+redundant variables and of all the variables constrained to take a
+single value. A complete world model would have only one possible
+instantiation of variables, making it as simple as the empty model
+containing no variable and no structure.</p>
+<h4 id="idea-5-we-cant-compute-why-the-world-exists">Idea 5: We can’t
+compute why the world exists</h4>
+<p>Maybe we need a hypercomputer and a hypermind to make sense of why
+anything exists. A hypercomputer is a hypothetical computer that can
+carry out an infinite, countable number of operations within a finite
+number of steps. A hypermind would be a mind that could emulate a
+hypercomputer if it feels like it.</p>
+<p><em>Martin Jambon, <a href="why-does-anything-exist">November 27,
+2022</a></em></p>
+<h3 id="should-i-reply"><a name="should-i-reply"></a>Should I
+reply?</h3>
+<p>Someone says something on social media. I want to reply. Should I
+really reply?</p>
 <p>Here’s a decision diagram that approximates my filtering process:</p>
 <p><a href="/notes/img/reply.png"><img src="/notes/img/reply.png"
       title="click to enlarge"
       alt="a decision graph; see dot source code"></a></p>
 <p><a href="/notes/img/reply.dot">source code</a></p>
-<p><em>Martin Jambon, <a href="should-i-reply">September 28, 2022</a></em></p>
-<h3 id="respect-is-earned"><a name="respect-is-earned"></a>Respect is earned</h3>
-<p>Tolerance can be imposed but respect is earned. Like love, it’s not something that can’t be enforced with rules.</p>
+<p><em>Martin Jambon, <a href="should-i-reply">September 28,
+2022</a></em></p>
+<h3 id="respect-is-earned"><a name="respect-is-earned"></a>Respect is
+earned</h3>
+<p>Tolerance can be imposed but respect is earned. Like love, it’s not
+something that can’t be enforced with rules.</p>
 <ul>
 <li>Being respected is generally desirable.</li>
 <li>Being respected by everyone isn’t necessary.</li>
-<li>You may fire someone for not respecting another employee but that won’t make them respectful.</li>
-<li>You may avoid being fired due to leaders or laws that require tolerance but that won’t earn you respect.</li>
+<li>You may fire someone for not respecting another employee but that
+won’t make them respectful.</li>
+<li>You may avoid being fired due to leaders or laws that require
+tolerance but that won’t earn you respect.</li>
 <li>Your enemies can respect you and still butcher you.</li>
-<li>Tolerance can be a default behavior toward strangers - and I would recommend it - but a relationship doesn’t start with mutual respect. It starts with mere tolerance.</li>
-<li>Disrespect is simply the absence of respect. It doesn’t imply hatred.</li>
+<li>Tolerance can be a default behavior toward strangers - and I would
+recommend it - but a relationship doesn’t start with mutual respect. It
+starts with mere tolerance.</li>
+<li>Disrespect is simply the absence of respect. It doesn’t imply
+hatred.</li>
 </ul>
-<p><strong>tolerance</strong>: intentional avoidance of destructive action<br> <strong>respect</strong>: feeling of appreciation toward someone’s behavior as in “I like what they do”<br> <strong>disrespect</strong>: absence of respect<br> <strong>love</strong>: feeling of appreciation toward a whole person rather than specific behavior<br> <strong>hatred</strong>: feeling that someone should not be around (?)</p>
-<p><em>Martin Jambon, <a href="respect-is-earned">September 20, 2022</a></em></p>
-<h3 id="lasting-interest"><a name="lasting-interest"></a>Lasting interest</h3>
-<p>A good painting for home is one that looks a little bit different each time you look at it. Public space art displays - even museums - don’t have this requirement. It’s often enough for them to be cool the first time you see them and boring thereafter.</p>
-<p>Repeated exposures to a movie or to a significant have the same issue.</p>
-<p><em>Martin Jambon, <a href="lasting-interest">September 16, 2022</a></em></p>
-<h3 id="the-value-of-art"><a name="the-value-of-art"></a>The value of art</h3>
-<p>An example of <a href="expert-vs-professional">cheap but expert-level</a> tools are those involved with minimalistic crafts. For those, the simplicity of the production process is an essential feature of the product. In this class of products, the use of advanced machines in the production process devalues the product. A product is not just the final, functional piece but also its production process and even the history of the production process. By buying a product that’s hand-made and fits in a particular culture and tradition, one acquires a piece of cultural significance. That is, we can tell stories about its origins. The more unique yet interesting its story is, the higher a luxury or non-functional object can sell:</p>
+<p><strong>tolerance</strong>: intentional avoidance of destructive
+action<br> <strong>respect</strong>: feeling of appreciation toward
+someone’s behavior as in “I like what they do”<br>
+<strong>disrespect</strong>: absence of respect<br>
+<strong>love</strong>: feeling of appreciation toward a whole person
+rather than specific behavior<br> <strong>hatred</strong>: feeling that
+someone should not be around (?)</p>
+<p><em>Martin Jambon, <a href="respect-is-earned">September 20,
+2022</a></em></p>
+<h3 id="lasting-interest"><a name="lasting-interest"></a>Lasting
+interest</h3>
+<p>A good painting for home is one that looks a little bit different
+each time you look at it. Public space art displays - even museums -
+don’t have this requirement. It’s often enough for them to be cool the
+first time you see them and boring thereafter.</p>
+<p>Repeated exposures to a movie or to a significant have the same
+issue.</p>
+<p><em>Martin Jambon, <a href="lasting-interest">September 16,
+2022</a></em></p>
+<h3 id="the-value-of-art"><a name="the-value-of-art"></a>The value of
+art</h3>
+<p>An example of <a href="expert-vs-professional">cheap but
+expert-level</a> tools are those involved with minimalistic crafts. For
+those, the simplicity of the production process is an essential feature
+of the product. In this class of products, the use of advanced machines
+in the production process devalues the product. A product is not just
+the final, functional piece but also its production process and even the
+history of the production process. By buying a product that’s hand-made
+and fits in a particular culture and tradition, one acquires a piece of
+cultural significance. That is, we can tell stories about its origins.
+The more unique yet interesting its story is, the higher a luxury or
+non-functional object can sell:</p>
 <ul>
 <li>mass production: not unique, low market value</li>
-<li>crafts: objects with interesting stories produced in low numbers</li>
+<li>crafts: objects with interesting stories produced in low
+numbers</li>
 <li>art: objects with interesting and unique stories</li>
 </ul>
-<p>Great art is the product of a unique and remarkable timeline, making it hard to truly duplicate. It’s relatively easy to duplicate the Mona Lisa, but the resulting copies are worthless in comparison because they don’t add much to the history of art. However, discovering a new painting by Leonardo da Vinci, even a mediocre one, would be a major event and the painting would immediately have a great value.</p>
-<p><em>Martin Jambon, <a href="the-value-of-art">September 10, 2022</a></em></p>
-<h3 id="expert-vs.-professional"><a name="expert-vs-professional"></a>Expert vs. professional</h3>
-<p>When buying supplies for a new craft, you’ll find products under four broad kinds of labels:</p>
+<p>Great art is the product of a unique and remarkable timeline, making
+it hard to truly duplicate. It’s relatively easy to duplicate the Mona
+Lisa, but the resulting copies are worthless in comparison because they
+don’t add much to the history of art. However, discovering a new
+painting by Leonardo da Vinci, even a mediocre one, would be a major
+event and the painting would immediately have a great value.</p>
+<p><em>Martin Jambon, <a href="the-value-of-art">September 10,
+2022</a></em></p>
+<h3
+id="expert-vs.-professional"><a name="expert-vs-professional"></a>Expert
+vs. professional</h3>
+<p>When buying supplies for a new craft, you’ll find products under four
+broad kinds of labels:</p>
 <ul>
 <li>beginner</li>
 <li>expert</li>
 <li>cheap</li>
 <li>professional</li>
 </ul>
-<p>One might think that “expert” and “professional” are the same but they can actually be opposites. An expert is someone with advanced skills who’s able to take advantage of tools that are too tricky for a beginner. On the other hand, a professional is someone who makes money from their craft and can afford supplies that makes their work easier. Therefore, a beginner with money might prefer professional-grade tools as long as they’re not only suitable for experts.</p>
-<p>Naturally, using two different labels to advertise products goes in the way of effective marketing, which prefers simpler formulas. For the customer, the recipe is simple: if you can afford it, buy professional-grade supplies. Of course you’ll have to make sure that they indeed make your work easier. Now, there is the other dimension - beginner vs. expert. While some tools may be cheaper, they may only be suited to experts. An extreme example and metaphor is bicycle training wheels. Here, an expert - an ordinary bicycle rider - doesn’t need to buy training wheels. Riding without training wheels is faster and cheaper. In that case, the expert-level product is no product at all. Not many actual products fall into the cheap-product-for-experts category, though, because experts are often also professionals who can afford and will pay for better tools.</p>
-<p><em>Martin Jambon, <a href="expert-vs-professional">September 10, 2022</a></em></p>
-<h3 id="theres-no-correct-perception"><a name="theres-no-correct-perception"></a>There’s no correct perception</h3>
+<p>One might think that “expert” and “professional” are the same but
+they can actually be opposites. An expert is someone with advanced
+skills who’s able to take advantage of tools that are too tricky for a
+beginner. On the other hand, a professional is someone who makes money
+from their craft and can afford supplies that makes their work easier.
+Therefore, a beginner with money might prefer professional-grade tools
+as long as they’re not only suitable for experts.</p>
+<p>Naturally, using two different labels to advertise products goes in
+the way of effective marketing, which prefers simpler formulas. For the
+customer, the recipe is simple: if you can afford it, buy
+professional-grade supplies. Of course you’ll have to make sure that
+they indeed make your work easier. Now, there is the other dimension -
+beginner vs. expert. While some tools may be cheaper, they may only be
+suited to experts. An extreme example and metaphor is bicycle training
+wheels. Here, an expert - an ordinary bicycle rider - doesn’t need to
+buy training wheels. Riding without training wheels is faster and
+cheaper. In that case, the expert-level product is no product at all.
+Not many actual products fall into the cheap-product-for-experts
+category, though, because experts are often also professionals who can
+afford and will pay for better tools.</p>
+<p><em>Martin Jambon, <a href="expert-vs-professional">September 10,
+2022</a></em></p>
+<h3
+id="theres-no-correct-perception"><a name="theres-no-correct-perception"></a>There’s
+no correct perception</h3>
 <p>There’s no correct perception, only useful perception.</p>
-<p>The interpretation of sensory input - perception - is a process that generates concepts in a given context. Elements of context that influence perception include:</p>
+<p>The interpretation of sensory input - perception - is a process that
+generates concepts in a given context. Elements of context that
+influence perception include:</p>
 <ul>
 <li>genetics of the individual mind</li>
 <li>history, culture, and specific events the mind went through</li>
@@ -188,21 +395,62 @@
 <li>health, alertness, physical trauma</li>
 <li>psychoactive drugs</li>
 </ul>
-<p>Perception is imagination primed with sensory input. Too little imagination and no useful concept or abstraction emerges. Too much imagination and the concepts are no longer relevant to the surrounding environment. In both cases, the consequence is the failure to take on actions that benefit the mind’s body.</p>
-<p><em>Martin Jambon, <a href="theres-no-correct-perception">September 05, 2022</a></em></p>
-<h3 id="it-doesnt-matter-what-qualifies-as-art"><a name="it-doesnt-matter-what-qualifies-as-art"></a>It doesn’t matter what qualifies as art</h3>
-<p>It doesn’t matter what qualifies as art. “art” isn’t an absolute or necessary concept, it’s a label that may or may not make sense in a given context. When a label stops making sense, obsessing over it is madness.</p>
-<p><em>Martin Jambon, <a href="it-doesnt-matter-what-qualifies-as-art">September 04, 2022</a></em></p>
-<h3 id="why-do-beliefs-matter"><a name="why-beliefs-matter"></a>Why do beliefs matter?</h3>
-<p>In my model of mind, beliefs are explicit (conscious) parts of the world model that a mind maintains. They can be communicated or revised as necessary and in that sense, they’re no different from notes on paper. So why do they matter? They’re used like notes or any other symbols that were planted in the environment as reminders of some concepts. I view this “symbol planting” as a way to (re)populate the imagination on demand. It could be your own imagination or the imagination of others. It bypasses original sensing. For example, the written description of a banana can substitute itself to the sight of an actual banana. I see beliefs as imagination primers, and imagination sets the context for (intuitive) decision making. That’s why it’s important that beliefs or their communicated form be sufficiently correct for the application at hand.</p>
-<p><em>Martin Jambon, <a href="why-beliefs-matter">September 03, 2022</a></em></p>
+<p>Perception is imagination primed with sensory input. Too little
+imagination and no useful concept or abstraction emerges. Too much
+imagination and the concepts are no longer relevant to the surrounding
+environment. In both cases, the consequence is the failure to take on
+actions that benefit the mind’s body.</p>
+<p><em>Martin Jambon, <a href="theres-no-correct-perception">September
+05, 2022</a></em></p>
+<h3
+id="it-doesnt-matter-what-qualifies-as-art"><a name="it-doesnt-matter-what-qualifies-as-art"></a>It
+doesn’t matter what qualifies as art</h3>
+<p>It doesn’t matter what qualifies as art. “art” isn’t an absolute or
+necessary concept, it’s a label that may or may not make sense in a
+given context. When a label stops making sense, obsessing over it is
+madness.</p>
+<p><em>Martin Jambon, <a
+href="it-doesnt-matter-what-qualifies-as-art">September 04,
+2022</a></em></p>
+<h3 id="why-do-beliefs-matter"><a name="why-beliefs-matter"></a>Why do
+beliefs matter?</h3>
+<p>In my model of mind, beliefs are explicit (conscious) parts of the
+world model that a mind maintains. They can be communicated or revised
+as necessary and in that sense, they’re no different from notes on
+paper. So why do they matter? They’re used like notes or any other
+symbols that were planted in the environment as reminders of some
+concepts. I view this “symbol planting” as a way to (re)populate the
+imagination on demand. It could be your own imagination or the
+imagination of others. It bypasses original sensing. For example, the
+written description of a banana can substitute itself to the sight of an
+actual banana. I see beliefs as imagination primers, and imagination
+sets the context for (intuitive) decision making. That’s why it’s
+important that beliefs or their communicated form be sufficiently
+correct for the application at hand.</p>
+<p><em>Martin Jambon, <a href="why-beliefs-matter">September 03,
+2022</a></em></p>
 <h3 id="own-your-sht"><a name="own-your-sh-t"></a>Own your sh*t</h3>
-<p>Own your sh*t. It’s called sh*t for a reason. It’s your legacy and it’s not perfect. It never is.</p>
+<p>Own your sh*t. It’s called sh*t for a reason. It’s your legacy and
+it’s not perfect. It never is.</p>
 <p>Justification:</p>
-<p>Society emerges from the recognition of individuals. An individual is located in space and time. More than this, it is tied to a sphere of influence. We assigne causes to events and we stop in the chain when hitting a decision center - the mind of an individual. For example, a recognized causality chain would be:</p>
-<p>global warming<br> ⇑ [caused by]<br> excessive CO<span class="math inline">\(_2\)</span> emissions<br> ⇑ [caused by]<br> bad governance of world countries<br> ⇑ [caused by]<br> leaders of world countries<br> ⇑ elections ???<br> citizens</p>
-<p>It’s generally the leaders of the countries that are held responsible, not the citizens that put them in power.</p>
-<p>Individual members of society are considered responsible for their actions, or they’re not members of society. This is how various societies have emerged throughout history. sometimes, some individuals are considered less responsible than others but nonetheless, it’s hard to find cases where someone else is held responsible instead. Examples of classes of people that have been historically considered less responsible include:</p>
+<p>Society emerges from the recognition of individuals. An individual is
+located in space and time. More than this, it is tied to a sphere of
+influence. We assigne causes to events and we stop in the chain when
+hitting a decision center - the mind of an individual. For example, a
+recognized causality chain would be:</p>
+<p>global warming<br> ⇑ [caused by]<br> excessive CO<span
+class="math inline">\(_2\)</span> emissions<br> ⇑ [caused by]<br> bad
+governance of world countries<br> ⇑ [caused by]<br> leaders of world
+countries<br> ⇑ elections ???<br> citizens</p>
+<p>It’s generally the leaders of the countries that are held
+responsible, not the citizens that put them in power.</p>
+<p>Individual members of society are considered responsible for their
+actions, or they’re not members of society. This is how various
+societies have emerged throughout history. sometimes, some individuals
+are considered less responsible than others but nonetheless, it’s hard
+to find cases where someone else is held responsible instead. Examples
+of classes of people that have been historically considered less
+responsible include:</p>
 <ul>
 <li>slaves</li>
 <li>minors</li>
@@ -210,18 +458,55 @@
 <li>ethnic groups, casts</li>
 <li>unintelligent people</li>
 </ul>
-<p>While there’s no scientific reason why the world must be comprised of one or more societies, it is the framework within which humans operate. It follows from the emergence of individuals minds although it’s not necessary. Many animals arguably have minds but are not meaningfully organized as societies. Even a human, when stranded alone on a desert island, ceases to function within a society. Another class of scenarios with unclear consequences involve hive minds. A hive mind a spatially distributed, which may temporarily be split into individual minds due to communication network failures but eventually reconnects. It is what humans might turn into if they became telepathically connected, possibly using brain implants and wireless communication networks. We don’t have historical evidence of actual hive minds to have a clear sense of how responsibility and justice would be implemented in such societies, if we may still call them societies. We could speculate that hive minds tend to not be competitive in the world and die out precisely due to the lack of blame assignment to their individual constituents, as well as the lack of competition between multiple hive minds if they keep merging into bigger hive minds on first contact. This is to say that a hive mind may not be evolutionary competitive unless it implements some mechanism that guarantees its evolution and survival in changing environment. This is a concern when one considers that the major contributor to the evolution of intelligence in humans may have been intraspecific conflict, i.e. war. Modern communication technology may be bringing humans closer to functioning as a hive mind. However, we still operate as a society with well-defined individuals, and we have laws and traditions based on that. Historically, efforts to assign or deassign responsibility from actual decision centers - the individual minds - have failed massively. See for example dictatorships or attempts to create pure collectivist societies where everyone is equally deserving regardless of they do.</p>
-<p><em>Martin Jambon, <a href="own-your-sh-t">August 17, 2022</a></em></p>
-<h3 id="causality-doesnt-exist"><a name="causality-doesnt-exist"></a>Causality doesn’t exist</h3>
-<p>Causality doesn’t exist in the scientific sense. While it’s present in many useful models, it is always possible to extend the model without respecting the causality relationships.</p>
+<p>While there’s no scientific reason why the world must be comprised of
+one or more societies, it is the framework within which humans operate.
+It follows from the emergence of individuals minds although it’s not
+necessary. Many animals arguably have minds but are not meaningfully
+organized as societies. Even a human, when stranded alone on a desert
+island, ceases to function within a society. Another class of scenarios
+with unclear consequences involve hive minds. A hive mind a spatially
+distributed, which may temporarily be split into individual minds due to
+communication network failures but eventually reconnects. It is what
+humans might turn into if they became telepathically connected, possibly
+using brain implants and wireless communication networks. We don’t have
+historical evidence of actual hive minds to have a clear sense of how
+responsibility and justice would be implemented in such societies, if we
+may still call them societies. We could speculate that hive minds tend
+to not be competitive in the world and die out precisely due to the lack
+of blame assignment to their individual constituents, as well as the
+lack of competition between multiple hive minds if they keep merging
+into bigger hive minds on first contact. This is to say that a hive mind
+may not be evolutionary competitive unless it implements some mechanism
+that guarantees its evolution and survival in changing environment. This
+is a concern when one considers that the major contributor to the
+evolution of intelligence in humans may have been intraspecific
+conflict, i.e. war. Modern communication technology may be bringing
+humans closer to functioning as a hive mind. However, we still operate
+as a society with well-defined individuals, and we have laws and
+traditions based on that. Historically, efforts to assign or deassign
+responsibility from actual decision centers - the individual minds -
+have failed massively. See for example dictatorships or attempts to
+create pure collectivist societies where everyone is equally deserving
+regardless of they do.</p>
+<p><em>Martin Jambon, <a href="own-your-sh-t">August 17,
+2022</a></em></p>
+<h3
+id="causality-doesnt-exist"><a name="causality-doesnt-exist"></a>Causality
+doesn’t exist</h3>
+<p>Causality doesn’t exist in the scientific sense. While it’s present
+in many useful models, it is always possible to extend the model without
+respecting the causality relationships.</p>
 <p>Causality is usually of this form:</p>
 <ul>
 <li>Two categories of events are recognized.</li>
 <li>An event is a state of the system at a point in time.</li>
-<li>The events occur within a time (range) from one another with some statistical correlation.</li>
-<li>The event occurring first is said to cause the event that occurs earlier.</li>
+<li>The events occur within a time (range) from one another with some
+statistical correlation.</li>
+<li>The event occurring first is said to cause the event that occurs
+earlier.</li>
 </ul>
-<p><em>Martin Jambon, <a href="causality-doesnt-exist">July 15, 2022</a></em></p>
+<p><em>Martin Jambon, <a href="causality-doesnt-exist">July 15,
+2022</a></em></p>
 <p class="menu footer">
   <a href="mailto:contact@mjambon.com">contact@mjambon.com</a><br/>
   <a href="/">Home</a>

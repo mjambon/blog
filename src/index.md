@@ -93,6 +93,12 @@ still ongoing as of 2022. It is now closed-source.
 * [Intelligence precedes machines](2014-12-31-intelligence-precedes-machines)
   (December 2014)
 
+OCaml programming
+--
+
+* [Free and open-source OCaml projects that I
+  initiated](2025-09-10-ocaml-projects)
+
 Miscellaneous blog posts
 --
 
