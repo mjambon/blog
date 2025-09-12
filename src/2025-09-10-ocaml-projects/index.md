@@ -8,6 +8,8 @@ available to the world for free.
 * [Testo](https://semgrep.github.io/testo/): a test framework for
   OCaml that supports parallel runs, Unix and Windows,
   stdout/stderr snapshots, timeouts, etc.
+* [dune-deps](https://github.com/mjambon/dune-deps) (2020): extracts
+  a useful dependency graph from an OCaml project.
 * [ATD](https://atd.readthedocs.io/): flexible and expressive type definition
   language suitable for exchanging JSON data safely across
   applications written in different languages including
