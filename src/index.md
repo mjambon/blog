@@ -35,7 +35,7 @@ visit [my online gallery](https://martinj.art).
 </a>
 <figcaption style="color:#666; margin: 1em 0em">
 <div>
-Space nugget, 2022
+Écru #6, 2025, 46 cm × 61 cm, acrylic and brass leaf on plywood
 </div>
 </figcaption>
 </figure>
