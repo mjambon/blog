@@ -108,7 +108,7 @@ Miscellaneous blog posts
 * [Universal career advice](2015-01-03-universal-career-advice) (2015)
 * [Faith-driven science](2014-12-27-faith-driven-science) (2014)
 
-Notable, general-purpose open-source OCaml projects
+Notable general-purpose open-source OCaml projects
 --
 
 * [Free and open-source OCaml projects that I initiated](2025-09-10-ocaml-projects)
