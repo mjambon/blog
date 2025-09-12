@@ -93,12 +93,6 @@ still ongoing as of 2022. It is now closed-source.
 * [Intelligence precedes machines](2014-12-31-intelligence-precedes-machines)
   (December 2014)
 
-OCaml programming
---
-
-* [Free and open-source OCaml projects that I
-  initiated](2025-09-10-ocaml-projects)
-
 Miscellaneous blog posts
 --
 
@@ -136,29 +130,12 @@ or make them widely accessible.
   estimating the number of lines of large files. Useful when dealing
   routinely with 100,000,000 records or more.
 
-Notable open-source projects
+
+OCaml programming
 --
 
-These tools have been or were used professionally by multiple independent
-users. They were all initiated by me, with or without support from
-an employer.
-
-* [dune-deps](https://github.com/mjambon/dune-deps) (2020): Extracts
-  a useful dependency graph from an OCaml project.
-* [atd](https://github.com/ahrefs/atd) (2010): Code generator for
-  making JSON pleasant and flexible to use with OCaml. Comes with its
-  own type definition language designed to be adaptable to various data
-  formats and programming languages.
-* [yojson](https://github.com/ocaml-community/yojson) (2010): JSON
-  parsers supporting atd. Turned out to be widely used as is by many
-  OCaml users.
-* [cppo](https://github.com/ocaml-community/cppo) (2009):
-  Straightforward C-style preprocessor for OCaml. Used typically
-  as a last resort to deal with compatibility issues across different
-  versions of libraries.
-* [mikmatch](https://github.com/mjambon/mikmatch) (2004, defunct):
-  extension of OCaml's ML-style pattern-matching syntax with
-  regexps. Was based on Camlp4 which since has fallen from grace.
+* [Free and open-source OCaml projects that I
+  initiated](2025-09-10-ocaml-projects)
 
 Structural bioinformatics (2000-2007)
 --
