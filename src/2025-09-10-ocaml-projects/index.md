@@ -2,8 +2,8 @@ Notable Open-Source OCaml Projects Started by Martin Jambon
 ===========================================================
 
 This is collection of links to notable general-purpose OCaml-related projects
-that I started either on my own time or while employed, and are
-available to the world for free.
+that I started either on my own time or while employed. They are
+available to the world for free and maintained by the OCaml community.
 
 * [Testo](https://semgrep.github.io/testo/) (2024): a test framework for
   OCaml that supports parallel runs, Unix and Windows,
