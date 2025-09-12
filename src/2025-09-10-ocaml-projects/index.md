@@ -1,4 +1,4 @@
-Notable Open-Source OCaml Projects started by Martin Jambon
+Notable Open-Source OCaml Projects Started by Martin Jambon
 ===========================================================
 
 This is collection of links to notable general-purpose OCaml-related projects
