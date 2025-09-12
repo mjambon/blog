@@ -4,7 +4,7 @@
      style="width:100px"
      alt="portrait">
 <a href="https://martinj.art">
-  <img src="/img/img-20220801-2.jpg"
+  <img src="/img/img-20250628.jpg"
        alt="abstract art"
        style="height: 100px"/>
 </a>
@@ -29,7 +29,7 @@ visit [my online gallery](https://martinj.art).
 
 <figure style="margin: 0px 1%; padding-top: 40px">
 <a href="/gallery">
-  <img src="/img/img-20220801-2.jpg"
+  <img src="/img/img-20250628.jpg"
        alt='abstract art'
        style="background-color:#eee; padding:3%; width: 94%"/>
 </a>
