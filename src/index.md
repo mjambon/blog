@@ -28,7 +28,7 @@ Follow me on [Instagram](https://www.instagram.com/martinjambon) or
 visit [my online gallery](https://martinj.art).
 
 <figure style="margin: 0px 1%; padding-top: 40px">
-<a href="/gallery">
+<a href="https://martinj.art">
   <img src="/img/img-20250628.jpg"
        alt='abstract art'
        style="background-color:#eee; padding:3%; width: 94%"/>
