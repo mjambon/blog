@@ -5,7 +5,7 @@ This is collection of links to notable general-purpose OCaml-related projects
 that I started either on my own time or while employed. They're
 available to the world for free and are maintained by the OCaml community.
 
-* [Testo](https://semgrep.github.io/testo/) (2024): a test framework for
+* [Testo](https://testocaml.net/) (2024): a test framework for
   OCaml that supports parallel runs, Unix and Windows,
   stdout/stderr snapshots, timeouts, etc.
 * [dune-deps](https://github.com/mjambon/dune-deps) (2020): extracts
