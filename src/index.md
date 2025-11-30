@@ -13,7 +13,8 @@ I'm a programmer, artist, and researcher. Originally from
 France, I live in the San Francisco Bay Area.
 
 <code>martin@mjambon.com</code>
-&bull; <a rel="me" href="https://qoto.org/@mjambon">Mastodon</a>
+&bull; <a rel="me" href="https://mastodon.social/deck/@mjambon">Mastodon</a>
+&bull; [Bluesky](https://bsky.app/profile/mjambon.bsky.social)
 &bull; [Twitter](https://twitter.com/mjambon)
 &bull; [GitHub](https://github.com/mjambon)
 &bull; [LinkedIn](https://www.linkedin.com/in/mjambon)
@@ -40,7 +41,7 @@ visit [my online gallery](https://martinj.art).
 </figcaption>
 </figure>
 
-Artificial cognition
+Artificial cognition (mostly inactive as of 2025)
 --
 
 In my personal time, I develop theories and software for creating
