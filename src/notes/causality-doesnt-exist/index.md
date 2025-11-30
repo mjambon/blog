@@ -15,4 +15,4 @@ Causality is usually of this form:
   earlier.
 
 
-_Martin Jambon, July 15, 2022_
+_Martin Jambon, July 15, 2022 \[[explainer](/notes/causality-doesnt-exist/explainer/)\]_

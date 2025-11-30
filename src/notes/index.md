@@ -542,4 +542,4 @@ Causality is usually of this form:
   earlier.
 
 
-_Martin Jambon, [July 15, 2022](causality-doesnt-exist)_
+_Martin Jambon, [July 15, 2022](causality-doesnt-exist) \[[explainer](/notes/causality-doesnt-exist/explainer/)\]_

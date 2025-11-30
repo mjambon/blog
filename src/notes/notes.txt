@@ -60,7 +60,7 @@ The paradox comes from the confusion between truth and
 belief. Consider the following:
 
 - Like anyone else, a liar has beliefs and they may or may not be true.
-- A liar is someone who produces sentences which are not their beliefs.
+- A liar is someone who produces sentences that are not their beliefs.
 
 Therefore, the truthfulness of a statement is independent from
 whether the person making them is lying. The common phrase
@@ -494,6 +494,7 @@ equally deserving regardless of they do.
 *** causality-doesnt-exist
 title: Causality doesn't exist
 date: 2022-07-15
+explainer: true
 
 Causality doesn't exist in the scientific sense. While it's present in
 many useful models, it is always possible to extend the model without

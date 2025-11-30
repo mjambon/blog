@@ -81,6 +81,7 @@ def parse_field(line: str) -> Optional[Tuple[str, str]]:
 #
 #   title: Hello World
 #   date: 2022-09-04
+#   explainer: true
 #   Something something
 #   something
 #
@@ -93,6 +94,7 @@ def parse_note(note: Dict[str, Any]) -> Dict[str, Any]:
     stream = iter(note['lines'])
     title = None
     date_ = None
+    explainer = False
     body = []
     # Parse head section
     try:
@@ -110,6 +112,13 @@ def parse_note(note: Dict[str, Any]) -> Dict[str, Any]:
                         date_ = date.fromisoformat(value)
                     except ValueError:
                         raise Exception(f"{slug}: malformed date: {value}")
+                elif key == 'explainer':
+                    if value == 'true':
+                        explainer = True
+                    elif value == 'false':
+                        explainer = False
+                    else:
+                        raise Exception(f"{explainer}: must be 'true' or 'false': {value}")
                 else:
                     raise Exception(f"{slug}: unsupported field: {key}")
             else:
@@ -133,6 +142,7 @@ def parse_note(note: Dict[str, Any]) -> Dict[str, Any]:
         'title': title,
         'date': date_,
         'body': body,
+        'explainer': explainer,
     }
 
 
@@ -144,29 +154,67 @@ def parse_notes_from_file(filename: str) -> List[Dict[str, Any]]:
     notes.sort(reverse=True, key=key)
     return notes
 
+def get_note_url(note: Dict[str, Any]) -> str:
+    return f"/notes/{note['slug']}/"
+
+def get_note_explainer_url(note: Dict[str, Any]) -> str:
+    return f"/notes/{note['slug']}/explainer/"
+
+def get_optional_link_to_explainer(note: Dict[str, Any]) -> str:
+    if note['explainer']:
+        return f" \\[[explainer]({get_note_explainer_url(note)})\\]"
+    else:
+        return ""
 
 def write_note_page(note: Dict[str, Any]) -> None:
     folder = Path(note['slug'])
     md_file = folder / 'index.md'
     os.makedirs(folder, exist_ok=True)
+    explainer_link = get_optional_link_to_explainer(note)
     with open(md_file, 'w') as output:
         output.write(f"""\
 % {note['title']}
 
 {"".join(note['body'])}
 
-_Martin Jambon, {note['date'].strftime("%B %d, %Y")}_
+_Martin Jambon, {note['date'].strftime("%B %d, %Y")}{explainer_link}_
 """)
 
 
+def write_explainer_template(note: Dict[str, Any]) -> None:
+    """Create a folder and a template index.md to be filled by an AI.
+
+    Do nothing if such a file already exists.
+    """
+    folder = Path(note['slug']) / 'explainer'
+    md_file = folder / 'index.md'
+    os.makedirs(folder, exist_ok=True)
+    if not os.path.exists(md_file):
+        with open(md_file, 'w') as output:
+            output.write(f"""\
+% Explainer: "{note['title']}"
+
+*By ChatGPT*
+
+This explainer is written to accompany and clarify Martin Jambon's short note:
+**[{note['title']}]({get_note_url(note)})** (original note).
+
+[missing contents]
+
+---
+
+*This explainer was written by ChatGPT to accompany Martin Jambon’s original note.*
+""")
+
 def write_note_inline(note: Dict[str, Any], md_output: TextIO) -> None:
     slug = note['slug']
+    explainer_link = get_optional_link_to_explainer(note)
     md_output.write(f"""
 ### <a name="{slug}"></a>{note['title']}
 
 {"".join(note['body'])}
 
-_Martin Jambon, [{note['date'].strftime("%B %d, %Y")}]({slug})_
+_Martin Jambon, [{note['date'].strftime("%B %d, %Y")}]({slug}){explainer_link}_
 """)
 
 
@@ -195,10 +243,14 @@ def generate(input_notes_file: str,
     # write to makefile
     for note in notes:
         makefile_output.write(f""" \\\n  notes/{note['slug']}""")
+        if note['explainer']:
+            makefile_output.write(f""" \\\n  notes/{note['slug']}/explainer""")
 
     # write individual pages
     for note in notes:
         write_note_page(note)
+        if note['explainer']:
+            write_explainer_template(note)
 
     makefile_output.write("\n")
 
