@@ -418,7 +418,7 @@ actions that benefit the mind's body.
 
 
 
-_Martin Jambon, [September 05, 2022](theres-no-correct-perception)_
+_Martin Jambon, [September 05, 2022](theres-no-correct-perception) \[[explainer](/notes/theres-no-correct-perception/explainer/)\]_
 
 ### <a name="it-doesnt-matter-what-qualifies-as-art"></a>It doesn't matter what qualifies as art
 

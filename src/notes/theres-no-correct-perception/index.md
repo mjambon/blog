@@ -21,4 +21,4 @@ actions that benefit the mind's body.
 
 
 
-_Martin Jambon, September 05, 2022_
+_Martin Jambon, September 05, 2022 \[[explainer](/notes/theres-no-correct-perception/explainer/)\]_

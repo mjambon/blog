@@ -376,6 +376,7 @@ and will pay for better tools.
 *** theres-no-correct-perception
 title: There's no correct perception
 date: 2022-09-05
+explainer: true
 
 There's no correct perception, only useful perception.
 
