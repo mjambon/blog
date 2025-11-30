@@ -52,7 +52,15 @@ all:
 	mkdir -p $(DOCROOT)
 	echo -n mjambon.com > $(DOCROOT)/CNAME
 	cp -u $(SRCDOCROOTFILES) $(DOCROOT)
+	$(MAKE) -C notes
 	$(MAKE) html img graphs
+
+# Add, commit, and push everything to GitHub!
+.PHONY: push
+push:
+	git add .
+	git commit -am "Update website"
+	git push
 
 .PHONY: html
 html: $(HTML)

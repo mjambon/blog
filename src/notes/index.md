@@ -44,6 +44,11 @@ _Martin Jambon, [March 22, 2023](wealth-vs-money)_
 ### <a name="settling-the-liar-paradox"></a>Settling the liar's paradox
 
 
+**Disclaimer**: _This post pokes fun at the neat simplifying assumptions
+mathematicians sometimes make about the real world. It looks at lying
+as a behavior, not the formal logical puzzle known as the liar’s
+paradox._
+
 The liar's paradox is the problem of interpreting a sentence uttered
 by someone who never tells the truth, in which they claim they're
 not telling the truth. The liar says:
@@ -54,7 +59,7 @@ The paradox comes from the confusion between truth and
 belief. Consider the following:
 
 - Like anyone else, a liar has beliefs and they may or may not be true.
-- A liar is someone who produces sentences which are not their beliefs.
+- A liar is someone who produces sentences that are not their beliefs.
 
 Therefore, the truthfulness of a statement is independent from
 whether the person making them is lying. The common phrase

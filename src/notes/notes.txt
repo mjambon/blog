@@ -50,6 +50,11 @@ of wealth holds even in a society without individual property.
 title: Settling the liar's paradox
 date: 2022-12-10
 
+**Disclaimer**: _This post pokes fun at the neat simplifying assumptions
+mathematicians sometimes make about the real world. It looks at lying
+as a behavior, not the formal logical puzzle known as the liar’s
+paradox._
+
 The liar's paradox is the problem of interpreting a sentence uttered
 by someone who never tells the truth, in which they claim they're
 not telling the truth. The liar says:
