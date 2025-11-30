@@ -58,7 +58,7 @@ all:
 # Add, commit, and push everything to GitHub!
 .PHONY: push
 push:
-	git add .
+	git add ..
 	git commit -am "Update website"
 	git push
 
