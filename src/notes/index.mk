@@ -1,4 +1,6 @@
 NOTE_PATHS = \
+  notes/what-did-you-discover \
+  notes/what-did-you-discover/explainer \
   notes/risk \
   notes/wealth-vs-money \
   notes/settling-the-liar-paradox \

@@ -28,6 +28,16 @@ Format:
 
 -->
 
+*** what-did-you-discover
+title: The absurdity of asking what they learned
+date: 2026-01-12
+explainer: true
+
+I am being hit by the absurdity of the question "what did you
+learn?". I could summarize what I learned but it wouldn't teach you
+what I learned, only some of it. Contrast this with discovery—where
+the work I did to learn a new thing can now be bypassed.
+
 *** risk
 title: Risk
 date: 2023-03-30
