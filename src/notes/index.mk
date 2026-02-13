@@ -1,4 +1,5 @@
 NOTE_PATHS = \
+  notes/peace-is-not-an-ideal \
   notes/what-did-you-discover \
   notes/what-did-you-discover/explainer \
   notes/risk \

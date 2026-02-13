@@ -28,6 +28,12 @@ Format:
 
 -->
 
+*** peace-is-not-an-ideal
+title: Peace
+date: 2026-02-13
+
+Peace is not an ideal, it's a compromise.
+
 *** what-did-you-discover
 title: The absurdity of asking what they learned
 date: 2026-01-12
