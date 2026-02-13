@@ -1,4 +1,4 @@
-% Peace
+% Peace is not an ideal
 
 
 Peace is not an ideal, it's a compromise.

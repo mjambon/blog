@@ -29,7 +29,7 @@ Format:
 -->
 
 *** peace-is-not-an-ideal
-title: Peace
+title: Peace is not an ideal
 date: 2026-02-13
 
 Peace is not an ideal, it's a compromise.
